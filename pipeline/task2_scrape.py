@@ -1920,7 +1920,7 @@ def _scrape_vietnambiz_category(
     max_retries = scraping_cfg.get("max_retries", 3)
     backoff_factor = scraping_cfg.get("backoff_factor", 2)
     timeout = scraping_cfg.get("request_timeout", 30)
-    max_pages = 80
+    max_pages = 250
     base = _category_base(category_url)
     empty_streak = 0
 

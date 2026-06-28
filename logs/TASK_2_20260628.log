@@ -8238,3 +8238,32 @@
 [2026-06-28 12:16:46] [TASK_2] [INFO] ------------------------------------------------------------
 [2026-06-28 12:16:46] [TASK_2] [INFO] Total articles from CAFEF: 3
 [2026-06-28 12:16:46] [TASK_2] [INFO] ============================================================
+[2026-06-28 13:23:03] [TASK_2] [INFO] Scraping vietnambiz for ticker=ALL from 2022-01-01 (existing URLs: 0)
+[2026-06-28 13:23:03] [TASK_2] [INFO] VietnamBiz: scraping category https://vietnambiz.vn/chung-khoan.htm
+[2026-06-28 13:23:22] [TASK_2] [INFO] VietnamBiz category https://vietnambiz.vn/chung-khoan.htm: 402 new articles
+[2026-06-28 13:23:22] [TASK_2] [INFO] VietnamBiz: scraping category https://vietnambiz.vn/doanh-nghiep.htm
+[2026-06-28 13:24:43] [TASK_2] [INFO] VietnamBiz category https://vietnambiz.vn/doanh-nghiep.htm: 1651 new articles
+[2026-06-28 13:24:43] [TASK_2] [INFO] VietnamBiz: scraping category https://vietnambiz.vn/tai-chinh.htm
+[2026-06-28 13:26:04] [TASK_2] [INFO] VietnamBiz category https://vietnambiz.vn/tai-chinh.htm: 1545 new articles
+[2026-06-28 13:26:04] [TASK_2] [INFO] VietnamBiz: collected 3598 total articles
+[2026-06-28 13:26:04] [TASK_2] [INFO] Saved 3598 rows to data/news/vietnambiz/vietnambiz_raw.csv
+[2026-06-28 13:26:04] [TASK_2] [INFO] ============================================================
+[2026-06-28 13:26:04] [TASK_2] [INFO] SCRAPING REPORT — VIETNAMBIZ
+[2026-06-28 13:26:04] [TASK_2] [INFO] ============================================================
+[2026-06-28 13:26:04] [TASK_2] [INFO]   ALL   : 3598 articles (2024-08-04 to 2026-06-28)
+[2026-06-28 13:26:04] [TASK_2] [INFO] ------------------------------------------------------------
+[2026-06-28 13:26:04] [TASK_2] [INFO] Total articles from VIETNAMBIZ: 3598
+[2026-06-28 13:26:04] [TASK_2] [INFO] ============================================================
+[2026-06-28 13:42:03] [TASK_2] [INFO] Scraping vietnambiz for ticker=ALL from 2022-01-01 (existing URLs: 3598)
+[2026-06-28 13:42:03] [TASK_2] [INFO] VietnamBiz: scraping category https://vietnambiz.vn/chung-khoan.htm
+[2026-06-28 13:42:05] [TASK_2] [INFO] VietnamBiz: scraping category https://vietnambiz.vn/doanh-nghiep.htm
+[2026-06-28 13:42:08] [TASK_2] [INFO] VietnamBiz: scraping category https://vietnambiz.vn/tai-chinh.htm
+[2026-06-28 13:42:11] [TASK_2] [INFO] VietnamBiz: collected 0 total articles
+[2026-06-28 13:42:11] [TASK_2] [INFO] No new articles for vietnambiz/ALL — nothing written to data/news/vietnambiz/vietnambiz_raw.csv.
+[2026-06-28 13:42:11] [TASK_2] [INFO] ============================================================
+[2026-06-28 13:42:11] [TASK_2] [INFO] SCRAPING REPORT — VIETNAMBIZ
+[2026-06-28 13:42:11] [TASK_2] [INFO] ============================================================
+[2026-06-28 13:42:11] [TASK_2] [INFO]   ALL   : 0 articles
+[2026-06-28 13:42:11] [TASK_2] [INFO] ------------------------------------------------------------
+[2026-06-28 13:42:11] [TASK_2] [INFO] Total articles from VIETNAMBIZ: 0
+[2026-06-28 13:42:11] [TASK_2] [INFO] ============================================================

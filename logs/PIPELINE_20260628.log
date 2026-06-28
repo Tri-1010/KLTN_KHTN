@@ -491,3 +491,9 @@
 [2026-06-28 11:15:51] [PIPELINE] [INFO] ✓ TASK_10 completed in 6.5 seconds
 [2026-06-28 11:16:01] [PIPELINE] [INFO] ✓ TASK_11 completed in 10.3 seconds
 [2026-06-28 11:16:01] [PIPELINE] [INFO] Pipeline completed successfully in 16.8 seconds.
+[2026-06-28 13:49:15] [PIPELINE] [INFO] ============================================================
+[2026-06-28 13:49:15] [PIPELINE] [INFO] VN30 Stock Prediction Pipeline
+[2026-06-28 13:49:15] [PIPELINE] [INFO] Step: preprocess | Force: True | Smoke Test: False
+[2026-06-28 13:49:15] [PIPELINE] [INFO] ============================================================
+[2026-06-28 13:49:15] [PIPELINE] [INFO] Configuration loaded and validated from config/pipeline_config.yaml
+[2026-06-28 13:49:15] [PIPELINE] [INFO] Tasks to execute: TASK_4, TASK_5, TASK_6

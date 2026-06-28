@@ -392,3 +392,12 @@ Top 50 most frequent tokens:
 [2026-06-28 11:15:33] [TASK_4] [INFO] END TASK_4 — completed in 41.8 seconds
 [2026-06-28 11:15:33] [TASK_4] [INFO] Output: data/news/processed/all_news_processed.csv (7492 rows)
 [2026-06-28 11:15:33] [TASK_4] [INFO] ============================================================
+[2026-06-28 13:49:15] [TASK_4] [INFO] ============================================================
+[2026-06-28 13:49:15] [TASK_4] [INFO] START TASK_4: Text Preprocessing (clean, tokenize, deduplicate)
+[2026-06-28 13:49:15] [TASK_4] [INFO] Timestamp: 2026-06-28T13:49:15.277463
+[2026-06-28 13:49:15] [TASK_4] [INFO] ============================================================
+[2026-06-28 13:49:15] [TASK_4] [INFO] Input: data/news/matched/all_news_matched.csv (10050 rows)
+[2026-06-28 13:49:16] [TASK_4] [INFO] Starting Text Preprocessing (TASK 4)...
+[2026-06-28 13:49:16] [TASK_4] [INFO] Loaded 10045 articles from data/news/matched/all_news_matched.csv.
+[2026-06-28 13:49:16] [TASK_4] [INFO] Loaded 23 stopwords from config/stopwords_finance.txt.
+[2026-06-28 13:49:16] [TASK_4] [INFO] URL deduplication: 10045 → 9715 (removed 330 duplicates).
