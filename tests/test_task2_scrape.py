@@ -1890,3 +1890,85 @@ class TestPrintScrapingReport:
         fpt_pos = log_text.index("FPT")
         vnm_pos = log_text.index("VNM")
         assert acb_pos < fpt_pos < vnm_pos
+
+
+# ---------------------------------------------------------------------------
+# VietnamBiz scraper tests (news-source-expansion)
+# ---------------------------------------------------------------------------
+
+from pipeline.task2_scrape import (
+    _parse_vietnambiz_id_date,
+    _parse_vietnambiz_page,
+)
+
+
+class TestVietnamBizIdDate:
+    """Tests for parsing the date embedded in a VietnamBiz article id."""
+
+    def test_two_digit_month_day(self):
+        # 2026 / 06 / 24
+        assert _parse_vietnambiz_id_date("2026624182936535") == "2026-06-24"
+
+    def test_two_digit_month_two_digit_day(self):
+        assert _parse_vietnambiz_id_date("20261115093000111") == "2026-11-15"
+
+    def test_invalid_returns_none(self):
+        assert _parse_vietnambiz_id_date("") is None
+        assert _parse_vietnambiz_id_date("abc") is None
+
+    def test_implausible_year_returns_none(self):
+        assert _parse_vietnambiz_id_date("1500101000000") is None
+
+
+class TestVietnamBizParsePage:
+    """Tests for parsing a VietnamBiz category listing page."""
+
+    SAMPLE_HTML = """
+    <html><body>
+      <div class="list">
+        <div class="news-item">
+          <span class="time">Chứng khoán-19:48 | 24/06/2026</span>
+          <h3><a href="/tu-doanh-gom-manh-co-phieu-nao-2026624182936535.htm"
+                 title="Tự doanh gom mạnh cổ phiếu nào hôm nay">
+              Tự doanh gom mạnh cổ phiếu nào hôm nay</a></h3>
+        </div>
+        <div class="news-item">
+          <span class="time">Doanh nghiệp-08:00 | 10/01/2026</span>
+          <h3><a href="/vingroup-chuyen-nhuong-co-phieu-vinhomes-2026110080000222.htm"
+                 title="Vingroup chuyển nhượng cổ phiếu Vinhomes cho đối tác">
+              Vingroup chuyển nhượng cổ phiếu Vinhomes cho đối tác</a></h3>
+        </div>
+        <a href="/chu-de/sua-doi-luat-chung-khoan-487.htm" title="Sửa đổi Luật Chứng khoán topic">topic link</a>
+      </div>
+    </body></html>
+    """
+
+    def test_extracts_real_articles_only(self):
+        # The /chu-de/ topic link has no numeric id and must be excluded.
+        articles, _ = _parse_vietnambiz_page(self.SAMPLE_HTML, set(), "2022-01-01")
+        assert len(articles) == 2
+        urls = {a["url"] for a in articles}
+        assert all("/chu-de/" not in u for u in urls)
+
+    def test_fields_present_and_sourced(self):
+        articles, _ = _parse_vietnambiz_page(self.SAMPLE_HTML, set(), "2022-01-01")
+        a = articles[0]
+        assert a["source"] == "vietnambiz"
+        assert a["date"] == "2026-06-24"
+        assert a["url"].startswith("https://vietnambiz.vn/")
+        assert a["title"]
+
+    def test_date_boundary_filters_old(self):
+        # start_date after the second article's date -> it is filtered out.
+        articles, found_old = _parse_vietnambiz_page(
+            self.SAMPLE_HTML, set(), "2026-06-01"
+        )
+        dates = {a["date"] for a in articles}
+        assert "2026-01-10" not in dates
+        assert found_old is True
+
+    def test_duplicate_urls_skipped(self):
+        seen = {"https://vietnambiz.vn/tu-doanh-gom-manh-co-phieu-nao-2026624182936535.htm"}
+        articles, _ = _parse_vietnambiz_page(self.SAMPLE_HTML, seen, "2022-01-01")
+        # Only the non-duplicate article remains.
+        assert len(articles) == 1

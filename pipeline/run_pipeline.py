@@ -366,9 +366,9 @@ def execute_task_2(config: Dict[str, Any], logger, smoke_test: bool = False) -> 
     tickers = SMOKE_TEST_TICKERS if smoke_test else config.get("tickers")
     start_date = config.get("start_date", "2022-01-01")
 
-    for src in ["cafef", "vietstock", "tnck"]:
+    for src in ["cafef", "vietstock", "tnck", "vietnambiz"]:
         results = {}
-        if src == "tnck":
+        if src in ("tnck", "vietnambiz"):
             results["ALL"] = scrape_source(src, ticker="ALL", start_date=start_date)
         else:
             for t in tickers:

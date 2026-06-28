@@ -17,6 +17,7 @@ import os
 import re
 import time
 from datetime import datetime
+from html import unescape
 from typing import Dict, List, Optional, Set, Tuple
 from urllib.parse import urlparse, urljoin
 
@@ -1772,9 +1773,268 @@ def scrape_tnck(
 
 
 # ---------------------------------------------------------------------------
-# scrape_source — base dispatcher (to be extended in tasks 4.2–4.4)
+# VietnamBiz scraper (news-source-expansion Task 3)
 # ---------------------------------------------------------------------------
 
+# VietnamBiz publishes server-rendered category pages with deep pagination.
+# Like TNCK, it is scraped broadly (no per-ticker query) — entity matching in
+# TASK 3 attributes articles to VN30 tickers.
+# Category listing + pagination pattern (verified live):
+#   page 1: https://vietnambiz.vn/chung-khoan.htm
+#   page N: https://vietnambiz.vn/chung-khoan/trang-{N}.htm
+# Real article anchors have href ending in '-<16-digit id>.htm'; the id begins
+# with the publication date (YYYYMD...), and the listing also shows a
+# 'HH:MM | dd/mm/yyyy' timestamp in the article's parent container.
+# NOTE: Update these patterns/selectors if VietnamBiz restructures its site.
+VIETNAMBIZ_CATEGORY_URLS = [
+    "https://vietnambiz.vn/chung-khoan.htm",
+    "https://vietnambiz.vn/doanh-nghiep.htm",
+    "https://vietnambiz.vn/tai-chinh.htm",
+]
+VIETNAMBIZ_CATEGORY_PAGE_URL = "{base}/trang-{page}.htm"
+# Matches real article URLs (trailing numeric id), excludes /chu-de/ topic links
+_VIETNAMBIZ_ARTICLE_RE = re.compile(r"-(\d{8,})\.htm$")
+
+# VietnamBiz serves Brotli-compressed HTML; if the optional 'brotli' package
+# isn't installed, requests cannot decode 'br' and returns truncated/garbled
+# content. Advertise only gzip/deflate (always supported) for this domain.
+VIETNAMBIZ_HEADERS: Dict[str, str] = {
+    **BROWSER_HEADERS,
+    "Accept-Encoding": "gzip, deflate",
+}
+
+
+def _category_base(category_url: str) -> str:
+    """Strip the trailing '.htm' so we can build '/trang-N.htm' page URLs."""
+    return category_url[:-4] if category_url.endswith(".htm") else category_url
+
+
+def _parse_vietnambiz_id_date(article_id: str) -> Optional[str]:
+    """Parse the publication date embedded in a VietnamBiz article id.
+
+    The id starts with YYYY then month and day with variable width, e.g.
+    ``2026624182936535`` -> 2026-06-24. We parse year (4) then greedily try
+    2-digit then 1-digit month/day combinations and validate via datetime.
+
+    Returns YYYY-MM-DD or None.
+    """
+    if not article_id or len(article_id) < 6:
+        return None
+    try:
+        year = int(article_id[:4])
+    except ValueError:
+        return None
+    if not (2000 <= year <= 2100):
+        return None
+    rest = article_id[4:]
+    # Try (month_len, day_len) combinations: 2+2, 2+1, 1+2, 1+1
+    for mlen, dlen in ((2, 2), (2, 1), (1, 2), (1, 1)):
+        if len(rest) < mlen + dlen:
+            continue
+        try:
+            month = int(rest[:mlen])
+            day = int(rest[mlen:mlen + dlen])
+            return datetime(year, month, day).strftime("%Y-%m-%d")
+        except ValueError:
+            continue
+    return None
+
+
+def _parse_vietnambiz_page(
+    html: str,
+    existing_urls: Set[str],
+    start_date: str,
+) -> Tuple[List[Dict], bool]:
+    """Parse one VietnamBiz category page into article dicts.
+
+    Date is taken from the listing timestamp ('HH:MM | dd/mm/yyyy') when
+    present, falling back to the date embedded in the article id.
+
+    Returns (articles, found_old_article).
+    NOTE: Selectors/patterns may need adjustment if VietnamBiz changes layout.
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    articles: List[Dict] = []
+    found_old = False
+    seen_on_page: Set[str] = set()
+
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        m = _VIETNAMBIZ_ARTICLE_RE.search(href)
+        if not m:
+            continue
+        title = (a.get("title") or a.get_text(strip=True)).strip()
+        if not title or len(title) < 20:
+            continue
+        title = unescape(title)  # decode HTML entities (&#253; etc.)
+
+        url = href if href.startswith("http") else urljoin(
+            "https://vietnambiz.vn", href
+        )
+        if url in seen_on_page or is_duplicate(url, existing_urls):
+            continue
+
+        # Date: prefer the listing 'HH:MM | dd/mm/yyyy' near the link,
+        # fall back to the id-embedded date.
+        parsed_date = None
+        node = a
+        for _ in range(3):
+            node = node.parent
+            if node is None:
+                break
+            dm = re.search(r"(\d{2}/\d{2}/\d{4})", node.get_text(" ", strip=True))
+            if dm:
+                parsed_date = _parse_tnck_date(dm.group(1))  # dd/mm/yyyy parser
+                break
+        if not parsed_date:
+            parsed_date = _parse_vietnambiz_id_date(m.group(1))
+
+        if parsed_date and parsed_date < start_date:
+            found_old = True
+            continue
+
+        article = {
+            "date": parsed_date or "",
+            "title": title,
+            "description": "",
+            "url": url,
+            "source": "vietnambiz",
+        }
+        if validate_article(article):
+            articles.append(article)
+            seen_on_page.add(url)
+            existing_urls.add(url)
+
+    return articles, found_old
+
+
+def _scrape_vietnambiz_category(
+    category_url: str,
+    start_date: str,
+    rate_limiter: RateLimiter,
+    existing_urls: Set[str],
+    scraping_cfg: dict,
+) -> List[Dict]:
+    """Scrape one VietnamBiz category with pagination until start_date."""
+    all_articles: List[Dict] = []
+    max_retries = scraping_cfg.get("max_retries", 3)
+    backoff_factor = scraping_cfg.get("backoff_factor", 2)
+    timeout = scraping_cfg.get("request_timeout", 30)
+    max_pages = 80
+    base = _category_base(category_url)
+    empty_streak = 0
+
+    for page in range(1, max_pages + 1):
+        url = category_url if page == 1 else VIETNAMBIZ_CATEGORY_PAGE_URL.format(
+            base=base, page=page
+        )
+        response = fetch_with_retry(
+            url,
+            rate_limiter=rate_limiter,
+            max_retries=max_retries,
+            backoff_factor=backoff_factor,
+            timeout=timeout,
+            headers=VIETNAMBIZ_HEADERS,
+        )
+        if response is None:
+            logger.warning(
+                "VietnamBiz: failed to fetch %s. Stopping this category.", url
+            )
+            break
+
+        try:
+            articles, should_stop = _parse_vietnambiz_page(
+                response.text, existing_urls, start_date
+            )
+        except Exception as exc:
+            # A single broken page should not abort pagination (Req 2.12).
+            logger.warning(
+                "VietnamBiz: failed to parse %s: %s. Skipping page. "
+                "Selectors may need adjustment if layout changed.",
+                url, exc,
+            )
+            continue
+
+        if articles:
+            all_articles.extend(articles)
+            empty_streak = 0
+            logger.debug(
+                "VietnamBiz %s page %d: %d new articles", base, page, len(articles)
+            )
+        else:
+            empty_streak += 1
+
+        if should_stop:
+            logger.debug(
+                "VietnamBiz: reached articles before %s on %s page %d. Stopping.",
+                start_date, base, page,
+            )
+            break
+        # Stop if several consecutive pages yield nothing new.
+        if empty_streak >= 3 and page > 1:
+            logger.debug(
+                "VietnamBiz: %d empty pages on %s. Stopping.", empty_streak, base
+            )
+            break
+
+    return all_articles
+
+
+def scrape_vietnambiz(
+    ticker: str,
+    start_date: str,
+    rate_limiter: RateLimiter,
+    existing_urls: Set[str],
+    scraping_cfg: dict,
+) -> pd.DataFrame:
+    """Scrape VietnamBiz finance/stock category pages broadly.
+
+    Like TNCK, articles are collected without pre-assigning tickers — TASK 3
+    handles entity matching (Req 2.4). Iterates several finance categories,
+    paginating each until reaching *start_date*.
+
+    Args:
+        ticker: Ignored (scrapes broadly). Pass "ALL".
+        start_date: Earliest publication date (YYYY-MM-DD).
+        rate_limiter: Per-domain throttle.
+        existing_urls: Already-collected URLs for dedup.
+        scraping_cfg: max_retries / backoff_factor / request_timeout.
+
+    Returns:
+        DataFrame [date, title, description, url, source].
+    """
+    all_articles: List[Dict] = []
+    for category_url in VIETNAMBIZ_CATEGORY_URLS:
+        logger.info("VietnamBiz: scraping category %s", category_url)
+        articles = _scrape_vietnambiz_category(
+            category_url=category_url,
+            start_date=start_date,
+            rate_limiter=rate_limiter,
+            existing_urls=existing_urls,
+            scraping_cfg=scraping_cfg,
+        )
+        if articles:
+            all_articles.extend(articles)
+            logger.info(
+                "VietnamBiz category %s: %d new articles",
+                category_url, len(articles),
+            )
+
+    logger.info("VietnamBiz: collected %d total articles", len(all_articles))
+
+    if not all_articles:
+        return pd.DataFrame(
+            columns=["date", "title", "description", "url", "source"]
+        )
+
+    df = pd.DataFrame(all_articles)
+    df = df.drop_duplicates(subset=["url"]).reset_index(drop=True)
+    return df
+
+
+# ---------------------------------------------------------------------------
+# scrape_source — base dispatcher (to be extended in tasks 4.2–4.4)
+# ---------------------------------------------------------------------------
 def scrape_source(
     source: str,
     ticker: str,
@@ -1870,6 +2130,8 @@ def _output_path_for(source: str, ticker: str) -> str:
         return f"data/news/vietstock/{ticker}_vietstock.csv"
     elif source_lower == "tnck":
         return "data/news/tnck/tnck_raw.csv"
+    elif source_lower == "vietnambiz":
+        return "data/news/vietnambiz/vietnambiz_raw.csv"
     return f"data/news/{source_lower}/{ticker}_{source_lower}.csv"
 
 
@@ -1884,6 +2146,7 @@ def _get_scraper(source: str):
         "cafef": scrape_cafef,           # Task 4.2
         "vietstock": scrape_vietstock,   # Task 4.3
         "tnck": scrape_tnck,             # Task 4.4
+        "vietnambiz": scrape_vietnambiz, # news-source-expansion
     }
     return scrapers.get(source.lower())
 
@@ -1946,10 +2209,13 @@ if __name__ == "__main__":
     tickers = cfg.get("tickers", VN30_TICKERS)
     start = cfg.get("start_date", "2022-01-01")
 
-    for src in ["cafef", "vietstock", "tnck"]:
+    for src in ["cafef", "vietstock", "tnck", "vietnambiz"]:
         results: Dict[str, pd.DataFrame] = {}
         if src == "tnck":
             # TNCK scrapes broadly — single call, keyed as "ALL"
+            results["ALL"] = scrape_source(src, ticker="ALL", start_date=start)
+        elif src == "vietnambiz":
+            # VietnamBiz scrapes broadly — single call, keyed as "ALL"
             results["ALL"] = scrape_source(src, ticker="ALL", start_date=start)
         else:
             for t in tickers:
