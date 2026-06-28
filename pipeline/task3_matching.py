@@ -44,6 +44,7 @@ NEWS_SOURCES = {
     "vietstock": "data/news/vietstock",
     "tnck": "data/news/tnck/tnck_raw.csv",
     "vietnambiz": "data/news/vietnambiz/vietnambiz_raw.csv",
+    "vnexpress": "data/news/vnexpress/vnexpress_raw.csv",
 }
 
 # ---------------------------------------------------------------------------
@@ -330,6 +331,16 @@ def _load_all_news(logger: logging.Logger) -> pd.DataFrame:
                 frames.append(df)
         except Exception as exc:
             logger.warning("Failed to read %s: %s", vnbiz_path, exc)
+
+    # VnExpress: single file (broad scrape, like TNCK)
+    vne_path = NEWS_SOURCES.get("vnexpress")
+    if vne_path and os.path.isfile(vne_path):
+        try:
+            df = pd.read_csv(vne_path, encoding="utf-8")
+            if not df.empty:
+                frames.append(df)
+        except Exception as exc:
+            logger.warning("Failed to read %s: %s", vne_path, exc)
 
     if not frames:
         logger.warning("No news files found in any source directory.")

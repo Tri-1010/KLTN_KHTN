@@ -2045,3 +2045,71 @@ class TestVietstockPagingParse:
         seen = {"https://vietstock.vn/2026/06/vnm-chia-co-tuc-dot-cuoi-2025-123456.htm"}
         articles, _ = _parse_vietstock_paging_page(self.SAMPLE_HTML, seen, "2022-01-01")
         assert len(articles) == 1
+
+
+# ---------------------------------------------------------------------------
+# VnExpress parser tests (news-source-expansion)
+# ---------------------------------------------------------------------------
+
+from pipeline.task2_scrape import (
+    _parse_vnexpress_listing,
+    _parse_vnexpress_detail_date,
+)
+
+
+class TestVnExpressParse:
+    """Tests for VnExpress listing + detail-date parsing."""
+
+    LISTING_HTML = """
+    <html><body>
+      <article class="item-news">
+        <h3 class="title-news">
+          <a href="https://vnexpress.net/chung-khoan-tang-diem-tro-lai-5090302.html"
+             title="Chứng khoán tăng điểm trở lại hôm nay">
+             Chứng khoán tăng điểm trở lại hôm nay</a>
+        </h3>
+        <p class="description">Nhóm cổ phiếu Vingroup là động lực chính của thị trường</p>
+      </article>
+      <article class="item-news">
+        <h3 class="title-news">
+          <a href="/loat-doanh-nghiep-tra-co-tuc-tien-mat-5089999.html"
+             title="Loạt doanh nghiệp trả cổ tức tiền mặt cao">
+             Loạt doanh nghiệp trả cổ tức tiền mặt cao</a>
+        </h3>
+      </article>
+      <article class="item-news">
+        <h3 class="title-news"><a href="/video/khong-phai-bai-viet">x</a></h3>
+      </article>
+    </body></html>
+    """
+
+    def test_listing_extracts_real_articles(self):
+        items = _parse_vnexpress_listing(self.LISTING_HTML)
+        # The 3rd item has no numeric-id .html URL and a too-short title.
+        assert len(items) == 2
+        assert all(it["url"].startswith("https://vnexpress.net/") for it in items)
+
+    def test_listing_absolute_url_and_desc(self):
+        items = _parse_vnexpress_listing(self.LISTING_HTML)
+        first = items[0]
+        assert first["url"].endswith("-5090302.html")
+        assert "Vingroup" in first["description"]
+
+    def test_detail_date_from_meta_itemprop(self):
+        html = (
+            '<html><head>'
+            '<meta itemprop="datePublished" content="2026-06-26T16:19:21+07:00">'
+            '</head><body></body></html>'
+        )
+        assert _parse_vnexpress_detail_date(html) == "2026-06-26"
+
+    def test_detail_date_from_article_published_time(self):
+        html = (
+            '<html><head>'
+            '<meta property="article:published_time" content="2024-03-02T08:00:00+07:00">'
+            '</head><body></body></html>'
+        )
+        assert _parse_vnexpress_detail_date(html) == "2024-03-02"
+
+    def test_detail_date_missing_returns_none(self):
+        assert _parse_vnexpress_detail_date("<html><body>no date</body></html>") is None

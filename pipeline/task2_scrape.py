@@ -2217,6 +2217,181 @@ def scrape_vietnambiz(
 
 
 # ---------------------------------------------------------------------------
+# VnExpress scraper (news-source-expansion — reputable national source)
+# ---------------------------------------------------------------------------
+
+# VnExpress server-renders business category pages with deep pagination
+# (`-p{N}`). Listing items are <article class="item-news"> with the title in
+# h3.title-news > a and summary in p.description. The listing has NO date, so
+# the publication date is read from the article detail page's
+# <meta itemprop="datePublished"> (ISO 8601). Scraped broadly; TASK 3 maps to
+# VN30. NOTE: Update selectors/patterns if VnExpress changes its layout.
+VNEXPRESS_CATEGORY_URLS = [
+    "https://vnexpress.net/kinh-doanh/chung-khoan",
+    "https://vnexpress.net/kinh-doanh/doanh-nghiep",
+    "https://vnexpress.net/kinh-doanh/vi-mo",
+]
+VNEXPRESS_PAGE_SUFFIX = "-p{page}"
+VNEXPRESS_MAX_PAGES = 40
+_VNEXPRESS_ARTICLE_RE = re.compile(r"-\d{6,}\.html$")
+
+
+def _parse_vnexpress_detail_date(html: str) -> Optional[str]:
+    """Extract YYYY-MM-DD from a VnExpress article page's meta tag."""
+    soup = BeautifulSoup(html, "html.parser")
+    for sel in (
+        "meta[itemprop='datePublished']",
+        "meta[property='article:published_time']",
+    ):
+        el = soup.select_one(sel)
+        if el and el.get("content"):
+            m = re.search(r"(\d{4}-\d{2}-\d{2})", el["content"])
+            if m:
+                return m.group(1)
+    return None
+
+
+def _parse_vnexpress_listing(html: str) -> List[Dict]:
+    """Extract (title, url, description) tuples from a VnExpress listing page.
+
+    Dates are NOT present in the listing; they are filled later from each
+    article's detail page.
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    items: List[Dict] = []
+    seen: Set[str] = set()
+    for art in soup.select("article.item-news"):
+        a = art.select_one("h3.title-news a, h2.title-news a, .title-news a")
+        if not a:
+            continue
+        href = a.get("href", "")
+        if not _VNEXPRESS_ARTICLE_RE.search(href):
+            continue
+        title = unescape((a.get("title") or a.get_text(strip=True)).strip())
+        if not title or len(title) < 20:
+            continue
+        url = href if href.startswith("http") else urljoin(
+            "https://vnexpress.net", href
+        )
+        url = url.split("?")[0]
+        if url in seen:
+            continue
+        seen.add(url)
+        desc_el = art.select_one("p.description a, p.description")
+        desc = unescape(desc_el.get_text(strip=True)) if desc_el else ""
+        items.append({"title": title, "url": url, "description": desc})
+    return items
+
+
+def _scrape_vnexpress_category(
+    category_url: str,
+    start_date: str,
+    rate_limiter: RateLimiter,
+    existing_urls: Set[str],
+    scraping_cfg: dict,
+) -> List[Dict]:
+    """Scrape one VnExpress category, fetching each article's date from detail.
+
+    Stops paginating after consecutive pages whose articles are all older than
+    start_date (detail dates are checked per article).
+    """
+    max_retries = scraping_cfg.get("max_retries", 3)
+    backoff_factor = scraping_cfg.get("backoff_factor", 2)
+    timeout = scraping_cfg.get("request_timeout", 30)
+
+    all_articles: List[Dict] = []
+    old_streak_pages = 0
+
+    for page in range(1, VNEXPRESS_MAX_PAGES + 1):
+        url = category_url if page == 1 else (
+            category_url + VNEXPRESS_PAGE_SUFFIX.format(page=page)
+        )
+        resp = fetch_with_retry(
+            url, rate_limiter=rate_limiter, max_retries=max_retries,
+            backoff_factor=backoff_factor, timeout=timeout,
+        )
+        if resp is None:
+            break
+
+        try:
+            listing = _parse_vnexpress_listing(resp.text)
+        except Exception as exc:
+            logger.warning("VnExpress: failed to parse %s: %s. Skipping.", url, exc)
+            continue
+        if not listing:
+            break
+
+        page_had_recent = False
+        for item in listing:
+            if is_duplicate(item["url"], existing_urls):
+                continue
+            # Fetch detail page to get the publication date
+            d = fetch_with_retry(
+                item["url"], rate_limiter=rate_limiter, max_retries=max_retries,
+                backoff_factor=backoff_factor, timeout=timeout,
+            )
+            parsed_date = _parse_vnexpress_detail_date(d.text) if d is not None else None
+            if parsed_date and parsed_date < start_date:
+                continue
+            if parsed_date:
+                page_had_recent = True
+            article = {
+                "date": parsed_date or "",
+                "title": item["title"],
+                "description": item["description"],
+                "url": item["url"],
+                "source": "vnexpress",
+            }
+            if validate_article(article):
+                all_articles.append(article)
+                existing_urls.add(item["url"])
+
+        # If a whole page had no article newer than start_date, the feed has
+        # passed our window (VnExpress lists newest-first).
+        if not page_had_recent:
+            old_streak_pages += 1
+        else:
+            old_streak_pages = 0
+        if old_streak_pages >= 2 and page > 1:
+            break
+
+    return all_articles
+
+
+def scrape_vnexpress(
+    ticker: str,
+    start_date: str,
+    rate_limiter: RateLimiter,
+    existing_urls: Set[str],
+    scraping_cfg: dict,
+) -> pd.DataFrame:
+    """Scrape VnExpress business categories broadly (TASK 3 maps to VN30)."""
+    all_articles: List[Dict] = []
+    for category_url in VNEXPRESS_CATEGORY_URLS:
+        logger.info("VnExpress: scraping category %s", category_url)
+        articles = _scrape_vnexpress_category(
+            category_url=category_url,
+            start_date=start_date,
+            rate_limiter=rate_limiter,
+            existing_urls=existing_urls,
+            scraping_cfg=scraping_cfg,
+        )
+        if articles:
+            all_articles.extend(articles)
+            logger.info(
+                "VnExpress category %s: %d new articles", category_url, len(articles)
+            )
+
+    logger.info("VnExpress: collected %d total articles", len(all_articles))
+    if not all_articles:
+        return pd.DataFrame(
+            columns=["date", "title", "description", "url", "source"]
+        )
+    df = pd.DataFrame(all_articles)
+    return df.drop_duplicates(subset=["url"]).reset_index(drop=True)
+
+
+# ---------------------------------------------------------------------------
 # scrape_source — base dispatcher (to be extended in tasks 4.2–4.4)
 # ---------------------------------------------------------------------------
 def scrape_source(
@@ -2316,6 +2491,8 @@ def _output_path_for(source: str, ticker: str) -> str:
         return "data/news/tnck/tnck_raw.csv"
     elif source_lower == "vietnambiz":
         return "data/news/vietnambiz/vietnambiz_raw.csv"
+    elif source_lower == "vnexpress":
+        return "data/news/vnexpress/vnexpress_raw.csv"
     return f"data/news/{source_lower}/{ticker}_{source_lower}.csv"
 
 
@@ -2331,6 +2508,7 @@ def _get_scraper(source: str):
         "vietstock": scrape_vietstock,   # Task 4.3
         "tnck": scrape_tnck,             # Task 4.4
         "vietnambiz": scrape_vietnambiz, # news-source-expansion
+        "vnexpress": scrape_vnexpress,   # news-source-expansion
     }
     return scrapers.get(source.lower())
 
