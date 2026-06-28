@@ -52,9 +52,16 @@ NEWS_PATH = "data/news/processed/all_news_processed.csv"
 # Map a period unit name to the number of months per period.
 PERIOD_MONTHS = {"month": 1, "2month": 2, "quarter": 3}
 
+# Day-bucketed units (not aligned to calendar months). Value = days per period.
+PERIOD_DAYS = {"2week": 14}
+
+# Fixed epoch for day-bucketed period indexing. Earlier than any data so all
+# indices are non-negative; the absolute value is irrelevant, only ordering.
+_DAY_EPOCH = pd.Timestamp("2021-01-01")
+
 
 # ---------------------------------------------------------------------------
-# Period id assignment
+# Period id assignment (calendar-month based)
 # ---------------------------------------------------------------------------
 
 
@@ -73,13 +80,56 @@ def assign_period_id(date_val: pd.Timestamp, months_per: int) -> str:
 
 
 def _next_period_id(period_id: str, months_per: int) -> str:
-    """Return the period id immediately following *period_id*."""
+    """Return the period id immediately following a calendar-month *period_id*."""
     year = int(period_id[:4])
     p = int(period_id[5:])
     n_periods = 12 // months_per
     if p >= n_periods:
         return f"{year + 1}P01"
     return f"{year}P{p + 1:02d}"
+
+
+# ---------------------------------------------------------------------------
+# Period id assignment (fixed-length day buckets, e.g. 2-week)
+# ---------------------------------------------------------------------------
+
+
+def assign_day_period_id(date_val: pd.Timestamp, days_per: int) -> str:
+    """Return a sortable id for a fixed-length day bucket.
+
+    Format: 'D{index:05d}', where index = days_since_epoch // days_per.
+    Independent of calendar month boundaries, so it works for 2-week periods.
+    """
+    delta_days = (date_val.normalize() - _DAY_EPOCH).days
+    idx = delta_days // days_per
+    return f"D{idx:05d}"
+
+
+def _next_day_period_id(period_id: str) -> str:
+    """Return the day-bucket id immediately following *period_id*."""
+    idx = int(period_id[1:])
+    return f"D{idx + 1:05d}"
+
+
+def make_period_funcs(unit: str):
+    """Return (assign_fn, next_fn) for the requested unit.
+
+    assign_fn maps a Timestamp -> period id string.
+    next_fn maps a period id -> the following period id.
+    """
+    if unit in PERIOD_MONTHS:
+        m = PERIOD_MONTHS[unit]
+        return (
+            lambda d: assign_period_id(d, m),
+            lambda pid: _next_period_id(pid, m),
+        )
+    if unit in PERIOD_DAYS:
+        n = PERIOD_DAYS[unit]
+        return (
+            lambda d: assign_day_period_id(d, n),
+            _next_day_period_id,
+        )
+    raise ValueError(f"Unknown period unit: {unit}")
 
 
 # ---------------------------------------------------------------------------
@@ -145,7 +195,7 @@ def _aggregate_period_tech(daily_df: pd.DataFrame) -> dict:
     return f
 
 
-def build_period_technical(prices_df: pd.DataFrame, months_per: int) -> pd.DataFrame:
+def build_period_technical(prices_df: pd.DataFrame, assign_fn) -> pd.DataFrame:
     """Build per-(ticker, period) technical features + avg_close."""
     prices_df = prices_df.copy()
     prices_df["date"] = pd.to_datetime(prices_df["date"], errors="coerce")
@@ -155,7 +205,7 @@ def build_period_technical(prices_df: pd.DataFrame, months_per: int) -> pd.DataF
     for ticker in prices_df["ticker"].unique():
         tdf = prices_df[prices_df["ticker"] == ticker].copy()
         tdf = compute_daily_indicators(tdf)
-        tdf["period_id"] = tdf["date"].apply(lambda d: assign_period_id(d, months_per))
+        tdf["period_id"] = tdf["date"].apply(assign_fn)
 
         per_rows = []
         for pid in sorted(tdf["period_id"].unique()):
@@ -179,12 +229,12 @@ def build_period_technical(prices_df: pd.DataFrame, months_per: int) -> pd.DataF
 # ---------------------------------------------------------------------------
 
 
-def build_period_news(news_df: pd.DataFrame, months_per: int) -> pd.DataFrame:
+def build_period_news(news_df: pd.DataFrame, assign_fn) -> pd.DataFrame:
     """Aggregate processed news into (ticker, period) news_count + combined_text."""
     df = news_df.copy()
     df["date"] = pd.to_datetime(df["date"], errors="coerce")
     df = df.dropna(subset=["date"])
-    df["period_id"] = df["date"].apply(lambda d: assign_period_id(d, months_per))
+    df["period_id"] = df["date"].apply(assign_fn)
     agg = (
         df.groupby(["ticker", "period_id"])
         .agg(
@@ -221,11 +271,11 @@ def build_period_keyword_features(news_agg: pd.DataFrame) -> pd.DataFrame:
 # ---------------------------------------------------------------------------
 
 
-def build_labels(tech_df: pd.DataFrame, months_per: int) -> pd.DataFrame:
+def build_labels(tech_df: pd.DataFrame, next_fn) -> pd.DataFrame:
     """label_basic = 1 if next-period avg_close > current avg_close else 0."""
     close_lookup = tech_df.set_index(["ticker", "period_id"])["avg_close"]
     out = tech_df[["ticker", "period_id", "avg_close"]].copy()
-    out["next_period_id"] = out["period_id"].apply(lambda p: _next_period_id(p, months_per))
+    out["next_period_id"] = out["period_id"].apply(next_fn)
     out["next_avg_close"] = out.apply(
         lambda r: close_lookup.get((r["ticker"], r["next_period_id"]), np.nan), axis=1
     )
@@ -250,14 +300,14 @@ def _period_split(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
 
 
 def run_for_unit(unit: str) -> List[Dict[str, Any]]:
-    months_per = PERIOD_MONTHS[unit]
+    assign_fn, next_fn = make_period_funcs(unit)
     prices = pd.read_csv(PRICES_PATH, encoding="utf-8")
     news = pd.read_csv(NEWS_PATH, encoding="utf-8")
 
-    tech = build_period_technical(prices, months_per)
-    news_agg = build_period_news(news, months_per)
+    tech = build_period_technical(prices, assign_fn)
+    news_agg = build_period_news(news, assign_fn)
     kw = build_period_keyword_features(news_agg)
-    labels = build_labels(tech, months_per)
+    labels = build_labels(tech, next_fn)
 
     # Merge: technical + labels (inner) then keyword (inner) — same as TASK 10
     tech_cols = [
@@ -299,7 +349,7 @@ def run_for_unit(unit: str) -> List[Dict[str, Any]]:
 
 def main() -> None:
     all_rows: List[Dict[str, Any]] = []
-    for unit in ("month", "2month", "quarter"):
+    for unit in ("2week", "month", "2month", "quarter"):
         all_rows.extend(run_for_unit(unit))
 
     df = pd.DataFrame(all_rows)
