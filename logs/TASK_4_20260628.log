@@ -401,3 +401,263 @@ Top 50 most frequent tokens:
 [2026-06-28 13:49:16] [TASK_4] [INFO] Loaded 10045 articles from data/news/matched/all_news_matched.csv.
 [2026-06-28 13:49:16] [TASK_4] [INFO] Loaded 23 stopwords from config/stopwords_finance.txt.
 [2026-06-28 13:49:16] [TASK_4] [INFO] URL deduplication: 10045 → 9715 (removed 330 duplicates).
+[2026-06-28 13:54:24] [TASK_4] [INFO] ============================================================
+[2026-06-28 13:54:24] [TASK_4] [INFO] START TASK_4: Text Preprocessing (clean, tokenize, deduplicate)
+[2026-06-28 13:54:24] [TASK_4] [INFO] Timestamp: 2026-06-28T13:54:24.465281
+[2026-06-28 13:54:24] [TASK_4] [INFO] ============================================================
+[2026-06-28 13:54:24] [TASK_4] [INFO] Input: data/news/matched/all_news_matched.csv (13725 rows)
+[2026-06-28 13:54:25] [TASK_4] [INFO] Starting Text Preprocessing (TASK 4)...
+[2026-06-28 13:54:25] [TASK_4] [INFO] Loaded 13720 articles from data/news/matched/all_news_matched.csv.
+[2026-06-28 13:54:25] [TASK_4] [INFO] Loaded 23 stopwords from config/stopwords_finance.txt.
+[2026-06-28 13:54:25] [TASK_4] [INFO] URL deduplication: 13720 → 13313 (removed 407 duplicates).
+[2026-06-28 13:54:38] [TASK_4] [INFO] Fuzzy title deduplication: 13313 → 11129 (removed 2184 near-duplicates, threshold=90%).
+[2026-06-28 13:54:38] [TASK_4] [INFO] Cleaning text...
+[2026-06-28 13:54:38] [TASK_4] [INFO] Tokenizing 11129 articles...
+[2026-06-28 13:54:38] [TASK_4] [INFO] Using multiprocessing for 11129 articles (threshold=10000).
+[2026-06-28 13:54:51] [TASK_4] [INFO] Removing stopwords...
+[2026-06-28 13:54:51] [TASK_4] [WARNING] Excluding 42 articles with <5 tokens:
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/kido-thau-tom-hung-vuong-plaza-202482310430645.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/duc-long-gia-lai-kien-lilama-202483144647773.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/doanh-nghiep-duoc-chay-dua-mo-rong-cong-suat-202410214323780.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/cong-ty-phuc-son-co-tong-giam-doc-moi-2024101615251538.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/quy-buon-cua-doanh-nghiep-xang-dau-20241031142636877.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/cong-ty-misa-co-tong-giam-doc-moi-2024111194455296.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/vinpearl-tro-thanh-cong-ty-dai-chung-202411168714653.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/ocb-bo-nhiem-ke-toan-truong-moi-20241210121111894.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/loi-nhuan-acv-lap-ky-luc-2024122122227430.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/vissan-co-tong-giam-doc-moi-2024122219346868.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/hagl-giai-the-nong-nghiep-kon-thup-20251910362769.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/scs-lap-ky-luc-san-luong-202511011058883.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/coteccons-sach-no-trai-phieu-202511611121510.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/nam-thang-tram-cua-doanh-nghiep-thep-202524152816964.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/loi-nhuan-thao-cam-vien-giam-manh-2025215201346295.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/bamboo-capital-thay-tong-giam-doc-202522712257395.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/ngan-hang-hdbank-hdb-hose-post365031.html
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/ngan-hang-vietcombank-vcb-hose-post365004.html
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/lpbank-bo-nhiem-pho-tong-giam-doc-20254212093134.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/shb-but-pha-tu-noi-luc-post368325.html
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/fpt-thau-tom-cong-ty-cong-nghe-duc-post368636.html
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/becamex-thay-ghe-tong-giam-doc-202562521515505.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/acb-tang-truong-ben-vung-theo-thoi-gian-post372514.html
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/lan-song-cat-giam-nhan-su-ngan-hang-202577162332162.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/doanh-nghiep-bat-dong-san-quay-lai-thi-truong-202571221541624.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/ocb-bo-nhiem-giam-doc-tai-chinh-2025711231420824.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/petrolimex-co-ceo-moi-2025720853396.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/ssi-co-tan-tong-giam-doc-202572183423438.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/det-may-tng-lai-ky-luc-2025722111918538.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/dong-ruble-tang-gia-manh-loi-bat-cap-hai-20257257654236.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/duong-day-mua-300000-the-tin-dung-202587205746398.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/co-phieu-bao-hiem-lech-nhip-post382119.html
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/co-phieu-phong-thu-phat-huy-vai-tro-post387263.html
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/thanh-khoan-suy-yeu-post387687.html
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietstock.vn/2026/04/pow-thong-bao-thay-doi-nhan-su-214-1432299.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietstock.vn/2026/05/vjc-cong-bo-thong-tin-214-1438200.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/thoi-diem-chon-loc-co-hoi-post390988.html
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietstock.vn/2026/06/ssb-thong-bao-thay-doi-nhan-su-214-1450086.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietstock.vn/2026/06/gvr-tu-cach-cong-ty-dai-chung-830-1450907.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietstock.vn/2026/06/khi-esop-tien-hoa-764-1453118.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/sacombank-doi-tru-so-chinh-202661485117806.htm
+[2026-06-28 13:54:51] [TASK_4] [WARNING]   URL: https://vietstock.vn/2026/06/stb-thong-bao-thay-doi-nhan-su-214-1457789.htm
+[2026-06-28 13:54:51] [TASK_4] [INFO] Saved 11087 processed articles to data/news/processed/all_news_processed.csv.
+[2026-06-28 13:54:51] [TASK_4] [INFO] ============================================================
+[2026-06-28 13:54:51] [TASK_4] [INFO] TEXT PREPROCESSING REPORT
+[2026-06-28 13:54:51] [TASK_4] [INFO] ============================================================
+[2026-06-28 13:54:51] [TASK_4] [INFO] Articles before deduplication : 13720
+[2026-06-28 13:54:51] [TASK_4] [INFO] Articles after deduplication  : 11129
+[2026-06-28 13:54:51] [TASK_4] [INFO] Articles in final output      : 11087
+[2026-06-28 13:54:51] [TASK_4] [INFO] Average token count per article: 22.6
+[2026-06-28 13:54:51] [TASK_4] [INFO] 
+Top 50 most frequent tokens:
+[2026-06-28 13:54:51] [TASK_4] [INFO]   hđqt                           5058
+[2026-06-28 13:54:51] [TASK_4] [INFO]   ,                              4883
+[2026-06-28 13:54:51] [TASK_4] [INFO]   về                             4326
+[2026-06-28 13:54:51] [TASK_4] [INFO]   thông_báo                      4246
+[2026-06-28 13:54:51] [TASK_4] [INFO]   cổ_phần                        4060
+[2026-06-28 13:54:51] [TASK_4] [INFO]   năm                            3938
+[2026-06-28 13:54:51] [TASK_4] [INFO]   ngân_hàng                      3715
+[2026-06-28 13:54:51] [TASK_4] [INFO]   nghị_quyết                     3685
+[2026-06-28 13:54:51] [TASK_4] [INFO]   và                             3295
+[2026-06-28 13:54:51] [TASK_4] [INFO]   của                            3268
+[2026-06-28 13:54:51] [TASK_4] [INFO]   việc                           3267
+[2026-06-28 13:54:51] [TASK_4] [INFO]   thương_mại                     2504
+[2026-06-28 13:54:51] [TASK_4] [INFO]   việt_nam                       2353
+[2026-06-28 13:54:51] [TASK_4] [INFO]   sau                            2146
+[2026-06-28 13:54:51] [TASK_4] [INFO]   tỷ                             2026
+[2026-06-28 13:54:51] [TASK_4] [INFO]   nbsp                           1880
+[2026-06-28 13:54:51] [TASK_4] [INFO]   cổ_phiếu                       1852
+[2026-06-28 13:54:51] [TASK_4] [INFO]   với                            1840
+[2026-06-28 13:54:51] [TASK_4] [INFO]   giao_dịch                      1747
+[2026-06-28 13:54:51] [TASK_4] [INFO]   như                            1689
+[2026-06-28 13:54:51] [TASK_4] [INFO]   thay_đổi                       1684
+[2026-06-28 13:54:51] [TASK_4] [INFO]   ngày                           1660
+[2026-06-28 13:54:51] [TASK_4] [INFO]   cho                            1468
+[2026-06-28 13:54:51] [TASK_4] [INFO]   tăng                           1433
+[2026-06-28 13:54:51] [TASK_4] [INFO]   thông_qua                      1428
+[2026-06-28 13:54:51] [TASK_4] [INFO]   công_bố                        1403
+[2026-06-28 13:54:51] [TASK_4] [INFO]   %                              1378
+[2026-06-28 13:54:51] [TASK_4] [INFO]   đồng                           1375
+[2026-06-28 13:54:51] [TASK_4] [INFO]   quyết_định                     1273
+[2026-06-28 13:54:51] [TASK_4] [INFO]   phát_hành                      1268
+[2026-06-28 13:54:51] [TASK_4] [INFO]   trái_phiếu                     1216
+[2026-06-28 13:54:51] [TASK_4] [INFO]   2025                           1213
+[2026-06-28 13:54:51] [TASK_4] [INFO]   trong                          1207
+[2026-06-28 13:54:51] [TASK_4] [INFO]   ng                             1119
+[2026-06-28 13:54:51] [TASK_4] [INFO]   2024                           1095
+[2026-06-28 13:54:51] [TASK_4] [INFO]   v                              1080
+[2026-06-28 13:54:51] [TASK_4] [INFO]   chi_nhánh                      1029
+[2026-06-28 13:54:51] [TASK_4] [INFO]   .                              1028
+[2026-06-28 13:54:51] [TASK_4] [INFO]   đhđcđ                          1028
+[2026-06-28 13:54:51] [TASK_4] [INFO]   2023                           1023
+[2026-06-28 13:54:51] [TASK_4] [INFO]   để                             1018
+[2026-06-28 13:54:51] [TASK_4] [INFO]   địa_điểm                       987
+[2026-06-28 13:54:51] [TASK_4] [INFO]   vốn                            982
+[2026-06-28 13:54:51] [TASK_4] [INFO]   hợp_đồng                       968
+[2026-06-28 13:54:51] [TASK_4] [INFO]   phát_triển                     963
+[2026-06-28 13:54:51] [TASK_4] [INFO]   bằng                           940
+[2026-06-28 13:54:51] [TASK_4] [INFO]   quý                            918
+[2026-06-28 13:54:51] [TASK_4] [INFO]   cổ_tức                         886
+[2026-06-28 13:54:51] [TASK_4] [INFO]   các                            885
+[2026-06-28 13:54:51] [TASK_4] [INFO]   2022                           838
+[2026-06-28 13:54:51] [TASK_4] [INFO] ============================================================
+[2026-06-28 13:54:51] [TASK_4] [INFO] ------------------------------------------------------------
+[2026-06-28 13:54:51] [TASK_4] [INFO] END TASK_4 — completed in 27.2 seconds
+[2026-06-28 13:54:51] [TASK_4] [INFO] Output: data/news/processed/all_news_processed.csv (11091 rows)
+[2026-06-28 13:54:51] [TASK_4] [INFO] ============================================================
+[2026-06-28 13:54:56] [TASK_4] [INFO] ============================================================
+[2026-06-28 13:54:56] [TASK_4] [INFO] START TASK_4: Text Preprocessing (clean, tokenize, deduplicate)
+[2026-06-28 13:54:56] [TASK_4] [INFO] Timestamp: 2026-06-28T13:54:56.636366
+[2026-06-28 13:54:56] [TASK_4] [INFO] ============================================================
+[2026-06-28 13:54:56] [TASK_4] [INFO] Input: data/news/matched/all_news_matched.csv (13725 rows)
+[2026-06-28 13:54:57] [TASK_4] [INFO] Starting Text Preprocessing (TASK 4)...
+[2026-06-28 13:54:57] [TASK_4] [INFO] Loaded 13720 articles from data/news/matched/all_news_matched.csv.
+[2026-06-28 13:54:57] [TASK_4] [INFO] Loaded 23 stopwords from config/stopwords_finance.txt.
+[2026-06-28 13:54:57] [TASK_4] [INFO] URL deduplication: 13720 → 13313 (removed 407 duplicates).
+[2026-06-28 13:55:10] [TASK_4] [INFO] Fuzzy title deduplication: 13313 → 11129 (removed 2184 near-duplicates, threshold=90%).
+[2026-06-28 13:55:10] [TASK_4] [INFO] Cleaning text...
+[2026-06-28 13:55:10] [TASK_4] [INFO] Tokenizing 11129 articles...
+[2026-06-28 13:55:10] [TASK_4] [INFO] Using multiprocessing for 11129 articles (threshold=10000).
+[2026-06-28 13:55:22] [TASK_4] [INFO] Removing stopwords...
+[2026-06-28 13:55:23] [TASK_4] [WARNING] Excluding 42 articles with <5 tokens:
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/kido-thau-tom-hung-vuong-plaza-202482310430645.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/duc-long-gia-lai-kien-lilama-202483144647773.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/doanh-nghiep-duoc-chay-dua-mo-rong-cong-suat-202410214323780.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/cong-ty-phuc-son-co-tong-giam-doc-moi-2024101615251538.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/quy-buon-cua-doanh-nghiep-xang-dau-20241031142636877.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/cong-ty-misa-co-tong-giam-doc-moi-2024111194455296.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/vinpearl-tro-thanh-cong-ty-dai-chung-202411168714653.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/ocb-bo-nhiem-ke-toan-truong-moi-20241210121111894.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/loi-nhuan-acv-lap-ky-luc-2024122122227430.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/vissan-co-tong-giam-doc-moi-2024122219346868.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/hagl-giai-the-nong-nghiep-kon-thup-20251910362769.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/scs-lap-ky-luc-san-luong-202511011058883.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/coteccons-sach-no-trai-phieu-202511611121510.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/nam-thang-tram-cua-doanh-nghiep-thep-202524152816964.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/loi-nhuan-thao-cam-vien-giam-manh-2025215201346295.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/bamboo-capital-thay-tong-giam-doc-202522712257395.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/ngan-hang-hdbank-hdb-hose-post365031.html
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/ngan-hang-vietcombank-vcb-hose-post365004.html
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/lpbank-bo-nhiem-pho-tong-giam-doc-20254212093134.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/shb-but-pha-tu-noi-luc-post368325.html
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/fpt-thau-tom-cong-ty-cong-nghe-duc-post368636.html
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/becamex-thay-ghe-tong-giam-doc-202562521515505.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/acb-tang-truong-ben-vung-theo-thoi-gian-post372514.html
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/lan-song-cat-giam-nhan-su-ngan-hang-202577162332162.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/doanh-nghiep-bat-dong-san-quay-lai-thi-truong-202571221541624.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/ocb-bo-nhiem-giam-doc-tai-chinh-2025711231420824.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/petrolimex-co-ceo-moi-2025720853396.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/ssi-co-tan-tong-giam-doc-202572183423438.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/det-may-tng-lai-ky-luc-2025722111918538.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/dong-ruble-tang-gia-manh-loi-bat-cap-hai-20257257654236.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/duong-day-mua-300000-the-tin-dung-202587205746398.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/co-phieu-bao-hiem-lech-nhip-post382119.html
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/co-phieu-phong-thu-phat-huy-vai-tro-post387263.html
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/thanh-khoan-suy-yeu-post387687.html
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietstock.vn/2026/04/pow-thong-bao-thay-doi-nhan-su-214-1432299.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietstock.vn/2026/05/vjc-cong-bo-thong-tin-214-1438200.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/thoi-diem-chon-loc-co-hoi-post390988.html
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietstock.vn/2026/06/ssb-thong-bao-thay-doi-nhan-su-214-1450086.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietstock.vn/2026/06/gvr-tu-cach-cong-ty-dai-chung-830-1450907.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietstock.vn/2026/06/khi-esop-tien-hoa-764-1453118.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietnambiz.vn/sacombank-doi-tru-so-chinh-202661485117806.htm
+[2026-06-28 13:55:23] [TASK_4] [WARNING]   URL: https://vietstock.vn/2026/06/stb-thong-bao-thay-doi-nhan-su-214-1457789.htm
+[2026-06-28 13:55:23] [TASK_4] [INFO] Saved 11087 processed articles to data/news/processed/all_news_processed.csv.
+[2026-06-28 13:55:23] [TASK_4] [INFO] ============================================================
+[2026-06-28 13:55:23] [TASK_4] [INFO] TEXT PREPROCESSING REPORT
+[2026-06-28 13:55:23] [TASK_4] [INFO] ============================================================
+[2026-06-28 13:55:23] [TASK_4] [INFO] Articles before deduplication : 13720
+[2026-06-28 13:55:23] [TASK_4] [INFO] Articles after deduplication  : 11129
+[2026-06-28 13:55:23] [TASK_4] [INFO] Articles in final output      : 11087
+[2026-06-28 13:55:23] [TASK_4] [INFO] Average token count per article: 22.6
+[2026-06-28 13:55:23] [TASK_4] [INFO] 
+Top 50 most frequent tokens:
+[2026-06-28 13:55:23] [TASK_4] [INFO]   hđqt                           5058
+[2026-06-28 13:55:23] [TASK_4] [INFO]   ,                              4883
+[2026-06-28 13:55:23] [TASK_4] [INFO]   về                             4326
+[2026-06-28 13:55:23] [TASK_4] [INFO]   thông_báo                      4246
+[2026-06-28 13:55:23] [TASK_4] [INFO]   cổ_phần                        4060
+[2026-06-28 13:55:23] [TASK_4] [INFO]   năm                            3938
+[2026-06-28 13:55:23] [TASK_4] [INFO]   ngân_hàng                      3715
+[2026-06-28 13:55:23] [TASK_4] [INFO]   nghị_quyết                     3685
+[2026-06-28 13:55:23] [TASK_4] [INFO]   và                             3295
+[2026-06-28 13:55:23] [TASK_4] [INFO]   của                            3268
+[2026-06-28 13:55:23] [TASK_4] [INFO]   việc                           3267
+[2026-06-28 13:55:23] [TASK_4] [INFO]   thương_mại                     2504
+[2026-06-28 13:55:23] [TASK_4] [INFO]   việt_nam                       2353
+[2026-06-28 13:55:23] [TASK_4] [INFO]   sau                            2146
+[2026-06-28 13:55:23] [TASK_4] [INFO]   tỷ                             2026
+[2026-06-28 13:55:23] [TASK_4] [INFO]   nbsp                           1880
+[2026-06-28 13:55:23] [TASK_4] [INFO]   cổ_phiếu                       1852
+[2026-06-28 13:55:23] [TASK_4] [INFO]   với                            1840
+[2026-06-28 13:55:23] [TASK_4] [INFO]   giao_dịch                      1747
+[2026-06-28 13:55:23] [TASK_4] [INFO]   như                            1689
+[2026-06-28 13:55:23] [TASK_4] [INFO]   thay_đổi                       1684
+[2026-06-28 13:55:23] [TASK_4] [INFO]   ngày                           1660
+[2026-06-28 13:55:23] [TASK_4] [INFO]   cho                            1468
+[2026-06-28 13:55:23] [TASK_4] [INFO]   tăng                           1433
+[2026-06-28 13:55:23] [TASK_4] [INFO]   thông_qua                      1428
+[2026-06-28 13:55:23] [TASK_4] [INFO]   công_bố                        1403
+[2026-06-28 13:55:23] [TASK_4] [INFO]   %                              1378
+[2026-06-28 13:55:23] [TASK_4] [INFO]   đồng                           1375
+[2026-06-28 13:55:23] [TASK_4] [INFO]   quyết_định                     1273
+[2026-06-28 13:55:23] [TASK_4] [INFO]   phát_hành                      1268
+[2026-06-28 13:55:23] [TASK_4] [INFO]   trái_phiếu                     1216
+[2026-06-28 13:55:23] [TASK_4] [INFO]   2025                           1213
+[2026-06-28 13:55:23] [TASK_4] [INFO]   trong                          1207
+[2026-06-28 13:55:23] [TASK_4] [INFO]   ng                             1119
+[2026-06-28 13:55:23] [TASK_4] [INFO]   2024                           1095
+[2026-06-28 13:55:23] [TASK_4] [INFO]   v                              1080
+[2026-06-28 13:55:23] [TASK_4] [INFO]   chi_nhánh                      1029
+[2026-06-28 13:55:23] [TASK_4] [INFO]   .                              1028
+[2026-06-28 13:55:23] [TASK_4] [INFO]   đhđcđ                          1028
+[2026-06-28 13:55:23] [TASK_4] [INFO]   2023                           1023
+[2026-06-28 13:55:23] [TASK_4] [INFO]   để                             1018
+[2026-06-28 13:55:23] [TASK_4] [INFO]   địa_điểm                       987
+[2026-06-28 13:55:23] [TASK_4] [INFO]   vốn                            982
+[2026-06-28 13:55:23] [TASK_4] [INFO]   hợp_đồng                       968
+[2026-06-28 13:55:23] [TASK_4] [INFO]   phát_triển                     963
+[2026-06-28 13:55:23] [TASK_4] [INFO]   bằng                           940
+[2026-06-28 13:55:23] [TASK_4] [INFO]   quý                            918
+[2026-06-28 13:55:23] [TASK_4] [INFO]   cổ_tức                         886
+[2026-06-28 13:55:23] [TASK_4] [INFO]   các                            885
+[2026-06-28 13:55:23] [TASK_4] [INFO]   2022                           838
+[2026-06-28 13:55:23] [TASK_4] [INFO] ============================================================
+[2026-06-28 13:55:23] [TASK_4] [INFO] ------------------------------------------------------------
+[2026-06-28 13:55:23] [TASK_4] [INFO] END TASK_4 — completed in 27.0 seconds
+[2026-06-28 13:55:23] [TASK_4] [INFO] Output: data/news/processed/all_news_processed.csv (11091 rows)
+[2026-06-28 13:55:23] [TASK_4] [INFO] ============================================================
+[2026-06-28 14:04:24] [TASK_4] [INFO] ============================================================
+[2026-06-28 14:04:24] [TASK_4] [INFO] START TASK_4: Text Preprocessing (clean, tokenize, deduplicate)
+[2026-06-28 14:04:24] [TASK_4] [INFO] Timestamp: 2026-06-28T14:04:24.021013
+[2026-06-28 14:04:24] [TASK_4] [INFO] ============================================================
+[2026-06-28 14:04:24] [TASK_4] [INFO] Input: data/news/matched/all_news_matched.csv (13725 rows)
+[2026-06-28 14:04:24] [TASK_4] [INFO] ------------------------------------------------------------
+[2026-06-28 14:04:24] [TASK_4] [INFO] END TASK_4 — completed in 0.0 seconds
+[2026-06-28 14:04:24] [TASK_4] [INFO] ============================================================
+[2026-06-28 14:04:24] [TASK_4] [INFO] ============================================================
+[2026-06-28 14:04:24] [TASK_4] [INFO] START TASK_4: Text Preprocessing (clean, tokenize, deduplicate)
+[2026-06-28 14:04:24] [TASK_4] [INFO] Timestamp: 2026-06-28T14:04:24.271344
+[2026-06-28 14:04:24] [TASK_4] [INFO] ============================================================
+[2026-06-28 14:04:24] [TASK_4] [INFO] Input: data/news/matched/all_news_matched.csv (13725 rows)
+[2026-06-28 14:04:24] [TASK_4] [INFO] ------------------------------------------------------------
+[2026-06-28 14:04:24] [TASK_4] [INFO] END TASK_4 — completed in 0.0 seconds
+[2026-06-28 14:04:24] [TASK_4] [INFO] ============================================================

@@ -477,3 +477,22 @@ VRE        113     4           6          4
 Tickers with <20 articles in a year:
 [2026-06-28 13:52:07] [TASK_3] [WARNING]   VRE in 2026: 18 articles
 [2026-06-28 13:52:07] [TASK_3] [INFO] ============================================================
+[2026-06-28 14:04:24] [TASK_3] [INFO] ============================================================
+[2026-06-28 14:04:24] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-28 14:04:24] [TASK_3] [INFO] Timestamp: 2026-06-28T14:04:24.017058
+[2026-06-28 14:04:24] [TASK_3] [INFO] ============================================================
+[2026-06-28 14:04:24] [TASK_3] [INFO] Input: data/news/tnck/tnck_raw.csv (1161 rows)
+[2026-06-28 14:04:24] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-28 14:04:24] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-28 14:04:24] [TASK_3] [INFO] ============================================================
+[2026-06-28 14:04:24] [TASK_3] [INFO] ============================================================
+[2026-06-28 14:04:24] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-28 14:04:24] [TASK_3] [INFO] Timestamp: 2026-06-28T14:04:24.268351
+[2026-06-28 14:04:24] [TASK_3] [INFO] ============================================================
+[2026-06-28 14:04:24] [TASK_3] [INFO] Input: data/news/tnck/tnck_raw.csv (1161 rows)
+[2026-06-28 14:04:24] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-28 14:04:24] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-28 14:04:24] [TASK_3] [INFO] ============================================================
+[2026-06-28 14:04:35] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 14:04:35] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 14:04:35] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log

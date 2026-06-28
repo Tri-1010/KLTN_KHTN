@@ -51,20 +51,28 @@ số ca bất đồng quá ít — gốc rễ là mật độ tin mỏng ở nhi
   - **Kết luận: BỎ VnEconomy.** Mọi biến thể phân trang (`/trang-2.htm`, `?page=2`, `?trang=2`, `-p2.htm`) đều trả về cùng nội dung trang 1 (overlap >70%) → không có phân trang server-side; nội dung sâu nạp bằng JS. Trang chi tiết cũng thiếu `meta article:published_time` → khó trích ngày. Chi phí dò endpoint ẩn cao, khả năng thành công thấp. Dừng lại ở 1 nguồn mới (VietnamBiz).
 
 - [ ] 5. Cập nhật entity matching nếu cần
-  - [ ] 5.1 Kiểm tra alias trong `config/entity_aliases.json` có đủ bắt tin từ nguồn mới không
-  - [ ] 5.2 Bổ sung alias còn thiếu nếu phát hiện UNKNOWN rate cao
-  - [ ] 5.3 Commit
+- [x] 5. Cập nhật entity matching nếu cần
+  - [x] 5.1 Kiểm tra alias trong `config/entity_aliases.json` có đủ bắt tin từ nguồn mới không — đủ; toàn bộ 3.598 bài VietnamBiz match được vào VN30
+  - [x] 5.2 Bổ sung alias còn thiếu — không cần (đã đăng ký vietnambiz trong NEWS_SOURCES + _load_all_news của TASK 3)
+  - [x] 5.3 Commit
 
-- [ ] 6. Chạy lại pipeline đầy đủ với nguồn mở rộng
-  - [ ] 6.1 Scrape tin tất cả nguồn cho 30 mã (chạy nền, UTF-8)
-  - [ ] 6.2 Chạy entity matching + preprocess + aggregate
-  - [ ] 6.3 So sánh corpus trước/sau: tổng bài, phân bố nguồn, coverage heatmap, số (mã, kỳ) có news_count>=5
+- [x] 6. Chạy lại pipeline đầy đủ với nguồn mở rộng
+  - [x] 6.1 Scrape tin VietnamBiz (3.598 bài, 2024-08 → 2026; trang web giới hạn phân trang sâu nên không về tới 2022)
+  - [x] 6.2 Chạy entity matching + preprocess + aggregate
+  - [x] 6.3 So sánh corpus: matched unique 9.715 → 13.313 (+37%); processed 7.492 → 11.087 (+48%)
 
-- [ ] 7. Đánh giá lại tác động lên H1
-  - [ ] 7.1 Chạy lại features + train (đơn vị quý) và experiment_period (tháng)
-  - [ ] 7.2 Chạy lại McNemar ở đơn vị tháng, so sánh p-value và số ca bất đồng trước/sau
-  - [ ] 7.3 Cập nhật `reports/H1_experiment_report.md` với kết quả nguồn mở rộng
-  - [ ] 7.4 Commit cuối
+- [x] 7. Đánh giá lại tác động lên H1
+  - [x] 7.1 Chạy lại features + train + experiment_period
+  - [x] 7.2 Chạy lại McNemar — số ca bất đồng 34 → 45, delta về −0.003, p-value = 1.000
+  - [x] 7.3 Cập nhật `reports/H1_experiment_report.md` (thêm mục 5c)
+  - [x] 7.4 Commit cuối
+
+## Kết luận cuối của plan
+
+Thêm VietnamBiz (+48% corpus) **không** củng cố H1 — "đỉnh +3.6 điểm ở đơn vị tháng" trước đây
+là dao động ngẫu nhiên (regression to the mean), biến mất khi có thêm dữ liệu. Kết luận **H1 không
+được ủng hộ** giờ vững hơn qua: nhiều ngưỡng thời gian, nhiều đơn vị thời gian, và 2 quy mô corpus.
+Đây là kết quả nghiên cứu hợp lệ và trung thực.
 
 ## Lưu ý rủi ro
 

@@ -108,7 +108,7 @@ Hai lực đối nghịch:
 
 ---
 
-## 5b. Kiểm định ý nghĩa thống kê (McNemar) — Random Forest, đơn vị tháng
+## 5b. Kiểm định ý nghĩa thống kê (McNemar) — Random Forest, đơn vị tháng (corpus ban đầu ~7.5k bài)
 
 Mức cải thiện đáng chú ý nhất là Random Forest ở đơn vị tháng (+3.6 điểm Balanced Accuracy).
 Để xác minh đây không phải dao động ngẫu nhiên, dùng **kiểm định McNemar** so sánh dự đoán của
@@ -143,23 +143,60 @@ nhiều ngưỡng/khởi tạo) để khẳng định chắc chắn.
 
 ---
 
+## 5c. Mở rộng nguồn tin tức — VietnamBiz (kiểm chứng giả thuyết "thiếu dữ liệu")
+
+Giả thuyết đặt ra: cải thiện ở đơn vị tháng chưa significant **vì thiếu dữ liệu** (chỉ 34 ca bất
+đồng). Để kiểm chứng, đã bổ sung nguồn thứ tư **VietnamBiz** (3.598 bài, giai đoạn 2024-08 → 2026),
+nâng corpus tin đã xử lý từ **7.492 → 11.087 bài (+48%)**.
+
+Phân bố nguồn sau mở rộng: CafeF 6.072, VietnamBiz 3.515, TNCK 1.114, Vietstock 386.
+
+**Kết quả delta (Config_C − Config_A) trước vs sau khi thêm VietnamBiz:**
+
+| Đơn vị | Delta trước | Delta sau |
+|---|---|---|
+| 2 tuần | +0.0005 | −0.0006 |
+| **1 tháng** | **+0.0109** | **−0.0245** |
+| 2 tháng | −0.0028 | −0.0316 |
+| Quý | −0.0156 | −0.0194 |
+
+**McNemar (Random Forest, đơn vị tháng) sau mở rộng:** số ca bất đồng tăng 34 → **45**, nhưng
+delta về gần 0 (−0.003) và **p-value = 1.000** — hoàn toàn không có ý nghĩa thống kê.
+
+### Diễn giải (quan trọng)
+
+Việc thêm dữ liệu **không** củng cố H1 — ngược lại, "lợi thế" của từ khóa ở đơn vị tháng (+1.1
+điểm trước đây) **biến mất** khi có thêm dữ liệu. Điều này cho thấy:
+
+- Mức +3.6 điểm của Random Forest ở thí nghiệm trước **đúng là dao động ngẫu nhiên** (đúng như
+  McNemar p=0.121 đã cảnh báo), không phải tín hiệu thật. Khi tăng dữ liệu, nó hồi quy về 0.
+- Kết luận H1 **"không được ủng hộ"** giờ **vững hơn**: với corpus lớn hơn và đa dạng nguồn hơn,
+  đặc trưng từ khóa vẫn không cải thiện dự báo ở mọi đơn vị thời gian.
+- Đây là minh hoạ điển hình của **regression to the mean**: cải thiện nhỏ trên mẫu ít thường tan
+  biến khi có thêm dữ liệu — một bài học phương pháp luận giá trị cho luận văn.
+
+> Lưu ý: VietnamBiz chỉ phủ 2024-08 trở đi (trang web giới hạn phân trang sâu), nên phần làm dày
+> dữ liệu tập trung vào giai đoạn gần. Dù vậy kết luận về dấu của delta không đổi.
+
+---
+
 ## 6. Kết luận tổng hợp
 
 1. **Đặc trưng kỹ thuật là nền tảng dự báo chính** (Balanced Accuracy ~0.65–0.78); đặc trưng từ
    khóa đơn lẻ gần như không có sức dự báo.
 2. **Ở đơn vị quý, H1 không được ủng hộ** — kết hợp từ khóa không cải thiện, kết luận này bền qua
    nhiều ngưỡng thời gian.
-3. **Giá trị dự báo của tin tức phụ thuộc phi tuyến vào đơn vị thời gian**, đạt cực đại quanh
-   **chu kỳ 1 tháng** (+1.1 điểm Balanced Accuracy trung bình; Random Forest +3.6 điểm). Tuy nhiên
-   kiểm định McNemar cho thấy mức cải thiện này **chưa đạt ý nghĩa thống kê** (p = 0.121 > 0.05) —
-   có hướng tích cực nhưng bằng chứng còn yếu.
-4. Đây là đóng góp khoa học chính: thay vì kết luận "tin tức vô dụng", nghiên cứu chỉ ra **điều kiện**
-   để tin tức trở nên hữu ích — phản ánh sự đánh đổi giữa độ tươi thông tin và mật độ dữ liệu.
+3. **Tín hiệu "đỉnh ở 1 tháng" (+3.6 điểm) là dao động ngẫu nhiên, không phải tín hiệu thật.**
+   McNemar đã cảnh báo (p=0.121); khi mở rộng corpus +48% (thêm VietnamBiz), mức cải thiện này biến
+   mất (delta về −0.024, p=1.000). Đây là minh hoạ regression to the mean.
+4. **Kết luận cuối: H1 không được ủng hộ** một cách nhất quán và vững chắc qua nhiều ngưỡng thời
+   gian, nhiều đơn vị thời gian, và hai quy mô corpus khác nhau. Đặc trưng tần suất từ khóa tin tức
+   (theo cách biểu diễn hiện tại) không cải thiện dự báo xu hướng giá VN30.
 
 ### Hướng nghiên cứu tiếp theo (gợi ý)
-- Kiểm định ý nghĩa thống kê (ví dụ McNemar) cho mức +3.6 điểm của Random Forest ở đơn vị tháng.
 - Biểu diễn tin tức tinh vi hơn tần suất từ khóa (embedding / mô hình ngôn ngữ), xử lý phủ định.
 - Mô hình hóa độ trễ tác động của tin (event-time) thay vì gộp cố định theo lịch.
+- Bổ sung nguồn tin phủ giai đoạn 2022-2024 để cân bằng dữ liệu theo thời gian.
 
 ---
 
