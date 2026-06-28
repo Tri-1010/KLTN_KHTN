@@ -2522,21 +2522,12 @@ def scrape_kinhtechungkhoan(
             if parsed_date < start_date:
                 continue
 
-            # Fetch the article once for its real (diacritic) title.
-            title = ""
-            art = fetch_with_retry(
-                url, rate_limiter=rate_limiter, max_retries=max_retries,
-                backoff_factor=backoff_factor, timeout=timeout,
-            )
-            if art is not None:
-                soup = BeautifulSoup(art.text, "html.parser")
-                og = soup.select_one("meta[property='og:title']")
-                if og and og.get("content"):
-                    title = unescape(og["content"].strip())
-                elif soup.title:
-                    title = unescape(soup.title.get_text(strip=True))
-            if not title:
-                title = _ktck_title_from_slug(url)
+            # Title from the URL slug (no per-article fetch — keeps the run
+            # fast). The slug is romanized and contains the VN30 ticker code
+            # and/or company name, which is what entity matching (TASK 3) keys
+            # on (case-insensitive substring). Real diacritic titles would add
+            # ~4000 extra requests for no matching benefit.
+            title = _ktck_title_from_slug(url)
 
             article = {
                 "date": parsed_date,

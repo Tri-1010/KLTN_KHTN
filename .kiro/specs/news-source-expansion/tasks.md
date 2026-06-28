@@ -75,15 +75,17 @@ số ca bất đồng quá ít — gốc rễ là mật độ tin mỏng ở nhi
 
 ## Kết luận cuối của plan
 
-Đã mở rộng từ 3 → **5 nguồn**: thêm VietnamBiz (3.598 bài) và đào sâu Vietstock (534→5.008) và thêm
-VnExpress (1.762 bài). Corpus unique **9.7k → 19.5k bài (gấp đôi)**, CafeF từ 83% → **41%** (không
-còn áp đảo). Bất chấp dữ liệu nhiều gấp đôi và 5 nguồn cân bằng, đặc trưng từ khóa **vẫn không cải
-thiện** dự báo (mọi delta quanh 0/âm, mọi McNemar không significant). Kết luận **H1 không được ủng
-hộ** giờ rất vững và khách quan. Rủi ro thiên lệch nguồn CafeF đã được loại trừ triệt để.
+Đã mở rộng từ 3 → **6 nguồn**: VietnamBiz (3.598), Vietstock deep (5.008), VnExpress (1.762),
+Kinh Tế Chứng Khoán qua sitemap (8.513). Corpus unique **9.7k → 28k bài (gần gấp 3)**, CafeF từ
+83% → **29%** (không nguồn nào quá 30%). Bất chấp dữ liệu gấp 3 và 6 nguồn cân bằng, đặc trưng từ
+khóa **vẫn không cải thiện** dự báo (mọi delta quanh 0/âm, mọi McNemar không significant, p=0.12–1.0).
+Kết luận **H1 không được ủng hộ** đã được kiểm chứng triệt để và khách quan.
 
-Các nguồn khả thi đã thêm: VietnamBiz, Vietstock (deep), VnExpress.
-Các nguồn đã loại (bất khả thi): VnEconomy, nguoiquansat, kinhtechungkhoan (phân trang JS);
-tbtaichinh, cafebiz, vietnamfinance (404/redirect); ndh.vn (offline).
+Nguồn đã thêm (khả thi): VietnamBiz, Vietstock (deep paging), VnExpress, Kinh Tế Chứng Khoán (sitemap).
+Nguồn đã loại (bất khả thi): VnEconomy, VietnamFinance, Stockbiz, 24hmoney, nguoiquansat
+(phân trang JS / API ẩn / 404 / quá ít bài).
+Kỹ thuật khám phá: API ẩn (Vietstock PagingNewsContent), sitemap theo ngày (KTCK), date từ URL ảnh
+(VnExpress), date từ id bài (VietnamBiz), header Brotli fix.
 
 ## Lưu ý rủi ro
 

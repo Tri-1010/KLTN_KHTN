@@ -2,22 +2,22 @@
 McNemar test — Random Forest, 1-month granularity
 Config_A (technical) vs Config_C (technical + keyword)
 ================================================================
-Test samples: 296
-Balanced Accuracy — Config_A: 0.6856
-Balanced Accuracy — Config_C: 0.6608
-Delta (C - A): -0.0248
-Raw accuracy  — Config_A: 0.6791
-Raw accuracy  — Config_C: 0.6486
+Test samples: 297
+Balanced Accuracy — Config_A: 0.6852
+Balanced Accuracy — Config_C: 0.6688
+Delta (C - A): -0.0164
+Raw accuracy  — Config_A: 0.6835
+Raw accuracy  — Config_C: 0.6633
 
 Contingency table (correctness):
-  both correct          : 176
-  A correct, C wrong (b): 25
-  A wrong,  C correct(c): 16
-  both wrong            : 79
-  discordant (b + c)    : 41
+  both correct          : 180
+  A correct, C wrong (b): 23
+  A wrong,  C correct(c): 17
+  both wrong            : 77
+  discordant (b + c)    : 40
 
-Exact binomial McNemar : statistic=16.0000, p-value=0.2110
-Chi-square (corrected) : statistic=1.5610, p-value=0.2115
+Exact binomial McNemar : statistic=17.0000, p-value=0.4296
+Chi-square (corrected) : statistic=0.6250, p-value=0.4292
 
-p = 0.2110 >= 0.05: FAIL TO REJECT null. The observed improvement is NOT statistically significant — it is within the range expected from random variation on this test set.
+p = 0.4296 >= 0.05: FAIL TO REJECT null. The observed improvement is NOT statistically significant — it is within the range expected from random variation on this test set.
 ================================================================

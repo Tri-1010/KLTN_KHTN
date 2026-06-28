@@ -456,3 +456,87 @@
 [2026-06-28 16:14:39] [TASK_6] [INFO] ------------------------------------------------------------
 [2026-06-28 16:14:39] [TASK_6] [INFO] END TASK_6 — completed in 0.0 seconds
 [2026-06-28 16:14:39] [TASK_6] [INFO] ============================================================
+[2026-06-28 21:27:56] [TASK_6] [INFO] ============================================================
+[2026-06-28 21:27:56] [TASK_6] [INFO] START TASK_6: Label Building (binary classification labels)
+[2026-06-28 21:27:56] [TASK_6] [INFO] Timestamp: 2026-06-28T21:27:56.962981
+[2026-06-28 21:27:56] [TASK_6] [INFO] ============================================================
+[2026-06-28 21:27:56] [TASK_6] [INFO] Input: data/aggregated/master_dataset.csv (540 rows)
+[2026-06-28 21:27:56] [TASK_6] [INFO] Starting Label Builder (TASK 6)...
+[2026-06-28 21:27:57] [TASK_6] [INFO] Loaded master dataset: 540 rows from data/aggregated/master_dataset.csv
+[2026-06-28 21:27:57] [TASK_6] [INFO] Saved master with labels: 540 rows → data/aggregated/master_with_labels.csv
+[2026-06-28 21:27:57] [TASK_6] [INFO] ============================================================
+[2026-06-28 21:27:57] [TASK_6] [INFO] LABEL DISTRIBUTION ANALYSIS
+[2026-06-28 21:27:57] [TASK_6] [INFO] ============================================================
+[2026-06-28 21:27:57] [TASK_6] [INFO] Overall: label=1: 256 (50.2%), label=0: 254 (49.8%)
+[2026-06-28 21:27:57] [TASK_6] [INFO] Distribution by year:
+[2026-06-28 21:27:57] [TASK_6] [INFO]   2022: label=1: 37 (30.8%), label=0: 83 (69.2%)
+[2026-06-28 21:27:57] [TASK_6] [INFO]   2023: label=1: 73 (60.8%), label=0: 47 (39.2%)
+[2026-06-28 21:27:57] [TASK_6] [INFO]   2024: label=1: 67 (55.8%), label=0: 53 (44.2%)
+[2026-06-28 21:27:57] [TASK_6] [INFO]   2025: label=1: 71 (59.2%), label=0: 49 (40.8%)
+[2026-06-28 21:27:57] [TASK_6] [INFO]   2026: label=1: 8 (26.7%), label=0: 22 (73.3%)
+[2026-06-28 21:27:57] [TASK_6] [INFO] Distribution by sector:
+[2026-06-28 21:27:57] [TASK_6] [INFO]   Banking: label=1: 117 (52.9%), label=0: 104 (47.1%)
+[2026-06-28 21:27:57] [TASK_6] [INFO]   Consumer/Food: label=1: 25 (49.0%), label=0: 26 (51.0%)
+[2026-06-28 21:27:57] [TASK_6] [INFO]   Energy/Resources: label=1: 31 (45.6%), label=0: 37 (54.4%)
+[2026-06-28 21:27:57] [TASK_6] [INFO]   Finance/Insurance: label=1: 19 (55.9%), label=0: 15 (44.1%)
+[2026-06-28 21:27:57] [TASK_6] [INFO]   Industrial: label=1: 9 (52.9%), label=0: 8 (47.1%)
+[2026-06-28 21:27:57] [TASK_6] [INFO]   Other: label=1: 12 (35.3%), label=0: 22 (64.7%)
+[2026-06-28 21:27:57] [TASK_6] [INFO]   Real Estate: label=1: 32 (47.1%), label=0: 36 (52.9%)
+[2026-06-28 21:27:57] [TASK_6] [INFO]   Tech/Telecom: label=1: 11 (64.7%), label=0: 6 (35.3%)
+[2026-06-28 21:27:57] [TASK_6] [INFO] ============================================================
+[2026-06-28 21:27:57] [TASK_6] [INFO] Label distribution chart saved to reports/label_distribution.png
+[2026-06-28 21:27:57] [TASK_6] [INFO] TASK 6 complete.
+[2026-06-28 21:27:57] [TASK_6] [INFO] ------------------------------------------------------------
+[2026-06-28 21:27:57] [TASK_6] [INFO] END TASK_6 — completed in 0.8 seconds
+[2026-06-28 21:27:57] [TASK_6] [INFO] Output: data/aggregated/master_with_labels.csv (540 rows)
+[2026-06-28 21:27:57] [TASK_6] [INFO] ============================================================
+[2026-06-28 21:28:45] [TASK_6] [INFO] ============================================================
+[2026-06-28 21:28:45] [TASK_6] [INFO] START TASK_6: Label Building (binary classification labels)
+[2026-06-28 21:28:45] [TASK_6] [INFO] Timestamp: 2026-06-28T21:28:45.154259
+[2026-06-28 21:28:45] [TASK_6] [INFO] ============================================================
+[2026-06-28 21:28:45] [TASK_6] [INFO] Input: data/aggregated/master_dataset.csv (540 rows)
+[2026-06-28 21:28:45] [TASK_6] [INFO] Starting Label Builder (TASK 6)...
+[2026-06-28 21:28:45] [TASK_6] [INFO] Loaded master dataset: 540 rows from data/aggregated/master_dataset.csv
+[2026-06-28 21:28:45] [TASK_6] [INFO] Saved master with labels: 540 rows → data/aggregated/master_with_labels.csv
+[2026-06-28 21:28:45] [TASK_6] [INFO] ============================================================
+[2026-06-28 21:28:45] [TASK_6] [INFO] LABEL DISTRIBUTION ANALYSIS
+[2026-06-28 21:28:45] [TASK_6] [INFO] ============================================================
+[2026-06-28 21:28:45] [TASK_6] [INFO] Overall: label=1: 256 (50.2%), label=0: 254 (49.8%)
+[2026-06-28 21:28:45] [TASK_6] [INFO] Distribution by year:
+[2026-06-28 21:28:45] [TASK_6] [INFO]   2022: label=1: 37 (30.8%), label=0: 83 (69.2%)
+[2026-06-28 21:28:45] [TASK_6] [INFO]   2023: label=1: 73 (60.8%), label=0: 47 (39.2%)
+[2026-06-28 21:28:45] [TASK_6] [INFO]   2024: label=1: 67 (55.8%), label=0: 53 (44.2%)
+[2026-06-28 21:28:45] [TASK_6] [INFO]   2025: label=1: 71 (59.2%), label=0: 49 (40.8%)
+[2026-06-28 21:28:45] [TASK_6] [INFO]   2026: label=1: 8 (26.7%), label=0: 22 (73.3%)
+[2026-06-28 21:28:45] [TASK_6] [INFO] Distribution by sector:
+[2026-06-28 21:28:45] [TASK_6] [INFO]   Banking: label=1: 117 (52.9%), label=0: 104 (47.1%)
+[2026-06-28 21:28:45] [TASK_6] [INFO]   Consumer/Food: label=1: 25 (49.0%), label=0: 26 (51.0%)
+[2026-06-28 21:28:45] [TASK_6] [INFO]   Energy/Resources: label=1: 31 (45.6%), label=0: 37 (54.4%)
+[2026-06-28 21:28:45] [TASK_6] [INFO]   Finance/Insurance: label=1: 19 (55.9%), label=0: 15 (44.1%)
+[2026-06-28 21:28:45] [TASK_6] [INFO]   Industrial: label=1: 9 (52.9%), label=0: 8 (47.1%)
+[2026-06-28 21:28:45] [TASK_6] [INFO]   Other: label=1: 12 (35.3%), label=0: 22 (64.7%)
+[2026-06-28 21:28:45] [TASK_6] [INFO]   Real Estate: label=1: 32 (47.1%), label=0: 36 (52.9%)
+[2026-06-28 21:28:45] [TASK_6] [INFO]   Tech/Telecom: label=1: 11 (64.7%), label=0: 6 (35.3%)
+[2026-06-28 21:28:45] [TASK_6] [INFO] ============================================================
+[2026-06-28 21:28:45] [TASK_6] [INFO] Label distribution chart saved to reports/label_distribution.png
+[2026-06-28 21:28:45] [TASK_6] [INFO] TASK 6 complete.
+[2026-06-28 21:28:45] [TASK_6] [INFO] ------------------------------------------------------------
+[2026-06-28 21:28:45] [TASK_6] [INFO] END TASK_6 — completed in 0.6 seconds
+[2026-06-28 21:28:45] [TASK_6] [INFO] Output: data/aggregated/master_with_labels.csv (540 rows)
+[2026-06-28 21:28:45] [TASK_6] [INFO] ============================================================
+[2026-06-28 21:34:28] [TASK_6] [INFO] ============================================================
+[2026-06-28 21:34:28] [TASK_6] [INFO] START TASK_6: Label Building (binary classification labels)
+[2026-06-28 21:34:28] [TASK_6] [INFO] Timestamp: 2026-06-28T21:34:28.146598
+[2026-06-28 21:34:28] [TASK_6] [INFO] ============================================================
+[2026-06-28 21:34:28] [TASK_6] [INFO] Input: data/aggregated/master_dataset.csv (540 rows)
+[2026-06-28 21:34:28] [TASK_6] [INFO] ------------------------------------------------------------
+[2026-06-28 21:34:28] [TASK_6] [INFO] END TASK_6 — completed in 0.0 seconds
+[2026-06-28 21:34:28] [TASK_6] [INFO] ============================================================
+[2026-06-28 21:34:28] [TASK_6] [INFO] ============================================================
+[2026-06-28 21:34:28] [TASK_6] [INFO] START TASK_6: Label Building (binary classification labels)
+[2026-06-28 21:34:28] [TASK_6] [INFO] Timestamp: 2026-06-28T21:34:28.739016
+[2026-06-28 21:34:28] [TASK_6] [INFO] ============================================================
+[2026-06-28 21:34:28] [TASK_6] [INFO] Input: data/aggregated/master_dataset.csv (540 rows)
+[2026-06-28 21:34:28] [TASK_6] [INFO] ------------------------------------------------------------
+[2026-06-28 21:34:28] [TASK_6] [INFO] END TASK_6 — completed in 0.0 seconds
+[2026-06-28 21:34:28] [TASK_6] [INFO] ============================================================

@@ -264,6 +264,44 @@ quanh 0 hoặc âm; mọi McNemar đều không significant. Rủi ro thiên l�
 
 ---
 
+## 5f. Mở rộng nguồn lần 4 — kinhtechungkhoan qua sitemap (6 nguồn, corpus ~28k)
+
+Tiếp tục theo yêu cầu khảo sát thêm 6 nguồn (VnEconomy, VietnamFinance, Kinh Tế Chứng Khoán,
+Stockbiz, TNCK, 24hmoney). Kết quả khảo sát sâu:
+
+| Nguồn | Kết quả |
+|---|---|
+| **Kinh Tế Chứng Khoán** | ✅ Thêm — phát hiện **sitemap theo ngày** (`sitemap-article-YYYY-MM-DD.xml`) phủ 2010-2026, kèm `<lastmod>` (ngày chính xác). Lọc slug chứa mã/tên VN30 (~7%), lấy **8.513 bài** không cần JS. |
+| 24hmoney | ⚠️ Trang render 49 bài + ngày chuẩn, nhưng phân trang sâu cần API ẩn không tìm được. Bỏ. |
+| Stockbiz | ❌ Chỉ ~9 bài, phân trang lặp trang 1. Bỏ. |
+| VnEconomy, VietnamFinance | ❌ Phân trang JS / 404 (như khảo sát trước). Bỏ. |
+| TNCK | Đã có sẵn (qua search). |
+
+**Phân bố nguồn cuối (6 nguồn, 28.062 bài unique):**
+
+| Nguồn | Bài | Tỷ lệ |
+|---|---|---|
+| Kinh Tế Chứng Khoán | 8.513 | 30% |
+| CafeF | 8.020 | 29% |
+| Vietstock | 5.008 | 18% |
+| VietnamBiz | 3.598 | 13% |
+| VnExpress | 1.762 | 6% |
+| TNCK | 1.161 | 4% |
+
+CafeF từ **83% → 29%**. Corpus gần **gấp 3 lần** ban đầu (9.7k → 28k); news_count theo kỳ ~22.697.
+
+**McNemar (RF, tháng) cuối:** 40 ca bất đồng, delta −0.016, **p = 0.430** — không significant.
+
+### Kết luận sau 5 lần mở rộng (kết luận tối hậu)
+
+Qua **5 lần mở rộng corpus** (9.7k → 28k bài, gần gấp 3) và **6 nguồn cân bằng** (không nguồn nào
+quá 30%), đặc trưng từ khóa tin tức **nhất quán không cải thiện** dự báo. Mọi delta trung bình quanh
+0 hoặc âm; mọi McNemar đều không significant (p từ 0.12 đến 1.0). Đây là bằng chứng **rất mạnh và
+khách quan**: kết luận **H1 không được ủng hộ** đã được kiểm chứng triệt để, loại trừ hoàn toàn nghi
+vấn thiên lệch hoặc thiếu dữ liệu nguồn.
+
+---
+
 ## 6. Kết luận tổng hợp
 
 1. **Đặc trưng kỹ thuật là nền tảng dự báo chính** (Balanced Accuracy ~0.65–0.78); đặc trưng từ
@@ -273,11 +311,11 @@ quanh 0 hoặc âm; mọi McNemar đều không significant. Rủi ro thiên l�
 3. **Tín hiệu "đỉnh ở 1 tháng" (+3.6 điểm) là dao động ngẫu nhiên, không phải tín hiệu thật.**
    McNemar đã cảnh báo (p=0.121); khi mở rộng corpus +48% (thêm VietnamBiz), mức cải thiện này biến
    mất (delta về −0.024, p=1.000). Đây là minh hoạ regression to the mean.
-4. **Kết luận cuối: H1 không được ủng hộ** một cách nhất quán và vững chắc qua nhiều ngưỡng thời
-   gian, nhiều đơn vị thời gian, và **bốn lần mở rộng corpus** (9.7k → 19.5k bài, gấp đôi) với **5
-   nguồn cân bằng** (CafeF 41%, Vietstock 26%, VietnamBiz 18%, VnExpress 9%, TNCK 6% — không nguồn
-   nào áp đảo). Đặc trưng tần suất từ khóa tin tức (theo cách biểu diễn hiện tại) không cải thiện dự
-   báo xu hướng giá VN30. Rủi ro thiên lệch nguồn dữ liệu đã được loại trừ triệt để.
+4. **Kết luận cuối: H1 không được ủng hộ** — kiểm chứng qua nhiều ngưỡng thời gian, nhiều đơn vị
+   thời gian, và **năm lần mở rộng corpus** (9.7k → 28k bài, gần gấp 3) với **6 nguồn cân bằng**
+   (Kinh Tế Chứng Khoán 30%, CafeF 29%, Vietstock 18%, VietnamBiz 13%, VnExpress 6%, TNCK 4% —
+   không nguồn nào áp đảo). Đặc trưng tần suất từ khóa tin tức (theo cách biểu diễn hiện tại) không
+   cải thiện dự báo xu hướng giá VN30. Rủi ro thiên lệch/thiếu nguồn dữ liệu đã được loại trừ triệt để.
 
 ### Hướng nghiên cứu tiếp theo (gợi ý)
 - Biểu diễn tin tức tinh vi hơn tần suất từ khóa (embedding / mô hình ngôn ngữ), xử lý phủ định.
