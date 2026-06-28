@@ -108,6 +108,41 @@ Hai lực đối nghịch:
 
 ---
 
+## 5b. Kiểm định ý nghĩa thống kê (McNemar) — Random Forest, đơn vị tháng
+
+Mức cải thiện đáng chú ý nhất là Random Forest ở đơn vị tháng (+3.6 điểm Balanced Accuracy).
+Để xác minh đây không phải dao động ngẫu nhiên, dùng **kiểm định McNemar** so sánh dự đoán của
+Config A và Config C trên **cùng tập kiểm tra** (286 mẫu). McNemar chỉ xét các trường hợp hai mô
+hình **bất đồng** ý kiến.
+
+**Bảng tương quan (tính đúng/sai):**
+
+|  | C đúng | C sai |
+|---|---|---|
+| **A đúng** | 178 | 12 (b) |
+| **A sai** | 22 (c) | 74 |
+
+- Số ca bất đồng: b + c = **34** (A đúng-C sai = 12; A sai-C đúng = 22).
+- Config C "sửa đúng" 22 ca mà A sai, nhưng cũng "làm hỏng" 12 ca mà A đúng → lợi ròng chỉ 10 ca.
+
+**Kết quả kiểm định:**
+
+| Phương pháp | Statistic | p-value |
+|---|---|---|
+| Exact binomial McNemar | 12.0 | **0.1214** |
+| Chi-square (hiệu chỉnh liên tục) | 2.38 | 0.1227 |
+
+**Kết luận:** p = 0.121 > 0.05 → **không bác bỏ giả thuyết H0**. Mặc dù Config C nhỉnh hơn về điểm
+số (+3.6 điểm), sự khác biệt này **chưa đạt ý nghĩa thống kê** ở mức α = 0.05 — nó nằm trong khoảng
+dao động ngẫu nhiên có thể xảy ra trên tập kiểm tra 286 mẫu. Cần thêm dữ liệu (hoặc kiểm định trên
+nhiều ngưỡng/khởi tạo) để khẳng định chắc chắn.
+
+> Diễn giải cho luận văn: cải thiện ở đơn vị tháng là **có hướng tích cực và nhất quán về dấu**,
+> nhưng **chưa đủ mạnh để kết luận có ý nghĩa thống kê**. Đây là một kết quả trung thực — gợi ý
+> rằng tin tức *có thể* hữu ích ở khung thời gian tháng, nhưng bằng chứng hiện tại còn yếu.
+
+---
+
 ## 6. Kết luận tổng hợp
 
 1. **Đặc trưng kỹ thuật là nền tảng dự báo chính** (Balanced Accuracy ~0.65–0.78); đặc trưng từ
@@ -115,7 +150,9 @@ Hai lực đối nghịch:
 2. **Ở đơn vị quý, H1 không được ủng hộ** — kết hợp từ khóa không cải thiện, kết luận này bền qua
    nhiều ngưỡng thời gian.
 3. **Giá trị dự báo của tin tức phụ thuộc phi tuyến vào đơn vị thời gian**, đạt cực đại quanh
-   **chu kỳ 1 tháng** (+1.1 điểm Balanced Accuracy trung bình; Random Forest +3.6 điểm).
+   **chu kỳ 1 tháng** (+1.1 điểm Balanced Accuracy trung bình; Random Forest +3.6 điểm). Tuy nhiên
+   kiểm định McNemar cho thấy mức cải thiện này **chưa đạt ý nghĩa thống kê** (p = 0.121 > 0.05) —
+   có hướng tích cực nhưng bằng chứng còn yếu.
 4. Đây là đóng góp khoa học chính: thay vì kết luận "tin tức vô dụng", nghiên cứu chỉ ra **điều kiện**
    để tin tức trở nên hữu ích — phản ánh sự đánh đổi giữa độ tươi thông tin và mật độ dữ liệu.
 
@@ -133,6 +170,7 @@ Hai lực đối nghịch:
 | So sánh 3 cấu hình (quý) | `reports/model_comparison.csv` |
 | Nhiều ngưỡng thời gian | `reports/time_split_experiment.csv` |
 | Thay đổi đơn vị thời gian | `reports/period_experiment.csv` |
+| Kiểm định McNemar (RF, tháng) | `reports/mcnemar_month_rf.txt` |
 | Phân tích SHAP / tầm quan trọng đặc trưng | `reports/feature_importance.png`, `reports/shap_summary.png`, `reports/top_keywords_analysis.csv` |
 
-*Script thực nghiệm: `pipeline/experiment_time_splits.py`, `pipeline/experiment_period.py`.*
+*Script thực nghiệm: `pipeline/experiment_time_splits.py`, `pipeline/experiment_period.py`, `pipeline/experiment_mcnemar.py`.*
