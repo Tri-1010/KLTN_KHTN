@@ -1,0 +1,21 @@
+keyword,feature_column,direction_label,mean_shap,mean_abs_shap,actual_shap_direction,aligned
+tăng vốn điều lệ,kw_tăng vốn điều lệ,positive,0.2313864690052169,0.2313864690052169,positive,True
+tăng trưởng,kw_tăng trưởng,positive,-0.044084357612723085,0.13225307283816926,negative,False
+lợi nhuận giảm,kw_lợi nhuận giảm,negative,-0.06723672070063687,0.06723672070063687,negative,True
+cổ tức tiền mặt,kw_cổ tức tiền mặt,positive,-0.06723672070063687,0.06723672070063687,negative,False
+chia cổ tức,kw_chia cổ tức,positive,-0.06723672070063687,0.06723672070063687,negative,False
+lãi ròng,kw_lãi ròng,positive,-0.037807516242904356,0.054610856795306306,negative,False
+tăng trưởng,kw_norm_tăng trưởng,positive,-0.006588189429662908,0.013322783068873871,negative,False
+doanh thu tăng,kw_doanh thu tăng,positive,0.012602505414301454,0.012602505414301454,positive,True
+chia cổ tức,kw_norm_chia cổ tức,positive,-0.001372177973482384,0.001372177973482384,negative,False
+lợi nhuận giảm,kw_norm_lợi nhuận giảm,negative,-0.001372177973482384,0.001372177973482384,negative,True
+cổ tức tiền mặt,kw_norm_cổ tức tiền mặt,positive,-0.001372177973482384,0.001372177973482384,negative,False
+tăng vốn điều lệ,kw_norm_tăng vốn điều lệ,positive,0.0009076545375614288,0.0009076545375614288,positive,True
+lãi ròng,kw_norm_lãi ròng,positive,-0.00018618659891858093,0.0002327332486482262,negative,False
+tăng trưởng,tfidf_tăng trưởng,positive,-7.832007386014235e-05,9.607076214610715e-05,negative,False
+doanh thu tăng,kw_norm_doanh thu tăng,positive,3.4909987297233925e-05,3.4909987297233925e-05,positive,True
+lợi nhuận giảm,tfidf_lợi nhuận giảm,negative,-2.4593625526358206e-05,2.4593625526358206e-05,negative,True
+cổ tức tiền mặt,tfidf_cổ tức tiền mặt,positive,-1.2571082600574459e-05,1.2571082600574459e-05,negative,False
+tăng vốn điều lệ,tfidf_tăng vốn điều lệ,positive,7.266234856451244e-06,7.266234856451244e-06,positive,True
+chia cổ tức,tfidf_chia cổ tức,positive,-6.885250104271025e-06,6.885250104271025e-06,negative,False
+lãi ròng,tfidf_lãi ròng,positive,-3.821643519333568e-06,4.950592103887191e-06,negative,False

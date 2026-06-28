@@ -1,0 +1,109 @@
+[2026-06-27 22:31:45] [TASK_3] [INFO] ============================================================
+[2026-06-27 22:31:45] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-27 22:31:45] [TASK_3] [INFO] Timestamp: 2026-06-27T22:31:45.788585
+[2026-06-27 22:31:45] [TASK_3] [INFO] ============================================================
+[2026-06-27 22:31:45] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-27 22:31:45] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-27 22:31:45] [TASK_3] [INFO] ============================================================
+[2026-06-27 22:31:45] [TASK_3] [INFO] ============================================================
+[2026-06-27 22:31:45] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-27 22:31:45] [TASK_3] [INFO] Timestamp: 2026-06-27T22:31:45.821270
+[2026-06-27 22:31:45] [TASK_3] [INFO] ============================================================
+[2026-06-27 22:31:45] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-27 22:31:45] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-27 22:31:45] [TASK_3] [INFO] ============================================================
+[2026-06-27 22:31:57] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-27 22:31:57] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-27 22:31:57] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-27 22:32:14] [TASK_3] [INFO] ============================================================
+[2026-06-27 22:32:14] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-27 22:32:14] [TASK_3] [INFO] Timestamp: 2026-06-27T22:32:14.044839
+[2026-06-27 22:32:14] [TASK_3] [INFO] ============================================================
+[2026-06-27 22:32:14] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-27 22:32:14] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-27 22:32:14] [TASK_3] [INFO] ============================================================
+[2026-06-27 22:32:14] [TASK_3] [INFO] ============================================================
+[2026-06-27 22:32:14] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-27 22:32:14] [TASK_3] [INFO] Timestamp: 2026-06-27T22:32:14.072422
+[2026-06-27 22:32:14] [TASK_3] [INFO] ============================================================
+[2026-06-27 22:32:14] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-27 22:32:14] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-27 22:32:14] [TASK_3] [INFO] ============================================================
+[2026-06-27 22:32:25] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-27 22:32:25] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-27 22:32:25] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-27 23:05:46] [TASK_3] [INFO] ============================================================
+[2026-06-27 23:05:46] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-27 23:05:46] [TASK_3] [INFO] Timestamp: 2026-06-27T23:05:46.189119
+[2026-06-27 23:05:46] [TASK_3] [INFO] ============================================================
+[2026-06-27 23:05:46] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-27 23:05:46] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-27 23:05:46] [TASK_3] [INFO] ============================================================
+[2026-06-27 23:05:46] [TASK_3] [INFO] ============================================================
+[2026-06-27 23:05:46] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-27 23:05:46] [TASK_3] [INFO] Timestamp: 2026-06-27T23:05:46.226017
+[2026-06-27 23:05:46] [TASK_3] [INFO] ============================================================
+[2026-06-27 23:05:46] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-27 23:05:46] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-27 23:05:46] [TASK_3] [INFO] ============================================================
+[2026-06-27 23:05:58] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-27 23:05:58] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-27 23:05:58] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-27 23:06:10] [TASK_3] [INFO] ============================================================
+[2026-06-27 23:06:10] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-27 23:06:10] [TASK_3] [INFO] Timestamp: 2026-06-27T23:06:10.403626
+[2026-06-27 23:06:10] [TASK_3] [INFO] ============================================================
+[2026-06-27 23:06:10] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-27 23:06:10] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-27 23:06:10] [TASK_3] [INFO] ============================================================
+[2026-06-27 23:06:10] [TASK_3] [INFO] ============================================================
+[2026-06-27 23:06:10] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-27 23:06:10] [TASK_3] [INFO] Timestamp: 2026-06-27T23:06:10.431733
+[2026-06-27 23:06:10] [TASK_3] [INFO] ============================================================
+[2026-06-27 23:06:10] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-27 23:06:10] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-27 23:06:10] [TASK_3] [INFO] ============================================================
+[2026-06-27 23:06:21] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-27 23:06:21] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-27 23:06:21] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-27 23:14:00] [TASK_3] [INFO] ============================================================
+[2026-06-27 23:14:00] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-27 23:14:00] [TASK_3] [INFO] Timestamp: 2026-06-27T23:14:00.310430
+[2026-06-27 23:14:00] [TASK_3] [INFO] ============================================================
+[2026-06-27 23:14:00] [TASK_3] [INFO] Starting Entity Matching (TASK 3)...
+[2026-06-27 23:14:00] [TASK_3] [INFO] Loaded aliases for 30 tickers.
+[2026-06-27 23:14:00] [TASK_3] [WARNING] No news files found in any source directory.
+[2026-06-27 23:14:00] [TASK_3] [WARNING] No articles to match. Saving empty output.
+[2026-06-27 23:14:00] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-27 23:14:00] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-27 23:14:00] [TASK_3] [INFO] Output: data/news/matched/all_news_matched.csv (0 rows)
+[2026-06-27 23:14:00] [TASK_3] [INFO] ============================================================
+[2026-06-27 23:32:36] [TASK_3] [INFO] ============================================================
+[2026-06-27 23:32:36] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-27 23:32:36] [TASK_3] [INFO] Timestamp: 2026-06-27T23:32:36.396271
+[2026-06-27 23:32:36] [TASK_3] [INFO] ============================================================
+[2026-06-27 23:32:36] [TASK_3] [INFO] Starting Entity Matching (TASK 3)...
+[2026-06-27 23:32:36] [TASK_3] [INFO] Loaded aliases for 30 tickers.
+[2026-06-27 23:32:36] [TASK_3] [WARNING] No news files found in any source directory.
+[2026-06-27 23:32:36] [TASK_3] [WARNING] No articles to match. Saving empty output.
+[2026-06-27 23:32:36] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-27 23:32:36] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-27 23:32:36] [TASK_3] [INFO] Output: data/news/matched/all_news_matched.csv (0 rows)
+[2026-06-27 23:32:36] [TASK_3] [INFO] ============================================================
+[2026-06-27 23:44:07] [TASK_3] [INFO] ============================================================
+[2026-06-27 23:44:07] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-27 23:44:07] [TASK_3] [INFO] Timestamp: 2026-06-27T23:44:07.622983
+[2026-06-27 23:44:07] [TASK_3] [INFO] ============================================================
+[2026-06-27 23:44:07] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-27 23:44:07] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-27 23:44:07] [TASK_3] [INFO] ============================================================
+[2026-06-27 23:44:07] [TASK_3] [INFO] ============================================================
+[2026-06-27 23:44:07] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-27 23:44:07] [TASK_3] [INFO] Timestamp: 2026-06-27T23:44:07.664937
+[2026-06-27 23:44:07] [TASK_3] [INFO] ============================================================
+[2026-06-27 23:44:07] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-27 23:44:07] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-27 23:44:07] [TASK_3] [INFO] ============================================================
+[2026-06-27 23:44:20] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-27 23:44:20] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-27 23:44:20] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log

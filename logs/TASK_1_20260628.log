@@ -1,0 +1,1905 @@
+[2026-06-28 08:06:13] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:13] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 08:06:13] [TASK_1] [INFO] Timestamp: 2026-06-28T08:06:13.998512
+[2026-06-28 08:06:13] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:13] [TASK_1] [ERROR] TASK FAILED: TASK_1 after 0.0 seconds
+[2026-06-28 08:06:13] [TASK_1] [ERROR] Exception: Simulated failure
+[2026-06-28 08:06:14] [TASK_1] [ERROR] Stack trace:
+Traceback (most recent call last):
+  File "C:\Users\User\KLTN_MASTER\pipeline\run_pipeline.py", line 647, in run_pipeline
+    executor(config, task_logger, smoke_test=smoke_test)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1173, in _execute_mock_call
+    raise effect
+RuntimeError: Simulated failure
+
+[2026-06-28 08:06:14] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:14] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 08:06:14] [TASK_1] [INFO] Timestamp: 2026-06-28T08:06:14.015220
+[2026-06-28 08:06:14] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:14] [TASK_1] [ERROR] TASK FAILED: TASK_1 after 0.0 seconds
+[2026-06-28 08:06:14] [TASK_1] [ERROR] Exception: Simulated failure
+[2026-06-28 08:06:14] [TASK_1] [ERROR] Stack trace:
+Traceback (most recent call last):
+  File "C:\Users\User\KLTN_MASTER\pipeline\run_pipeline.py", line 647, in run_pipeline
+    executor(config, task_logger, smoke_test=smoke_test)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1173, in _execute_mock_call
+    raise effect
+RuntimeError: Simulated failure
+
+[2026-06-28 08:06:14] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:14] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 08:06:14] [TASK_1] [INFO] Timestamp: 2026-06-28T08:06:14.178714
+[2026-06-28 08:06:14] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:14] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:06:14] [TASK_1] [INFO] END TASK_1 — completed in 0.0 seconds
+[2026-06-28 08:06:14] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:14] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:14] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 08:06:14] [TASK_1] [INFO] Timestamp: 2026-06-28T08:06:14.232129
+[2026-06-28 08:06:14] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:14] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:06:14] [TASK_1] [INFO] END TASK_1 — completed in 0.0 seconds
+[2026-06-28 08:06:14] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:18] [TASK_1] [INFO] Validated 3/3 tickers against VN30 list.
+[2026-06-28 08:06:18] [TASK_1] [WARNING] Invalid tickers (not in VN30): INVALID — these will be skipped.
+[2026-06-28 08:06:18] [TASK_1] [INFO] Validated 2/3 tickers against VN30 list.
+[2026-06-28 08:06:18] [TASK_1] [WARNING] Invalid tickers (not in VN30): INVALID1, INVALID2 — these will be skipped.
+[2026-06-28 08:06:18] [TASK_1] [INFO] Validated 30/30 tickers against VN30 list.
+[2026-06-28 08:06:18] [TASK_1] [WARNING] [2026-06-28 08:06:18] Error fetching VNM (attempt 1/3): API down
+[2026-06-28 08:06:18] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-28 08:06:18] [TASK_1] [WARNING] [2026-06-28 08:06:18] Error fetching VNM (attempt 2/3): API down
+[2026-06-28 08:06:18] [TASK_1] [INFO] Retrying in 2s...
+[2026-06-28 08:06:18] [TASK_1] [WARNING] [2026-06-28 08:06:18] Error fetching VNM (attempt 3/3): API down
+[2026-06-28 08:06:18] [TASK_1] [ERROR] [2026-06-28 08:06:18] Failed to fetch data for VNM after 3 attempts.
+[2026-06-28 08:06:18] [TASK_1] [INFO] Fetched 2 rows for VNM (2024-01-02 to 2024-01-03).
+[2026-06-28 08:06:18] [TASK_1] [WARNING] Empty data returned for VNM (attempt 1/3).
+[2026-06-28 08:06:18] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-28 08:06:18] [TASK_1] [INFO] Fetched 1 rows for VNM (2024-01-02 to 2024-01-02).
+[2026-06-28 08:06:18] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:18] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:06:18] [TASK_1] [INFO] Tickers: 1 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:06:18] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:18] [TASK_1] [INFO] Validated 1/1 tickers against VN30 list.
+[2026-06-28 08:06:18] [TASK_1] [INFO] Processing VNM (1/1)...
+[2026-06-28 08:06:18] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-120\test_collect_prices_output_col0\prices\VNM.csv (2 rows)
+[2026-06-28 08:06:18] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-120\test_collect_prices_output_col0\prices\all_vn30_prices.csv (2 rows, 1 tickers)
+[2026-06-28 08:06:18] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:18] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:06:18] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:18] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-28 08:06:18] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 08:06:18] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:06:18] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:06:18] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:06:18] [TASK_1] [INFO] VNM     2024-01-02  2024-01-03       2
+[2026-06-28 08:06:18] [TASK_1] [WARNING] ⚠ VNM has 75.0% fewer trading days than expected (2 vs 8 expected). Check for missing data.
+[2026-06-28 08:06:18] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:06:18] [TASK_1] [INFO] Total rows: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:06:18] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:18] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:18] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:06:18] [TASK_1] [INFO] Tickers: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:06:18] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:18] [TASK_1] [INFO] Validated 2/2 tickers against VN30 list.
+[2026-06-28 08:06:18] [TASK_1] [INFO] Processing VNM (1/2)...
+[2026-06-28 08:06:18] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-120\test_individual_ticker_csv_sav0\prices\VNM.csv (1 rows)
+[2026-06-28 08:06:18] [TASK_1] [INFO] Processing FPT (2/2)...
+[2026-06-28 08:06:18] [TASK_1] [INFO] Saved FPT → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-120\test_individual_ticker_csv_sav0\prices\FPT.csv (1 rows)
+[2026-06-28 08:06:18] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-120\test_individual_ticker_csv_sav0\prices\all_vn30_prices.csv (2 rows, 2 tickers)
+[2026-06-28 08:06:18] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:18] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:06:18] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:18] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 08:06:18] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 08:06:18] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:06:18] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:06:18] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:06:18] [TASK_1] [INFO] FPT     2024-01-02  2024-01-02       1
+[2026-06-28 08:06:18] [TASK_1] [WARNING] ⚠ FPT has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:06:18] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 08:06:18] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:06:18] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:06:18] [TASK_1] [INFO] Total rows: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:06:18] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:18] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:18] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:06:18] [TASK_1] [INFO] Tickers: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:06:18] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:18] [TASK_1] [INFO] Validated 2/2 tickers against VN30 list.
+[2026-06-28 08:06:18] [TASK_1] [INFO] Processing VNM (1/2)...
+[2026-06-28 08:06:18] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-120\test_consolidated_csv_has_tick0\prices\VNM.csv (1 rows)
+[2026-06-28 08:06:19] [TASK_1] [INFO] Processing FPT (2/2)...
+[2026-06-28 08:06:19] [TASK_1] [INFO] Saved FPT → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-120\test_consolidated_csv_has_tick0\prices\FPT.csv (1 rows)
+[2026-06-28 08:06:19] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-120\test_consolidated_csv_has_tick0\prices\all_vn30_prices.csv (2 rows, 2 tickers)
+[2026-06-28 08:06:19] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:19] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:06:19] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:19] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 08:06:19] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 08:06:19] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:06:19] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:06:19] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:06:19] [TASK_1] [INFO] FPT     2024-01-02  2024-01-02       1
+[2026-06-28 08:06:19] [TASK_1] [WARNING] ⚠ FPT has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:06:19] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 08:06:19] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:06:19] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:06:19] [TASK_1] [INFO] Total rows: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:06:19] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:19] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:19] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:06:19] [TASK_1] [INFO] Tickers: 1 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:06:19] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:19] [TASK_1] [INFO] Validated 1/1 tickers against VN30 list.
+[2026-06-28 08:06:19] [TASK_1] [INFO] Processing VNM (1/1)...
+[2026-06-28 08:06:19] [TASK_1] [ERROR] [2026-06-28 08:06:19] FAILED: VNM — no data collected. Continuing with remaining tickers.
+[2026-06-28 08:06:19] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:19] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:06:19] [TASK_1] [INFO] Tickers: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:06:19] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:19] [TASK_1] [INFO] Validated 2/2 tickers against VN30 list.
+[2026-06-28 08:06:19] [TASK_1] [INFO] Processing VNM (1/2)...
+[2026-06-28 08:06:19] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-120\test_partial_failure_continues0\prices\VNM.csv (1 rows)
+[2026-06-28 08:06:19] [TASK_1] [INFO] Processing FPT (2/2)...
+[2026-06-28 08:06:19] [TASK_1] [ERROR] [2026-06-28 08:06:19] FAILED: FPT — no data collected. Continuing with remaining tickers.
+[2026-06-28 08:06:19] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-120\test_partial_failure_continues0\prices\all_vn30_prices.csv (1 rows, 1 tickers)
+[2026-06-28 08:06:19] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:19] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:06:19] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:19] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-28 08:06:19] [TASK_1] [WARNING] Failed tickers: FPT
+[2026-06-28 08:06:19] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 08:06:19] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:06:19] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:06:19] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:06:19] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 08:06:19] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:06:19] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:06:19] [TASK_1] [INFO] Total rows: 1 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:06:19] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:19] [TASK_1] [WARNING] [2026-06-28 08:06:19] Error fetching VNM (attempt 1/3): API down
+[2026-06-28 08:06:19] [TASK_1] [WARNING] [2026-06-28 08:06:19] Error fetching VNM (attempt 2/3): API down
+[2026-06-28 08:06:19] [TASK_1] [WARNING] [2026-06-28 08:06:19] Error fetching VNM (attempt 3/3): API down
+[2026-06-28 08:06:19] [TASK_1] [ERROR] [2026-06-28 08:06:19] Failed to fetch data for VNM after 3 attempts.
+[2026-06-28 08:06:19] [TASK_1] [WARNING] [2026-06-28 08:06:19] Error fetching VNM (attempt 1/3): API down
+[2026-06-28 08:06:19] [TASK_1] [WARNING] [2026-06-28 08:06:19] Error fetching VNM (attempt 2/3): API down
+[2026-06-28 08:06:19] [TASK_1] [WARNING] [2026-06-28 08:06:19] Error fetching VNM (attempt 3/3): API down
+[2026-06-28 08:06:19] [TASK_1] [ERROR] [2026-06-28 08:06:19] Failed to fetch data for VNM after 3 attempts.
+[2026-06-28 08:06:19] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:19] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:06:19] [TASK_1] [INFO] Tickers: 3 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:06:19] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:19] [TASK_1] [INFO] Validated 3/3 tickers against VN30 list.
+[2026-06-28 08:06:19] [TASK_1] [INFO] Processing VNM (1/3)...
+[2026-06-28 08:06:19] [TASK_1] [ERROR] [2026-06-28 08:06:19] FAILED: VNM — no data collected. Continuing with remaining tickers.
+[2026-06-28 08:06:20] [TASK_1] [INFO] Processing VCB (2/3)...
+[2026-06-28 08:06:20] [TASK_1] [INFO] Saved VCB → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-120\test_continues_after_ticker_fa0\prices\VCB.csv (2 rows)
+[2026-06-28 08:06:20] [TASK_1] [INFO] Processing FPT (3/3)...
+[2026-06-28 08:06:20] [TASK_1] [INFO] Saved FPT → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-120\test_continues_after_ticker_fa0\prices\FPT.csv (2 rows)
+[2026-06-28 08:06:20] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-120\test_continues_after_ticker_fa0\prices\all_vn30_prices.csv (4 rows, 2 tickers)
+[2026-06-28 08:06:20] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:20] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:06:20] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:20] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 08:06:20] [TASK_1] [WARNING] Failed tickers: VNM
+[2026-06-28 08:06:20] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 08:06:20] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:06:20] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:06:20] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:06:20] [TASK_1] [INFO] FPT     2024-01-02  2024-01-03       2
+[2026-06-28 08:06:20] [TASK_1] [WARNING] ⚠ FPT has 75.0% fewer trading days than expected (2 vs 8 expected). Check for missing data.
+[2026-06-28 08:06:20] [TASK_1] [INFO] VCB     2024-01-02  2024-01-03       2
+[2026-06-28 08:06:20] [TASK_1] [WARNING] ⚠ VCB has 75.0% fewer trading days than expected (2 vs 8 expected). Check for missing data.
+[2026-06-28 08:06:20] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:06:20] [TASK_1] [INFO] Total rows: 4 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:06:20] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:21] [TASK_1] [ERROR] [2026-06-28 08:06:21] FAILED: FPT — no data collected. Continuing with remaining tickers.
+[2026-06-28 08:06:21] [TASK_1] [WARNING] Failed tickers: FPT
+[2026-06-28 08:06:21] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:06:21] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:21] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:06:21] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:21] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 08:06:21] [TASK_1] [INFO] Expected trading days (business-day calendar): 3
+[2026-06-28 08:06:21] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:06:21] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:06:21] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:06:21] [TASK_1] [INFO] FPT     2024-01-02  2024-01-03       2
+[2026-06-28 08:06:21] [TASK_1] [WARNING] ⚠ FPT has 33.3% fewer trading days than expected (2 vs 3 expected). Check for missing data.
+[2026-06-28 08:06:21] [TASK_1] [INFO] VNM     2024-01-02  2024-01-04       3
+[2026-06-28 08:06:21] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:06:21] [TASK_1] [INFO] Total rows: 5 | Date range: 2024-01-02 to 2024-01-04
+[2026-06-28 08:06:21] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:21] [TASK_1] [WARNING] ⚠ FPT has 53.1% fewer trading days than expected (30 vs 64 expected). Check for missing data.
+[2026-06-28 08:06:21] [TASK_1] [WARNING] ⚠ VNM has 6.2% fewer trading days than expected (60 vs 64 expected). Check for missing data.
+[2026-06-28 08:06:21] [TASK_1] [WARNING] Failed tickers: FPT, VCB
+[2026-06-28 08:06:21] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:21] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:06:21] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:06:21] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-28 08:06:21] [TASK_1] [INFO] Expected trading days (business-day calendar): 4
+[2026-06-28 08:06:21] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:06:21] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:06:21] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:06:21] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 08:06:21] [TASK_1] [WARNING] ⚠ VNM has 75.0% fewer trading days than expected (1 vs 4 expected). Check for missing data.
+[2026-06-28 08:06:21] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:06:21] [TASK_1] [INFO] Total rows: 1 | Date range: 2024-01-02 to 2024-01-05
+[2026-06-28 08:06:21] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:16:32] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:16:32] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 08:16:32] [TASK_1] [INFO] Timestamp: 2026-06-28T08:16:32.649025
+[2026-06-28 08:16:32] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:16:36] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:16:36] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:16:36] [TASK_1] [INFO] Tickers: 3 | Date range: 2022-01-01 to 2022-12-31
+[2026-06-28 08:16:36] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:16:36] [TASK_1] [INFO] Validated 3/3 tickers against VN30 list.
+[2026-06-28 08:16:36] [TASK_1] [INFO] Processing VNM (1/3)...
+[2026-06-28 08:16:37] [TASK_1] [INFO] Fetched 261 rows for VNM (2021-12-16 to 2022-12-30).
+[2026-06-28 08:16:37] [TASK_1] [INFO] Saved VNM → data/prices\VNM.csv (261 rows)
+[2026-06-28 08:16:37] [TASK_1] [INFO] Processing VCB (2/3)...
+[2026-06-28 08:16:38] [TASK_1] [INFO] Fetched 261 rows for VCB (2021-12-16 to 2022-12-30).
+[2026-06-28 08:16:38] [TASK_1] [INFO] Saved VCB → data/prices\VCB.csv (261 rows)
+[2026-06-28 08:16:38] [TASK_1] [INFO] Processing FPT (3/3)...
+[2026-06-28 08:16:39] [TASK_1] [INFO] Fetched 261 rows for FPT (2021-12-16 to 2022-12-30).
+[2026-06-28 08:16:39] [TASK_1] [INFO] Saved FPT → data/prices\FPT.csv (261 rows)
+[2026-06-28 08:16:39] [TASK_1] [INFO] Saved consolidated file → data/prices\all_vn30_prices.csv (783 rows, 3 tickers)
+[2026-06-28 08:16:39] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:16:39] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:16:39] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:16:39] [TASK_1] [INFO] Successfully collected: 3 tickers
+[2026-06-28 08:16:39] [TASK_1] [INFO] Expected trading days (business-day calendar): 260
+[2026-06-28 08:16:39] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:16:39] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:16:39] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:16:39] [TASK_1] [INFO] FPT     2021-12-16  2022-12-30     261
+[2026-06-28 08:16:39] [TASK_1] [INFO] VCB     2021-12-16  2022-12-30     261
+[2026-06-28 08:16:39] [TASK_1] [INFO] VNM     2021-12-16  2022-12-30     261
+[2026-06-28 08:16:39] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:16:39] [TASK_1] [INFO] Total rows: 783 | Date range: 2022-01-01 to 2022-12-31
+[2026-06-28 08:16:39] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:16:39] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:16:39] [TASK_1] [INFO] END TASK_1 — completed in 6.5 seconds
+[2026-06-28 08:16:39] [TASK_1] [INFO] Output: data/prices/all_vn30_prices.csv (783 rows)
+[2026-06-28 08:16:39] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:41] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:41] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 08:32:41] [TASK_1] [INFO] Timestamp: 2026-06-28T08:32:41.553261
+[2026-06-28 08:32:41] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:41] [TASK_1] [ERROR] TASK FAILED: TASK_1 after 0.0 seconds
+[2026-06-28 08:32:41] [TASK_1] [ERROR] Exception: Simulated failure
+[2026-06-28 08:32:41] [TASK_1] [ERROR] Stack trace:
+Traceback (most recent call last):
+  File "C:\Users\User\KLTN_MASTER\pipeline\run_pipeline.py", line 647, in run_pipeline
+    executor(config, task_logger, smoke_test=smoke_test)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1173, in _execute_mock_call
+    raise effect
+RuntimeError: Simulated failure
+
+[2026-06-28 08:32:41] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:41] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 08:32:41] [TASK_1] [INFO] Timestamp: 2026-06-28T08:32:41.569252
+[2026-06-28 08:32:41] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:41] [TASK_1] [ERROR] TASK FAILED: TASK_1 after 0.0 seconds
+[2026-06-28 08:32:41] [TASK_1] [ERROR] Exception: Simulated failure
+[2026-06-28 08:32:41] [TASK_1] [ERROR] Stack trace:
+Traceback (most recent call last):
+  File "C:\Users\User\KLTN_MASTER\pipeline\run_pipeline.py", line 647, in run_pipeline
+    executor(config, task_logger, smoke_test=smoke_test)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1173, in _execute_mock_call
+    raise effect
+RuntimeError: Simulated failure
+
+[2026-06-28 08:32:41] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:41] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 08:32:41] [TASK_1] [INFO] Timestamp: 2026-06-28T08:32:41.704634
+[2026-06-28 08:32:41] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:41] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:32:41] [TASK_1] [INFO] END TASK_1 — completed in 0.0 seconds
+[2026-06-28 08:32:41] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:41] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:41] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 08:32:41] [TASK_1] [INFO] Timestamp: 2026-06-28T08:32:41.748073
+[2026-06-28 08:32:41] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:41] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:32:41] [TASK_1] [INFO] END TASK_1 — completed in 0.0 seconds
+[2026-06-28 08:32:41] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:46] [TASK_1] [INFO] Validated 3/3 tickers against VN30 list.
+[2026-06-28 08:32:46] [TASK_1] [WARNING] Invalid tickers (not in VN30): INVALID — these will be skipped.
+[2026-06-28 08:32:46] [TASK_1] [INFO] Validated 2/3 tickers against VN30 list.
+[2026-06-28 08:32:46] [TASK_1] [WARNING] Invalid tickers (not in VN30): INVALID1, INVALID2 — these will be skipped.
+[2026-06-28 08:32:46] [TASK_1] [INFO] Validated 30/30 tickers against VN30 list.
+[2026-06-28 08:32:46] [TASK_1] [WARNING] [2026-06-28 08:32:46] Error fetching VNM (attempt 1/3): API down
+[2026-06-28 08:32:46] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-28 08:32:46] [TASK_1] [WARNING] [2026-06-28 08:32:46] Error fetching VNM (attempt 2/3): API down
+[2026-06-28 08:32:46] [TASK_1] [INFO] Retrying in 2s...
+[2026-06-28 08:32:46] [TASK_1] [WARNING] [2026-06-28 08:32:46] Error fetching VNM (attempt 3/3): API down
+[2026-06-28 08:32:46] [TASK_1] [ERROR] [2026-06-28 08:32:46] Failed to fetch data for VNM after 3 attempts.
+[2026-06-28 08:32:46] [TASK_1] [INFO] Fetched 2 rows for VNM (2024-01-02 to 2024-01-03).
+[2026-06-28 08:32:46] [TASK_1] [WARNING] Empty data returned for VNM (attempt 1/3).
+[2026-06-28 08:32:46] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-28 08:32:46] [TASK_1] [INFO] Fetched 1 rows for VNM (2024-01-02 to 2024-01-02).
+[2026-06-28 08:32:46] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:46] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:32:46] [TASK_1] [INFO] Tickers: 1 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:32:46] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:46] [TASK_1] [INFO] Validated 1/1 tickers against VN30 list.
+[2026-06-28 08:32:46] [TASK_1] [INFO] Processing VNM (1/1)...
+[2026-06-28 08:32:46] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-122\test_collect_prices_output_col0\prices\VNM.csv (2 rows)
+[2026-06-28 08:32:46] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-122\test_collect_prices_output_col0\prices\all_vn30_prices.csv (2 rows, 1 tickers)
+[2026-06-28 08:32:46] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:46] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:32:46] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:46] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-28 08:32:46] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 08:32:46] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:32:46] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:32:46] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:32:46] [TASK_1] [INFO] VNM     2024-01-02  2024-01-03       2
+[2026-06-28 08:32:46] [TASK_1] [WARNING] ⚠ VNM has 75.0% fewer trading days than expected (2 vs 8 expected). Check for missing data.
+[2026-06-28 08:32:46] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:32:46] [TASK_1] [INFO] Total rows: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:32:46] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:46] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:46] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:32:46] [TASK_1] [INFO] Tickers: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:32:46] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:46] [TASK_1] [INFO] Validated 2/2 tickers against VN30 list.
+[2026-06-28 08:32:46] [TASK_1] [INFO] Processing VNM (1/2)...
+[2026-06-28 08:32:46] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-122\test_individual_ticker_csv_sav0\prices\VNM.csv (1 rows)
+[2026-06-28 08:32:47] [TASK_1] [INFO] Processing FPT (2/2)...
+[2026-06-28 08:32:47] [TASK_1] [INFO] Saved FPT → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-122\test_individual_ticker_csv_sav0\prices\FPT.csv (1 rows)
+[2026-06-28 08:32:47] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-122\test_individual_ticker_csv_sav0\prices\all_vn30_prices.csv (2 rows, 2 tickers)
+[2026-06-28 08:32:47] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:47] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:32:47] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:47] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 08:32:47] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 08:32:47] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:32:47] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:32:47] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:32:47] [TASK_1] [INFO] FPT     2024-01-02  2024-01-02       1
+[2026-06-28 08:32:47] [TASK_1] [WARNING] ⚠ FPT has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:32:47] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 08:32:47] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:32:47] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:32:47] [TASK_1] [INFO] Total rows: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:32:47] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:47] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:47] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:32:47] [TASK_1] [INFO] Tickers: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:32:47] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:47] [TASK_1] [INFO] Validated 2/2 tickers against VN30 list.
+[2026-06-28 08:32:47] [TASK_1] [INFO] Processing VNM (1/2)...
+[2026-06-28 08:32:47] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-122\test_consolidated_csv_has_tick0\prices\VNM.csv (1 rows)
+[2026-06-28 08:32:47] [TASK_1] [INFO] Processing FPT (2/2)...
+[2026-06-28 08:32:47] [TASK_1] [INFO] Saved FPT → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-122\test_consolidated_csv_has_tick0\prices\FPT.csv (1 rows)
+[2026-06-28 08:32:47] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-122\test_consolidated_csv_has_tick0\prices\all_vn30_prices.csv (2 rows, 2 tickers)
+[2026-06-28 08:32:47] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:47] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:32:47] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:47] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 08:32:47] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 08:32:47] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:32:47] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:32:47] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:32:47] [TASK_1] [INFO] FPT     2024-01-02  2024-01-02       1
+[2026-06-28 08:32:47] [TASK_1] [WARNING] ⚠ FPT has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:32:47] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 08:32:47] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:32:47] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:32:47] [TASK_1] [INFO] Total rows: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:32:47] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:47] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:47] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:32:47] [TASK_1] [INFO] Tickers: 1 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:32:47] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:47] [TASK_1] [INFO] Validated 1/1 tickers against VN30 list.
+[2026-06-28 08:32:47] [TASK_1] [INFO] Processing VNM (1/1)...
+[2026-06-28 08:32:47] [TASK_1] [ERROR] [2026-06-28 08:32:47] FAILED: VNM — no data collected. Continuing with remaining tickers.
+[2026-06-28 08:32:47] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:47] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:32:47] [TASK_1] [INFO] Tickers: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:32:47] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:47] [TASK_1] [INFO] Validated 2/2 tickers against VN30 list.
+[2026-06-28 08:32:47] [TASK_1] [INFO] Processing VNM (1/2)...
+[2026-06-28 08:32:47] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-122\test_partial_failure_continues0\prices\VNM.csv (1 rows)
+[2026-06-28 08:32:48] [TASK_1] [INFO] Processing FPT (2/2)...
+[2026-06-28 08:32:48] [TASK_1] [ERROR] [2026-06-28 08:32:48] FAILED: FPT — no data collected. Continuing with remaining tickers.
+[2026-06-28 08:32:48] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-122\test_partial_failure_continues0\prices\all_vn30_prices.csv (1 rows, 1 tickers)
+[2026-06-28 08:32:48] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:48] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:32:48] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:48] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-28 08:32:48] [TASK_1] [WARNING] Failed tickers: FPT
+[2026-06-28 08:32:48] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 08:32:48] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:32:48] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:32:48] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:32:48] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 08:32:48] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:32:48] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:32:48] [TASK_1] [INFO] Total rows: 1 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:32:48] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:48] [TASK_1] [WARNING] [2026-06-28 08:32:48] Error fetching VNM (attempt 1/3): API down
+[2026-06-28 08:32:48] [TASK_1] [WARNING] [2026-06-28 08:32:48] Error fetching VNM (attempt 2/3): API down
+[2026-06-28 08:32:48] [TASK_1] [WARNING] [2026-06-28 08:32:48] Error fetching VNM (attempt 3/3): API down
+[2026-06-28 08:32:48] [TASK_1] [ERROR] [2026-06-28 08:32:48] Failed to fetch data for VNM after 3 attempts.
+[2026-06-28 08:32:48] [TASK_1] [WARNING] [2026-06-28 08:32:48] Error fetching VNM (attempt 1/3): API down
+[2026-06-28 08:32:48] [TASK_1] [WARNING] [2026-06-28 08:32:48] Error fetching VNM (attempt 2/3): API down
+[2026-06-28 08:32:48] [TASK_1] [WARNING] [2026-06-28 08:32:48] Error fetching VNM (attempt 3/3): API down
+[2026-06-28 08:32:48] [TASK_1] [ERROR] [2026-06-28 08:32:48] Failed to fetch data for VNM after 3 attempts.
+[2026-06-28 08:32:48] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:48] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:32:48] [TASK_1] [INFO] Tickers: 3 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:32:48] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:48] [TASK_1] [INFO] Validated 3/3 tickers against VN30 list.
+[2026-06-28 08:32:48] [TASK_1] [INFO] Processing VNM (1/3)...
+[2026-06-28 08:32:48] [TASK_1] [ERROR] [2026-06-28 08:32:48] FAILED: VNM — no data collected. Continuing with remaining tickers.
+[2026-06-28 08:32:48] [TASK_1] [INFO] Processing VCB (2/3)...
+[2026-06-28 08:32:48] [TASK_1] [INFO] Saved VCB → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-122\test_continues_after_ticker_fa0\prices\VCB.csv (2 rows)
+[2026-06-28 08:32:49] [TASK_1] [INFO] Processing FPT (3/3)...
+[2026-06-28 08:32:49] [TASK_1] [INFO] Saved FPT → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-122\test_continues_after_ticker_fa0\prices\FPT.csv (2 rows)
+[2026-06-28 08:32:49] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-122\test_continues_after_ticker_fa0\prices\all_vn30_prices.csv (4 rows, 2 tickers)
+[2026-06-28 08:32:49] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:49] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:32:49] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:49] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 08:32:49] [TASK_1] [WARNING] Failed tickers: VNM
+[2026-06-28 08:32:49] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 08:32:49] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:32:49] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:32:49] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:32:49] [TASK_1] [INFO] FPT     2024-01-02  2024-01-03       2
+[2026-06-28 08:32:49] [TASK_1] [WARNING] ⚠ FPT has 75.0% fewer trading days than expected (2 vs 8 expected). Check for missing data.
+[2026-06-28 08:32:49] [TASK_1] [INFO] VCB     2024-01-02  2024-01-03       2
+[2026-06-28 08:32:49] [TASK_1] [WARNING] ⚠ VCB has 75.0% fewer trading days than expected (2 vs 8 expected). Check for missing data.
+[2026-06-28 08:32:49] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:32:49] [TASK_1] [INFO] Total rows: 4 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:32:49] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:49] [TASK_1] [ERROR] [2026-06-28 08:32:49] FAILED: FPT — no data collected. Continuing with remaining tickers.
+[2026-06-28 08:32:49] [TASK_1] [WARNING] Failed tickers: FPT
+[2026-06-28 08:32:49] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:32:49] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:49] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:32:49] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:49] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 08:32:49] [TASK_1] [INFO] Expected trading days (business-day calendar): 3
+[2026-06-28 08:32:49] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:32:49] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:32:49] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:32:49] [TASK_1] [INFO] FPT     2024-01-02  2024-01-03       2
+[2026-06-28 08:32:49] [TASK_1] [WARNING] ⚠ FPT has 33.3% fewer trading days than expected (2 vs 3 expected). Check for missing data.
+[2026-06-28 08:32:49] [TASK_1] [INFO] VNM     2024-01-02  2024-01-04       3
+[2026-06-28 08:32:49] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:32:49] [TASK_1] [INFO] Total rows: 5 | Date range: 2024-01-02 to 2024-01-04
+[2026-06-28 08:32:49] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:49] [TASK_1] [WARNING] ⚠ FPT has 53.1% fewer trading days than expected (30 vs 64 expected). Check for missing data.
+[2026-06-28 08:32:49] [TASK_1] [WARNING] ⚠ VNM has 6.2% fewer trading days than expected (60 vs 64 expected). Check for missing data.
+[2026-06-28 08:32:49] [TASK_1] [WARNING] Failed tickers: FPT, VCB
+[2026-06-28 08:32:49] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:49] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:32:49] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:32:49] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-28 08:32:49] [TASK_1] [INFO] Expected trading days (business-day calendar): 4
+[2026-06-28 08:32:49] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:32:49] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:32:49] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:32:49] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 08:32:49] [TASK_1] [WARNING] ⚠ VNM has 75.0% fewer trading days than expected (1 vs 4 expected). Check for missing data.
+[2026-06-28 08:32:49] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:32:49] [TASK_1] [INFO] Total rows: 1 | Date range: 2024-01-02 to 2024-01-05
+[2026-06-28 08:32:49] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:51] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:51] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 08:33:51] [TASK_1] [INFO] Timestamp: 2026-06-28T08:33:51.275532
+[2026-06-28 08:33:51] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:51] [TASK_1] [ERROR] TASK FAILED: TASK_1 after 0.0 seconds
+[2026-06-28 08:33:51] [TASK_1] [ERROR] Exception: Simulated failure
+[2026-06-28 08:33:51] [TASK_1] [ERROR] Stack trace:
+Traceback (most recent call last):
+  File "C:\Users\User\KLTN_MASTER\pipeline\run_pipeline.py", line 647, in run_pipeline
+    executor(config, task_logger, smoke_test=smoke_test)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1173, in _execute_mock_call
+    raise effect
+RuntimeError: Simulated failure
+
+[2026-06-28 08:33:51] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:51] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 08:33:51] [TASK_1] [INFO] Timestamp: 2026-06-28T08:33:51.284381
+[2026-06-28 08:33:51] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:51] [TASK_1] [ERROR] TASK FAILED: TASK_1 after 0.0 seconds
+[2026-06-28 08:33:51] [TASK_1] [ERROR] Exception: Simulated failure
+[2026-06-28 08:33:51] [TASK_1] [ERROR] Stack trace:
+Traceback (most recent call last):
+  File "C:\Users\User\KLTN_MASTER\pipeline\run_pipeline.py", line 647, in run_pipeline
+    executor(config, task_logger, smoke_test=smoke_test)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1173, in _execute_mock_call
+    raise effect
+RuntimeError: Simulated failure
+
+[2026-06-28 08:33:51] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:51] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 08:33:51] [TASK_1] [INFO] Timestamp: 2026-06-28T08:33:51.395323
+[2026-06-28 08:33:51] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:51] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:33:51] [TASK_1] [INFO] END TASK_1 — completed in 0.0 seconds
+[2026-06-28 08:33:51] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:51] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:51] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 08:33:51] [TASK_1] [INFO] Timestamp: 2026-06-28T08:33:51.427188
+[2026-06-28 08:33:51] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:51] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:33:51] [TASK_1] [INFO] END TASK_1 — completed in 0.0 seconds
+[2026-06-28 08:33:51] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:56] [TASK_1] [INFO] Validated 3/3 tickers against VN30 list.
+[2026-06-28 08:33:56] [TASK_1] [WARNING] Invalid tickers (not in VN30): INVALID — these will be skipped.
+[2026-06-28 08:33:56] [TASK_1] [INFO] Validated 2/3 tickers against VN30 list.
+[2026-06-28 08:33:56] [TASK_1] [WARNING] Invalid tickers (not in VN30): INVALID1, INVALID2 — these will be skipped.
+[2026-06-28 08:33:56] [TASK_1] [INFO] Validated 30/30 tickers against VN30 list.
+[2026-06-28 08:33:56] [TASK_1] [WARNING] [2026-06-28 08:33:56] Error fetching VNM (attempt 1/3): API down
+[2026-06-28 08:33:56] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-28 08:33:56] [TASK_1] [WARNING] [2026-06-28 08:33:56] Error fetching VNM (attempt 2/3): API down
+[2026-06-28 08:33:56] [TASK_1] [INFO] Retrying in 2s...
+[2026-06-28 08:33:56] [TASK_1] [WARNING] [2026-06-28 08:33:56] Error fetching VNM (attempt 3/3): API down
+[2026-06-28 08:33:56] [TASK_1] [ERROR] [2026-06-28 08:33:56] Failed to fetch data for VNM after 3 attempts.
+[2026-06-28 08:33:56] [TASK_1] [INFO] Fetched 2 rows for VNM (2024-01-02 to 2024-01-03).
+[2026-06-28 08:33:56] [TASK_1] [WARNING] Empty data returned for VNM (attempt 1/3).
+[2026-06-28 08:33:56] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-28 08:33:56] [TASK_1] [INFO] Fetched 1 rows for VNM (2024-01-02 to 2024-01-02).
+[2026-06-28 08:33:56] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:56] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:33:56] [TASK_1] [INFO] Tickers: 1 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:33:56] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:56] [TASK_1] [INFO] Validated 1/1 tickers against VN30 list.
+[2026-06-28 08:33:56] [TASK_1] [INFO] Processing VNM (1/1)...
+[2026-06-28 08:33:56] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-123\test_collect_prices_output_col0\prices\VNM.csv (2 rows)
+[2026-06-28 08:33:56] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-123\test_collect_prices_output_col0\prices\all_vn30_prices.csv (2 rows, 1 tickers)
+[2026-06-28 08:33:56] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:56] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:33:56] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:56] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-28 08:33:56] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 08:33:56] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:33:56] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:33:56] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:33:56] [TASK_1] [INFO] VNM     2024-01-02  2024-01-03       2
+[2026-06-28 08:33:56] [TASK_1] [WARNING] ⚠ VNM has 75.0% fewer trading days than expected (2 vs 8 expected). Check for missing data.
+[2026-06-28 08:33:56] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:33:56] [TASK_1] [INFO] Total rows: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:33:56] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:56] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:56] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:33:56] [TASK_1] [INFO] Tickers: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:33:56] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:56] [TASK_1] [INFO] Validated 2/2 tickers against VN30 list.
+[2026-06-28 08:33:56] [TASK_1] [INFO] Processing VNM (1/2)...
+[2026-06-28 08:33:56] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-123\test_individual_ticker_csv_sav0\prices\VNM.csv (1 rows)
+[2026-06-28 08:33:56] [TASK_1] [INFO] Processing FPT (2/2)...
+[2026-06-28 08:33:56] [TASK_1] [INFO] Saved FPT → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-123\test_individual_ticker_csv_sav0\prices\FPT.csv (1 rows)
+[2026-06-28 08:33:56] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-123\test_individual_ticker_csv_sav0\prices\all_vn30_prices.csv (2 rows, 2 tickers)
+[2026-06-28 08:33:56] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:56] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:33:56] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:56] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 08:33:56] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 08:33:56] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:33:56] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:33:56] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:33:56] [TASK_1] [INFO] FPT     2024-01-02  2024-01-02       1
+[2026-06-28 08:33:56] [TASK_1] [WARNING] ⚠ FPT has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:33:56] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 08:33:56] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:33:56] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:33:56] [TASK_1] [INFO] Total rows: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:33:56] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:56] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:56] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:33:56] [TASK_1] [INFO] Tickers: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:33:56] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:56] [TASK_1] [INFO] Validated 2/2 tickers against VN30 list.
+[2026-06-28 08:33:56] [TASK_1] [INFO] Processing VNM (1/2)...
+[2026-06-28 08:33:56] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-123\test_consolidated_csv_has_tick0\prices\VNM.csv (1 rows)
+[2026-06-28 08:33:57] [TASK_1] [INFO] Processing FPT (2/2)...
+[2026-06-28 08:33:57] [TASK_1] [INFO] Saved FPT → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-123\test_consolidated_csv_has_tick0\prices\FPT.csv (1 rows)
+[2026-06-28 08:33:57] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-123\test_consolidated_csv_has_tick0\prices\all_vn30_prices.csv (2 rows, 2 tickers)
+[2026-06-28 08:33:57] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:57] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:33:57] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:57] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 08:33:57] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 08:33:57] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:33:57] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:33:57] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:33:57] [TASK_1] [INFO] FPT     2024-01-02  2024-01-02       1
+[2026-06-28 08:33:57] [TASK_1] [WARNING] ⚠ FPT has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:33:57] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 08:33:57] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:33:57] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:33:57] [TASK_1] [INFO] Total rows: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:33:57] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:57] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:57] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:33:57] [TASK_1] [INFO] Tickers: 1 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:33:57] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:57] [TASK_1] [INFO] Validated 1/1 tickers against VN30 list.
+[2026-06-28 08:33:57] [TASK_1] [INFO] Processing VNM (1/1)...
+[2026-06-28 08:33:57] [TASK_1] [ERROR] [2026-06-28 08:33:57] FAILED: VNM — no data collected. Continuing with remaining tickers.
+[2026-06-28 08:33:57] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:57] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:33:57] [TASK_1] [INFO] Tickers: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:33:57] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:57] [TASK_1] [INFO] Validated 2/2 tickers against VN30 list.
+[2026-06-28 08:33:57] [TASK_1] [INFO] Processing VNM (1/2)...
+[2026-06-28 08:33:57] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-123\test_partial_failure_continues0\prices\VNM.csv (1 rows)
+[2026-06-28 08:33:57] [TASK_1] [INFO] Processing FPT (2/2)...
+[2026-06-28 08:33:57] [TASK_1] [ERROR] [2026-06-28 08:33:57] FAILED: FPT — no data collected. Continuing with remaining tickers.
+[2026-06-28 08:33:57] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-123\test_partial_failure_continues0\prices\all_vn30_prices.csv (1 rows, 1 tickers)
+[2026-06-28 08:33:57] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:57] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:33:57] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:57] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-28 08:33:57] [TASK_1] [WARNING] Failed tickers: FPT
+[2026-06-28 08:33:57] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 08:33:57] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:33:57] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:33:57] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:33:57] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 08:33:57] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:33:57] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:33:57] [TASK_1] [INFO] Total rows: 1 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:33:57] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:57] [TASK_1] [WARNING] [2026-06-28 08:33:57] Error fetching VNM (attempt 1/3): API down
+[2026-06-28 08:33:57] [TASK_1] [WARNING] [2026-06-28 08:33:57] Error fetching VNM (attempt 2/3): API down
+[2026-06-28 08:33:57] [TASK_1] [WARNING] [2026-06-28 08:33:57] Error fetching VNM (attempt 3/3): API down
+[2026-06-28 08:33:57] [TASK_1] [ERROR] [2026-06-28 08:33:57] Failed to fetch data for VNM after 3 attempts.
+[2026-06-28 08:33:57] [TASK_1] [WARNING] [2026-06-28 08:33:57] Error fetching VNM (attempt 1/3): API down
+[2026-06-28 08:33:57] [TASK_1] [WARNING] [2026-06-28 08:33:57] Error fetching VNM (attempt 2/3): API down
+[2026-06-28 08:33:57] [TASK_1] [WARNING] [2026-06-28 08:33:57] Error fetching VNM (attempt 3/3): API down
+[2026-06-28 08:33:57] [TASK_1] [ERROR] [2026-06-28 08:33:57] Failed to fetch data for VNM after 3 attempts.
+[2026-06-28 08:33:58] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:58] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:33:58] [TASK_1] [INFO] Tickers: 3 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:33:58] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:58] [TASK_1] [INFO] Validated 3/3 tickers against VN30 list.
+[2026-06-28 08:33:58] [TASK_1] [INFO] Processing VNM (1/3)...
+[2026-06-28 08:33:58] [TASK_1] [ERROR] [2026-06-28 08:33:58] FAILED: VNM — no data collected. Continuing with remaining tickers.
+[2026-06-28 08:33:58] [TASK_1] [INFO] Processing VCB (2/3)...
+[2026-06-28 08:33:58] [TASK_1] [INFO] Saved VCB → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-123\test_continues_after_ticker_fa0\prices\VCB.csv (2 rows)
+[2026-06-28 08:33:59] [TASK_1] [INFO] Processing FPT (3/3)...
+[2026-06-28 08:33:59] [TASK_1] [INFO] Saved FPT → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-123\test_continues_after_ticker_fa0\prices\FPT.csv (2 rows)
+[2026-06-28 08:33:59] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-123\test_continues_after_ticker_fa0\prices\all_vn30_prices.csv (4 rows, 2 tickers)
+[2026-06-28 08:33:59] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:59] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:33:59] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:59] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 08:33:59] [TASK_1] [WARNING] Failed tickers: VNM
+[2026-06-28 08:33:59] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 08:33:59] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:33:59] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:33:59] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:33:59] [TASK_1] [INFO] FPT     2024-01-02  2024-01-03       2
+[2026-06-28 08:33:59] [TASK_1] [WARNING] ⚠ FPT has 75.0% fewer trading days than expected (2 vs 8 expected). Check for missing data.
+[2026-06-28 08:33:59] [TASK_1] [INFO] VCB     2024-01-02  2024-01-03       2
+[2026-06-28 08:33:59] [TASK_1] [WARNING] ⚠ VCB has 75.0% fewer trading days than expected (2 vs 8 expected). Check for missing data.
+[2026-06-28 08:33:59] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:33:59] [TASK_1] [INFO] Total rows: 4 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:33:59] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:59] [TASK_1] [ERROR] [2026-06-28 08:33:59] FAILED: FPT — no data collected. Continuing with remaining tickers.
+[2026-06-28 08:33:59] [TASK_1] [WARNING] Failed tickers: FPT
+[2026-06-28 08:33:59] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:33:59] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:59] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:33:59] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:59] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 08:33:59] [TASK_1] [INFO] Expected trading days (business-day calendar): 3
+[2026-06-28 08:33:59] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:33:59] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:33:59] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:33:59] [TASK_1] [INFO] FPT     2024-01-02  2024-01-03       2
+[2026-06-28 08:33:59] [TASK_1] [WARNING] ⚠ FPT has 33.3% fewer trading days than expected (2 vs 3 expected). Check for missing data.
+[2026-06-28 08:33:59] [TASK_1] [INFO] VNM     2024-01-02  2024-01-04       3
+[2026-06-28 08:33:59] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:33:59] [TASK_1] [INFO] Total rows: 5 | Date range: 2024-01-02 to 2024-01-04
+[2026-06-28 08:33:59] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:59] [TASK_1] [WARNING] ⚠ FPT has 53.1% fewer trading days than expected (30 vs 64 expected). Check for missing data.
+[2026-06-28 08:33:59] [TASK_1] [WARNING] ⚠ VNM has 6.2% fewer trading days than expected (60 vs 64 expected). Check for missing data.
+[2026-06-28 08:33:59] [TASK_1] [WARNING] Failed tickers: FPT, VCB
+[2026-06-28 08:33:59] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:59] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:33:59] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:33:59] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-28 08:33:59] [TASK_1] [INFO] Expected trading days (business-day calendar): 4
+[2026-06-28 08:33:59] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:33:59] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:33:59] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:33:59] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 08:33:59] [TASK_1] [WARNING] ⚠ VNM has 75.0% fewer trading days than expected (1 vs 4 expected). Check for missing data.
+[2026-06-28 08:33:59] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:33:59] [TASK_1] [INFO] Total rows: 1 | Date range: 2024-01-02 to 2024-01-05
+[2026-06-28 08:33:59] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:30] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:30] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 08:52:30] [TASK_1] [INFO] Timestamp: 2026-06-28T08:52:30.966285
+[2026-06-28 08:52:30] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:30] [TASK_1] [ERROR] TASK FAILED: TASK_1 after 0.0 seconds
+[2026-06-28 08:52:30] [TASK_1] [ERROR] Exception: Simulated failure
+[2026-06-28 08:52:30] [TASK_1] [ERROR] Stack trace:
+Traceback (most recent call last):
+  File "C:\Users\User\KLTN_MASTER\pipeline\run_pipeline.py", line 647, in run_pipeline
+    executor(config, task_logger, smoke_test=smoke_test)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1173, in _execute_mock_call
+    raise effect
+RuntimeError: Simulated failure
+
+[2026-06-28 08:52:30] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:30] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 08:52:30] [TASK_1] [INFO] Timestamp: 2026-06-28T08:52:30.979703
+[2026-06-28 08:52:30] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:30] [TASK_1] [ERROR] TASK FAILED: TASK_1 after 0.0 seconds
+[2026-06-28 08:52:30] [TASK_1] [ERROR] Exception: Simulated failure
+[2026-06-28 08:52:30] [TASK_1] [ERROR] Stack trace:
+Traceback (most recent call last):
+  File "C:\Users\User\KLTN_MASTER\pipeline\run_pipeline.py", line 647, in run_pipeline
+    executor(config, task_logger, smoke_test=smoke_test)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1173, in _execute_mock_call
+    raise effect
+RuntimeError: Simulated failure
+
+[2026-06-28 08:52:31] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:31] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 08:52:31] [TASK_1] [INFO] Timestamp: 2026-06-28T08:52:31.066124
+[2026-06-28 08:52:31] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:31] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:52:31] [TASK_1] [INFO] END TASK_1 — completed in 0.0 seconds
+[2026-06-28 08:52:31] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:31] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:31] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 08:52:31] [TASK_1] [INFO] Timestamp: 2026-06-28T08:52:31.096250
+[2026-06-28 08:52:31] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:31] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:52:31] [TASK_1] [INFO] END TASK_1 — completed in 0.0 seconds
+[2026-06-28 08:52:31] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:35] [TASK_1] [INFO] Validated 3/3 tickers against VN30 list.
+[2026-06-28 08:52:35] [TASK_1] [WARNING] Invalid tickers (not in VN30): INVALID — these will be skipped.
+[2026-06-28 08:52:35] [TASK_1] [INFO] Validated 2/3 tickers against VN30 list.
+[2026-06-28 08:52:35] [TASK_1] [WARNING] Invalid tickers (not in VN30): INVALID1, INVALID2 — these will be skipped.
+[2026-06-28 08:52:35] [TASK_1] [INFO] Validated 30/30 tickers against VN30 list.
+[2026-06-28 08:52:35] [TASK_1] [WARNING] [2026-06-28 08:52:35] Error fetching VNM (attempt 1/3): API down
+[2026-06-28 08:52:35] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-28 08:52:35] [TASK_1] [WARNING] [2026-06-28 08:52:35] Error fetching VNM (attempt 2/3): API down
+[2026-06-28 08:52:35] [TASK_1] [INFO] Retrying in 2s...
+[2026-06-28 08:52:35] [TASK_1] [WARNING] [2026-06-28 08:52:35] Error fetching VNM (attempt 3/3): API down
+[2026-06-28 08:52:35] [TASK_1] [ERROR] [2026-06-28 08:52:35] Failed to fetch data for VNM after 3 attempts.
+[2026-06-28 08:52:35] [TASK_1] [INFO] Fetched 2 rows for VNM (2024-01-02 to 2024-01-03).
+[2026-06-28 08:52:35] [TASK_1] [WARNING] Empty data returned for VNM (attempt 1/3).
+[2026-06-28 08:52:35] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-28 08:52:35] [TASK_1] [INFO] Fetched 1 rows for VNM (2024-01-02 to 2024-01-02).
+[2026-06-28 08:52:35] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:35] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:52:35] [TASK_1] [INFO] Tickers: 1 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:52:35] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:35] [TASK_1] [INFO] Validated 1/1 tickers against VN30 list.
+[2026-06-28 08:52:35] [TASK_1] [INFO] Processing VNM (1/1)...
+[2026-06-28 08:52:35] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-126\test_collect_prices_output_col0\prices\VNM.csv (2 rows)
+[2026-06-28 08:52:35] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-126\test_collect_prices_output_col0\prices\all_vn30_prices.csv (2 rows, 1 tickers)
+[2026-06-28 08:52:35] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:35] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:52:35] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:35] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-28 08:52:35] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 08:52:35] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:52:35] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:52:35] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:52:35] [TASK_1] [INFO] VNM     2024-01-02  2024-01-03       2
+[2026-06-28 08:52:35] [TASK_1] [WARNING] ⚠ VNM has 75.0% fewer trading days than expected (2 vs 8 expected). Check for missing data.
+[2026-06-28 08:52:35] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:52:35] [TASK_1] [INFO] Total rows: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:52:35] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:35] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:35] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:52:35] [TASK_1] [INFO] Tickers: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:52:35] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:35] [TASK_1] [INFO] Validated 2/2 tickers against VN30 list.
+[2026-06-28 08:52:35] [TASK_1] [INFO] Processing VNM (1/2)...
+[2026-06-28 08:52:35] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-126\test_individual_ticker_csv_sav0\prices\VNM.csv (1 rows)
+[2026-06-28 08:52:35] [TASK_1] [INFO] Processing FPT (2/2)...
+[2026-06-28 08:52:35] [TASK_1] [INFO] Saved FPT → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-126\test_individual_ticker_csv_sav0\prices\FPT.csv (1 rows)
+[2026-06-28 08:52:35] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-126\test_individual_ticker_csv_sav0\prices\all_vn30_prices.csv (2 rows, 2 tickers)
+[2026-06-28 08:52:35] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:35] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:52:35] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:35] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 08:52:35] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 08:52:35] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:52:35] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:52:35] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:52:35] [TASK_1] [INFO] FPT     2024-01-02  2024-01-02       1
+[2026-06-28 08:52:35] [TASK_1] [WARNING] ⚠ FPT has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:52:35] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 08:52:35] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:52:35] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:52:35] [TASK_1] [INFO] Total rows: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:52:35] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:35] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:35] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:52:35] [TASK_1] [INFO] Tickers: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:52:35] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:35] [TASK_1] [INFO] Validated 2/2 tickers against VN30 list.
+[2026-06-28 08:52:35] [TASK_1] [INFO] Processing VNM (1/2)...
+[2026-06-28 08:52:35] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-126\test_consolidated_csv_has_tick0\prices\VNM.csv (1 rows)
+[2026-06-28 08:52:36] [TASK_1] [INFO] Processing FPT (2/2)...
+[2026-06-28 08:52:36] [TASK_1] [INFO] Saved FPT → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-126\test_consolidated_csv_has_tick0\prices\FPT.csv (1 rows)
+[2026-06-28 08:52:36] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-126\test_consolidated_csv_has_tick0\prices\all_vn30_prices.csv (2 rows, 2 tickers)
+[2026-06-28 08:52:36] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:36] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:52:36] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:36] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 08:52:36] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 08:52:36] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:52:36] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:52:36] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:52:36] [TASK_1] [INFO] FPT     2024-01-02  2024-01-02       1
+[2026-06-28 08:52:36] [TASK_1] [WARNING] ⚠ FPT has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:52:36] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 08:52:36] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:52:36] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:52:36] [TASK_1] [INFO] Total rows: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:52:36] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:36] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:36] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:52:36] [TASK_1] [INFO] Tickers: 1 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:52:36] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:36] [TASK_1] [INFO] Validated 1/1 tickers against VN30 list.
+[2026-06-28 08:52:36] [TASK_1] [INFO] Processing VNM (1/1)...
+[2026-06-28 08:52:36] [TASK_1] [ERROR] [2026-06-28 08:52:36] FAILED: VNM — no data collected. Continuing with remaining tickers.
+[2026-06-28 08:52:36] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:36] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:52:36] [TASK_1] [INFO] Tickers: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:52:36] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:36] [TASK_1] [INFO] Validated 2/2 tickers against VN30 list.
+[2026-06-28 08:52:36] [TASK_1] [INFO] Processing VNM (1/2)...
+[2026-06-28 08:52:36] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-126\test_partial_failure_continues0\prices\VNM.csv (1 rows)
+[2026-06-28 08:52:36] [TASK_1] [INFO] Processing FPT (2/2)...
+[2026-06-28 08:52:36] [TASK_1] [ERROR] [2026-06-28 08:52:36] FAILED: FPT — no data collected. Continuing with remaining tickers.
+[2026-06-28 08:52:36] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-126\test_partial_failure_continues0\prices\all_vn30_prices.csv (1 rows, 1 tickers)
+[2026-06-28 08:52:36] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:36] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:52:36] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:36] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-28 08:52:36] [TASK_1] [WARNING] Failed tickers: FPT
+[2026-06-28 08:52:36] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 08:52:36] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:52:36] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:52:36] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:52:36] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 08:52:36] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:52:36] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:52:36] [TASK_1] [INFO] Total rows: 1 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:52:36] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:36] [TASK_1] [WARNING] [2026-06-28 08:52:36] Error fetching VNM (attempt 1/3): API down
+[2026-06-28 08:52:36] [TASK_1] [WARNING] [2026-06-28 08:52:36] Error fetching VNM (attempt 2/3): API down
+[2026-06-28 08:52:36] [TASK_1] [WARNING] [2026-06-28 08:52:36] Error fetching VNM (attempt 3/3): API down
+[2026-06-28 08:52:36] [TASK_1] [ERROR] [2026-06-28 08:52:36] Failed to fetch data for VNM after 3 attempts.
+[2026-06-28 08:52:36] [TASK_1] [WARNING] [2026-06-28 08:52:36] Error fetching VNM (attempt 1/3): API down
+[2026-06-28 08:52:36] [TASK_1] [WARNING] [2026-06-28 08:52:36] Error fetching VNM (attempt 2/3): API down
+[2026-06-28 08:52:36] [TASK_1] [WARNING] [2026-06-28 08:52:36] Error fetching VNM (attempt 3/3): API down
+[2026-06-28 08:52:36] [TASK_1] [ERROR] [2026-06-28 08:52:36] Failed to fetch data for VNM after 3 attempts.
+[2026-06-28 08:52:36] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:36] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:52:36] [TASK_1] [INFO] Tickers: 3 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:52:36] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:36] [TASK_1] [INFO] Validated 3/3 tickers against VN30 list.
+[2026-06-28 08:52:36] [TASK_1] [INFO] Processing VNM (1/3)...
+[2026-06-28 08:52:36] [TASK_1] [ERROR] [2026-06-28 08:52:36] FAILED: VNM — no data collected. Continuing with remaining tickers.
+[2026-06-28 08:52:37] [TASK_1] [INFO] Processing VCB (2/3)...
+[2026-06-28 08:52:37] [TASK_1] [INFO] Saved VCB → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-126\test_continues_after_ticker_fa0\prices\VCB.csv (2 rows)
+[2026-06-28 08:52:37] [TASK_1] [INFO] Processing FPT (3/3)...
+[2026-06-28 08:52:37] [TASK_1] [INFO] Saved FPT → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-126\test_continues_after_ticker_fa0\prices\FPT.csv (2 rows)
+[2026-06-28 08:52:37] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-126\test_continues_after_ticker_fa0\prices\all_vn30_prices.csv (4 rows, 2 tickers)
+[2026-06-28 08:52:37] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:37] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:52:37] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:37] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 08:52:37] [TASK_1] [WARNING] Failed tickers: VNM
+[2026-06-28 08:52:37] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 08:52:37] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:52:37] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:52:37] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:52:37] [TASK_1] [INFO] FPT     2024-01-02  2024-01-03       2
+[2026-06-28 08:52:37] [TASK_1] [WARNING] ⚠ FPT has 75.0% fewer trading days than expected (2 vs 8 expected). Check for missing data.
+[2026-06-28 08:52:37] [TASK_1] [INFO] VCB     2024-01-02  2024-01-03       2
+[2026-06-28 08:52:37] [TASK_1] [WARNING] ⚠ VCB has 75.0% fewer trading days than expected (2 vs 8 expected). Check for missing data.
+[2026-06-28 08:52:37] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:52:37] [TASK_1] [INFO] Total rows: 4 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:52:37] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:38] [TASK_1] [ERROR] [2026-06-28 08:52:38] FAILED: FPT — no data collected. Continuing with remaining tickers.
+[2026-06-28 08:52:38] [TASK_1] [WARNING] Failed tickers: FPT
+[2026-06-28 08:52:38] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:52:38] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:38] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:52:38] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:38] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 08:52:38] [TASK_1] [INFO] Expected trading days (business-day calendar): 3
+[2026-06-28 08:52:38] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:52:38] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:52:38] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:52:38] [TASK_1] [INFO] FPT     2024-01-02  2024-01-03       2
+[2026-06-28 08:52:38] [TASK_1] [WARNING] ⚠ FPT has 33.3% fewer trading days than expected (2 vs 3 expected). Check for missing data.
+[2026-06-28 08:52:38] [TASK_1] [INFO] VNM     2024-01-02  2024-01-04       3
+[2026-06-28 08:52:38] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:52:38] [TASK_1] [INFO] Total rows: 5 | Date range: 2024-01-02 to 2024-01-04
+[2026-06-28 08:52:38] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:38] [TASK_1] [WARNING] ⚠ FPT has 53.1% fewer trading days than expected (30 vs 64 expected). Check for missing data.
+[2026-06-28 08:52:38] [TASK_1] [WARNING] ⚠ VNM has 6.2% fewer trading days than expected (60 vs 64 expected). Check for missing data.
+[2026-06-28 08:52:38] [TASK_1] [WARNING] Failed tickers: FPT, VCB
+[2026-06-28 08:52:38] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:38] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:52:38] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:52:38] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-28 08:52:38] [TASK_1] [INFO] Expected trading days (business-day calendar): 4
+[2026-06-28 08:52:38] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:52:38] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:52:38] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:52:38] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 08:52:38] [TASK_1] [WARNING] ⚠ VNM has 75.0% fewer trading days than expected (1 vs 4 expected). Check for missing data.
+[2026-06-28 08:52:38] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:52:38] [TASK_1] [INFO] Total rows: 1 | Date range: 2024-01-02 to 2024-01-05
+[2026-06-28 08:52:38] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:02] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:02] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 08:53:02] [TASK_1] [INFO] Timestamp: 2026-06-28T08:53:02.264724
+[2026-06-28 08:53:02] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:02] [TASK_1] [ERROR] TASK FAILED: TASK_1 after 0.0 seconds
+[2026-06-28 08:53:02] [TASK_1] [ERROR] Exception: Simulated failure
+[2026-06-28 08:53:02] [TASK_1] [ERROR] Stack trace:
+Traceback (most recent call last):
+  File "C:\Users\User\KLTN_MASTER\pipeline\run_pipeline.py", line 647, in run_pipeline
+    executor(config, task_logger, smoke_test=smoke_test)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1173, in _execute_mock_call
+    raise effect
+RuntimeError: Simulated failure
+
+[2026-06-28 08:53:02] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:02] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 08:53:02] [TASK_1] [INFO] Timestamp: 2026-06-28T08:53:02.275330
+[2026-06-28 08:53:02] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:02] [TASK_1] [ERROR] TASK FAILED: TASK_1 after 0.0 seconds
+[2026-06-28 08:53:02] [TASK_1] [ERROR] Exception: Simulated failure
+[2026-06-28 08:53:02] [TASK_1] [ERROR] Stack trace:
+Traceback (most recent call last):
+  File "C:\Users\User\KLTN_MASTER\pipeline\run_pipeline.py", line 647, in run_pipeline
+    executor(config, task_logger, smoke_test=smoke_test)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1173, in _execute_mock_call
+    raise effect
+RuntimeError: Simulated failure
+
+[2026-06-28 08:53:02] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:02] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 08:53:02] [TASK_1] [INFO] Timestamp: 2026-06-28T08:53:02.373954
+[2026-06-28 08:53:02] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:02] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:53:02] [TASK_1] [INFO] END TASK_1 — completed in 0.0 seconds
+[2026-06-28 08:53:02] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:02] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:02] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 08:53:02] [TASK_1] [INFO] Timestamp: 2026-06-28T08:53:02.415186
+[2026-06-28 08:53:02] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:02] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:53:02] [TASK_1] [INFO] END TASK_1 — completed in 0.0 seconds
+[2026-06-28 08:53:02] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:07] [TASK_1] [INFO] Validated 3/3 tickers against VN30 list.
+[2026-06-28 08:53:07] [TASK_1] [WARNING] Invalid tickers (not in VN30): INVALID — these will be skipped.
+[2026-06-28 08:53:07] [TASK_1] [INFO] Validated 2/3 tickers against VN30 list.
+[2026-06-28 08:53:07] [TASK_1] [WARNING] Invalid tickers (not in VN30): INVALID1, INVALID2 — these will be skipped.
+[2026-06-28 08:53:07] [TASK_1] [INFO] Validated 30/30 tickers against VN30 list.
+[2026-06-28 08:53:07] [TASK_1] [WARNING] [2026-06-28 08:53:07] Error fetching VNM (attempt 1/3): API down
+[2026-06-28 08:53:07] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-28 08:53:07] [TASK_1] [WARNING] [2026-06-28 08:53:07] Error fetching VNM (attempt 2/3): API down
+[2026-06-28 08:53:07] [TASK_1] [INFO] Retrying in 2s...
+[2026-06-28 08:53:07] [TASK_1] [WARNING] [2026-06-28 08:53:07] Error fetching VNM (attempt 3/3): API down
+[2026-06-28 08:53:07] [TASK_1] [ERROR] [2026-06-28 08:53:07] Failed to fetch data for VNM after 3 attempts.
+[2026-06-28 08:53:07] [TASK_1] [INFO] Fetched 2 rows for VNM (2024-01-02 to 2024-01-03).
+[2026-06-28 08:53:07] [TASK_1] [WARNING] Empty data returned for VNM (attempt 1/3).
+[2026-06-28 08:53:07] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-28 08:53:07] [TASK_1] [INFO] Fetched 1 rows for VNM (2024-01-02 to 2024-01-02).
+[2026-06-28 08:53:07] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:07] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:53:07] [TASK_1] [INFO] Tickers: 1 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:53:07] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:07] [TASK_1] [INFO] Validated 1/1 tickers against VN30 list.
+[2026-06-28 08:53:07] [TASK_1] [INFO] Processing VNM (1/1)...
+[2026-06-28 08:53:07] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-127\test_collect_prices_output_col0\prices\VNM.csv (2 rows)
+[2026-06-28 08:53:07] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-127\test_collect_prices_output_col0\prices\all_vn30_prices.csv (2 rows, 1 tickers)
+[2026-06-28 08:53:07] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:07] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:53:07] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:07] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-28 08:53:07] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 08:53:07] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:53:07] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:53:07] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:53:07] [TASK_1] [INFO] VNM     2024-01-02  2024-01-03       2
+[2026-06-28 08:53:07] [TASK_1] [WARNING] ⚠ VNM has 75.0% fewer trading days than expected (2 vs 8 expected). Check for missing data.
+[2026-06-28 08:53:07] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:53:07] [TASK_1] [INFO] Total rows: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:53:07] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:07] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:07] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:53:07] [TASK_1] [INFO] Tickers: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:53:07] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:07] [TASK_1] [INFO] Validated 2/2 tickers against VN30 list.
+[2026-06-28 08:53:07] [TASK_1] [INFO] Processing VNM (1/2)...
+[2026-06-28 08:53:07] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-127\test_individual_ticker_csv_sav0\prices\VNM.csv (1 rows)
+[2026-06-28 08:53:08] [TASK_1] [INFO] Processing FPT (2/2)...
+[2026-06-28 08:53:08] [TASK_1] [INFO] Saved FPT → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-127\test_individual_ticker_csv_sav0\prices\FPT.csv (1 rows)
+[2026-06-28 08:53:08] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-127\test_individual_ticker_csv_sav0\prices\all_vn30_prices.csv (2 rows, 2 tickers)
+[2026-06-28 08:53:08] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:08] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:53:08] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:08] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 08:53:08] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 08:53:08] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:53:08] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:53:08] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:53:08] [TASK_1] [INFO] FPT     2024-01-02  2024-01-02       1
+[2026-06-28 08:53:08] [TASK_1] [WARNING] ⚠ FPT has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:53:08] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 08:53:08] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:53:08] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:53:08] [TASK_1] [INFO] Total rows: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:53:08] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:08] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:08] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:53:08] [TASK_1] [INFO] Tickers: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:53:08] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:08] [TASK_1] [INFO] Validated 2/2 tickers against VN30 list.
+[2026-06-28 08:53:08] [TASK_1] [INFO] Processing VNM (1/2)...
+[2026-06-28 08:53:08] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-127\test_consolidated_csv_has_tick0\prices\VNM.csv (1 rows)
+[2026-06-28 08:53:08] [TASK_1] [INFO] Processing FPT (2/2)...
+[2026-06-28 08:53:08] [TASK_1] [INFO] Saved FPT → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-127\test_consolidated_csv_has_tick0\prices\FPT.csv (1 rows)
+[2026-06-28 08:53:08] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-127\test_consolidated_csv_has_tick0\prices\all_vn30_prices.csv (2 rows, 2 tickers)
+[2026-06-28 08:53:08] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:08] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:53:08] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:08] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 08:53:08] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 08:53:08] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:53:08] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:53:08] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:53:08] [TASK_1] [INFO] FPT     2024-01-02  2024-01-02       1
+[2026-06-28 08:53:08] [TASK_1] [WARNING] ⚠ FPT has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:53:08] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 08:53:08] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:53:08] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:53:08] [TASK_1] [INFO] Total rows: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:53:08] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:08] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:08] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:53:08] [TASK_1] [INFO] Tickers: 1 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:53:08] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:08] [TASK_1] [INFO] Validated 1/1 tickers against VN30 list.
+[2026-06-28 08:53:08] [TASK_1] [INFO] Processing VNM (1/1)...
+[2026-06-28 08:53:08] [TASK_1] [ERROR] [2026-06-28 08:53:08] FAILED: VNM — no data collected. Continuing with remaining tickers.
+[2026-06-28 08:53:08] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:08] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:53:08] [TASK_1] [INFO] Tickers: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:53:08] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:08] [TASK_1] [INFO] Validated 2/2 tickers against VN30 list.
+[2026-06-28 08:53:08] [TASK_1] [INFO] Processing VNM (1/2)...
+[2026-06-28 08:53:08] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-127\test_partial_failure_continues0\prices\VNM.csv (1 rows)
+[2026-06-28 08:53:09] [TASK_1] [INFO] Processing FPT (2/2)...
+[2026-06-28 08:53:09] [TASK_1] [ERROR] [2026-06-28 08:53:09] FAILED: FPT — no data collected. Continuing with remaining tickers.
+[2026-06-28 08:53:09] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-127\test_partial_failure_continues0\prices\all_vn30_prices.csv (1 rows, 1 tickers)
+[2026-06-28 08:53:09] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:09] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:53:09] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:09] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-28 08:53:09] [TASK_1] [WARNING] Failed tickers: FPT
+[2026-06-28 08:53:09] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 08:53:09] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:53:09] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:53:09] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:53:09] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 08:53:09] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:53:09] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:53:09] [TASK_1] [INFO] Total rows: 1 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:53:09] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:09] [TASK_1] [WARNING] [2026-06-28 08:53:09] Error fetching VNM (attempt 1/3): API down
+[2026-06-28 08:53:09] [TASK_1] [WARNING] [2026-06-28 08:53:09] Error fetching VNM (attempt 2/3): API down
+[2026-06-28 08:53:09] [TASK_1] [WARNING] [2026-06-28 08:53:09] Error fetching VNM (attempt 3/3): API down
+[2026-06-28 08:53:09] [TASK_1] [ERROR] [2026-06-28 08:53:09] Failed to fetch data for VNM after 3 attempts.
+[2026-06-28 08:53:09] [TASK_1] [WARNING] [2026-06-28 08:53:09] Error fetching VNM (attempt 1/3): API down
+[2026-06-28 08:53:09] [TASK_1] [WARNING] [2026-06-28 08:53:09] Error fetching VNM (attempt 2/3): API down
+[2026-06-28 08:53:09] [TASK_1] [WARNING] [2026-06-28 08:53:09] Error fetching VNM (attempt 3/3): API down
+[2026-06-28 08:53:09] [TASK_1] [ERROR] [2026-06-28 08:53:09] Failed to fetch data for VNM after 3 attempts.
+[2026-06-28 08:53:09] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:09] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:53:09] [TASK_1] [INFO] Tickers: 3 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:53:09] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:09] [TASK_1] [INFO] Validated 3/3 tickers against VN30 list.
+[2026-06-28 08:53:09] [TASK_1] [INFO] Processing VNM (1/3)...
+[2026-06-28 08:53:09] [TASK_1] [ERROR] [2026-06-28 08:53:09] FAILED: VNM — no data collected. Continuing with remaining tickers.
+[2026-06-28 08:53:09] [TASK_1] [INFO] Processing VCB (2/3)...
+[2026-06-28 08:53:09] [TASK_1] [INFO] Saved VCB → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-127\test_continues_after_ticker_fa0\prices\VCB.csv (2 rows)
+[2026-06-28 08:53:10] [TASK_1] [INFO] Processing FPT (3/3)...
+[2026-06-28 08:53:10] [TASK_1] [INFO] Saved FPT → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-127\test_continues_after_ticker_fa0\prices\FPT.csv (2 rows)
+[2026-06-28 08:53:10] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-127\test_continues_after_ticker_fa0\prices\all_vn30_prices.csv (4 rows, 2 tickers)
+[2026-06-28 08:53:10] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:10] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:53:10] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:10] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 08:53:10] [TASK_1] [WARNING] Failed tickers: VNM
+[2026-06-28 08:53:10] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 08:53:10] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:53:10] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:53:10] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:53:10] [TASK_1] [INFO] FPT     2024-01-02  2024-01-03       2
+[2026-06-28 08:53:10] [TASK_1] [WARNING] ⚠ FPT has 75.0% fewer trading days than expected (2 vs 8 expected). Check for missing data.
+[2026-06-28 08:53:10] [TASK_1] [INFO] VCB     2024-01-02  2024-01-03       2
+[2026-06-28 08:53:10] [TASK_1] [WARNING] ⚠ VCB has 75.0% fewer trading days than expected (2 vs 8 expected). Check for missing data.
+[2026-06-28 08:53:10] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:53:10] [TASK_1] [INFO] Total rows: 4 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 08:53:10] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:10] [TASK_1] [ERROR] [2026-06-28 08:53:10] FAILED: FPT — no data collected. Continuing with remaining tickers.
+[2026-06-28 08:53:10] [TASK_1] [WARNING] Failed tickers: FPT
+[2026-06-28 08:53:10] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 08:53:11] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:11] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:53:11] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:11] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 08:53:11] [TASK_1] [INFO] Expected trading days (business-day calendar): 3
+[2026-06-28 08:53:11] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:53:11] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:53:11] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:53:11] [TASK_1] [INFO] FPT     2024-01-02  2024-01-03       2
+[2026-06-28 08:53:11] [TASK_1] [WARNING] ⚠ FPT has 33.3% fewer trading days than expected (2 vs 3 expected). Check for missing data.
+[2026-06-28 08:53:11] [TASK_1] [INFO] VNM     2024-01-02  2024-01-04       3
+[2026-06-28 08:53:11] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:53:11] [TASK_1] [INFO] Total rows: 5 | Date range: 2024-01-02 to 2024-01-04
+[2026-06-28 08:53:11] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:11] [TASK_1] [WARNING] ⚠ FPT has 53.1% fewer trading days than expected (30 vs 64 expected). Check for missing data.
+[2026-06-28 08:53:11] [TASK_1] [WARNING] ⚠ VNM has 6.2% fewer trading days than expected (60 vs 64 expected). Check for missing data.
+[2026-06-28 08:53:11] [TASK_1] [WARNING] Failed tickers: FPT, VCB
+[2026-06-28 08:53:11] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:11] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:53:11] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:11] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-28 08:53:11] [TASK_1] [INFO] Expected trading days (business-day calendar): 4
+[2026-06-28 08:53:11] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:53:11] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:53:11] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:53:11] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 08:53:11] [TASK_1] [WARNING] ⚠ VNM has 75.0% fewer trading days than expected (1 vs 4 expected). Check for missing data.
+[2026-06-28 08:53:11] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:53:11] [TASK_1] [INFO] Total rows: 1 | Date range: 2024-01-02 to 2024-01-05
+[2026-06-28 08:53:11] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:56] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:56] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 08:53:56] [TASK_1] [INFO] Timestamp: 2026-06-28T08:53:56.024672
+[2026-06-28 08:53:56] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:59] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:59] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 08:53:59] [TASK_1] [INFO] Tickers: 3 | Date range: 2022-01-01 to 2022-12-31
+[2026-06-28 08:53:59] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:53:59] [TASK_1] [INFO] Validated 3/3 tickers against VN30 list.
+[2026-06-28 08:53:59] [TASK_1] [INFO] Processing VNM (1/3)...
+[2026-06-28 08:54:00] [TASK_1] [INFO] Fetched 261 rows for VNM (2021-12-16 to 2022-12-30).
+[2026-06-28 08:54:00] [TASK_1] [INFO] Saved VNM → data/prices\VNM.csv (261 rows)
+[2026-06-28 08:54:00] [TASK_1] [INFO] Processing VCB (2/3)...
+[2026-06-28 08:54:00] [TASK_1] [INFO] Fetched 261 rows for VCB (2021-12-16 to 2022-12-30).
+[2026-06-28 08:54:00] [TASK_1] [INFO] Saved VCB → data/prices\VCB.csv (261 rows)
+[2026-06-28 08:54:01] [TASK_1] [INFO] Processing FPT (3/3)...
+[2026-06-28 08:54:02] [TASK_1] [INFO] Fetched 261 rows for FPT (2021-12-16 to 2022-12-30).
+[2026-06-28 08:54:02] [TASK_1] [INFO] Saved FPT → data/prices\FPT.csv (261 rows)
+[2026-06-28 08:54:02] [TASK_1] [INFO] Saved consolidated file → data/prices\all_vn30_prices.csv (783 rows, 3 tickers)
+[2026-06-28 08:54:02] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:54:02] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 08:54:02] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:54:02] [TASK_1] [INFO] Successfully collected: 3 tickers
+[2026-06-28 08:54:02] [TASK_1] [INFO] Expected trading days (business-day calendar): 260
+[2026-06-28 08:54:02] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:54:02] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 08:54:02] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:54:02] [TASK_1] [INFO] FPT     2021-12-16  2022-12-30     261
+[2026-06-28 08:54:02] [TASK_1] [INFO] VCB     2021-12-16  2022-12-30     261
+[2026-06-28 08:54:02] [TASK_1] [INFO] VNM     2021-12-16  2022-12-30     261
+[2026-06-28 08:54:02] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:54:02] [TASK_1] [INFO] Total rows: 783 | Date range: 2022-01-01 to 2022-12-31
+[2026-06-28 08:54:02] [TASK_1] [INFO] ============================================================
+[2026-06-28 08:54:02] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 08:54:02] [TASK_1] [INFO] END TASK_1 — completed in 6.1 seconds
+[2026-06-28 08:54:02] [TASK_1] [INFO] Output: data/prices/all_vn30_prices.csv (783 rows)
+[2026-06-28 08:54:02] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:29:58] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:29:58] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 09:29:58] [TASK_1] [INFO] Timestamp: 2026-06-28T09:29:58.099584
+[2026-06-28 09:29:58] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:29:58] [TASK_1] [ERROR] TASK FAILED: TASK_1 after 0.0 seconds
+[2026-06-28 09:29:58] [TASK_1] [ERROR] Exception: Simulated failure
+[2026-06-28 09:29:58] [TASK_1] [ERROR] Stack trace:
+Traceback (most recent call last):
+  File "C:\Users\User\KLTN_MASTER\pipeline\run_pipeline.py", line 647, in run_pipeline
+    executor(config, task_logger, smoke_test=smoke_test)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1173, in _execute_mock_call
+    raise effect
+RuntimeError: Simulated failure
+
+[2026-06-28 09:29:58] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:29:58] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 09:29:58] [TASK_1] [INFO] Timestamp: 2026-06-28T09:29:58.115198
+[2026-06-28 09:29:58] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:29:58] [TASK_1] [ERROR] TASK FAILED: TASK_1 after 0.0 seconds
+[2026-06-28 09:29:58] [TASK_1] [ERROR] Exception: Simulated failure
+[2026-06-28 09:29:58] [TASK_1] [ERROR] Stack trace:
+Traceback (most recent call last):
+  File "C:\Users\User\KLTN_MASTER\pipeline\run_pipeline.py", line 647, in run_pipeline
+    executor(config, task_logger, smoke_test=smoke_test)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1173, in _execute_mock_call
+    raise effect
+RuntimeError: Simulated failure
+
+[2026-06-28 09:29:58] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:29:58] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 09:29:58] [TASK_1] [INFO] Timestamp: 2026-06-28T09:29:58.244748
+[2026-06-28 09:29:58] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:29:58] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 09:29:58] [TASK_1] [INFO] END TASK_1 — completed in 0.0 seconds
+[2026-06-28 09:29:58] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:29:58] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:29:58] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 09:29:58] [TASK_1] [INFO] Timestamp: 2026-06-28T09:29:58.434821
+[2026-06-28 09:29:58] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:29:58] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 09:29:58] [TASK_1] [INFO] END TASK_1 — completed in 0.0 seconds
+[2026-06-28 09:29:58] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:03] [TASK_1] [INFO] Validated 3/3 tickers against VN30 list.
+[2026-06-28 09:30:03] [TASK_1] [WARNING] Invalid tickers (not in VN30): INVALID — these will be skipped.
+[2026-06-28 09:30:03] [TASK_1] [INFO] Validated 2/3 tickers against VN30 list.
+[2026-06-28 09:30:03] [TASK_1] [WARNING] Invalid tickers (not in VN30): INVALID1, INVALID2 — these will be skipped.
+[2026-06-28 09:30:03] [TASK_1] [INFO] Validated 30/30 tickers against VN30 list.
+[2026-06-28 09:30:03] [TASK_1] [WARNING] [2026-06-28 09:30:03] Error fetching VNM (attempt 1/3): API down
+[2026-06-28 09:30:03] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-28 09:30:03] [TASK_1] [WARNING] [2026-06-28 09:30:03] Error fetching VNM (attempt 2/3): API down
+[2026-06-28 09:30:03] [TASK_1] [INFO] Retrying in 2s...
+[2026-06-28 09:30:03] [TASK_1] [WARNING] [2026-06-28 09:30:03] Error fetching VNM (attempt 3/3): API down
+[2026-06-28 09:30:03] [TASK_1] [ERROR] [2026-06-28 09:30:03] Failed to fetch data for VNM after 3 attempts.
+[2026-06-28 09:30:03] [TASK_1] [INFO] Fetched 2 rows for VNM (2024-01-02 to 2024-01-03).
+[2026-06-28 09:30:03] [TASK_1] [WARNING] Empty data returned for VNM (attempt 1/3).
+[2026-06-28 09:30:03] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-28 09:30:03] [TASK_1] [INFO] Fetched 1 rows for VNM (2024-01-02 to 2024-01-02).
+[2026-06-28 09:30:03] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:03] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 09:30:03] [TASK_1] [INFO] Tickers: 1 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 09:30:03] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:03] [TASK_1] [INFO] Validated 1/1 tickers against VN30 list.
+[2026-06-28 09:30:03] [TASK_1] [INFO] Processing VNM (1/1)...
+[2026-06-28 09:30:03] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-137\test_collect_prices_output_col0\prices\VNM.csv (2 rows)
+[2026-06-28 09:30:03] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-137\test_collect_prices_output_col0\prices\all_vn30_prices.csv (2 rows, 1 tickers)
+[2026-06-28 09:30:03] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:03] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 09:30:03] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:03] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-28 09:30:03] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 09:30:03] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 09:30:03] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 09:30:03] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 09:30:03] [TASK_1] [INFO] VNM     2024-01-02  2024-01-03       2
+[2026-06-28 09:30:03] [TASK_1] [WARNING] ⚠ VNM has 75.0% fewer trading days than expected (2 vs 8 expected). Check for missing data.
+[2026-06-28 09:30:03] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 09:30:03] [TASK_1] [INFO] Total rows: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 09:30:03] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:03] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:03] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 09:30:03] [TASK_1] [INFO] Tickers: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 09:30:03] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:03] [TASK_1] [INFO] Validated 2/2 tickers against VN30 list.
+[2026-06-28 09:30:03] [TASK_1] [INFO] Processing VNM (1/2)...
+[2026-06-28 09:30:03] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-137\test_individual_ticker_csv_sav0\prices\VNM.csv (1 rows)
+[2026-06-28 09:30:03] [TASK_1] [INFO] Processing FPT (2/2)...
+[2026-06-28 09:30:03] [TASK_1] [INFO] Saved FPT → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-137\test_individual_ticker_csv_sav0\prices\FPT.csv (1 rows)
+[2026-06-28 09:30:03] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-137\test_individual_ticker_csv_sav0\prices\all_vn30_prices.csv (2 rows, 2 tickers)
+[2026-06-28 09:30:03] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:03] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 09:30:03] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:03] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 09:30:03] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 09:30:03] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 09:30:03] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 09:30:03] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 09:30:03] [TASK_1] [INFO] FPT     2024-01-02  2024-01-02       1
+[2026-06-28 09:30:03] [TASK_1] [WARNING] ⚠ FPT has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 09:30:03] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 09:30:03] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 09:30:03] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 09:30:03] [TASK_1] [INFO] Total rows: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 09:30:03] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:03] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:03] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 09:30:03] [TASK_1] [INFO] Tickers: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 09:30:03] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:03] [TASK_1] [INFO] Validated 2/2 tickers against VN30 list.
+[2026-06-28 09:30:03] [TASK_1] [INFO] Processing VNM (1/2)...
+[2026-06-28 09:30:03] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-137\test_consolidated_csv_has_tick0\prices\VNM.csv (1 rows)
+[2026-06-28 09:30:04] [TASK_1] [INFO] Processing FPT (2/2)...
+[2026-06-28 09:30:04] [TASK_1] [INFO] Saved FPT → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-137\test_consolidated_csv_has_tick0\prices\FPT.csv (1 rows)
+[2026-06-28 09:30:04] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-137\test_consolidated_csv_has_tick0\prices\all_vn30_prices.csv (2 rows, 2 tickers)
+[2026-06-28 09:30:04] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:04] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 09:30:04] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:04] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 09:30:04] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 09:30:04] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 09:30:04] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 09:30:04] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 09:30:04] [TASK_1] [INFO] FPT     2024-01-02  2024-01-02       1
+[2026-06-28 09:30:04] [TASK_1] [WARNING] ⚠ FPT has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 09:30:04] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 09:30:04] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 09:30:04] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 09:30:04] [TASK_1] [INFO] Total rows: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 09:30:04] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:04] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:04] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 09:30:04] [TASK_1] [INFO] Tickers: 1 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 09:30:04] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:04] [TASK_1] [INFO] Validated 1/1 tickers against VN30 list.
+[2026-06-28 09:30:04] [TASK_1] [INFO] Processing VNM (1/1)...
+[2026-06-28 09:30:04] [TASK_1] [ERROR] [2026-06-28 09:30:04] FAILED: VNM — no data collected. Continuing with remaining tickers.
+[2026-06-28 09:30:04] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:04] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 09:30:04] [TASK_1] [INFO] Tickers: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 09:30:04] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:04] [TASK_1] [INFO] Validated 2/2 tickers against VN30 list.
+[2026-06-28 09:30:04] [TASK_1] [INFO] Processing VNM (1/2)...
+[2026-06-28 09:30:04] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-137\test_partial_failure_continues0\prices\VNM.csv (1 rows)
+[2026-06-28 09:30:04] [TASK_1] [INFO] Processing FPT (2/2)...
+[2026-06-28 09:30:04] [TASK_1] [ERROR] [2026-06-28 09:30:04] FAILED: FPT — no data collected. Continuing with remaining tickers.
+[2026-06-28 09:30:04] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-137\test_partial_failure_continues0\prices\all_vn30_prices.csv (1 rows, 1 tickers)
+[2026-06-28 09:30:04] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:04] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 09:30:04] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:04] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-28 09:30:04] [TASK_1] [WARNING] Failed tickers: FPT
+[2026-06-28 09:30:04] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 09:30:04] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 09:30:04] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 09:30:04] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 09:30:04] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 09:30:04] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 09:30:04] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 09:30:04] [TASK_1] [INFO] Total rows: 1 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 09:30:04] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:04] [TASK_1] [WARNING] [2026-06-28 09:30:04] Error fetching VNM (attempt 1/3): API down
+[2026-06-28 09:30:04] [TASK_1] [WARNING] [2026-06-28 09:30:04] Error fetching VNM (attempt 2/3): API down
+[2026-06-28 09:30:04] [TASK_1] [WARNING] [2026-06-28 09:30:04] Error fetching VNM (attempt 3/3): API down
+[2026-06-28 09:30:04] [TASK_1] [ERROR] [2026-06-28 09:30:04] Failed to fetch data for VNM after 3 attempts.
+[2026-06-28 09:30:04] [TASK_1] [WARNING] [2026-06-28 09:30:04] Error fetching VNM (attempt 1/3): API down
+[2026-06-28 09:30:04] [TASK_1] [WARNING] [2026-06-28 09:30:04] Error fetching VNM (attempt 2/3): API down
+[2026-06-28 09:30:04] [TASK_1] [WARNING] [2026-06-28 09:30:04] Error fetching VNM (attempt 3/3): API down
+[2026-06-28 09:30:04] [TASK_1] [ERROR] [2026-06-28 09:30:04] Failed to fetch data for VNM after 3 attempts.
+[2026-06-28 09:30:04] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:04] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 09:30:04] [TASK_1] [INFO] Tickers: 3 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 09:30:04] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:04] [TASK_1] [INFO] Validated 3/3 tickers against VN30 list.
+[2026-06-28 09:30:04] [TASK_1] [INFO] Processing VNM (1/3)...
+[2026-06-28 09:30:04] [TASK_1] [ERROR] [2026-06-28 09:30:04] FAILED: VNM — no data collected. Continuing with remaining tickers.
+[2026-06-28 09:30:05] [TASK_1] [INFO] Processing VCB (2/3)...
+[2026-06-28 09:30:05] [TASK_1] [INFO] Saved VCB → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-137\test_continues_after_ticker_fa0\prices\VCB.csv (2 rows)
+[2026-06-28 09:30:05] [TASK_1] [INFO] Processing FPT (3/3)...
+[2026-06-28 09:30:05] [TASK_1] [INFO] Saved FPT → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-137\test_continues_after_ticker_fa0\prices\FPT.csv (2 rows)
+[2026-06-28 09:30:05] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-137\test_continues_after_ticker_fa0\prices\all_vn30_prices.csv (4 rows, 2 tickers)
+[2026-06-28 09:30:05] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:05] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 09:30:05] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:05] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 09:30:05] [TASK_1] [WARNING] Failed tickers: VNM
+[2026-06-28 09:30:05] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 09:30:05] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 09:30:05] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 09:30:05] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 09:30:05] [TASK_1] [INFO] FPT     2024-01-02  2024-01-03       2
+[2026-06-28 09:30:05] [TASK_1] [WARNING] ⚠ FPT has 75.0% fewer trading days than expected (2 vs 8 expected). Check for missing data.
+[2026-06-28 09:30:05] [TASK_1] [INFO] VCB     2024-01-02  2024-01-03       2
+[2026-06-28 09:30:05] [TASK_1] [WARNING] ⚠ VCB has 75.0% fewer trading days than expected (2 vs 8 expected). Check for missing data.
+[2026-06-28 09:30:05] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 09:30:05] [TASK_1] [INFO] Total rows: 4 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 09:30:05] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:06] [TASK_1] [ERROR] [2026-06-28 09:30:06] FAILED: FPT — no data collected. Continuing with remaining tickers.
+[2026-06-28 09:30:06] [TASK_1] [WARNING] Failed tickers: FPT
+[2026-06-28 09:30:06] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 09:30:06] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:06] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 09:30:06] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:06] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 09:30:06] [TASK_1] [INFO] Expected trading days (business-day calendar): 3
+[2026-06-28 09:30:06] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 09:30:06] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 09:30:06] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 09:30:06] [TASK_1] [INFO] FPT     2024-01-02  2024-01-03       2
+[2026-06-28 09:30:06] [TASK_1] [WARNING] ⚠ FPT has 33.3% fewer trading days than expected (2 vs 3 expected). Check for missing data.
+[2026-06-28 09:30:06] [TASK_1] [INFO] VNM     2024-01-02  2024-01-04       3
+[2026-06-28 09:30:06] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 09:30:06] [TASK_1] [INFO] Total rows: 5 | Date range: 2024-01-02 to 2024-01-04
+[2026-06-28 09:30:06] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:06] [TASK_1] [WARNING] ⚠ FPT has 53.1% fewer trading days than expected (30 vs 64 expected). Check for missing data.
+[2026-06-28 09:30:06] [TASK_1] [WARNING] ⚠ VNM has 6.2% fewer trading days than expected (60 vs 64 expected). Check for missing data.
+[2026-06-28 09:30:06] [TASK_1] [WARNING] Failed tickers: FPT, VCB
+[2026-06-28 09:30:06] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:06] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 09:30:06] [TASK_1] [INFO] ============================================================
+[2026-06-28 09:30:06] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-28 09:30:06] [TASK_1] [INFO] Expected trading days (business-day calendar): 4
+[2026-06-28 09:30:06] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 09:30:06] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 09:30:06] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 09:30:06] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 09:30:06] [TASK_1] [WARNING] ⚠ VNM has 75.0% fewer trading days than expected (1 vs 4 expected). Check for missing data.
+[2026-06-28 09:30:06] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 09:30:06] [TASK_1] [INFO] Total rows: 1 | Date range: 2024-01-02 to 2024-01-05
+[2026-06-28 09:30:06] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:28:11] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:28:11] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 10:28:11] [TASK_1] [INFO] Tickers: 1 | Date range: 2022-01-01 to 2022-03-31
+[2026-06-28 10:28:11] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:28:11] [TASK_1] [INFO] Validated 1/1 tickers against VN30 list.
+[2026-06-28 10:28:11] [TASK_1] [INFO] Processing ACB (1/1)...
+[2026-06-28 10:28:11] [TASK_1] [INFO] Fetched 66 rows for ACB (2021-12-22 to 2022-03-31).
+[2026-06-28 10:28:11] [TASK_1] [INFO] Saved ACB → data/prices\ACB.csv (66 rows)
+[2026-06-28 10:28:11] [TASK_1] [INFO] Saved consolidated file → data/prices\all_vn30_prices.csv (66 rows, 1 tickers)
+[2026-06-28 10:28:11] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:28:11] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 10:28:11] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:28:11] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-28 10:28:11] [TASK_1] [INFO] Expected trading days (business-day calendar): 64
+[2026-06-28 10:28:11] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:28:11] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 10:28:11] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:28:11] [TASK_1] [INFO] ACB     2021-12-22  2022-03-31      66
+[2026-06-28 10:28:11] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:28:11] [TASK_1] [INFO] Total rows: 66 | Date range: 2022-01-01 to 2022-03-31
+[2026-06-28 10:28:11] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:29:57] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:29:57] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 10:29:57] [TASK_1] [INFO] Tickers: 30 | Date range: 2022-01-01 to 2026-06-28
+[2026-06-28 10:29:57] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:29:57] [TASK_1] [INFO] Validated 30/30 tickers against VN30 list.
+[2026-06-28 10:29:57] [TASK_1] [INFO] Processing ACB (1/30)...
+[2026-06-28 10:29:57] [TASK_1] [INFO] Fetched 1172 rows for ACB (2021-10-13 to 2026-06-26).
+[2026-06-28 10:29:57] [TASK_1] [INFO] Saved ACB → data/prices\ACB.csv (1172 rows)
+[2026-06-28 10:29:57] [TASK_1] [INFO] Processing BCM (2/30)...
+[2026-06-28 10:29:58] [TASK_1] [INFO] Fetched 1172 rows for BCM (2021-10-13 to 2026-06-26).
+[2026-06-28 10:29:58] [TASK_1] [INFO] Saved BCM → data/prices\BCM.csv (1172 rows)
+[2026-06-28 10:29:58] [TASK_1] [INFO] Processing BID (3/30)...
+[2026-06-28 10:29:58] [TASK_1] [INFO] Fetched 1172 rows for BID (2021-10-13 to 2026-06-26).
+[2026-06-28 10:29:58] [TASK_1] [INFO] Saved BID → data/prices\BID.csv (1172 rows)
+[2026-06-28 10:29:59] [TASK_1] [INFO] Processing BVH (4/30)...
+[2026-06-28 10:29:59] [TASK_1] [INFO] Fetched 1172 rows for BVH (2021-10-13 to 2026-06-26).
+[2026-06-28 10:29:59] [TASK_1] [INFO] Saved BVH → data/prices\BVH.csv (1172 rows)
+[2026-06-28 10:30:00] [TASK_1] [INFO] Processing CTG (5/30)...
+[2026-06-28 10:30:00] [TASK_1] [INFO] Fetched 1172 rows for CTG (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:00] [TASK_1] [INFO] Saved CTG → data/prices\CTG.csv (1172 rows)
+[2026-06-28 10:30:01] [TASK_1] [INFO] Processing FPT (6/30)...
+[2026-06-28 10:30:02] [TASK_1] [INFO] Fetched 1172 rows for FPT (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:02] [TASK_1] [INFO] Saved FPT → data/prices\FPT.csv (1172 rows)
+[2026-06-28 10:30:02] [TASK_1] [INFO] Processing GAS (7/30)...
+[2026-06-28 10:30:02] [TASK_1] [INFO] Fetched 1172 rows for GAS (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:02] [TASK_1] [INFO] Saved GAS → data/prices\GAS.csv (1172 rows)
+[2026-06-28 10:30:03] [TASK_1] [INFO] Processing GVR (8/30)...
+[2026-06-28 10:30:03] [TASK_1] [INFO] Fetched 1172 rows for GVR (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:03] [TASK_1] [INFO] Saved GVR → data/prices\GVR.csv (1172 rows)
+[2026-06-28 10:30:04] [TASK_1] [INFO] Processing HDB (9/30)...
+[2026-06-28 10:30:04] [TASK_1] [INFO] Fetched 1172 rows for HDB (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:04] [TASK_1] [INFO] Saved HDB → data/prices\HDB.csv (1172 rows)
+[2026-06-28 10:30:05] [TASK_1] [INFO] Processing HPG (10/30)...
+[2026-06-28 10:30:05] [TASK_1] [INFO] Fetched 1172 rows for HPG (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:05] [TASK_1] [INFO] Saved HPG → data/prices\HPG.csv (1172 rows)
+[2026-06-28 10:30:05] [TASK_1] [INFO] Processing MBB (11/30)...
+[2026-06-28 10:30:06] [TASK_1] [INFO] Fetched 1172 rows for MBB (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:06] [TASK_1] [INFO] Saved MBB → data/prices\MBB.csv (1172 rows)
+[2026-06-28 10:30:06] [TASK_1] [INFO] Processing MSN (12/30)...
+[2026-06-28 10:30:06] [TASK_1] [INFO] Fetched 1172 rows for MSN (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:06] [TASK_1] [INFO] Saved MSN → data/prices\MSN.csv (1172 rows)
+[2026-06-28 10:30:07] [TASK_1] [INFO] Processing MWG (13/30)...
+[2026-06-28 10:30:07] [TASK_1] [INFO] Fetched 1172 rows for MWG (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:07] [TASK_1] [INFO] Saved MWG → data/prices\MWG.csv (1172 rows)
+[2026-06-28 10:30:08] [TASK_1] [INFO] Processing PLX (14/30)...
+[2026-06-28 10:30:08] [TASK_1] [INFO] Fetched 1172 rows for PLX (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:08] [TASK_1] [INFO] Saved PLX → data/prices\PLX.csv (1172 rows)
+[2026-06-28 10:30:09] [TASK_1] [INFO] Processing POW (15/30)...
+[2026-06-28 10:30:09] [TASK_1] [INFO] Fetched 1172 rows for POW (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:09] [TASK_1] [INFO] Saved POW → data/prices\POW.csv (1172 rows)
+[2026-06-28 10:30:09] [TASK_1] [INFO] Processing SAB (16/30)...
+[2026-06-28 10:30:10] [TASK_1] [INFO] Fetched 1172 rows for SAB (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:10] [TASK_1] [INFO] Saved SAB → data/prices\SAB.csv (1172 rows)
+[2026-06-28 10:30:10] [TASK_1] [INFO] Processing SHB (17/30)...
+[2026-06-28 10:30:10] [TASK_1] [INFO] Fetched 1172 rows for SHB (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:10] [TASK_1] [INFO] Saved SHB → data/prices\SHB.csv (1172 rows)
+[2026-06-28 10:30:11] [TASK_1] [INFO] Processing SSB (18/30)...
+[2026-06-28 10:30:13] [TASK_1] [INFO] Fetched 1172 rows for SSB (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:13] [TASK_1] [INFO] Saved SSB → data/prices\SSB.csv (1172 rows)
+[2026-06-28 10:30:13] [TASK_1] [INFO] Processing SSI (19/30)...
+[2026-06-28 10:30:14] [TASK_1] [INFO] Fetched 1172 rows for SSI (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:14] [TASK_1] [INFO] Saved SSI → data/prices\SSI.csv (1172 rows)
+[2026-06-28 10:30:14] [TASK_1] [INFO] Processing STB (20/30)...
+[2026-06-28 10:30:15] [TASK_1] [INFO] Fetched 1172 rows for STB (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:15] [TASK_1] [INFO] Saved STB → data/prices\STB.csv (1172 rows)
+[2026-06-28 10:30:15] [TASK_1] [INFO] Processing TCB (21/30)...
+[2026-06-28 10:30:15] [TASK_1] [INFO] Fetched 1172 rows for TCB (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:15] [TASK_1] [INFO] Saved TCB → data/prices\TCB.csv (1172 rows)
+[2026-06-28 10:30:16] [TASK_1] [INFO] Processing TPB (22/30)...
+[2026-06-28 10:30:16] [TASK_1] [INFO] Fetched 1172 rows for TPB (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:16] [TASK_1] [INFO] Saved TPB → data/prices\TPB.csv (1172 rows)
+[2026-06-28 10:30:17] [TASK_1] [INFO] Processing VCB (23/30)...
+[2026-06-28 10:30:17] [TASK_1] [INFO] Fetched 1172 rows for VCB (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:17] [TASK_1] [INFO] Saved VCB → data/prices\VCB.csv (1172 rows)
+[2026-06-28 10:30:17] [TASK_1] [INFO] Processing VHM (24/30)...
+[2026-06-28 10:30:18] [TASK_1] [INFO] Fetched 1172 rows for VHM (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:18] [TASK_1] [INFO] Saved VHM → data/prices\VHM.csv (1172 rows)
+[2026-06-28 10:30:18] [TASK_1] [INFO] Processing VIB (25/30)...
+[2026-06-28 10:30:18] [TASK_1] [INFO] Fetched 1172 rows for VIB (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:18] [TASK_1] [INFO] Saved VIB → data/prices\VIB.csv (1172 rows)
+[2026-06-28 10:30:19] [TASK_1] [INFO] Processing VIC (26/30)...
+[2026-06-28 10:30:20] [TASK_1] [INFO] Fetched 1172 rows for VIC (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:20] [TASK_1] [INFO] Saved VIC → data/prices\VIC.csv (1172 rows)
+[2026-06-28 10:30:20] [TASK_1] [INFO] Processing VJC (27/30)...
+[2026-06-28 10:30:20] [TASK_1] [INFO] Fetched 1172 rows for VJC (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:20] [TASK_1] [INFO] Saved VJC → data/prices\VJC.csv (1172 rows)
+[2026-06-28 10:30:21] [TASK_1] [INFO] Processing VNM (28/30)...
+[2026-06-28 10:30:21] [TASK_1] [INFO] Fetched 1172 rows for VNM (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:21] [TASK_1] [INFO] Saved VNM → data/prices\VNM.csv (1172 rows)
+[2026-06-28 10:30:22] [TASK_1] [INFO] Processing VPB (29/30)...
+[2026-06-28 10:30:24] [TASK_1] [INFO] Fetched 1172 rows for VPB (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:24] [TASK_1] [INFO] Saved VPB → data/prices\VPB.csv (1172 rows)
+[2026-06-28 10:30:25] [TASK_1] [INFO] Processing VRE (30/30)...
+[2026-06-28 10:30:25] [TASK_1] [INFO] Fetched 1172 rows for VRE (2021-10-13 to 2026-06-26).
+[2026-06-28 10:30:25] [TASK_1] [INFO] Saved VRE → data/prices\VRE.csv (1172 rows)
+[2026-06-28 10:30:25] [TASK_1] [INFO] Saved consolidated file → data/prices\all_vn30_prices.csv (35160 rows, 30 tickers)
+[2026-06-28 10:30:25] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:30:25] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 10:30:25] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:30:25] [TASK_1] [INFO] Successfully collected: 30 tickers
+[2026-06-28 10:30:25] [TASK_1] [INFO] Expected trading days (business-day calendar): 1170
+[2026-06-28 10:30:25] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:30:25] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 10:30:25] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:30:25] [TASK_1] [INFO] ACB     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] BCM     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] BID     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] BVH     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] CTG     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] FPT     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] GAS     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] GVR     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] HDB     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] HPG     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] MBB     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] MSN     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] MWG     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] PLX     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] POW     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] SAB     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] SHB     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] SSB     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] SSI     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] STB     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] TCB     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] TPB     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] VCB     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] VHM     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] VIB     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] VIC     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] VJC     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] VNM     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] VPB     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] VRE     2021-10-13  2026-06-26    1172
+[2026-06-28 10:30:25] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:30:25] [TASK_1] [INFO] Total rows: 35160 | Date range: 2022-01-01 to 2026-06-28
+[2026-06-28 10:30:25] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:15] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:15] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 10:40:15] [TASK_1] [INFO] Timestamp: 2026-06-28T10:40:15.217905
+[2026-06-28 10:40:15] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:15] [TASK_1] [ERROR] TASK FAILED: TASK_1 after 0.0 seconds
+[2026-06-28 10:40:15] [TASK_1] [ERROR] Exception: Simulated failure
+[2026-06-28 10:40:15] [TASK_1] [ERROR] Stack trace:
+Traceback (most recent call last):
+  File "C:\Users\User\KLTN_MASTER\pipeline\run_pipeline.py", line 647, in run_pipeline
+    executor(config, task_logger, smoke_test=smoke_test)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1173, in _execute_mock_call
+    raise effect
+RuntimeError: Simulated failure
+
+[2026-06-28 10:40:15] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:15] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 10:40:15] [TASK_1] [INFO] Timestamp: 2026-06-28T10:40:15.233863
+[2026-06-28 10:40:15] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:15] [TASK_1] [ERROR] TASK FAILED: TASK_1 after 0.0 seconds
+[2026-06-28 10:40:15] [TASK_1] [ERROR] Exception: Simulated failure
+[2026-06-28 10:40:15] [TASK_1] [ERROR] Stack trace:
+Traceback (most recent call last):
+  File "C:\Users\User\KLTN_MASTER\pipeline\run_pipeline.py", line 647, in run_pipeline
+    executor(config, task_logger, smoke_test=smoke_test)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1173, in _execute_mock_call
+    raise effect
+RuntimeError: Simulated failure
+
+[2026-06-28 10:40:15] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:15] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 10:40:15] [TASK_1] [INFO] Timestamp: 2026-06-28T10:40:15.391054
+[2026-06-28 10:40:15] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:15] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:40:15] [TASK_1] [INFO] END TASK_1 — completed in 0.0 seconds
+[2026-06-28 10:40:15] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:15] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:15] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-28 10:40:15] [TASK_1] [INFO] Timestamp: 2026-06-28T10:40:15.656323
+[2026-06-28 10:40:15] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:15] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:40:15] [TASK_1] [INFO] END TASK_1 — completed in 0.0 seconds
+[2026-06-28 10:40:15] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:20] [TASK_1] [INFO] Validated 3/3 tickers against VN30 list.
+[2026-06-28 10:40:20] [TASK_1] [WARNING] Invalid tickers (not in VN30): INVALID — these will be skipped.
+[2026-06-28 10:40:20] [TASK_1] [INFO] Validated 2/3 tickers against VN30 list.
+[2026-06-28 10:40:20] [TASK_1] [WARNING] Invalid tickers (not in VN30): INVALID1, INVALID2 — these will be skipped.
+[2026-06-28 10:40:20] [TASK_1] [INFO] Validated 30/30 tickers against VN30 list.
+[2026-06-28 10:40:20] [TASK_1] [WARNING] [2026-06-28 10:40:20] Error fetching VNM (attempt 1/3): API down
+[2026-06-28 10:40:20] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-28 10:40:20] [TASK_1] [WARNING] [2026-06-28 10:40:20] Error fetching VNM (attempt 2/3): API down
+[2026-06-28 10:40:20] [TASK_1] [INFO] Retrying in 2s...
+[2026-06-28 10:40:20] [TASK_1] [WARNING] [2026-06-28 10:40:20] Error fetching VNM (attempt 3/3): API down
+[2026-06-28 10:40:20] [TASK_1] [ERROR] [2026-06-28 10:40:20] Failed to fetch data for VNM after 3 attempts.
+[2026-06-28 10:40:20] [TASK_1] [INFO] Fetched 2 rows for VNM (2024-01-02 to 2024-01-03).
+[2026-06-28 10:40:20] [TASK_1] [WARNING] Empty data returned for VNM (attempt 1/3).
+[2026-06-28 10:40:20] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-28 10:40:20] [TASK_1] [INFO] Fetched 1 rows for VNM (2024-01-02 to 2024-01-02).
+[2026-06-28 10:40:20] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:20] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 10:40:20] [TASK_1] [INFO] Tickers: 1 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 10:40:20] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:20] [TASK_1] [INFO] Validated 1/1 tickers against VN30 list.
+[2026-06-28 10:40:20] [TASK_1] [INFO] Processing VNM (1/1)...
+[2026-06-28 10:40:20] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-142\test_collect_prices_output_col0\prices\VNM.csv (2 rows)
+[2026-06-28 10:40:20] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-142\test_collect_prices_output_col0\prices\all_vn30_prices.csv (2 rows, 1 tickers)
+[2026-06-28 10:40:20] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:20] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 10:40:20] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:20] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-28 10:40:20] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 10:40:20] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:40:20] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 10:40:20] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:40:20] [TASK_1] [INFO] VNM     2024-01-02  2024-01-03       2
+[2026-06-28 10:40:20] [TASK_1] [WARNING] ⚠ VNM has 75.0% fewer trading days than expected (2 vs 8 expected). Check for missing data.
+[2026-06-28 10:40:20] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:40:20] [TASK_1] [INFO] Total rows: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 10:40:20] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:20] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:20] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 10:40:20] [TASK_1] [INFO] Tickers: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 10:40:20] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:20] [TASK_1] [INFO] Validated 2/2 tickers against VN30 list.
+[2026-06-28 10:40:20] [TASK_1] [INFO] Processing VNM (1/2)...
+[2026-06-28 10:40:20] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-142\test_individual_ticker_csv_sav0\prices\VNM.csv (1 rows)
+[2026-06-28 10:40:20] [TASK_1] [INFO] Processing FPT (2/2)...
+[2026-06-28 10:40:20] [TASK_1] [INFO] Saved FPT → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-142\test_individual_ticker_csv_sav0\prices\FPT.csv (1 rows)
+[2026-06-28 10:40:20] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-142\test_individual_ticker_csv_sav0\prices\all_vn30_prices.csv (2 rows, 2 tickers)
+[2026-06-28 10:40:20] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:20] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 10:40:20] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:20] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 10:40:20] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 10:40:20] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:40:20] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 10:40:20] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:40:20] [TASK_1] [INFO] FPT     2024-01-02  2024-01-02       1
+[2026-06-28 10:40:20] [TASK_1] [WARNING] ⚠ FPT has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 10:40:20] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 10:40:20] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 10:40:20] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:40:20] [TASK_1] [INFO] Total rows: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 10:40:20] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:20] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:20] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 10:40:20] [TASK_1] [INFO] Tickers: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 10:40:20] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:20] [TASK_1] [INFO] Validated 2/2 tickers against VN30 list.
+[2026-06-28 10:40:20] [TASK_1] [INFO] Processing VNM (1/2)...
+[2026-06-28 10:40:20] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-142\test_consolidated_csv_has_tick0\prices\VNM.csv (1 rows)
+[2026-06-28 10:40:21] [TASK_1] [INFO] Processing FPT (2/2)...
+[2026-06-28 10:40:21] [TASK_1] [INFO] Saved FPT → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-142\test_consolidated_csv_has_tick0\prices\FPT.csv (1 rows)
+[2026-06-28 10:40:21] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-142\test_consolidated_csv_has_tick0\prices\all_vn30_prices.csv (2 rows, 2 tickers)
+[2026-06-28 10:40:21] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:21] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 10:40:21] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:21] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 10:40:21] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 10:40:21] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:40:21] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 10:40:21] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:40:21] [TASK_1] [INFO] FPT     2024-01-02  2024-01-02       1
+[2026-06-28 10:40:21] [TASK_1] [WARNING] ⚠ FPT has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 10:40:21] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 10:40:21] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 10:40:21] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:40:21] [TASK_1] [INFO] Total rows: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 10:40:21] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:21] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:21] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 10:40:21] [TASK_1] [INFO] Tickers: 1 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 10:40:21] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:21] [TASK_1] [INFO] Validated 1/1 tickers against VN30 list.
+[2026-06-28 10:40:21] [TASK_1] [INFO] Processing VNM (1/1)...
+[2026-06-28 10:40:21] [TASK_1] [ERROR] [2026-06-28 10:40:21] FAILED: VNM — no data collected. Continuing with remaining tickers.
+[2026-06-28 10:40:21] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:21] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 10:40:21] [TASK_1] [INFO] Tickers: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 10:40:21] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:21] [TASK_1] [INFO] Validated 2/2 tickers against VN30 list.
+[2026-06-28 10:40:21] [TASK_1] [INFO] Processing VNM (1/2)...
+[2026-06-28 10:40:21] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-142\test_partial_failure_continues0\prices\VNM.csv (1 rows)
+[2026-06-28 10:40:21] [TASK_1] [INFO] Processing FPT (2/2)...
+[2026-06-28 10:40:21] [TASK_1] [ERROR] [2026-06-28 10:40:21] FAILED: FPT — no data collected. Continuing with remaining tickers.
+[2026-06-28 10:40:21] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-142\test_partial_failure_continues0\prices\all_vn30_prices.csv (1 rows, 1 tickers)
+[2026-06-28 10:40:21] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:21] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 10:40:21] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:21] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-28 10:40:21] [TASK_1] [WARNING] Failed tickers: FPT
+[2026-06-28 10:40:21] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 10:40:21] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:40:21] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 10:40:21] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:40:21] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 10:40:21] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 10:40:21] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:40:21] [TASK_1] [INFO] Total rows: 1 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 10:40:21] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:21] [TASK_1] [WARNING] [2026-06-28 10:40:21] Error fetching VNM (attempt 1/3): API down
+[2026-06-28 10:40:21] [TASK_1] [WARNING] [2026-06-28 10:40:21] Error fetching VNM (attempt 2/3): API down
+[2026-06-28 10:40:21] [TASK_1] [WARNING] [2026-06-28 10:40:21] Error fetching VNM (attempt 3/3): API down
+[2026-06-28 10:40:21] [TASK_1] [ERROR] [2026-06-28 10:40:21] Failed to fetch data for VNM after 3 attempts.
+[2026-06-28 10:40:21] [TASK_1] [WARNING] [2026-06-28 10:40:21] Error fetching VNM (attempt 1/3): API down
+[2026-06-28 10:40:21] [TASK_1] [WARNING] [2026-06-28 10:40:21] Error fetching VNM (attempt 2/3): API down
+[2026-06-28 10:40:21] [TASK_1] [WARNING] [2026-06-28 10:40:21] Error fetching VNM (attempt 3/3): API down
+[2026-06-28 10:40:21] [TASK_1] [ERROR] [2026-06-28 10:40:21] Failed to fetch data for VNM after 3 attempts.
+[2026-06-28 10:40:21] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:21] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 10:40:21] [TASK_1] [INFO] Tickers: 3 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 10:40:21] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:21] [TASK_1] [INFO] Validated 3/3 tickers against VN30 list.
+[2026-06-28 10:40:21] [TASK_1] [INFO] Processing VNM (1/3)...
+[2026-06-28 10:40:21] [TASK_1] [ERROR] [2026-06-28 10:40:21] FAILED: VNM — no data collected. Continuing with remaining tickers.
+[2026-06-28 10:40:22] [TASK_1] [INFO] Processing VCB (2/3)...
+[2026-06-28 10:40:22] [TASK_1] [INFO] Saved VCB → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-142\test_continues_after_ticker_fa0\prices\VCB.csv (2 rows)
+[2026-06-28 10:40:22] [TASK_1] [INFO] Processing FPT (3/3)...
+[2026-06-28 10:40:22] [TASK_1] [INFO] Saved FPT → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-142\test_continues_after_ticker_fa0\prices\FPT.csv (2 rows)
+[2026-06-28 10:40:22] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-142\test_continues_after_ticker_fa0\prices\all_vn30_prices.csv (4 rows, 2 tickers)
+[2026-06-28 10:40:22] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:22] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 10:40:22] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:22] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 10:40:22] [TASK_1] [WARNING] Failed tickers: VNM
+[2026-06-28 10:40:22] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-28 10:40:22] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:40:22] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 10:40:22] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:40:22] [TASK_1] [INFO] FPT     2024-01-02  2024-01-03       2
+[2026-06-28 10:40:22] [TASK_1] [WARNING] ⚠ FPT has 75.0% fewer trading days than expected (2 vs 8 expected). Check for missing data.
+[2026-06-28 10:40:22] [TASK_1] [INFO] VCB     2024-01-02  2024-01-03       2
+[2026-06-28 10:40:22] [TASK_1] [WARNING] ⚠ VCB has 75.0% fewer trading days than expected (2 vs 8 expected). Check for missing data.
+[2026-06-28 10:40:22] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:40:22] [TASK_1] [INFO] Total rows: 4 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-28 10:40:22] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:23] [TASK_1] [ERROR] [2026-06-28 10:40:23] FAILED: FPT — no data collected. Continuing with remaining tickers.
+[2026-06-28 10:40:23] [TASK_1] [WARNING] Failed tickers: FPT
+[2026-06-28 10:40:23] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-28 10:40:23] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:23] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 10:40:23] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:23] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-28 10:40:23] [TASK_1] [INFO] Expected trading days (business-day calendar): 3
+[2026-06-28 10:40:23] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:40:23] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 10:40:23] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:40:23] [TASK_1] [INFO] FPT     2024-01-02  2024-01-03       2
+[2026-06-28 10:40:23] [TASK_1] [WARNING] ⚠ FPT has 33.3% fewer trading days than expected (2 vs 3 expected). Check for missing data.
+[2026-06-28 10:40:23] [TASK_1] [INFO] VNM     2024-01-02  2024-01-04       3
+[2026-06-28 10:40:23] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:40:23] [TASK_1] [INFO] Total rows: 5 | Date range: 2024-01-02 to 2024-01-04
+[2026-06-28 10:40:23] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:23] [TASK_1] [WARNING] ⚠ FPT has 53.1% fewer trading days than expected (30 vs 64 expected). Check for missing data.
+[2026-06-28 10:40:23] [TASK_1] [WARNING] ⚠ VNM has 6.2% fewer trading days than expected (60 vs 64 expected). Check for missing data.
+[2026-06-28 10:40:23] [TASK_1] [WARNING] Failed tickers: FPT, VCB
+[2026-06-28 10:40:23] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:23] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 10:40:23] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:40:23] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-28 10:40:23] [TASK_1] [INFO] Expected trading days (business-day calendar): 4
+[2026-06-28 10:40:23] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:40:23] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 10:40:23] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:40:23] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-28 10:40:23] [TASK_1] [WARNING] ⚠ VNM has 75.0% fewer trading days than expected (1 vs 4 expected). Check for missing data.
+[2026-06-28 10:40:23] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:40:23] [TASK_1] [INFO] Total rows: 1 | Date range: 2024-01-02 to 2024-01-05
+[2026-06-28 10:40:23] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:45:45] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:45:45] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 10:45:45] [TASK_1] [INFO] Tickers: 1 | Date range: 2022-01-01 to 2022-03-31
+[2026-06-28 10:45:45] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:45:45] [TASK_1] [INFO] Validated 1/1 tickers against VN30 list.
+[2026-06-28 10:45:45] [TASK_1] [INFO] Processing VNM (1/1)...
+[2026-06-28 10:45:45] [TASK_1] [INFO] Fetched 66 rows for VNM (2021-12-22 to 2022-03-31).
+[2026-06-28 10:45:45] [TASK_1] [INFO] Saved VNM → data/prices\VNM.csv (66 rows)
+[2026-06-28 10:45:45] [TASK_1] [INFO] Saved consolidated file → data/prices\all_vn30_prices.csv (66 rows, 1 tickers)
+[2026-06-28 10:45:45] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:45:45] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 10:45:45] [TASK_1] [INFO] ============================================================
+[2026-06-28 10:45:45] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-28 10:45:45] [TASK_1] [INFO] Expected trading days (business-day calendar): 64
+[2026-06-28 10:45:45] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:45:45] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 10:45:45] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:45:45] [TASK_1] [INFO] VNM     2021-12-22  2022-03-31      66
+[2026-06-28 10:45:45] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 10:45:45] [TASK_1] [INFO] Total rows: 66 | Date range: 2022-01-01 to 2022-03-31
+[2026-06-28 10:45:45] [TASK_1] [INFO] ============================================================

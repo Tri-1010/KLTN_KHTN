@@ -1,0 +1,33 @@
+# VN30 Stock Prediction Pipeline - Dependencies
+# ===============================================
+
+# Data collection
+vnstock>=3.0.0
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# Vietnamese NLP
+underthesea>=6.8.0
+
+# Data manipulation
+pandas>=2.0.0
+pandas-ta>=0.3.14b
+
+# Machine learning
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+lightgbm>=4.0.0
+
+# Model interpretability
+shap>=0.43.0
+
+# Configuration
+pyyaml>=6.0.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Text similarity / deduplication
+# Note: the code uses rapidfuzz (not fuzzywuzzy) for fuzzy title deduplication.
+rapidfuzz>=3.0.0

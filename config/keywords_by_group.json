@@ -1,0 +1,113 @@
+{
+  "A": {
+    "name": "Kết quả kinh doanh",
+    "positive": [
+      "lợi nhuận tăng",
+      "doanh thu tăng",
+      "tăng trưởng mạnh",
+      "vượt kế hoạch",
+      "kỷ lục",
+      "tăng trưởng",
+      "lãi ròng",
+      "lợi nhuận sau thuế tăng",
+      "kết quả tích cực"
+    ],
+    "negative": [
+      "lợi nhuận giảm",
+      "doanh thu giảm",
+      "lợi nhuận âm",
+      "thua lỗ",
+      "lỗ ròng",
+      "dưới kế hoạch",
+      "sụt giảm",
+      "kết quả tiêu cực",
+      "lợi nhuận thấp hơn"
+    ]
+  },
+  "B": {
+    "name": "Chính sách cổ đông",
+    "positive": [
+      "chia cổ tức",
+      "cổ tức cao",
+      "mua lại cổ phiếu",
+      "phát hành thưởng",
+      "tăng vốn điều lệ",
+      "cổ tức tiền mặt"
+    ],
+    "negative": [
+      "không chia cổ tức",
+      "hủy cổ tức",
+      "giảm cổ tức",
+      "phát hành pha loãng",
+      "chào bán giá thấp"
+    ]
+  },
+  "C": {
+    "name": "Tài chính doanh nghiệp",
+    "positive": [
+      "giảm nợ",
+      "trả nợ",
+      "cải thiện tài chính",
+      "hệ số an toàn vốn",
+      "dòng tiền dương",
+      "tiền mặt dồi dào"
+    ],
+    "negative": [
+      "nợ xấu",
+      "nợ vay tăng",
+      "áp lực tài chính",
+      "nợ quá hạn",
+      "hệ số nợ cao",
+      "thiếu thanh khoản",
+      "dòng tiền âm"
+    ]
+  },
+  "D": {
+    "name": "Hoạt động kinh doanh",
+    "positive": [
+      "ký kết hợp đồng",
+      "mở rộng thị trường",
+      "dự án mới",
+      "đầu tư mới",
+      "hợp tác chiến lược",
+      "thắng thầu",
+      "xuất khẩu tăng"
+    ],
+    "negative": [
+      "hủy hợp đồng",
+      "dự án trì hoãn",
+      "thu hẹp hoạt động",
+      "đóng cửa",
+      "dừng dự án"
+    ]
+  },
+  "E": {
+    "name": "Rủi ro và pháp lý",
+    "negative": [
+      "bị phạt",
+      "vi phạm",
+      "bị thanh tra",
+      "bị kiểm toán từ chối",
+      "cảnh báo",
+      "đình chỉ",
+      "khởi tố",
+      "điều tra",
+      "tranh chấp pháp lý",
+      "bị kiện"
+    ]
+  },
+  "F": {
+    "name": "Sự kiện doanh nghiệp trung tính",
+    "neutral": [
+      "đại hội cổ đông",
+      "họp HĐQT",
+      "thay đổi lãnh đạo",
+      "thay CEO",
+      "sáp nhập",
+      "mua lại",
+      "phát hành cổ phiếu mới",
+      "niêm yết thêm",
+      "thoái vốn"
+    ]
+  }
+}

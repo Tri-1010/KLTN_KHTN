@@ -1,0 +1,34 @@
+[2026-05-04 13:05:32] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-05-04 13:05:32] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-05-04 13:05:32] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-05-04 13:05:32] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-05-04 13:05:32] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2024Q4; falling back to last 20% of quarters (1 test quarters).
+[2026-05-04 13:05:32] [TASK_10] [INFO] Time-series split — train: 21 rows (7 quarters), test: 3 rows (1 quarters)
+[2026-05-04 13:05:35] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-05-04 13:05:35] [TASK_10] [INFO] Confusion matrix for Dummy - Config_A:
+[[10  0]
+ [ 2  0]]
+[2026-05-04 13:06:24] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-05-04 13:06:24] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-05-04 13:06:24] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-05-04 13:06:24] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-05-04 13:06:24] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2024Q4; falling back to last 20% of quarters (1 test quarters).
+[2026-05-04 13:06:24] [TASK_10] [INFO] Time-series split — train: 21 rows (7 quarters), test: 3 rows (1 quarters)
+[2026-05-04 13:06:25] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-05-04 13:06:25] [TASK_10] [INFO] Confusion matrix for Dummy - Config_A:
+[[10  0]
+ [ 2  0]]
+[2026-05-04 13:57:34] [TASK_10] [INFO] ============================================================
+[2026-05-04 13:57:34] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-05-04 13:57:34] [TASK_10] [INFO] Timestamp: 2026-05-04T13:57:34.753908
+[2026-05-04 13:57:34] [TASK_10] [INFO] ============================================================
+[2026-05-04 13:57:34] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-05-04 13:57:34] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-05-04 13:57:34] [TASK_10] [INFO] ============================================================
+[2026-05-04 13:57:35] [TASK_10] [INFO] ============================================================
+[2026-05-04 13:57:35] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-05-04 13:57:35] [TASK_10] [INFO] Timestamp: 2026-05-04T13:57:35.572610
+[2026-05-04 13:57:35] [TASK_10] [INFO] ============================================================
+[2026-05-04 13:57:35] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-05-04 13:57:35] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-05-04 13:57:35] [TASK_10] [INFO] ============================================================

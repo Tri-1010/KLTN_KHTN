@@ -1,0 +1,77 @@
+# VN30 Stock Prediction Pipeline Configuration
+# =============================================
+
+# VN30 Tickers (all 30 constituents)
+tickers:
+  - ACB
+  - BCM
+  - BID
+  - BVH
+  - CTG
+  - FPT
+  - GAS
+  - GVR
+  - HDB
+  - HPG
+  - MBB
+  - MSN
+  - MWG
+  - PLX
+  - POW
+  - SAB
+  - SHB
+  - SSB
+  - SSI
+  - STB
+  - TCB
+  - TPB
+  - VCB
+  - VHM
+  - VIB
+  - VIC
+  - VJC
+  - VNM
+  - VPB
+  - VRE
+
+# Date range for data collection
+start_date: "2022-01-01"
+end_date: "auto"  # Resolves to current date at runtime
+
+# Aggregation unit
+quarter_unit: "quarter"
+
+# Train/test split cutoff (all quarters before this date are training)
+train_cutoff: "2025-01-01"
+
+# Label configuration
+label_threshold: 0.02  # ±2% threshold for label_threshold
+
+# Minimum news articles per (ticker, quarter) to include in dataset
+min_news_per_period: 5
+
+# Smoke test configuration
+smoke_test:
+  tickers:
+    - VNM
+    - VCB
+    - FPT
+  quarters:
+    - "2022Q1"
+    - "2022Q2"
+    - "2022Q3"
+    - "2022Q4"
+
+# Scraping configuration
+scraping:
+  rate_limit_seconds: 1.0
+  rate_limit_vietstock_seconds: 1.5
+  max_retries: 3
+  backoff_factor: 2
+  request_timeout: 30
+
+# Logging configuration
+logging:
+  level: "INFO"
+  format: "[%(asctime)s] [%(task_name)s] [%(levelname)s] %(message)s"
+  log_dir: "logs"

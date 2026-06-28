@@ -1,0 +1,377 @@
+[2026-06-28 08:06:14] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:06:14] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-28 08:06:14] [TASK_3] [INFO] Timestamp: 2026-06-28T08:06:14.182705
+[2026-06-28 08:06:14] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:06:14] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-28 08:06:14] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-28 08:06:14] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:06:14] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:06:14] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-28 08:06:14] [TASK_3] [INFO] Timestamp: 2026-06-28T08:06:14.232129
+[2026-06-28 08:06:14] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:06:14] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-28 08:06:14] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-28 08:06:14] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:06:25] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 08:06:25] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 08:06:25] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 08:20:28] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:20:28] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-28 08:20:28] [TASK_3] [INFO] Timestamp: 2026-06-28T08:20:28.442446
+[2026-06-28 08:20:28] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:20:28] [TASK_3] [INFO] Starting Entity Matching (TASK 3)...
+[2026-06-28 08:20:28] [TASK_3] [INFO] Loaded aliases for 30 tickers.
+[2026-06-28 08:20:28] [TASK_3] [WARNING] No news files found in any source directory.
+[2026-06-28 08:20:28] [TASK_3] [WARNING] No articles to match. Saving empty output.
+[2026-06-28 08:20:28] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-28 08:20:28] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-28 08:20:28] [TASK_3] [INFO] Output: data/news/matched/all_news_matched.csv (0 rows)
+[2026-06-28 08:20:28] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:30:22] [TASK_3] [INFO] Starting Entity Matching (TASK 3)...
+[2026-06-28 08:30:22] [TASK_3] [INFO] Loaded aliases for 30 tickers.
+[2026-06-28 08:30:22] [TASK_3] [INFO] Loaded 620 total articles from all sources.
+[2026-06-28 08:30:22] [TASK_3] [INFO] Logged 8 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 08:30:22] [TASK_3] [INFO] Saved matched output to data/news/matched/all_news_matched.csv (637 rows).
+[2026-06-28 08:30:22] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:30:22] [TASK_3] [INFO] ENTITY MATCHING REPORT
+[2026-06-28 08:30:22] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:30:22] [TASK_3] [INFO] Total articles before matching : 620
+[2026-06-28 08:30:22] [TASK_3] [INFO] Total rows after matching      : 637
+[2026-06-28 08:30:22] [TASK_3] [INFO] UNKNOWN articles               : 8 (1.3%)
+[2026-06-28 08:30:22] [TASK_3] [INFO] 
+Articles per ticker per source:
+[2026-06-28 08:30:22] [TASK_3] [INFO] 
+source   cafef
+ticker        
+CTG          1
+FPT        215
+GAS          2
+HDB          1
+HPG          1
+MWG          2
+SSI          1
+TCB          1
+UNKNOWN      8
+VCB        276
+VHM          3
+VIB          3
+VIC          1
+VNM        122
+[2026-06-28 08:30:22] [TASK_3] [WARNING] 
+Tickers with <20 articles in a year:
+[2026-06-28 08:30:22] [TASK_3] [WARNING]   CTG in 2025: 1 articles
+[2026-06-28 08:30:22] [TASK_3] [WARNING]   GAS in 2022: 1 articles
+[2026-06-28 08:30:23] [TASK_3] [WARNING]   GAS in 2023: 1 articles
+[2026-06-28 08:30:23] [TASK_3] [WARNING]   HDB in 2023: 1 articles
+[2026-06-28 08:30:23] [TASK_3] [WARNING]   HPG in 2022: 1 articles
+[2026-06-28 08:30:23] [TASK_3] [WARNING]   MWG in 2022: 1 articles
+[2026-06-28 08:30:23] [TASK_3] [WARNING]   MWG in 2024: 1 articles
+[2026-06-28 08:30:23] [TASK_3] [WARNING]   SSI in 2022: 1 articles
+[2026-06-28 08:30:23] [TASK_3] [WARNING]   TCB in 2025: 1 articles
+[2026-06-28 08:30:23] [TASK_3] [WARNING]   VHM in 2023: 3 articles
+[2026-06-28 08:30:23] [TASK_3] [WARNING]   VIB in 2022: 3 articles
+[2026-06-28 08:30:23] [TASK_3] [WARNING]   VIC in 2026: 1 articles
+[2026-06-28 08:30:23] [TASK_3] [WARNING]   VNM in 2026: 15 articles
+[2026-06-28 08:30:23] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:32:41] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:32:41] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-28 08:32:41] [TASK_3] [INFO] Timestamp: 2026-06-28T08:32:41.707943
+[2026-06-28 08:32:41] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:32:41] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-28 08:32:41] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-28 08:32:41] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:32:41] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:32:41] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-28 08:32:41] [TASK_3] [INFO] Timestamp: 2026-06-28T08:32:41.750068
+[2026-06-28 08:32:41] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:32:41] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-28 08:32:41] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-28 08:32:41] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:32:54] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 08:32:54] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 08:32:54] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 08:33:51] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:33:51] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-28 08:33:51] [TASK_3] [INFO] Timestamp: 2026-06-28T08:33:51.398264
+[2026-06-28 08:33:51] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:33:51] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-28 08:33:51] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-28 08:33:51] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:33:51] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:33:51] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-28 08:33:51] [TASK_3] [INFO] Timestamp: 2026-06-28T08:33:51.430212
+[2026-06-28 08:33:51] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:33:51] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-28 08:33:51] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-28 08:33:51] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:34:03] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 08:34:03] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 08:34:03] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 08:52:31] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:52:31] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-28 08:52:31] [TASK_3] [INFO] Timestamp: 2026-06-28T08:52:31.066124
+[2026-06-28 08:52:31] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:52:31] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-28 08:52:31] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-28 08:52:31] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:52:31] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:52:31] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-28 08:52:31] [TASK_3] [INFO] Timestamp: 2026-06-28T08:52:31.106015
+[2026-06-28 08:52:31] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:52:31] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-28 08:52:31] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-28 08:52:31] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:52:42] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 08:52:42] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 08:52:42] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 08:53:02] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:53:02] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-28 08:53:02] [TASK_3] [INFO] Timestamp: 2026-06-28T08:53:02.377944
+[2026-06-28 08:53:02] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:53:02] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-28 08:53:02] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-28 08:53:02] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:53:02] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:53:02] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-28 08:53:02] [TASK_3] [INFO] Timestamp: 2026-06-28T08:53:02.415186
+[2026-06-28 08:53:02] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:53:02] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-28 08:53:02] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-28 08:53:02] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:53:15] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 08:53:15] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 08:53:15] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 08:56:09] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:56:09] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-28 08:56:09] [TASK_3] [INFO] Timestamp: 2026-06-28T08:56:09.737238
+[2026-06-28 08:56:09] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:56:09] [TASK_3] [INFO] Input: data/news/tnck/tnck_raw.csv (1166 rows)
+[2026-06-28 08:56:09] [TASK_3] [INFO] Starting Entity Matching (TASK 3)...
+[2026-06-28 08:56:09] [TASK_3] [INFO] Loaded aliases for 30 tickers.
+[2026-06-28 08:56:09] [TASK_3] [INFO] Loaded 1846 total articles from all sources.
+[2026-06-28 08:56:10] [TASK_3] [INFO] Logged 213 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 08:56:10] [TASK_3] [INFO] Saved matched output to data/news/matched/all_news_matched.csv (1911 rows).
+[2026-06-28 08:56:10] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:56:10] [TASK_3] [INFO] ENTITY MATCHING REPORT
+[2026-06-28 08:56:10] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:56:10] [TASK_3] [INFO] Total articles before matching : 1846
+[2026-06-28 08:56:10] [TASK_3] [INFO] Total rows after matching      : 1911
+[2026-06-28 08:56:10] [TASK_3] [INFO] UNKNOWN articles               : 213 (11.1%)
+[2026-06-28 08:56:10] [TASK_3] [INFO] 
+Articles per ticker per source:
+[2026-06-28 08:56:10] [TASK_3] [INFO] 
+source   cafef  tnck  vietstock
+ticker                         
+ACB          0    43          0
+BCM          0    38          0
+BID          0    18          0
+BVH          0    31          0
+CTG          1    34          0
+FPT        215    49         18
+GAS          2    40          0
+GVR          0    19          0
+HDB          1    40          0
+HPG          1    42          0
+MBB          0    19          1
+MSN          0    40          1
+MWG          2    42          1
+PLX          0    32          0
+POW          0    40          1
+SAB          0    40          0
+SHB          0    42          0
+SSB          0    29          0
+SSI          1    42          0
+STB          0    40          0
+TCB          1    39          0
+TPB          0    28          0
+UNKNOWN      8   194         11
+VCB        276    41         12
+VHM          3     8          0
+VIB          3    41          0
+VIC          1    20          0
+VJC          0    41          1
+VNM        122    34         19
+VPB          0    39          0
+VRE          0     4          0
+[2026-06-28 08:56:10] [TASK_3] [WARNING] 
+Tickers with <20 articles in a year:
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   ACB in 2024: 1 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   ACB in 2025: 15 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   BCM in 2024: 14 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   BCM in 2025: 18 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   BCM in 2026: 6 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   BID in 2024: 4 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   BID in 2025: 9 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   BID in 2026: 5 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   BVH in 2023: 3 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   BVH in 2024: 17 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   BVH in 2025: 10 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   BVH in 2026: 1 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   CTG in 2024: 8 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   CTG in 2025: 16 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   CTG in 2026: 11 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   GAS in 2022: 1 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   GAS in 2023: 1 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   GAS in 2024: 2 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   GAS in 2026: 18 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   GVR in 2024: 8 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   GVR in 2025: 6 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   GVR in 2026: 5 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   HDB in 2023: 1 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   HDB in 2024: 19 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   HDB in 2025: 11 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   HDB in 2026: 10 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   HPG in 2022: 1 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   HPG in 2024: 2 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   HPG in 2026: 19 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   MBB in 2024: 7 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   MBB in 2025: 7 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   MBB in 2026: 6 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   MSN in 2024: 8 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   MSN in 2025: 16 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   MSN in 2026: 17 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   MWG in 2022: 1 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   MWG in 2024: 3 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   MWG in 2025: 16 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   PLX in 2024: 10 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   PLX in 2025: 13 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   PLX in 2026: 9 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   POW in 2024: 18 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   POW in 2025: 18 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   POW in 2026: 5 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   SAB in 2024: 12 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   SAB in 2026: 3 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   SHB in 2026: 16 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   SSB in 2023: 1 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   SSB in 2024: 16 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   SSB in 2025: 7 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   SSB in 2026: 5 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   SSI in 2022: 1 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   SSI in 2024: 1 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   SSI in 2026: 17 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   STB in 2026: 19 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   TCB in 2024: 17 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   TCB in 2025: 15 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   TCB in 2026: 8 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   TPB in 2024: 12 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   TPB in 2025: 13 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   TPB in 2026: 3 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   VHM in 2023: 3 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   VHM in 2024: 6 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   VHM in 2025: 1 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   VHM in 2026: 1 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   VIB in 2022: 3 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   VIB in 2024: 9 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   VIB in 2026: 10 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   VIC in 2025: 9 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   VIC in 2026: 12 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   VJC in 2024: 4 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   VJC in 2026: 6 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   VPB in 2024: 10 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   VPB in 2026: 8 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   VRE in 2024: 1 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   VRE in 2025: 1 articles
+[2026-06-28 08:56:10] [TASK_3] [WARNING]   VRE in 2026: 2 articles
+[2026-06-28 08:56:10] [TASK_3] [INFO] ============================================================
+[2026-06-28 08:56:10] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-28 08:56:10] [TASK_3] [INFO] END TASK_3 — completed in 0.5 seconds
+[2026-06-28 08:56:10] [TASK_3] [INFO] Output: data/news/matched/all_news_matched.csv (1913 rows)
+[2026-06-28 08:56:10] [TASK_3] [INFO] ============================================================
+[2026-06-28 09:17:01] [TASK_3] [INFO] ============================================================
+[2026-06-28 09:17:01] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-28 09:17:01] [TASK_3] [INFO] Timestamp: 2026-06-28T09:17:01.359515
+[2026-06-28 09:17:01] [TASK_3] [INFO] ============================================================
+[2026-06-28 09:17:01] [TASK_3] [INFO] Input: data/news/tnck/tnck_raw.csv (1161 rows)
+[2026-06-28 09:17:01] [TASK_3] [INFO] Starting Entity Matching (TASK 3)...
+[2026-06-28 09:17:01] [TASK_3] [INFO] Loaded aliases for 30 tickers.
+[2026-06-28 09:17:02] [TASK_3] [INFO] Loaded 9839 total articles from all sources.
+[2026-06-28 09:17:03] [TASK_3] [INFO] Logged 638 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 09:17:03] [TASK_3] [INFO] Saved matched output to data/news/matched/all_news_matched.csv (10045 rows).
+[2026-06-28 09:17:03] [TASK_3] [INFO] ============================================================
+[2026-06-28 09:17:03] [TASK_3] [INFO] ENTITY MATCHING REPORT
+[2026-06-28 09:17:03] [TASK_3] [INFO] ============================================================
+[2026-06-28 09:17:03] [TASK_3] [INFO] Total articles before matching : 9839
+[2026-06-28 09:17:03] [TASK_3] [INFO] Total rows after matching      : 10045
+[2026-06-28 09:17:03] [TASK_3] [INFO] UNKNOWN articles               : 638 (6.4%)
+[2026-06-28 09:17:03] [TASK_3] [INFO] 
+Articles per ticker per source:
+[2026-06-28 09:17:03] [TASK_3] [INFO] 
+source   cafef  tnck  vietstock
+ticker                         
+ACB        152    43         18
+BCM        196    38         20
+BID        497    18         16
+BVH        151    31         19
+CTG        417    34         11
+FPT        241    49         19
+GAS        161    40         18
+GVR        122    19         17
+HDB        471    40         17
+HPG        185    42         16
+MBB        391    19         14
+MSN        448    40         18
+MWG        257    42         18
+PLX        150    32         18
+POW        159    40         21
+SAB        162    40         18
+SHB        286    42         18
+SSB        253    29         18
+SSI        258    42         19
+STB        253    40         17
+TCB        564    39         16
+TPB        271    28         16
+UNKNOWN    309   189        140
+VCB        283    41         12
+VHM        200     8          3
+VIB        246    41          9
+VIC        310    20         10
+VJC        173    41         17
+VNM        123    34         21
+VPB        426    39         15
+VRE        113     4          4
+[2026-06-28 09:17:03] [TASK_3] [WARNING] 
+Tickers with <20 articles in a year:
+[2026-06-28 09:17:03] [TASK_3] [WARNING]   VRE in 2026: 17 articles
+[2026-06-28 09:17:03] [TASK_3] [INFO] ============================================================
+[2026-06-28 09:17:03] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-28 09:17:03] [TASK_3] [INFO] END TASK_3 — completed in 2.4 seconds
+[2026-06-28 09:17:03] [TASK_3] [INFO] Output: data/news/matched/all_news_matched.csv (10050 rows)
+[2026-06-28 09:17:03] [TASK_3] [INFO] ============================================================
+[2026-06-28 09:29:58] [TASK_3] [INFO] ============================================================
+[2026-06-28 09:29:58] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-28 09:29:58] [TASK_3] [INFO] Timestamp: 2026-06-28T09:29:58.247742
+[2026-06-28 09:29:58] [TASK_3] [INFO] ============================================================
+[2026-06-28 09:29:58] [TASK_3] [INFO] Input: data/news/tnck/tnck_raw.csv (1161 rows)
+[2026-06-28 09:29:58] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-28 09:29:58] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-28 09:29:58] [TASK_3] [INFO] ============================================================
+[2026-06-28 09:29:58] [TASK_3] [INFO] ============================================================
+[2026-06-28 09:29:58] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-28 09:29:58] [TASK_3] [INFO] Timestamp: 2026-06-28T09:29:58.436816
+[2026-06-28 09:29:58] [TASK_3] [INFO] ============================================================
+[2026-06-28 09:29:58] [TASK_3] [INFO] Input: data/news/tnck/tnck_raw.csv (1161 rows)
+[2026-06-28 09:29:58] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-28 09:29:58] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-28 09:29:58] [TASK_3] [INFO] ============================================================
+[2026-06-28 09:30:10] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 09:30:10] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 09:30:10] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 10:40:15] [TASK_3] [INFO] ============================================================
+[2026-06-28 10:40:15] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-28 10:40:15] [TASK_3] [INFO] Timestamp: 2026-06-28T10:40:15.394045
+[2026-06-28 10:40:15] [TASK_3] [INFO] ============================================================
+[2026-06-28 10:40:15] [TASK_3] [INFO] Input: data/news/tnck/tnck_raw.csv (1161 rows)
+[2026-06-28 10:40:15] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-28 10:40:15] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-28 10:40:15] [TASK_3] [INFO] ============================================================
+[2026-06-28 10:40:15] [TASK_3] [INFO] ============================================================
+[2026-06-28 10:40:15] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-28 10:40:15] [TASK_3] [INFO] Timestamp: 2026-06-28T10:40:15.661310
+[2026-06-28 10:40:15] [TASK_3] [INFO] ============================================================
+[2026-06-28 10:40:15] [TASK_3] [INFO] Input: data/news/tnck/tnck_raw.csv (1161 rows)
+[2026-06-28 10:40:15] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-28 10:40:15] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-28 10:40:15] [TASK_3] [INFO] ============================================================
+[2026-06-28 10:40:28] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 10:40:28] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 10:40:28] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log

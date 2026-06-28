@@ -1,0 +1,22 @@
+{
+  "config_name": "Config_A",
+  "feature_cols": [
+    "return_q",
+    "return_mean_daily",
+    "return_std_daily",
+    "volatility_q",
+    "price_range_q",
+    "volume_mean_q",
+    "volume_change_q",
+    "sma20_end",
+    "ema20_end",
+    "price_vs_sma20",
+    "rsi_mean_q",
+    "rsi_end_q",
+    "macd_hist_mean_q",
+    "bb_position_q",
+    "return_prev_q",
+    "return_2q_ago"
+  ],
+  "model_name": "Random_Forest"
+}
