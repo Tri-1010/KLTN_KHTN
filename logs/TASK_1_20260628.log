@@ -1903,3 +1903,140 @@ RuntimeError: Simulated failure
 [2026-06-28 10:45:45] [TASK_1] [INFO] ------------------------------------------------------------
 [2026-06-28 10:45:45] [TASK_1] [INFO] Total rows: 66 | Date range: 2022-01-01 to 2022-03-31
 [2026-06-28 10:45:45] [TASK_1] [INFO] ============================================================
+[2026-06-28 11:05:39] [TASK_1] [INFO] ============================================================
+[2026-06-28 11:05:39] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-28 11:05:39] [TASK_1] [INFO] Tickers: 30 | Date range: 2022-01-01 to 2026-06-28
+[2026-06-28 11:05:39] [TASK_1] [INFO] ============================================================
+[2026-06-28 11:05:39] [TASK_1] [INFO] Validated 30/30 tickers against VN30 list.
+[2026-06-28 11:05:39] [TASK_1] [INFO] Processing ACB (1/30)...
+[2026-06-28 11:05:40] [TASK_1] [INFO] Fetched 1172 rows for ACB (2021-10-13 to 2026-06-26).
+[2026-06-28 11:05:40] [TASK_1] [INFO] Saved ACB → data/prices\ACB.csv (1172 rows)
+[2026-06-28 11:05:40] [TASK_1] [INFO] Processing BCM (2/30)...
+[2026-06-28 11:05:41] [TASK_1] [INFO] Fetched 1172 rows for BCM (2021-10-13 to 2026-06-26).
+[2026-06-28 11:05:41] [TASK_1] [INFO] Saved BCM → data/prices\BCM.csv (1172 rows)
+[2026-06-28 11:05:41] [TASK_1] [INFO] Processing BID (3/30)...
+[2026-06-28 11:05:42] [TASK_1] [INFO] Fetched 1172 rows for BID (2021-10-13 to 2026-06-26).
+[2026-06-28 11:05:42] [TASK_1] [INFO] Saved BID → data/prices\BID.csv (1172 rows)
+[2026-06-28 11:05:42] [TASK_1] [INFO] Processing BVH (4/30)...
+[2026-06-28 11:05:42] [TASK_1] [INFO] Fetched 1172 rows for BVH (2021-10-13 to 2026-06-26).
+[2026-06-28 11:05:42] [TASK_1] [INFO] Saved BVH → data/prices\BVH.csv (1172 rows)
+[2026-06-28 11:05:43] [TASK_1] [INFO] Processing CTG (5/30)...
+[2026-06-28 11:05:43] [TASK_1] [INFO] Fetched 1172 rows for CTG (2021-10-13 to 2026-06-26).
+[2026-06-28 11:05:43] [TASK_1] [INFO] Saved CTG → data/prices\CTG.csv (1172 rows)
+[2026-06-28 11:05:44] [TASK_1] [INFO] Processing FPT (6/30)...
+[2026-06-28 11:05:44] [TASK_1] [INFO] Fetched 1172 rows for FPT (2021-10-13 to 2026-06-26).
+[2026-06-28 11:05:44] [TASK_1] [INFO] Saved FPT → data/prices\FPT.csv (1172 rows)
+[2026-06-28 11:05:45] [TASK_1] [INFO] Processing GAS (7/30)...
+[2026-06-28 11:05:45] [TASK_1] [INFO] Fetched 1172 rows for GAS (2021-10-13 to 2026-06-26).
+[2026-06-28 11:05:45] [TASK_1] [INFO] Saved GAS → data/prices\GAS.csv (1172 rows)
+[2026-06-28 11:05:45] [TASK_1] [INFO] Processing GVR (8/30)...
+[2026-06-28 11:05:46] [TASK_1] [INFO] Fetched 1172 rows for GVR (2021-10-13 to 2026-06-26).
+[2026-06-28 11:05:46] [TASK_1] [INFO] Saved GVR → data/prices\GVR.csv (1172 rows)
+[2026-06-28 11:05:46] [TASK_1] [INFO] Processing HDB (9/30)...
+[2026-06-28 11:05:47] [TASK_1] [INFO] Fetched 1172 rows for HDB (2021-10-13 to 2026-06-26).
+[2026-06-28 11:05:47] [TASK_1] [INFO] Saved HDB → data/prices\HDB.csv (1172 rows)
+[2026-06-28 11:05:47] [TASK_1] [INFO] Processing HPG (10/30)...
+[2026-06-28 11:05:47] [TASK_1] [INFO] Fetched 1172 rows for HPG (2021-10-13 to 2026-06-26).
+[2026-06-28 11:05:47] [TASK_1] [INFO] Saved HPG → data/prices\HPG.csv (1172 rows)
+[2026-06-28 11:05:48] [TASK_1] [INFO] Processing MBB (11/30)...
+[2026-06-28 11:05:48] [TASK_1] [INFO] Fetched 1172 rows for MBB (2021-10-13 to 2026-06-26).
+[2026-06-28 11:05:48] [TASK_1] [INFO] Saved MBB → data/prices\MBB.csv (1172 rows)
+[2026-06-28 11:05:49] [TASK_1] [INFO] Processing MSN (12/30)...
+[2026-06-28 11:05:49] [TASK_1] [INFO] Fetched 1172 rows for MSN (2021-10-13 to 2026-06-26).
+[2026-06-28 11:05:49] [TASK_1] [INFO] Saved MSN → data/prices\MSN.csv (1172 rows)
+[2026-06-28 11:05:50] [TASK_1] [INFO] Processing MWG (13/30)...
+[2026-06-28 11:05:50] [TASK_1] [INFO] Fetched 1172 rows for MWG (2021-10-13 to 2026-06-26).
+[2026-06-28 11:05:50] [TASK_1] [INFO] Saved MWG → data/prices\MWG.csv (1172 rows)
+[2026-06-28 11:05:50] [TASK_1] [INFO] Processing PLX (14/30)...
+[2026-06-28 11:05:51] [TASK_1] [INFO] Fetched 1172 rows for PLX (2021-10-13 to 2026-06-26).
+[2026-06-28 11:05:51] [TASK_1] [INFO] Saved PLX → data/prices\PLX.csv (1172 rows)
+[2026-06-28 11:05:51] [TASK_1] [INFO] Processing POW (15/30)...
+[2026-06-28 11:05:52] [TASK_1] [INFO] Fetched 1172 rows for POW (2021-10-13 to 2026-06-26).
+[2026-06-28 11:05:52] [TASK_1] [INFO] Saved POW → data/prices\POW.csv (1172 rows)
+[2026-06-28 11:05:52] [TASK_1] [INFO] Processing SAB (16/30)...
+[2026-06-28 11:05:52] [TASK_1] [INFO] Fetched 1172 rows for SAB (2021-10-13 to 2026-06-26).
+[2026-06-28 11:05:52] [TASK_1] [INFO] Saved SAB → data/prices\SAB.csv (1172 rows)
+[2026-06-28 11:05:53] [TASK_1] [INFO] Processing SHB (17/30)...
+[2026-06-28 11:05:53] [TASK_1] [INFO] Fetched 1172 rows for SHB (2021-10-13 to 2026-06-26).
+[2026-06-28 11:05:53] [TASK_1] [INFO] Saved SHB → data/prices\SHB.csv (1172 rows)
+[2026-06-28 11:05:54] [TASK_1] [INFO] Processing SSB (18/30)...
+[2026-06-28 11:05:54] [TASK_1] [INFO] Fetched 1172 rows for SSB (2021-10-13 to 2026-06-26).
+[2026-06-28 11:05:54] [TASK_1] [INFO] Saved SSB → data/prices\SSB.csv (1172 rows)
+[2026-06-28 11:05:54] [TASK_1] [INFO] Processing SSI (19/30)...
+[2026-06-28 11:05:55] [TASK_1] [INFO] Fetched 1172 rows for SSI (2021-10-13 to 2026-06-26).
+[2026-06-28 11:05:55] [TASK_1] [INFO] Saved SSI → data/prices\SSI.csv (1172 rows)
+[2026-06-28 11:05:55] [TASK_1] [INFO] Processing STB (20/30)...
+[2026-06-28 11:05:56] [TASK_1] [INFO] Fetched 1172 rows for STB (2021-10-13 to 2026-06-26).
+[2026-06-28 11:05:56] [TASK_1] [INFO] Saved STB → data/prices\STB.csv (1172 rows)
+[2026-06-28 11:05:56] [TASK_1] [INFO] Processing TCB (21/30)...
+[2026-06-28 11:05:56] [TASK_1] [INFO] Fetched 1172 rows for TCB (2021-10-13 to 2026-06-26).
+[2026-06-28 11:05:56] [TASK_1] [INFO] Saved TCB → data/prices\TCB.csv (1172 rows)
+[2026-06-28 11:05:57] [TASK_1] [INFO] Processing TPB (22/30)...
+[2026-06-28 11:05:57] [TASK_1] [INFO] Fetched 1172 rows for TPB (2021-10-13 to 2026-06-26).
+[2026-06-28 11:05:57] [TASK_1] [INFO] Saved TPB → data/prices\TPB.csv (1172 rows)
+[2026-06-28 11:05:58] [TASK_1] [INFO] Processing VCB (23/30)...
+[2026-06-28 11:05:58] [TASK_1] [INFO] Fetched 1172 rows for VCB (2021-10-13 to 2026-06-26).
+[2026-06-28 11:05:58] [TASK_1] [INFO] Saved VCB → data/prices\VCB.csv (1172 rows)
+[2026-06-28 11:05:59] [TASK_1] [INFO] Processing VHM (24/30)...
+[2026-06-28 11:05:59] [TASK_1] [INFO] Fetched 1172 rows for VHM (2021-10-13 to 2026-06-26).
+[2026-06-28 11:05:59] [TASK_1] [INFO] Saved VHM → data/prices\VHM.csv (1172 rows)
+[2026-06-28 11:05:59] [TASK_1] [INFO] Processing VIB (25/30)...
+[2026-06-28 11:06:00] [TASK_1] [INFO] Fetched 1172 rows for VIB (2021-10-13 to 2026-06-26).
+[2026-06-28 11:06:00] [TASK_1] [INFO] Saved VIB → data/prices\VIB.csv (1172 rows)
+[2026-06-28 11:06:00] [TASK_1] [INFO] Processing VIC (26/30)...
+[2026-06-28 11:06:01] [TASK_1] [INFO] Fetched 1172 rows for VIC (2021-10-13 to 2026-06-26).
+[2026-06-28 11:06:01] [TASK_1] [INFO] Saved VIC → data/prices\VIC.csv (1172 rows)
+[2026-06-28 11:06:01] [TASK_1] [INFO] Processing VJC (27/30)...
+[2026-06-28 11:06:02] [TASK_1] [INFO] Fetched 1172 rows for VJC (2021-10-13 to 2026-06-26).
+[2026-06-28 11:06:02] [TASK_1] [INFO] Saved VJC → data/prices\VJC.csv (1172 rows)
+[2026-06-28 11:06:03] [TASK_1] [INFO] Processing VNM (28/30)...
+[2026-06-28 11:06:03] [TASK_1] [INFO] Fetched 1172 rows for VNM (2021-10-13 to 2026-06-26).
+[2026-06-28 11:06:03] [TASK_1] [INFO] Saved VNM → data/prices\VNM.csv (1172 rows)
+[2026-06-28 11:06:04] [TASK_1] [INFO] Processing VPB (29/30)...
+[2026-06-28 11:06:04] [TASK_1] [INFO] Fetched 1172 rows for VPB (2021-10-13 to 2026-06-26).
+[2026-06-28 11:06:04] [TASK_1] [INFO] Saved VPB → data/prices\VPB.csv (1172 rows)
+[2026-06-28 11:06:04] [TASK_1] [INFO] Processing VRE (30/30)...
+[2026-06-28 11:06:05] [TASK_1] [INFO] Fetched 1172 rows for VRE (2021-10-13 to 2026-06-26).
+[2026-06-28 11:06:05] [TASK_1] [INFO] Saved VRE → data/prices\VRE.csv (1172 rows)
+[2026-06-28 11:06:05] [TASK_1] [INFO] Saved consolidated file → data/prices\all_vn30_prices.csv (35160 rows, 30 tickers)
+[2026-06-28 11:06:05] [TASK_1] [INFO] ============================================================
+[2026-06-28 11:06:05] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-28 11:06:05] [TASK_1] [INFO] ============================================================
+[2026-06-28 11:06:05] [TASK_1] [INFO] Successfully collected: 30 tickers
+[2026-06-28 11:06:05] [TASK_1] [INFO] Expected trading days (business-day calendar): 1170
+[2026-06-28 11:06:05] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 11:06:05] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-28 11:06:05] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 11:06:05] [TASK_1] [INFO] ACB     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] BCM     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] BID     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] BVH     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] CTG     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] FPT     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] GAS     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] GVR     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] HDB     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] HPG     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] MBB     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] MSN     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] MWG     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] PLX     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] POW     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] SAB     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] SHB     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] SSB     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] SSI     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] STB     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] TCB     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] TPB     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] VCB     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] VHM     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] VIB     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] VIC     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] VJC     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] VNM     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] VPB     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] VRE     2021-10-13  2026-06-26    1172
+[2026-06-28 11:06:05] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-28 11:06:05] [TASK_1] [INFO] Total rows: 35160 | Date range: 2022-01-01 to 2026-06-28
+[2026-06-28 11:06:05] [TASK_1] [INFO] ============================================================

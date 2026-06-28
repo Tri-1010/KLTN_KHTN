@@ -469,3 +469,25 @@
 [2026-06-28 10:44:09] [PIPELINE] [INFO] ✓ TASK_10 completed in 7.3 seconds
 [2026-06-28 10:44:21] [PIPELINE] [INFO] ✓ TASK_11 completed in 12.5 seconds
 [2026-06-28 10:44:21] [PIPELINE] [INFO] Pipeline completed successfully in 19.9 seconds.
+[2026-06-28 11:14:51] [PIPELINE] [INFO] ============================================================
+[2026-06-28 11:14:51] [PIPELINE] [INFO] VN30 Stock Prediction Pipeline
+[2026-06-28 11:14:51] [PIPELINE] [INFO] Step: features | Force: True | Smoke Test: False
+[2026-06-28 11:14:51] [PIPELINE] [INFO] ============================================================
+[2026-06-28 11:14:51] [PIPELINE] [INFO] Configuration loaded and validated from config/pipeline_config.yaml
+[2026-06-28 11:14:51] [PIPELINE] [INFO] Tasks to execute: TASK_4, TASK_5, TASK_6, TASK_7, TASK_8, TASK_9
+[2026-06-28 11:15:33] [PIPELINE] [INFO] ✓ TASK_4 completed in 41.8 seconds
+[2026-06-28 11:15:37] [PIPELINE] [INFO] ✓ TASK_5 completed in 3.9 seconds
+[2026-06-28 11:15:38] [PIPELINE] [INFO] ✓ TASK_6 completed in 0.7 seconds
+[2026-06-28 11:15:41] [PIPELINE] [INFO] ✓ TASK_7 completed in 3.0 seconds
+[2026-06-28 11:15:42] [PIPELINE] [INFO] ✓ TASK_8 completed in 1.3 seconds
+[2026-06-28 11:15:44] [PIPELINE] [INFO] ✓ TASK_9 completed in 1.3 seconds
+[2026-06-28 11:15:44] [PIPELINE] [INFO] Pipeline completed successfully in 52.4 seconds.
+[2026-06-28 11:15:44] [PIPELINE] [INFO] ============================================================
+[2026-06-28 11:15:44] [PIPELINE] [INFO] VN30 Stock Prediction Pipeline
+[2026-06-28 11:15:44] [PIPELINE] [INFO] Step: train | Force: True | Smoke Test: False
+[2026-06-28 11:15:44] [PIPELINE] [INFO] ============================================================
+[2026-06-28 11:15:44] [PIPELINE] [INFO] Configuration loaded and validated from config/pipeline_config.yaml
+[2026-06-28 11:15:44] [PIPELINE] [INFO] Tasks to execute: TASK_10, TASK_11
+[2026-06-28 11:15:51] [PIPELINE] [INFO] ✓ TASK_10 completed in 6.5 seconds
+[2026-06-28 11:16:01] [PIPELINE] [INFO] ✓ TASK_11 completed in 10.3 seconds
+[2026-06-28 11:16:01] [PIPELINE] [INFO] Pipeline completed successfully in 16.8 seconds.

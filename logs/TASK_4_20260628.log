@@ -298,3 +298,97 @@ Top 50 most frequent tokens:
 [2026-06-28 10:40:15] [TASK_4] [INFO] ------------------------------------------------------------
 [2026-06-28 10:40:15] [TASK_4] [INFO] END TASK_4 — completed in 0.0 seconds
 [2026-06-28 10:40:15] [TASK_4] [INFO] ============================================================
+[2026-06-28 11:14:51] [TASK_4] [INFO] ============================================================
+[2026-06-28 11:14:51] [TASK_4] [INFO] START TASK_4: Text Preprocessing (clean, tokenize, deduplicate)
+[2026-06-28 11:14:51] [TASK_4] [INFO] Timestamp: 2026-06-28T11:14:51.753733
+[2026-06-28 11:14:51] [TASK_4] [INFO] ============================================================
+[2026-06-28 11:14:51] [TASK_4] [INFO] Input: data/news/matched/all_news_matched.csv (10050 rows)
+[2026-06-28 11:14:52] [TASK_4] [INFO] Starting Text Preprocessing (TASK 4)...
+[2026-06-28 11:14:52] [TASK_4] [INFO] Loaded 10045 articles from data/news/matched/all_news_matched.csv.
+[2026-06-28 11:14:52] [TASK_4] [INFO] Loaded 23 stopwords from config/stopwords_finance.txt.
+[2026-06-28 11:14:52] [TASK_4] [INFO] URL deduplication: 10045 → 9715 (removed 330 duplicates).
+[2026-06-28 11:15:01] [TASK_4] [INFO] Fuzzy title deduplication: 9715 → 7503 (removed 2212 near-duplicates, threshold=90%).
+[2026-06-28 11:15:01] [TASK_4] [INFO] Cleaning text...
+[2026-06-28 11:15:02] [TASK_4] [INFO] Tokenizing 7503 articles...
+[2026-06-28 11:15:32] [TASK_4] [INFO] Removing stopwords...
+[2026-06-28 11:15:33] [TASK_4] [WARNING] Excluding 15 articles with <5 tokens:
+[2026-06-28 11:15:33] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/ngan-hang-hdbank-hdb-hose-post365031.html
+[2026-06-28 11:15:33] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/ngan-hang-vietcombank-vcb-hose-post365004.html
+[2026-06-28 11:15:33] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/shb-but-pha-tu-noi-luc-post368325.html
+[2026-06-28 11:15:33] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/fpt-thau-tom-cong-ty-cong-nghe-duc-post368636.html
+[2026-06-28 11:15:33] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/acb-tang-truong-ben-vung-theo-thoi-gian-post372514.html
+[2026-06-28 11:15:33] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/co-phieu-bao-hiem-lech-nhip-post382119.html
+[2026-06-28 11:15:33] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/co-phieu-phong-thu-phat-huy-vai-tro-post387263.html
+[2026-06-28 11:15:33] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/thanh-khoan-suy-yeu-post387687.html
+[2026-06-28 11:15:33] [TASK_4] [WARNING]   URL: https://vietstock.vn/2026/04/pow-thong-bao-thay-doi-nhan-su-214-1432299.htm
+[2026-06-28 11:15:33] [TASK_4] [WARNING]   URL: https://vietstock.vn/2026/05/vjc-cong-bo-thong-tin-214-1438200.htm
+[2026-06-28 11:15:33] [TASK_4] [WARNING]   URL: https://vietstock.vn/2026/05/vcb-dieu-le-cong-ty-sua-doi-2026-737-1444400.htm
+[2026-06-28 11:15:33] [TASK_4] [WARNING]   URL: https://www.tinnhanhchungkhoan.vn/thoi-diem-chon-loc-co-hoi-post390988.html
+[2026-06-28 11:15:33] [TASK_4] [WARNING]   URL: https://vietstock.vn/2026/06/ssb-thong-bao-thay-doi-nhan-su-214-1450086.htm
+[2026-06-28 11:15:33] [TASK_4] [WARNING]   URL: https://vietstock.vn/2026/06/gvr-tu-cach-cong-ty-dai-chung-830-1450907.htm
+[2026-06-28 11:15:33] [TASK_4] [WARNING]   URL: https://vietstock.vn/2026/06/khi-esop-tien-hoa-764-1453118.htm
+[2026-06-28 11:15:33] [TASK_4] [INFO] Saved 7488 processed articles to data/news/processed/all_news_processed.csv.
+[2026-06-28 11:15:33] [TASK_4] [INFO] ============================================================
+[2026-06-28 11:15:33] [TASK_4] [INFO] TEXT PREPROCESSING REPORT
+[2026-06-28 11:15:33] [TASK_4] [INFO] ============================================================
+[2026-06-28 11:15:33] [TASK_4] [INFO] Articles before deduplication : 10045
+[2026-06-28 11:15:33] [TASK_4] [INFO] Articles after deduplication  : 7503
+[2026-06-28 11:15:33] [TASK_4] [INFO] Articles in final output      : 7488
+[2026-06-28 11:15:33] [TASK_4] [INFO] Average token count per article: 27.7
+[2026-06-28 11:15:33] [TASK_4] [INFO] 
+Top 50 most frequent tokens:
+[2026-06-28 11:15:33] [TASK_4] [INFO]   hđqt                           4948
+[2026-06-28 11:15:33] [TASK_4] [INFO]   thông_báo                      4144
+[2026-06-28 11:15:33] [TASK_4] [INFO]   về                             4069
+[2026-06-28 11:15:33] [TASK_4] [INFO]   cổ_phần                        3950
+[2026-06-28 11:15:33] [TASK_4] [INFO]   ,                              3634
+[2026-06-28 11:15:33] [TASK_4] [INFO]   nghị_quyết                     3630
+[2026-06-28 11:15:33] [TASK_4] [INFO]   năm                            3397
+[2026-06-28 11:15:33] [TASK_4] [INFO]   ngân_hàng                      3234
+[2026-06-28 11:15:33] [TASK_4] [INFO]   việc                           3190
+[2026-06-28 11:15:33] [TASK_4] [INFO]   và                             3038
+[2026-06-28 11:15:33] [TASK_4] [INFO]   của                            2918
+[2026-06-28 11:15:33] [TASK_4] [INFO]   thương_mại                     2437
+[2026-06-28 11:15:33] [TASK_4] [INFO]   việt_nam                       2222
+[2026-06-28 11:15:33] [TASK_4] [INFO]   sau                            1980
+[2026-06-28 11:15:33] [TASK_4] [INFO]   nbsp                           1882
+[2026-06-28 11:15:33] [TASK_4] [INFO]   với                            1711
+[2026-06-28 11:15:33] [TASK_4] [INFO]   như                            1676
+[2026-06-28 11:15:33] [TASK_4] [INFO]   giao_dịch                      1665
+[2026-06-28 11:15:33] [TASK_4] [INFO]   thay_đổi                       1639
+[2026-06-28 11:15:33] [TASK_4] [INFO]   cổ_phiếu                       1557
+[2026-06-28 11:15:33] [TASK_4] [INFO]   ngày                           1492
+[2026-06-28 11:15:33] [TASK_4] [INFO]   thông_qua                      1404
+[2026-06-28 11:15:33] [TASK_4] [INFO]   công_bố                        1342
+[2026-06-28 11:15:33] [TASK_4] [INFO]   quyết_định                     1244
+[2026-06-28 11:15:33] [TASK_4] [INFO]   cho                            1198
+[2026-06-28 11:15:33] [TASK_4] [INFO]   phát_hành                      1193
+[2026-06-28 11:15:33] [TASK_4] [INFO]   trái_phiếu                     1111
+[2026-06-28 11:15:33] [TASK_4] [INFO]   ng                             1110
+[2026-06-28 11:15:33] [TASK_4] [INFO]   v                              1081
+[2026-06-28 11:15:33] [TASK_4] [INFO]   .                              1027
+[2026-06-28 11:15:33] [TASK_4] [INFO]   tỷ                             1021
+[2026-06-28 11:15:33] [TASK_4] [INFO]   chi_nhánh                      1020
+[2026-06-28 11:15:33] [TASK_4] [INFO]   2023                           1007
+[2026-06-28 11:15:33] [TASK_4] [INFO]   tăng                           998
+[2026-06-28 11:15:33] [TASK_4] [INFO]   2024                           993
+[2026-06-28 11:15:33] [TASK_4] [INFO]   2025                           979
+[2026-06-28 11:15:33] [TASK_4] [INFO]   địa_điểm                       969
+[2026-06-28 11:15:33] [TASK_4] [INFO]   hợp_đồng                       956
+[2026-06-28 11:15:33] [TASK_4] [INFO]   đhđcđ                          926
+[2026-06-28 11:15:33] [TASK_4] [INFO]   %                              908
+[2026-06-28 11:15:33] [TASK_4] [INFO]   phát_triển                     905
+[2026-06-28 11:15:33] [TASK_4] [INFO]   để                             897
+[2026-06-28 11:15:33] [TASK_4] [INFO]   đồng                           867
+[2026-06-28 11:15:33] [TASK_4] [INFO]   bằng                           862
+[2026-06-28 11:15:33] [TASK_4] [INFO]   2022                           840
+[2026-06-28 11:15:33] [TASK_4] [INFO]   tmcp                           800
+[2026-06-28 11:15:33] [TASK_4] [INFO]   phê_duyệt                      798
+[2026-06-28 11:15:33] [TASK_4] [INFO]   trong                          785
+[2026-06-28 11:15:33] [TASK_4] [INFO]   vốn                            767
+[2026-06-28 11:15:33] [TASK_4] [INFO]   ocirc                          761
+[2026-06-28 11:15:33] [TASK_4] [INFO] ============================================================
+[2026-06-28 11:15:33] [TASK_4] [INFO] ------------------------------------------------------------
+[2026-06-28 11:15:33] [TASK_4] [INFO] END TASK_4 — completed in 41.8 seconds
+[2026-06-28 11:15:33] [TASK_4] [INFO] Output: data/news/processed/all_news_processed.csv (7492 rows)
+[2026-06-28 11:15:33] [TASK_4] [INFO] ============================================================
