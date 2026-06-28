@@ -700,3 +700,41 @@ VRE        113                29     4           6          8          3
 [2026-06-28 21:34:42] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
 [2026-06-28 21:34:42] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
 [2026-06-28 21:34:42] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 22:03:52] [TASK_3] [INFO] ============================================================
+[2026-06-28 22:03:52] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-28 22:03:52] [TASK_3] [INFO] Timestamp: 2026-06-28T22:03:52.900643
+[2026-06-28 22:03:52] [TASK_3] [INFO] ============================================================
+[2026-06-28 22:03:52] [TASK_3] [INFO] Input: data/news/tnck/tnck_raw.csv (1161 rows)
+[2026-06-28 22:03:52] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-28 22:03:52] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-28 22:03:52] [TASK_3] [INFO] ============================================================
+[2026-06-28 22:03:53] [TASK_3] [INFO] ============================================================
+[2026-06-28 22:03:53] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-28 22:03:53] [TASK_3] [INFO] Timestamp: 2026-06-28T22:03:53.365221
+[2026-06-28 22:03:53] [TASK_3] [INFO] ============================================================
+[2026-06-28 22:03:53] [TASK_3] [INFO] Input: data/news/tnck/tnck_raw.csv (1161 rows)
+[2026-06-28 22:03:53] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-28 22:03:53] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-28 22:03:53] [TASK_3] [INFO] ============================================================
+[2026-06-28 22:04:05] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 22:04:05] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 22:04:05] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 22:04:16] [TASK_3] [INFO] ============================================================
+[2026-06-28 22:04:16] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-28 22:04:16] [TASK_3] [INFO] Timestamp: 2026-06-28T22:04:16.658868
+[2026-06-28 22:04:16] [TASK_3] [INFO] ============================================================
+[2026-06-28 22:04:16] [TASK_3] [INFO] Input: data/news/tnck/tnck_raw.csv (1161 rows)
+[2026-06-28 22:04:16] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-28 22:04:16] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-28 22:04:16] [TASK_3] [INFO] ============================================================
+[2026-06-28 22:04:17] [TASK_3] [INFO] ============================================================
+[2026-06-28 22:04:17] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-28 22:04:17] [TASK_3] [INFO] Timestamp: 2026-06-28T22:04:17.046331
+[2026-06-28 22:04:17] [TASK_3] [INFO] ============================================================
+[2026-06-28 22:04:17] [TASK_3] [INFO] Input: data/news/tnck/tnck_raw.csv (1161 rows)
+[2026-06-28 22:04:17] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-28 22:04:17] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-28 22:04:17] [TASK_3] [INFO] ============================================================
+[2026-06-28 22:04:28] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 22:04:28] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 22:04:28] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log

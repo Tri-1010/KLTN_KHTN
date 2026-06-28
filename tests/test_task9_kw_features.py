@@ -112,6 +112,64 @@ class TestRawCounts:
 
 
 # ---------------------------------------------------------------------------
+# Longest-first masking tests (Req 9.1 — negation / overlap handling)
+# ---------------------------------------------------------------------------
+
+
+class TestLongestFirstMasking:
+    """Test that overlapping keywords are counted with longest-first masking.
+
+    The core problem: a negative phrase like "không tăng trưởng" contains the
+    positive phrase "tăng trưởng". Naive substring counting would credit both,
+    which corrupts the directional signal. Longest-first masking must ensure
+    only the longest matching phrase claims the span.
+    """
+
+    def test_negation_not_double_counted(self):
+        """'không tăng trưởng' must count as negative only, not also positive."""
+        keywords = ["tăng trưởng", "không tăng trưởng"]
+        text = "công ty không tăng trưởng trong quý này"
+        counts = compute_raw_counts(text, keywords)
+        assert counts["không tăng trưởng"] == 1
+        # The positive "tăng trưởng" is masked inside the negative phrase.
+        assert counts["tăng trưởng"] == 0
+
+    def test_standalone_positive_still_counted(self):
+        """A standalone 'tăng trưởng' (no negation) is still counted positive."""
+        keywords = ["tăng trưởng", "không tăng trưởng"]
+        text = "doanh nghiệp tăng trưởng tốt"
+        counts = compute_raw_counts(text, keywords)
+        assert counts["tăng trưởng"] == 1
+        assert counts["không tăng trưởng"] == 0
+
+    def test_mixed_negated_and_standalone(self):
+        """Both a negated and a standalone occurrence are counted correctly."""
+        keywords = ["tăng trưởng", "không tăng trưởng"]
+        text = "quý một tăng trưởng nhưng quý hai không tăng trưởng"
+        counts = compute_raw_counts(text, keywords)
+        assert counts["không tăng trưởng"] == 1
+        # Only the standalone occurrence remains after masking the negated one.
+        assert counts["tăng trưởng"] == 1
+
+    def test_longer_phrase_wins_over_shorter(self):
+        """'lợi nhuận không tăng' should win over the shorter positive 'tăng'."""
+        keywords = ["tăng", "lợi nhuận không tăng"]
+        text = "báo cáo cho thấy lợi nhuận không tăng"
+        counts = compute_raw_counts(text, keywords)
+        assert counts["lợi nhuận không tăng"] == 1
+        assert counts["tăng"] == 0
+
+    def test_non_overlapping_keywords_unaffected(self):
+        """Masking must not affect keywords that don't overlap."""
+        keywords = ["nợ xấu", "tăng trưởng", "không tăng trưởng"]
+        text = "nợ xấu tăng nhưng doanh thu tăng trưởng mạnh"
+        counts = compute_raw_counts(text, keywords)
+        assert counts["nợ xấu"] == 1
+        assert counts["tăng trưởng"] == 1
+        assert counts["không tăng trưởng"] == 0
+
+
+# ---------------------------------------------------------------------------
 # Normalized count tests (Req 9.1)
 # ---------------------------------------------------------------------------
 

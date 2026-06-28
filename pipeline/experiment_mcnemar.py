@@ -29,6 +29,8 @@ for _stream in (sys.stdout, sys.stderr):
         except Exception:
             pass
 
+import argparse
+
 import numpy as np
 import pandas as pd
 from sklearn.metrics import balanced_accuracy_score
@@ -49,8 +51,8 @@ UNIT = "month"
 MODEL_NAME = "Random_Forest"
 
 
-def _build_monthly_dataset():
-    assign_fn, next_fn = make_period_funcs(UNIT)
+def _build_monthly_dataset(unit: str = UNIT):
+    assign_fn, next_fn = make_period_funcs(unit)
     prices = pd.read_csv(PRICES_PATH, encoding="utf-8")
     news = pd.read_csv(NEWS_PATH, encoding="utf-8")
 
@@ -95,7 +97,23 @@ def _train_predict(train_df, test_df, cols, y_train, y_test):
 
 
 def main() -> None:
-    merged, tech_cols, kw_cols = _build_monthly_dataset()
+    parser = argparse.ArgumentParser(description="McNemar test at a chosen period unit")
+    parser.add_argument(
+        "--unit",
+        default=UNIT,
+        choices=["2week", "month", "2month", "quarter"],
+        help="Period granularity to test (default: month).",
+    )
+    parser.add_argument(
+        "--out",
+        default=None,
+        help="Output report path (default: reports/mcnemar_{unit}_rf.txt).",
+    )
+    args = parser.parse_args()
+    unit = args.unit
+    out_path = args.out or f"reports/mcnemar_{unit}_rf.txt"
+
+    merged, tech_cols, kw_cols = _build_monthly_dataset(unit)
     train_df, test_df = _period_split(merged)
 
     y_train = train_df["label_basic"].astype(int)
@@ -125,7 +143,7 @@ def main() -> None:
 
     lines = []
     lines.append("=" * 64)
-    lines.append("McNemar test — Random Forest, 1-month granularity")
+    lines.append(f"McNemar test — Random Forest, {unit} granularity")
     lines.append("Config_A (technical) vs Config_C (technical + keyword)")
     lines.append("=" * 64)
     lines.append(f"Test samples: {len(y_test)}")
@@ -165,7 +183,7 @@ def main() -> None:
 
     report = "\n".join(lines)
     print(report)
-    with open("reports/mcnemar_month_rf.txt", "w", encoding="utf-8") as f:
+    with open(out_path, "w", encoding="utf-8") as f:
         f.write(report + "\n")
 
 

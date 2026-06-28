@@ -302,6 +302,75 @@ vấn thiên lệch hoặc thiếu dữ liệu nguồn.
 
 ---
 
+## 5g. Cải tiến phương pháp đếm từ khóa — xử lý phủ định + từ đồng nghĩa (Option 3)
+
+Theo định hướng giữ nguyên khung "đếm tần suất từ khóa" của đề cương (không dùng sentiment/embedding),
+đã cải tiến **chính bản thân cách đếm** để khắc phục hai điểm yếu cốt lõi:
+
+1. **Phủ định phá vỡ cụm từ.** Trước đây "lợi nhuận không tăng" vẫn bị tính là tín hiệu tích cực vì
+   chứa chuỗi con "tăng". Đã bổ sung các **cụm phủ định** vào danh sách tiêu cực: "lợi nhuận không
+   tăng", "doanh thu không tăng", "không tăng trưởng", "tăng trưởng chậm lại", "không hoàn thành kế
+   hoạch", "không đạt kế hoạch", "chưa có lãi"…
+2. **Từ đồng nghĩa ngoài danh sách.** Đã mở rộng nhóm A với các biến thể thực tế: tích cực ("lãi
+   khủng", "lãi lớn", "báo lãi", "lợi nhuận kỷ lục", "bứt phá", "tăng vọt", "khởi sắc", "phục hồi",
+   "lập đỉnh"…); tiêu cực ("báo lỗ", "lỗ nặng", "lỗ kỷ lục", "lao dốc", "giảm sâu", "tụt dốc", "kinh
+   doanh sa sút"…). Nhóm A: 9→24 tích cực, 9→27 tiêu cực.
+
+### Kỹ thuật then chốt — đếm theo "cụm dài trước, che vùng đã khớp" (longest-first masking)
+
+Nếu chỉ thêm "không tăng trưởng" (tiêu cực) mà vẫn đếm bằng `.count()` ngây thơ thì code **vẫn đếm
+cả "tăng trưởng" (tích cực)** nằm bên trong → đếm trùng cả hai chiều, làm hỏng tín hiệu. Đã sửa
+`compute_raw_counts` trong `pipeline/task9_kw_features.py`:
+
+1. Sắp xếp từ khóa theo độ dài giảm dần (cụm dài khớp trước).
+2. Đếm từng cụm trên văn bản đã được che dần.
+3. **Che (mask)** mọi vùng đã khớp bằng ký tự sentinel để cụm ngắn hơn nằm trong không bị đếm lại.
+
+Nhờ vậy "lợi nhuận không tăng" chỉ tính cụm tiêu cực, **không** còn cộng nhầm cho "tăng". Đã bổ sung
+5 unit test cho hành vi này (tổng test 535 → 540, tất cả pass).
+
+### Kết quả (corpus 6 nguồn ~28k, sau cải tiến)
+
+**Đơn vị quý (cutoff 2025Q1), Balanced Accuracy:**
+
+| Thuật toán | Config A | Config C | C − A |
+|---|---|---|---|
+| Random Forest | 0.764 | 0.752 | −0.011 |
+| XGBoost | 0.725 | 0.715 | −0.010 |
+| LightGBM | 0.724 | 0.708 | −0.016 |
+| Logistic Regression | 0.725 | 0.703 | −0.022 |
+
+**Delta trung bình (Config_C − Config_A) — trước vs sau cải tiến đếm từ:**
+
+| Đơn vị | Trước cải tiến (6 nguồn) | Sau cải tiến (phủ định + đồng nghĩa) |
+|---|---|---|
+| 2 tuần | −0.0049* | −0.0143 |
+| 1 tháng | −0.0268 | −0.0087 |
+| 2 tháng | −0.0292 | **+0.0047** |
+| Quý | −0.0244 | −0.0381 |
+
+(*giá trị tham chiếu lần mở rộng 5 nguồn; mốc 6 nguồn không chạy lại period trước cải tiến.)
+
+Cải tiến giúp delta ở **1 tháng** bớt âm rõ rệt (−0.027 → −0.009) và ở **2 tháng** lần đầu **dương
+nhẹ** (+0.005). Tuy nhiên phần dương này đến từ **Logistic Regression** (A=0.600 → C=0.689, +0.089),
+còn các mô hình cây mạnh nhất (Random Forest, XGBoost, LightGBM) vẫn âm.
+
+**McNemar (Random Forest, 2 tháng):** delta −0.0325; chỉ 9 ca bất đồng; exact p = 0.180 — **không có
+ý nghĩa thống kê**.
+
+### Diễn giải
+
+Việc xử lý phủ định và bổ sung từ đồng nghĩa **cải thiện chất lượng tín hiệu từ khóa** (delta dịch
+lên ở 1-2 tháng, một mô hình tuyến tính được hưởng lợi rõ), chứng tỏ hướng cải tiến là **đúng về
+nguyên lý**. Nhưng mức cải thiện vẫn **nhỏ, không nhất quán giữa các thuật toán, và không đạt ý nghĩa
+thống kê**. Các mô hình cây — vốn cho độ chính xác cao nhất — vẫn không được lợi từ đặc trưng từ khóa.
+
+➡️ Kết luận **H1 không được ủng hộ** vẫn giữ nguyên, kể cả khi đã khắc phục hai điểm yếu lớn nhất của
+phương pháp đếm từ. Điều này củng cố nhận định: **giới hạn nằm ở chính cách biểu diễn tin tức bằng
+tần suất từ khóa**, chứ không phải do danh sách từ chưa đủ tốt hay thiếu dữ liệu.
+
+---
+
 ## 6. Kết luận tổng hợp
 
 1. **Đặc trưng kỹ thuật là nền tảng dự báo chính** (Balanced Accuracy ~0.65–0.78); đặc trưng từ

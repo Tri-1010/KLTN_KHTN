@@ -71,15 +71,39 @@ def _normalize_for_matching(text: str) -> str:
     return " ".join(normalized.split())
 
 
+#: Sentinel character used to mask matched keyword spans. It never appears
+#: in normalized financial text (which is lowercased Vietnamese words and
+#: spaces), so masked regions can never be re-matched by shorter keywords.
+_MASK_CHAR = "\x00"
+
+
 def compute_raw_counts(
     combined_text: str,
     keywords: List[str],
 ) -> Dict[str, int]:
-    """Count occurrences of each keyword in *combined_text*.
+    """Count occurrences of each keyword in *combined_text* with longest-first masking.
 
     Uses case-insensitive substring matching after normalizing underscores
     to spaces, so that multi-word keywords match text tokenized by
     underthesea (which joins some compound words with underscores).
+
+    **Longest-first masking** prevents double-counting when one keyword is a
+    substring of another with the *opposite* sentiment. For example the
+    negative phrase ``"không tăng trưởng"`` ("no growth") contains the
+    positive phrase ``"tăng trưởng"`` ("growth"). A naive substring count
+    would credit both the negative and the positive keyword for the same
+    span of text, cancelling out or even flipping the true signal.
+
+    To avoid this we:
+
+    1. Sort keywords by normalized length, longest first.
+    2. Count occurrences of each keyword in the (progressively masked) text.
+    3. Blank out every matched span with a sentinel character so that
+       shorter keywords contained inside it can no longer match.
+
+    Thus ``"lợi nhuận không tăng"`` counts only the negative keyword
+    ``"lợi nhuận không tăng"`` (or ``"không tăng"``) and never the positive
+    ``"tăng"``-based phrases hidden inside it.
 
     Args:
         combined_text: Concatenated tokenized text for a (ticker, quarter).
@@ -88,8 +112,35 @@ def compute_raw_counts(
     Returns:
         Dict mapping keyword → raw count.
     """
+    counts: Dict[str, int] = {kw: 0 for kw in keywords}
+
     text_norm = _normalize_for_matching(combined_text)
-    return {kw: text_norm.count(_normalize_for_matching(kw)) for kw in keywords}
+    if not text_norm:
+        return counts
+
+    # Pre-normalize every keyword once.
+    norm_map = {kw: _normalize_for_matching(kw) for kw in keywords}
+
+    # Process longest keywords first so that a longer phrase claims (and
+    # masks) its span before any shorter substring keyword can match it.
+    ordered = sorted(
+        (kw for kw in keywords if norm_map[kw]),
+        key=lambda k: len(norm_map[k]),
+        reverse=True,
+    )
+
+    masked = text_norm
+    for kw in ordered:
+        pattern = norm_map[kw]
+        occurrences = masked.count(pattern)
+        if occurrences:
+            counts[kw] = occurrences
+            # Mask each matched span so shorter keywords inside it cannot
+            # re-match. ``str.replace`` replaces the same non-overlapping
+            # occurrences that ``str.count`` reported.
+            masked = masked.replace(pattern, _MASK_CHAR * len(pattern))
+
+    return counts
 
 
 def compute_keyword_counts(

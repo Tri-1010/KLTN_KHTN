@@ -76,12 +76,20 @@ class TestCuratedKeywords:
             assert isinstance(data["name"], str)
 
     def test_group_a_positive_count(self):
-        """Group A should have 9 positive keywords."""
-        assert len(KEYWORD_GROUPS["A"]["positive"]) == 9
+        """Group A positive list should be non-empty and contain core terms."""
+        pos = KEYWORD_GROUPS["A"]["positive"]
+        assert len(pos) >= 9
+        assert "lợi nhuận tăng" in pos
+        assert "tăng trưởng" in pos
 
     def test_group_a_negative_count(self):
-        """Group A should have 9 negative keywords."""
-        assert len(KEYWORD_GROUPS["A"]["negative"]) == 9
+        """Group A negative list should include negation phrases and core terms."""
+        neg = KEYWORD_GROUPS["A"]["negative"]
+        assert len(neg) >= 9
+        assert "lợi nhuận giảm" in neg
+        # Negation phrases added for the improved keyword method
+        assert "lợi nhuận không tăng" in neg
+        assert "không tăng trưởng" in neg
 
     def test_group_b_positive_count(self):
         """Group B should have 6 positive keywords."""
@@ -133,11 +141,19 @@ class TestCuratedKeywords:
         assert len(all_kw) == len(set(all_kw)), "Duplicate keywords found"
 
     def test_total_keyword_count(self):
-        """Total keywords should match sum of all groups."""
+        """Total keywords should equal the sum across all groups/directions."""
         kw = get_curated_keywords()
         total = len(kw["positive"]) + len(kw["negative"]) + len(kw["neutral"])
-        # A: 9+9, B: 6+5, C: 6+7, D: 7+5, E: 10, F: 9 = 73
-        assert total == 73
+        # Recompute the expected total directly from KEYWORD_GROUPS so the
+        # test stays correct as the curated lists are expanded.
+        expected = sum(
+            len(group.get(direction, []))
+            for group in KEYWORD_GROUPS.values()
+            for direction in ("positive", "negative", "neutral")
+        )
+        assert total == expected
+        # Sanity floor: at least the original 73 curated keywords.
+        assert total >= 73
 
     def test_specific_keywords_present(self):
         """Verify a few specific keywords from each group are present."""
