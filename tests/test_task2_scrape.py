@@ -2120,3 +2120,30 @@ class TestVnExpressParse:
 
     def test_detail_date_missing_returns_none(self):
         assert _parse_vnexpress_detail_date("<html><body>no date</body></html>") is None
+
+
+# ---------------------------------------------------------------------------
+# Kinhtechungkhoan sitemap-filter tests (news-source-expansion)
+# ---------------------------------------------------------------------------
+
+from pipeline.task2_scrape import _KTCK_HINT_RE, _ktck_title_from_slug
+
+
+class TestKtckSitemapHelpers:
+    """Tests for the kinhtechungkhoan slug filter and title fallback."""
+
+    def test_hint_matches_ticker_slug(self):
+        assert _KTCK_HINT_RE.search("https://kinhtechungkhoan.vn/hoa-phat-hpg-don-tin-mung-140.html".lower())
+        assert _KTCK_HINT_RE.search("https://kinhtechungkhoan.vn/co-phieu-vnm-tang-tran".lower())
+
+    def test_hint_matches_company_slug(self):
+        assert _KTCK_HINT_RE.search("https://kinhtechungkhoan.vn/sep-tai-vingroup-noi-ve".lower())
+        assert _KTCK_HINT_RE.search("https://kinhtechungkhoan.vn/vinhomes-don-them-tin-vui".lower())
+
+    def test_hint_skips_unrelated_slug(self):
+        assert not _KTCK_HINT_RE.search("https://kinhtechungkhoan.vn/xe-may-honda-sh-phien-ban-dien".lower())
+        assert not _KTCK_HINT_RE.search("https://kinhtechungkhoan.vn/gia-vang-hom-nay-tang".lower())
+
+    def test_title_from_slug(self):
+        url = "https://kinhtechungkhoan.vn/hoa-phat-hpg-don-tin-mung-140"
+        assert _ktck_title_from_slug(url) == "hoa phat hpg don tin mung"

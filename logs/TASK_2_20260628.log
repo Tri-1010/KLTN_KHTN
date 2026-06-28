@@ -10012,3 +10012,197 @@
 [2026-06-28 16:14:50] [TASK_2] [INFO] ------------------------------------------------------------
 [2026-06-28 16:14:50] [TASK_2] [INFO] Total articles from CAFEF: 3
 [2026-06-28 16:14:50] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:44:10] [TASK_2] [INFO] kinhtechungkhoan: 4 daily sitemaps within window (from 2026-06-25).
+[2026-06-28 16:44:21] [TASK_2] [INFO] kinhtechungkhoan: collected 7 VN30-relevant articles
+[2026-06-28 16:45:42] [TASK_2] [WARNING] Request failed for https://cafef.vn/test (attempt 1/3): Connection refused
+[2026-06-28 16:45:42] [TASK_2] [INFO] Retrying in 1s…
+[2026-06-28 16:45:42] [TASK_2] [WARNING] Request failed for https://cafef.vn/test (attempt 2/3): Connection refused
+[2026-06-28 16:45:42] [TASK_2] [INFO] Retrying in 2s…
+[2026-06-28 16:45:42] [TASK_2] [WARNING] Request failed for https://cafef.vn/test (attempt 3/3): Connection refused
+[2026-06-28 16:45:42] [TASK_2] [ERROR] All 3 attempts failed for https://cafef.vn/test. Skipping.
+[2026-06-28 16:45:42] [TASK_2] [WARNING] Request failed for https://cafef.vn/test (attempt 1/3): timeout
+[2026-06-28 16:45:42] [TASK_2] [INFO] Retrying in 1s…
+[2026-06-28 16:45:42] [TASK_2] [WARNING] Request failed for https://cafef.vn/test (attempt 1/3): 503 Service Unavailable
+[2026-06-28 16:45:42] [TASK_2] [INFO] Retrying in 1s…
+[2026-06-28 16:45:42] [TASK_2] [WARNING] Request failed for https://cafef.vn/test (attempt 2/3): 503 Service Unavailable
+[2026-06-28 16:45:42] [TASK_2] [INFO] Retrying in 2s…
+[2026-06-28 16:45:42] [TASK_2] [WARNING] Request failed for https://cafef.vn/test (attempt 3/3): 503 Service Unavailable
+[2026-06-28 16:45:42] [TASK_2] [ERROR] All 3 attempts failed for https://cafef.vn/test. Skipping.
+[2026-06-28 16:45:42] [TASK_2] [WARNING] Missing required fields in article: https://cafef.vn/test.chn
+[2026-06-28 16:45:42] [TASK_2] [WARNING] Missing required fields in article: ?
+[2026-06-28 16:45:42] [TASK_2] [WARNING] Missing required fields in article: https://cafef.vn/test.chn
+[2026-06-28 16:45:42] [TASK_2] [INFO] Saved 1 rows to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-152\test_writes_csv_correctly0\output.csv
+[2026-06-28 16:45:42] [TASK_2] [INFO] Saved 1 rows to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-152\test_no_temp_file_left_behind0\output.csv
+[2026-06-28 16:45:42] [TASK_2] [INFO] Saved 1 rows to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-152\test_creates_parent_directorie0\sub\dir\output.csv
+[2026-06-28 16:45:42] [TASK_2] [WARNING] Could not parse CafeF date: not a date
+[2026-06-28 16:45:42] [TASK_2] [INFO] CafeF: collected 2 articles for VNM
+[2026-06-28 16:45:42] [TASK_2] [INFO] CafeF: collected 0 articles for VNM
+[2026-06-28 16:45:42] [TASK_2] [WARNING] Failed to fetch CafeF API (NewsType=1) page 1 for VNM. Stopping this NewsType.
+[2026-06-28 16:45:42] [TASK_2] [WARNING] Failed to fetch CafeF API (NewsType=2) page 1 for VNM. Stopping this NewsType.
+[2026-06-28 16:45:42] [TASK_2] [INFO] CafeF: collected 0 articles for VNM
+[2026-06-28 16:45:42] [TASK_2] [INFO] CafeF: collected 1 articles for VNM
+[2026-06-28 16:45:42] [TASK_2] [INFO] CafeF: collected 2 articles for FPT
+[2026-06-28 16:45:42] [TASK_2] [WARNING] Failed to fetch CafeF API (NewsType=1) page 1 for VNM. Stopping this NewsType.
+[2026-06-28 16:45:42] [TASK_2] [WARNING] Failed to fetch CafeF API (NewsType=2) page 1 for VNM. Stopping this NewsType.
+[2026-06-28 16:45:42] [TASK_2] [INFO] CafeF: collected 0 articles for VNM
+[2026-06-28 16:45:42] [TASK_2] [WARNING] Could not parse CafeF date: garbage
+[2026-06-28 16:45:42] [TASK_2] [INFO] Scraping cafef for ticker=VNM from 2022-01-01 (existing URLs: 126)
+[2026-06-28 16:45:42] [TASK_2] [INFO] No new articles for cafef/VNM — nothing written to data/news/cafef/VNM_cafef.csv.
+[2026-06-28 16:45:42] [TASK_2] [WARNING] Could not parse Vietstock date: 2 giờ trước
+[2026-06-28 16:45:42] [TASK_2] [INFO] Vietstock: login wall detected — collecting only publicly visible title and summary (Req 2.3).
+[2026-06-28 16:45:42] [TASK_2] [INFO] Vietstock paging for VNM: 0 articles
+[2026-06-28 16:45:42] [TASK_2] [INFO] Vietstock: collected 2 articles for VNM
+[2026-06-28 16:45:42] [TASK_2] [WARNING] Vietstock paging: failed to fetch page 1 for VNM. Stopping.
+[2026-06-28 16:45:42] [TASK_2] [INFO] Vietstock paging for VNM: 0 articles
+[2026-06-28 16:45:42] [TASK_2] [INFO] Vietstock latest-news yielded no articles for VNM. Trying tag-search fallback.
+[2026-06-28 16:45:42] [TASK_2] [WARNING] Failed to fetch Vietstock tag page 1 for VNM. Stopping pagination.
+[2026-06-28 16:45:42] [TASK_2] [INFO] Vietstock: collected 0 articles for VNM
+[2026-06-28 16:45:42] [TASK_2] [INFO] Vietstock paging for VNM: 0 articles
+[2026-06-28 16:45:42] [TASK_2] [INFO] Vietstock: collected 1 articles for VNM
+[2026-06-28 16:45:42] [TASK_2] [INFO] Vietstock paging for FPT: 0 articles
+[2026-06-28 16:45:42] [TASK_2] [INFO] Vietstock latest-news yielded no articles for FPT. Trying tag-search fallback.
+[2026-06-28 16:45:42] [TASK_2] [INFO] Vietstock: collected 1 articles for FPT
+[2026-06-28 16:45:42] [TASK_2] [WARNING] Vietstock paging: failed to fetch page 1 for VNM. Stopping.
+[2026-06-28 16:45:42] [TASK_2] [INFO] Vietstock paging for VNM: 0 articles
+[2026-06-28 16:45:42] [TASK_2] [INFO] Vietstock latest-news yielded no articles for VNM. Trying tag-search fallback.
+[2026-06-28 16:45:42] [TASK_2] [WARNING] Failed to fetch Vietstock tag page 1 for VNM. Stopping pagination.
+[2026-06-28 16:45:42] [TASK_2] [INFO] Vietstock: collected 0 articles for VNM
+[2026-06-28 16:45:42] [TASK_2] [INFO] Vietstock paging for VNM: 0 articles
+[2026-06-28 16:45:42] [TASK_2] [INFO] Vietstock latest-news yielded no articles for VNM. Trying tag-search fallback.
+[2026-06-28 16:45:42] [TASK_2] [INFO] Vietstock: collected 0 articles for VNM
+[2026-06-28 16:45:42] [TASK_2] [INFO] Scraping vietstock for ticker=VNM from 2022-01-01 (existing URLs: 153)
+[2026-06-28 16:45:42] [TASK_2] [INFO] No new articles for vietstock/VNM — nothing written to data/news/vietstock/VNM_vietstock.csv.
+[2026-06-28 16:45:42] [TASK_2] [WARNING] Could not parse TNCK date: 2 giờ trước
+[2026-06-28 16:45:42] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:42] [TASK_2] [INFO] TNCK MONTHLY ARTICLE COUNT REPORT
+[2026-06-28 16:45:42] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:42] [TASK_2] [INFO]   2024-01: 3 articles
+[2026-06-28 16:45:42] [TASK_2] [INFO]   2024-02: 2 articles
+[2026-06-28 16:45:42] [TASK_2] [INFO]   2024-03: 1 articles
+[2026-06-28 16:45:42] [TASK_2] [INFO] ------------------------------------------------------------
+[2026-06-28 16:45:42] [TASK_2] [INFO] Total: 6 articles across 3 months
+[2026-06-28 16:45:42] [TASK_2] [INFO] Average: 2.0 articles/month
+[2026-06-28 16:45:42] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:42] [TASK_2] [INFO] TNCK monthly report: no articles to report.
+[2026-06-28 16:45:43] [TASK_2] [INFO] TNCK monthly report: no articles with valid dates.
+[2026-06-28 16:45:43] [TASK_2] [INFO] TNCK: searching by VN30 ticker symbols…
+[2026-06-28 16:45:43] [TASK_2] [INFO] TNCK search 'ACB': 1 new articles
+[2026-06-28 16:45:43] [TASK_2] [INFO] TNCK: collected 1 total articles
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO] TNCK MONTHLY ARTICLE COUNT REPORT
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO]   2024-01: 1 articles
+[2026-06-28 16:45:43] [TASK_2] [INFO] ------------------------------------------------------------
+[2026-06-28 16:45:43] [TASK_2] [INFO] Total: 1 articles across 1 months
+[2026-06-28 16:45:43] [TASK_2] [INFO] Average: 1.0 articles/month
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO] TNCK: searching by VN30 ticker symbols…
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'ACB'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'BCM'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'BID'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'BVH'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'CTG'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'FPT'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'GAS'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'GVR'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'HDB'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'HPG'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'MBB'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'MSN'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'MWG'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'PLX'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'POW'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'SAB'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'SHB'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'SSB'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'SSI'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'STB'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'TCB'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'TPB'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'VCB'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'VHM'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'VIB'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'VIC'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'VJC'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'VNM'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'VPB'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'VRE'. Stopping pagination.
+[2026-06-28 16:45:43] [TASK_2] [INFO] TNCK: collected 0 total articles
+[2026-06-28 16:45:43] [TASK_2] [INFO] TNCK: searching by VN30 ticker symbols…
+[2026-06-28 16:45:43] [TASK_2] [INFO] TNCK search 'ACB': 1 new articles
+[2026-06-28 16:45:43] [TASK_2] [INFO] TNCK: collected 1 total articles
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO] TNCK MONTHLY ARTICLE COUNT REPORT
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO]   2024-01: 1 articles
+[2026-06-28 16:45:43] [TASK_2] [INFO] ------------------------------------------------------------
+[2026-06-28 16:45:43] [TASK_2] [INFO] Total: 1 articles across 1 months
+[2026-06-28 16:45:43] [TASK_2] [INFO] Average: 1.0 articles/month
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO] TNCK: searching by VN30 ticker symbols…
+[2026-06-28 16:45:43] [TASK_2] [INFO] TNCK search 'ACB': 1 new articles
+[2026-06-28 16:45:43] [TASK_2] [INFO] TNCK: collected 1 total articles
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO] TNCK MONTHLY ARTICLE COUNT REPORT
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO]   2024-01: 1 articles
+[2026-06-28 16:45:43] [TASK_2] [INFO] ------------------------------------------------------------
+[2026-06-28 16:45:43] [TASK_2] [INFO] Total: 1 articles across 1 months
+[2026-06-28 16:45:43] [TASK_2] [INFO] Average: 1.0 articles/month
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO] Scraping tnck for ticker=ALL from 2022-01-01 (existing URLs: 1161)
+[2026-06-28 16:45:43] [TASK_2] [INFO] No new articles for tnck/ALL — nothing written to data/news/tnck/tnck_raw.csv.
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to parse CafeF API JSON (NewsType=2) page 1 for VNM (URL: https://cafef.vn/du-lieu/Ajax/PageNew/News.ashx?Symbol=vnm&NewsType=2&PageIndex=1&PageSize=20): Simulated JSON parse failure. API format may have changed.
+[2026-06-28 16:45:43] [TASK_2] [INFO] CafeF: collected 1 articles for VNM
+[2026-06-28 16:45:43] [TASK_2] [INFO] CafeF: collected 1 articles for VNM
+[2026-06-28 16:45:43] [TASK_2] [INFO] Vietstock paging for VNM: 0 articles
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to parse Vietstock latest-news for VNM (URL: https://finance.vietstock.vn/VNM/tin-moi-nhat.htm): Simulated parse failure. Falling back to tag search. Selectors may need adjustment if page structure changed.
+[2026-06-28 16:45:43] [TASK_2] [INFO] Vietstock latest-news yielded no articles for VNM. Trying tag-search fallback.
+[2026-06-28 16:45:43] [TASK_2] [INFO] Vietstock: collected 1 articles for VNM
+[2026-06-28 16:45:43] [TASK_2] [INFO] TNCK: searching by VN30 ticker symbols…
+[2026-06-28 16:45:43] [TASK_2] [WARNING] Failed to parse TNCK search page 1 for query 'ACB' (URL: https://www.tinnhanhchungkhoan.vn/tim-kiem.html?q=ACB): Simulated HTML parse failure. Skipping page. HTML selectors may need adjustment if page structure changed.
+[2026-06-28 16:45:43] [TASK_2] [INFO] TNCK: collected 0 total articles
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO] SCRAPING REPORT — CAFEF
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO]   FPT   : 1 articles (2024-02-01 to 2024-02-01)
+[2026-06-28 16:45:43] [TASK_2] [INFO]   VNM   : 2 articles (2024-01-10 to 2024-03-15)
+[2026-06-28 16:45:43] [TASK_2] [INFO] ------------------------------------------------------------
+[2026-06-28 16:45:43] [TASK_2] [INFO] Total articles from CAFEF: 3
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO] SCRAPING REPORT — CAFEF
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO]   VNM   : 0 articles
+[2026-06-28 16:45:43] [TASK_2] [INFO] ------------------------------------------------------------
+[2026-06-28 16:45:43] [TASK_2] [INFO] Total articles from CAFEF: 0
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO] SCRAPING REPORT — CAFEF
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO]   VNM   : 2 articles (no valid dates)
+[2026-06-28 16:45:43] [TASK_2] [INFO] ------------------------------------------------------------
+[2026-06-28 16:45:43] [TASK_2] [INFO] Total articles from CAFEF: 2
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO] SCRAPING REPORT — CAFEF
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO]   VNM   : 3 articles (2024-01-10 to 2024-03-15)
+[2026-06-28 16:45:43] [TASK_2] [INFO] ------------------------------------------------------------
+[2026-06-28 16:45:43] [TASK_2] [INFO] Total articles from CAFEF: 3
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO] SCRAPING REPORT — CAFEF
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO] ------------------------------------------------------------
+[2026-06-28 16:45:43] [TASK_2] [INFO] Total articles from CAFEF: 0
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO] SCRAPING REPORT — CAFEF
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================
+[2026-06-28 16:45:43] [TASK_2] [INFO]   ACB   : 1 articles (2024-02-01 to 2024-02-01)
+[2026-06-28 16:45:43] [TASK_2] [INFO]   FPT   : 1 articles (2024-03-01 to 2024-03-01)
+[2026-06-28 16:45:43] [TASK_2] [INFO]   VNM   : 1 articles (2024-01-10 to 2024-01-10)
+[2026-06-28 16:45:43] [TASK_2] [INFO] ------------------------------------------------------------
+[2026-06-28 16:45:43] [TASK_2] [INFO] Total articles from CAFEF: 3
+[2026-06-28 16:45:43] [TASK_2] [INFO] ============================================================

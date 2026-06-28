@@ -2415,6 +2415,151 @@ def scrape_vnexpress(
 
 
 # ---------------------------------------------------------------------------
+# Kinhtechungkhoan scraper (news-source-expansion — via sitemap, deep history)
+# ---------------------------------------------------------------------------
+
+# kinhtechungkhoan.vn (OneCMS) exposes per-day article sitemaps:
+#   https://kinhtechungkhoan.vn/sitemap.xml  (index of ~6000 sub-sitemaps)
+#   -> https://kinhtechungkhoan.vn/sitemap-article-YYYY-MM-DD.xml  (one per day)
+# Each daily sitemap lists that day's article <loc> URLs with <lastmod>. This
+# gives deep history (2022+) with exact dates and NO JavaScript. To keep the
+# request budget reasonable we (1) take daily sitemaps with date >= start_date,
+# (2) keep only URLs whose slug contains a VN30 ticker/company hint (the vast
+# majority of the ~36 articles/day are unrelated), and (3) fetch each kept
+# article once to read its og:title (real Vietnamese title with diacritics,
+# needed for entity matching). Date comes from the sitemap (free).
+# NOTE: Update if kinhtechungkhoan changes its sitemap layout.
+KTCK_SITEMAP_INDEX = "https://kinhtechungkhoan.vn/sitemap.xml"
+_KTCK_DAILY_RE = re.compile(
+    r"<loc>(https://kinhtechungkhoan\.vn/sitemap-article-(\d{4}-\d{2}-\d{2})\.xml)</loc>"
+)
+# Lowercase slug hints: VN30 tickers + common company name slugs.
+_KTCK_TICKER_HINTS = [
+    "acb", "bcm", "bid", "bvh", "ctg", "fpt", "gas", "gvr", "hdb", "hpg",
+    "mbb", "msn", "mwg", "plx", "pow", "sab", "shb", "ssb", "ssi", "stb",
+    "tcb", "tpb", "vcb", "vhm", "vib", "vic", "vjc", "vnm", "vpb", "vre",
+]
+_KTCK_COMPANY_HINTS = [
+    "vinamilk", "vietcombank", "vingroup", "vinhomes", "vincom", "hoa-phat",
+    "techcombank", "masan", "sabeco", "vietjet", "petrolimex", "pv-gas",
+    "bao-viet", "sacombank", "vpbank", "hdbank", "vietinbank", "bidv",
+    "the-gioi-di-dong", "novaland", "gelex",
+]
+_KTCK_HINT_RE = re.compile(
+    r"(?:^|[-/])(" + "|".join(_KTCK_TICKER_HINTS) + r")(?:[-/]|$)"
+    r"|(" + "|".join(re.escape(c) for c in _KTCK_COMPANY_HINTS) + r")"
+)
+
+
+def _ktck_title_from_slug(url: str) -> str:
+    """Build a fallback title from the URL slug (used if og:title fetch fails)."""
+    slug = url.rstrip("/").split("/")[-1]
+    slug = re.sub(r"-\d+$", "", slug)  # drop trailing numeric id if any
+    return slug.replace("-", " ").strip()
+
+
+def scrape_kinhtechungkhoan(
+    ticker: str,
+    start_date: str,
+    rate_limiter: RateLimiter,
+    existing_urls: Set[str],
+    scraping_cfg: dict,
+) -> pd.DataFrame:
+    """Scrape kinhtechungkhoan.vn via its per-day article sitemaps.
+
+    Broad scrape (TASK 3 maps to VN30). Only URLs whose slug hints at a VN30
+    ticker/company are kept and title-fetched, keeping the request budget sane.
+    """
+    max_retries = scraping_cfg.get("max_retries", 3)
+    backoff_factor = scraping_cfg.get("backoff_factor", 2)
+    timeout = scraping_cfg.get("request_timeout", 30)
+
+    # 1. Get the sitemap index and select daily sitemaps within the window.
+    idx = fetch_with_retry(
+        KTCK_SITEMAP_INDEX, rate_limiter=rate_limiter, max_retries=max_retries,
+        backoff_factor=backoff_factor, timeout=timeout,
+    )
+    if idx is None:
+        logger.warning("kinhtechungkhoan: failed to fetch sitemap index.")
+        return pd.DataFrame(
+            columns=["date", "title", "description", "url", "source"]
+        )
+
+    daily = [
+        (u, d) for u, d in _KTCK_DAILY_RE.findall(idx.text) if d >= start_date[:10]
+    ]
+    daily.sort(key=lambda x: x[1], reverse=True)
+    logger.info(
+        "kinhtechungkhoan: %d daily sitemaps within window (from %s).",
+        len(daily), start_date,
+    )
+
+    all_articles: List[Dict] = []
+    for sm_url, day in daily:
+        sm = fetch_with_retry(
+            sm_url, rate_limiter=rate_limiter, max_retries=max_retries,
+            backoff_factor=backoff_factor, timeout=timeout,
+        )
+        if sm is None:
+            continue
+        # Pair each <loc> with its <lastmod> date (fallback to sitemap day).
+        entries = re.findall(
+            r"<loc>([^<]+)</loc>\s*<lastmod>([^<]+)</lastmod>", sm.text
+        )
+        if not entries:
+            entries = [(u, day) for u in re.findall(r"<loc>([^<]+)</loc>", sm.text)]
+
+        for url, lastmod in entries:
+            if "/sitemap" in url:
+                continue
+            if is_duplicate(url, existing_urls):
+                continue
+            if not _KTCK_HINT_RE.search(url.lower()):
+                continue  # skip articles unrelated to VN30 (free filter)
+
+            dm = re.search(r"(\d{4}-\d{2}-\d{2})", lastmod)
+            parsed_date = dm.group(1) if dm else day
+            if parsed_date < start_date:
+                continue
+
+            # Fetch the article once for its real (diacritic) title.
+            title = ""
+            art = fetch_with_retry(
+                url, rate_limiter=rate_limiter, max_retries=max_retries,
+                backoff_factor=backoff_factor, timeout=timeout,
+            )
+            if art is not None:
+                soup = BeautifulSoup(art.text, "html.parser")
+                og = soup.select_one("meta[property='og:title']")
+                if og and og.get("content"):
+                    title = unescape(og["content"].strip())
+                elif soup.title:
+                    title = unescape(soup.title.get_text(strip=True))
+            if not title:
+                title = _ktck_title_from_slug(url)
+
+            article = {
+                "date": parsed_date,
+                "title": title,
+                "description": "",
+                "url": url,
+                "source": "kinhtechungkhoan",
+            }
+            if validate_article(article):
+                all_articles.append(article)
+                existing_urls.add(url)
+
+    logger.info(
+        "kinhtechungkhoan: collected %d VN30-relevant articles", len(all_articles)
+    )
+    if not all_articles:
+        return pd.DataFrame(
+            columns=["date", "title", "description", "url", "source"]
+        )
+    return pd.DataFrame(all_articles).drop_duplicates(subset=["url"]).reset_index(drop=True)
+
+
+# ---------------------------------------------------------------------------
 # scrape_source — base dispatcher (to be extended in tasks 4.2–4.4)
 # ---------------------------------------------------------------------------
 def scrape_source(
@@ -2516,6 +2661,8 @@ def _output_path_for(source: str, ticker: str) -> str:
         return "data/news/vietnambiz/vietnambiz_raw.csv"
     elif source_lower == "vnexpress":
         return "data/news/vnexpress/vnexpress_raw.csv"
+    elif source_lower == "kinhtechungkhoan":
+        return "data/news/kinhtechungkhoan/kinhtechungkhoan_raw.csv"
     return f"data/news/{source_lower}/{ticker}_{source_lower}.csv"
 
 
@@ -2532,6 +2679,7 @@ def _get_scraper(source: str):
         "tnck": scrape_tnck,             # Task 4.4
         "vietnambiz": scrape_vietnambiz, # news-source-expansion
         "vnexpress": scrape_vnexpress,   # news-source-expansion
+        "kinhtechungkhoan": scrape_kinhtechungkhoan,  # news-source-expansion
     }
     return scrapers.get(source.lower())
 
