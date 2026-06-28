@@ -2252,10 +2252,13 @@ def _parse_vnexpress_detail_date(html: str) -> Optional[str]:
 
 
 def _parse_vnexpress_listing(html: str) -> List[Dict]:
-    """Extract (title, url, description) tuples from a VnExpress listing page.
+    """Extract (title, url, description, date) from a VnExpress listing page.
 
-    Dates are NOT present in the listing; they are filled later from each
-    article's detail page.
+    The publication date is recovered from the thumbnail image URL, which
+    embeds a '/YYYY/MM/DD/' path (e.g. i1-kinhdoanh.vnecdn.net/2026/06/26/...).
+    This avoids a costly per-article detail fetch. Items without a usable
+    thumbnail date get an empty date (the caller may then fetch the detail
+    page as a fallback).
     """
     soup = BeautifulSoup(html, "html.parser")
     items: List[Dict] = []
@@ -2279,7 +2282,21 @@ def _parse_vnexpress_listing(html: str) -> List[Dict]:
         seen.add(url)
         desc_el = art.select_one("p.description a, p.description")
         desc = unescape(desc_el.get_text(strip=True)) if desc_el else ""
-        items.append({"title": title, "url": url, "description": desc})
+
+        # Date from the thumbnail image URL: .../YYYY/MM/DD/...
+        listing_date = ""
+        img = art.select_one("img[src], source[srcset]")
+        img_url = ""
+        if img is not None:
+            img_url = img.get("src") or img.get("srcset") or ""
+        dm = re.search(r"/(\d{4})/(\d{2})/(\d{2})/", img_url)
+        if dm:
+            listing_date = f"{dm.group(1)}-{dm.group(2)}-{dm.group(3)}"
+
+        items.append({
+            "title": title, "url": url, "description": desc,
+            "date": listing_date,
+        })
     return items
 
 
@@ -2325,12 +2342,18 @@ def _scrape_vnexpress_category(
         for item in listing:
             if is_duplicate(item["url"], existing_urls):
                 continue
-            # Fetch detail page to get the publication date
-            d = fetch_with_retry(
-                item["url"], rate_limiter=rate_limiter, max_retries=max_retries,
-                backoff_factor=backoff_factor, timeout=timeout,
-            )
-            parsed_date = _parse_vnexpress_detail_date(d.text) if d is not None else None
+            # Prefer the date recovered from the thumbnail URL (no extra
+            # request). Only fetch the detail page if the listing lacked one.
+            parsed_date = item.get("date") or None
+            if not parsed_date:
+                d = fetch_with_retry(
+                    item["url"], rate_limiter=rate_limiter,
+                    max_retries=max_retries, backoff_factor=backoff_factor,
+                    timeout=timeout,
+                )
+                parsed_date = (
+                    _parse_vnexpress_detail_date(d.text) if d is not None else None
+                )
             if parsed_date and parsed_date < start_date:
                 continue
             if parsed_date:

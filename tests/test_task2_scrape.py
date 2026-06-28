@@ -2063,6 +2063,7 @@ class TestVnExpressParse:
     LISTING_HTML = """
     <html><body>
       <article class="item-news">
+        <div class="thumb-art"><a href="x"><img src="https://i1-kinhdoanh.vnecdn.net/2026/06/26/abc-123.jpg?w=680"/></a></div>
         <h3 class="title-news">
           <a href="https://vnexpress.net/chung-khoan-tang-diem-tro-lai-5090302.html"
              title="Chứng khoán tăng điểm trở lại hôm nay">
@@ -2071,6 +2072,7 @@ class TestVnExpressParse:
         <p class="description">Nhóm cổ phiếu Vingroup là động lực chính của thị trường</p>
       </article>
       <article class="item-news">
+        <div class="thumb-art"><a href="x"><img src="https://i1-kinhdoanh.vnecdn.net/2024/03/02/def-456.jpg?w=680"/></a></div>
         <h3 class="title-news">
           <a href="/loat-doanh-nghiep-tra-co-tuc-tien-mat-5089999.html"
              title="Loạt doanh nghiệp trả cổ tức tiền mặt cao">
@@ -2094,6 +2096,11 @@ class TestVnExpressParse:
         first = items[0]
         assert first["url"].endswith("-5090302.html")
         assert "Vingroup" in first["description"]
+
+    def test_listing_date_from_thumbnail_url(self):
+        items = _parse_vnexpress_listing(self.LISTING_HTML)
+        assert items[0]["date"] == "2026-06-26"
+        assert items[1]["date"] == "2024-03-02"
 
     def test_detail_date_from_meta_itemprop(self):
         html = (
