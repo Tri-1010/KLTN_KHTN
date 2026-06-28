@@ -223,6 +223,47 @@ do thiên lệch một nguồn CafeF" đã được loại trừ.
 
 ---
 
+## 5e. Mở rộng nguồn lần 3 — thêm VnExpress (5 nguồn, corpus ~19.5k)
+
+Tiếp tục đa dạng hóa, đã khảo sát ~10 nguồn uy tín và thêm **VnExpress** (báo điện tử lớn nhất VN) —
+3 chuyên mục kinh doanh (chứng khoán, doanh nghiệp, vĩ mô). Tối ưu: trích ngày từ URL ảnh thumbnail
+(`/YYYY/MM/DD/`) nên không cần fetch từng bài. Thu được **1.762 bài** (2025-07 → 2026).
+
+Các nguồn khác đã khảo sát nhưng loại: VnEconomy/nguoiquansat/kinhtechungkhoan (phân trang JS),
+tbtaichinh/cafebiz/vietnamfinance (404/redirect), ndh.vn (đã đóng cửa).
+
+**Phân bố nguồn cuối (5 nguồn, 19.549 bài unique):**
+
+| Nguồn | Bài | Tỷ lệ |
+|---|---|---|
+| CafeF | 8.020 | 41% |
+| Vietstock | 5.008 | 26% |
+| VietnamBiz | 3.598 | 18% |
+| VnExpress | 1.762 | 9% |
+| TNCK | 1.161 | 6% |
+
+CafeF từ 83% → **41%**. Corpus gấp đôi ban đầu (9.7k → 19.5k); news_count theo kỳ ~15.151.
+
+**Delta trung bình (Config_C − Config_A) qua 4 lần mở rộng:**
+
+| Đơn vị | Lần 1 (7.5k) | Lần 2 (11k) | Lần 3 (17.8k) | Lần 4 (19.5k, 5 nguồn) |
+|---|---|---|---|---|
+| 2 tuần | +0.0005 | −0.0006 | −0.0009 | −0.0049 |
+| 1 tháng | +0.0109 | −0.0245 | −0.0028 | −0.0268 |
+| 2 tháng | −0.0028 | −0.0316 | −0.0273 | −0.0292 |
+| Quý | −0.0156 | −0.0194 | −0.0224 | −0.0244 |
+
+**McNemar (RF, tháng) lần cuối:** 41 ca bất đồng, delta −0.025, **p = 0.211** — không significant.
+
+### Kết luận cuối cùng (rất vững)
+
+Qua **4 lần mở rộng corpus** (gấp đôi dữ liệu) và **5 nguồn cân bằng** (không nguồn nào quá 41%),
+đặc trưng từ khóa tin tức **nhất quán không cải thiện** dự báo ở mọi đơn vị thời gian. Mọi delta đều
+quanh 0 hoặc âm; mọi McNemar đều không significant. Rủi ro thiên lệch nguồn đã được loại trừ triệt
+để. **H1 không được ủng hộ** là kết luận khoa học vững chắc, đa chiều và khách quan.
+
+---
+
 ## 6. Kết luận tổng hợp
 
 1. **Đặc trưng kỹ thuật là nền tảng dự báo chính** (Balanced Accuracy ~0.65–0.78); đặc trưng từ
@@ -233,10 +274,10 @@ do thiên lệch một nguồn CafeF" đã được loại trừ.
    McNemar đã cảnh báo (p=0.121); khi mở rộng corpus +48% (thêm VietnamBiz), mức cải thiện này biến
    mất (delta về −0.024, p=1.000). Đây là minh hoạ regression to the mean.
 4. **Kết luận cuối: H1 không được ủng hộ** một cách nhất quán và vững chắc qua nhiều ngưỡng thời
-   gian, nhiều đơn vị thời gian, và **ba quy mô corpus** (9.7k → 11k → 17.8k bài) với **4 nguồn cân
-   bằng** (CafeF 45%, Vietstock 28%, VietnamBiz 20%, TNCK 7% — không còn phụ thuộc một nguồn). Đặc
-   trưng tần suất từ khóa tin tức (theo cách biểu diễn hiện tại) không cải thiện dự báo xu hướng giá
-   VN30. Rủi ro thiên lệch nguồn dữ liệu đã được loại trừ.
+   gian, nhiều đơn vị thời gian, và **bốn lần mở rộng corpus** (9.7k → 19.5k bài, gấp đôi) với **5
+   nguồn cân bằng** (CafeF 41%, Vietstock 26%, VietnamBiz 18%, VnExpress 9%, TNCK 6% — không nguồn
+   nào áp đảo). Đặc trưng tần suất từ khóa tin tức (theo cách biểu diễn hiện tại) không cải thiện dự
+   báo xu hướng giá VN30. Rủi ro thiên lệch nguồn dữ liệu đã được loại trừ triệt để.
 
 ### Hướng nghiên cứu tiếp theo (gợi ý)
 - Biểu diễn tin tức tinh vi hơn tần suất từ khóa (embedding / mô hình ngôn ngữ), xử lý phủ định.

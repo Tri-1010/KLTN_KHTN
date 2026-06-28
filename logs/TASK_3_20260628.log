@@ -566,3 +566,70 @@ Tickers with <20 articles in a year:
 [2026-06-28 15:02:52] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
 [2026-06-28 15:02:52] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
 [2026-06-28 15:02:52] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 15:59:31] [TASK_3] [INFO] Starting Entity Matching (TASK 3)...
+[2026-06-28 15:59:31] [TASK_3] [INFO] Loaded aliases for 30 tickers.
+[2026-06-28 15:59:31] [TASK_3] [INFO] Loaded 20665 total articles from all sources.
+[2026-06-28 15:59:34] [TASK_3] [INFO] Logged 6646 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 15:59:34] [TASK_3] [INFO] Saved matched output to data/news/matched/all_news_matched.csv (21095 rows).
+[2026-06-28 15:59:34] [TASK_3] [INFO] ============================================================
+[2026-06-28 15:59:34] [TASK_3] [INFO] ENTITY MATCHING REPORT
+[2026-06-28 15:59:34] [TASK_3] [INFO] ============================================================
+[2026-06-28 15:59:34] [TASK_3] [INFO] Total articles before matching : 20665
+[2026-06-28 15:59:34] [TASK_3] [INFO] Total rows after matching      : 21095
+[2026-06-28 15:59:34] [TASK_3] [INFO] UNKNOWN articles               : 6646 (31.5%)
+[2026-06-28 15:59:34] [TASK_3] [INFO] 
+Articles per ticker per source:
+[2026-06-28 15:59:34] [TASK_3] [INFO] 
+source   cafef  tnck  vietnambiz  vietstock  vnexpress
+ticker                                                
+ACB        152    43          21        157          7
+BCM        196    38          14         99          1
+BID        497    18          25        257          7
+BVH        151    31          15         81          1
+CTG        417    34          50        159          1
+FPT        241    49          54        208         12
+GAS        161    40          11        106          6
+GVR        122    19           4         52          1
+HDB        471    40          21        252          0
+HPG        185    42          35        143         12
+MBB        391    19           2        227          2
+MSN        448    40          28        122         16
+MWG        257    42          40        118         23
+PLX        150    32          12         60          7
+POW        159    40          24         95          4
+SAB        162    40          10         52          0
+SHB        286    42          19        289          5
+SSB        253    29          19        170          2
+SSI        258    42          21        222         12
+STB        253    40          48        205         11
+TCB        564    39          52        279         13
+TPB        271    28          29        252          3
+UNKNOWN    309   189        2903       1734       1511
+VCB        283    41          33        128          8
+VHM        200     8          18         39         17
+VIB        246    41          32        145          1
+VIC        310    20          31         72         84
+VJC        173    41          16        104         17
+VNM        123    34          26        126          8
+VPB        426    39          56        215         17
+VRE        113     4           6          8          3
+[2026-06-28 15:59:34] [TASK_3] [INFO] ============================================================
+[2026-06-28 16:14:38] [TASK_3] [INFO] ============================================================
+[2026-06-28 16:14:38] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-28 16:14:38] [TASK_3] [INFO] Timestamp: 2026-06-28T16:14:38.816799
+[2026-06-28 16:14:38] [TASK_3] [INFO] ============================================================
+[2026-06-28 16:14:38] [TASK_3] [INFO] Input: data/news/tnck/tnck_raw.csv (1161 rows)
+[2026-06-28 16:14:38] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-28 16:14:38] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-28 16:14:38] [TASK_3] [INFO] ============================================================
+[2026-06-28 16:14:39] [TASK_3] [INFO] ============================================================
+[2026-06-28 16:14:39] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-06-28 16:14:39] [TASK_3] [INFO] Timestamp: 2026-06-28T16:14:39.134978
+[2026-06-28 16:14:39] [TASK_3] [INFO] ============================================================
+[2026-06-28 16:14:39] [TASK_3] [INFO] Input: data/news/tnck/tnck_raw.csv (1161 rows)
+[2026-06-28 16:14:39] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-06-28 16:14:39] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-06-28 16:14:39] [TASK_3] [INFO] ============================================================
+[2026-06-28 16:14:51] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 16:14:51] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-06-28 16:14:51] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log

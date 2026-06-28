@@ -75,10 +75,15 @@ số ca bất đồng quá ít — gốc rễ là mật độ tin mỏng ở nhi
 
 ## Kết luận cuối của plan
 
-Thêm VietnamBiz (+48% corpus) **không** củng cố H1 — "đỉnh +3.6 điểm ở đơn vị tháng" trước đây
-là dao động ngẫu nhiên (regression to the mean), biến mất khi có thêm dữ liệu. Kết luận **H1 không
-được ủng hộ** giờ vững hơn qua: nhiều ngưỡng thời gian, nhiều đơn vị thời gian, và 2 quy mô corpus.
-Đây là kết quả nghiên cứu hợp lệ và trung thực.
+Đã mở rộng từ 3 → **5 nguồn**: thêm VietnamBiz (3.598 bài) và đào sâu Vietstock (534→5.008) và thêm
+VnExpress (1.762 bài). Corpus unique **9.7k → 19.5k bài (gấp đôi)**, CafeF từ 83% → **41%** (không
+còn áp đảo). Bất chấp dữ liệu nhiều gấp đôi và 5 nguồn cân bằng, đặc trưng từ khóa **vẫn không cải
+thiện** dự báo (mọi delta quanh 0/âm, mọi McNemar không significant). Kết luận **H1 không được ủng
+hộ** giờ rất vững và khách quan. Rủi ro thiên lệch nguồn CafeF đã được loại trừ triệt để.
+
+Các nguồn khả thi đã thêm: VietnamBiz, Vietstock (deep), VnExpress.
+Các nguồn đã loại (bất khả thi): VnEconomy, nguoiquansat, kinhtechungkhoan (phân trang JS);
+tbtaichinh, cafebiz, vietnamfinance (404/redirect); ndh.vn (offline).
 
 ## Lưu ý rủi ro
 

@@ -720,3 +720,133 @@ pos_score distribution:
 [2026-06-28 15:02:39] [TASK_9] [INFO] ------------------------------------------------------------
 [2026-06-28 15:02:39] [TASK_9] [INFO] END TASK_9 — completed in 0.0 seconds
 [2026-06-28 15:02:39] [TASK_9] [INFO] ============================================================
+[2026-06-28 16:04:04] [TASK_9] [INFO] ============================================================
+[2026-06-28 16:04:04] [TASK_9] [INFO] START TASK_9: Keyword Feature Extraction (TF-IDF, sentiment scores)
+[2026-06-28 16:04:04] [TASK_9] [INFO] Timestamp: 2026-06-28T16:04:04.410093
+[2026-06-28 16:04:04] [TASK_9] [INFO] ============================================================
+[2026-06-28 16:04:04] [TASK_9] [INFO] Input: data/aggregated/news_by_quarter.csv (557 rows)
+[2026-06-28 16:04:04] [TASK_9] [INFO] Starting Keyword Feature Extraction (TASK 9)...
+[2026-06-28 16:04:04] [TASK_9] [INFO] Loaded 557 (ticker, quarter) rows from data/aggregated/news_by_quarter.csv.
+[2026-06-28 16:04:04] [TASK_9] [INFO] Using 73 keywords (28 pos, 36 neg, 9 neutral).
+[2026-06-28 16:04:06] [TASK_9] [INFO] Saved keyword features (557 rows, 227 cols) to data/features/keyword_features.csv.
+[2026-06-28 16:04:06] [TASK_9] [INFO] ======================================================================
+[2026-06-28 16:04:06] [TASK_9] [INFO] KEYWORD FEATURE REPORT
+[2026-06-28 16:04:06] [TASK_9] [INFO] ======================================================================
+[2026-06-28 16:04:06] [TASK_9] [INFO] Total features generated: 225
+[2026-06-28 16:04:06] [TASK_9] [INFO] 
+Top 20 keywords by corpus frequency:
+[2026-06-28 16:04:06] [TASK_9] [INFO]    1. tăng trưởng                               516
+[2026-06-28 16:04:06] [TASK_9] [INFO]    2. kỷ lục                                    319
+[2026-06-28 16:04:06] [TASK_9] [INFO]    3. tăng vốn điều lệ                          266
+[2026-06-28 16:04:06] [TASK_9] [INFO]    4. chia cổ tức                               239
+[2026-06-28 16:04:06] [TASK_9] [INFO]    5. mua lại                                   175
+[2026-06-28 16:04:06] [TASK_9] [INFO]    6. cổ tức tiền mặt                           105
+[2026-06-28 16:04:06] [TASK_9] [INFO]    7. nợ xấu                                    97
+[2026-06-28 16:04:06] [TASK_9] [INFO]    8. đóng cửa                                  56
+[2026-06-28 16:04:06] [TASK_9] [INFO]    9. ký kết hợp đồng                           54
+[2026-06-28 16:04:06] [TASK_9] [INFO]   10. lãi ròng                                  51
+[2026-06-28 16:04:06] [TASK_9] [INFO]   11. thoái vốn                                 49
+[2026-06-28 16:04:06] [TASK_9] [INFO]   12. trả nợ                                    44
+[2026-06-28 16:04:06] [TASK_9] [INFO]   13. mua lại cổ phiếu                          38
+[2026-06-28 16:04:06] [TASK_9] [INFO]   14. vượt kế hoạch                             34
+[2026-06-28 16:04:06] [TASK_9] [INFO]   15. cảnh báo                                  33
+[2026-06-28 16:04:06] [TASK_9] [INFO]   16. đại hội cổ đông                           29
+[2026-06-28 16:04:06] [TASK_9] [INFO]   17. hợp tác chiến lược                        28
+[2026-06-28 16:04:06] [TASK_9] [INFO]   18. vi phạm                                   27
+[2026-06-28 16:04:06] [TASK_9] [INFO]   19. sáp nhập                                  25
+[2026-06-28 16:04:06] [TASK_9] [INFO]   20. tăng trưởng mạnh                          21
+[2026-06-28 16:04:06] [TASK_9] [INFO] 
+Overall sparsity rate: 97.47%
+[2026-06-28 16:04:06] [TASK_9] [INFO] 
+Keywords with sparsity > 95% (64 candidates for removal):
+[2026-06-28 16:04:06] [TASK_9] [INFO]   phát hành thưởng                          100.0%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   cải thiện tài chính                       100.0%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   dòng tiền dương                           100.0%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   tiền mặt dồi dào                          100.0%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   dưới kế hoạch                             100.0%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   kết quả tiêu cực                          100.0%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   hủy cổ tức                                100.0%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   giảm cổ tức                               100.0%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   phát hành pha loãng                       100.0%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   chào bán giá thấp                         100.0%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   nợ quá hạn                                100.0%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   hệ số nợ cao                              100.0%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   thiếu thanh khoản                         100.0%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   dòng tiền âm                              100.0%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   hủy hợp đồng                              100.0%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   dự án trì hoãn                            100.0%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   thu hẹp hoạt động                         100.0%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   dừng dự án                                100.0%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   bị thanh tra                              100.0%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   tranh chấp pháp lý                        100.0%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   bị kiện                                   100.0%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   họp HĐQT                                  100.0%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   thay đổi lãnh đạo                         100.0%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   phát hành cổ phiếu mới                    100.0%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   lợi nhuận sau thuế tăng                   99.8%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   lợi nhuận âm                              99.8%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   lợi nhuận thấp hơn                        99.8%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   nợ vay tăng                               99.8%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   điều tra                                  99.8%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   niêm yết thêm                             99.8%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   kết quả tích cực                          99.6%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   đầu tư mới                                99.6%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   thắng thầu                                99.6%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   xuất khẩu tăng                            99.6%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   lỗ ròng                                   99.6%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   áp lực tài chính                          99.6%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   bị kiểm toán từ chối                      99.6%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   giảm nợ                                   99.5%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   hệ số an toàn vốn                         99.5%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   dự án mới                                 99.5%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   doanh thu giảm                            99.5%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   thay CEO                                  99.5%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   đình chỉ                                  99.3%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   mở rộng thị trường                        99.1%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   không chia cổ tức                         99.1%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   cổ tức cao                                98.9%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   khởi tố                                   98.9%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   bị phạt                                   98.7%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   cảnh báo                                  98.6%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   thua lỗ                                   98.4%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   lợi nhuận giảm                            97.8%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   vi phạm                                   97.8%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   doanh thu tăng                            97.7%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   sụt giảm                                  97.7%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   sáp nhập                                  97.5%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   lợi nhuận tăng                            97.1%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   mua lại cổ phiếu                          97.1%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   hợp tác chiến lược                        96.9%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   đóng cửa                                  96.8%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   tăng trưởng mạnh                          96.4%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   trả nợ                                    95.9%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   thoái vốn                                 95.9%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   vượt kế hoạch                             95.7%
+[2026-06-28 16:04:06] [TASK_9] [INFO]   đại hội cổ đông                           95.5%
+[2026-06-28 16:04:06] [TASK_9] [INFO] 
+pos_score distribution:
+[2026-06-28 16:04:06] [TASK_9] [INFO]   mean=0.1175  std=0.1498  min=0.0000  max=1.0000
+[2026-06-28 16:04:06] [TASK_9] [INFO] neg_score distribution:
+[2026-06-28 16:04:06] [TASK_9] [INFO]   mean=0.0186  std=0.0584  min=0.0000  max=0.5000
+[2026-06-28 16:04:06] [TASK_9] [INFO] ======================================================================
+[2026-06-28 16:04:06] [TASK_9] [INFO] TASK 9 complete.
+[2026-06-28 16:04:06] [TASK_9] [INFO] ------------------------------------------------------------
+[2026-06-28 16:04:06] [TASK_9] [INFO] END TASK_9 — completed in 2.4 seconds
+[2026-06-28 16:04:06] [TASK_9] [INFO] Output: data/features/keyword_features.csv (557 rows)
+[2026-06-28 16:04:06] [TASK_9] [INFO] ============================================================
+[2026-06-28 16:14:39] [TASK_9] [INFO] ============================================================
+[2026-06-28 16:14:39] [TASK_9] [INFO] START TASK_9: Keyword Feature Extraction (TF-IDF, sentiment scores)
+[2026-06-28 16:14:39] [TASK_9] [INFO] Timestamp: 2026-06-28T16:14:39.076109
+[2026-06-28 16:14:39] [TASK_9] [INFO] ============================================================
+[2026-06-28 16:14:39] [TASK_9] [INFO] Input: data/aggregated/news_by_quarter.csv (557 rows)
+[2026-06-28 16:14:39] [TASK_9] [INFO] ------------------------------------------------------------
+[2026-06-28 16:14:39] [TASK_9] [INFO] END TASK_9 — completed in 0.0 seconds
+[2026-06-28 16:14:39] [TASK_9] [INFO] ============================================================
+[2026-06-28 16:14:39] [TASK_9] [INFO] ============================================================
+[2026-06-28 16:14:39] [TASK_9] [INFO] START TASK_9: Keyword Feature Extraction (TF-IDF, sentiment scores)
+[2026-06-28 16:14:39] [TASK_9] [INFO] Timestamp: 2026-06-28T16:14:39.391292
+[2026-06-28 16:14:39] [TASK_9] [INFO] ============================================================
+[2026-06-28 16:14:39] [TASK_9] [INFO] Input: data/aggregated/news_by_quarter.csv (557 rows)
+[2026-06-28 16:14:39] [TASK_9] [INFO] ------------------------------------------------------------
+[2026-06-28 16:14:39] [TASK_9] [INFO] END TASK_9 — completed in 0.0 seconds
+[2026-06-28 16:14:39] [TASK_9] [INFO] ============================================================

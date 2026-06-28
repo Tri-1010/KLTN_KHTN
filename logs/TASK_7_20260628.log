@@ -231,3 +231,37 @@
 [2026-06-28 15:02:39] [TASK_7] [INFO] ------------------------------------------------------------
 [2026-06-28 15:02:39] [TASK_7] [INFO] END TASK_7 — completed in 0.0 seconds
 [2026-06-28 15:02:39] [TASK_7] [INFO] ============================================================
+[2026-06-28 16:03:59] [TASK_7] [INFO] ============================================================
+[2026-06-28 16:03:59] [TASK_7] [INFO] START TASK_7: Technical Feature Extraction (RSI, MACD, BB, SMA, EMA)
+[2026-06-28 16:03:59] [TASK_7] [INFO] Timestamp: 2026-06-28T16:03:59.057082
+[2026-06-28 16:03:59] [TASK_7] [INFO] ============================================================
+[2026-06-28 16:03:59] [TASK_7] [INFO] Input: data/prices/all_vn30_prices.csv (35160 rows)
+[2026-06-28 16:03:59] [TASK_7] [INFO] Starting Technical Feature Extraction (TASK 7)...
+[2026-06-28 16:03:59] [TASK_7] [INFO] Loaded 35160 daily price rows.
+[2026-06-28 16:04:01] [TASK_7] [INFO] Computed 570 quarterly feature rows for 30 tickers.
+[2026-06-28 16:04:01] [TASK_7] [INFO] Saved 570 rows to data/features/technical_features.csv
+[2026-06-28 16:04:01] [TASK_7] [INFO] Computing correlation matrix...
+[2026-06-28 16:04:01] [TASK_7] [WARNING] High correlation (0.977) between 'return_q' and 'return_mean_daily'
+[2026-06-28 16:04:01] [TASK_7] [WARNING] High correlation (0.998) between 'return_std_daily' and 'volatility_q'
+[2026-06-28 16:04:01] [TASK_7] [WARNING] High correlation (1.000) between 'sma20_end' and 'ema20_end'
+[2026-06-28 16:04:01] [TASK_7] [INFO] TASK 7 complete.
+[2026-06-28 16:04:01] [TASK_7] [INFO] ------------------------------------------------------------
+[2026-06-28 16:04:01] [TASK_7] [INFO] END TASK_7 — completed in 2.6 seconds
+[2026-06-28 16:04:01] [TASK_7] [INFO] Output: data/features/technical_features.csv (570 rows)
+[2026-06-28 16:04:01] [TASK_7] [INFO] ============================================================
+[2026-06-28 16:14:38] [TASK_7] [INFO] ============================================================
+[2026-06-28 16:14:38] [TASK_7] [INFO] START TASK_7: Technical Feature Extraction (RSI, MACD, BB, SMA, EMA)
+[2026-06-28 16:14:38] [TASK_7] [INFO] Timestamp: 2026-06-28T16:14:38.982391
+[2026-06-28 16:14:38] [TASK_7] [INFO] ============================================================
+[2026-06-28 16:14:38] [TASK_7] [INFO] Input: data/prices/all_vn30_prices.csv (35160 rows)
+[2026-06-28 16:14:38] [TASK_7] [INFO] ------------------------------------------------------------
+[2026-06-28 16:14:38] [TASK_7] [INFO] END TASK_7 — completed in 0.0 seconds
+[2026-06-28 16:14:38] [TASK_7] [INFO] ============================================================
+[2026-06-28 16:14:39] [TASK_7] [INFO] ============================================================
+[2026-06-28 16:14:39] [TASK_7] [INFO] START TASK_7: Technical Feature Extraction (RSI, MACD, BB, SMA, EMA)
+[2026-06-28 16:14:39] [TASK_7] [INFO] Timestamp: 2026-06-28T16:14:39.299544
+[2026-06-28 16:14:39] [TASK_7] [INFO] ============================================================
+[2026-06-28 16:14:39] [TASK_7] [INFO] Input: data/prices/all_vn30_prices.csv (35160 rows)
+[2026-06-28 16:14:39] [TASK_7] [INFO] ------------------------------------------------------------
+[2026-06-28 16:14:39] [TASK_7] [INFO] END TASK_7 — completed in 0.0 seconds
+[2026-06-28 16:14:39] [TASK_7] [INFO] ============================================================
