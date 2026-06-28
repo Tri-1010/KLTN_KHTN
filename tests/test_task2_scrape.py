@@ -754,6 +754,7 @@ from pipeline.task2_scrape import (
     VIETSTOCK_TAG_PAGE_URL,
     VIETSTOCK_FINANCE_URL,
     VIETSTOCK_LATEST_NEWS_URL,
+    VIETSTOCK_PAGING_URL,
 )
 
 
@@ -1059,7 +1060,7 @@ class TestScrapeVietstock:
 
     @patch("pipeline.task2_scrape.fetch_with_retry")
     def test_falls_back_to_tag_search(self, mock_fetch):
-        """When latest-news yields nothing, should try the tag-search fallback."""
+        """When paging + latest-news yield nothing, try the tag-search fallback."""
         empty_response = MagicMock()
         empty_response.text = "<html><body></body></html>"
         empty_response.status_code = 200
@@ -1072,8 +1073,12 @@ class TestScrapeVietstock:
         tag_empty.text = "<html><body></body></html>"
         tag_empty.status_code = 200
 
-        # latest-news (empty) → tag page1 (article) → tag page2 (empty)
-        mock_fetch.side_effect = [empty_response, tag_response, tag_empty]
+        # paging strategy: empty fragment (stops after 2 empty pages) →
+        # latest-news (empty) → tag page1 (article) → tag page2 (empty).
+        # A generous supply of empty responses covers the paging loop.
+        mock_fetch.side_effect = (
+            [empty_response] * 3 + [empty_response, tag_response, tag_empty]
+        )
 
         rl = MagicMock(spec=RateLimiter)
         result = scrape_vietstock(
@@ -1088,8 +1093,8 @@ class TestScrapeVietstock:
         assert result.iloc[0]["title"] == "Tag article"
 
     @patch("pipeline.task2_scrape.fetch_with_retry")
-    def test_uses_latest_news_url_first(self, mock_fetch):
-        """First request should target the finance latest-news page."""
+    def test_uses_paging_endpoint_first(self, mock_fetch):
+        """First request should target the deep-pagination endpoint."""
         mock_fetch.return_value = None
 
         rl = MagicMock(spec=RateLimiter)
@@ -1102,7 +1107,8 @@ class TestScrapeVietstock:
         )
 
         first_call_url = mock_fetch.call_args_list[0][0][0]
-        assert first_call_url == VIETSTOCK_LATEST_NEWS_URL.format(ticker="VNM")
+        assert first_call_url.startswith(VIETSTOCK_PAGING_URL)
+        assert "code=VNM" in first_call_url
 
     @patch("pipeline.task2_scrape.fetch_with_retry")
     def test_stops_on_old_articles(self, mock_fetch):
@@ -1113,12 +1119,14 @@ class TestScrapeVietstock:
         mock_response = MagicMock()
         mock_response.text = page_html
         mock_response.status_code = 200
-        # latest-news returns only an old article → empty result → fallback
-        # tag pages also empty.
+        # paging (empty) → latest-news returns only an old article → empty
+        # result → fallback tag pages also empty.
         empty = MagicMock()
         empty.text = "<html><body></body></html>"
         empty.status_code = 200
-        mock_fetch.side_effect = [mock_response, empty, empty]
+        mock_fetch.side_effect = (
+            [empty] * 3 + [mock_response, empty, empty]
+        )
 
         rl = MagicMock(spec=RateLimiter)
         result = scrape_vietstock(
@@ -1670,8 +1678,11 @@ class TestErrorHandlingVietstock:
         empty_resp = MagicMock()
         empty_resp.text = "<html><body></body></html>"
         empty_resp.status_code = 200
-        # latest-news (parse raises) → tag page1 (good) → tag page2 (empty)
-        mock_fetch.side_effect = [bad_resp, tag_resp, empty_resp]
+        # paging (empty) → latest-news (parse raises) → tag page1 (good)
+        # → tag page2 (empty)
+        mock_fetch.side_effect = (
+            [empty_resp] * 3 + [bad_resp, tag_resp, empty_resp]
+        )
 
         with patch(
             "pipeline.task2_scrape._parse_vietstock_latest_news",
@@ -1971,4 +1982,66 @@ class TestVietnamBizParsePage:
         seen = {"https://vietnambiz.vn/tu-doanh-gom-manh-co-phieu-nao-2026624182936535.htm"}
         articles, _ = _parse_vietnambiz_page(self.SAMPLE_HTML, seen, "2022-01-01")
         # Only the non-duplicate article remains.
+        assert len(articles) == 1
+
+
+# ---------------------------------------------------------------------------
+# Vietstock deep-pagination parser tests (news-source-expansion)
+# ---------------------------------------------------------------------------
+
+from pipeline.task2_scrape import _parse_vietstock_paging_page
+
+
+class TestVietstockPagingParse:
+    """Tests for parsing the /View/PagingNewsContent HTML fragment."""
+
+    SAMPLE_HTML = """
+    <ul>
+      <li>
+        <span class="date">19/06/2026</span>
+        <a href="//vietstock.vn/2026/06/vnm-chia-co-tuc-dot-cuoi-2025-123456.htm"
+           title="VNM chia cổ tức đợt cuối 2025 cho cổ đông">
+           VNM chia cổ tức đợt cuối 2025 cho cổ đông</a>
+      </li>
+      <li>
+        <span class="date">02/03/2024</span>
+        <a href="//vietstock.vn/2024/03/vnm-ket-qua-kinh-doanh-quy-1-654321.htm"
+           title="VNM công bố kết quả kinh doanh quý 1">
+           VNM công bố kết quả kinh doanh quý 1</a>
+      </li>
+    </ul>
+    """
+
+    def test_extracts_articles_with_absolute_https_url(self):
+        articles, _ = _parse_vietstock_paging_page(self.SAMPLE_HTML, set(), "2022-01-01")
+        assert len(articles) == 2
+        assert all(a["url"].startswith("https://vietstock.vn/") for a in articles)
+        assert all(a["source"] == "vietstock" for a in articles)
+
+    def test_inline_date_parsed(self):
+        articles, _ = _parse_vietstock_paging_page(self.SAMPLE_HTML, set(), "2022-01-01")
+        assert articles[0]["date"] == "2026-06-19"
+        assert articles[1]["date"] == "2024-03-02"
+
+    def test_date_boundary_sets_found_old(self):
+        articles, found_old = _parse_vietstock_paging_page(
+            self.SAMPLE_HTML, set(), "2025-01-01"
+        )
+        assert found_old is True
+        assert all(a["date"] >= "2025-01-01" for a in articles)
+
+    def test_url_path_date_fallback(self):
+        # No inline dd/mm/yyyy -> fall back to /YYYY/MM/ path (day=01)
+        html = (
+            '<div><a href="//vietstock.vn/2023/09/some-vnm-news-999999.htm" '
+            'title="Some VNM news headline that is long enough">'
+            'Some VNM news headline that is long enough</a></div>'
+        )
+        articles, _ = _parse_vietstock_paging_page(html, set(), "2022-01-01")
+        assert len(articles) == 1
+        assert articles[0]["date"] == "2023-09-01"
+
+    def test_duplicate_skipped(self):
+        seen = {"https://vietstock.vn/2026/06/vnm-chia-co-tuc-dot-cuoi-2025-123456.htm"}
+        articles, _ = _parse_vietstock_paging_page(self.SAMPLE_HTML, seen, "2022-01-01")
         assert len(articles) == 1

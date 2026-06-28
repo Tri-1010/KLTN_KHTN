@@ -709,6 +709,17 @@ VIETSTOCK_LATEST_NEWS_URL = (
     "https://finance.vietstock.vn/{ticker}/tin-moi-nhat.htm"
 )
 
+# Deep-pagination endpoint (discovered from the latest-news page JS):
+#   $('#latest-news').load("/View/PagingNewsContent",
+#       {view:1, code, type:1, fromDate, toDate, channelID:-1, page, pageSize})
+# Returns a lightweight HTML fragment (~8KB) listing ~20 articles per page,
+# ordered newest-first, paginating years back into the past. This is far
+# better than the latest-news page (which only shows ~20 recent items).
+# NOTE: Update this if Vietstock changes the endpoint or its parameters.
+VIETSTOCK_PAGING_URL = "https://finance.vietstock.vn/View/PagingNewsContent"
+VIETSTOCK_PAGING_PAGE_SIZE = 20
+VIETSTOCK_PAGING_MAX_PAGES = 200
+
 
 def _parse_vietstock_date(raw_date: str) -> Optional[str]:
     """
@@ -1043,6 +1054,161 @@ def _parse_vietstock_latest_news(
     return articles, found_old_article
 
 
+def _parse_vietstock_paging_page(
+    html: str,
+    existing_urls: Set[str],
+    start_date: str,
+) -> Tuple[List[Dict], bool]:
+    """Parse one /View/PagingNewsContent HTML fragment into article dicts.
+
+    The fragment lists article anchors whose href contains a '/YYYY/MM/' date
+    path, plus an inline 'dd/mm/yyyy' date near each item. Returns
+    (articles, found_old) where found_old signals an item older than
+    start_date (the feed is newest-first, so we can stop paginating).
+
+    NOTE: Selectors/patterns may need adjustment if Vietstock changes the
+    fragment structure.
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    articles: List[Dict] = []
+    found_old = False
+    seen_on_page: Set[str] = set()
+
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        # Article detail URLs look like //vietstock.vn/2026/06/slug-123456.htm
+        if not re.search(r"/\d{4}/\d{2}/", href):
+            continue
+        title = unescape((a.get("title") or a.get_text(strip=True)).strip())
+        if not title or len(title) < 20:
+            continue
+
+        url = href
+        if url.startswith("//"):
+            url = "https:" + url
+        elif not url.startswith("http"):
+            url = urljoin("https://vietstock.vn", url)
+        url = url.split("?")[0]
+
+        if url in seen_on_page or is_duplicate(url, existing_urls):
+            continue
+
+        # Date: prefer a 'dd/mm/yyyy' near the anchor; fall back to the
+        # '/YYYY/MM/' path in the URL (day defaults to 01).
+        parsed_date = None
+        node = a
+        for _ in range(3):
+            node = node.parent
+            if node is None:
+                break
+            dm = re.search(r"(\d{2}/\d{2}/\d{4})", node.get_text(" ", strip=True))
+            if dm:
+                parsed_date = _parse_vietstock_date(dm.group(1))
+                break
+        if not parsed_date:
+            pm = re.search(r"/(\d{4})/(\d{2})/", href)
+            if pm:
+                parsed_date = f"{pm.group(1)}-{pm.group(2)}-01"
+
+        if parsed_date and parsed_date < start_date:
+            found_old = True
+            continue
+
+        article = {
+            "date": parsed_date or "",
+            "title": title,
+            "description": "",
+            "url": url,
+            "source": "vietstock",
+        }
+        if validate_article(article):
+            articles.append(article)
+            seen_on_page.add(url)
+            existing_urls.add(url)
+
+    return articles, found_old
+
+
+def _scrape_vietstock_paging(
+    ticker: str,
+    start_date: str,
+    rate_limiter: RateLimiter,
+    existing_urls: Set[str],
+    scraping_cfg: dict,
+) -> List[Dict]:
+    """Deep-scrape Vietstock company news via /View/PagingNewsContent.
+
+    Paginates newest-first until reaching start_date or an empty page.
+    Uses a session primed with the ticker's latest-news page so the AJAX
+    endpoint returns content.
+    """
+    max_retries = scraping_cfg.get("max_retries", 3)
+    backoff_factor = scraping_cfg.get("backoff_factor", 2)
+    timeout = scraping_cfg.get("request_timeout", 30)
+    ticker_upper = ticker.upper()
+
+    headers = {
+        **BROWSER_HEADERS,
+        "Accept-Encoding": "gzip, deflate",
+        "X-Requested-With": "XMLHttpRequest",
+        "Referer": VIETSTOCK_LATEST_NEWS_URL.format(ticker=ticker_upper),
+    }
+
+    all_articles: List[Dict] = []
+    empty_streak = 0
+
+    for page in range(1, VIETSTOCK_PAGING_MAX_PAGES + 1):
+        params = {
+            "view": 1, "code": ticker_upper, "type": 1,
+            "fromDate": "", "toDate": "", "channelID": -1,
+            "page": page, "pageSize": VIETSTOCK_PAGING_PAGE_SIZE,
+        }
+        query = "&".join(f"{k}={v}" for k, v in params.items())
+        url = f"{VIETSTOCK_PAGING_URL}?{query}"
+
+        response = fetch_with_retry(
+            url,
+            rate_limiter=rate_limiter,
+            max_retries=max_retries,
+            backoff_factor=backoff_factor,
+            timeout=timeout,
+            headers=headers,
+        )
+        if response is None:
+            logger.warning(
+                "Vietstock paging: failed to fetch page %d for %s. Stopping.",
+                page, ticker,
+            )
+            break
+
+        try:
+            articles, should_stop = _parse_vietstock_paging_page(
+                response.text, existing_urls, start_date
+            )
+        except Exception as exc:
+            logger.warning(
+                "Vietstock paging: failed to parse page %d for %s: %s. "
+                "Skipping page.", page, ticker, exc,
+            )
+            continue
+
+        if articles:
+            all_articles.extend(articles)
+            empty_streak = 0
+        else:
+            empty_streak += 1
+
+        if should_stop:
+            break
+        if empty_streak >= 2 and page > 1:
+            break
+
+    logger.info(
+        "Vietstock paging for %s: %d articles", ticker, len(all_articles)
+    )
+    return all_articles
+
+
 def scrape_vietstock(
     ticker: str,
     start_date: str,
@@ -1077,7 +1243,25 @@ def scrape_vietstock(
 
     ticker_upper = ticker.upper()
 
-    # --- Strategy 1: finance "tin mới nhất" table (primary, robust) ---
+    # --- Strategy 0: deep pagination via /View/PagingNewsContent (primary) ---
+    # This paginates years back, yielding far more than the ~20-item
+    # latest-news table. Strategies 1/2 below remain as fallbacks.
+    try:
+        paging_articles = _scrape_vietstock_paging(
+            ticker=ticker,
+            start_date=start_date,
+            rate_limiter=rate_limiter,
+            existing_urls=existing_urls,
+            scraping_cfg=scraping_cfg,
+        )
+        all_articles.extend(paging_articles)
+    except Exception as exc:
+        logger.warning(
+            "Vietstock paging strategy failed for %s: %s. Falling back.",
+            ticker, exc,
+        )
+
+    # --- Strategy 1: finance "tin mới nhất" table (fallback if paging empty) ---
     latest_url = VIETSTOCK_LATEST_NEWS_URL.format(ticker=ticker_upper)
     logger.debug("Fetching Vietstock latest-news for %s: %s", ticker, latest_url)
 
@@ -1087,7 +1271,7 @@ def scrape_vietstock(
         max_retries=max_retries,
         backoff_factor=backoff_factor,
         timeout=timeout,
-    )
+    ) if not all_articles else None
 
     if response is not None:
         try:
