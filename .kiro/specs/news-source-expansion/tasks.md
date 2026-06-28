@@ -36,17 +36,19 @@ số ca bất đồng quá ít — gốc rễ là mật độ tin mỏng ở nhi
 
 - [ ] ~~2. Cải thiện Vietstock~~ — **BỎ** (bất khả thi, xem khảo sát 1.1)
 
-- [ ] 3. Thêm nguồn mới #1 — VietnamBiz (chuyên mục chứng khoán + phân trang, TASK 3 lọc về VN30)
-  - [ ] 3.1 Viết `scrape_vietnambiz()` tái dùng hạ tầng chung; duyệt chuyên mục + phân trang tới khi vượt start_date; trích date từ meta bài chi tiết
-  - [ ] 3.2 Nối vào TASK 2 và lưu `data/news/vietnambiz/vietnambiz_raw.csv`
-  - [ ] 3.3 Test vài trang, kiểm tra parse đúng (title/date/url/description)
-  - [ ] 3.4 Viết unit test cơ bản (parse fixture, dedup)
-  - [ ] 3.5 Commit
+- [x] 3. Thêm nguồn mới #1 — VietnamBiz (chuyên mục chứng khoán + phân trang, TASK 3 lọc về VN30)
+  - [x] 3.1 Viết `scrape_vietnambiz()` tái dùng hạ tầng chung; duyệt chuyên mục + phân trang tới khi vượt start_date; trích date từ meta bài chi tiết
+  - [x] 3.2 Nối vào TASK 2 và lưu `data/news/vietnambiz/vietnambiz_raw.csv`
+  - [x] 3.3 Test vài trang, kiểm tra parse đúng (title/date/url/description) — 129 bài/cửa sổ ~2 tuần, date đầy đủ
+  - [x] 3.4 Viết unit test cơ bản (parse fixture, dedup) — 139 test pass
+  - [x] 3.5 Commit
+  - **Ghi chú:** phát hiện & sửa lỗi Brotli — VietnamBiz nén `br`, requests không giải mã được nếu thiếu gói `brotli` → dùng header chỉ `gzip, deflate` cho domain này.
 
-- [ ] 4. Thêm nguồn mới #2 — VnEconomy (nếu giải được phân trang)
-  - [ ] 4.1 Tìm cơ chế phân trang VnEconomy; nếu không có → ghi nhận và bỏ qua
-  - [ ] 4.2 Viết `scrape_vneconomy()` nếu khả thi; nối vào TASK 2
-  - [ ] 4.3 Commit
+- [x] 4. Thêm nguồn mới #2 — VnEconomy (nếu giải được phân trang)
+  - [x] 4.1 Tìm cơ chế phân trang VnEconomy; nếu không có → ghi nhận và bỏ qua
+  - [ ] ~~4.2 Viết `scrape_vneconomy()`~~ — **BỎ**
+  - [ ] ~~4.3 Commit~~
+  - **Kết luận: BỎ VnEconomy.** Mọi biến thể phân trang (`/trang-2.htm`, `?page=2`, `?trang=2`, `-p2.htm`) đều trả về cùng nội dung trang 1 (overlap >70%) → không có phân trang server-side; nội dung sâu nạp bằng JS. Trang chi tiết cũng thiếu `meta article:published_time` → khó trích ngày. Chi phí dò endpoint ẩn cao, khả năng thành công thấp. Dừng lại ở 1 nguồn mới (VietnamBiz).
 
 - [ ] 5. Cập nhật entity matching nếu cần
   - [ ] 5.1 Kiểm tra alias trong `config/entity_aliases.json` có đủ bắt tin từ nguồn mới không
