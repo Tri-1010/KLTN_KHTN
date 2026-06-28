@@ -9035,3 +9035,365 @@
 [2026-06-28 14:17:33] [TASK_2] [INFO] ------------------------------------------------------------
 [2026-06-28 14:17:33] [TASK_2] [INFO] Total articles from CAFEF: 3
 [2026-06-28 14:17:33] [TASK_2] [INFO] ============================================================
+[2026-06-28 14:18:44] [TASK_2] [INFO] Scraping vietstock for ticker=ACB from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:19:29] [TASK_2] [INFO] Vietstock paging for ACB: 210 articles
+[2026-06-28 14:19:29] [TASK_2] [INFO] Vietstock: collected 210 articles for ACB
+[2026-06-28 14:19:29] [TASK_2] [INFO] Saved 230 rows to data/news/vietstock/ACB_vietstock.csv
+[2026-06-28 14:19:29] [TASK_2] [INFO] Scraping vietstock for ticker=BCM from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:19:59] [TASK_2] [INFO] Vietstock paging for BCM: 91 articles
+[2026-06-28 14:19:59] [TASK_2] [INFO] Vietstock: collected 91 articles for BCM
+[2026-06-28 14:19:59] [TASK_2] [INFO] Saved 111 rows to data/news/vietstock/BCM_vietstock.csv
+[2026-06-28 14:19:59] [TASK_2] [INFO] Scraping vietstock for ticker=BID from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:20:59] [TASK_2] [INFO] Vietstock paging for BID: 310 articles
+[2026-06-28 14:20:59] [TASK_2] [INFO] Vietstock: collected 310 articles for BID
+[2026-06-28 14:20:59] [TASK_2] [INFO] Saved 330 rows to data/news/vietstock/BID_vietstock.csv
+[2026-06-28 14:20:59] [TASK_2] [INFO] Scraping vietstock for ticker=BVH from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:21:23] [TASK_2] [INFO] Vietstock paging for BVH: 71 articles
+[2026-06-28 14:21:23] [TASK_2] [INFO] Vietstock: collected 71 articles for BVH
+[2026-06-28 14:21:23] [TASK_2] [INFO] Saved 91 rows to data/news/vietstock/BVH_vietstock.csv
+[2026-06-28 14:21:23] [TASK_2] [INFO] Scraping vietstock for ticker=CTG from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:22:16] [TASK_2] [INFO] Vietstock paging for CTG: 225 articles
+[2026-06-28 14:22:16] [TASK_2] [INFO] Vietstock: collected 225 articles for CTG
+[2026-06-28 14:22:16] [TASK_2] [INFO] Saved 245 rows to data/news/vietstock/CTG_vietstock.csv
+[2026-06-28 14:22:16] [TASK_2] [INFO] Scraping vietstock for ticker=FPT from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:23:06] [TASK_2] [INFO] Vietstock paging for FPT: 202 articles
+[2026-06-28 14:23:06] [TASK_2] [INFO] Vietstock: collected 202 articles for FPT
+[2026-06-28 14:23:06] [TASK_2] [INFO] Saved 222 rows to data/news/vietstock/FPT_vietstock.csv
+[2026-06-28 14:23:06] [TASK_2] [INFO] Scraping vietstock for ticker=GAS from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:23:38] [TASK_2] [INFO] Vietstock paging for GAS: 83 articles
+[2026-06-28 14:23:38] [TASK_2] [INFO] Vietstock: collected 83 articles for GAS
+[2026-06-28 14:23:38] [TASK_2] [INFO] Saved 103 rows to data/news/vietstock/GAS_vietstock.csv
+[2026-06-28 14:23:38] [TASK_2] [INFO] Scraping vietstock for ticker=GVR from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:24:00] [TASK_2] [INFO] Vietstock paging for GVR: 44 articles
+[2026-06-28 14:24:00] [TASK_2] [INFO] Vietstock: collected 44 articles for GVR
+[2026-06-28 14:24:00] [TASK_2] [INFO] Saved 64 rows to data/news/vietstock/GVR_vietstock.csv
+[2026-06-28 14:24:00] [TASK_2] [INFO] Scraping vietstock for ticker=HDB from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:25:04] [TASK_2] [INFO] Vietstock paging for HDB: 299 articles
+[2026-06-28 14:25:04] [TASK_2] [INFO] Vietstock: collected 299 articles for HDB
+[2026-06-28 14:25:04] [TASK_2] [INFO] Saved 319 rows to data/news/vietstock/HDB_vietstock.csv
+[2026-06-28 14:25:04] [TASK_2] [INFO] Scraping vietstock for ticker=HPG from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:25:38] [TASK_2] [INFO] Vietstock paging for HPG: 127 articles
+[2026-06-28 14:25:38] [TASK_2] [INFO] Vietstock: collected 127 articles for HPG
+[2026-06-28 14:25:38] [TASK_2] [INFO] Saved 147 rows to data/news/vietstock/HPG_vietstock.csv
+[2026-06-28 14:25:38] [TASK_2] [INFO] Scraping vietstock for ticker=MBB from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:26:42] [TASK_2] [INFO] Vietstock paging for MBB: 325 articles
+[2026-06-28 14:26:42] [TASK_2] [INFO] Vietstock: collected 325 articles for MBB
+[2026-06-28 14:26:42] [TASK_2] [INFO] Saved 345 rows to data/news/vietstock/MBB_vietstock.csv
+[2026-06-28 14:26:42] [TASK_2] [INFO] Scraping vietstock for ticker=MSN from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:27:34] [TASK_2] [INFO] Vietstock paging for MSN: 174 articles
+[2026-06-28 14:27:34] [TASK_2] [INFO] Vietstock: collected 174 articles for MSN
+[2026-06-28 14:27:34] [TASK_2] [INFO] Saved 194 rows to data/news/vietstock/MSN_vietstock.csv
+[2026-06-28 14:27:34] [TASK_2] [INFO] Scraping vietstock for ticker=MWG from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:28:07] [TASK_2] [INFO] Vietstock paging for MWG: 121 articles
+[2026-06-28 14:28:07] [TASK_2] [INFO] Vietstock: collected 121 articles for MWG
+[2026-06-28 14:28:07] [TASK_2] [INFO] Saved 141 rows to data/news/vietstock/MWG_vietstock.csv
+[2026-06-28 14:28:07] [TASK_2] [INFO] Scraping vietstock for ticker=PLX from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:28:27] [TASK_2] [INFO] Vietstock paging for PLX: 51 articles
+[2026-06-28 14:28:27] [TASK_2] [INFO] Vietstock: collected 51 articles for PLX
+[2026-06-28 14:28:27] [TASK_2] [INFO] Saved 71 rows to data/news/vietstock/PLX_vietstock.csv
+[2026-06-28 14:28:27] [TASK_2] [INFO] Scraping vietstock for ticker=POW from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:28:57] [TASK_2] [INFO] Vietstock paging for POW: 81 articles
+[2026-06-28 14:28:57] [TASK_2] [INFO] Vietstock: collected 81 articles for POW
+[2026-06-28 14:28:57] [TASK_2] [INFO] Saved 101 rows to data/news/vietstock/POW_vietstock.csv
+[2026-06-28 14:28:57] [TASK_2] [INFO] Scraping vietstock for ticker=SAB from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:29:23] [TASK_2] [INFO] Vietstock paging for SAB: 40 articles
+[2026-06-28 14:29:23] [TASK_2] [INFO] Vietstock: collected 40 articles for SAB
+[2026-06-28 14:29:23] [TASK_2] [INFO] Saved 60 rows to data/news/vietstock/SAB_vietstock.csv
+[2026-06-28 14:29:23] [TASK_2] [INFO] Scraping vietstock for ticker=SHB from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:30:33] [TASK_2] [INFO] Vietstock paging for SHB: 338 articles
+[2026-06-28 14:30:33] [TASK_2] [INFO] Vietstock: collected 338 articles for SHB
+[2026-06-28 14:30:33] [TASK_2] [INFO] Saved 358 rows to data/news/vietstock/SHB_vietstock.csv
+[2026-06-28 14:30:33] [TASK_2] [INFO] Scraping vietstock for ticker=SSB from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:31:19] [TASK_2] [INFO] Vietstock paging for SSB: 214 articles
+[2026-06-28 14:31:19] [TASK_2] [INFO] Vietstock: collected 214 articles for SSB
+[2026-06-28 14:31:19] [TASK_2] [INFO] Saved 234 rows to data/news/vietstock/SSB_vietstock.csv
+[2026-06-28 14:31:19] [TASK_2] [INFO] Scraping vietstock for ticker=SSI from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:32:09] [TASK_2] [INFO] Vietstock paging for SSI: 228 articles
+[2026-06-28 14:32:09] [TASK_2] [INFO] Vietstock: collected 228 articles for SSI
+[2026-06-28 14:32:09] [TASK_2] [INFO] Saved 248 rows to data/news/vietstock/SSI_vietstock.csv
+[2026-06-28 14:32:09] [TASK_2] [INFO] Scraping vietstock for ticker=STB from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:33:03] [TASK_2] [INFO] Vietstock paging for STB: 266 articles
+[2026-06-28 14:33:03] [TASK_2] [INFO] Vietstock: collected 266 articles for STB
+[2026-06-28 14:33:03] [TASK_2] [INFO] Saved 286 rows to data/news/vietstock/STB_vietstock.csv
+[2026-06-28 14:33:03] [TASK_2] [INFO] Scraping vietstock for ticker=TCB from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:34:14] [TASK_2] [INFO] Vietstock paging for TCB: 341 articles
+[2026-06-28 14:34:14] [TASK_2] [INFO] Vietstock: collected 341 articles for TCB
+[2026-06-28 14:34:14] [TASK_2] [INFO] Saved 361 rows to data/news/vietstock/TCB_vietstock.csv
+[2026-06-28 14:34:14] [TASK_2] [INFO] Scraping vietstock for ticker=TPB from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:35:12] [TASK_2] [INFO] Vietstock paging for TPB: 300 articles
+[2026-06-28 14:35:12] [TASK_2] [INFO] Vietstock: collected 300 articles for TPB
+[2026-06-28 14:35:12] [TASK_2] [INFO] Saved 320 rows to data/news/vietstock/TPB_vietstock.csv
+[2026-06-28 14:35:12] [TASK_2] [INFO] Scraping vietstock for ticker=VCB from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:35:52] [TASK_2] [INFO] Vietstock paging for VCB: 179 articles
+[2026-06-28 14:35:52] [TASK_2] [INFO] Vietstock: collected 179 articles for VCB
+[2026-06-28 14:35:52] [TASK_2] [INFO] Saved 199 rows to data/news/vietstock/VCB_vietstock.csv
+[2026-06-28 14:35:52] [TASK_2] [INFO] Scraping vietstock for ticker=VHM from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:36:27] [TASK_2] [INFO] Vietstock paging for VHM: 134 articles
+[2026-06-28 14:36:27] [TASK_2] [INFO] Vietstock: collected 134 articles for VHM
+[2026-06-28 14:36:27] [TASK_2] [INFO] Saved 154 rows to data/news/vietstock/VHM_vietstock.csv
+[2026-06-28 14:36:28] [TASK_2] [INFO] Scraping vietstock for ticker=VIB from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:37:17] [TASK_2] [INFO] Vietstock paging for VIB: 204 articles
+[2026-06-28 14:37:17] [TASK_2] [INFO] Vietstock: collected 204 articles for VIB
+[2026-06-28 14:37:17] [TASK_2] [INFO] Saved 224 rows to data/news/vietstock/VIB_vietstock.csv
+[2026-06-28 14:37:17] [TASK_2] [INFO] Scraping vietstock for ticker=VIC from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:38:06] [TASK_2] [INFO] Vietstock paging for VIC: 218 articles
+[2026-06-28 14:38:06] [TASK_2] [INFO] Vietstock: collected 218 articles for VIC
+[2026-06-28 14:38:06] [TASK_2] [INFO] Saved 238 rows to data/news/vietstock/VIC_vietstock.csv
+[2026-06-28 14:38:06] [TASK_2] [INFO] Scraping vietstock for ticker=VJC from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:38:37] [TASK_2] [INFO] Vietstock paging for VJC: 104 articles
+[2026-06-28 14:38:37] [TASK_2] [INFO] Vietstock: collected 104 articles for VJC
+[2026-06-28 14:38:37] [TASK_2] [INFO] Saved 124 rows to data/news/vietstock/VJC_vietstock.csv
+[2026-06-28 14:38:37] [TASK_2] [INFO] Scraping vietstock for ticker=VNM from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:39:09] [TASK_2] [INFO] Vietstock paging for VNM: 133 articles
+[2026-06-28 14:39:09] [TASK_2] [INFO] Vietstock: collected 133 articles for VNM
+[2026-06-28 14:39:09] [TASK_2] [INFO] Saved 153 rows to data/news/vietstock/VNM_vietstock.csv
+[2026-06-28 14:39:09] [TASK_2] [INFO] Scraping vietstock for ticker=VPB from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:40:07] [TASK_2] [INFO] Vietstock paging for VPB: 297 articles
+[2026-06-28 14:40:07] [TASK_2] [INFO] Vietstock: collected 297 articles for VPB
+[2026-06-28 14:40:07] [TASK_2] [INFO] Saved 317 rows to data/news/vietstock/VPB_vietstock.csv
+[2026-06-28 14:40:07] [TASK_2] [INFO] Scraping vietstock for ticker=VRE from 2022-01-01 (existing URLs: 20)
+[2026-06-28 14:40:34] [TASK_2] [INFO] Vietstock paging for VRE: 56 articles
+[2026-06-28 14:40:34] [TASK_2] [INFO] Vietstock: collected 56 articles for VRE
+[2026-06-28 14:40:34] [TASK_2] [INFO] Saved 76 rows to data/news/vietstock/VRE_vietstock.csv
+[2026-06-28 14:40:34] [TASK_2] [INFO] ============================================================
+[2026-06-28 14:40:34] [TASK_2] [INFO] SCRAPING REPORT — VIETSTOCK
+[2026-06-28 14:40:34] [TASK_2] [INFO] ============================================================
+[2026-06-28 14:40:34] [TASK_2] [INFO]   ACB   : 210 articles (2025-01-01 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   BCM   : 91 articles (2025-01-01 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   BID   : 310 articles (2025-01-01 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   BVH   : 71 articles (2025-07-01 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   CTG   : 225 articles (2025-01-01 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   FPT   : 202 articles (2025-07-01 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   GAS   : 83 articles (2025-06-30 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   GVR   : 44 articles (2025-07-01 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   HDB   : 299 articles (2025-01-01 to 2026-12-31)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   HPG   : 127 articles (2025-07-03 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   MBB   : 325 articles (2025-01-01 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   MSN   : 174 articles (2025-01-01 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   MWG   : 121 articles (2025-07-01 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   PLX   : 51 articles (2025-07-01 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   POW   : 81 articles (2025-06-30 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   SAB   : 40 articles (2025-07-01 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   SHB   : 338 articles (2025-01-01 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   SSB   : 214 articles (2025-01-01 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   SSI   : 228 articles (2025-07-01 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   STB   : 266 articles (2025-01-01 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   TCB   : 341 articles (2025-01-01 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   TPB   : 300 articles (2025-01-01 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   VCB   : 179 articles (2025-01-01 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   VHM   : 134 articles (2025-01-01 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   VIB   : 204 articles (2025-01-01 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   VIC   : 218 articles (2025-01-01 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   VJC   : 104 articles (2025-01-01 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   VNM   : 133 articles (2025-06-30 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   VPB   : 297 articles (2025-01-01 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO]   VRE   : 56 articles (2024-06-27 to 2026-07-25)
+[2026-06-28 14:40:34] [TASK_2] [INFO] ------------------------------------------------------------
+[2026-06-28 14:40:34] [TASK_2] [INFO] Total articles from VIETSTOCK: 5466
+[2026-06-28 14:40:34] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:39] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:39] [TASK_2] [INFO] START TASK_2: News Scraping (CafeF, Vietstock, TNCK)
+[2026-06-28 15:02:39] [TASK_2] [INFO] Timestamp: 2026-06-28T15:02:39.225521
+[2026-06-28 15:02:39] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:39] [TASK_2] [INFO] ------------------------------------------------------------
+[2026-06-28 15:02:39] [TASK_2] [INFO] END TASK_2 — completed in 0.0 seconds
+[2026-06-28 15:02:39] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:39] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:39] [TASK_2] [INFO] START TASK_2: News Scraping (CafeF, Vietstock, TNCK)
+[2026-06-28 15:02:39] [TASK_2] [INFO] Timestamp: 2026-06-28T15:02:39.539681
+[2026-06-28 15:02:39] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:39] [TASK_2] [INFO] ------------------------------------------------------------
+[2026-06-28 15:02:39] [TASK_2] [INFO] END TASK_2 — completed in 0.0 seconds
+[2026-06-28 15:02:39] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Request failed for https://cafef.vn/test (attempt 1/3): Connection refused
+[2026-06-28 15:02:51] [TASK_2] [INFO] Retrying in 1s…
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Request failed for https://cafef.vn/test (attempt 2/3): Connection refused
+[2026-06-28 15:02:51] [TASK_2] [INFO] Retrying in 2s…
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Request failed for https://cafef.vn/test (attempt 3/3): Connection refused
+[2026-06-28 15:02:51] [TASK_2] [ERROR] All 3 attempts failed for https://cafef.vn/test. Skipping.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Request failed for https://cafef.vn/test (attempt 1/3): timeout
+[2026-06-28 15:02:51] [TASK_2] [INFO] Retrying in 1s…
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Request failed for https://cafef.vn/test (attempt 1/3): 503 Service Unavailable
+[2026-06-28 15:02:51] [TASK_2] [INFO] Retrying in 1s…
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Request failed for https://cafef.vn/test (attempt 2/3): 503 Service Unavailable
+[2026-06-28 15:02:51] [TASK_2] [INFO] Retrying in 2s…
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Request failed for https://cafef.vn/test (attempt 3/3): 503 Service Unavailable
+[2026-06-28 15:02:51] [TASK_2] [ERROR] All 3 attempts failed for https://cafef.vn/test. Skipping.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Missing required fields in article: https://cafef.vn/test.chn
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Missing required fields in article: ?
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Missing required fields in article: https://cafef.vn/test.chn
+[2026-06-28 15:02:51] [TASK_2] [INFO] Saved 1 rows to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-148\test_writes_csv_correctly0\output.csv
+[2026-06-28 15:02:51] [TASK_2] [INFO] Saved 1 rows to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-148\test_no_temp_file_left_behind0\output.csv
+[2026-06-28 15:02:51] [TASK_2] [INFO] Saved 1 rows to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-148\test_creates_parent_directorie0\sub\dir\output.csv
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Could not parse CafeF date: not a date
+[2026-06-28 15:02:51] [TASK_2] [INFO] CafeF: collected 2 articles for VNM
+[2026-06-28 15:02:51] [TASK_2] [INFO] CafeF: collected 0 articles for VNM
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch CafeF API (NewsType=1) page 1 for VNM. Stopping this NewsType.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch CafeF API (NewsType=2) page 1 for VNM. Stopping this NewsType.
+[2026-06-28 15:02:51] [TASK_2] [INFO] CafeF: collected 0 articles for VNM
+[2026-06-28 15:02:51] [TASK_2] [INFO] CafeF: collected 1 articles for VNM
+[2026-06-28 15:02:51] [TASK_2] [INFO] CafeF: collected 2 articles for FPT
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch CafeF API (NewsType=1) page 1 for VNM. Stopping this NewsType.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch CafeF API (NewsType=2) page 1 for VNM. Stopping this NewsType.
+[2026-06-28 15:02:51] [TASK_2] [INFO] CafeF: collected 0 articles for VNM
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Could not parse CafeF date: garbage
+[2026-06-28 15:02:51] [TASK_2] [INFO] Scraping cafef for ticker=VNM from 2022-01-01 (existing URLs: 126)
+[2026-06-28 15:02:51] [TASK_2] [INFO] No new articles for cafef/VNM — nothing written to data/news/cafef/VNM_cafef.csv.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Could not parse Vietstock date: 2 giờ trước
+[2026-06-28 15:02:51] [TASK_2] [INFO] Vietstock: login wall detected — collecting only publicly visible title and summary (Req 2.3).
+[2026-06-28 15:02:51] [TASK_2] [INFO] Vietstock paging for VNM: 0 articles
+[2026-06-28 15:02:51] [TASK_2] [INFO] Vietstock: collected 2 articles for VNM
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Vietstock paging: failed to fetch page 1 for VNM. Stopping.
+[2026-06-28 15:02:51] [TASK_2] [INFO] Vietstock paging for VNM: 0 articles
+[2026-06-28 15:02:51] [TASK_2] [INFO] Vietstock latest-news yielded no articles for VNM. Trying tag-search fallback.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch Vietstock tag page 1 for VNM. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [INFO] Vietstock: collected 0 articles for VNM
+[2026-06-28 15:02:51] [TASK_2] [INFO] Vietstock paging for VNM: 0 articles
+[2026-06-28 15:02:51] [TASK_2] [INFO] Vietstock: collected 1 articles for VNM
+[2026-06-28 15:02:51] [TASK_2] [INFO] Vietstock paging for FPT: 0 articles
+[2026-06-28 15:02:51] [TASK_2] [INFO] Vietstock latest-news yielded no articles for FPT. Trying tag-search fallback.
+[2026-06-28 15:02:51] [TASK_2] [INFO] Vietstock: collected 1 articles for FPT
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Vietstock paging: failed to fetch page 1 for VNM. Stopping.
+[2026-06-28 15:02:51] [TASK_2] [INFO] Vietstock paging for VNM: 0 articles
+[2026-06-28 15:02:51] [TASK_2] [INFO] Vietstock latest-news yielded no articles for VNM. Trying tag-search fallback.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch Vietstock tag page 1 for VNM. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [INFO] Vietstock: collected 0 articles for VNM
+[2026-06-28 15:02:51] [TASK_2] [INFO] Vietstock paging for VNM: 0 articles
+[2026-06-28 15:02:51] [TASK_2] [INFO] Vietstock latest-news yielded no articles for VNM. Trying tag-search fallback.
+[2026-06-28 15:02:51] [TASK_2] [INFO] Vietstock: collected 0 articles for VNM
+[2026-06-28 15:02:51] [TASK_2] [INFO] Scraping vietstock for ticker=VNM from 2022-01-01 (existing URLs: 153)
+[2026-06-28 15:02:51] [TASK_2] [INFO] No new articles for vietstock/VNM — nothing written to data/news/vietstock/VNM_vietstock.csv.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Could not parse TNCK date: 2 giờ trước
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO] TNCK MONTHLY ARTICLE COUNT REPORT
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO]   2024-01: 3 articles
+[2026-06-28 15:02:51] [TASK_2] [INFO]   2024-02: 2 articles
+[2026-06-28 15:02:51] [TASK_2] [INFO]   2024-03: 1 articles
+[2026-06-28 15:02:51] [TASK_2] [INFO] ------------------------------------------------------------
+[2026-06-28 15:02:51] [TASK_2] [INFO] Total: 6 articles across 3 months
+[2026-06-28 15:02:51] [TASK_2] [INFO] Average: 2.0 articles/month
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO] TNCK monthly report: no articles to report.
+[2026-06-28 15:02:51] [TASK_2] [INFO] TNCK monthly report: no articles with valid dates.
+[2026-06-28 15:02:51] [TASK_2] [INFO] TNCK: searching by VN30 ticker symbols…
+[2026-06-28 15:02:51] [TASK_2] [INFO] TNCK search 'ACB': 1 new articles
+[2026-06-28 15:02:51] [TASK_2] [INFO] TNCK: collected 1 total articles
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO] TNCK MONTHLY ARTICLE COUNT REPORT
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO]   2024-01: 1 articles
+[2026-06-28 15:02:51] [TASK_2] [INFO] ------------------------------------------------------------
+[2026-06-28 15:02:51] [TASK_2] [INFO] Total: 1 articles across 1 months
+[2026-06-28 15:02:51] [TASK_2] [INFO] Average: 1.0 articles/month
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO] TNCK: searching by VN30 ticker symbols…
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'ACB'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'BCM'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'BID'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'BVH'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'CTG'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'FPT'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'GAS'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'GVR'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'HDB'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'HPG'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'MBB'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'MSN'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'MWG'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'PLX'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'POW'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'SAB'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'SHB'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'SSB'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'SSI'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'STB'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'TCB'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'TPB'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'VCB'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'VHM'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'VIB'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'VIC'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'VJC'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'VNM'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'VPB'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to fetch TNCK search page 1 for query 'VRE'. Stopping pagination.
+[2026-06-28 15:02:51] [TASK_2] [INFO] TNCK: collected 0 total articles
+[2026-06-28 15:02:51] [TASK_2] [INFO] TNCK: searching by VN30 ticker symbols…
+[2026-06-28 15:02:51] [TASK_2] [INFO] TNCK search 'ACB': 1 new articles
+[2026-06-28 15:02:51] [TASK_2] [INFO] TNCK: collected 1 total articles
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO] TNCK MONTHLY ARTICLE COUNT REPORT
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO]   2024-01: 1 articles
+[2026-06-28 15:02:51] [TASK_2] [INFO] ------------------------------------------------------------
+[2026-06-28 15:02:51] [TASK_2] [INFO] Total: 1 articles across 1 months
+[2026-06-28 15:02:51] [TASK_2] [INFO] Average: 1.0 articles/month
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO] TNCK: searching by VN30 ticker symbols…
+[2026-06-28 15:02:51] [TASK_2] [INFO] TNCK search 'ACB': 1 new articles
+[2026-06-28 15:02:51] [TASK_2] [INFO] TNCK: collected 1 total articles
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO] TNCK MONTHLY ARTICLE COUNT REPORT
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO]   2024-01: 1 articles
+[2026-06-28 15:02:51] [TASK_2] [INFO] ------------------------------------------------------------
+[2026-06-28 15:02:51] [TASK_2] [INFO] Total: 1 articles across 1 months
+[2026-06-28 15:02:51] [TASK_2] [INFO] Average: 1.0 articles/month
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO] Scraping tnck for ticker=ALL from 2022-01-01 (existing URLs: 1161)
+[2026-06-28 15:02:51] [TASK_2] [INFO] No new articles for tnck/ALL — nothing written to data/news/tnck/tnck_raw.csv.
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to parse CafeF API JSON (NewsType=2) page 1 for VNM (URL: https://cafef.vn/du-lieu/Ajax/PageNew/News.ashx?Symbol=vnm&NewsType=2&PageIndex=1&PageSize=20): Simulated JSON parse failure. API format may have changed.
+[2026-06-28 15:02:51] [TASK_2] [INFO] CafeF: collected 1 articles for VNM
+[2026-06-28 15:02:51] [TASK_2] [INFO] CafeF: collected 1 articles for VNM
+[2026-06-28 15:02:51] [TASK_2] [INFO] Vietstock paging for VNM: 0 articles
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to parse Vietstock latest-news for VNM (URL: https://finance.vietstock.vn/VNM/tin-moi-nhat.htm): Simulated parse failure. Falling back to tag search. Selectors may need adjustment if page structure changed.
+[2026-06-28 15:02:51] [TASK_2] [INFO] Vietstock latest-news yielded no articles for VNM. Trying tag-search fallback.
+[2026-06-28 15:02:51] [TASK_2] [INFO] Vietstock: collected 1 articles for VNM
+[2026-06-28 15:02:51] [TASK_2] [INFO] TNCK: searching by VN30 ticker symbols…
+[2026-06-28 15:02:51] [TASK_2] [WARNING] Failed to parse TNCK search page 1 for query 'ACB' (URL: https://www.tinnhanhchungkhoan.vn/tim-kiem.html?q=ACB): Simulated HTML parse failure. Skipping page. HTML selectors may need adjustment if page structure changed.
+[2026-06-28 15:02:51] [TASK_2] [INFO] TNCK: collected 0 total articles
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO] SCRAPING REPORT — CAFEF
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO]   FPT   : 1 articles (2024-02-01 to 2024-02-01)
+[2026-06-28 15:02:51] [TASK_2] [INFO]   VNM   : 2 articles (2024-01-10 to 2024-03-15)
+[2026-06-28 15:02:51] [TASK_2] [INFO] ------------------------------------------------------------
+[2026-06-28 15:02:51] [TASK_2] [INFO] Total articles from CAFEF: 3
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO] SCRAPING REPORT — CAFEF
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO]   VNM   : 0 articles
+[2026-06-28 15:02:51] [TASK_2] [INFO] ------------------------------------------------------------
+[2026-06-28 15:02:51] [TASK_2] [INFO] Total articles from CAFEF: 0
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO] SCRAPING REPORT — CAFEF
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO]   VNM   : 2 articles (no valid dates)
+[2026-06-28 15:02:51] [TASK_2] [INFO] ------------------------------------------------------------
+[2026-06-28 15:02:51] [TASK_2] [INFO] Total articles from CAFEF: 2
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO] SCRAPING REPORT — CAFEF
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO]   VNM   : 3 articles (2024-01-10 to 2024-03-15)
+[2026-06-28 15:02:51] [TASK_2] [INFO] ------------------------------------------------------------
+[2026-06-28 15:02:51] [TASK_2] [INFO] Total articles from CAFEF: 3
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO] SCRAPING REPORT — CAFEF
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO] ------------------------------------------------------------
+[2026-06-28 15:02:51] [TASK_2] [INFO] Total articles from CAFEF: 0
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO] SCRAPING REPORT — CAFEF
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================
+[2026-06-28 15:02:51] [TASK_2] [INFO]   ACB   : 1 articles (2024-02-01 to 2024-02-01)
+[2026-06-28 15:02:51] [TASK_2] [INFO]   FPT   : 1 articles (2024-03-01 to 2024-03-01)
+[2026-06-28 15:02:51] [TASK_2] [INFO]   VNM   : 1 articles (2024-01-10 to 2024-01-10)
+[2026-06-28 15:02:51] [TASK_2] [INFO] ------------------------------------------------------------
+[2026-06-28 15:02:51] [TASK_2] [INFO] Total articles from CAFEF: 3
+[2026-06-28 15:02:51] [TASK_2] [INFO] ============================================================

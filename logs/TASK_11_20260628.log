@@ -598,3 +598,79 @@ shap.utils._exceptions.InvalidModelError: Model type not yet supported by TreeEx
 [2026-06-28 14:04:28] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
 [2026-06-28 14:04:28] [TASK_11] [INFO] ============================================================
 [2026-06-28 14:04:28] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-06-28 14:56:48] [TASK_11] [INFO] ============================================================
+[2026-06-28 14:56:48] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-06-28 14:56:48] [TASK_11] [INFO] Timestamp: 2026-06-28T14:56:48.287794
+[2026-06-28 14:56:48] [TASK_11] [INFO] ============================================================
+[2026-06-28 14:56:54] [TASK_11] [INFO] Starting SHAP Analysis (TASK 11)...
+[2026-06-28 14:56:54] [TASK_11] [INFO] Loaded best model from models/best_model.pkl
+[2026-06-28 14:56:55] [TASK_11] [INFO] SHAP analysis using Config_A (16 features) per best-model metadata.
+[2026-06-28 14:56:55] [TASK_11] [INFO] Config_C data — train: 357 samples, test: 150 samples, features: 16
+[2026-06-28 14:56:55] [TASK_11] [INFO] --- 17.1: Tree-based feature importance ---
+[2026-06-28 14:56:55] [TASK_11] [INFO] Saved tree-based feature importance plot to reports\feature_importance.png
+[2026-06-28 14:56:55] [TASK_11] [INFO] --- 17.2: Permutation importance ---
+[2026-06-28 14:57:01] [TASK_11] [INFO] Saved permutation importance plot to reports\permutation_importance.png
+[2026-06-28 14:57:01] [TASK_11] [INFO] --- 17.3: SHAP values ---
+[2026-06-28 14:57:01] [TASK_11] [INFO] Computed SHAP values with RandomForestClassifier: shape=(150, 16)
+[2026-06-28 14:57:02] [TASK_11] [INFO] Saved SHAP beeswarm summary to reports\shap_summary.png
+[2026-06-28 14:57:02] [TASK_11] [INFO] Saved SHAP bar plot to reports\shap_bar.png
+[2026-06-28 14:57:02] [TASK_11] [INFO] --- 17.4: Top keyword analysis ---
+[2026-06-28 14:57:02] [TASK_11] [WARNING] No keyword features found in SHAP values.
+[2026-06-28 14:57:02] [TASK_11] [INFO] --- 17.5: Group contribution analysis ---
+[2026-06-28 14:57:02] [TASK_11] [INFO] ============================================================
+[2026-06-28 14:57:02] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-06-28 14:57:02] [TASK_11] [INFO] ============================================================
+[2026-06-28 14:57:02] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.410703  (100.0%)
+[2026-06-28 14:57:02] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-06-28 14:57:02] [TASK_11] [INFO] ============================================================
+[2026-06-28 14:57:02] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-06-28 14:57:02] [TASK_11] [INFO] --- 17.6: SHAP case studies ---
+[2026-06-28 14:57:03] [TASK_11] [INFO] No (ticker, quarter) pairs found where Config_C is correct but Config_A is wrong. Skipping case studies.
+[2026-06-28 14:57:03] [TASK_11] [INFO] TASK 11 complete.
+[2026-06-28 14:57:03] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-06-28 14:57:03] [TASK_11] [INFO] END TASK_11 — completed in 14.9 seconds
+[2026-06-28 14:57:03] [TASK_11] [INFO] ============================================================
+[2026-06-28 15:02:39] [TASK_11] [INFO] ============================================================
+[2026-06-28 15:02:39] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-06-28 15:02:39] [TASK_11] [INFO] Timestamp: 2026-06-28T15:02:39.523725
+[2026-06-28 15:02:39] [TASK_11] [INFO] ============================================================
+[2026-06-28 15:02:39] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-06-28 15:02:39] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-06-28 15:02:39] [TASK_11] [INFO] ============================================================
+[2026-06-28 15:02:39] [TASK_11] [INFO] ============================================================
+[2026-06-28 15:02:39] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-06-28 15:02:39] [TASK_11] [INFO] Timestamp: 2026-06-28T15:02:39.836422
+[2026-06-28 15:02:39] [TASK_11] [INFO] ============================================================
+[2026-06-28 15:02:39] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-06-28 15:02:39] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-06-28 15:02:39] [TASK_11] [INFO] ============================================================
+[2026-06-28 15:02:40] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-148\test_returns_sorted_series0\feat_imp.png
+[2026-06-28 15:02:40] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-148\test_top_n_limits_output0\feat_imp.png
+[2026-06-28 15:02:44] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-148\test_returns_sorted_series1\perm_imp.png
+[2026-06-28 15:02:44] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-06-28 15:02:44] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-148\test_returns_dataframe0\top_kw.csv
+[2026-06-28 15:02:44] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-06-28 15:02:44] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-148\test_only_keyword_features_inc0\top_kw.csv
+[2026-06-28 15:02:44] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-06-28 15:02:44] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-148\test_direction_labels_present0\top_kw.csv
+[2026-06-28 15:02:44] [TASK_11] [INFO] ============================================================
+[2026-06-28 15:02:44] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-06-28 15:02:44] [TASK_11] [INFO] ============================================================
+[2026-06-28 15:02:44] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-06-28 15:02:44] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-06-28 15:02:44] [TASK_11] [INFO] ============================================================
+[2026-06-28 15:02:44] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-06-28 15:02:44] [TASK_11] [INFO] ============================================================
+[2026-06-28 15:02:44] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-06-28 15:02:44] [TASK_11] [INFO] ============================================================
+[2026-06-28 15:02:44] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-06-28 15:02:44] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-06-28 15:02:44] [TASK_11] [INFO] ============================================================
+[2026-06-28 15:02:44] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-06-28 15:02:44] [TASK_11] [INFO] ============================================================
+[2026-06-28 15:02:44] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-06-28 15:02:44] [TASK_11] [INFO] ============================================================
+[2026-06-28 15:02:44] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-06-28 15:02:44] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-06-28 15:02:44] [TASK_11] [INFO] ============================================================
+[2026-06-28 15:02:44] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.

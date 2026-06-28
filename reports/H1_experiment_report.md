@@ -180,6 +180,49 @@ Việc thêm dữ liệu **không** củng cố H1 — ngược lại, "lợi th
 
 ---
 
+## 5d. Mở rộng nguồn lần 2 — đào sâu Vietstock (corpus 4 nguồn cân bằng)
+
+Để khắc phục rủi ro phụ thuộc một nguồn (CafeF chiếm 83%), đã **đào sâu Vietstock** qua endpoint
+phân trang nội bộ `/View/PagingNewsContent` (phát hiện từ JS của trang tin), thay cho cách cũ chỉ
+lấy ~20 bài mới nhất/mã. Kết quả: Vietstock từ **534 → 5.008 bài** (gấp ~9 lần).
+
+**Phân bố nguồn sau khi cân bằng (17.787 bài unique):**
+
+| Nguồn | Trước | Sau | Tỷ lệ sau |
+|---|---|---|---|
+| CafeF | 8.020 (83%) | 8.020 | **45%** |
+| Vietstock | 534 (5%) | 5.008 | 28% |
+| VietnamBiz | 0 | 3.598 | 20% |
+| TNCK | 1.161 | 1.161 | 7% |
+
+CafeF không còn áp đảo (83% → 45%); corpus tin đã xử lý lên ~13.351 news_count (mật độ mã-quý dày
+hơn rõ rệt). Đây là cơ sở dữ liệu khách quan hơn nhiều cho luận văn.
+
+**Kết quả delta trung bình (Config_C − Config_A) qua 3 lần mở rộng corpus:**
+
+| Đơn vị | Lần 1 (~7.5k) | Lần 2 (+VietnamBiz, 11k) | Lần 3 (+Vietstock, 13k, 4 nguồn) |
+|---|---|---|---|
+| 2 tuần | +0.0005 | −0.0006 | −0.0009 |
+| 1 tháng | **+0.0109** | −0.0245 | −0.0028 |
+| 2 tháng | −0.0028 | −0.0316 | −0.0273 |
+| Quý | −0.0156 | −0.0194 | −0.0224 |
+
+**McNemar (Random Forest, tháng) sau cùng:** 44 ca bất đồng, delta −0.0045, **p = 0.880** — không
+có ý nghĩa thống kê.
+
+### Kết luận sau 3 lần mở rộng
+
+Bất chấp việc tăng corpus gần **gấp đôi** (9.7k → 17.8k bài) và **cân bằng 4 nguồn** (CafeF không
+còn áp đảo), đặc trưng từ khóa **vẫn không cải thiện** dự báo ở mọi đơn vị thời gian. Delta dao
+động quanh 0 hoặc âm; mọi kiểm định McNemar đều không significant (p từ 0.12 đến 1.0).
+
+Đây là bằng chứng **rất mạnh và khách quan** cho kết luận: với cách biểu diễn tin tức bằng tần suất
+từ khóa và bài toán phân loại theo kỳ, **H1 không được ủng hộ** — kết luận bền vững qua nhiều ngưỡng
+thời gian, nhiều đơn vị thời gian, và **ba quy mô/cấu trúc corpus khác nhau**. Rủi ro "kết quả chỉ
+do thiên lệch một nguồn CafeF" đã được loại trừ.
+
+---
+
 ## 6. Kết luận tổng hợp
 
 1. **Đặc trưng kỹ thuật là nền tảng dự báo chính** (Balanced Accuracy ~0.65–0.78); đặc trưng từ
@@ -190,8 +233,10 @@ Việc thêm dữ liệu **không** củng cố H1 — ngược lại, "lợi th
    McNemar đã cảnh báo (p=0.121); khi mở rộng corpus +48% (thêm VietnamBiz), mức cải thiện này biến
    mất (delta về −0.024, p=1.000). Đây là minh hoạ regression to the mean.
 4. **Kết luận cuối: H1 không được ủng hộ** một cách nhất quán và vững chắc qua nhiều ngưỡng thời
-   gian, nhiều đơn vị thời gian, và hai quy mô corpus khác nhau. Đặc trưng tần suất từ khóa tin tức
-   (theo cách biểu diễn hiện tại) không cải thiện dự báo xu hướng giá VN30.
+   gian, nhiều đơn vị thời gian, và **ba quy mô corpus** (9.7k → 11k → 17.8k bài) với **4 nguồn cân
+   bằng** (CafeF 45%, Vietstock 28%, VietnamBiz 20%, TNCK 7% — không còn phụ thuộc một nguồn). Đặc
+   trưng tần suất từ khóa tin tức (theo cách biểu diễn hiện tại) không cải thiện dự báo xu hướng giá
+   VN30. Rủi ro thiên lệch nguồn dữ liệu đã được loại trừ.
 
 ### Hướng nghiên cứu tiếp theo (gợi ý)
 - Biểu diễn tin tức tinh vi hơn tần suất từ khóa (embedding / mô hình ngôn ngữ), xử lý phủ định.

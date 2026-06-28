@@ -34,7 +34,13 @@ số ca bất đồng quá ít — gốc rễ là mật độ tin mỏng ở nhi
 
 **Điều chỉnh plan:** bỏ Task 2 (Vietstock); nguồn #1 = VietnamBiz; nguồn #2 = VnEconomy (nếu giải được phân trang).
 
-- [ ] ~~2. Cải thiện Vietstock~~ — **BỎ** (bất khả thi, xem khảo sát 1.1)
+- [ ] ~~2. Cải thiện Vietstock~~ — **HOÀN THÀNH (đào sâu lần 2)**
+  - Lần khảo sát đầu kết luận "bất khả thi", nhưng đào sâu hơn đã tìm được endpoint phân trang nội bộ
+    `/View/PagingNewsContent` (phát hiện từ JS của trang tin-moi-nhat). Endpoint trả fragment HTML nhẹ
+    ~20 bài/trang, phân trang lùi nhiều năm về quá khứ.
+  - Kết quả: Vietstock **534 → 5.008 bài** (gấp ~9 lần). CafeF từ 83% → 45% tổng corpus.
+  - Đã viết `_scrape_vietstock_paging` + parser + 5 unit test; cập nhật `scrape_vietstock` dùng nó
+    làm chiến lược chính (giữ latest-news + tag-search làm fallback).
 
 - [x] 3. Thêm nguồn mới #1 — VietnamBiz (chuyên mục chứng khoán + phân trang, TASK 3 lọc về VN30)
   - [x] 3.1 Viết `scrape_vietnambiz()` tái dùng hạ tầng chung; duyệt chuyên mục + phân trang tới khi vượt start_date; trích date từ meta bài chi tiết
