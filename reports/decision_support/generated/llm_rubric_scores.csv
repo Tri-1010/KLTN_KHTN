@@ -1,0 +1,1 @@
+﻿decision_id,card_type,faithfulness,hallucination_control,ml_explanation,risk_awareness,monitoring_usefulness,clarity_usefulness,overall,major_issue,major_hallucination_count,missing_evidence_ref_count,overall_comment,model,request_id,scored_at_utc,prompt_sha256

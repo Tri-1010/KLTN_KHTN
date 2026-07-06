@@ -1,0 +1,103 @@
+{
+  "generated_at": "2026-07-06T17:58:23",
+  "backup": "C:\\Users\\User\\KLTN_KHTN\\data\\news\\enriched\\all_news_enriched.pre_ktck_metadata_repair_20260706_175802.csv",
+  "repaired_unique_urls": 4218,
+  "before": {
+    "unique_urls": 45968,
+    "full_text_unique": 41731,
+    "coverage_pct": 90.78,
+    "by_source": [
+      {
+        "source": "cafef",
+        "total": 19364,
+        "full_text": 19364,
+        "coverage_pct": 100.0
+      },
+      {
+        "source": "kinhtechungkhoan",
+        "total": 8513,
+        "full_text": 4295,
+        "coverage_pct": 50.45
+      },
+      {
+        "source": "tnck",
+        "total": 1446,
+        "full_text": 1446,
+        "coverage_pct": 100.0
+      },
+      {
+        "source": "vietnambiz",
+        "total": 3598,
+        "full_text": 3598,
+        "coverage_pct": 100.0
+      },
+      {
+        "source": "vietstock",
+        "total": 11285,
+        "full_text": 11267,
+        "coverage_pct": 99.84
+      },
+      {
+        "source": "vnexpress",
+        "total": 1762,
+        "full_text": 1761,
+        "coverage_pct": 99.94
+      }
+    ],
+    "status_counts": {
+      "ok": 24220,
+      "partial": 17511,
+      "failed": 4145,
+      "fetch_failed": 92
+    }
+  },
+  "after": {
+    "unique_urls": 45968,
+    "full_text_unique": 45949,
+    "coverage_pct": 99.96,
+    "by_source": [
+      {
+        "source": "cafef",
+        "total": 19364,
+        "full_text": 19364,
+        "coverage_pct": 100.0
+      },
+      {
+        "source": "kinhtechungkhoan",
+        "total": 8513,
+        "full_text": 8513,
+        "coverage_pct": 100.0
+      },
+      {
+        "source": "tnck",
+        "total": 1446,
+        "full_text": 1446,
+        "coverage_pct": 100.0
+      },
+      {
+        "source": "vietnambiz",
+        "total": 3598,
+        "full_text": 3598,
+        "coverage_pct": 100.0
+      },
+      {
+        "source": "vietstock",
+        "total": 11285,
+        "full_text": 11267,
+        "coverage_pct": 99.84
+      },
+      {
+        "source": "vnexpress",
+        "total": 1762,
+        "full_text": 1761,
+        "coverage_pct": 99.94
+      }
+    ],
+    "status_counts": {
+      "ok": 24220,
+      "partial": 21729,
+      "fetch_failed": 18,
+      "failed": 1
+    }
+  }
+}

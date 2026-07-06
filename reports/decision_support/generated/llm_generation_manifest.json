@@ -1,0 +1,50 @@
+{
+  "status": "llm_run_pending_offline",
+  "provider": "anthropic",
+  "sdk": "anthropic-python",
+  "requested_model": "claude-opus-4-8",
+  "max_tokens": 12000,
+  "thinking": {
+    "type": "adaptive"
+  },
+  "effort": "high",
+  "temperature": "not_sent",
+  "generated_at_utc": "2026-07-06T23:38:48+00:00",
+  "variants": [
+    "ml_only",
+    "full_evidence"
+  ],
+  "max_packs": 25,
+  "decision_ids_filter": null,
+  "outcome_removed_from_prompt": true,
+  "outputs": [
+    "C:\\Users\\User\\KLTN_KHTN\\reports\\decision_support\\generated\\llm_prompt_packs_ml_only.jsonl",
+    "C:\\Users\\User\\KLTN_KHTN\\reports\\decision_support\\generated\\llm_prompt_packs_full_evidence.jsonl"
+  ],
+  "cards": [],
+  "prompt_packs": [
+    {
+      "variant": "ml_only",
+      "path": "C:\\Users\\User\\KLTN_KHTN\\reports\\decision_support\\generated\\llm_prompt_packs_ml_only.jsonl",
+      "count": 25
+    },
+    {
+      "variant": "full_evidence",
+      "path": "C:\\Users\\User\\KLTN_KHTN\\reports\\decision_support\\generated\\llm_prompt_packs_full_evidence.jsonl",
+      "count": 25
+    }
+  ],
+  "failures": [],
+  "input_packs": {
+    "ml_only": {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\reports\\decision_support\\generated\\evidence_packs_ml_only.json",
+      "sha256": "c99ac78c69980481c33f8c8fa7cd14c3c857de36282745a7f73092100b7c9620",
+      "selected_count": 25
+    },
+    "full_evidence": {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\reports\\decision_support\\generated\\evidence_packs_initial.json",
+      "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+      "selected_count": 25
+    }
+  }
+}
