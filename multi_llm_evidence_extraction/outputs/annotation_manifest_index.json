@@ -1,0 +1,26 @@
+{
+  "generated_at_utc": "2026-07-10T14:18:57+00:00",
+  "runs": [
+    {
+      "annotator": "a",
+      "run_id": "legacy-reconstructed-a",
+      "manifest": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\annotation_manifest_a.json",
+      "status": "legacy_reconstructed",
+      "generated_at_utc": "2026-07-10T14:18:57+00:00"
+    },
+    {
+      "annotator": "b",
+      "run_id": "legacy-reconstructed-b",
+      "manifest": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\annotation_manifest_b.json",
+      "status": "legacy_reconstructed",
+      "generated_at_utc": "2026-07-10T14:18:57+00:00"
+    },
+    {
+      "annotator": "c",
+      "run_id": "legacy-reconstructed-c",
+      "manifest": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\annotation_manifest_c.json",
+      "status": "legacy_reconstructed",
+      "generated_at_utc": "2026-07-10T14:18:57+00:00"
+    }
+  ]
+}

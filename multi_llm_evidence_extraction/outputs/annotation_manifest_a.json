@@ -1,0 +1,42 @@
+{
+  "generated_at_utc": "2026-07-10T14:18:57+00:00",
+  "run_id": "legacy-reconstructed-a",
+  "annotator": "a",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "requested_model": "deepseek-chat",
+  "response_models": [
+    "deepseek-v4-flash"
+  ],
+  "api_provider": "deepseek",
+  "model_vendor": "deepseek",
+  "route_mode": "native",
+  "provenance_status": "legacy_reconstructed",
+  "sdk_name": "unknown",
+  "sdk_version": "unknown",
+  "endpoint_host": "unknown",
+  "input": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\data\\sample_news_for_annotation.csv",
+  "input_sha256": "a03ec8cbbb4cbbc8a0d9e3427c29771bb8c38698ec494ef83451b3f38a652c73",
+  "schema_sha256": "cbb930cb4f3ed7b02f113aa4a76da9634ba17a84359d2dc1c4b7ca6a42ad60ba",
+  "prompt_version": "semantic_news_materiality_v1",
+  "schema_version": "semantic_news_annotation_v1",
+  "rows_input": 150,
+  "labels_ok": 150,
+  "labels_error": 0,
+  "prompt_packs": 0,
+  "status": "legacy_reconstructed",
+  "command_config": {
+    "reconstructed_from_existing_labels": true
+  },
+  "outputs": {
+    "labels": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\labels_annotator_a.jsonl",
+    "raw": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\raw_responses_annotator_a.jsonl",
+    "prompts": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\prompt_packs_annotator_a.jsonl",
+    "manifest": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\annotation_manifest_a.json"
+  },
+  "output_sha256": {
+    "labels": "08b5eadf3b5122d35061d19038dc142eea065dea462cadcab80c563bd78c63de",
+    "raw": "296b9dbefa643343853e3f8c7d130802c4ab0b9ca7ee031709bc4c24b42ce20f",
+    "prompts": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

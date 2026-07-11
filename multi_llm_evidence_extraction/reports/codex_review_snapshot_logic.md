@@ -1,0 +1,8 @@
+**Findings**
+- High `multi_llm_evidence_extraction/scripts/write_claim_evidence_table.py:241`: annotation agreement keys labels by `news_id` only. Duplicate `news_id` across tickers overwrite rows, and agreement/kappa can compare different ticker labels. Use `(news_id, ticker)` key.
+- Medium `multi_llm_evidence_extraction/scripts/write_claim_evidence_table.py:275`: agreement input hardcodes annotators `a`, `b`, `c`. Nonstandard/missing annotator IDs are ignored even if manifests/label files exist.
+- Medium `multi_llm_evidence_extraction/scripts/write_claim_evidence_table.py:251`: agreement pairs include `None`/empty label values when field exists. Missing annotations can count as agreement and distort Cohen kappa.
+- Medium `multi_llm_evidence_extraction/scripts/write_claim_evidence_table.py:230`: `_cohen_kappa` returns `1.0` when expected agreement is `1`. Degenerate single-class cases become “perfect” instead of undefined/not informative.
+- High `multi_llm_evidence_extraction/scripts/write_claim_evidence_table.py:332`: eligible-only rule comparison falls back to all consensus rows when `analysis_eligible` missing. Missing eligibility should make comparison unavailable, not compare ineligible rows.
+- Medium `multi_llm_evidence_extraction/scripts/write_claim_evidence_table.py:286`: manual sanity silently accepts partial check columns and reports `status="available"`. Missing sanity columns are not reported, so counts can look complete when incomplete.
+- Medium `multi_llm_evidence_extraction/scripts/write_claim_evidence_table.py:371`: `agreement`, `manual_sanity`, and `rule_comparison` are computed but never rendered in output, so sanity counts, kappa, and eligible-only comparison vanish from report.

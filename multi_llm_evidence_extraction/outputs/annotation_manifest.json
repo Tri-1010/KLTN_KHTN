@@ -1,0 +1,20 @@
+{
+  "generated_at_utc": "2026-07-10T08:39:31+00:00",
+  "annotator": "c",
+  "provider": "anthropic",
+  "model": "cx/gpt-5.4-mini",
+  "input": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\data\\sample_news_for_annotation.csv",
+  "input_sha256": "a03ec8cbbb4cbbc8a0d9e3427c29771bb8c38698ec494ef83451b3f38a652c73",
+  "schema_sha256": "cbb930cb4f3ed7b02f113aa4a76da9634ba17a84359d2dc1c4b7ca6a42ad60ba",
+  "rows_input": 150,
+  "labels_ok": 150,
+  "labels_error": 0,
+  "prompt_packs": 0,
+  "status": "live_completed",
+  "outputs": {
+    "labels": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\labels_annotator_c.jsonl",
+    "raw": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\raw_responses_annotator_c.jsonl",
+    "prompts": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\prompt_packs_annotator_c.jsonl",
+    "manifest": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\annotation_manifest.json"
+  }
+}
