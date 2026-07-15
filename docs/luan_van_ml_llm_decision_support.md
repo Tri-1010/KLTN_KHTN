@@ -1,6 +1,8 @@
-# BẢN THẢO LUẬN VĂN THẠC SĨ (KHUNG NỘI DUNG)
+# BẢN THẢO LUẬN VĂN THẠC SĨ (LEGACY — KHÔNG PHẢI BẢN CANONICAL)
 
-> **Trạng thái:** Bản này đã có phần kết quả ML, evidence pack thực tế, decision card rule-based baseline, outcome review, monitoring events và prompt packs LLM/rubric sinh từ dữ liệu hiện có. LLM live run hiện pending do môi trường chưa có active Anthropic provider credentials; không có kết quả LLM/rubric thật được giả lập.
+> **Trạng thái:** Không dùng tài liệu này để nộp, trích số liệu headline hoặc kết luận. Bản canonical là `docs/luan_van_hoan_thien_ml_llm.md`; nó tách track ML legacy khỏi track semantic purged OOS, cập nhật provenance Gemini/local-router/common judge và mô tả EvidenceTrace theo implementation/test hiện hữu.
+>
+> **Lý do lưu giữ:** Bản này giữ nội dung phát triển lịch sử. Metric ML/backtest cao trong bản này thuộc protocol legacy, không được gộp với artifact semantic canonical. Phần LLM chỉ được diễn giải là chất lượng decision card, không phải alpha, return hoặc tư vấn đầu tư.
 
 ---
 
@@ -560,7 +562,9 @@ Nên so sánh ba baseline:
 2. LLM chỉ có ML score + technical evidence.
 3. LLM có full evidence pack gồm ML + technical + news + data quality flags.
 
-Trong bản artifact hiện tại, baseline rule-based đã được sinh cho 25 decision records trong `reports/decision_support/generated/decision_cards.md`. File `llm_rubric_scoring_template.csv` đã tạo sẵn dòng chấm điểm cho từng `decision_id`. Script LLM đã tạo 25 prompt packs cho biến thể `llm_ml_only` và 25 prompt packs cho biến thể `llm_full_evidence` bằng model request `claude-opus-4-8`, `thinking={"type":"adaptive"}`, `effort=high`, `temperature=not_sent`. Live API run chưa hoàn tất vì môi trường trả lỗi `No active credentials for provider: anthropic`; do đó chưa có kết quả đánh giá LLM thật.
+Trong bản artifact hiện tại, baseline rule-based đã được sinh cho 25 decision records trong `reports/decision_support/generated/decision_cards.md`. Run live bằng Gemini Pro (`gemini-2.5-pro`, SDK `google-genai`, `temperature=not_sent`) đã tạo đủ 50 LLM decision cards cho toàn bộ 25 records: 25 card `llm_ml_only` và 25 card `llm_full_evidence`. Sau đó hệ thống chấm rubric 75 card gồm `rule_based_baseline`, `llm_ml_only` và `llm_full_evidence`.
+
+Kết quả full 25-case cho thấy `llm_full_evidence` đạt điểm cao nhất trên rubric chất lượng decision card: overall trung bình 5.00, so với 4.32 của rule-based baseline và 1.16 của `llm_ml_only`. Điểm thấp của `llm_ml_only` không được diễn giải là mô hình LLM yếu, mà phản ánh việc card thiếu lớp bằng chứng tin tức/rủi ro khi rubric đánh giá trên evidence pack đầy đủ. Kết quả này chỉ là đánh giá chất lượng card, không phải bằng chứng LLM cải thiện lợi nhuận đầu tư.
 
 Kết quả rubric chỉ đo chất lượng hỗ trợ quyết định, không được diễn giải thành “LLM cải thiện lợi nhuận đầu tư”.
 
@@ -613,7 +617,7 @@ Có thể trả lời các câu hỏi nghiên cứu như sau:
 
 - **RQ1:** Có. Mô hình kỹ thuật tạo tín hiệu phân loại vượt baseline và duy trì hiệu quả trong robustness test.
 - **RQ2:** Có trong phạm vi backtest hiện tại. Chiến lược mô hình vượt buy-and-hold/equal-weight và vượt VNINDEX trong robustness test, nhưng kết quả phụ thuộc giả định mô phỏng.
-- **RQ3:** Có thể đánh giá bằng rubric. Baseline rule-based đã được sinh từ 25 evidence pack thật; prompt packs LLM/rubric đã sẵn sàng. Live LLM-run và chấm rubric vẫn pending do thiếu active Anthropic provider credentials, nên chưa được trình bày như kết quả LLM thật. LLM chỉ phù hợp khi bị ràng buộc bởi evidence pack và không được forecast trực tiếp.
+- **RQ3:** Có trong phạm vi đánh giá chất lượng decision card. Baseline rule-based đã được sinh từ 25 evidence pack thật; toàn bộ 25 records đã được chạy live bằng Gemini Pro cho hai biến thể `llm_ml_only` và `llm_full_evidence`, rồi chấm rubric cùng rule-based baseline. Kết quả cho thấy `llm_full_evidence` đạt điểm rubric cao nhất về faithfulness, risk awareness, monitoring usefulness và clarity. Kết quả này chỉ đo chất lượng decision card, không chứng minh cải thiện return hay alpha.
 - **RQ4:** Có thể minh họa bằng case study monitoring/outcome review. Các case đại diện đã được chọn từ generated artifacts, nhưng monitoring không nên được claim cải thiện return nếu chưa có backtest quy mô lớn.
 
 ## 5.2. Đóng góp

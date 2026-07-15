@@ -1,8 +1,14 @@
-# Phụ lục luận văn: ML signal + LLM decision support
+# Phụ lục hỗ trợ — ML signal + LLM decision support
 
-## Phụ lục A. Nguồn bằng chứng tái sử dụng
+> **Trạng thái tài liệu.** Tài liệu này là phụ lục lịch sử/supplementary. Thesis canonical là `docs/luan_van_hoan_thien_ml_llm.md`. Khi số liệu, RQ, trạng thái LLM/UI hoặc framing khác nhau, bản canonical và artifact ledger tại Phụ lục A của bản canonical được ưu tiên.
+>
+> **Không gộp track.** Các metric ML/backtest legacy dùng universe, split, horizon và cost khác không được dùng để kết luận cho track semantic purged OOS. Rubric luôn đo chất lượng decision card, không đo return/alpha; semantic consensus luôn là pseudo-label, không phải human ground truth.
 
-Nguồn tổng hợp chính: `reports/source_evidence/tong_hop_bang_chung_tu_KLTN_MASTER.md`.
+## Phụ lục A. Nguồn bằng chứng tái sử dụng (legacy)
+
+Nguồn canonical hiện hành: `multi_llm_evidence_extraction/reports/claim_vs_evidence_table.md`, các report semantic cùng thư mục, `reports/decision_support/validation_consistency_check.md` và `config/research_ui_catalog.yaml`.
+
+Tham chiếu legacy `reports/source_evidence/tong_hop_bang_chung_tu_KLTN_MASTER.md` không còn là nguồn runtime/canonical; không dùng khi kiểm thesis final.
 
 Các nhóm bằng chứng đã trích:
 
@@ -112,7 +118,7 @@ Tiêu chí 1–5 điểm:
 | Monitoring usefulness | Trigger rõ, đo được, có ngưỡng. |
 | Clarity/usefulness | Rõ ràng, dễ đọc, dễ hậu kiểm. |
 
-So sánh đề xuất:
+So sánh:
 
 1. Rule-based template baseline.
 2. LLM ML-only.
@@ -122,7 +128,7 @@ Không được diễn giải điểm rubric thành lợi nhuận đầu tư. Mu
 
 ## Phụ lục F. Generated artifacts thực tế
 
-Artifacts đã sinh bằng `scripts/generate_decision_support_artifacts.py`, `scripts/monitor_news_events.py`, `scripts/generate_llm_decision_cards.py --offline` và `scripts/score_decision_cards.py --offline`:
+Artifacts đã sinh bằng `scripts/generate_decision_support_artifacts.py`, `scripts/monitor_news_events.py`, completed Gemini/local-router runs và EvidenceTrace bundle workflow. Danh sách bên dưới là inventory lịch sử; run/provenance runtime phải lấy từ `config/research_ui_catalog.yaml`:
 
 | File | Vai trò |
 |---|---|
@@ -135,27 +141,24 @@ Artifacts đã sinh bằng `scripts/generate_decision_support_artifacts.py`, `sc
 | `reports/decision_support/generated/monitoring_cases_summary.csv` | Bảng tổng hợp decision/outcome. |
 | `reports/decision_support/generated/monitoring_events.csv` | 3,838 monitoring news events sau decision date. |
 | `reports/decision_support/generated/monitoring_timeline.json` | Timeline event theo decision ID. |
-| `reports/decision_support/generated/llm_prompt_packs_ml_only.jsonl` | 25 prompt packs offline cho LLM ML-only. |
-| `reports/decision_support/generated/llm_prompt_packs_full_evidence.jsonl` | 25 prompt packs offline cho LLM full-evidence. |
-| `reports/decision_support/generated/llm_rubric_prompt_packs.jsonl` | 25 prompt packs offline để chấm rubric rule-based baseline hiện có. |
-| `reports/decision_support/generated/llm_rubric_scores.csv` | Header-only vì live scorer chưa chạy; không có điểm giả. |
-| `reports/decision_support/generated/llm_rubric_summary.md` | Summary ghi trạng thái `scoring_pending_offline`. |
-| `reports/decision_support/generated/llm_generation_manifest.json` | Metadata LLM generation status/model/prompt packs. |
-| `reports/decision_support/generated/generated_summary.md` | Tóm tắt run và guardrails. |
+| `reports/decision_support/generated/llm_prompt_packs_ml_only.jsonl` | Prompt packs offline cho LLM ML-only. |
+| `reports/decision_support/generated/llm_prompt_packs_full_evidence.jsonl` | Prompt packs offline cho LLM full-evidence. |
+| `reports/decision_support/generated/llm_cards_ml_only.md` / `.jsonl` | 25 live Gemini Pro cards dùng ML/technical-only packs. |
+| `reports/decision_support/generated/llm_cards_full_evidence.md` / `.jsonl` | 25 live Gemini Pro cards dùng full-evidence prompt-safe packs. |
+| `reports/decision_support/generated/llm_rubric_scores.csv` | 75 live Gemini Pro rubric scores: rule-based, ML-only, full-evidence. |
+| `reports/decision_support/generated/llm_rubric_summary.md` | Full rubric summary, status `completed`. |
+| `reports/decision_support/generated/llm_generation_manifest.json` | Metadata live generation/model/rubric status. |
+| `reports/decision_support/generated/generated_summary.md` | Tóm tắt run, guardrails và full rubric. |
 | `reports/decision_support/generated/manifest.json` | Metadata artifact run và source hashes. |
 
-Run hiện tại:
+Runtime/provenance completed theo `config/research_ui_catalog.yaml`:
 
-- Số evidence pack: 25.
-- Giai đoạn: `2025Q1` đến `2026Q1`.
-- Top-K mỗi kỳ: 5.
-- Positive realized return: 19.
-- Negative/neutral realized return: 6.
-- Monitoring news events: 3,838.
-- LLM requested model: `claude-opus-4-8`.
-- LLM settings: `thinking={"type":"adaptive"}`, `effort=high`, `temperature=not_sent`.
-- Card hiện tại: rule-based baseline; live LLM output thật pending vì môi trường trả `No active credentials for provider: anthropic`.
-- Không có LLM card/rubric score giả; prompt packs offline đã sẵn sàng để chạy lại khi credentials sẵn sàng.
+- Số evidence pack: 25; giai đoạn `2025Q1` đến `2026Q1`; Top-K mỗi kỳ: 5.
+- Monitoring news events: 3.838; review-only decision records: 25 trong UI bundle; semantic outcome-review labels: 114 ở semantic track. Không dùng các outcome này cho initial card.
+- Gemini run `gemini-full-2026-07`: Google `gemini-2.5-pro`, 25 `ml_only` cards, 25 `full_evidence` cards, 75 self-judge scores. Full rubric overall: `llm_full_evidence` 5,00, `rule_based_baseline` 4,32, `llm_ml_only` 1,16.
+- Local-router run `local-router-claude2-2026-07`: request Anthropic-compatible `claude-opus`, response `gpt-5.6-luna`, OpenAI-vendor; 25 cards/variant và 75 rubric scores. Không gọi response này là Claude native.
+- Common-judge run `common-local-judge-gemini-cards-2026-07`: chấm chéo 75 Gemini cards bằng local-router response `gpt-5.6-luna`.
+- Mỗi rubric chỉ đo card quality. So sánh tuyệt đối score giữa judge/run khác nhau bị cấm; không claim LLM tạo alpha hoặc cải thiện return.
 
 ## Phụ lục G. Monitoring case studies
 
@@ -184,5 +187,5 @@ Các case này chỉ minh họa vòng đời quyết định. Không dùng 5 cas
 - [x] Kiểm tra mọi số liệu ML/backtest khớp source evidence ở validation report.
 - [x] Ghi disclaimer: nghiên cứu học thuật, không phải khuyến nghị đầu tư.
 - [x] Không claim LLM tạo alpha hoặc cải thiện return nếu chưa có backtest riêng.
-- [ ] Chạy LLM live cho subset hoặc full 25 packs sau khi có active Anthropic provider credentials.
-- [ ] Chấm rubric live rule-based vs LLM ML-only vs LLM full-evidence sau khi có output LLM thật.
+- [x] Chạy LLM live full 25-case bằng Gemini Pro.
+- [x] Chấm rubric live rule-based vs LLM ML-only vs LLM full-evidence cho full 25-case.
