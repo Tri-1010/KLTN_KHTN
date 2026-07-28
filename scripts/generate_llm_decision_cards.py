@@ -1,8 +1,8 @@
 """Generate LLM decision cards from prompt-safe evidence packs.
 
-Uses official Anthropic Python SDK. If credentials are unavailable, writes prompt
-packs for offline/manual execution and records pending status instead of creating
-fake LLM outputs.
+Uses official provider SDKs. If credentials are unavailable, writes prompt packs
+for offline/manual execution and records pending status instead of creating fake
+LLM outputs.
 """
 
 from __future__ import annotations
@@ -14,6 +14,33 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+try:
+    from llm_provider import (
+        SUPPORTED_PROVIDERS,
+        call_generate,
+        is_auth_error,
+        load_env_file,
+        make_llm_client,
+        provider_sdk_name,
+        provider_temperature,
+        provider_thinking,
+        resolve_model,
+        resolve_provider,
+    )
+except ModuleNotFoundError:  # pragma: no cover - import path when loaded as package in tests
+    from scripts.llm_provider import (
+        SUPPORTED_PROVIDERS,
+        call_generate,
+        is_auth_error,
+        load_env_file,
+        make_llm_client,
+        provider_sdk_name,
+        provider_temperature,
+        provider_thinking,
+        resolve_model,
+        resolve_provider,
+    )
+
 ROOT = Path(__file__).resolve().parents[1]
 GENERATED = ROOT / "reports" / "decision_support" / "generated"
 INITIAL_PACKS = GENERATED / "evidence_packs_initial.json"
@@ -21,7 +48,6 @@ ML_ONLY_PACKS = GENERATED / "evidence_packs_ml_only.json"
 OUT_MANIFEST = GENERATED / "llm_generation_manifest.json"
 RAW_RESPONSES = GENERATED / "llm_raw_responses.jsonl"
 
-DEFAULT_MODEL = "claude-opus-4-8"
 DEFAULT_MAX_TOKENS = 12000
 DEFAULT_EFFORT = "high"
 
@@ -68,6 +94,8 @@ Quy tắc:
 - Không dùng từ ngữ chắc chắn như “sẽ tăng”, “chắc chắn mua”.
 - Mỗi supporting factor và risk phải có evidence reference.
 - Với tin tức, ưu tiên `article_summary`, `key_facts`, `risk_flags` và `event_type`; không suy diễn vượt quá các trường này.
+- `technical_snapshot` và `top_drivers` là dữ liệu historical đóng băng tại `decision_date`; không gọi chúng là current và không tự cập nhật chúng.
+- FireAnt là external display-only, không có nội dung FireAnt trong evidence pack; không suy diễn dữ liệu từ FireAnt.
 - `full_text_ref`, `content_hash`, `full_text_chars` chỉ là metadata audit; không được giả định nội dung toàn văn nếu full text không nằm trong prompt.
 - Nếu không đủ evidence định tính, ghi rõ “evidence tin tức chưa đủ mạnh”.
 - Không được nhắc đến realized return hoặc outcome tương lai.
@@ -76,7 +104,15 @@ Evidence pack:
 {pack_json}
 """
 
-FORBIDDEN_PROMPT_TOKENS = ("outcome_for_review_only", "realized", "review_only", "future_return", "future_label")
+FORBIDDEN_PROMPT_TOKENS = (
+    "outcome",
+    "realized",
+    "review_only",
+    "benchmark_return",
+    "excess_return",
+    "future_return",
+    "future_label",
+)
 
 
 def sha256_text(text: str) -> str:
@@ -101,6 +137,15 @@ def read_json(path: Path) -> Any:
 
 def write_json(path: Path, data: Any) -> None:
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def artifact_ref(path: Path | str) -> str:
+    """Return a portable repo-relative reference for a generated artifact."""
+    artifact_path = Path(path)
+    try:
+        return artifact_path.resolve().relative_to(ROOT.resolve()).as_posix()
+    except ValueError:
+        return artifact_path.as_posix()
 
 
 def append_jsonl(path: Path, row: dict[str, Any]) -> None:
@@ -179,62 +224,12 @@ def write_offline_prompts(variant: str, packs: list[dict[str, Any]], output_pref
     return prompts_path, rows
 
 
-def make_client():
-    try:
-        import anthropic
-    except ModuleNotFoundError as exc:
-        raise RuntimeError("Missing dependency `anthropic`. Install requirements or run offline mode.") from exc
-    return anthropic.Anthropic(), anthropic
-
-
-def is_auth_error(exc: Exception, anthropic_module: Any | None) -> bool:
-    if anthropic_module is not None and isinstance(exc, (anthropic_module.AuthenticationError, anthropic_module.PermissionDeniedError)):
-        return True
-    message = str(exc).lower()
-    auth_markers = (
-        "no active credentials",
-        "invalid api key",
-        "invalid x-api-key",
-        "authentication",
-        "permission denied",
-        "unauthorized",
-        "401",
-        "403",
-    )
-    return any(marker in message for marker in auth_markers)
-
-
-def call_anthropic(client: Any, anthropic_module: Any, model: str, prompt: str, max_tokens: int, effort: str) -> dict[str, Any]:
-    response = client.messages.create(
-        model=model,
-        max_tokens=max_tokens,
-        system=SYSTEM_PROMPT,
-        thinking={"type": "adaptive"},
-        output_config={"effort": effort},
-        messages=[{"role": "user", "content": prompt}],
-    )
-    request_id = getattr(response, "_request_id", "")
-    if getattr(response, "stop_reason", None) == "refusal":
-        details = getattr(response, "stop_details", None)
-        raise RuntimeError(f"Claude refusal: {details}")
-    text_parts = [block.text for block in response.content if getattr(block, "type", None) == "text"]
-    text = "\n".join(text_parts).strip()
-    if not text:
-        raise RuntimeError("Claude response contained no text block")
-    return {
-        "text": text,
-        "request_id": request_id,
-        "response_model": getattr(response, "model", model),
-        "stop_reason": getattr(response, "stop_reason", None),
-        "usage": response.usage.to_dict() if hasattr(getattr(response, "usage", None), "to_dict") else str(getattr(response, "usage", "")),
-    }
-
-
 def generate_variant(
     variant: str,
     packs: list[dict[str, Any]],
+    provider: str,
     client: Any,
-    anthropic_module: Any,
+    provider_module: Any,
     model: str,
     max_tokens: int,
     effort: str,
@@ -248,18 +243,19 @@ def generate_variant(
         jsonl_path.unlink()
     cards_md = [
         f"# LLM Decision Cards — {card_type}\n\n",
-        f"> Generated with Anthropic SDK model `{model}` from prompt-safe `{variant}` evidence packs. Outcome fields removed.\n\n",
+        f"> Generated with {provider_sdk_name(provider)} model `{model}` from prompt-safe `{variant}` evidence packs. Outcome fields removed.\n\n",
     ]
     rows: list[dict[str, Any]] = []
     for pack in packs:
         prompt, pack_json, pack_hash = prompt_for_pack(pack)
         prompt_hash = sha256_text(SYSTEM_PROMPT + "\n" + prompt)
         generated_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
-        result = call_anthropic(client, anthropic_module, model, prompt, max_tokens, effort)
+        result = call_generate(provider, client, provider_module, model, SYSTEM_PROMPT, prompt, max_tokens, effort)
         row = {
             "decision_id": pack["decision_id"],
             "card_type": card_type,
             "card_markdown": result["text"],
+            "provider": provider,
             "requested_model": model,
             "response_model": result["response_model"],
             "request_id": result["request_id"],
@@ -275,6 +271,7 @@ def generate_variant(
             {
                 "decision_id": pack["decision_id"],
                 "card_type": card_type,
+                "provider": provider,
                 "request_id": result["request_id"],
                 "response_model": result["response_model"],
                 "usage": result["usage"],
@@ -289,7 +286,9 @@ def generate_variant(
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate LLM decision cards from decision-support evidence packs.")
-    parser.add_argument("--model", default=DEFAULT_MODEL)
+    parser.add_argument("--provider", choices=sorted(SUPPORTED_PROVIDERS), default=None)
+    parser.add_argument("--env-file", type=Path, default=None)
+    parser.add_argument("--model", default=None)
     parser.add_argument("--max-packs", type=int, default=None, help="Limit packs per variant; omit for all packs.")
     parser.add_argument("--decision-id", action="append", help="Decision ID or comma-separated IDs. Can repeat.")
     parser.add_argument("--variant", choices=["ml_only", "full_evidence", "both"], default="both")
@@ -303,6 +302,9 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
+    load_env_file(ROOT, args.env_file)
+    provider = resolve_provider(args.provider)
+    model = resolve_model(provider, args.model)
     GENERATED.mkdir(parents=True, exist_ok=True)
     if RAW_RESPONSES.exists():
         RAW_RESPONSES.unlink()
@@ -310,13 +312,13 @@ def main() -> int:
     variants = selected_variants(args.variant)
     manifest: dict[str, Any] = {
         "status": "started",
-        "provider": "anthropic",
-        "sdk": "anthropic-python",
-        "requested_model": args.model,
+        "provider": provider,
+        "sdk": provider_sdk_name(provider),
+        "requested_model": model,
         "max_tokens": args.max_tokens,
-        "thinking": {"type": "adaptive"},
-        "effort": args.effort,
-        "temperature": "not_sent",
+        "thinking": provider_thinking(provider),
+        "effort": args.effort if provider == "anthropic" else "not_sent",
+        "temperature": provider_temperature(provider),
         "generated_at_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "variants": variants,
         "max_packs": args.max_packs,
@@ -336,7 +338,7 @@ def main() -> int:
         packs = select_packs(read_json(input_path), args.max_packs, decision_ids)
         packs_by_variant[variant] = packs
         manifest.setdefault("input_packs", {})[variant] = {
-            "path": str(input_path),
+            "path": artifact_ref(input_path),
             "sha256": sha256_file(input_path),
             "selected_count": len(packs),
         }
@@ -344,22 +346,22 @@ def main() -> int:
     if args.offline:
         for variant, packs in packs_by_variant.items():
             prompts_path, rows = write_offline_prompts(variant, packs, args.output_prefix)
-            manifest["prompt_packs"].append({"variant": variant, "path": str(prompts_path), "count": len(rows)})
-            manifest["outputs"].append(str(prompts_path))
+            manifest["prompt_packs"].append({"variant": variant, "path": artifact_ref(prompts_path), "count": len(rows)})
+            manifest["outputs"].append(artifact_ref(prompts_path))
         manifest["status"] = "llm_run_pending_offline"
         write_json(OUT_MANIFEST, manifest)
         print(json.dumps(manifest, ensure_ascii=False, indent=2))
         return 0
 
     client = None
-    anthropic_module = None
+    provider_module = None
     try:
-        client, anthropic_module = make_client()
+        client, provider_module = make_llm_client(provider)
     except Exception as exc:
         for variant, packs in packs_by_variant.items():
             prompts_path, rows = write_offline_prompts(variant, packs, args.output_prefix)
-            manifest["prompt_packs"].append({"variant": variant, "path": str(prompts_path), "count": len(rows)})
-            manifest["outputs"].append(str(prompts_path))
+            manifest["prompt_packs"].append({"variant": variant, "path": artifact_ref(prompts_path), "count": len(rows)})
+            manifest["outputs"].append(artifact_ref(prompts_path))
         manifest["status"] = "llm_run_pending_auth_or_dependency"
         manifest["failures"].append({"stage": "client_init", "error": str(exc)})
         write_json(OUT_MANIFEST, manifest)
@@ -372,9 +374,10 @@ def main() -> int:
             rows, md_path, jsonl_path = generate_variant(
                 variant,
                 packs,
+                provider,
                 client,
-                anthropic_module,
-                args.model,
+                provider_module,
+                model,
                 args.max_tokens,
                 args.effort,
                 args.output_prefix,
@@ -383,6 +386,7 @@ def main() -> int:
                 {
                     "decision_id": row["decision_id"],
                     "card_type": row["card_type"],
+                    "provider": row["provider"],
                     "request_id": row["request_id"],
                     "response_model": row["response_model"],
                     "pack_sha256": row["pack_sha256"],
@@ -390,13 +394,13 @@ def main() -> int:
                 }
                 for row in rows
             )
-            manifest["outputs"].extend([str(md_path), str(jsonl_path)])
+            manifest["outputs"].extend([artifact_ref(md_path), artifact_ref(jsonl_path)])
         except Exception as exc:
-            if is_auth_error(exc, anthropic_module):
+            if is_auth_error(provider, exc, provider_module):
                 auth_failed = True
                 prompts_path, rows = write_offline_prompts(variant, packs, args.output_prefix)
-                manifest["prompt_packs"].append({"variant": variant, "path": str(prompts_path), "count": len(rows)})
-                manifest["outputs"].append(str(prompts_path))
+                manifest["prompt_packs"].append({"variant": variant, "path": artifact_ref(prompts_path), "count": len(rows)})
+                manifest["outputs"].append(artifact_ref(prompts_path))
             manifest["failures"].append({"stage": f"generate_{variant}", "error": str(exc)})
             if not auth_failed:
                 continue
@@ -408,16 +412,25 @@ def main() -> int:
     else:
         manifest["status"] = "completed"
     if RAW_RESPONSES.exists():
-        manifest["outputs"].append(str(RAW_RESPONSES))
+        manifest["outputs"].append(artifact_ref(RAW_RESPONSES))
     write_json(OUT_MANIFEST, manifest)
 
     if args.score and manifest["cards"]:
         try:
             from score_decision_cards import run_scoring
 
-            score_result = run_scoring(model=args.model, max_tokens=8000, effort=args.effort, offline=False)
+            score_result = run_scoring(
+                provider=provider,
+                model=model,
+                max_tokens=8000,
+                effort=args.effort,
+                offline=False,
+                env_file=args.env_file,
+                output_prefix=args.output_prefix,
+                decision_ids=decision_ids,
+            )
             manifest["scoring"] = score_result
-            manifest["outputs"].extend(score_result.get("outputs", []))
+            manifest["outputs"].extend(artifact_ref(path) for path in score_result.get("outputs", []))
             write_json(OUT_MANIFEST, manifest)
         except Exception as exc:
             manifest["failures"].append({"stage": "score", "error": str(exc)})

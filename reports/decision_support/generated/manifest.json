@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-06T23:35:35+00:00",
+  "generated_at_utc": "2026-07-15T03:13:15+00:00",
   "source_files": [
     "C:\\Users\\User\\KLTN_KHTN\\reports\\signals.csv",
     "C:\\Users\\User\\KLTN_KHTN\\data\\features\\technical_features.csv",
@@ -24,10 +24,12 @@
     "evidence_packs.json": "178e46c16a1de7fa5efd47ed3ed3d2f5cd5cbf77ed204150622795e1ccddca6d",
     "decision_cards.md": "b11461f1e52bdac0ac8f6aa0db490db69a629f182694091d7e4ca181eeb4a290",
     "outcome_reviews.md": "9fe9e2c908ae74edc2eb8626d273b2b592b7693149e7c8ac276651250190e158",
+    "rule_based_cards.json": "269e1010cd5fa0344f8b6acbe9c7eb4e2926b6c8a5490d4f95ec71be13602eb8",
+    "outcome_reviews.json": "aab954d61d5c0138ac56056639e0ab86c92408100c17517f227181f94e0f4095",
     "monitoring_cases_summary.csv": "c36b2582570f99f2bbefbe81f7db250d5ababfaae35ca2269226b9095b2916a1",
     "news_fulltext_coverage.csv": "01f4d795f81f3b585a16ff5a9dac5415d5e13c162e4cfc27db04acbaedef4cbe",
     "llm_rubric_scoring_template.csv": "5725e8010eae77a779e538235ba7e9fb824230f8d27ef0b2e9af923a31f8984c",
-    "generated_summary.md": "246481fbd4fe63155906792bc5b6e5aee6128822e4e75a278f9ce62102c88a2f"
+    "generated_summary.md": "7916c7053fa9de40ed45bbac6888c3cd3d50cd8499a48dc2f35ff0e3b2571e5d"
   },
   "outputs": [
     "evidence_packs_audit.json",
@@ -36,6 +38,8 @@
     "evidence_packs.json",
     "decision_cards.md",
     "outcome_reviews.md",
+    "rule_based_cards.json",
+    "outcome_reviews.json",
     "monitoring_cases_summary.csv",
     "news_fulltext_coverage.csv",
     "llm_rubric_scoring_template.csv",

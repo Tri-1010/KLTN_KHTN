@@ -347,6 +347,77 @@ Initial generation prompt must not use:
 
 Outcome review prompt may use outcome only after holding period and must label it as post-hoc.
 
+## EvidenceTrace analyst workspace
+
+### Runtime architecture
+
+```text
+validated source artifact catalog
+        |
+        v
+scripts/build_research_ui_bundle.py
+  - hash/schema/count validation
+  - recursive leakage scans
+  - initial/monitor/review physical partition
+  - semantic and rubric normalization
+        |
+        v
+ui_artifacts/ (immutable generated bundle)
+        |
+        v
+research_ui/ Streamlit analyst workspace
+  Select -> Explain -> Monitor(as_of) -> Update(as_of) -> Review
+        |
+        +--> confirmed live LLM job only
+               |
+               v
+reports/decision_support/generated/runs/<run_id>/
+```
+
+Streamlit reads only validated bundles. Pages never read audit packs, source CSV, raw secrets or provider responses directly.
+
+### Trust zones
+
+| Zone | Input | Required boundary |
+|---|---|---|
+| Initial | `evidence_packs_initial.json`, `evidence_packs_ml_only.json` | No outcome/review/post-decision data; news date <= decision date |
+| Monitor | Initial reference plus monitoring timeline | Filter `event_date <= as_of`; no review outcome |
+| Update | Initial reference plus filtered monitor events | Read-only delta; no outcome or auto-written thesis |
+| Review | Review-only structured data and frozen history | Holding-period gate; never feeds Initial/Update |
+| Evaluation | Cards + prompt-safe evidence + rubric | Quality only; never joins realized return |
+
+### UI navigation
+
+- **Select:** period/ticker/rank/data-quality filters. Source labels render as `Model candidate`, never a trade CTA.
+- **Explain:** technical signal, top drivers, evidence inspector, data quality, card variants and provenance.
+- **Monitor:** historical replay with mandatory `as_of`, `Watch`/`Review Required` rule reasons and semantic-quality indicators.
+- **Update:** deterministic read-only comparison of initial evidence and valid new evidence.
+- **Review:** post-hoc view only, outcome data after holding-period gate.
+- **Evaluation:** separate Gemini self-judge, local-router judge and common local-judge cross-score provenance; no cross-judge provider ranking.
+- **Provenance:** source catalog, SHA-256, model/vendor/run details and legacy/reconstructed warnings.
+
+### Live LLM jobs
+
+Live generation is manually initiated from a dedicated form. Analyst selects a catalog-allowed provider/model, decision ID and variant; UI previews prompt/pack hash and leakage validation, then requires explicit confirmation for external API use. A service reuses `scripts/llm_provider.py` and callable generation logic from `scripts/generate_llm_decision_cards.py`; it must not build shell commands from UI input.
+
+Each job writes only to `reports/decision_support/generated/runs/<run_id>/` and persists a run manifest. Jobs are single-concurrency and bounded by configured card limit. API credentials stay environment-only. Failures create a clear failed/offline state, never a synthetic card.
+
+### UI-safe contracts and non-claim policy
+
+Bundle builder and UI use Pydantic DTOs for dataset manifest, candidate, initial decision, news evidence, monitoring event, update detail, review detail, semantic consensus, card record, evaluation record and live job state. `decision_id` is primary identity. News joins prefer `content_hash`, then deterministic `news_id`; title-only joins are rejected.
+
+Every screen includes `Research prototype`, `No live market data`, and `Not investment advice`. UI text forbids Buy/Sell, target price, allocation and order placement. Rubric labels state card-quality only. Semantic labels state model-derived pseudo-label, not human ground truth. Status uses text/icon/color together and has keyboard/table alternatives.
+
+### External market context
+
+Overview uses one narrow fixed FireAnt Markets exception. `research_ui/components/fireant_vnindex.py` keeps exact no-argument `https://www.fireant.vn/Widgets/Markets` contract and exact native VNINDEX fallback.
+
+Monitor additionally uses FireAnt's purpose-built Quote widget verified on 2026-07-28: `https://www.fireant.vn/Widgets/Quote?symbols={TICKER}`. `research_ui/components/external_market_context.py` normalizes a server-derived ticker, requires membership in validated candidate allowlist, builds exact Quote/native URL shapes and rejects extra query, fragment, credentials, port, path traversal, Unicode and unknown ticker input. `research_ui/components/fireant_selected_ticker.py` owns one browser-only iframe plus permanent top-level `https://fireant.vn/ma-chung-khoan/{TICKER}` fallback. Native ticker page is not iframe-embedded; current frame headers and login/cookie behavior are not treated as a stable integration contract. `Widgets/Markets` remains fixed VNINDEX macro context and is separated in its own Monitor expander.
+
+Browser connects directly to FireAnt. Components are display-only and make no server request, proxy, scrape, response parse, callback, parent-message handler, session-state write, provider-content log, ingestion or artifact mutation. Provider content remains outside validated historical bundle, historical `as_of`, evidence packs, ML features, monitoring events, LLM/card/scorer prompts, review and evaluation. Failure leaves historical workspace usable and preserves native fallback.
+
+Monitor has one identity source: global validated `decision_id` derives ticker for selected-record panel, Quote widget, historical technical panel and LLM workflows. No second ticker state exists. Technical panel projects full initial `technical_snapshot`, rule-based `top_drivers` and provenance with cutoff fixed at `decision_date`; monitoring retains separate `as_of`; FireAnt is current browser display; fresh RSS has `retrieved_at_utc`. Current/partial-quarter indicators are not computed at runtime because price artifact validation and comparable model semantics are not yet established.
+
 ## Error handling
 
 Anthropic SDK calls should catch typed exceptions where practical:

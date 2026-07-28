@@ -18,6 +18,11 @@ htmlcov/
 venv/
 env/
 
+# Local secrets
+.env
+.env.*
+!.env.example
+
 # OS / editor
 .DS_Store
 Thumbs.db
@@ -26,3 +31,9 @@ Thumbs.db
 logs/manual_*.txt
 logs/*_test.txt
 logs/time_split_experiment.txt
+
+# Generated EvidenceTrace UI bundles and isolated live LLM runs
+ui_artifacts/*
+!ui_artifacts/fixtures/
+!ui_artifacts/fixtures/**
+reports/decision_support/generated/runs/

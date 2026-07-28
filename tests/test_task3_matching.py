@@ -79,7 +79,7 @@ class TestLoadAliases:
         """Should load aliases from the real config file."""
         aliases = load_aliases()
         assert isinstance(aliases, dict)
-        assert len(aliases) == 30  # All 30 VN30 tickers
+        assert len(aliases) == 80  # HOSE-80 universe (30 VN30 + 50 expansion)
 
     def test_all_vn30_tickers_present(self):
         """All 30 VN30 tickers should be keys in the alias dict."""
@@ -108,6 +108,23 @@ class TestLoadAliases:
         assert any("vincom retail" in a.lower() for a in aliases["VRE"])
         # VIC must include "Vingroup"
         assert any("vingroup" in a.lower() for a in aliases["VIC"])
+
+    def test_dpm_dcm_company_names_are_disambiguated(self):
+        """Validated issuer names must not cross-map DPM and DCM."""
+        aliases = load_aliases()
+        alias_index = _build_alias_index(aliases)
+
+        dpm_matches = match_single_article(
+            "Tổng Công ty Phân bón và Hóa chất Dầu khí công bố tài liệu họp",
+            alias_index,
+        )
+        dcm_matches = match_single_article(
+            "CTCP Phân bón Dầu khí Cà Mau công bố tài liệu họp",
+            alias_index,
+        )
+
+        assert {ticker for ticker, _ in dpm_matches} == {"DPM"}
+        assert {ticker for ticker, _ in dcm_matches} == {"DCM"}
 
     def test_loads_from_custom_path(self, tmp_path):
         """Should load aliases from a custom path."""

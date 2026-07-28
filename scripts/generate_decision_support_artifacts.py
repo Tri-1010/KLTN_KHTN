@@ -430,6 +430,75 @@ def write_jsonl(path: Path, rows: list[dict[str, Any]]) -> None:
             f.write(json.dumps(row, ensure_ascii=False) + "\n")
 
 
+def parse_rule_based_card_records(markdown: str, packs: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Create browser-safe card records after deterministic Markdown generation.
+
+    The UI reads this JSON artifact rather than parsing Markdown in a browser.
+    """
+    packs_by_id = {str(pack["decision_id"]): pack for pack in packs}
+    marker = "\n## Decision Card: "
+    records: list[dict[str, Any]] = []
+    for chunk in markdown.split(marker)[1:]:
+        decision_id, _, remainder = chunk.partition("\n")
+        decision_id = decision_id.strip()
+        pack = packs_by_id.get(decision_id)
+        if pack is None:
+            continue
+        records.append(
+            {
+                "card_id": f"rule_based_baseline:{decision_id}",
+                "decision_id": decision_id,
+                "card_type": "rule_based_baseline",
+                "producer_run_id": "deterministic-rule-based-baseline",
+                "provider": "deterministic-template",
+                "requested_model": None,
+                "response_model": None,
+                "vendor": "local",
+                "generated_at_utc": None,
+                "prompt_sha256": None,
+                "pack_sha256": sha256_text(json.dumps(pack, ensure_ascii=False, sort_keys=True)),
+                "body_markdown": f"## Decision Card: {decision_id}\n{remainder}".strip(),
+            }
+        )
+    return records
+
+
+def build_outcome_review_records(packs: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Return review-only JSON records; never call this for initial prompt artifacts."""
+    records: list[dict[str, Any]] = []
+    for pack in packs:
+        review = pack.get("outcome_for_review_only", {})
+        realized_return = review.get("realized_period_return")
+        records.append(
+            {
+                "decision_id": pack["decision_id"],
+                "holding_period_complete": realized_return is not None,
+                "review_date": None,
+                "initial_snapshot_reference": {
+                    "decision_date": pack.get("decision_date"),
+                    "ticker": pack.get("ticker"),
+                    "period_id": pack.get("period_id"),
+                    "pred_proba_up": pack.get("ml_signal", {}).get("pred_proba_up"),
+                    "rank_in_period": pack.get("ml_signal", {}).get("rank_in_period"),
+                },
+                "monitoring_summary": {},
+                "post_hoc_outcome": {
+                    "realized_period_return": realized_return,
+                    "outcome_label": review.get("outcome_label"),
+                    "benchmark_return": None,
+                    "excess_return": None,
+                },
+                "review_narrative": "Post-hoc outcome review only; never used in initial selection, explanation, update, or initial-card scoring.",
+                "provenance": {
+                    "review_only": True,
+                    "must_not_feed_initial_or_update": True,
+                    "source_decision_pack": "evidence_packs_audit.json",
+                },
+            }
+        )
+    return records
+
+
 def write_rule_based_cards(out: Path, packs: list[dict[str, Any]], top_k: int) -> None:
     cards = [
         "# Generated Decision Cards (Rule-based Baseline)\n",
@@ -607,7 +676,9 @@ def write_generated_summary(out: Path, news_path: Path, top_k: int, packs: list[
         "| `evidence_packs_ml_only.json` | ML/technical-only ablation packs. |\n",
         "| `evidence_packs.json` | Backward-compatible audit copy. |\n",
         "| `decision_cards.md` | Rule-based baseline cards generated from real evidence packs. |\n",
+        "| `rule_based_cards.json` | Structured rule-based card records for the research UI. |\n",
         "| `outcome_reviews.md` | Outcome reviews that use realized return only after holding period. |\n",
+        "| `outcome_reviews.json` | Structured review-only records for the research UI; never initial prompt input. |\n",
         "| `monitoring_cases_summary.csv` | Decisions, ranks, probabilities, news counts and outcomes. |\n",
         "| `news_fulltext_coverage.csv` | Full-text extraction and summary/key-fact coverage by source. |\n",
         "| `llm_rubric_scoring_template.csv` | Scoring sheet for rule-based and LLM card variants. |\n",
@@ -656,8 +727,15 @@ def main() -> None:
         write_jsonl(out / "evidence_packs_initial.jsonl", initial_packs)
         write_jsonl(out / "evidence_packs_ml_only.jsonl", ml_only_packs)
 
-    write_rule_based_cards(out / "decision_cards.md", audit_packs, args.top_k)
-    write_outcome_reviews(out / "outcome_reviews.md", audit_packs)
+    rule_cards_path = out / "decision_cards.md"
+    outcome_reviews_path = out / "outcome_reviews.md"
+    write_rule_based_cards(rule_cards_path, audit_packs, args.top_k)
+    write_outcome_reviews(outcome_reviews_path, audit_packs)
+    write_json(
+        out / "rule_based_cards.json",
+        parse_rule_based_card_records(rule_cards_path.read_text(encoding="utf-8"), audit_packs),
+    )
+    write_json(out / "outcome_reviews.json", build_outcome_review_records(audit_packs))
     write_csv_rows(out / "monitoring_cases_summary.csv", case_rows)
 
     news_rows = read_csv(news_path)
@@ -690,6 +768,8 @@ def main() -> None:
             "evidence_packs.json",
             "decision_cards.md",
             "outcome_reviews.md",
+            "rule_based_cards.json",
+            "outcome_reviews.json",
             "monitoring_cases_summary.csv",
             "news_fulltext_coverage.csv",
             "llm_rubric_scoring_template.csv",

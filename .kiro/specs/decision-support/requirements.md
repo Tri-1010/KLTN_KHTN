@@ -120,3 +120,45 @@ Mục tiêu chính: biến tín hiệu dự báo thành decision record có th�
 3. THE docs SHALL include rubric summary table and limitations.
 4. THE docs SHALL retain overclaim guardrails: no claim that LLM improves return or creates alpha.
 5. IF LLM run is blocked by auth/rate limit, THE docs SHALL explicitly say pending and point to generated prompt packs.
+
+### Requirement 9: Cung cấp analyst workspace có khả năng truy vết
+
+**User Story:** Là analyst/nghiên cứu sinh, tôi muốn duyệt artifact lịch sử qua giao diện `select → explain → monitor → update → review`, để kiểm tra evidence, provenance, cảnh báo và outcome mà không trộn dữ liệu tương lai.
+
+#### Acceptance Criteria
+
+1. THE system SHALL provide a Vietnamese-first Streamlit research prototype in analyst mode, without trading, portfolio execution, target-price, allocation, or investment-advice actions.
+2. THE Select and Explain screens SHALL use only prompt-safe initial evidence packs and SHALL label a source `Buy Candidate` signal as a model candidate, not a call to buy.
+3. THE Monitor and Update screens SHALL require an explicit historical `as_of` timestamp and SHALL exclude monitoring events after that timestamp.
+4. THE Review screen SHALL physically read a review-only bundle and SHALL expose realized return/outcome only after a holding-period-complete gate.
+5. THE system SHALL display source artifact hash, schema/version, source path, provider/model/run provenance, data-quality flags, and pseudo-label warnings where applicable.
+6. THE system SHALL show semantic consensus, evidence span, disagreement, and human-review flags without calling them human ground truth.
+7. THE system SHALL present rubric scores as card-quality evaluation only, never return, alpha, causal impact, or investment performance.
+8. THE system SHALL validate all UI runtime artifacts through a catalog pinned to completed source artifacts; legacy/pending manifests SHALL not override completed runs.
+9. THE Overview screen MAY use one narrow fixed FireAnt Markets exception: a browser-only, display-only nested iframe whose exact source is `https://www.fireant.vn/Widgets/Markets`, with no ticker, URL, raw HTML, callback, or other runtime input. THE Monitor screen MAY additionally render the selected validated ticker through exact FireAnt Quote contract `https://www.fireant.vn/Widgets/Quote?symbols={TICKER}`, where `{TICKER}` is derived server-side from selected `decision_id`, normalized and checked against validated-bundle ticker allowlist. THE selected Quote SHALL always provide exact top-level fallback `https://fireant.vn/ma-chung-khoan/{TICKER}`. THE system SHALL NOT iframe the native ticker page or accept free-form ticker/provider URL. Both widgets SHALL be labeled current external display outside validated historical bundle, historical `as_of`, evidence, model, monitoring, review, evaluation and prompts. THE server SHALL NOT fetch, proxy, scrape, parse, callback, handle provider messages, write state, log provider content, or ingest provider content. Monitor technical analysis SHALL use only frozen initial `technical_snapshot`/`top_drivers` at `decision_date`; runtime current/partial-quarter recomputation is forbidden until price artifacts receive separate validation and provenance.
+
+### Requirement 10: Chạy LLM live qua workflow xác nhận rõ
+
+**User Story:** Là analyst, tôi muốn chọn provider/model và tạo card LLM trực tiếp từ evidence pack, để demo workflow thực tế nhưng vẫn giữ kiểm soát chi phí, leakage và provenance.
+
+#### Acceptance Criteria
+
+1. THE system SHALL require a manual provider/model selection from a configured allowlist, a prompt/pack preview, and explicit confirmation before every external API call.
+2. THE system SHALL use the existing provider abstraction and official provider SDK path; API keys SHALL remain environment/server-side only and SHALL never appear in UI state, artifacts, logs, or browser output.
+3. THE system SHALL submit one bounded live job at a time and SHALL record decision ID, variant, provider, requested/response model, vendor, request ID, pack hash, prompt hash, timestamps, usage if supplied, and failures.
+4. THE system SHALL write each live run only under an isolated run directory and SHALL never overwrite canonical completed artifacts.
+5. IF generation or scoring fails, THE system SHALL show an honest failure/offline-prompt state and SHALL not fabricate a card or score.
+6. THE local-router route SHALL display request route separately from response-model vendor and SHALL not call `gpt-5.6-luna` a native Claude response.
+7. THE initial LLM job SHALL be blocked if recursive leakage validation or news cutoff validation fails.
+
+### Requirement 11: Xây validated UI bundle và kiểm thử boundary
+
+**User Story:** Là người phản biện, tôi muốn UI chỉ nhận artifact đã validate và tách trust zone vật lý, để kiểm chứng không có outcome leakage hoặc provenance mismatch.
+
+#### Acceptance Criteria
+
+1. THE bundle builder SHALL emit separate initial, monitor, review, semantic, evaluation, and provenance payloads; UI SHALL not hide a shared audit payload client-side.
+2. THE builder SHALL fail on initial/update fields or serialized tokens containing outcome/future values, invalid initial news cutoff, hash mismatch, malformed required record, or duplicate card-score identity.
+3. THE builder SHALL require exactly 75 common-judge cross-score rows and complete producer/judge/run provenance before publishing an evaluation bundle.
+4. THE builder SHALL use content hash then deterministic news ID for monitoring-to-consensus joins; title-only matching SHALL be forbidden.
+5. Tests SHALL cover zone isolation, cutoff equality, as-of filtering, hash mismatch, score completeness, legacy manifest handling, provider allowlist, live-job failure state, and no-trading UI copy.

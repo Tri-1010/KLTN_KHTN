@@ -66,9 +66,9 @@
 - [x] 8. Regenerate decision-support artifacts
   - [x] 8.1 Chạy `python .\scripts\generate_decision_support_artifacts.py --write-prompt-packs`
   - [x] 8.2 Chạy `python .\scripts\monitor_news_events.py` — 3,838 monitoring events
-  - [x] 8.3 Smoke test LLM run: API route trả `No active credentials for provider: anthropic`
-  - [x] 8.4 Full run chưa chạy live vì auth/provider credential chưa sẵn sàng
-  - [x] 8.5 Offline mode đã ghi 25 `ml_only` prompt packs và 25 `full_evidence` prompt packs; scorer offline ghi 25 rule-based scoring prompt packs
+  - [x] 8.3 Smoke test provider routes và offline fallback, không tạo fake cards khi thiếu credential
+  - [x] 8.4 Full Gemini 2.5 Pro run hoàn tất: 25 decisions, 50 LLM cards, 75 rubric scores, 0 failures
+  - [x] 8.5 Provider-neutral helper hỗ trợ Anthropic, Gemini và DeepSeek; offline prompt packs vẫn dùng được
 
 - [x] 9. Cập nhật docs/reports theo trạng thái thật
   - [x] 9.1 Update `docs/luan_van_ml_llm_decision_support.md`
@@ -82,4 +82,24 @@
 - [x] 10. Kiểm tra cuối
   - [x] 10.1 Xác nhận artifact tồn tại: spec files, audit/initial/ml-only packs, prompt packs, rubric prompt packs, manifest
   - [x] 10.2 Xác nhận no-leakage: initial pack không chứa outcome/future, news cutoff đúng qua unit tests
-  - [x] 10.3 Xác nhận báo cáo nói đúng trạng thái thực tế: live LLM pending do auth/provider credential; offline prompt packs ready
+  - [x] 10.3 Xác nhận báo cáo nói đúng trạng thái thực tế: full Gemini run completed; 50 cards và 75 scores; không claim alpha/return
+  - [x] 10.4 Xác nhận limitation: cùng Gemini model family tạo và chấm card, chưa phải human validation độc lập
+
+- [ ] 11. Xây EvidenceTrace analyst workspace
+  - [ ] 11.1 Tạo artifact catalog, pin completed run/hash và đánh dấu legacy run không dùng runtime
+  - [ ] 11.2 Tạo Pydantic contracts, trust-zone policy và bundle validation
+  - [ ] 11.3 Chuẩn hóa structured JSON cho rule cards, outcome reviews, card/rubric run records
+  - [ ] 11.4 Thêm `--root`, `--as-of-date` cho monitoring historical replay
+  - [ ] 11.5 Tạo validated bundle tách physical initial/monitor/update/review/evaluation/provenance
+  - [ ] 11.6 Tạo Streamlit Select, Explain, Monitor, Update, Review, Evaluation và Provenance views
+  - [ ] 11.7 Tạo live LLM form: provider/model allowlist, confirmation, isolated run directory, provenance, failure state
+  - [ ] 11.8 Viết contract/leakage/live-job/UI smoke tests
+  - [ ] 11.9 Chạy accessibility/E2E demo rehearsal và chỉ cập nhật luận văn bằng artifact đã xác minh
+  - [x] 11.10 Giữ FireAnt selected-ticker outbound-link catalog fail-closed; adapter riêng không embed/fetch/proxy/provider-content ingestion
+  - [x] 11.11 Thay fixed index widget lỗi runtime bằng narrow fixed FireAnt Markets exception tại Overview: no-argument, exact `/Widgets/Markets`, browser-only/display-only, không server fetch hoặc provider-content ingestion
+  - [x] 11.12 Đồng bộ runtime policy, exact native VNINDEX fallback và regression tests; exception không nới selected-ticker link-only adapter
+  - [x] 11.13 Browser verification: anonymous FireAnt Markets widget ở 1200x760 hiển thị VN-INDEX line chart/table, không console error hoặc horizontal overflow; native VNINDEX page công khai nhưng không iframe-safe do localStorage
+  - [ ] 11.14 Thêm selected-ticker FireAnt Quote exact `/Widgets/Quote?symbols={TICKER}` từ validated decision allowlist, native top-level fallback và no-ingestion boundary
+  - [ ] 11.15 Thêm frozen historical technical panel tại `decision_date`, full snapshot/drivers/provenance; không runtime current hoặc partial-quarter recomputation
+  - [ ] 11.16 Đồng bộ selected decision qua FireAnt, technical và fresh/live LLM; prompt ghi FireAnt ingested false và historical technical cutoff
+  - [ ] 11.17 Regression + browser verification đổi ticker/`as_of`, VNINDEX macro expander, fallback, overflow và trust-zone labels

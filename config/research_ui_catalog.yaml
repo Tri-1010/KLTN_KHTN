@@ -1,0 +1,250 @@
+catalog_version: research-ui-catalog-v1
+dataset_id: evidencetrace-decision-support-2026-07
+research_only: true
+runtime_policy:
+  ui_reads_validated_bundle_only: true
+  no_live_market_data: true
+  no_investment_advice: true
+  external_context:
+    fireant_markets_browser_display:
+      enabled: true
+      mode: fixed_browser_embed_display_only
+      widget_url: https://www.fireant.vn/Widgets/Markets
+      native_vnindex_fallback_url: https://fireant.vn/ma-chung-khoan/VNINDEX
+      server_fetch: false
+      proxy: false
+      provider_content_ingestion: false
+      evidence_model_monitoring_review_evaluation_use: false
+    fireant_selected_ticker_adapter:
+      enabled: true
+      mode: selected_quote_browser_embed_display_only
+      ticker_source: validated_bundle_selected_decision
+      widget_origin: https://www.fireant.vn
+      widget_path: /Widgets/Quote
+      widget_query_key: symbols
+      native_origin: https://fireant.vn
+      native_path_template: /ma-chung-khoan/{TICKER}
+      server_fetch: false
+      proxy: false
+      provider_content_ingestion: false
+      evidence_model_monitoring_review_evaluation_use: false
+    historical_technical_panel:
+      enabled: true
+      source: validated_initial_bundle
+      cutoff_field: decision_date
+      runtime_recomputation: false
+      fireant_to_prompt: false
+    fresh_news_snapshot_allowed: true
+    canonical_artifact_mutation_forbidden: true
+  initial_forbidden_markers:
+    - outcome
+    - realized
+    - review_only
+    - benchmark_return
+    - excess_return
+    - future_return
+    - future_label
+  monitoring_join_order:
+    - deterministic_news_id
+    - unambiguous_canonical_content_hash
+  title_only_join_forbidden: true
+
+artifacts:
+  - name: initial_evidence
+    path: reports/decision_support/generated/evidence_packs_initial.json
+    sha256: 1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7
+    zone: initial
+    required: true
+    expected_records: 25
+    schema_version: evidence-pack-initial-v1
+
+  - name: ml_only_evidence
+    path: reports/decision_support/generated/evidence_packs_ml_only.json
+    sha256: c99ac78c69980481c33f8c8fa7cd14c3c857de36282745a7f73092100b7c9620
+    zone: initial
+    required: true
+    expected_records: 25
+    schema_version: evidence-pack-ml-only-v1
+
+  - name: monitoring_timeline
+    path: reports/decision_support/generated/monitoring_timeline.json
+    sha256: 1079d1812e8badf37e2450497de236c5cdb7f042b986c72203a6c6759dc31ab4
+    zone: monitor
+    required: true
+    schema_version: monitoring-timeline-v1
+
+  - name: monitoring_events
+    path: reports/decision_support/generated/monitoring_events.csv
+    sha256: 1241e5b104e45fb9b5f198fd49b301364682c3edf66f42582ce848cc5890d5b6
+    zone: monitor
+    required: true
+    expected_records: 3839
+    expected_columns:
+      - decision_id
+      - news_id
+      - ticker
+      - decision_date
+      - event_date
+      - trigger_type
+      - action
+      - reason
+      - source
+      - title
+      - url
+      - event_type
+      - risk_flags
+      - match_confidence
+      - article_summary
+      - content_hash
+    schema_version: monitoring-events-v1
+
+  - name: monitoring_manifest
+    path: reports/decision_support/generated/monitoring_manifest.json
+    sha256: 956ccc3a807d3c78717327d74306b41d076fb7dc7946cadf04ea8d19175d63d2
+    zone: provenance
+    required: true
+    expected_records: 9
+    expected_as_of_date: "2026-07-28"
+    expected_monitoring_events: 3839
+    schema_version: monitoring-manifest-v1
+
+  - name: semantic_canonical_mapping
+    path: multi_llm_evidence_extraction/data/sample_news_for_annotation.csv
+    sha256: a03ec8cbbb4cbbc8a0d9e3427c29771bb8c38698ec494ef83451b3f38a652c73
+    zone: semantic
+    required: true
+    expected_records: 150
+    schema_version: semantic-canonical-mapping-v1
+
+  - name: monitoring_cases
+    path: reports/decision_support/generated/monitoring_cases_summary.csv
+    sha256: c36b2582570f99f2bbefbe81f7db250d5ababfaae35ca2269226b9095b2916a1
+    zone: select
+    required: true
+    expected_records: 25
+    schema_version: monitoring-cases-v1
+
+  - name: audit_evidence
+    path: reports/decision_support/generated/evidence_packs_audit.json
+    zone: review
+    required: true
+    schema_version: evidence-pack-audit-v1
+    runtime_access: review-builder-only
+
+  - name: rule_based_cards
+    path: reports/decision_support/generated/rule_based_cards.json
+    sha256: 269e1010cd5fa0344f8b6acbe9c7eb4e2926b6c8a5490d4f95ec71be13602eb8
+    zone: initial
+    required: true
+    expected_records: 25
+    schema_version: rule-based-card-records-v1
+
+  - name: decision_outcome_reviews
+    path: reports/decision_support/generated/outcome_reviews.json
+    sha256: aab954d61d5c0138ac56056639e0ab86c92408100c17517f227181f94e0f4095
+    zone: review
+    required: true
+    expected_records: 25
+    schema_version: outcome-review-records-v1
+    runtime_access: review-builder-only
+
+  - name: semantic_consensus
+    path: multi_llm_evidence_extraction/outputs/pseudo_labels_consensus.jsonl
+    sha256: 20724095661fd66d1b864d8ed6a3bd4717af60eeea1ae8f818229eb6d1c5234b
+    zone: semantic
+    required: true
+    expected_records: 150
+    schema_version: pseudo_label_consensus_v2
+    warning: model-derived pseudo-labels; not human ground truth
+
+  - name: annotation_manifest_index
+    path: multi_llm_evidence_extraction/outputs/annotation_manifest_index.json
+    sha256: 679e4b74af76ef6ae0ca81fccb72c67c7c48c4df45c7335cc439db8aa325562d
+    zone: provenance
+    required: true
+    schema_version: annotation-manifest-index-v1
+    provenance_status: legacy_reconstructed
+
+  - name: semantic_outcome_review
+    path: multi_llm_evidence_extraction/outputs/outcome_review_labels.csv
+    sha256: 356397d760515580aec2d5bc352005eb00ef4aafd48e056d2a5f15c5d2e995dd
+    zone: review
+    required: true
+    expected_records: 114
+    schema_version: outcome-review-v1
+    runtime_access: review-builder-only
+
+runs:
+  - run_id: gemini-full-2026-07
+    status: completed
+    producer:
+      provider: gemini
+      requested_model: gemini-2.5-pro
+      response_model: gemini-2.5-pro
+      vendor: google
+    cards:
+      ml_only:
+        path: reports/decision_support/generated/llm_cards_ml_only.jsonl
+        sha256: 7571d58ad59a0d3d73a2a72cb30deb9fbbe795273b8779782996dce5b2869736
+        expected_records: 25
+      full_evidence:
+        path: reports/decision_support/generated/llm_cards_full_evidence.jsonl
+        sha256: f5ba4532d1027f26e0eef1a289a2b0960ae25d1cc544cfc664f55872adc27af6
+        expected_records: 25
+    rubric:
+      path: reports/decision_support/generated/llm_rubric_scores.csv
+      sha256: 12c40274639cda6b7eb6b328b71716faaef1f010007a522221b25eea198be525
+      expected_records: 75
+      judge_provider: gemini
+      judge_model: gemini-2.5-pro
+      rubric_version: decision-card-rubric-v1
+      warning: self-judged automated rubric; not human expert evaluation
+
+  - run_id: local-router-claude2-2026-07
+    status: completed
+    producer:
+      request_provider: anthropic-compatible-local-router
+      requested_model: claude-opus
+      response_model: gpt-5.6-luna
+      vendor: openai-vendor
+      warning: Response model is not native Claude.
+    cards:
+      ml_only:
+        path: reports/decision_support/generated/router_claude2_llm_cards_ml_only.jsonl
+        sha256: b01bd503da7a8ecb99bdab0949f7cee5ee51740f42e30af99f667c251e7de3bc
+        expected_records: 25
+      full_evidence:
+        path: reports/decision_support/generated/router_claude2_llm_cards_full_evidence.jsonl
+        sha256: ee425484a47cf453985023f13e09c995e969ee5fb66af26f0ab6756a4589aa1d
+        expected_records: 25
+    rubric:
+      path: reports/decision_support/generated/router_claude2_llm_rubric_scores.csv
+      sha256: c193e8cc7f18a3c92ace9754c8983581ec5b3918bfc48454515972be08ec0026
+      expected_records: 75
+      judge_provider: anthropic-compatible-local-router
+      judge_response_model: gpt-5.6-luna
+      rubric_version: decision-card-rubric-v1
+
+  - run_id: common-local-judge-gemini-cards-2026-07
+    status: completed
+    producer_run_id: gemini-full-2026-07
+    rubric:
+      path: reports/decision_support/generated/compare_gemini_llm_rubric_scores.csv
+      sha256: 27ec7e6661eebbc1c71c1d427bfd1cbcf7b3021d9ecfa12d797b5638afda69c1
+      expected_records: 75
+      judge_provider: anthropic-compatible-local-router
+      judge_response_model: gpt-5.6-luna
+      rubric_version: decision-card-rubric-v1
+      summary_path: reports/decision_support/generated/compare_gemini_llm_rubric_summary.md
+      warning: Common automated judge, not human expert evaluation.
+
+legacy_runs:
+  - run_id: deepseek-decision-card-trial
+    status: failed
+    provider: deepseek
+    failure: API 402 Insufficient Balance
+    runtime_source: false
+  - run_id: legacy-pending-manifest
+    path: reports/decision_support/generated/llm_generation_manifest.json
+    runtime_source: false
+    reason: Runtime catalog resolves explicit completed runs above.

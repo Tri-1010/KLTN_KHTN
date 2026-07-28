@@ -1,0 +1,14 @@
+{
+  "schema_version": "monitoring-manifest-v1",
+  "generated_at_utc": "2026-07-28T11:04:27+00:00",
+  "as_of_date": "2026-07-28",
+  "historical_replay": true,
+  "packs_source": "reports/decision_support/generated/evidence_packs_audit.json",
+  "news_source": "data/news/enriched/all_news_enriched.csv",
+  "input_hashes": {
+    "reports/decision_support/generated/evidence_packs_audit.json": "178e46c16a1de7fa5efd47ed3ed3d2f5cd5cbf77ed204150622795e1ccddca6d",
+    "data/news/enriched/all_news_enriched.csv": "c521184ebcd87cd95591779432304036e3047bea520d050a8fe2187b690559fe"
+  },
+  "num_decisions": 25,
+  "num_monitoring_events": 3839
+}
