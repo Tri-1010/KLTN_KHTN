@@ -38,6 +38,18 @@ OUTPUT_COLUMNS = [
     "match_confidence",
 ]
 
+ENRICHED_MATCH_COLUMNS = [
+    "article_summary",
+    "key_facts_json",
+    "event_type_enriched",
+    "risk_flags_json",
+    "full_text_available",
+    "full_text_chars",
+    "content_hash",
+    "extraction_status",
+    "relevance_hint",
+]
+
 # News source directories / files
 NEWS_SOURCES = {
     "cafef": "data/news/cafef",
@@ -228,7 +240,16 @@ def match_entities(
     for _, row in articles.iterrows():
         title = str(row.get("title", "") or "")
         description = str(row.get("description", "") or "")
-        combined = f"{title} {description}"
+        article_summary = str(row.get("article_summary", "") or "")
+        key_facts_json = str(row.get("key_facts_json", "") or "")
+        combined = " ".join(
+            part for part in [title, article_summary, key_facts_json, description]
+            if part
+        )
+        enriched_metadata = {
+            col: row.get(col, "") for col in ENRICHED_MATCH_COLUMNS
+            if col in articles.columns
+        }
 
         matches = match_single_article(combined, alias_index)
 
@@ -244,6 +265,7 @@ def match_entities(
                         "source": row.get("source", ""),
                         "ticker": ticker,
                         "match_confidence": confidence,
+                        **enriched_metadata,
                     }
                 )
         else:
@@ -257,6 +279,7 @@ def match_entities(
                     "source": row.get("source", ""),
                     "ticker": "UNKNOWN",
                     "match_confidence": "none",
+                    **enriched_metadata,
                 }
             )
             unmatched_urls.append(row.get("url", ""))
@@ -274,7 +297,10 @@ def match_entities(
             UNMATCHED_LOG_PATH,
         )
 
-    matched_df = pd.DataFrame(rows, columns=OUTPUT_COLUMNS)
+    output_columns = OUTPUT_COLUMNS + [
+        col for col in ENRICHED_MATCH_COLUMNS if col in articles.columns
+    ]
+    matched_df = pd.DataFrame(rows, columns=output_columns)
     return matched_df
 
 

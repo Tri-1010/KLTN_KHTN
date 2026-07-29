@@ -1,0 +1,124 @@
+[2026-07-07 06:28:19] [PIPELINE] [INFO] ============================================================
+[2026-07-07 06:28:19] [PIPELINE] [INFO] VN30 Stock Prediction Pipeline
+[2026-07-07 06:28:19] [PIPELINE] [INFO] Step: data | Force: False | Smoke Test: False
+[2026-07-07 06:28:19] [PIPELINE] [INFO] ============================================================
+[2026-07-07 06:28:19] [PIPELINE] [INFO] Configuration loaded and validated from C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-316\test_task_failure_exits_nonzer0\config.yaml
+[2026-07-07 06:28:19] [PIPELINE] [INFO] Tasks to execute: TASK_1
+[2026-07-07 06:28:19] [PIPELINE] [INFO] ============================================================
+[2026-07-07 06:28:19] [PIPELINE] [INFO] VN30 Stock Prediction Pipeline
+[2026-07-07 06:28:19] [PIPELINE] [INFO] Step: data | Force: False | Smoke Test: False
+[2026-07-07 06:28:19] [PIPELINE] [INFO] ============================================================
+[2026-07-07 06:28:19] [PIPELINE] [INFO] Configuration loaded and validated from C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-316\test_task_failure_prints_error0\config.yaml
+[2026-07-07 06:28:19] [PIPELINE] [INFO] Tasks to execute: TASK_1
+[2026-07-07 06:28:19] [PIPELINE] [INFO] ============================================================
+[2026-07-07 06:28:19] [PIPELINE] [INFO] VN30 Stock Prediction Pipeline
+[2026-07-07 06:28:19] [PIPELINE] [INFO] Step: all | Force: False | Smoke Test: True
+[2026-07-07 06:28:19] [PIPELINE] [INFO] ============================================================
+[2026-07-07 06:28:19] [PIPELINE] [INFO] Configuration loaded and validated from C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-316\test_smoke_test_restricts_tick0\config.yaml
+[2026-07-07 06:28:19] [PIPELINE] [INFO] SMOKE TEST mode: restricted to tickers=['VNM', 'VCB', 'FPT'], end_date=2022-12-31
+[2026-07-07 06:28:19] [PIPELINE] [INFO] Tasks to execute: TASK_1, TASK_2, TASK_3, TASK_2B, TASK_4, TASK_5, TASK_6, TASK_7, TASK_8, TASK_9, TASK_10, TASK_11
+[2026-07-07 06:28:19] [PIPELINE] [INFO] ✓ TASK_1 completed in 0.0 seconds
+[2026-07-07 06:28:19] [PIPELINE] [INFO] ✓ TASK_2 completed in 0.0 seconds
+[2026-07-07 06:28:19] [PIPELINE] [INFO] ✓ TASK_3 completed in 0.0 seconds
+[2026-07-07 06:28:19] [PIPELINE] [INFO] ✓ TASK_2B completed in 0.0 seconds
+[2026-07-07 06:28:23] [PIPELINE] [INFO] ✓ TASK_4 completed in 0.0 seconds
+[2026-07-07 06:28:29] [PIPELINE] [INFO] ✓ TASK_5 completed in 0.0 seconds
+[2026-07-07 06:28:31] [PIPELINE] [INFO] ✓ TASK_6 completed in 0.0 seconds
+[2026-07-07 06:28:31] [PIPELINE] [INFO] ✓ TASK_7 completed in 0.0 seconds
+[2026-07-07 06:28:37] [PIPELINE] [INFO] ✓ TASK_8 completed in 0.0 seconds
+[2026-07-07 06:28:39] [PIPELINE] [INFO] ✓ TASK_9 completed in 0.0 seconds
+[2026-07-07 06:28:41] [PIPELINE] [INFO] ✓ TASK_10 completed in 0.0 seconds
+[2026-07-07 06:28:41] [PIPELINE] [INFO] ✓ TASK_11 completed in 0.0 seconds
+[2026-07-07 06:28:41] [PIPELINE] [INFO] Smoke test PASSED — all verifications successful.
+[2026-07-07 06:28:41] [PIPELINE] [INFO] Pipeline completed successfully in 21.3 seconds.
+[2026-07-07 06:28:41] [PIPELINE] [INFO] ============================================================
+[2026-07-07 06:28:41] [PIPELINE] [INFO] VN30 Stock Prediction Pipeline
+[2026-07-07 06:28:41] [PIPELINE] [INFO] Step: all | Force: False | Smoke Test: True
+[2026-07-07 06:28:41] [PIPELINE] [INFO] ============================================================
+[2026-07-07 06:28:41] [PIPELINE] [INFO] Configuration loaded and validated from C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-316\test_smoke_test_runs_all_11_ta0\config.yaml
+[2026-07-07 06:28:41] [PIPELINE] [INFO] SMOKE TEST mode: restricted to tickers=['VNM', 'VCB', 'FPT'], end_date=2022-12-31
+[2026-07-07 06:28:41] [PIPELINE] [INFO] Tasks to execute: TASK_1, TASK_2, TASK_3, TASK_2B, TASK_4, TASK_5, TASK_6, TASK_7, TASK_8, TASK_9, TASK_10, TASK_11
+[2026-07-07 06:28:41] [PIPELINE] [INFO] ✓ TASK_1 completed in 0.0 seconds
+[2026-07-07 06:28:41] [PIPELINE] [INFO] ✓ TASK_2 completed in 0.0 seconds
+[2026-07-07 06:28:41] [PIPELINE] [INFO] ✓ TASK_3 completed in 0.0 seconds
+[2026-07-07 06:28:41] [PIPELINE] [INFO] ✓ TASK_2B completed in 0.0 seconds
+[2026-07-07 06:28:44] [PIPELINE] [INFO] ✓ TASK_4 completed in 0.0 seconds
+[2026-07-07 06:28:51] [PIPELINE] [INFO] ✓ TASK_5 completed in 0.0 seconds
+[2026-07-07 06:28:52] [PIPELINE] [INFO] ✓ TASK_6 completed in 0.0 seconds
+[2026-07-07 06:28:52] [PIPELINE] [INFO] ✓ TASK_7 completed in 0.0 seconds
+[2026-07-07 06:28:58] [PIPELINE] [INFO] ✓ TASK_8 completed in 0.0 seconds
+[2026-07-07 06:28:59] [PIPELINE] [INFO] ✓ TASK_9 completed in 0.0 seconds
+[2026-07-07 06:29:01] [PIPELINE] [INFO] ✓ TASK_10 completed in 0.0 seconds
+[2026-07-07 06:29:01] [PIPELINE] [INFO] ✓ TASK_11 completed in 0.0 seconds
+[2026-07-07 06:29:01] [PIPELINE] [INFO] Smoke test PASSED — all verifications successful.
+[2026-07-07 06:29:01] [PIPELINE] [INFO] Pipeline completed successfully in 20.4 seconds.
+[2026-07-07 06:29:01] [PIPELINE] [INFO] ============================================================
+[2026-07-07 06:29:01] [PIPELINE] [INFO] VN30 Stock Prediction Pipeline
+[2026-07-07 06:29:01] [PIPELINE] [INFO] Step: enrich_news | Force: True | Smoke Test: False
+[2026-07-07 06:29:01] [PIPELINE] [INFO] ============================================================
+[2026-07-07 06:29:01] [PIPELINE] [INFO] Configuration loaded and validated from C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-316\test_force_reaches_task_2b_exe0\config.yaml
+[2026-07-07 06:29:01] [PIPELINE] [INFO] Tasks to execute: TASK_2B
+[2026-07-07 06:29:01] [PIPELINE] [INFO] ✓ TASK_2B completed in 0.0 seconds
+[2026-07-07 06:29:01] [PIPELINE] [INFO] Pipeline completed successfully in 0.1 seconds.
+[2026-07-07 06:35:40] [PIPELINE] [INFO] ============================================================
+[2026-07-07 06:35:40] [PIPELINE] [INFO] VN30 Stock Prediction Pipeline
+[2026-07-07 06:35:40] [PIPELINE] [INFO] Step: data | Force: False | Smoke Test: False
+[2026-07-07 06:35:40] [PIPELINE] [INFO] ============================================================
+[2026-07-07 06:35:40] [PIPELINE] [INFO] Configuration loaded and validated from C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-318\test_task_failure_exits_nonzer0\config.yaml
+[2026-07-07 06:35:40] [PIPELINE] [INFO] Tasks to execute: TASK_1
+[2026-07-07 06:35:40] [PIPELINE] [INFO] ============================================================
+[2026-07-07 06:35:40] [PIPELINE] [INFO] VN30 Stock Prediction Pipeline
+[2026-07-07 06:35:40] [PIPELINE] [INFO] Step: data | Force: False | Smoke Test: False
+[2026-07-07 06:35:40] [PIPELINE] [INFO] ============================================================
+[2026-07-07 06:35:40] [PIPELINE] [INFO] Configuration loaded and validated from C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-318\test_task_failure_prints_error0\config.yaml
+[2026-07-07 06:35:40] [PIPELINE] [INFO] Tasks to execute: TASK_1
+[2026-07-07 06:35:41] [PIPELINE] [INFO] ============================================================
+[2026-07-07 06:35:41] [PIPELINE] [INFO] VN30 Stock Prediction Pipeline
+[2026-07-07 06:35:41] [PIPELINE] [INFO] Step: all | Force: False | Smoke Test: True
+[2026-07-07 06:35:41] [PIPELINE] [INFO] ============================================================
+[2026-07-07 06:35:41] [PIPELINE] [INFO] Configuration loaded and validated from C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-318\test_smoke_test_restricts_tick0\config.yaml
+[2026-07-07 06:35:41] [PIPELINE] [INFO] SMOKE TEST mode: restricted to tickers=['VNM', 'VCB', 'FPT'], end_date=2022-12-31
+[2026-07-07 06:35:41] [PIPELINE] [INFO] Tasks to execute: TASK_1, TASK_2, TASK_3, TASK_2B, TASK_4, TASK_5, TASK_6, TASK_7, TASK_8, TASK_9, TASK_10, TASK_11
+[2026-07-07 06:35:41] [PIPELINE] [INFO] ✓ TASK_1 completed in 0.0 seconds
+[2026-07-07 06:35:41] [PIPELINE] [INFO] ✓ TASK_2 completed in 0.0 seconds
+[2026-07-07 06:35:41] [PIPELINE] [INFO] ✓ TASK_3 completed in 0.0 seconds
+[2026-07-07 06:35:41] [PIPELINE] [INFO] ✓ TASK_2B completed in 0.0 seconds
+[2026-07-07 06:35:44] [PIPELINE] [INFO] ✓ TASK_4 completed in 0.0 seconds
+[2026-07-07 06:35:48] [PIPELINE] [INFO] ✓ TASK_5 completed in 0.0 seconds
+[2026-07-07 06:35:50] [PIPELINE] [INFO] ✓ TASK_6 completed in 0.0 seconds
+[2026-07-07 06:35:50] [PIPELINE] [INFO] ✓ TASK_7 completed in 0.0 seconds
+[2026-07-07 06:35:55] [PIPELINE] [INFO] ✓ TASK_8 completed in 0.0 seconds
+[2026-07-07 06:35:56] [PIPELINE] [INFO] ✓ TASK_9 completed in 0.0 seconds
+[2026-07-07 06:35:57] [PIPELINE] [INFO] ✓ TASK_10 completed in 0.0 seconds
+[2026-07-07 06:35:57] [PIPELINE] [INFO] ✓ TASK_11 completed in 0.0 seconds
+[2026-07-07 06:35:57] [PIPELINE] [INFO] Smoke test PASSED — all verifications successful.
+[2026-07-07 06:35:57] [PIPELINE] [INFO] Pipeline completed successfully in 16.9 seconds.
+[2026-07-07 06:35:57] [PIPELINE] [INFO] ============================================================
+[2026-07-07 06:35:57] [PIPELINE] [INFO] VN30 Stock Prediction Pipeline
+[2026-07-07 06:35:57] [PIPELINE] [INFO] Step: all | Force: False | Smoke Test: True
+[2026-07-07 06:35:57] [PIPELINE] [INFO] ============================================================
+[2026-07-07 06:35:57] [PIPELINE] [INFO] Configuration loaded and validated from C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-318\test_smoke_test_runs_all_11_ta0\config.yaml
+[2026-07-07 06:35:57] [PIPELINE] [INFO] SMOKE TEST mode: restricted to tickers=['VNM', 'VCB', 'FPT'], end_date=2022-12-31
+[2026-07-07 06:35:57] [PIPELINE] [INFO] Tasks to execute: TASK_1, TASK_2, TASK_3, TASK_2B, TASK_4, TASK_5, TASK_6, TASK_7, TASK_8, TASK_9, TASK_10, TASK_11
+[2026-07-07 06:35:57] [PIPELINE] [INFO] ✓ TASK_1 completed in 0.0 seconds
+[2026-07-07 06:35:57] [PIPELINE] [INFO] ✓ TASK_2 completed in 0.0 seconds
+[2026-07-07 06:35:57] [PIPELINE] [INFO] ✓ TASK_3 completed in 0.0 seconds
+[2026-07-07 06:35:58] [PIPELINE] [INFO] ✓ TASK_2B completed in 0.0 seconds
+[2026-07-07 06:36:01] [PIPELINE] [INFO] ✓ TASK_4 completed in 0.0 seconds
+[2026-07-07 06:36:06] [PIPELINE] [INFO] ✓ TASK_5 completed in 0.0 seconds
+[2026-07-07 06:36:07] [PIPELINE] [INFO] ✓ TASK_6 completed in 0.0 seconds
+[2026-07-07 06:36:07] [PIPELINE] [INFO] ✓ TASK_7 completed in 0.0 seconds
+[2026-07-07 06:36:12] [PIPELINE] [INFO] ✓ TASK_8 completed in 0.0 seconds
+[2026-07-07 06:36:14] [PIPELINE] [INFO] ✓ TASK_9 completed in 0.0 seconds
+[2026-07-07 06:36:15] [PIPELINE] [INFO] ✓ TASK_10 completed in 0.0 seconds
+[2026-07-07 06:36:15] [PIPELINE] [INFO] ✓ TASK_11 completed in 0.0 seconds
+[2026-07-07 06:36:15] [PIPELINE] [INFO] Smoke test PASSED — all verifications successful.
+[2026-07-07 06:36:15] [PIPELINE] [INFO] Pipeline completed successfully in 17.4 seconds.
+[2026-07-07 06:36:15] [PIPELINE] [INFO] ============================================================
+[2026-07-07 06:36:15] [PIPELINE] [INFO] VN30 Stock Prediction Pipeline
+[2026-07-07 06:36:15] [PIPELINE] [INFO] Step: enrich_news | Force: True | Smoke Test: False
+[2026-07-07 06:36:15] [PIPELINE] [INFO] ============================================================
+[2026-07-07 06:36:15] [PIPELINE] [INFO] Configuration loaded and validated from C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-318\test_force_reaches_task_2b_exe0\config.yaml
+[2026-07-07 06:36:15] [PIPELINE] [INFO] Tasks to execute: TASK_2B
+[2026-07-07 06:36:15] [PIPELINE] [INFO] ✓ TASK_2B completed in 0.0 seconds
+[2026-07-07 06:36:15] [PIPELINE] [INFO] Pipeline completed successfully in 0.1 seconds.

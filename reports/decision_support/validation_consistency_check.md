@@ -2,7 +2,7 @@
 
 ## 1. Scope
 
-Checked thesis/docs after generating decision-support spec, prompt-safe evidence packs, rule-based decision cards, monitoring events, offline LLM prompt packs and offline rubric prompt packs.
+Checked thesis/docs after generating decision-support spec, prompt-safe evidence packs, rule-based decision cards, monitoring events and full 25-case Gemini Pro LLM evaluation.
 
 Main files checked:
 
@@ -18,8 +18,11 @@ Main files checked:
 - `reports/decision_support/generated/outcome_reviews.md`
 - `reports/decision_support/generated/monitoring_events.csv`
 - `reports/decision_support/generated/monitoring_timeline.json`
-- `reports/decision_support/generated/llm_generation_manifest.json`
+- `reports/decision_support/generated/llm_cards_ml_only.jsonl`
+- `reports/decision_support/generated/llm_cards_full_evidence.jsonl`
+- `reports/decision_support/generated/llm_rubric_scores.csv`
 - `reports/decision_support/generated/llm_rubric_summary.md`
+- `reports/decision_support/generated/llm_generation_manifest.json`
 - `reports/decision_support/generated/generated_summary.md`
 
 ## 2. Metrics consistency
@@ -43,20 +46,18 @@ Generated artifact metrics:
 |---|---:|
 | Evidence packs | 25 |
 | Prompt-safe full-evidence packs | 25 |
-| ML-only prompt packs | 25 |
+| ML-only packs | 25 |
 | Periods | 2025Q1–2026Q1 |
 | Top-K per period | 5 |
 | Positive realized returns | 19 |
 | Negative/neutral realized returns | 6 |
 | Monitoring news events | 3,838 |
-| Offline LLM card prompts | 50 |
-| Offline rubric scoring prompts | 25 |
-
-These values are recorded in `reports/decision_support/generated/manifest.json`, `llm_generation_manifest.json` and `generated_summary.md`.
+| Live Gemini LLM cards | 50 |
+| Live Gemini rubric scores | 75 |
 
 ## 3. Leakage and point-in-time consistency
 
-Status: pass for generated baseline artifacts and prompt packs.
+Status: pass for generated baseline artifacts, prompt packs and full 25-case LLM cards.
 
 Checks:
 
@@ -66,49 +67,63 @@ Checks:
 - News evidence is filtered by `published_at <= decision_date` in the generator.
 - Unit tests enforce no initial leakage and cutoff behavior.
 - LLM generation manifest records `outcome_removed_from_prompt: true`.
+- LLM prompts used prompt-safe packs, not audit packs.
 
 Remaining caution:
 
 - `evidence_packs_audit.json` and backward-compatible `evidence_packs.json` include `outcome_for_review_only`; do not use them for initial LLM prompting.
-- Existing legacy `llm_decision_cards.md` is a prior 3-card Claude Code CLI/sonnet artifact. Current run does not treat it as full LLM result.
+- Existing legacy `llm_decision_cards.md` is a prior 3-card Claude Code CLI/sonnet artifact. Current reported live result uses `llm_cards_*` Gemini artifacts.
 
 ## 4. LLM/API status
 
-Status: live LLM generation pending due to credentials/provider state.
+Status: full 25-case LLM generation completed.
 
-Observed smoke run:
-
-- Command: `python .\scripts\generate_llm_decision_cards.py --variant both --max-packs 3 --output-prefix smoke`
-- Requested provider: `anthropic`
-- SDK: `anthropic-python`
-- Requested model: `claude-opus-4-8`
-- Thinking: `{"type":"adaptive"}`
-- Effort: `high`
-- Temperature: `not_sent`
-- Result: no cards generated.
-- Error: `No active credentials for provider: anthropic`.
-
-Offline fallback completed:
-
-- `llm_prompt_packs_ml_only.jsonl`: 25 prompts.
-- `llm_prompt_packs_full_evidence.jsonl`: 25 prompts.
-- `llm_generation_manifest.json`: status `llm_run_pending_offline`.
-
-`ant auth status` was attempted but `ant` CLI is not installed or not on PATH in this shell. To run live generation later, configure active Anthropic credentials/provider, then rerun:
+Live full command:
 
 ```powershell
-python .\scripts\generate_llm_decision_cards.py --variant both --max-packs 25 --score
+python .\scripts\generate_llm_decision_cards.py --provider gemini --model gemini-2.5-pro --variant both --max-packs 25 --score
 ```
+
+Run metadata:
+
+- Provider: `gemini`
+- SDK: `google-genai`
+- Requested model: `gemini-2.5-pro`
+- Thinking: `not_sent`
+- Effort: `not_sent`
+- Temperature: `not_sent`
+- Variants: `ml_only`, `full_evidence`
+- Decision count: 25
+- Generated cards: 50
+- Generated rubric scores: 75
+- Failures: 0
+
+Outputs:
+
+- `llm_cards_ml_only.md`
+- `llm_cards_ml_only.jsonl`
+- `llm_cards_full_evidence.md`
+- `llm_cards_full_evidence.jsonl`
+- `llm_rubric_scores.csv`
+- `llm_rubric_summary.md`
+- `llm_generation_manifest.json`
 
 ## 5. Rubric status
 
-Status: rubric scoring prompt packs ready; live scoring pending.
+Status: full 25-case rubric scoring completed.
 
-- `scripts/score_decision_cards.py --offline` wrote `llm_rubric_prompt_packs.jsonl`.
-- `llm_rubric_scores.csv` is header-only; no fake scores.
-- `llm_rubric_summary.md` records `scoring_pending_offline`.
-- Scoring uses `evidence_packs_initial.json`, not audit packs with outcome.
-- Rubric measures decision-card quality, not realized return, LLM alpha or portfolio improvement.
+| Card type | n | Faithfulness | Hallucination | ML explanation | Risk | Monitoring | Clarity | Overall | Major hallucinations | Missing refs |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| `llm_full_evidence` | 25 | 5.00 | 5.00 | 5.00 | 4.96 | 5.00 | 5.00 | 5.00 | 0 | 0 |
+| `llm_ml_only` | 25 | 1.28 | 1.00 | 4.72 | 2.04 | 4.56 | 2.12 | 1.16 | 43 | 114 |
+| `rule_based_baseline` | 25 | 4.56 | 4.88 | 4.60 | 4.56 | 5.00 | 4.12 | 4.32 | 2 | 15 |
+
+Interpretation:
+
+- Full-evidence LLM cards score best across all 25 decision records because they can use ML/technical data, point-in-time news evidence, risk flags and data quality flags.
+- ML-only LLM cards explain quantitative signals well, but score poorly on evidence/risk dimensions because the rubric evaluates card quality against full prompt-safe evidence packs.
+- Rule-based baseline is useful and safe, especially for monitoring triggers, but less complete and less clear than full-evidence LLM cards.
+- This is a decision-card quality result, not proof of improved return or LLM alpha.
 
 ## 6. Overclaim check
 
@@ -121,44 +136,31 @@ The thesis and appendices avoid these claims:
 - News layer improves forecast performance.
 - Decision cards are real investment recommendations.
 - Monitoring improves portfolio return without a separate backtest.
-- Pending LLM prompt packs are live LLM results.
 
 Safe framing used:
 
 - ML technical signal is the quantitative core.
 - News is an evidence/context layer.
 - LLM is a controlled explanation and decision-support layer.
-- Generated cards are rule-based baseline unless live LLM output exists.
-- Rubric measures decision-card quality, not return.
+- Generated full-evidence LLM cards are best on the decision-card quality rubric, not on return.
+- Rubric measures decision-card quality, not realized return.
 
 ## 7. Verification commands run
 
 ```powershell
-python -m py_compile .\scripts\generate_decision_support_artifacts.py .\scripts\generate_llm_decision_cards.py .\scripts\monitor_news_events.py .\scripts\score_decision_cards.py
+python -m py_compile .\scripts\llm_provider.py .\scripts\generate_llm_decision_cards.py .\scripts\score_decision_cards.py
 python -m pytest .\tests\test_decision_support.py -q
-python -m pytest .\tests\test_task4_preprocess.py .\tests\test_run_pipeline.py -q
-python .\scripts\generate_decision_support_artifacts.py --write-prompt-packs
-python .\scripts\monitor_news_events.py
-python .\scripts\generate_llm_decision_cards.py --variant both --max-packs 25 --offline
-python .\scripts\score_decision_cards.py --offline
+python .\scripts\generate_llm_decision_cards.py --provider gemini --model gemini-2.5-pro --variant both --max-packs 25 --score
 ```
 
 Results:
 
-- Decision-support tests: 7 passed.
-- Regression tests: 98 passed.
-- Evidence artifacts: regenerated successfully.
-- Monitoring events: regenerated successfully.
-- Offline LLM prompt packs: generated successfully.
-- Offline rubric prompt packs: generated successfully.
+- Decision-support tests: 20 passed.
+- Verification on 2026-07-11 reused completed live artifacts; no provider API was called.
+- Gemini 2.5 Pro generated and scored the cards, so rubric scores may contain self-preference and are not independent human ground truth.
+- Live Gemini full card generation: completed, 50/50 cards.
+- Live Gemini full scoring: completed, 75/75 scores.
 
 ## 8. Final status
 
-Consistency status: pass for current thesis draft, Kiro spec, generated rule-based baseline artifacts, monitoring artifacts and offline prompt packs.
-
-Before final submission, still needed if thesis requires live LLM results:
-
-1. Install/configure active Anthropic credentials/provider in this environment.
-2. Run actual LLM decision-card generation on selected or all evidence packs.
-3. Score rule-based, LLM ML-only and LLM full-evidence cards with rubric.
-4. Replace pending/offline wording with completed live-run metadata only after real outputs exist.
+Consistency status: pass for current thesis draft, Kiro spec, generated rule-based baseline artifacts, monitoring artifacts, provider-neutral Gemini support and full 25-case LLM evaluation.

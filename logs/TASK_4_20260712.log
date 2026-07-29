@@ -1,0 +1,18 @@
+[2026-07-12 09:10:12] [TASK_4] [INFO] ============================================================
+[2026-07-12 09:10:12] [TASK_4] [INFO] START TASK_4: Text Preprocessing (clean, tokenize, deduplicate)
+[2026-07-12 09:10:12] [TASK_4] [INFO] Timestamp: 2026-07-12T09:10:12.833343
+[2026-07-12 09:10:12] [TASK_4] [INFO] ============================================================
+[2026-07-12 09:10:16] [TASK_4] [INFO] Input: data/news/enriched/all_news_enriched.csv (52812 rows)
+[2026-07-12 09:10:16] [TASK_4] [INFO] Input: data/news/matched/all_news_matched.csv (52807 rows)
+[2026-07-12 09:10:16] [TASK_4] [INFO] ------------------------------------------------------------
+[2026-07-12 09:10:16] [TASK_4] [INFO] END TASK_4 — completed in 0.0 seconds
+[2026-07-12 09:10:16] [TASK_4] [INFO] ============================================================
+[2026-07-12 09:10:32] [TASK_4] [INFO] ============================================================
+[2026-07-12 09:10:32] [TASK_4] [INFO] START TASK_4: Text Preprocessing (clean, tokenize, deduplicate)
+[2026-07-12 09:10:32] [TASK_4] [INFO] Timestamp: 2026-07-12T09:10:32.982753
+[2026-07-12 09:10:32] [TASK_4] [INFO] ============================================================
+[2026-07-12 09:10:36] [TASK_4] [INFO] Input: data/news/enriched/all_news_enriched.csv (52812 rows)
+[2026-07-12 09:10:36] [TASK_4] [INFO] Input: data/news/matched/all_news_matched.csv (52807 rows)
+[2026-07-12 09:10:36] [TASK_4] [INFO] ------------------------------------------------------------
+[2026-07-12 09:10:36] [TASK_4] [INFO] END TASK_4 — completed in 0.0 seconds
+[2026-07-12 09:10:36] [TASK_4] [INFO] ============================================================

@@ -129,9 +129,9 @@ Hướng này khác project phổ biến vì:
 
 ## 4. Vai trò của ML trong luận văn
 
-ML là **một đóng góp chính**, nhưng không được viết theo hướng “dự báo chắc thắng”. ML trong luận văn dùng để kiểm định xem các cách biểu diễn tin tức có giúp **lọc/xếp hạng cổ phiếu theo benchmark** tốt hơn keyword/news-count hay không.
+Đóng góp chính là **semantic representation và khả năng truy vết bằng chứng** cho tin tức chứng khoán Việt Nam. ML chỉ là phân tích secondary/exploratory để kiểm tra xem cách biểu diễn này có tạo chênh lệch lọc/xếp hạng so với keyword/news-count trong mẫu lịch sử hay không; kết quả không chứng minh alpha, chiến lược giao dịch hoặc quan hệ nhân quả.
 
-### 4.1. Bài toán ML chính: market-adjusted outperform classification
+### 4.1. Phân tích ML secondary: market-adjusted outperform classification
 
 Không nên chỉ dùng label tăng/giảm tuyệt đối:
 
@@ -499,117 +499,61 @@ Keyword/sentiment/count không trả lời đủ:
 
 ## 9. Câu hỏi nghiên cứu
 
-### RQ1. Vì sao keyword/sentiment/news-as-feature chưa cải thiện dự báo ổn định?
+Dùng namespace `RQ-SM*` để không trùng câu hỏi/giả thuyết legacy trong các report cũ.
 
-Dựa trên kết quả cũ và phân tích mới:
+### RQ-SM1. Keyword/rule representation bỏ sót ngữ cảnh nào?
 
-- tỷ lệ tin low relevance;
-- tỷ lệ tin low materiality;
-- tỷ lệ mixed/unclear direction;
-- ticker matching noise;
-- keyword false positives;
-- boilerplate/duplicate noise.
+Đánh giá low relevance/materiality, mixed/unclear direction, ticker mismatch, boilerplate/duplicate và sai khác accuracy/macro-F1/coverage so với pseudo-label reference.
 
-### RQ2. Schema semantic-news có mô tả tốt hơn chất lượng tin tức không?
+### RQ-SM2. Schema semantic-news và protocol pseudo-label có tạo biểu diễn ổn định, truy vết được không?
 
-Đánh giá bằng:
+Đánh giá label distribution, agreement/disagreement, evidence span, provenance và manual sanity sample. Ba annotation runs chỉ thuộc hai model families, không phải ba hệ độc lập.
 
-- distribution của labels;
-- agreement giữa annotators;
-- ví dụ case cụ thể;
-- khả năng tách tin hữu ích và tin nhiễu.
+### RQ-SM3. Semantic labels có liên hệ với outcome windows khác baseline không?
 
-### RQ3. Keyword/rule baseline sai khác như thế nào so với pseudo labels?
+Đánh giá exploratory association qua T+1/T+5/T+20 return, market-adjusted return, volume, volatility, direct/high-or-medium materiality versus low materiality, support versus risk, event groups và placebo pre-event. Thiết kế quan sát này không nhận dạng tác động nhân quả.
 
-So sánh:
+### RQ-SM4. Semantic features có chênh lệch predictive/ranking so với technical và keyword baselines không?
 
-- event type;
-- direction;
-- relevance;
-- materiality.
+Đánh giá secondary bằng purged OOS balanced accuracy/AUC/F1/Precision@K/rank IC cùng paired/bootstrap deltas. Near-random hoặc unstable deltas là null finding hợp lệ.
 
-Metric:
+### RQ-SM5. Top-K exploratory có khác random null và còn tồn tại sau transaction cost không?
 
-- accuracy vs pseudo labels;
-- macro-F1 vs pseudo labels;
-- confusion matrix;
-- coverage;
-- error analysis.
+Đánh giá non-overlap simulation, random-null comparison và cost sensitivity. Câu hỏi không nhằm chứng minh alpha hoặc chiến lược giao dịch.
 
-### RQ4. Semantic labels có cải thiện ML filtering/ranking so với keyword/news-count không?
+### RQ-SM6. Evidence card, lineage và outcome review có cung cấp technical traceability không?
 
-Đánh giá bằng:
-
-- market-adjusted outperform classification T+20;
-- AUC/BA/F1;
-- Precision@K;
-- ranking IC/Spearman nếu có regression/ranking score;
-- Top-K return simulation sau transaction cost;
-- so sánh technical-only, technical + keyword/news-count, technical + semantic features.
-
-Câu hỏi này không nhằm chứng minh alpha, mà kiểm tra semantic labels có giúp lọc/xếp hạng ứng viên tốt hơn baseline đơn giản trong mô phỏng lịch sử hay không.
-
-### RQ4b. Semantic labels có tạo tín hiệu outcome hợp lý hơn keyword/news-count không?
-
-Đánh giá exploratory bằng:
-
-- event-window return;
-- market-adjusted return;
-- abnormal volume;
-- volatility change;
-- hit-rate theo direction;
-- lift của direct/high-materiality news so với low-materiality/market-wide news.
-
-### RQ5. Semantic labels có giúp giải thích false positives/false negatives của news features không?
-
-Phân tích:
-
-- bài có keyword tích cực nhưng low materiality;
-- bài sentiment tốt nhưng market-wide;
-- bài event quan trọng nhưng keyword bỏ sót;
-- case ML/news feature sai do noisy evidence.
-
-### RQ6. Evidence card và outcome review có giúp hỗ trợ phân tích minh bạch hơn không?
-
-Đánh giá:
-
-- claim có evidence span rõ không;
-- claim có data quality warning không;
-- claim có được hậu kiểm sau T+1/T+5/T+20 không;
-- các case contradicted/confounded có giúp phát hiện giới hạn của semantic labels không;
-- người đọc có truy ngược từ conclusion về article evidence không.
+Đánh giá khả năng truy ngược claim về evidence/artifact/hash và ghi retrospective outcome status. Không suy diễn rằng card cải thiện chất lượng hoặc hiệu quả quyết định của con người.
 
 ---
 
 ## 10. Giả thuyết nghiên cứu
 
-### H1. Keyword/sentiment features yếu vì thiếu relevance và materiality
+Các giả thuyết dưới đây là giả thuyết associational/descriptive, không phải causal hypotheses.
 
-Tin có keyword/sentiment không đồng nghĩa với tin liên quan trực tiếp hoặc trọng yếu.
+### H-SM1. Keyword/rule representation có sai khác tập trung ở relevance, materiality và direction
 
-### H2. Semantic labels giúp phát hiện nhiễu trong dữ liệu tin tức
+Sai khác được đo với controlled pseudo-label reference, không phải human ground truth.
 
-Các field như `ticker_relevance`, `materiality`, `direction`, `evidence_span` giúp tách tin hữu ích khỏi tin nhiễu.
+### H-SM2. Schema semantic-news tạo artifact có khả năng audit tốt hơn count/sentiment đơn giản
 
-### H3. Keyword/rule baseline lệch nhiều ở materiality và direction
+Khả năng audit thể hiện qua evidence span, provenance, disagreement và manual quality-control sample; không đồng nghĩa nhãn đúng ở cấp population.
 
-Keyword có thể bắt event type đơn giản, nhưng khó đánh giá trọng yếu và hướng tác động theo ngữ cảnh.
+### H-SM3. Nhóm semantic có outcome distribution khác nhau trong mẫu quan sát
 
-### H4. AI-assisted pseudo-labeling dùng được như nhãn tham chiếu tạm, nhưng không thay human label
+Direct/high-or-medium materiality và support/risk có thể khác nhóm đối chứng sau correction, nhưng pre-event placebo/confounding có thể bác bỏ diễn giải event-specific; không claim causality.
 
-Agreement cao ở event type/relevance đáng tin hơn; disagreement ở materiality/direction cần phân tích và future human validation.
+### H-SM4. Semantic features có predictive delta khác keyword baseline trong purged OOS evaluation
 
-### H5. Semantic labels cải thiện khả năng lọc/xếp hạng cổ phiếu so với keyword/news-count
+Delta có thể dương, bằng không hoặc âm. Near-random metrics và CI/delta không ổn định được giữ như negative finding.
 
-Trong mô phỏng lịch sử, feature set technical + semantic pseudo-labels kỳ vọng có Precision@K, ranking quality hoặc Top-K excess return tốt hơn technical + keyword/news-count baseline, đặc biệt ở target market-adjusted outperform T+20.
+### H-SM5. Top-K performance không được xem là khác random hoặc bền với chi phí nếu null/cost gates không qua
 
-### H5b. Semantic labels có tín hiệu outcome mạnh hơn keyword/news-count ở nhóm tin trực tiếp và trọng yếu
+Passing accounting checks chỉ xác nhận implementation; không xác nhận alpha.
 
-Các tin `direct` và `high materiality` kỳ vọng có phản ứng outcome rõ hơn nhóm `market_wide`, `irrelevant`, hoặc `low materiality`, đo bằng event-window return, abnormal volume hoặc volatility.
+### H-SM6. Evidence card và lineage tăng technical traceability
 
-### H6. Evidence card giúp giảm overclaim trong hỗ trợ phân tích
-
-Khi mỗi claim bắt buộc có evidence span, confidence, data quality flags và outcome review, hệ thống hỗ trợ phân tích minh bạch hơn dashboard/tóm tắt LLM thông thường.
+Mỗi claim có thể truy về evidence ID, structured artifact và hash. Hypothesis không bao gồm decision quality, user utility hoặc investment suitability.
 
 ---
 

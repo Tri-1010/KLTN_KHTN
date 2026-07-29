@@ -1,16 +1,18 @@
 # Manual sanity check report
 
-This is a small quality-control check, not full human ground truth.
+Small human-authored quality-control bridge; not full ground truth.
 
 - Rows in sheet: 24
-- Rows with any manual check filled: 24
-- human_relevance_ok: ok=23, not_ok=1
-- human_materiality_ok: ok=21, not_ok=3
-- human_direction_ok: ok=23, not_ok=1
-- human_event_type_ok: ok=24, not_ok=0
-- human_evidence_span_ok: ok=23, not_ok=1
+- Rows with any manual label/check: 24
+- Reviewer-backed rows: 0
+- QC status: complete_small_qc
+- human_relevance_ok: ok=23, not_ok=1, reviewed=24
+- human_materiality_ok: ok=21, not_ok=3, reviewed=24
+- human_direction_ok: ok=23, not_ok=1, reviewed=24
+- human_event_type_ok: ok=24, not_ok=0, reviewed=24
+- human_evidence_span_ok: ok=23, not_ok=1, reviewed=24
 
-## Error notes
+## Review notes
 
 - AI/model disagreement or score outlier; keep review flag
 - AI/model disagreement or score outlier; keep review flag
@@ -32,3 +34,5 @@ This is a small quality-control check, not full human ground truth.
 - check direction polarity; AI/model disagreement or score outlier; keep review flag
 - AI/model disagreement or score outlier; keep review flag
 - AI/model disagreement or score outlier; keep review flag
+
+Warning: existing checks lack reviewer provenance; treat as pilot QC, not validated human reference.

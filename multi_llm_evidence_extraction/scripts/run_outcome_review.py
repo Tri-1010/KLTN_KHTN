@@ -17,8 +17,21 @@ OUT = OUTPUT_DIR / "outcome_review_labels.csv"
 REPORT = REPORT_DIR / "outcome_review_report.md"
 CASE_REPORT = REPORT_DIR / "case_studies.md"
 
+DIRECTION_FLAT_BAND = 0.0
+SALIENCE_ABSOLUTE_RETURN = 0.05
+THRESHOLD_METADATA = {
+    "direction_flat_band": DIRECTION_FLAT_BAND,
+    "salience_absolute_return": SALIENCE_ABSOLUTE_RETURN,
+    "return_unit": "decimal_return",
+}
+VERSION_METADATA = {
+    "schema_version": "outcome_review_v2",
+    "label_rule_version": "legacy_outcome_label_v1",
+}
+
 
 def label(direction: str, ret: float | None) -> str:
+    """Preserve legacy outcome_label behavior."""
     if ret is None or pd.isna(ret):
         return "unresolved"
     if direction == "support" and ret > 0:
@@ -30,6 +43,24 @@ def label(direction: str, ret: float | None) -> str:
     if direction in {"neutral", "mixed", "unclear"}:
         return "not_price_relevant"
     return "unresolved"
+
+
+def outcome_direction(direction: str, ret: float | None) -> str:
+    if ret is None or pd.isna(ret):
+        return "unavailable"
+    if abs(ret) <= DIRECTION_FLAT_BAND:
+        return "flat"
+    if direction == "support":
+        return "aligned" if ret > 0 else "opposed"
+    if direction == "risk":
+        return "aligned" if ret < 0 else "opposed"
+    return "unavailable"
+
+
+def outcome_salience(ret: float | None) -> str:
+    if ret is None or pd.isna(ret):
+        return "unavailable"
+    return "salient" if abs(ret) >= SALIENCE_ABSOLUTE_RETURN else "not_salient"
 
 
 def main() -> int:
@@ -50,7 +81,10 @@ def main() -> int:
         CASE_REPORT.write_text("# Case studies\n\nPending semantic labels and event-window outcomes.\n", encoding="utf-8")
         print("wrote pending outcome review")
         return 0
-    t20 = audit[audit["window"].eq("T+20")].copy()
+    if "window" not in audit:
+        t20 = pd.DataFrame()
+    else:
+        t20 = audit[audit["window"].eq("T+20")].copy()
     rows = []
     for _, r in t20.iterrows():
         adjusted = r.get("market_adjusted_return")
@@ -69,19 +103,33 @@ def main() -> int:
             "abnormal_volume": r.get("abnormal_volume"),
             "volatility": r.get("volatility"),
             "max_adverse_move": r.get("max_adverse_move"),
+            "outcome_direction": outcome_direction(direction, adjusted),
+            "outcome_salience": outcome_salience(adjusted),
+            "attribution_status": "unassessed",
             "outcome_label": label(direction, adjusted),
+            "threshold_metadata": THRESHOLD_METADATA.copy(),
+            "version_metadata": VERSION_METADATA.copy(),
             "confounders": ["residual_market_or_company_events_not_modeled"],
             "review_reason": "Rule-based post-hoc label from T+20 VNINDEX-adjusted return; residual confounding remains unmeasured.",
-            "requires_follow_up": False,
+            "requires_follow_up": True,
         })
     schema = load_schema("outcome_review_schema.json")
     for row in rows:
         validate_json(row, schema)
     write_csv(OUT, rows)
     df = pd.DataFrame(rows)
-    lines = ["# Outcome review report", "", "Post-hoc only. Not used in annotation prompts.", ""]
+    lines = [
+        "# Outcome review report", "",
+        "Post-hoc external-consistency audit only. Not used in annotation prompts and not semantic ground truth.", "",
+        "`outcome_label` is retained for legacy compatibility; interpretation uses direction alignment, salience, and unassessed attribution separately.", "",
+    ]
     if not df.empty:
-        lines += [markdown_table(df["outcome_label"].value_counts()), ""]
+        lines += [
+            "## Direction alignment", "", markdown_table(df["outcome_direction"].value_counts()), "",
+            "## Market-response salience", "", markdown_table(df["outcome_salience"].value_counts()), "",
+            "## Attribution status", "", markdown_table(df["attribution_status"].value_counts()), "",
+            "## Legacy outcome labels", "", markdown_table(df["outcome_label"].value_counts()), "",
+        ]
     REPORT.write_text("\n".join(lines), encoding="utf-8")
     CASE_REPORT.write_text("# Case studies\n\nSee `outputs/evidence_cards.md` and `outputs/outcome_review_labels.csv` for selected cases and post-hoc labels.\n", encoding="utf-8")
     print(f"saved {OUT} rows={len(rows)}")

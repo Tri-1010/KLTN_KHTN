@@ -1,0 +1,14 @@
+[2026-07-12 09:09:01] [BACKTEST_LEAKAGE_AUDIT] [INFO] Đã ghi báo cáo kiểm toán rò rỉ → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-384\test_clean_features_pass0\reports\leakage_audit.md
+[2026-07-12 09:09:01] [BACKTEST_LEAKAGE_AUDIT] [INFO] Kiểm toán rò rỉ hoàn tất: passed=True (future=0, label_ok=True, flags=0).
+[2026-07-12 09:09:01] [BACKTEST_LEAKAGE_AUDIT] [WARNING] Rò rỉ trực tiếp: cột nhãn/return tương lai nằm trong feature set: ['return']
+[2026-07-12 09:09:01] [BACKTEST_LEAKAGE_AUDIT] [INFO] Đã ghi báo cáo kiểm toán rò rỉ → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-384\test_label_column_in_features_0\reports\leakage_audit.md
+[2026-07-12 09:09:01] [BACKTEST_LEAKAGE_AUDIT] [INFO] Kiểm toán rò rỉ hoàn tất: passed=False (future=0, label_ok=False, flags=0).
+[2026-07-12 09:09:01] [BACKTEST_LEAKAGE_AUDIT] [WARNING] Rò rỉ trực tiếp: cột nhãn/return tương lai nằm trong feature set: ['label_basic']
+[2026-07-12 09:09:01] [BACKTEST_LEAKAGE_AUDIT] [WARNING] Cờ đỏ: |corr(label_basic, label_basic)| = 1.0000 > 0.95
+[2026-07-12 09:09:01] [BACKTEST_LEAKAGE_AUDIT] [INFO] Đã ghi báo cáo kiểm toán rò rỉ → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-384\test_feature_named_like_label_0\reports\leakage_audit.md
+[2026-07-12 09:09:01] [BACKTEST_LEAKAGE_AUDIT] [INFO] Kiểm toán rò rỉ hoàn tất: passed=False (future=0, label_ok=False, flags=1).
+[2026-07-12 09:09:01] [BACKTEST_LEAKAGE_AUDIT] [WARNING] Cờ đỏ: |corr(sneaky_feature, label_basic)| = 1.0000 > 0.95
+[2026-07-12 09:09:01] [BACKTEST_LEAKAGE_AUDIT] [INFO] Đã ghi báo cáo kiểm toán rò rỉ → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-384\test_high_correlation_feature_0\reports\leakage_audit.md
+[2026-07-12 09:09:01] [BACKTEST_LEAKAGE_AUDIT] [INFO] Kiểm toán rò rỉ hoàn tất: passed=False (future=0, label_ok=True, flags=1).
+[2026-07-12 09:09:01] [BACKTEST_LEAKAGE_AUDIT] [INFO] Đã ghi báo cáo kiểm toán rò rỉ → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-384\test_future_named_feature_clas0\reports\leakage_audit.md
+[2026-07-12 09:09:01] [BACKTEST_LEAKAGE_AUDIT] [INFO] Kiểm toán rò rỉ hoàn tất: passed=False (future=1, label_ok=True, flags=0).

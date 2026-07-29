@@ -1,801 +1,801 @@
 term,ngram,count
-html,unigram,7344
-hđqt,unigram,5027
-năm,unigram,4833
-về,unigram,4724
-thông_báo,unigram,4355
-của,unigram,4297
-và,unigram,4163
-ngân_hàng,unigram,3682
-nghị_quyết,unigram,3659
-cổ_phần,unigram,3659
-việc,unigram,3518
-nghị_quyết hđqt,bigram,3328
-về việc,bigram,3230
-sau,unigram,2909
-tỷ,unigram,2755
-cổ_phiếu,unigram,2676
-việt_nam,unigram,2670
-trong,unigram,2620
-hđqt về,bigram,2450
-cho,unigram,2404
-giao_dịch,unigram,2359
-với,unigram,2331
-thương_mại,unigram,2216
-tăng,unigram,2099
-ngày,unigram,2006
-nbsp,unigram,1981
-đồng,unigram,1964
-ngân_hàng thương_mại,bigram,1959
-thương_mại cổ_phần,bigram,1939
-2025,unigram,1847
-như,unigram,1844
-thay_đổi,unigram,1750
-tỷ đồng,bigram,1703
-như sau,bigram,1686
-2022,unigram,1502
-trái_phiếu,unigram,1449
-thông_qua,unigram,1428
-dong,unigram,1424
-000,unigram,1405
-2024,unigram,1388
-ty,unigram,1363
-để,unigram,1347
-2023,unigram,1336
-phát_hành,unigram,1317
-có,unigram,1294
-quyết_định,unigram,1292
-mua,unigram,1289
-công_bố,unigram,1285
-vốn,unigram,1274
-tại,unigram,1262
-hơn,unigram,1248
-chứng_khoán,unigram,1233
-nam,unigram,1186
-ng,unigram,1185
-các,unigram,1175
-quý,unigram,1136
-từ,unigram,1125
-phát_triển,unigram,1102
-đhđcđ,unigram,1100
-tháng,unigram,1056
-fpt,unigram,1055
-bằng,unigram,1032
-co,unigram,1028
-đầu_tư,unigram,1025
-được,unigram,1024
-10,unigram,1005
-báo_cáo,unigram,989
-chi_nhánh,unigram,989
-2026,unigram,989
-người,unigram,987
-lãi,unigram,983
-hợp_đồng,unigram,979
-tmcp,unigram,978
-phieu,unigram,975
-địa_điểm,unigram,973
-cổ_tức,unigram,955
-hang,unigram,944
-đăng_ký,unigram,924
-co_phieu,unigram,915
-so,unigram,912
-hđqt thông_qua,bigram,910
-quyết_định của,bigram,907
-lợi_nhuận,unigram,901
-ssi,unigram,887
-tiền,unigram,883
-năm 2025,bigram,873
-tập_đoàn,unigram,873
-cổ_đông,unigram,862
-ra,unigram,856
-nhất,unigram,850
-gần,unigram,846
-kết_quả,unigram,836
-cao,unigram,828
-ngân_hàng tmcp,bigram,820
-thông_báo nghị_quyết,bigram,807
-trước,unigram,801
-ocirc,unigram,784
-vingroup,unigram,780
-nay,unigram,777
-vn,unigram,776
-thường_niên,unigram,771
-phê_duyệt,unigram,756
-cua,unigram,753
-kinh_doanh,unigram,748
-ban,unigram,745
-thay_đổi địa_điểm,bigram,745
-khoan,unigram,744
-shb,unigram,737
-của hđqt,bigram,735
-aacute,unigram,733
-quyền,unigram,731
-usd,unigram,728
-index,unigram,725
-cbtt,unigram,721
-lên,unigram,714
-hpg,unigram,712
-vn index,bigram,707
-ty dong,bigram,703
-số,unigram,702
-dau,unigram,701
-đầu,unigram,698
-thực_hiện,unigram,697
-khi,unigram,696
-giảm,unigram,695
-hoa,unigram,693
-agrave,unigram,692
-tcb,unigram,692
-khoi,unigram,686
-triệu,unigram,683
-đến,unigram,682
-năm 2024,bigram,678
-liên_quan,unigram,677
-phien,unigram,674
-chung,unigram,672
-trả,unigram,671
-thuế,unigram,670
-vào,unigram,669
-ngoai,unigram,659
-theo,unigram,657
-việt_nam thông_báo,bigram,645
-cùng,unigram,644
-mwg,unigram,643
-co phieu,bigram,637
-so với,bigram,621
-tuc,unigram,620
-đhđcđ thường_niên,bigram,612
-phat,unigram,611
-nhận,unigram,607
-tổ_chức,unigram,606
-kỳ,unigram,597
-chung khoan,bigram,596
-họp,unigram,596
-phương_án,unigram,592
-hoạt_động,unigram,590
-năm 2023,bigram,590
-vpb,unigram,588
-tài_chính,unigram,581
-thông_báo về,bigram,577
-việc thay_đổi,bigram,575
-vib,unigram,575
-giá,unigram,574
-con,unigram,567
-000 tỷ,bigram,565
-ngan,unigram,564
-thị_trường,unigram,563
-vietinbank,unigram,560
-do,unigram,557
-là,unigram,550
-12,unigram,547
-đạt,unigram,543
-chào_bán,unigram,540
-hdb,unigram,539
-gas,unigram,539
-kế_hoạch,unigram,537
-mới,unigram,534
-năm 2022,bigram,534
-ocirc ng,bigram,534
-lần,unigram,533
-thường_niên năm,bigram,532
-ngan hang,bigram,531
-phòng,unigram,528
-không,unigram,528
-một,unigram,524
-doanh_thu,unigram,523
-khoi ngoai,bigram,521
-11,unigram,521
-tín_dụng,unigram,519
-trên,unigram,519
-tiep,unigram,519
-tăng_trưởng,unigram,517
-đã,unigram,510
-sẽ,unigram,505
-qua,unigram,501
-vcb,unigram,496
-vic,unigram,496
-phát_hành cổ_phiếu,bigram,494
-rong,unigram,494
-hồ,unigram,493
-ông,unigram,489
-acb,unigram,487
-cấp,unigram,484
-tp,unigram,484
-bidv,unigram,484
-lớn,unigram,483
-hom,unigram,483
-ctcp,unigram,480
-đầu năm,bigram,479
-hom nay,bigram,479
-mbb,unigram,478
-ngày đkcc,bigram,473
-đkcc,unigram,473
-phiên,unigram,472
-bán,unigram,472
-đợt,unigram,469
-thành_lập,unigram,469
-lại,unigram,466
-quốc_tế,unigram,465
-th,unigram,461
-novaland,unigram,460
-giữa,unigram,458
-tien,unigram,456
-masan,unigram,455
-vốn_điều_lệ,unigram,455
-có liên_quan,bigram,453
-nhat,unigram,452
-cổ,unigram,451
-tài_liệu,unigram,449
-tỷ_lệ,unigram,447
-họp đhđcđ,bigram,446
-chốt,unigram,441
-tu,unigram,436
-vay,unigram,434
-báo_cáo kết_quả,bigram,433
-vpbank,unigram,430
-thành_phố,unigram,429
-ctg,unigram,425
-voi,unigram,424
-thực_hiện quyền,bigram,424
-nbsp thông_báo,bigram,423
-tin,unigram,422
-hđqt phê_duyệt,bigram,422
-cùng kỳ,bigram,422
-th ocirc,bigram,420
-tức,unigram,420
-thu,unigram,420
-nhiều,unigram,420
-chi,unigram,417
-bid,unigram,413
-hạn_mức,unigram,411
-techcombank,unigram,410
-cổ tức,bigram,409
-bao,unigram,408
-sửa_đổi,unigram,407
-điểm,unigram,407
-thành_phố hồ,bigram,407
-và phát_triển,bigram,407
-giải_trình,unigram,407
-trieu,unigram,405
-truong,unigram,402
-stb,unigram,401
-bổ_sung,unigram,400
-đầu_tư và,bigram,400
-hoa phat,bigram,399
-vinhomes,unigram,399
-000 ty,bigram,396
-vhm,unigram,393
-hcm,unigram,392
-20,unigram,391
-với cùng,bigram,388
-mạnh,unigram,388
-gòn,unigram,387
-văn_bản,unigram,387
-nội_dung,unigram,387
-moi,unigram,386
-sài,unigram,385
-chí_minh,unigram,381
-lấy,unigram,379
-hồ chí_minh,bigram,379
-phòng giao_dịch,bigram,378
-tổng_công_ty,unigram,377
-thêm,unigram,375
-chia,unigram,375
-sài gòn,bigram,375
-esop,unigram,374
-nội_bộ,unigram,373
-hai,unigram,373
-ngay,unigram,372
-tp hcm,bigram,372
-kỹ_thương,unigram,371
-500,unigram,369
-về ngày,bigram,368
-sacombank,unigram,368
-bctc,unigram,367
-tiếp_tục,unigram,366
-thông_báo nbsp,bigram,365
-giam,unigram,365
-kỹ_thương việt_nam,bigram,364
-2021,unigram,362
-riêng_lẻ,unigram,361
-xanh,unigram,361
-gan,unigram,358
-giao_dịch chứng_khoán,bigram,355
-cổ_phiếu để,bigram,353
-thông_qua hợp_đồng,bigram,353
-duoc,unigram,352
-điều_chỉnh,unigram,351
-bat,unigram,351
-ssb,unigram,350
-đặt,unigram,350
-30,unigram,349
-thang,unigram,348
-hà_nội,unigram,348
-giao_dịch với,bigram,347
-chủ_tịch,unigram,346
-thế_giới,unigram,345
-trụ_sở,unigram,345
-cổ_phần đầu_tư,bigram,341
-ng aacute,bigram,341
-ý_kiến,unigram,339
-mục_tiêu,unigram,339
-mức,unigram,337
-vietcombank,unigram,337
-để thực_hiện,bigram,333
-hdbank,unigram,333
-công_chúng,unigram,333
-cổ_phiếu của,bigram,329
-msn,unigram,329
-ra công_chúng,bigram,328
-dự_án,unigram,328
-15,unigram,328
-cuối_cùng,unigram,328
-chấp_thuận,unigram,326
-lấy ý_kiến,bigram,326
-bảo_hiểm,unigram,326
-người nội_bộ,bigram,325
-vnm,unigram,324
-the,unigram,324
-triển_khai,unigram,324
-nh,unigram,324
-đăng_ký cuối_cùng,bigram,323
-bằng văn_bản,bigram,322
-ngày đăng_ký,bigram,321
-lon,unigram,321
-sang,unigram,320
-thông_báo thay_đổi,bigram,319
-chi_trả,unigram,318
-100,unigram,318
-lãi_suất,unigram,317
-kỷ_lục,unigram,314
-tăng vốn,bigram,313
-lai,unigram,313
-tiền_mặt,unigram,313
-năm 2026,bigram,313
-trả cổ_tức,bigram,312
-cp,unigram,312
-ky,unigram,312
-công_văn,unigram,311
-thanh_toán,unigram,311
-dự_kiến,unigram,310
-ý_kiến cổ_đông,bigram,309
-thịnh_vượng,unigram,308
-cổ_đông bằng,bigram,308
-nhuan,unigram,308
-việt_nam nbsp,bigram,308
-thi,unigram,306
-diem,unigram,306
-tức năm,bigram,302
-tới,unigram,302
-việt_nam thịnh_vượng,bigram,302
-giấy,unigram,301
-nhnn,unigram,301
-muốn,unigram,298
-quân_đội,unigram,298
-tpb,unigram,298
-hàng,unigram,298
-phát_triển thành_phố,bigram,298
-tên,unigram,298
-sở,unigram,297
-phát_hành trái_phiếu,bigram,296
-nâng,unigram,296
-da,unigram,296
-nhóm,unigram,295
-dat,unigram,295
-công_bố nghị_quyết,bigram,294
-vietjet,unigram,292
-pv,unigram,292
-tiep tuc,bigram,290
-trong năm,bigram,290
-việc thông_qua,bigram,290
-va,unigram,289
-di_động,unigram,289
-hđqt số,bigram,287
-thông_báo ngày,bigram,287
-công_văn của,bigram,285
-tuan,unigram,284
-hóa,unigram,284
-kiểm_toán,unigram,283
-thế_giới di_động,bigram,282
-công_nghiệp,unigram,282
-acirc,unigram,282
-năm trước,bigram,281
-tháng đầu,bigram,280
-việc phê_duyệt,bigram,280
-17,unigram,279
-vượt,unigram,278
-của người,bigram,278
-công_thương,unigram,277
-bằng tiền,bigram,277
-đối_với,unigram,276
-giao,unigram,275
-còn,unigram,275
-bcm,unigram,272
-tăng vốn_điều_lệ,bigram,272
-điều_lệ,unigram,271
-thông_tin,unigram,269
-thứ,unigram,269
-niêm_yết,unigram,269
-agrave ng,bigram,269
-sở giao_dịch,bigram,268
-giao_dịch cổ_phiếu,bigram,265
-chí_minh thông_báo,bigram,264
-quỹ,unigram,262
-cổ_phần quân_đội,bigram,261
-pgd,unigram,261
-vinamilk,unigram,261
-25,unigram,261
-cuối,unigram,260
-chứng_nhận,unigram,260
-hợp_tác,unigram,259
-nhà_đầu_tư,unigram,259
-làm,unigram,259
-đang,unigram,258
-kỳ năm,bigram,258
-cong,unigram,257
-nước,unigram,257
-nbsp nghị_quyết,bigram,256
-cao nhất,bigram,256
-du_an,unigram,255
-gdkhq,unigram,255
-ngày gdkhq,bigram,255
-triệu cổ_phiếu,bigram,254
-của ngân_hàng,bigram,254
-để trả,bigram,253
-ngành,unigram,252
-giấy chứng_nhận,bigram,252
-pow,unigram,251
-acirc agrave,bigram,250
-nợ,unigram,250
-có_thể,unigram,250
-tỷ giá,bigram,249
-dan,unigram,247
-top,unigram,245
-mot,unigram,245
-phát_triển việt_nam,bigram,244
-dòng,unigram,244
-chủ_trương,unigram,243
-tro,unigram,243
-lo,unigram,242
-ký,unigram,241
-viet,unigram,241
-ng acirc,bigram,240
-tam_diem,unigram,239
-200,unigram,239
-địa_chỉ,unigram,238
-luc,unigram,238
-no,unigram,237
-thành_viên,unigram,236
-thông_báo quyết_định,bigram,235
-nhận được,bigram,234
-tuần,unigram,230
-công_thương việt_nam,bigram,230
-cổ_phần sài,bigram,229
-trả cổ,bigram,229
-đề_xuất,unigram,229
-phương_án phát_hành,bigram,229
-nha,unigram,229
-dang,unigram,228
-bị,unigram,228
-danh_sách,unigram,226
-18,unigram,226
-sao,unigram,225
-trong quý,bigram,225
-ngoại,unigram,224
-cổ_phần công_thương,bigram,223
-vao,unigram,223
-nhưng,unigram,223
-nhieu,unigram,223
-tỷ usd,bigram,223
-tham_dự,unigram,222
-điện,unigram,222
-tình_hình,unigram,221
-phó,unigram,221
-người có,bigram,220
-khối,unigram,220
-trai,unigram,220
-tài_sản,unigram,219
-vẫn,unigram,218
-300,unigram,218
-tổng_giám_đốc,unigram,217
-gia,unigram,216
-vjc,unigram,216
-tnhh,unigram,215
-hòa,unigram,214
-nvl,unigram,214
-14,unigram,213
-thủ_tướng,unigram,212
-chia cổ_tức,bigram,211
-tmcp kỹ_thương,bigram,211
-biến_động,unigram,211
-muc,unigram,209
-dich,unigram,208
-bên,unigram,208
-tiên_phong,unigram,208
-long,unigram,207
-kết_quả kinh_doanh,bigram,207
-chưa,unigram,207
-năm 2021,bigram,207
-tcb nghị_quyết,bigram,207
-liên_quan đến,bigram,206
-nbsp th,bigram,205
-tmcp việt_nam,bigram,205
-dịch_vụ,unigram,205
-thay_đổi địa_chỉ,bigram,205
-gvr,unigram,204
-việt_nam công_bố,bigram,204
-thuong,unigram,203
-trong tháng,bigram,203
-co_dong,unigram,202
-thi truong,bigram,201
-nhờ,unigram,201
-cổ_phần tập_đoàn,bigram,201
-giấy_phép,unigram,201
-quốc_tế việt_nam,bigram,200
-nhà,unigram,200
-bất_thường,unigram,200
-khách_hàng,unigram,200
-giữ,unigram,199
-ngoại_thương,unigram,198
-những,unigram,198
-tài_liệu họp,bigram,198
-mb,unigram,198
-hợp_đồng giao_dịch,bigram,198
-cong_ty,unigram,197
-ba,unigram,197
-ngoại_thương việt_nam,bigram,197
-16,unigram,196
-ocirc ng_ty,bigram,195
-trụ_sở chi_nhánh,bigram,195
-50,unigram,195
-them,unigram,195
-ng_ty,unigram,195
-sab,unigram,195
-sắp,unigram,193
-bvh,unigram,193
-13,unigram,193
-chiến_lược,unigram,192
-giúp,unigram,192
-nửa,unigram,192
-ubcknn,unigram,192
-cổ_tức bằng,bigram,192
-doanh_nghiep,unigram,192
-cbtt về,bigram,191
-dinh,unigram,191
-chứng_nhận đăng_ký,bigram,191
-địa_điểm chi_nhánh,bigram,190
-đồng trong,bigram,190
-19,unigram,189
-22,unigram,189
-chiều,unigram,188
-quản_trị,unigram,188
-trước thuế,bigram,188
-truoc,unigram,187
-petrolimex,unigram,187
-báo,unigram,187
-noi,unigram,186
-aacute nbsp,bigram,186
-26,unigram,186
-cần,unigram,186
-địa_điểm phòng,bigram,185
-retail,unigram,185
-tmcp phát_triển,bigram,185
-gioi,unigram,184
-chuyen,unigram,184
-trung_tâm,unigram,184
-400,unigram,183
-dien,unigram,182
-ha,unigram,182
-công_bố báo_cáo,bigram,182
-sàn,unigram,182
-tang,unigram,181
-ngo,unigram,180
-thành,unigram,179
-sử_dụng,unigram,179
-vuot,unigram,179
-nguồn,unigram,179
-giao dich,bigram,178
-mua lại,bigram,178
-ban rong,bigram,178
-kinh_tế,unigram,177
-chỉ,unigram,177
-suat,unigram,177
-mat,unigram,177
-24,unigram,177
-gelex,unigram,177
-kết_quả giao_dịch,bigram,176
-trái_phiếu ra,bigram,176
-đặt mục_tiêu,bigram,176
-plx,unigram,175
-tin tuc,bigram,175
-của ubcknn,bigram,175
-dòng tiền,bigram,175
-mở_rộng,unigram,175
-thep,unigram,174
-tai,unigram,174
-chương_trình,unigram,174
-sở_hữu,unigram,174
-cổ_phần quốc_tế,bigram,174
-khu,unigram,174
-cổ_phần tiên_phong,bigram,174
-và hoạt_động,bigram,173
-link,unigram,173
-chào_bán trái_phiếu,bigram,173
-hạn_mức tín_dụng,bigram,173
-tập_đoàn vingroup,bigram,173
-gọi,unigram,172
-tuc chung,bigram,172
-vpb nghị_quyết,bigram,172
-lập,unigram,172
-tổ_chức đhđcđ,bigram,171
-gòn hà_nội,bigram,171
-mang,unigram,171
-xây_dựng,unigram,171
-01,unigram,171
-600,unigram,171
-phát,unigram,170
-tín_dụng cho,bigram,170
-khong,unigram,170
-cổ_phần chứng_khoán,bigram,170
-việt,unigram,170
-sap,unigram,169
-cho vay,bigram,169
-của nhnn,bigram,169
-h00,unigram,169
-tieu,unigram,168
-đkcc để,bigram,167
-này,unigram,167
-gửi,unigram,166
-hàng_không,unigram,166
-bền_vững,unigram,166
-06,unigram,165
-thông_báo giao_dịch,bigram,165
-khoản,unigram,164
-chuyển_nhượng,unigram,164
-biên_bản,unigram,164
-thông_báo nhận,bigram,164
-sau thuế,bigram,163
-khối ngoại,bigram,163
-h00 hom,bigram,163
-de,unigram,163
-27,unigram,163
-quản_lý,unigram,163
-cao_su,unigram,163
-thỏa_thuận,unigram,163
-gấp,unigram,162
-bộ,unigram,162
-gia gas,bigram,162
-mua rong,bigram,162
-hôm_nay,unigram,162
-chi_trả cổ,bigram,161
-kết_quả phát_hành,bigram,161
-việc chấp_thuận,bigram,161
-chu_tich,unigram,161
-hose,unigram,161
-han,unigram,160
-van,unigram,160
-ubcknn về,bigram,160
-liên_tiếp,unigram,160
-chứng_khoán ssi,bigram,159
-cả,unigram,159
-ke,unigram,159
-thông_báo hđqt,bigram,159
-gốc,unigram,158
-the gioi,bigram,157
-thương_mại cổ_phần_đông,bigram,157
-vì,unigram,157
-quân_đội thông_báo,bigram,157
-gui,unigram,157
-cổ_phần_đông,unigram,157
-lai suat,bigram,157
-bằng tiền_mặt,bigram,156
-xăng_dầu,unigram,156
-năm nay,bigram,156
-hòa phát,bigram,155
-lãnh_đạo,unigram,155
-đăng_ký giao_dịch,bigram,155
-chuỗi,unigram,154
-đó,unigram,154
-cổ_phiếu esop,bigram,154
-đhđcđ bất_thường,bigram,153
-thay_đổi tên,bigram,152
-thành_lập và,bigram,151
-cổ_phần kỹ_thương,bigram,151
-để tăng,bigram,151
-giá usd,bigram,150
-cổ_phần thông_báo,bigram,150
-lần thứ,bigram,150
-thông_qua giao_dịch,bigram,149
-vingroup cổ_phần,bigram,147
-2024 ngân_hàng,bigram,146
-ký hợp_đồng,bigram,145
-phê_duyệt phương_án,bigram,144
-việt_nam cổ_phần,bigram,144
-việc cấp,bigram,143
-gas hom,bigram,143
-tên gọi,bigram,142
-viet nam,bigram,142
-tập_đoàn masan,bigram,142
-tcb quyết_định,bigram,140
-2022 như,bigram,140
-nbsp như,bigram,140
-cấp hạn_mức,bigram,140
-phat hpg,bigram,139
-novaland nvl,bigram,139
-báo lãi,bigram,139
-usd hôm_nay,bigram,138
-ng thương_mại,bigram,138
-phát_triển công_nghiệp,bigram,138
-trieu co_phieu,bigram,135
-dong phien,bigram,135
-hoạt_động của,bigram,135
-lãi trái_phiếu,bigram,135
-trái_phiếu riêng_lẻ,bigram,134
-chứng_khoán tp,bigram,133
-cổ_phần phát_triển,bigram,133
-2023 như,bigram,132
-cuối_cùng để,bigram,132
-sau khi,bigram,132
-thịnh_vượng thông_báo,bigram,132
-pv power,bigram,132
-nbsp quyết_định,bigram,132
-bằng cổ_phiếu,bigram,131
-tmcp ngoại_thương,bigram,131
-vincom retail,bigram,130
-bat ngo,bigram,130
-ra sao,bigram,130
-nam 2022,bigram,129
-pv gas,bigram,128
-địa_điểm trụ_sở,bigram,128
-ssi thông_báo,bigram,127
-lợi_nhuận sau,bigram,127
-vốn cổ_phần,bigram,127
-trai phieu,bigram,126
-ng_ty cổ_phần,bigram,126
-gioi di_dong,bigram,125
-phòng gd,bigram,125
-giải_trình biến_động,bigram,125
-việc sửa_đổi,bigram,125
-nbsp công_bố,bigram,125
-công_bố quyết_định,bigram,124
-thanh_toán gốc,bigram,124
-bất_thường năm,bigram,123
-nhnn về,bigram,123
-quyền tham_dự,bigram,123
-chốt danh_sách,bigram,123
-chào_bán cổ_phiếu,bigram,123
-giao_dịch giữa,bigram,122
-giải_trình chênh_lệch,bigram,122
-thành_viên hđqt,bigram,121
-quý 2022,bigram,121
-quý 2023,bigram,121
-tổng_công_ty đầu_tư,bigram,120
-cuối năm,bigram,120
-gốc lãi,bigram,119
-trong nam,bigram,119
-với người,bigram,119
-thông_qua việc,bigram,118
-tình_hình thanh_toán,bigram,118
-thông_qua phương_án,bigram,118
-quyết_định về,bigram,118
-nbsp ngân_hàng,bigram,118
-hcm thông_báo,bigram,118
-gòn thương_tín,bigram,117
-với bên,bigram,117
-giấy_phép thành_lập,bigram,117
-thay_đổi lần,bigram,116
-phê_duyệt giao_dịch,bigram,116
-cho người,bigram,116
-link công_bố,bigram,115
-tổ_chức có,bigram,114
-hdb thông_báo,bigram,113
-thông_báo công_văn,bigram,113
-quý 2025,bigram,113
-tạm_ứng cổ_tức,bigram,113
-cổ_phần_đông nam_á,bigram,112
-chốt quyền,bigram,112
-tiet kiem,bigram,112
-bên có,bigram,112
-stb nghị_quyết,bigram,112
-cấp tín_dụng,bigram,111
-500 tỷ,bigram,111
+và,unigram,608432
+trong,unigram,251638
+của,unigram,221787
+năm,unigram,209029
+cổ_phiếu,unigram,201659
+với,unigram,186029
+tỷ,unigram,179777
+giao_dịch,unigram,172525
+tài_chính,unigram,172089
+đồng,unigram,170644
+các,unigram,164487
+thị_trường,unigram,149540
+đầu_tư,unigram,147342
+tỷ đồng,bigram,146281
+tăng,unigram,135108
+ngày,unigram,134097
+ngân_hàng,unigram,132225
+được,unigram,124144
+dịch_vụ,unigram,121186
+về,unigram,119989
+từ,unigram,119275
+cho,unigram,111998
+đã,unigram,104420
+là,unigram,103060
+phân_tích,unigram,102271
+ngành,unigram,94455
+có,unigram,90664
+việc,unigram,90222
+báo_cáo,unigram,90179
+sau,unigram,90089
+hơn,unigram,88946
+2026,unigram,86263
+tại,unigram,86254
+trái_phiếu,unigram,85487
+vốn,unigram,82588
+hàng,unigram,80137
+cổ_phần,unigram,79622
+thương_mại,unigram,76920
+chăm_sóc,unigram,76453
+kinh_tế,unigram,76208
+khi,unigram,74815
+cổ_đông,unigram,73971
+chứng_khoán,unigram,73238
+niêm_yết,unigram,72859
+đến,unigram,71291
+số,unigram,69736
+hóa,unigram,69377
+2025,unigram,67366
+việt_nam,unigram,66807
+tháng,unigram,66360
+để,unigram,64706
+thiết_bị,unigram,64409
+hđqt,unigram,63792
+trước,unigram,63410
+kinh_doanh,unigram,63165
+tổng_quan,unigram,62346
+giá,unigram,61730
+giảm,unigram,61724
+thông_báo,unigram,61616
+trên,unigram,61365
+đó,unigram,61348
+đạt,unigram,61296
+mới,unigram,60553
+nội_bộ,unigram,60532
+so,unigram,60323
+so với,bigram,59299
+vĩ_mô,unigram,59060
+theo,unigram,59033
+sản_phẩm,unigram,57595
+thống_kê,unigram,55864
+thuế,unigram,55723
+không,unigram,55280
+gần,unigram,55225
+nghị_quyết,unigram,55192
+vào,unigram,55107
+một,unigram,53930
+như,unigram,53540
+thống_kê giao_dịch,bigram,53346
+dự_án,unigram,53303
+tài_liệu,unigram,52965
+lớn,unigram,52920
+nhất,unigram,52561
+hoạt_động,unigram,52193
+mức,unigram,52179
+triệu,unigram,51683
+phát_hành,unigram,51602
+nhà_đầu_tư,unigram,51374
+thông_tin,unigram,50936
+đầu,unigram,50606
+này,unigram,49550
+dữ_liệu,unigram,49441
+hàng_không,unigram,47784
+cùng,unigram,47600
+sự,unigram,47430
+quyết_định,unigram,47408
+xây_dựng,unigram,47308
+lên,unigram,47047
+phiên,unigram,46354
+giá_trị,unigram,45955
+cổ_tức,unigram,45892
+ra,unigram,45805
+cao,unigram,45479
+tiền,unigram,45457
+kỹ_thuật,unigram,45433
+tổ_chức,unigram,45348
+sẽ,unigram,44958
+tăng_trưởng,unigram,44940
+tập_đoàn,unigram,44882
+giao_dịch nội_bộ,bigram,44502
+tiếp_tục,unigram,44132
+đhđcđ,unigram,43928
+2024,unigram,43677
+đang,unigram,42193
+xe,unigram,42141
+người,unigram,41739
+tiêu_dùng,unigram,41632
+tín_dụng,unigram,41629
+thế_giới,unigram,41306
+sống,unigram,41105
+công_nghiệp,unigram,41024
+lợi_nhuận,unigram,40738
+mua,unigram,40633
+phát_triển,unigram,40300
+nhiều,unigram,40221
+kinh_tế đầu_tư,bigram,40019
+công_bố,unigram,39619
+07,unigram,39520
+còn,unigram,39516
+10,unigram,39458
+và dịch_vụ,bigram,39351
+2023,unigram,39181
+những,unigram,39072
+bảo_hiểm,unigram,38994
+công_nghệ,unigram,38922
+vàng,unigram,38746
+cá_nhân,unigram,38735
+về việc,bigram,38132
+bán,unigram,38131
+quý,unigram,37892
+cũng,unigram,36719
+nghị_quyết hđqt,bigram,36617
+000,unigram,36612
+ông,unigram,36365
+11,unigram,36264
+thiết_yếu,unigram,36157
+thiết_bị và,bigram,35624
+tổng_quan thống_kê,bigram,35560
+vận_tải,unigram,34824
+thường_niên,unigram,34652
+30,unigram,33662
+lại,unigram,33644
+liên_quan,unigram,33634
+báo_cáo tài_chính,bigram,33390
+làm,unigram,33338
+nâng,unigram,32978
+sức,unigram,32939
+ctcp,unigram,32936
+28,unigram,32705
+đặt,unigram,32701
+thực_phẩm,unigram,32624
+lãi,unigram,32504
+tổng_hợp,unigram,32185
+phân_tích kỹ_thuật,bigram,32154
+hạ_tầng,unigram,31931
+kỳ,unigram,31921
+vẫn,unigram,31792
+06,unigram,31565
+đầu năm,bigram,31494
+mạnh,unigram,31418
+năm 2025,bigram,31401
+nhóm,unigram,30681
+thêm,unigram,30549
+bất_động_sản,unigram,30085
+thay_đổi,unigram,30006
+doanh_thu,unigram,29921
+hose,unigram,29590
+bán_lẻ,unigram,29581
+quỹ,unigram,28577
+usd,unigram,28387
+khác,unigram,28322
+tài_chính ngân_hàng,bigram,28169
+20,unigram,28149
+thông_qua,unigram,28041
+etf,unigram,27935
+quốc_tế,unigram,27279
+hợp_đồng,unigram,27272
+khỏe,unigram,27269
+sức khỏe,bigram,27134
+kim_loại,unigram,26951
+thực_hiện,unigram,26833
+cổ_phiếu giao_dịch,bigram,26814
+chăm_sóc sức,bigram,26782
+nhà_đất,unigram,26759
+sản_phẩm chăm_sóc,bigram,26700
+stttt,unigram,26670
+3848,unigram,26670
+mục_tiêu,unigram,26653
+kế_hoạch,unigram,26642
+tới,unigram,26547
+khoảng,unigram,26287
+tổng,unigram,26168
+tỷ_lệ,unigram,25683
+như sau,bigram,25295
+quy_định,unigram,25062
+cùng kỳ,bigram,25022
+chính_sách,unigram,24927
+chỉ,unigram,24869
+áp_lực,unigram,24816
+tài_sản,unigram,24773
+pnj,unigram,24670
+kết_quả,unigram,24576
+hàng hóa,bigram,24509
+và các,bigram,24507
+02,unigram,24435
+nhận,unigram,24331
+ng,unigram,24280
+13,unigram,24254
+điều_chỉnh,unigram,24169
+ghi_nhận,unigram,24143
+nước_ngoài,unigram,23929
+hđqt về,bigram,23925
+chi_tiết,unigram,23873
+chiến_lược,unigram,23865
+trở_thành,unigram,23731
+công_cụ,unigram,23610
+duy_trì,unigram,23545
+quan_hệ,unigram,23463
+phân_phối,unigram,23379
+sức_khỏe,unigram,23137
+12,unigram,23082
+giải_trí,unigram,23054
+ir,unigram,23002
+sở_hữu,unigram,22981
+thương_mại và,bigram,22931
+đơn_vị,unigram,22906
+lãi_suất,unigram,22864
+bằng,unigram,22819
+cuối,unigram,22777
+tp,unigram,22769
+đăng_ký,unigram,22755
+2022,unigram,22749
+ý_kiến,unigram,22659
+bản_đồ,unigram,22648
+sang,unigram,22643
+với cùng,bigram,22503
+chăm_sóc sức_khỏe,bigram,22487
+quan_hệ nhà_đầu_tư,bigram,22360
+thị_trường_chứng_khoán,unigram,22294
+năm 2024,bigram,22279
+dịch_vụ chăm_sóc,bigram,22268
+nhà_đầu_tư ir,bigram,22260
+khai_giảng,unigram,22235
+a_z,unigram,22230
+sự sống,bigram,22187
+quy_mô,unigram,22113
+nông_sản,unigram,21922
+cập_nhật,unigram,21783
+chuyên_gia,unigram,21667
+hcm,unigram,21570
+điện,unigram,21386
+dự_kiến,unigram,21160
+cấp,unigram,21100
+khách_hàng,unigram,21018
+năm 2026,bigram,20938
+bị,unigram,20922
+fpt,unigram,20819
+ngân_hàng thương_mại,bigram,20584
+vừa,unigram,20572
+câu_chuyện,unigram,20546
+năng_lượng,unigram,20394
+tăng vốn,bigram,20367
+nhà,unigram,20310
+tương_lai,unigram,20271
+đhđcđ thường_niên,bigram,20203
+nhưng,unigram,19847
+bổ_sung,unigram,19823
+qua,unigram,19669
+quy_hoạch,unigram,19638
+tp hcm,bigram,19624
+chứng_quyền,unigram,19611
+cơ_bản,unigram,19586
+do,unigram,19506
+gia_đình,unigram,19415
+giúp,unigram,19242
+ngày 02,bigram,19194
+trong đó,bigram,19132
+đồng tăng,bigram,19132
+đây,unigram,19128
+tích_cực,unigram,18954
+hoạt_động kinh_doanh,bigram,18915
+vai_trò,unigram,18827
+84,unigram,18821
+điểm,unigram,18790
+chuyên_nghiệp,unigram,18789
+đặc_biệt,unigram,18671
+dược_phẩm,unigram,18603
+đáng,unigram,18592
+logistics,unigram,18557
+đồ,unigram,18533
+trong việc,bigram,18505
+qđ,unigram,18495
+hệ_thống,unigram,18467
+index,unigram,18371
+quyết_định số,bigram,18359
+uống,unigram,18354
+thương_mại cổ_phần,bigram,18340
+trung_tâm,unigram,18336
+thanh_khoản,unigram,18229
+chỉ_số,unigram,18207
+vay,unigram,18201
+vì,unigram,18199
+lần,unigram,18191
+đồ uống,bigram,18166
+khối,unigram,18148
+tối,unigram,18063
+kinh_tế vĩ_mô,bigram,18054
+kiến_thức,unigram,18010
+bộ,unigram,17993
+hợp_đồng tương_lai,bigram,17990
+linh_kiện,unigram,17954
+nước,unigram,17950
+thời_trang,unigram,17947
+cp,unigram,17938
+tối_đa,unigram,17910
+100,unigram,17907
+trong khi,bigram,17895
+dịch_vụ tiêu_dùng,bigram,17864
+lỗ,unigram,17841
+etf và,bigram,17833
+thuốc_lá,unigram,17827
+chăm_sóc cá_nhân,bigram,17823
+công_nghệ_sinh_học,unigram,17805
+hàng thiết_yếu,bigram,17804
+thương_mại hàng,bigram,17803
+thời_trang và,bigram,17795
+lâu_bền,unigram,17790
+thị_trường phân_tích,bigram,17787
+gia_đình sản_phẩm,bigram,17784
+2026 tối,bigram,17784
+84 28,bigram,17782
+stttt ngày,bigram,17780
+giao_dịch blackscholes,bigram,17780
+giao_dịch kiến_thức,bigram,17780
+khỏe thiết_bị,bigram,17780
+chứng_quyền tổng_quan,bigram,17780
+28 3848,bigram,17780
+7238,unigram,17780
+kiến_thức quy_định,bigram,17780
+quy_định chứng_quyền,bigram,17780
+qđ stttt,bigram,17780
+3848 7238,bigram,17780
+cổ_phiếu bản_đồ,bigram,17780
+tương_lai tổng_quan,bigram,17780
+blackscholes,unigram,17780
+nội_bộ niêm_yết,bigram,17774
+niêm_yết etf,bigram,17771
+phái,unigram,17768
+sự_kiện,unigram,17765
+quỹ_chứng_khoán,unigram,17756
+các quỹ_chứng_khoán,bigram,17754
+quỹ_chứng_khoán phái,bigram,17737
+sinh_chứng_quyền,unigram,17689
+sinh_chứng_quyền ý_kiến,bigram,17689
+phái sinh_chứng_quyền,bigram,17689
+thông_tin và,bigram,17677
+ý_kiến chuyên_gia,bigram,17654
+chưa,unigram,17634
+chuyên_gia câu_chuyện,bigram,17590
+câu_chuyện đầu_tư,bigram,17553
+đầu_tư chính_sách,bigram,17419
+hồ_sơ,unigram,17389
+25,unigram,17378
+bối_cảnh,unigram,17349
+chủ,unigram,17240
+lĩnh_vực,unigram,17221
+truy_xuất,unigram,17202
+phải,unigram,17198
+chính_sách trái_phiếu,bigram,17107
+sở,unigram,17090
+nhỏ,unigram,17053
+biến_động,unigram,16898
+thấy,unigram,16586
+hồ,unigram,16573
+có_thể,unigram,16557
+ngoại,unigram,16468
+quản_trị,unigram,16465
+triển_khai,unigram,16424
+hai,unigram,16402
+thuộc,unigram,16255
+biết,unigram,16197
+nhận_định,unigram,16109
+quyền,unigram,16085
+trong bối_cảnh,bigram,16068
+000 tỷ,bigram,16068
+lô,unigram,16031
+nay,unigram,16020
+chiều,unigram,15931
+cộng_đồng,unigram,15892
+doanh_nhân,unigram,15843
+phó,unigram,15787
+trái_phiếu hoạt_động,bigram,15761
+thành_viên,unigram,15724
+rủi_ro,unigram,15717
+tháng đầu,bigram,15669
+thứ,unigram,15647
+giai_đoạn,unigram,15609
+tmcp,unigram,15538
+tin_tức,unigram,15520
+15,unigram,15511
+vốn_điều_lệ,unigram,15494
+07 2026,bigram,15470
+điện_tử,unigram,15462
+đồng_thời,unigram,15434
+bảng,unigram,15418
+giải_trình,unigram,15392
+trả,unigram,15328
+ngân_sách,unigram,15272
+đà,unigram,15216
+cho thấy,bigram,15157
+ngân_hàng tmcp,bigram,15099
+lãnh_đạo,unigram,15082
+đặt mục_tiêu,bigram,14962
+triệu cổ_phiếu,bigram,14877
+vietstock,unigram,14867
+đầu_tư thế_giới,bigram,14849
+vn,unigram,14842
+đợt,unigram,14840
+giấy,unigram,14823
+sáng,unigram,14774
+giữa,unigram,14713
+nhằm,unigram,14667
+năm 2023,bigram,14651
+lô trái_phiếu,bigram,14648
+đồng_tiền,unigram,14640
+vận_tải và,bigram,14619
+tnhh,unigram,14616
+mã,unigram,14499
+tài_chính quốc_tế,bigram,14442
+04,unigram,14383
+chủ_tịch,unigram,14383
+kinh_doanh cổ_tức,bigram,14357
+tỷ usd,bigram,14324
+nam,unigram,14317
+nguồn,unigram,14316
+trong năm,bigram,14304
+khách_sạn,unigram,14271
+ròng,unigram,14247
+cổ_tức tăng,bigram,14236
+chính_thức,unigram,14224
+đại_hội_đồng,unigram,14213
+đại_hội_đồng cổ_đông,bigram,14151
+vn index,bigram,14125
+mở_rộng,unigram,14118
+dịch_vụ và,bigram,13987
+nợ,unigram,13973
+30 06,bigram,13968
+đầu_tư tài_chính,bigram,13954
+phái_sinh,unigram,13948
+khối ngoại,bigram,13947
+đưa,unigram,13881
+chào_bán,unigram,13879
+chi_phí,unigram,13879
+cổ_đông lớn,bigram,13834
+vai_trò của,bigram,13819
+khởi_nghiệp,unigram,13807
+làm chủ,bigram,13795
+nguyên_vật_liệu,unigram,13795
+thuế và,bigram,13794
+tính,unigram,13776
+đa_dạng,unigram,13769
+cổ_phần hóa,bigram,13740
+vốn a_ipo,bigram,13732
+a_ipo,unigram,13732
+nhà_nước,unigram,13729
+tiêu_dùng và,bigram,13728
+ngân_hàng tín_dụng,bigram,13722
+nhà_hàng,unigram,13675
+tài_chính cá_nhân,bigram,13670
+vượt,unigram,13652
+quản_lý,unigram,13650
+báo_cáo phân_tích,bigram,13644
+ảnh_hưởng,unigram,13632
+đầu_tư kinh_doanh,bigram,13630
+tuần,unigram,13614
+kỹ_thuật_số,unigram,13614
+lối,unigram,13603
+bởi,unigram,13588
+quốc_phòng,unigram,13587
+chơi,unigram,13580
+50,unigram,13560
+vật_tư,unigram,13547
+tạo,unigram,13545
+di_ch,unigram,13536
+đông_dương,unigram,13526
+trụ_sở,unigram,13524
+bảo_hiểm và,bigram,13524
+03,unigram,13509
+và logistics,bigram,13498
+lãi lỗ,bigram,13498
+08,unigram,13496
+a_ipo cổ_phần,bigram,13489
+lối sống,bigram,13480
+thông_tin điện_tử,bigram,13480
+logistics hàng_không,bigram,13454
+vì cộng_đồng,bigram,13446
+tối_đa hóa,bigram,13443
+vàng và,bigram,13439
+và giải_trí,bigram,13428
+chứng_khoán cổ_phiếu,bigram,13423
+nhân_vật,unigram,13422
+lươ,unigram,13414
+vũ_trụ,unigram,13413
+và thuế,bigram,13409
+tiền kỹ_thuật_số,bigram,13399
+20 07,bigram,13396
+trái_phiếu bất_động_sản,bigram,13392
+kinh_doanh nhỏ,bigram,13391
+ngân_hàng bảo_hiểm,bigram,13390
+phân_tích nhận_định,bigram,13389
+nông_sản thực_phẩm,bigram,13379
+nhà_hàng và,bigram,13372
+lịch_sự_kiện,unigram,13370
+hàng_không vũ_trụ,bigram,13369
+tổng_giám_đốc,unigram,13368
+quy_hoạch hạ_tầng,bigram,13367
+điện_tử tổng_hợp,bigram,13366
+hóa giá_trị,bigram,13365
+phân_tích cơ_bản,bigram,13365
+xe công_nghệ,bigram,13364
+nhân_vật trái_phiếu,bigram,13361
+tài_chính báo_cáo,bigram,13358
+và ngân_sách,bigram,13355
+công_cụ và,bigram,13355
+sang xe,bigram,13353
+bản_đồ thị_trường,bigram,13351
+khách_sạn nhà_hàng,bigram,13351
+hạ_tầng dự_án,bigram,13351
+và kim_loại,bigram,13350
+ir trong,bigram,13350
+và lối,bigram,13348
+và quốc_phòng,bigram,13347
+hóa vàng,bigram,13347
+và vật_tư,bigram,13347
+công_nghệ tiêu_dùng,bigram,13346
+dữ_liệu ngành,bigram,13346
+của quan_hệ,bigram,13345
+bất_động_sản thị_trường,bigram,13345
+ngành ngành,bigram,13345
+dịch_vụ năng_lượng,bigram,13343
+và khởi_nghiệp,bigram,13343
+việc tối_đa,bigram,13342
+ngân_hàng thị_trường_chứng_khoán,bigram,13342
+vũ_trụ và,bigram,13341
+doanh_nhân và,bigram,13341
+thiết_bị hàng_không,bigram,13341
+chứng_khoán thế_giới,bigram,13340
+công_nghiệp thiết_bị,bigram,13339
+chuyên_nghiệp dịch_vụ,bigram,13338
+cơ_bản phân_tích,bigram,13338
+vĩ_mô tài_chính,bigram,13338
+cá_nhân làm,bigram,13338
+thế_giới tiền,bigram,13337
+thuế nhà_đất,bigram,13337
+quốc_tế kinh_tế,bigram,13337
+và di_ch,bigram,13337
+thị_trường nhà_đất,bigram,13337
+thế_giới chứng_khoán,bigram,13337
+cộng_đồng phân_tích,bigram,13337
+thị_trường_chứng_khoán kinh_tế,bigram,13337
+dự_án bảo_hiểm,bigram,13336
+thực_phẩm kinh_tế,bigram,13336
+sống vì,bigram,13336
+ngành chi_tiết,bigram,13335
+nhà_đất tài_chính,bigram,13335
+đông_dương vĩ_mô,bigram,13335
+và thiết_bị_thương_mại,bigram,13335
+nhỏ doanh_nhân,bigram,13335
+kỹ_thuật_số tài_chính,bigram,13335
+lỗ giao_dịch,bigram,13335
+vĩ_mô kinh_tế,bigram,13335
+kim_loại nông_sản,bigram,13335
+nhà_đất quy_hoạch,bigram,13335
+quý_nhiên_liệu kim_loại,bigram,13335
+khởi_nghiệp chơi,bigram,13335
+thiết_yếu thương_mại,bigram,13335
+kim_loại quý_nhiên_liệu,bigram,13335
+tối khai_giảng,bigram,13335
+sức_khỏe thương_mại,bigram,13335
+vật_tư chăm_sóc,bigram,13335
+đồng_tiền đầu_tư,bigram,13335
+thiết_bị_thương_mại,unigram,13335
+bảo_hiểm thuế,bigram,13335
+cập_nhật lãi,bigram,13335
+chơi sang,bigram,13335
+chủ đồng_tiền,bigram,13335
+quý_nhiên_liệu,unigram,13335
+tổng_hợp chứng_khoán,bigram,13332
+vu_khoa_học sự,bigram,13320
+vu_khoa_học,unigram,13320
+di_ch vu_khoa_học,bigram,13320
+cho biết,bigram,13309
+vietstock_trang thông_tin,bigram,13297
+vietstock_trang,unigram,13297
+giữ,unigram,13227
+ký,unigram,13220
+dịch_vụ tài_chính,bigram,13175
+500,unigram,13067
+bên,unigram,12991
+cả,unigram,12878
+thương_hiệu,unigram,12870
+khoản,unigram,12822
+bền_vững,unigram,12804
+sàn,unigram,12795
+thép,unigram,12788
+đối_với,unigram,12618
+mang,unigram,12539
+phát_hành trái_phiếu,bigram,12482
+kênh,unigram,12405
+khu,unigram,12384
+ngay,unigram,12364
+phương_án,unigram,12310
+dòng,unigram,12304
+nghiên_cứu,unigram,12183
+thông_báo nghị_quyết,bigram,12148
+họp,unigram,12135
+năm trước,bigram,12041
+nửa,unigram,12018
+xanh,unigram,12016
+mất,unigram,12012
+từ ngày,bigram,11902
+dầu_khí,unigram,11899
+hỗ_trợ,unigram,11876
+tổng_công_ty,unigram,11874
+khu_vực,unigram,11861
+ổn_định,unigram,11826
+nhẹ,unigram,11822
+định_giá,unigram,11773
+thủ_tướng,unigram,11735
+hủy,unigram,11658
+24,unigram,11642
+giấy_phép,unigram,11589
+hãng,unigram,11588
+tự_doanh,unigram,11532
+đồng trong,bigram,11516
+mà,unigram,11497
+trước đó,bigram,11496
+tỉnh,unigram,11480
+tphcm,unigram,11446
+chịu,unigram,11445
+hạng,unigram,11403
+gửi,unigram,11371
+mở,unigram,11319
+hiệu_quả,unigram,11306
+lệnh,unigram,11278
+long,unigram,11256
+con,unigram,11251
+thời_điểm,unigram,11242
+thành_phố,unigram,11221
+thu,unigram,11167
+thành,unigram,11166
+tỷ_giá,unigram,11136
+hóa_chất,unigram,11062
+thường_niên 2026,bigram,11024
+xuống,unigram,11021
+upcom,unigram,10996
+chi_nhánh,unigram,10996
+nâng hạng,bigram,10995
+bắc,unigram,10993
+nhờ,unigram,10965
+chú_ý,unigram,10901
+48,unigram,10895
+hoàn_tất,unigram,10880
+sử_dụng,unigram,10878
+sản_xuất,unigram,10844
+xu_hướng,unigram,10829
+cuối năm,bigram,10820
+sau thuế,bigram,10784
+của ngân_hàng,bigram,10758
+47,unigram,10744
+liên_quan đến,bigram,10730
+khách,unigram,10710
+trực_tuyến,unigram,10701
+trong nước,bigram,10661
+giao_thông,unigram,10656
+chính_phủ,unigram,10626
+tự,unigram,10602
+kqkd,unigram,10561
+trạng_thái,unigram,10521
+tương_đương,unigram,10496
+phát_hành cổ_phiếu,bigram,10455
+tập_trung,unigram,10435
+thấp,unigram,10400
+kỳ_vọng,unigram,10382
+xuất_khẩu,unigram,10349
+nóng,unigram,10347
+sau khi,bigram,10336
+tin_tức sự_kiện,bigram,10308
+kim,unigram,10297
+kiểm_soát,unigram,10295
+đô_thị,unigram,10294
+vận_hành,unigram,10259
+chất_lượng,unigram,10231
+đi,unigram,10223
+cổ_phiếu quỹ,bigram,10221
+ngày 20,bigram,10216
+năm 2022,bigram,10207
+hủy niêm_yết,bigram,10190
+và phát_hành,bigram,10163
+với tổng,bigram,10119
+cần,unigram,10106
+vật_liệu,unigram,10085
+địa_điểm,unigram,10043
+đa,unigram,9978
+hiện,unigram,9975
+trong tháng,bigram,9969
+nghị_quyết đhđcđ,bigram,9958
+trung_tâm tài_chính,bigram,9955
+pc1,unigram,9940
+bán_ròng,unigram,9886
+phát_hành thêm,bigram,9877
+17,unigram,9874
+huy_động,unigram,9872
+sức_mạnh,unigram,9847
+nâng cao,bigram,9839
+chuyển_đổi,unigram,9811
+khoa_học,unigram,9806
+lọc,unigram,9792
+hà_nội,unigram,9782
+shb,unigram,9775
+tài_sản số,bigram,9768
+2017,unigram,9760
+theo_dõi,unigram,9747
+báo_cáo thường_niên,bigram,9738
+cổ_tức và,bigram,9722
+thuộc về,bigram,9716
+thanh_toán,unigram,9703
+toàn_cầu,unigram,9678
+hàng_tiêu_dùng,unigram,9665
+thành_lập,unigram,9665
+chốt,unigram,9662
+không được,bigram,9648
+dưới,unigram,9645
+được cấp,bigram,9642
+hãng hàng_không,bigram,9619
+ký quỹ,bigram,9614
+cá_nhân và,bigram,9610
+dệt_may,unigram,9609
+tham_khảo,unigram,9605
+ngày 30,bigram,9601
+duy_trì đà,bigram,9596
+truyền_thông,unigram,9593
+đóng_góp,unigram,9580
+trong phiên,bigram,9574
+2016,unigram,9557
+giải_trình kqkd,bigram,9462
+07 2023,bigram,9459
+các kênh,bigram,9419
+vật_liệu xây_dựng,bigram,9409
+06 2026,bigram,9381
+hạ_tầng giao_thông,bigram,9338
+thị_trường cổ_phiếu,bigram,9333
+người liên_quan,bigram,9315
+hạng thị_trường,bigram,9303
+kỳ năm,bigram,9296
+báo_cáo quản_trị,bigram,9269
+ngày 04,bigram,9266
+quỹ etf,bigram,9256
+đa ngành,bigram,9178
+thiết_bị điện,bigram,9172
+tổ_chức phát_hành,bigram,9153
+và hàng,bigram,9132
+bộ lọc,bigram,9093
+bảng giá,bigram,9085
+đáng chú_ý,bigram,9077
+kênh đầu_tư,bigram,9065
+quy_mô thị_trường,bigram,9045
+niêm_yết bổ_sung,bigram,9039
+nhà phân_phối,bigram,9037
+tập_đoàn đa,bigram,9033
+lớn cổ_phiếu,bigram,9023
+nhận_định thị_trường,bigram,9023
+dịch_vụ thương_mại,bigram,9022
+và gia_đình,bigram,9006
+chiến_lược thị_trường,bigram,8998
+giao_dịch tài_chính,bigram,8995
+tài_chính các,bigram,8992
+số 13,bigram,8992
+và truyền_thông,bigram,8982
+đặt lệnh,bigram,8981
+phái_sinh hợp_đồng,bigram,8967
+luyện kim,bigram,8967
+được ký,bigram,8963
+lợi_nhuận sau,bigram,8959
+giao_dịch giá,bigram,8957
+số 06,bigram,8956
+thực_phẩm đồ,bigram,8955
+2023 được,bigram,8953
+04 11,bigram,8951
+và chuyên_nghiệp,bigram,8949
+cổ_đông nội_bộ,bigram,8947

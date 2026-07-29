@@ -382,12 +382,55 @@ def rule_comparison_summary(rule_frame: pd.DataFrame, consensus_frame: pd.DataFr
     return {"available": bool(metrics), "compared_rows": len(merged), "metrics": metrics}
 
 
+def optional_robustness_summary(frames: dict[str, pd.DataFrame]) -> dict[str, Any]:
+    placebo = frames.get("placebo", pd.DataFrame())
+    paired = frames.get("ml_paired", pd.DataFrame())
+    bootstrap = frames.get("ml_bootstrap", pd.DataFrame())
+    topk_null = frames.get("topk_null", pd.DataFrame())
+    topk_cost = frames.get("topk_cost", pd.DataFrame())
+    family = frames.get("family_sensitivity", pd.DataFrame())
+
+    ml_metrics: dict[str, dict[str, float | int | None]] = {}
+    if not paired.empty and {"metric", "baseline_value", "comparison_value", "delta"}.issubset(paired.columns):
+        for metric, group in paired.groupby("metric"):
+            ml_metrics[str(metric)] = {
+                "rows": len(group),
+                "baseline_mean": float(pd.to_numeric(group["baseline_value"], errors="coerce").mean()),
+                "comparison_mean": float(pd.to_numeric(group["comparison_value"], errors="coerce").mean()),
+                "delta_mean": float(pd.to_numeric(group["delta"], errors="coerce").mean()),
+            }
+    null_significant = None
+    if not topk_null.empty and "one_sided_null_p_value" in topk_null:
+        null_significant = int(pd.to_numeric(topk_null["one_sided_null_p_value"], errors="coerce").le(0.05).sum())
+    cost_rates = []
+    if not topk_cost.empty and "round_trip_cost_rate" in topk_cost:
+        cost_rates = sorted(pd.to_numeric(topk_cost["round_trip_cost_rate"], errors="coerce").dropna().unique().tolist())
+    return {
+        "available": {name: not frame.empty for name, frame in frames.items()},
+        "schema_versions": {name: schema_versions(frame) for name, frame in frames.items()},
+        "placebo": event_test_summary(placebo),
+        "ml_metrics": ml_metrics,
+        "ml_bootstrap_rows": len(bootstrap),
+        "topk_null_rows": len(topk_null),
+        "topk_null_significant": null_significant,
+        "topk_cost_rows": len(topk_cost),
+        "topk_cost_rates": cost_rates,
+        "family_sensitivity_rows": len(family),
+    }
+
+
 def build_artifact_snapshot(output_dir: Path = OUTPUT_DIR, data_dir: Path = DATA_DIR) -> dict[str, Any]:
     paths = {
         "consensus": output_dir / "pseudo_labels_consensus.csv",
         "event_tests": output_dir / "event_window_stat_tests.csv",
         "ml_predictions": output_dir / "ml_predictions_outperform.csv",
         "topk": output_dir / "topk_portfolio_simulation.csv",
+        "placebo": output_dir / "placebo_pre_event_stat_tests.csv",
+        "ml_paired": output_dir / "ml_paired_daily_metrics_outperform.csv",
+        "ml_bootstrap": output_dir / "ml_bootstrap_delta_outperform.csv",
+        "topk_null": output_dir / "topk_random_null_summary.csv",
+        "topk_cost": output_dir / "topk_cost_sensitivity_summary.csv",
+        "family_sensitivity": output_dir / "consensus_family_sensitivity_summary.csv",
     }
     count_paths = {
         "annotation_sample": data_dir / "sample_news_for_annotation.csv", "consensus_labels": paths["consensus"],
@@ -400,6 +443,9 @@ def build_artifact_snapshot(output_dir: Path = OUTPUT_DIR, data_dir: Path = DATA
     event = read_csv(paths["event_tests"])
     ml = read_csv(paths["ml_predictions"])
     topk = read_csv(paths["topk"])
+    robustness_frames = {name: read_csv(paths[name]) for name in (
+        "placebo", "ml_paired", "ml_bootstrap", "topk_null", "topk_cost", "family_sensitivity"
+    )}
     manual = read_csv(data_dir / "manual_sanity_check_sample.csv")
     rule_labels = read_csv(output_dir / "rule_labels.csv")
     return {
@@ -408,11 +454,13 @@ def build_artifact_snapshot(output_dir: Path = OUTPUT_DIR, data_dir: Path = DATA
         "agreement": agreement_summary(output_dir), "manual_sanity": manual_sanity_summary(manual),
         "rule_comparison": rule_comparison_summary(rule_labels, consensus),
         "event_tests": event_test_summary(event), "ml": ml_fold_summary(ml), "topk": topk_summary(topk),
+        "robustness": optional_robustness_summary(robustness_frames),
         "artifacts": {
             "consensus": artifact_metadata(paths["consensus"], [output_dir / f"labels_annotator_{x}.jsonl" for x in "abc"]),
             "event_tests": artifact_metadata(paths["event_tests"], [output_dir / "event_window_outcomes.csv"]),
             "ml_predictions": artifact_metadata(paths["ml_predictions"], [output_dir / "ml_panel_outperform.csv"]),
             "topk": artifact_metadata(paths["topk"], [paths["ml_predictions"], output_dir / "outperform_targets.csv"]),
+            **{name: artifact_metadata(paths[name]) for name in robustness_frames},
         },
     }
 
@@ -428,25 +476,44 @@ def markdown_table(headers: list[str], rows: list[list[Any]]) -> str:
 def render_claim_evidence_table(snapshot: dict[str, Any]) -> str:
     consensus, event, ml, topk = snapshot["consensus"], snapshot["event_tests"], snapshot["ml"], snapshot["topk"]
     methods = ", ".join(f"{k}={v}" for k, v in sorted(consensus["methods"].items())) or "unavailable"
+    robust_fraction = f"{event['robust_results']}/{event['rows']}" if event["rows"] else "0/0"
     claims = [
         ["Keyword/news-count thiếu ngữ cảnh", "reports/rule_vs_semantic_labels_report.md", "Rule baseline versus semantic pseudo-labels; not human ground truth", "Supported exploratory"],
         ["Annotation provenance", "outputs/annotation_manifest_*.json", f"manifest runs={len(snapshot['provenance'])}; provider, routed model vendor, and hashes below", "Descriptive limitation"],
         ["Consensus categorical labels", "outputs/pseudo_labels_consensus.csv", f"rows={consensus['rows']}; {methods}; eligible={consensus['eligible']}/{consensus['rows']}", "Descriptive"],
-        ["Semantic event-window signal", "outputs/event_window_stat_tests.csv", f"tests={event['rows']}; FDR={event['fdr_significant']}; positive-CI={event['positive_ci']}; joint gate={event['robust_results']}; flag mismatches={event['reported_flag_mismatches']}", "Supported exploratory" if event["claim_gate_pass"] else "Not robust after correction"],
-        ["Point-in-time ML ranking", "outputs/ml_predictions_outperform.csv", f"rows={ml['rows']}; folds={ml['fold_count']}; purge={ml['purge_trading_days']}; status={ml['status']}", "Exploratory" if ml["purged_oos_verified"] else "Metadata check failed"],
-        ["Top-K simulation", "outputs/topk_portfolio_simulation.csv", f"rows={topk['rows']}; periods={topk['periods']}; non-overlap={topk['non_overlapping']}; turnover-cost={topk['turnover_cost_verified']}; net equations={topk['net_return_verified']}; status={topk['status']}", "Weak / exploratory" if topk["status"].startswith("verified") else "Methodology check failed"],
-        ["Evidence cards and outcome review", "outputs/evidence_cards.*, outputs/outcome_review_labels.csv", f"outcome-review rows={snapshot['counts']['outcome_reviews']}", "Descriptive"],
+        ["Semantic event-window association", "outputs/event_window_stat_tests.csv", f"joint positive gate={robust_fraction}; FDR rows={event['fdr_significant']}; positive-CI rows={event['positive_ci']}; flag mismatches={event['reported_flag_mismatches']}", "Supported exploratory association" if event["claim_gate_pass"] else "No robust positive association after correction"],
+        ["Point-in-time ML ranking", "outputs/ml_predictions_outperform.csv", f"rows={ml['rows']}; folds={ml['fold_count']}; purge={ml['purge_trading_days']}; status={ml['status']}; near-random metrics and paired deltas reported when available", "Exploratory" if ml["purged_oos_verified"] else "Metadata check failed"],
+        ["Top-K simulation", "outputs/topk_portfolio_simulation.csv", f"rows={topk['rows']}; periods={topk['periods']}; non-overlap={topk['non_overlapping']}; turnover-cost={topk['turnover_cost_verified']}; net equations={topk['net_return_verified']}; random-null and cost sensitivity are required for performance interpretation", "Null/weak exploratory result" if topk["status"].startswith("verified") else "Methodology check failed"],
+        ["Evidence cards and outcome review", "outputs/evidence_cards.*, outputs/outcome_review_labels.csv", f"outcome-review rows={snapshot['counts']['outcome_reviews']}; retrospective structured review only", "Technical traceability; not decision quality or ground truth"],
+    ]
+    rq_h_rows = [
+        ["RQ-SM1", "H-SM1", "Representation limits", "rule comparison + error taxonomy", "Associational/descriptive"],
+        ["RQ-SM2", "H-SM2", "Semantic schema and pseudo-label stability", "consensus + agreement + manual sanity", "Descriptive; 3 runs, 2 model families"],
+        ["RQ-SM3", "H-SM3", "Outcome association", "event tests + placebo", "Exploratory association, not causal"],
+        ["RQ-SM4", "H-SM4", "ML/ranking increment", "purged OOS metrics + paired/bootstrap deltas", "Secondary exploratory"],
+        ["RQ-SM5", "H-SM5", "Top-K filtering", "random null + cost sensitivity", "Secondary exploratory; no alpha claim"],
+        ["RQ-SM6", "H-SM6", "Evidence traceability", "cards + lineage + outcome review", "Technical traceability only"],
     ]
     provenance = [[row[key] for key in ("annotator", "api_provider", "requested_model", "response_models", "model_vendor", "route_mode", "provenance_status", "schema_version", "labels_hash_match", "input_sha256", "schema_sha256")] for row in snapshot["provenance"]]
-    artifacts = [[name, ", ".join((event if name == "event_tests" else ml if name == "ml_predictions" else topk if name == "topk" else consensus)["schema_versions"]) or "unavailable", meta["sha256"], meta["modified_utc"], meta["latest_upstream_utc"], meta["freshness"]] for name, meta in snapshot["artifacts"].items()]
+    robustness = snapshot.get("robustness", {"schema_versions": {}})
+    summary_schemas = {
+        "consensus": consensus["schema_versions"], "event_tests": event["schema_versions"],
+        "ml_predictions": ml["schema_versions"], "topk": topk["schema_versions"],
+        **robustness.get("schema_versions", {}),
+    }
+    artifacts = [[name, ", ".join(summary_schemas.get(name, [])) or "unavailable", meta["sha256"], meta["modified_utc"], meta["latest_upstream_utc"], meta["freshness"]] for name, meta in snapshot["artifacts"].items()]
     folds = [[fold.get(key) for key in ("fold_id", "train_start", "train_end", "test_start", "test_end", "purge_trading_days")] for fold in ml["folds"]]
     return "\n".join([
         "# Claim vs evidence table", "", markdown_table(["Claim luận văn", "Evidence artifact", "Corrected result", "Claim level"], claims), "",
-        "## Corrected event claim gate", "", f"Rule: `{event['gate_rule']}`. Available={event['gate_available']}; pass={event['claim_gate_pass']}.", "",
+        "## RQ–hypothesis–evidence matrix", "", markdown_table(["Research question", "Hypothesis", "Focus", "Evidence", "Allowed interpretation"], rq_h_rows), "",
+        "## Corrected event claim gate", "", f"Rule: `{event['gate_rule']}`. Available={event['gate_available']}; pass={event['claim_gate_pass']}; joint-positive fraction={robust_fraction}.", "",
         "## Annotator provenance", "", markdown_table(["annotator", "API provider", "requested", "response", "vendor", "route", "status", "schema", "label hash match", "input SHA256", "schema SHA256"], provenance) if provenance else "_No provenance manifests available._", "",
         "## Artifact integrity and freshness", "", markdown_table(["artifact", "schema version", "SHA256", "modified UTC", "latest upstream UTC", "freshness"], artifacts), "",
         "## Purged OOS fold metadata", "", markdown_table(["fold", "train start", "train end", "test start", "test end", "purge trading days"], folds) if folds else "_Fold metadata unavailable._", "",
-        "## Safe interpretation", "", "Consensus labels are pseudo-labels, not ground truth. Event-study, ML, and Top-K results remain exploratory and are not alpha or investment claims.", "",
+        "## Optional robustness readers", "",
+        f"Available={robustness.get('available', {})}; placebo robust-positive={robustness.get('placebo', {}).get('robust_results', 0)}/{robustness.get('placebo', {}).get('rows', 0)}; ML metrics/deltas={robustness.get('ml_metrics', {})}; ML bootstrap rows={robustness.get('ml_bootstrap_rows', 0)}; Top-K null significant={robustness.get('topk_null_significant')}/{robustness.get('topk_null_rows', 0)}; cost rows={robustness.get('topk_cost_rows', 0)} at rates={robustness.get('topk_cost_rates', [])}; family-sensitivity rows={robustness.get('family_sensitivity_rows', 0)}.", "",
+        "Missing optional files remain unavailable and do not block core report generation.", "",
+        "## Safe interpretation", "", "Consensus labels are pseudo-labels, not ground truth. Three annotation runs represent only two model families, not three independent systems. Manual review is a small quality-control sample. Outcome review is retrospective structured review, not semantic ground truth or decision-quality validation. Event-study reports associations, not causal effects. ML and Top-K results remain exploratory; near-random metrics, null comparisons, and transaction costs preclude alpha or investment claims.", "",
     ])
 
 

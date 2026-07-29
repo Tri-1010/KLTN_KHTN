@@ -25,8 +25,39 @@ TECH = ROOT / "data" / "features" / "technical_features.csv"
 KW = ROOT / "data" / "features" / "keyword_features.csv"
 PANEL = OUTPUT_DIR / "ml_panel_outperform.csv"
 PRED = OUTPUT_DIR / "ml_predictions_outperform.csv"
+PAIRED_DAILY = OUTPUT_DIR / "ml_paired_daily_metrics_outperform.csv"
+BOOTSTRAP_DELTA = OUTPUT_DIR / "ml_bootstrap_delta_outperform.csv"
 REPORT = REPORT_DIR / "ml_outperform_experiment_report.md"
 HORIZON = 20
+BOOTSTRAP_SEED = 42
+BOOTSTRAP_SAMPLES = 2000
+BOOTSTRAP_BLOCK_DATES = 20
+MIN_PAIRED_DATES = 2
+COMPARISONS = (
+    ("A_technical", "B_technical_keyword"),
+    ("A_technical", "C_technical_semantic"),
+    ("A_technical", "D_all"),
+    ("B_technical_keyword", "C_technical_semantic"),
+    ("B_technical_keyword", "D_all"),
+)
+DAILY_METRICS = (
+    "balanced_accuracy",
+    "auc",
+    "f1",
+    "precision_at_10_by_date",
+    "daily_rank_ic",
+)
+PAIRED_DAILY_COLUMNS = [
+    "baseline_config", "comparison_config", "model", "fold_id", "date", "metric",
+    "baseline_value", "comparison_value", "delta", "n_baseline_observations",
+    "n_comparison_observations", "pair_status", "artifact_schema_version",
+]
+BOOTSTRAP_DELTA_COLUMNS = [
+    "baseline_config", "comparison_config", "model", "metric", "mean_delta",
+    "ci_lower_95", "ci_upper_95", "n_paired_dates", "n_folds", "date_start",
+    "date_end", "bootstrap_samples", "bootstrap_block_dates", "rng_seed", "status",
+    "artifact_schema_version",
+]
 
 
 def quarter_id(date: pd.Series) -> pd.Series:
@@ -138,6 +169,90 @@ def available_fold_features(train: pd.DataFrame, features: list[str]) -> list[st
     return [feature for feature in features if train[feature].notna().any()]
 
 
+
+PRED_COLUMNS = [
+    "ticker", "date", "stock_return_T20", "VNINDEX_return_T20", "excess_return_T20",
+    "label_outperform_T20", "config", "model", "pred_proba_outperform", "pred_label",
+    "fold_id", "train_start", "train_end", "test_start", "test_end", "purge_trading_days",
+    "artifact_schema_version",
+]
+
+
+def _daily_metric(frame: pd.DataFrame, metric: str) -> float:
+    y = frame["label_outperform_T20"].astype(int)
+    proba = pd.to_numeric(frame["pred_proba_outperform"], errors="coerce")
+    predicted = (proba >= 0.5).astype(int)
+    if metric == "balanced_accuracy":
+        return float(balanced_accuracy_score(y, predicted)) if y.nunique() == 2 else float("nan")
+    if metric == "auc":
+        return float(roc_auc_score(y, proba)) if y.nunique() == 2 else float("nan")
+    if metric == "f1":
+        return float(f1_score(y, predicted, zero_division=0))
+    if metric == "precision_at_10_by_date":
+        return float(frame.assign(pred_proba_outperform=proba).nlargest(min(10, len(frame)), "pred_proba_outperform")["label_outperform_T20"].mean())
+    if len(frame) >= 3 and proba.nunique() > 1:
+        return float(proba.corr(pd.to_numeric(frame["excess_return_T20"], errors="coerce"), method="spearman"))
+    return float("nan")
+
+
+def build_paired_daily_metrics(pred: pd.DataFrame) -> pd.DataFrame:
+    required = {"ticker", "date", "fold_id", "config", "model", "label_outperform_T20", "pred_proba_outperform", "excess_return_T20"}
+    if pred.empty or not required.issubset(pred.columns):
+        return pd.DataFrame(columns=PAIRED_DAILY_COLUMNS)
+    rows = []
+    for baseline, comparison in COMPARISONS:
+        for model in sorted(pred["model"].dropna().unique()):
+            left = pred[pred["config"].eq(baseline) & pred["model"].eq(model)]
+            right = pred[pred["config"].eq(comparison) & pred["model"].eq(model)]
+            merged = left.merge(right, on=["ticker", "date", "fold_id"], suffixes=("_base", "_comp"))
+            for (fold_id, date), group in merged.groupby(["fold_id", "date"], sort=True):
+                base = pd.DataFrame({"label_outperform_T20": group["label_outperform_T20_base"], "pred_proba_outperform": group["pred_proba_outperform_base"], "excess_return_T20": group["excess_return_T20_base"]})
+                comp = pd.DataFrame({"label_outperform_T20": group["label_outperform_T20_comp"], "pred_proba_outperform": group["pred_proba_outperform_comp"], "excess_return_T20": group["excess_return_T20_comp"]})
+                for metric in DAILY_METRICS:
+                    base_value, comp_value = _daily_metric(base, metric), _daily_metric(comp, metric)
+                    status = "paired" if pd.notna(base_value) and pd.notna(comp_value) else "metric_undefined"
+                    rows.append({"baseline_config": baseline, "comparison_config": comparison, "model": model, "fold_id": fold_id, "date": date, "metric": metric, "baseline_value": base_value, "comparison_value": comp_value, "delta": comp_value - base_value if status == "paired" else np.nan, "n_baseline_observations": len(base), "n_comparison_observations": len(comp), "pair_status": status, "artifact_schema_version": "outperform_ml_paired_daily_v1"})
+    return pd.DataFrame(rows, columns=PAIRED_DAILY_COLUMNS)
+
+
+def _circular_block_means(values: np.ndarray, samples: int, block_dates: int, seed: int) -> np.ndarray:
+    rng = np.random.default_rng(seed)
+    n = len(values)
+    block = max(1, min(block_dates, n))
+    means = np.empty(samples, dtype=float)
+    blocks_needed = int(np.ceil(n / block))
+    offsets = np.arange(block)
+    for index in range(samples):
+        starts = rng.integers(0, n, size=blocks_needed)
+        sampled = np.concatenate([values[(start + offsets) % n] for start in starts])[:n]
+        means[index] = sampled.mean()
+    return means
+
+
+def build_bootstrap_deltas(paired: pd.DataFrame, samples: int = BOOTSTRAP_SAMPLES, block_dates: int = BOOTSTRAP_BLOCK_DATES, seed: int = BOOTSTRAP_SEED) -> pd.DataFrame:
+    rows = []
+    if paired.empty:
+        return pd.DataFrame(columns=BOOTSTRAP_DELTA_COLUMNS)
+    keys = ["baseline_config", "comparison_config", "model", "metric"]
+    for key, group in paired.groupby(keys, sort=True):
+        valid = group[group["pair_status"].eq("paired")].dropna(subset=["delta"]).sort_values("date")
+        values = valid["delta"].to_numpy(dtype=float)
+        status = "ok" if len(values) >= MIN_PAIRED_DATES else "insufficient_paired_dates"
+        ci_low = ci_high = np.nan
+        if status == "ok":
+            draws = _circular_block_means(values, samples, block_dates, seed)
+            ci_low, ci_high = np.percentile(draws, [2.5, 97.5])
+        rows.append({**dict(zip(keys, key)), "mean_delta": float(values.mean()) if len(values) else np.nan, "ci_lower_95": ci_low, "ci_upper_95": ci_high, "n_paired_dates": len(values), "n_folds": int(valid["fold_id"].nunique()), "date_start": valid["date"].min() if len(valid) else "", "date_end": valid["date"].max() if len(valid) else "", "bootstrap_samples": samples, "bootstrap_block_dates": block_dates, "rng_seed": seed, "status": status, "artifact_schema_version": "outperform_ml_bootstrap_delta_v1"})
+    return pd.DataFrame(rows, columns=BOOTSTRAP_DELTA_COLUMNS)
+
+
+def write_robustness_artifacts(pred: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+    paired = build_paired_daily_metrics(pred)
+    bootstrap = build_bootstrap_deltas(paired)
+    paired.to_csv(PAIRED_DAILY, index=False, encoding="utf-8-sig")
+    bootstrap.to_csv(BOOTSTRAP_DELTA, index=False, encoding="utf-8-sig")
+    return paired, bootstrap
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--fast-models", action="store_true")
@@ -151,7 +266,8 @@ def main() -> int:
     splits = expanding_purged_splits(work["date"])
     if work.empty or work["label_outperform_T20"].nunique() < 2 or not splits:
         REPORT.write_text("# ML outperform experiment report\n\nInsufficient variation/dates for purged walk-forward evaluation.\n", encoding="utf-8")
-        pd.DataFrame().to_csv(PRED, index=False, encoding="utf-8-sig")
+        pd.DataFrame(columns=PRED_COLUMNS).to_csv(PRED, index=False, encoding="utf-8-sig")
+        write_robustness_artifacts(pd.DataFrame(columns=PRED_COLUMNS))
         return 0
 
     models = {
@@ -199,7 +315,9 @@ def main() -> int:
                     "confusion_matrix": confusion_matrix(y_test, predicted).tolist(),
                 })
     pred = pd.concat(predictions, ignore_index=True) if predictions else pd.DataFrame()
+    pred = pred.reindex(columns=PRED_COLUMNS)
     pred.to_csv(PRED, index=False, encoding="utf-8-sig")
+    paired_daily, bootstrap_delta = write_robustness_artifacts(pred)
     result = pd.DataFrame(rows)
     lines = ["# ML outperform experiment report", "", "Purged expanding walk-forward only; all predictions are out-of-sample. Results remain exploratory, not alpha claims.", ""]
     if result.empty:
@@ -208,9 +326,13 @@ def main() -> int:
         lines += ["## Fold metrics", "", markdown_table(result.round(4)), ""]
         summary = result.groupby(["config", "model"], as_index=False)[["balanced_accuracy", "auc", "f1", "precision_at_10_by_date", "daily_rank_ic"]].agg(["mean", "std"])
         lines += ["## Walk-forward summary", "", markdown_table(summary.round(4)), ""]
+    lines += ["## Paired daily config deltas", "", markdown_table(paired_daily.round(4)) if not paired_daily.empty else "No paired daily metrics generated.", ""]
+    lines += ["## Date-block bootstrap config deltas", "", markdown_table(bootstrap_delta.round(4)) if not bootstrap_delta.empty else "No bootstrap deltas generated.", "", "Circular date-block bootstrap preserves local date dependence; intervals remain exploratory.", ""]
     REPORT.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"saved {PANEL}")
     print(f"saved {PRED}")
+    print(f"saved {PAIRED_DAILY}")
+    print(f"saved {BOOTSTRAP_DELTA}")
     print(f"saved {REPORT}")
     return 0
 

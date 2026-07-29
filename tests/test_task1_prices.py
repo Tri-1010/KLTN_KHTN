@@ -73,18 +73,27 @@ class TestValidateTickers:
         assert result == ["VNM", "VCB", "FPT"]
 
     def test_invalid_tickers_filtered(self):
-        """Invalid tickers should be filtered out with a warning."""
-        result = validate_tickers(["VNM", "INVALID", "FPT"])
-        assert result == ["VNM", "FPT"]
+        """Non-VN30 tickers are now accepted (HOSE-80 expansion) and returned.
 
-    def test_all_invalid_raises(self):
-        """All-invalid ticker list should raise ValueError."""
-        with pytest.raises(ValueError, match="No valid VN30 tickers"):
-            validate_tickers(["INVALID1", "INVALID2"])
+        validate_tickers no longer restricts to the VN30 list; it accepts any
+        ticker symbol, logging non-VN30 entries at INFO level.
+        """
+        result = validate_tickers(["VNM", "INVALID", "FPT"])
+        assert result == ["VNM", "INVALID", "FPT"]
+
+    def test_duplicates_removed(self):
+        """Duplicate tickers should be removed while preserving order."""
+        result = validate_tickers(["VNM", "FPT", "VNM", "ACB", "FPT"])
+        assert result == ["VNM", "FPT", "ACB"]
+
+    def test_all_non_vn30_accepted(self):
+        """A list of only non-VN30 tickers is accepted (no ValueError)."""
+        result = validate_tickers(["INVALID1", "INVALID2"])
+        assert result == ["INVALID1", "INVALID2"]
 
     def test_empty_list_raises(self):
         """Empty ticker list should raise ValueError."""
-        with pytest.raises(ValueError, match="No valid VN30 tickers"):
+        with pytest.raises(ValueError, match="No tickers provided"):
             validate_tickers([])
 
     def test_full_vn30_list(self):
@@ -119,12 +128,12 @@ class TestConfigLoading:
     """Tests for _load_config()."""
 
     def test_loads_pipeline_config(self):
-        """Config should load with expected keys."""
+        """Config should load with expected keys and HOSE-80 universe."""
         config = _load_config()
         assert "tickers" in config
         assert "start_date" in config
         assert "end_date" in config
-        assert len(config["tickers"]) == 30
+        assert len(config["tickers"]) == 80
 
     def test_start_date_is_2022(self):
         """start_date should be 2022-01-01 per spec."""

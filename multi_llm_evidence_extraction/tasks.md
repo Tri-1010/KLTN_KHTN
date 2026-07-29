@@ -762,7 +762,48 @@ Tận dụng:
 
 ---
 
-## 13. Thứ tự triển khai khuyến nghị
+## 13. Phase L — Framing, report, robustness và lineage
+
+Quy ước: `AUTO` là kiểm tra/sinh artifact bằng script; `HUMAN` là xác nhận nội dung học thuật không thể tự động suy ra.
+
+### L1. Framing và hypothesis namespace
+
+- [x] L1.1. `[AUTO]` Hạ causal claim thành association; cấm suy diễn nhân quả từ event/outcome quan sát.
+- [x] L1.2. `[AUTO]` Xác định semantic representation + auditability là primary contribution.
+- [x] L1.3. `[AUTO]` Đặt ML, ranking, Top-K thành secondary exploratory analyses; không claim alpha/strategy.
+- [x] L1.4. `[AUTO]` Giới hạn evidence card ở technical traceability; không claim cải thiện decision quality.
+- [x] L1.5. `[AUTO]` Gọi outcome review là retrospective structured review, không phải ground truth.
+- [x] L1.6. `[AUTO]` Namespace RQ/hypothesis thành `RQ-SM1`–`RQ-SM6` và `H-SM1`–`H-SM6`, tách legacy `H1`–`H3`.
+- [x] L1.7. `[AUTO]` Ghi rõ 3 annotation runs chỉ thuộc 2 model families.
+- [ ] L1.8. `[HUMAN]` Advisor xác nhận wording đóng góp chính, secondary scope và hypothesis namespace.
+
+### L2. Report evidence matrix và null-result language
+
+- [x] L2.1. `[AUTO]` Thêm RQ–hypothesis–evidence matrix vào claim table và canonical report.
+- [x] L2.2. `[AUTO]` Báo số và fraction event tests qua joint BH-FDR + positive-CI gate; liệt kê comparisons.
+- [x] L2.3. `[AUTO]` Đọc optional placebo/family-sensitivity artifacts; thiếu file vẫn render `unavailable`.
+- [x] L2.4. `[AUTO]` Báo near-random ML metrics và paired/bootstrap deltas khi artifact tồn tại.
+- [x] L2.5. `[AUTO]` Báo Top-K random-null và cost sensitivity; passing accounting checks không đồng nghĩa performance.
+- [x] L2.6. `[AUTO]` Ghi limitation manual sample và selected retrospective outcome reviews.
+- [ ] L2.7. `[HUMAN]` Kiểm tra mọi con số/narrative trong report regenerated khớp structured artifacts.
+
+### L3. Lineage và reproducibility
+
+- [x] L3.1. `[AUTO]` Tạo `scripts/build_lineage_manifest.py` với path, status, bytes, mtime UTC và SHA256.
+- [x] L3.2. `[AUTO]` Ghi missing optional artifacts thay vì fail report pipeline.
+- [x] L3.3. `[AUTO]` README phân biệt đề cương, canonical result report, claim ledger và lineage manifest.
+- [x] L3.4. `[AUTO]` Giữ public report helper contracts, pure renderers và canonical filename.
+- [ ] L3.5. `[HUMAN]` Archive/freeze manifest cùng bản report dùng để nộp hoặc bảo vệ.
+
+### L4. Verification
+
+- [x] L4.1. `[AUTO]` Thêm focused tests cho optional fallbacks, RQ-H matrix, wording và lineage.
+- [x] L4.2. `[AUTO]` Focused verification: Python compile pass; `tests/test_multi_llm_backtest_reports.py` — 15 passed; lineage + pure-render smoke pass.
+- [ ] L4.3. `[HUMAN]` Đọc proof cuối: causal language, alpha language, family independence, manual/outcome limitations.
+
+---
+
+## 14. Thứ tự triển khai khuyến nghị
 
 ### Sprint 1 — Hoàn thành core data + schema
 
@@ -830,7 +871,7 @@ Deliverables:
 
 ---
 
-## 14. Definition of Done
+## 15. Definition of Done
 
 ### Bản tối thiểu đủ trao đổi/bảo vệ hướng
 
@@ -854,7 +895,7 @@ Deliverables:
 
 ---
 
-## 15. Nguyên tắc diễn giải khi viết luận văn
+## 16. Nguyên tắc diễn giải khi viết luận văn
 
 - Không claim LLM labels là ground truth.
 - Không claim semantic features chắc chắn tạo alpha.

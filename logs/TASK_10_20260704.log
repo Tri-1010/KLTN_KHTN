@@ -1,0 +1,160 @@
+[2026-07-04 14:49:35] [TASK_10] [INFO] Confusion matrix for Logistic_Regression - Config_A:
+[[968 527]
+ [353 898]]
+[2026-07-04 14:49:36] [TASK_10] [INFO] Confusion matrix for Random_Forest - Config_A:
+[[964 531]
+ [369 882]]
+[2026-07-04 14:49:36] [TASK_10] [INFO] Confusion matrix for XGBoost - Config_A:
+[[965 530]
+ [421 830]]
+[2026-07-04 14:49:38] [TASK_10] [INFO] Confusion matrix for LightGBM - Config_A:
+[[989 506]
+ [399 852]]
+[2026-07-04 14:49:38] [TASK_10] [INFO] Confusion matrix for Logistic_Regression - Config_C:
+[[973 522]
+ [365 886]]
+[2026-07-04 14:49:39] [TASK_10] [INFO] Confusion matrix for Random_Forest - Config_C:
+[[964 531]
+ [369 882]]
+[2026-07-04 14:49:40] [TASK_10] [INFO] Confusion matrix for XGBoost - Config_C:
+[[976 519]
+ [413 838]]
+[2026-07-04 14:49:41] [TASK_10] [INFO] Confusion matrix for LightGBM - Config_C:
+[[986 509]
+ [382 869]]
+[2026-07-04 14:50:04] [TASK_10] [INFO] Confusion matrix for Logistic_Regression - Config_A:
+[[643 305]
+ [175 536]]
+[2026-07-04 14:50:04] [TASK_10] [INFO] Confusion matrix for Random_Forest - Config_A:
+[[620 328]
+ [174 537]]
+[2026-07-04 14:50:05] [TASK_10] [INFO] Confusion matrix for XGBoost - Config_A:
+[[612 336]
+ [193 518]]
+[2026-07-04 14:50:05] [TASK_10] [INFO] Confusion matrix for LightGBM - Config_A:
+[[638 310]
+ [193 518]]
+[2026-07-04 14:50:05] [TASK_10] [INFO] Confusion matrix for Logistic_Regression - Config_C:
+[[668 280]
+ [205 506]]
+[2026-07-04 14:50:06] [TASK_10] [INFO] Confusion matrix for Random_Forest - Config_C:
+[[602 346]
+ [162 549]]
+[2026-07-04 14:50:07] [TASK_10] [INFO] Confusion matrix for XGBoost - Config_C:
+[[598 350]
+ [181 530]]
+[2026-07-04 14:50:07] [TASK_10] [INFO] Confusion matrix for LightGBM - Config_C:
+[[636 312]
+ [187 524]]
+[2026-07-04 14:50:19] [TASK_10] [INFO] Confusion matrix for Logistic_Regression - Config_A:
+[[317 146]
+ [105 217]]
+[2026-07-04 14:50:20] [TASK_10] [INFO] Confusion matrix for Random_Forest - Config_A:
+[[290 173]
+ [ 73 249]]
+[2026-07-04 14:50:20] [TASK_10] [INFO] Confusion matrix for XGBoost - Config_A:
+[[305 158]
+ [ 84 238]]
+[2026-07-04 14:50:20] [TASK_10] [INFO] Confusion matrix for LightGBM - Config_A:
+[[309 154]
+ [ 88 234]]
+[2026-07-04 14:50:21] [TASK_10] [INFO] Confusion matrix for Logistic_Regression - Config_C:
+[[327 136]
+ [ 92 230]]
+[2026-07-04 14:50:21] [TASK_10] [INFO] Confusion matrix for Random_Forest - Config_C:
+[[294 169]
+ [ 69 253]]
+[2026-07-04 14:50:22] [TASK_10] [INFO] Confusion matrix for XGBoost - Config_C:
+[[299 164]
+ [ 87 235]]
+[2026-07-04 14:50:22] [TASK_10] [INFO] Confusion matrix for LightGBM - Config_C:
+[[302 161]
+ [ 82 240]]
+[2026-07-04 14:50:30] [TASK_10] [INFO] Confusion matrix for Logistic_Regression - Config_A:
+[[136  91]
+ [ 63 110]]
+[2026-07-04 14:50:30] [TASK_10] [INFO] Confusion matrix for Random_Forest - Config_A:
+[[146  81]
+ [ 42 131]]
+[2026-07-04 14:50:30] [TASK_10] [INFO] Confusion matrix for XGBoost - Config_A:
+[[159  68]
+ [ 44 129]]
+[2026-07-04 14:50:31] [TASK_10] [INFO] Confusion matrix for LightGBM - Config_A:
+[[153  74]
+ [ 41 132]]
+[2026-07-04 14:50:31] [TASK_10] [INFO] Confusion matrix for Logistic_Regression - Config_C:
+[[149  78]
+ [ 46 127]]
+[2026-07-04 14:50:31] [TASK_10] [INFO] Confusion matrix for Random_Forest - Config_C:
+[[151  76]
+ [ 41 132]]
+[2026-07-04 14:50:32] [TASK_10] [INFO] Confusion matrix for XGBoost - Config_C:
+[[150  77]
+ [ 36 137]]
+[2026-07-04 14:50:32] [TASK_10] [INFO] Confusion matrix for LightGBM - Config_C:
+[[137  90]
+ [ 36 137]]
+[2026-07-04 14:50:40] [TASK_10] [INFO] Confusion matrix for Logistic_Regression - Config_A:
+[[100  54]
+ [ 39  47]]
+[2026-07-04 14:50:40] [TASK_10] [INFO] Confusion matrix for Random_Forest - Config_A:
+[[101  53]
+ [ 32  54]]
+[2026-07-04 14:50:40] [TASK_10] [INFO] Confusion matrix for XGBoost - Config_A:
+[[101  53]
+ [ 32  54]]
+[2026-07-04 14:50:40] [TASK_10] [INFO] Confusion matrix for LightGBM - Config_A:
+[[104  50]
+ [ 34  52]]
+[2026-07-04 14:50:41] [TASK_10] [INFO] Confusion matrix for Logistic_Regression - Config_C:
+[[98 56]
+ [40 46]]
+[2026-07-04 14:50:41] [TASK_10] [INFO] Confusion matrix for Random_Forest - Config_C:
+[[89 65]
+ [24 62]]
+[2026-07-04 14:50:42] [TASK_10] [INFO] Confusion matrix for XGBoost - Config_C:
+[[99 55]
+ [31 55]]
+[2026-07-04 14:50:42] [TASK_10] [INFO] Confusion matrix for LightGBM - Config_C:
+[[106  48]
+ [ 34  52]]
+[2026-07-04 21:25:50] [TASK_10] [INFO] ============================================================
+[2026-07-04 21:25:50] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-07-04 21:25:50] [TASK_10] [INFO] Timestamp: 2026-07-04T21:25:50.187292
+[2026-07-04 21:25:50] [TASK_10] [INFO] ============================================================
+[2026-07-04 21:25:50] [TASK_10] [INFO] Input: data/features/technical_features.csv (1521 rows)
+[2026-07-04 21:25:50] [TASK_10] [INFO] Input: data/features/keyword_features.csv (1450 rows)
+[2026-07-04 21:25:50] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (1428 rows)
+[2026-07-04 21:25:50] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-07-04 21:25:50] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-07-04 21:25:50] [TASK_10] [INFO] ============================================================
+[2026-07-04 21:25:50] [TASK_10] [INFO] ============================================================
+[2026-07-04 21:25:50] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-07-04 21:25:50] [TASK_10] [INFO] Timestamp: 2026-07-04T21:25:50.911173
+[2026-07-04 21:25:50] [TASK_10] [INFO] ============================================================
+[2026-07-04 21:25:50] [TASK_10] [INFO] Input: data/features/technical_features.csv (1521 rows)
+[2026-07-04 21:25:50] [TASK_10] [INFO] Input: data/features/keyword_features.csv (1450 rows)
+[2026-07-04 21:25:50] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (1428 rows)
+[2026-07-04 21:25:50] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-07-04 21:25:50] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-07-04 21:25:50] [TASK_10] [INFO] ============================================================
+[2026-07-04 22:25:28] [TASK_10] [INFO] ============================================================
+[2026-07-04 22:25:28] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-07-04 22:25:28] [TASK_10] [INFO] Timestamp: 2026-07-04T22:25:28.431230
+[2026-07-04 22:25:28] [TASK_10] [INFO] ============================================================
+[2026-07-04 22:25:28] [TASK_10] [INFO] Input: data/features/technical_features.csv (1521 rows)
+[2026-07-04 22:25:28] [TASK_10] [INFO] Input: data/features/keyword_features.csv (1450 rows)
+[2026-07-04 22:25:28] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (1428 rows)
+[2026-07-04 22:25:28] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-07-04 22:25:28] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-07-04 22:25:28] [TASK_10] [INFO] ============================================================
+[2026-07-04 22:25:29] [TASK_10] [INFO] ============================================================
+[2026-07-04 22:25:29] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-07-04 22:25:29] [TASK_10] [INFO] Timestamp: 2026-07-04T22:25:29.289699
+[2026-07-04 22:25:29] [TASK_10] [INFO] ============================================================
+[2026-07-04 22:25:29] [TASK_10] [INFO] Input: data/features/technical_features.csv (1521 rows)
+[2026-07-04 22:25:29] [TASK_10] [INFO] Input: data/features/keyword_features.csv (1450 rows)
+[2026-07-04 22:25:29] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (1428 rows)
+[2026-07-04 22:25:29] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-07-04 22:25:29] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-07-04 22:25:29] [TASK_10] [INFO] ============================================================

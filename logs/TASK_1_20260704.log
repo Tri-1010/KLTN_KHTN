@@ -1,0 +1,100 @@
+[2026-07-04 21:25:49] [TASK_1] [INFO] ============================================================
+[2026-07-04 21:25:49] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-07-04 21:25:49] [TASK_1] [INFO] Timestamp: 2026-07-04T21:25:49.240209
+[2026-07-04 21:25:49] [TASK_1] [INFO] ============================================================
+[2026-07-04 21:25:49] [TASK_1] [ERROR] TASK FAILED: TASK_1 after 0.0 seconds
+[2026-07-04 21:25:49] [TASK_1] [ERROR] Exception: Simulated failure
+[2026-07-04 21:25:49] [TASK_1] [ERROR] Stack trace:
+Traceback (most recent call last):
+  File "C:\Users\User\KLTN_KHTN\KLTN_MASTER\pipeline\run_pipeline.py", line 692, in run_pipeline
+    executor(config, task_logger, smoke_test=smoke_test)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1173, in _execute_mock_call
+    raise effect
+RuntimeError: Simulated failure
+
+[2026-07-04 21:25:49] [TASK_1] [INFO] ============================================================
+[2026-07-04 21:25:49] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-07-04 21:25:49] [TASK_1] [INFO] Timestamp: 2026-07-04T21:25:49.250187
+[2026-07-04 21:25:49] [TASK_1] [INFO] ============================================================
+[2026-07-04 21:25:49] [TASK_1] [ERROR] TASK FAILED: TASK_1 after 0.0 seconds
+[2026-07-04 21:25:49] [TASK_1] [ERROR] Exception: Simulated failure
+[2026-07-04 21:25:49] [TASK_1] [ERROR] Stack trace:
+Traceback (most recent call last):
+  File "C:\Users\User\KLTN_KHTN\KLTN_MASTER\pipeline\run_pipeline.py", line 692, in run_pipeline
+    executor(config, task_logger, smoke_test=smoke_test)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1173, in _execute_mock_call
+    raise effect
+RuntimeError: Simulated failure
+
+[2026-07-04 21:25:49] [TASK_1] [INFO] ============================================================
+[2026-07-04 21:25:49] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-07-04 21:25:49] [TASK_1] [INFO] Timestamp: 2026-07-04T21:25:49.372532
+[2026-07-04 21:25:49] [TASK_1] [INFO] ============================================================
+[2026-07-04 21:25:49] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-07-04 21:25:49] [TASK_1] [INFO] END TASK_1 — completed in 0.0 seconds
+[2026-07-04 21:25:49] [TASK_1] [INFO] ============================================================
+[2026-07-04 21:25:50] [TASK_1] [INFO] ============================================================
+[2026-07-04 21:25:50] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-07-04 21:25:50] [TASK_1] [INFO] Timestamp: 2026-07-04T21:25:50.240493
+[2026-07-04 21:25:50] [TASK_1] [INFO] ============================================================
+[2026-07-04 21:25:50] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-07-04 21:25:50] [TASK_1] [INFO] END TASK_1 — completed in 0.0 seconds
+[2026-07-04 21:25:50] [TASK_1] [INFO] ============================================================
+[2026-07-04 22:25:27] [TASK_1] [INFO] ============================================================
+[2026-07-04 22:25:27] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-07-04 22:25:27] [TASK_1] [INFO] Timestamp: 2026-07-04T22:25:27.501138
+[2026-07-04 22:25:27] [TASK_1] [INFO] ============================================================
+[2026-07-04 22:25:27] [TASK_1] [ERROR] TASK FAILED: TASK_1 after 0.0 seconds
+[2026-07-04 22:25:27] [TASK_1] [ERROR] Exception: Simulated failure
+[2026-07-04 22:25:27] [TASK_1] [ERROR] Stack trace:
+Traceback (most recent call last):
+  File "C:\Users\User\KLTN_KHTN\pipeline\run_pipeline.py", line 692, in run_pipeline
+    executor(config, task_logger, smoke_test=smoke_test)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1173, in _execute_mock_call
+    raise effect
+RuntimeError: Simulated failure
+
+[2026-07-04 22:25:27] [TASK_1] [INFO] ============================================================
+[2026-07-04 22:25:27] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-07-04 22:25:27] [TASK_1] [INFO] Timestamp: 2026-07-04T22:25:27.517847
+[2026-07-04 22:25:27] [TASK_1] [INFO] ============================================================
+[2026-07-04 22:25:27] [TASK_1] [ERROR] TASK FAILED: TASK_1 after 0.0 seconds
+[2026-07-04 22:25:27] [TASK_1] [ERROR] Exception: Simulated failure
+[2026-07-04 22:25:27] [TASK_1] [ERROR] Stack trace:
+Traceback (most recent call last):
+  File "C:\Users\User\KLTN_KHTN\pipeline\run_pipeline.py", line 692, in run_pipeline
+    executor(config, task_logger, smoke_test=smoke_test)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1173, in _execute_mock_call
+    raise effect
+RuntimeError: Simulated failure
+
+[2026-07-04 22:25:27] [TASK_1] [INFO] ============================================================
+[2026-07-04 22:25:27] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-07-04 22:25:27] [TASK_1] [INFO] Timestamp: 2026-07-04T22:25:27.629669
+[2026-07-04 22:25:27] [TASK_1] [INFO] ============================================================
+[2026-07-04 22:25:27] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-07-04 22:25:27] [TASK_1] [INFO] END TASK_1 — completed in 0.0 seconds
+[2026-07-04 22:25:27] [TASK_1] [INFO] ============================================================
+[2026-07-04 22:25:28] [TASK_1] [INFO] ============================================================
+[2026-07-04 22:25:28] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-07-04 22:25:28] [TASK_1] [INFO] Timestamp: 2026-07-04T22:25:28.485223
+[2026-07-04 22:25:28] [TASK_1] [INFO] ============================================================
+[2026-07-04 22:25:28] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-07-04 22:25:28] [TASK_1] [INFO] END TASK_1 — completed in 0.0 seconds
+[2026-07-04 22:25:28] [TASK_1] [INFO] ============================================================

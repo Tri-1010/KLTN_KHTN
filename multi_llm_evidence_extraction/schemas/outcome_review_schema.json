@@ -19,7 +19,29 @@
     "abnormal_volume": {"type": ["number", "null"]},
     "volatility": {"type": ["number", "null"]},
     "max_adverse_move": {"type": ["number", "null"]},
+    "outcome_direction": {"type": "string", "enum": ["aligned", "opposed", "flat", "unavailable"]},
+    "outcome_salience": {"type": "string", "enum": ["salient", "not_salient", "unavailable"]},
+    "attribution_status": {"type": "string", "enum": ["unassessed", "attributed", "confounded", "indeterminate"]},
     "outcome_label": {"type": "string", "enum": ["confirmed", "contradicted", "unresolved", "confounded", "not_price_relevant"]},
+    "threshold_metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "direction_flat_band": {"type": "number", "minimum": 0},
+        "salience_absolute_return": {"type": "number", "minimum": 0},
+        "return_unit": {"type": "string", "enum": ["decimal_return"]}
+      },
+      "required": ["direction_flat_band", "salience_absolute_return", "return_unit"]
+    },
+    "version_metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {"type": "string", "minLength": 1},
+        "label_rule_version": {"type": "string", "minLength": 1}
+      },
+      "required": ["schema_version", "label_rule_version"]
+    },
     "confounders": {"type": "array", "items": {"type": "string"}},
     "review_reason": {"type": "string"},
     "requires_follow_up": {"type": "boolean"}
@@ -38,7 +60,12 @@
     "abnormal_volume",
     "volatility",
     "max_adverse_move",
+    "outcome_direction",
+    "outcome_salience",
+    "attribution_status",
     "outcome_label",
+    "threshold_metadata",
+    "version_metadata",
     "confounders",
     "review_reason",
     "requires_follow_up"

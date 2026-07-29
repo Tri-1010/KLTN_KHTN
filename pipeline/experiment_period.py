@@ -53,7 +53,7 @@ NEWS_PATH = "data/news/processed/all_news_processed.csv"
 PERIOD_MONTHS = {"month": 1, "2month": 2, "quarter": 3}
 
 # Day-bucketed units (not aligned to calendar months). Value = days per period.
-PERIOD_DAYS = {"2week": 14}
+PERIOD_DAYS = {"1day": 1, "1week": 7, "2week": 14}
 
 # Fixed epoch for day-bucketed period indexing. Earlier than any data so all
 # indices are non-negative; the absolute value is irrelevant, only ordering.
@@ -329,9 +329,13 @@ def run_for_unit(unit: str) -> List[Dict[str, Any]]:
     n_periods = merged["period_id"].nunique()
     for cname, cols in configs.items():
         avail = [c for c in cols if c in train_df.columns]
-        imp, _ = fit_imputer(train_df, avail)
-        X_tr, y_tr = prepare_features(train_df, avail, imputer=imp)
-        X_te, y_te = prepare_features(test_df, avail, imputer=imp)
+        numeric_avail = train_df[avail].select_dtypes(include=[np.number]).columns.tolist()
+        usable = [c for c in numeric_avail if not train_df[c].isna().all()]
+        if not usable:
+            continue
+        imp, _ = fit_imputer(train_df, usable)
+        X_tr, y_tr = prepare_features(train_df, usable, imputer=imp)
+        X_te, y_te = prepare_features(test_df, usable, imputer=imp)
         common = [c for c in X_tr.columns if c in X_te.columns]
         X_tr, X_te = X_tr[common], X_te[common]
         if y_tr.nunique() < 2 or y_te.nunique() < 2:
@@ -349,7 +353,7 @@ def run_for_unit(unit: str) -> List[Dict[str, Any]]:
 
 def main() -> None:
     all_rows: List[Dict[str, Any]] = []
-    for unit in ("2week", "month", "2month", "quarter"):
+    for unit in ("1day", "1week", "2week", "month", "2month", "quarter"):
         all_rows.extend(run_for_unit(unit))
 
     df = pd.DataFrame(all_rows)
@@ -374,12 +378,17 @@ def main() -> None:
     print("\n--- Mean by unit ---")
     summary = pivot.groupby("unit").agg(
         n_samples=("n_samples", "first"),
+        n_periods=("n_periods", "first"),
+        test_samples=("test_samples", "first"),
         mean_A=("Config_A", "mean"),
         mean_C=("Config_C", "mean"),
         mean_delta=("delta_C_minus_A", "mean"),
     ).round(4)
+    summary_path = "reports/period_experiment_summary.csv"
+    summary.to_csv(summary_path)
     print(summary.to_string())
     print(f"\nSaved detailed results to {out_path}")
+    print(f"Saved summary results to {summary_path}")
 
 
 if __name__ == "__main__":

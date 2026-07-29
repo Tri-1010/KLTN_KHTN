@@ -35,21 +35,36 @@ def main() -> int:
         return 0
     rule = pd.read_csv(RULE, encoding="utf-8-sig")
     cons = pd.read_csv(CONS, encoding="utf-8-sig")
-    eligible = cons["analysis_eligible"].astype(str).str.lower().isin(["true", "1"]) if "analysis_eligible" in cons else pd.Series(True, index=cons.index)
-    cons = cons[eligible].copy()
-    df = rule.merge(cons, on=["news_id", "ticker"], how="inner")
-    lines.append(f"- Compared rows (analysis eligible): {len(df)}")
+    if "analysis_eligible" not in cons:
+        lines.append("Comparison unavailable: consensus artifact lacks required `analysis_eligible`; no implicit all-row fallback is allowed.")
+        REPORT.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        pd.DataFrame().to_csv(MATRIX, index=False, encoding="utf-8-sig")
+        print(f"saved pending {REPORT}")
+        return 0
+    eligible = cons["analysis_eligible"].astype(str).str.strip().str.lower().isin(["true", "1", "yes"])
+    eligible_cons = cons[eligible].copy()
+    df = rule.merge(eligible_cons, on=["news_id", "ticker"], how="inner")
+    eligible_keys = eligible_cons[["news_id", "ticker"]].drop_duplicates()
+    compared_keys = df[["news_id", "ticker"]].drop_duplicates()
+    coverage = len(compared_keys) / len(eligible_keys) if len(eligible_keys) else 0.0
+    lines.append("Semantic labels are controlled pseudo-label references, not human ground truth.")
+    lines.append(f"- Eligible consensus rows: {len(eligible_cons)} ({len(eligible_keys)} unique news-ticker keys)")
+    lines.append(f"- Compared rows (analysis eligible): {len(df)} ({len(compared_keys)} unique keys)")
+    lines.append(f"- Unique-key merge coverage over eligible consensus: {coverage:.4f}")
     rows = []
     for rcol, ccol in PAIRS:
         if rcol not in df or ccol not in df:
             continue
         work = df[[rcol, ccol]].dropna()
-        work = work[~work[ccol].astype(str).isin(["disagreement", "unclear"])]
+        excluded = work[ccol].astype(str).isin(["disagreement", "unclear"])
+        unclear_rate = float(excluded.mean()) if len(work) else 0.0
+        work = work[~excluded]
         if work.empty:
+            lines.append(f"- {rcol} vs {ccol}: no scorable rows; unclear/disagreement rate={unclear_rate:.4f}")
             continue
         acc = accuracy_score(work[ccol], work[rcol])
         f1 = f1_score(work[ccol], work[rcol], average="macro", zero_division=0)
-        lines.append(f"- {rcol} vs {ccol}: accuracy={acc:.4f}, macro_f1={f1:.4f}, n={len(work)}")
+        lines.append(f"- {rcol} vs {ccol}: accuracy={acc:.4f}, macro_f1={f1:.4f}, n={len(work)}, unclear/disagreement rate={unclear_rate:.4f}")
         labels = sorted(set(work[rcol].astype(str)) | set(work[ccol].astype(str)))
         cm = confusion_matrix(work[ccol], work[rcol], labels=labels)
         for i, actual in enumerate(labels):

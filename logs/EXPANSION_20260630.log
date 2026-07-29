@@ -1,0 +1,132 @@
+[2026-06-30 06:03:43] [EXPANSION] [INFO] HOSE-80 Expansion: 50 new tickers to crawl
+[2026-06-30 06:03:43] [EXPANSION] [INFO] New tickers: EIB, LPB, MSB, NAB, OCB, PGB, VBB, BVB, ABB, KLB, BAB, VCI, HCM, VND, MBS, BSI, KDH, NVL, DXG, PDR, NLG, DIG, HDG, VCG, SCR, HSG, NKG, VGC, PHR, CSV, DPM, DCM, BMP, REE, NT2, PPC, GEX, EVF, PNJ, DGW, FRT, MCH, VHC, ANV, CMG, ELC, GMD, VSC, PVT, HAH
+[2026-06-30 06:03:43] [EXPANSION] [INFO] Start date: 2022-01-01
+[2026-06-30 06:03:43] [EXPANSION] [INFO] ============================================================
+[2026-06-30 06:03:43] [EXPANSION] [INFO] STEP 3: Scraping Vietstock for 50 new tickers
+[2026-06-30 06:03:43] [EXPANSION] [INFO] ============================================================
+[2026-06-30 06:03:44] [EXPANSION] [INFO] [1/50] EIB — Vietstock new crawl
+[2026-06-30 06:04:23] [EXPANSION] [INFO]   Vietstock EIB: 186 articles collected
+[2026-06-30 06:04:25] [EXPANSION] [INFO] [2/50] LPB — Vietstock new crawl
+[2026-06-30 06:05:17] [EXPANSION] [INFO]   Vietstock LPB: 257 articles collected
+[2026-06-30 06:05:18] [EXPANSION] [INFO] [3/50] MSB — Vietstock new crawl
+[2026-06-30 06:06:13] [EXPANSION] [INFO]   Vietstock MSB: 278 articles collected
+[2026-06-30 06:06:14] [EXPANSION] [INFO] [4/50] NAB — Vietstock new crawl
+[2026-06-30 06:07:00] [EXPANSION] [INFO]   Vietstock NAB: 225 articles collected
+[2026-06-30 06:07:01] [EXPANSION] [INFO] [5/50] OCB — Vietstock new crawl
+[2026-06-30 06:08:00] [EXPANSION] [INFO]   Vietstock OCB: 324 articles collected
+[2026-06-30 06:08:01] [EXPANSION] [INFO] [6/50] PGB — Vietstock new crawl
+[2026-06-30 06:08:36] [EXPANSION] [INFO]   Vietstock PGB: 147 articles collected
+[2026-06-30 06:08:37] [EXPANSION] [INFO] [7/50] VBB — Vietstock new crawl
+[2026-06-30 06:09:29] [EXPANSION] [INFO]   Vietstock VBB: 231 articles collected
+[2026-06-30 06:09:30] [EXPANSION] [INFO] [8/50] BVB — Vietstock new crawl
+[2026-06-30 06:10:13] [EXPANSION] [INFO]   Vietstock BVB: 183 articles collected
+[2026-06-30 06:10:15] [EXPANSION] [INFO] [9/50] ABB — Vietstock new crawl
+[2026-06-30 06:11:06] [EXPANSION] [INFO]   Vietstock ABB: 262 articles collected
+[2026-06-30 06:11:07] [EXPANSION] [INFO] [10/50] KLB — Vietstock new crawl
+[2026-06-30 06:11:44] [EXPANSION] [INFO]   Vietstock KLB: 173 articles collected
+[2026-06-30 06:11:46] [EXPANSION] [INFO] [11/50] BAB — Vietstock new crawl
+[2026-06-30 06:12:37] [EXPANSION] [INFO]   Vietstock BAB: 206 articles collected
+[2026-06-30 06:12:39] [EXPANSION] [INFO] [12/50] VCI — Vietstock new crawl
+[2026-06-30 06:13:28] [EXPANSION] [INFO]   Vietstock VCI: 249 articles collected
+[2026-06-30 06:13:29] [EXPANSION] [INFO] [13/50] HCM — Vietstock new crawl
+[2026-06-30 06:14:42] [EXPANSION] [INFO]   Vietstock HCM: 366 articles collected
+[2026-06-30 06:14:44] [EXPANSION] [INFO] [14/50] VND — Vietstock new crawl
+[2026-06-30 06:15:23] [EXPANSION] [INFO]   Vietstock VND: 169 articles collected
+[2026-06-30 06:15:24] [EXPANSION] [INFO] [15/50] MBS — Vietstock new crawl
+[2026-06-30 06:16:13] [EXPANSION] [INFO]   Vietstock MBS: 239 articles collected
+[2026-06-30 06:16:15] [EXPANSION] [INFO] [16/50] BSI — Vietstock new crawl
+[2026-06-30 06:16:40] [EXPANSION] [INFO]   Vietstock BSI: 91 articles collected
+[2026-06-30 06:16:41] [EXPANSION] [INFO] [17/50] KDH — Vietstock new crawl
+[2026-06-30 06:17:19] [EXPANSION] [INFO]   Vietstock KDH: 157 articles collected
+[2026-06-30 06:17:21] [EXPANSION] [INFO] [18/50] NVL — Vietstock new crawl
+[2026-06-30 06:18:11] [EXPANSION] [INFO]   Vietstock NVL: 268 articles collected
+[2026-06-30 06:18:13] [EXPANSION] [INFO] [19/50] DXG — Vietstock new crawl
+[2026-06-30 06:18:53] [EXPANSION] [INFO]   Vietstock DXG: 168 articles collected
+[2026-06-30 06:18:55] [EXPANSION] [INFO] [20/50] PDR — Vietstock new crawl
+[2026-06-30 06:19:31] [EXPANSION] [INFO]   Vietstock PDR: 175 articles collected
+[2026-06-30 06:19:32] [EXPANSION] [INFO] [21/50] NLG — Vietstock new crawl
+[2026-06-30 06:20:08] [EXPANSION] [INFO]   Vietstock NLG: 177 articles collected
+[2026-06-30 06:20:10] [EXPANSION] [INFO] [22/50] DIG — Vietstock new crawl
+[2026-06-30 06:20:51] [EXPANSION] [INFO]   Vietstock DIG: 186 articles collected
+[2026-06-30 06:20:53] [EXPANSION] [INFO] [23/50] HDG — Vietstock new crawl
+[2026-06-30 06:21:16] [EXPANSION] [INFO]   Vietstock HDG: 81 articles collected
+[2026-06-30 06:21:18] [EXPANSION] [INFO] [24/50] VCG — Vietstock new crawl
+[2026-06-30 06:21:40] [EXPANSION] [INFO]   Vietstock VCG: 99 articles collected
+[2026-06-30 06:21:42] [EXPANSION] [INFO] [25/50] SCR — Vietstock new crawl
+[2026-06-30 06:22:03] [EXPANSION] [INFO]   Vietstock SCR: 77 articles collected
+[2026-06-30 06:22:05] [EXPANSION] [INFO] [26/50] HSG — Vietstock new crawl
+[2026-06-30 06:22:28] [EXPANSION] [INFO]   Vietstock HSG: 91 articles collected
+[2026-06-30 06:22:30] [EXPANSION] [INFO] [27/50] NKG — Vietstock new crawl
+[2026-06-30 06:22:54] [EXPANSION] [INFO]   Vietstock NKG: 82 articles collected
+[2026-06-30 06:22:56] [EXPANSION] [INFO] [28/50] VGC — Vietstock new crawl
+[2026-06-30 06:23:24] [EXPANSION] [INFO]   Vietstock VGC: 86 articles collected
+[2026-06-30 06:23:25] [EXPANSION] [INFO] [29/50] PHR — Vietstock new crawl
+[2026-06-30 06:23:53] [EXPANSION] [INFO]   Vietstock PHR: 61 articles collected
+[2026-06-30 06:23:54] [EXPANSION] [INFO] [30/50] CSV — Vietstock new crawl
+[2026-06-30 06:24:14] [EXPANSION] [INFO]   Vietstock CSV: 55 articles collected
+[2026-06-30 06:24:16] [EXPANSION] [INFO] [31/50] DPM — Vietstock new crawl
+[2026-06-30 06:24:44] [EXPANSION] [INFO]   Vietstock DPM: 100 articles collected
+[2026-06-30 06:24:45] [EXPANSION] [INFO] [32/50] DCM — Vietstock new crawl
+[2026-06-30 06:25:15] [EXPANSION] [INFO]   Vietstock DCM: 72 articles collected
+[2026-06-30 06:25:16] [EXPANSION] [INFO] [33/50] BMP — Vietstock new crawl
+[2026-06-30 06:25:40] [EXPANSION] [INFO]   Vietstock BMP: 55 articles collected
+[2026-06-30 06:25:42] [EXPANSION] [INFO] [34/50] REE — Vietstock new crawl
+[2026-06-30 06:26:17] [EXPANSION] [INFO]   Vietstock REE: 161 articles collected
+[2026-06-30 06:26:18] [EXPANSION] [INFO] [35/50] NT2 — Vietstock new crawl
+[2026-06-30 06:26:40] [EXPANSION] [INFO]   Vietstock NT2: 43 articles collected
+[2026-06-30 06:26:41] [EXPANSION] [INFO] [36/50] PPC — Vietstock new crawl
+[2026-06-30 06:27:00] [EXPANSION] [INFO]   Vietstock PPC: 42 articles collected
+[2026-06-30 06:27:01] [EXPANSION] [INFO] [37/50] GEX — Vietstock new crawl
+[2026-06-30 06:27:30] [EXPANSION] [INFO]   Vietstock GEX: 116 articles collected
+[2026-06-30 06:27:31] [EXPANSION] [INFO] [38/50] EVF — Vietstock new crawl
+[2026-06-30 06:27:53] [EXPANSION] [INFO]   Vietstock EVF: 93 articles collected
+[2026-06-30 06:27:54] [EXPANSION] [INFO] [39/50] PNJ — Vietstock new crawl
+[2026-06-30 06:28:26] [EXPANSION] [INFO]   Vietstock PNJ: 176 articles collected
+[2026-06-30 06:28:27] [EXPANSION] [INFO] [40/50] DGW — Vietstock new crawl
+[2026-06-30 06:28:51] [EXPANSION] [INFO]   Vietstock DGW: 112 articles collected
+[2026-06-30 06:28:53] [EXPANSION] [INFO] [41/50] FRT — Vietstock new crawl
+[2026-06-30 06:29:12] [EXPANSION] [INFO]   Vietstock FRT: 76 articles collected
+[2026-06-30 06:29:14] [EXPANSION] [INFO] [42/50] MCH — Vietstock new crawl
+[2026-06-30 06:29:47] [EXPANSION] [INFO]   Vietstock MCH: 161 articles collected
+[2026-06-30 06:29:49] [EXPANSION] [INFO] [43/50] VHC — Vietstock new crawl
+[2026-06-30 06:30:18] [EXPANSION] [INFO]   Vietstock VHC: 91 articles collected
+[2026-06-30 06:30:20] [EXPANSION] [INFO] [44/50] ANV — Vietstock new crawl
+[2026-06-30 06:30:45] [EXPANSION] [INFO]   Vietstock ANV: 61 articles collected
+[2026-06-30 06:30:47] [EXPANSION] [INFO] [45/50] CMG — Vietstock new crawl
+[2026-06-30 06:31:16] [EXPANSION] [INFO]   Vietstock CMG: 104 articles collected
+[2026-06-30 06:31:18] [EXPANSION] [INFO] [46/50] ELC — Vietstock new crawl
+[2026-06-30 06:31:47] [EXPANSION] [INFO]   Vietstock ELC: 105 articles collected
+[2026-06-30 06:31:48] [EXPANSION] [INFO] [47/50] GMD — Vietstock new crawl
+[2026-06-30 06:32:17] [EXPANSION] [INFO]   Vietstock GMD: 107 articles collected
+[2026-06-30 06:32:19] [EXPANSION] [INFO] [48/50] VSC — Vietstock new crawl
+[2026-06-30 06:32:50] [EXPANSION] [INFO]   Vietstock VSC: 108 articles collected
+[2026-06-30 06:32:51] [EXPANSION] [INFO] [49/50] PVT — Vietstock new crawl
+[2026-06-30 06:33:17] [EXPANSION] [INFO]   Vietstock PVT: 85 articles collected
+[2026-06-30 06:33:19] [EXPANSION] [INFO] [50/50] HAH — Vietstock new crawl
+[2026-06-30 06:33:53] [EXPANSION] [INFO]   Vietstock HAH: 154 articles collected
+[2026-06-30 06:33:55] [EXPANSION] [INFO] Step 3 complete
+[2026-06-30 06:33:55] [EXPANSION] [INFO] ============================================================
+[2026-06-30 06:33:55] [EXPANSION] [INFO] EXPANSION CRAWL COMPLETE
+[2026-06-30 06:33:55] [EXPANSION] [INFO] Next steps:
+[2026-06-30 06:33:55] [EXPANSION] [INFO]   1. python -m pipeline.run_pipeline --step preprocess --force
+[2026-06-30 06:33:55] [EXPANSION] [INFO]   2. python -m pipeline.run_pipeline --step features --force
+[2026-06-30 06:33:55] [EXPANSION] [INFO]   3. python -m pipeline.run_pipeline --step train --force
+[2026-06-30 06:33:55] [EXPANSION] [INFO]   4. python -m pipeline.experiment_keyword_significance
+[2026-06-30 06:33:55] [EXPANSION] [INFO] ============================================================
+[2026-06-30 08:56:13] [EXPANSION] [INFO] HOSE-80 Expansion: 50 new tickers to crawl
+[2026-06-30 08:56:13] [EXPANSION] [INFO] New tickers: EIB, LPB, MSB, NAB, OCB, PGB, VBB, BVB, ABB, KLB, BAB, VCI, HCM, VND, MBS, BSI, KDH, NVL, DXG, PDR, NLG, DIG, HDG, VCG, SCR, HSG, NKG, VGC, PHR, CSV, DPM, DCM, BMP, REE, NT2, PPC, GEX, EVF, PNJ, DGW, FRT, MCH, VHC, ANV, CMG, ELC, GMD, VSC, PVT, HAH
+[2026-06-30 08:56:13] [EXPANSION] [INFO] Start date: 2022-01-01
+[2026-06-30 08:56:13] [EXPANSION] [INFO] ============================================================
+[2026-06-30 08:56:13] [EXPANSION] [INFO] STEP 1: Collecting prices for 50 new tickers
+[2026-06-30 08:56:13] [EXPANSION] [INFO] ============================================================
+[2026-06-30 08:56:35] [EXPANSION] [INFO] Already have prices for: EIB, LPB, MSB, NAB, OCB, PGB, VBB, BVB, ABB, KLB, BAB, VCI, HCM, VND, MBS, BSI, KDH, NVL, DXG, PDR, NLG, DIG, HDG, VCG, SCR, HSG, NKG, VGC, PHR, CSV, DPM, DCM, BMP, PPC, ANV, ELC — skipping
+[2026-06-30 08:56:35] [EXPANSION] [INFO] Collecting prices for: REE, NT2, GEX, EVF, PNJ, DGW, FRT, MCH, VHC, CMG, GMD, VSC, PVT, HAH
+[2026-06-30 08:56:45] [EXPANSION] [INFO] Step 1 complete
+[2026-06-30 08:56:45] [EXPANSION] [INFO] ============================================================
+[2026-06-30 08:56:45] [EXPANSION] [INFO] EXPANSION CRAWL COMPLETE
+[2026-06-30 08:56:45] [EXPANSION] [INFO] Next steps:
+[2026-06-30 08:56:45] [EXPANSION] [INFO]   1. python -m pipeline.run_pipeline --step preprocess --force
+[2026-06-30 08:56:45] [EXPANSION] [INFO]   2. python -m pipeline.run_pipeline --step features --force
+[2026-06-30 08:56:45] [EXPANSION] [INFO]   3. python -m pipeline.run_pipeline --step train --force
+[2026-06-30 08:56:45] [EXPANSION] [INFO]   4. python -m pipeline.experiment_keyword_significance
+[2026-06-30 08:56:45] [EXPANSION] [INFO] ============================================================

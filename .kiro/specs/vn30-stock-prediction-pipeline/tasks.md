@@ -90,7 +90,7 @@ The implementation follows a linear DAG architecture with checkpoint files at ea
     - Create `config/entity_aliases.json` with a complete alias dictionary mapping all 30 VN30 tickers to Vietnamese company name aliases (full name, abbreviation, common variants). Example entries: "VNM": ["Vinamilk", "VNM", "Công ty Cổ phần Sữa Việt Nam", "Vietnam Dairy"], "VCB": ["Vietcombank", "VCB", "Ngân hàng Ngoại thương"], "VIC": ["Vingroup", "VIC", "Tập đoàn Vingroup"], "VHM": ["Vinhomes", "VHM"], "VRE": ["Vincom Retail", "VRE"], and similarly for all remaining 25 tickers
     - Load aliases from `config/entity_aliases.json` in the matching module
     - Include special handling for Vingroup family: "Vinhomes" → VHM, "Vincom Retail" or "trung tâm thương mại Vincom" → VRE, "Vingroup" or "tập đoàn Vingroup" → VIC
-    - Implement `match_entities()` function with case-insensitive matching against title + description
+    - Implement `match_entities()` function with case-insensitive matching against title + description + enriched summary/key facts when available
     - _Requirements: 3.1, 3.2, 3.3_
   
   - [x] 6.2 Handle multi-ticker and unmatched articles
@@ -113,10 +113,17 @@ The implementation follows a linear DAG architecture with checkpoint files at ea
     - Test alias loading from config/entity_aliases.json
     - _Requirements: 3.1, 3.2, 3.4, 3.5_
 
+- [x] 6B. Implement Article Full-Text Enrichment module (TASK 2B)
+  - [x] Create `pipeline/task2b_enrich_articles.py` to fetch article detail pages after entity matching
+  - [x] Extract `full_text`, `lead`, `author`, `published_at_detail`, `canonical_url`, `content_hash`, `full_text_available`, and `extraction_status`
+  - [x] Generate compact downstream evidence fields: `article_summary`, `key_facts_json`, `event_type_enriched`, `risk_flags_json`, and `relevance_hint`
+  - [x] Save `data/news/enriched/all_news_enriched.csv`, preserving duplicate ticker rows for multi-ticker articles while caching fetches by URL
+  - [x] Add runner support via `TASK_2B` and `--step enrich_news`; TASK 4 reads enriched output when present
+
 - [ ] 7. Implement Text_Preprocessor module (TASK 4)
   - [x] 7.1 Create `pipeline/task4_preprocess.py` with text cleaning functions
     - Implement `clean_text()`: lowercase, remove HTML tags, special characters, URLs, preserve numeric tokens (e.g., "tăng 20%", "lợi nhuận 500 tỷ"), normalize Vietnamese diacritics
-    - Concatenate title + description into single `text_clean` field
+    - Concatenate title + enriched full_text/lead/article_summary/key_facts_json into single `text_clean` field, with description fallback for legacy rows
     - _Requirements: 4.1, 4.2_
   
   - [x] 7.2 Implement Vietnamese tokenization

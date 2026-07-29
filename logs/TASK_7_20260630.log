@@ -1,0 +1,36 @@
+[2026-06-30 13:11:09] [TASK_7] [INFO] ============================================================
+[2026-06-30 13:11:09] [TASK_7] [INFO] START TASK_7: Technical Feature Extraction (RSI, MACD, BB, SMA, EMA)
+[2026-06-30 13:11:09] [TASK_7] [INFO] Timestamp: 2026-06-30T13:11:09.739710
+[2026-06-30 13:11:09] [TASK_7] [INFO] ============================================================
+[2026-06-30 13:11:09] [TASK_7] [INFO] Input: data/prices/all_vn30_prices.csv (93824 rows)
+[2026-06-30 13:11:14] [TASK_7] [INFO] Starting Technical Feature Extraction (TASK 7)...
+[2026-06-30 13:11:14] [TASK_7] [INFO] Loaded 93824 daily price rows.
+[2026-06-30 13:11:22] [TASK_7] [INFO] Computed 1521 quarterly feature rows for 80 tickers.
+[2026-06-30 13:11:22] [TASK_7] [INFO] Saved 1521 rows to data/features/technical_features.csv
+[2026-06-30 13:11:22] [TASK_7] [INFO] Computing correlation matrix...
+[2026-06-30 13:11:22] [TASK_7] [WARNING] High correlation (0.970) between 'return_q' and 'return_mean_daily'
+[2026-06-30 13:11:22] [TASK_7] [WARNING] High correlation (0.998) between 'return_std_daily' and 'volatility_q'
+[2026-06-30 13:11:22] [TASK_7] [WARNING] High correlation (1.000) between 'sma20_end' and 'ema20_end'
+[2026-06-30 13:11:22] [TASK_7] [INFO] TASK 7 complete.
+[2026-06-30 13:11:22] [TASK_7] [INFO] ------------------------------------------------------------
+[2026-06-30 13:11:22] [TASK_7] [INFO] END TASK_7 — completed in 12.4 seconds
+[2026-06-30 13:11:22] [TASK_7] [INFO] Output: data/features/technical_features.csv (1521 rows)
+[2026-06-30 13:11:22] [TASK_7] [INFO] ============================================================
+[2026-06-30 16:38:32] [TASK_7] [INFO] ============================================================
+[2026-06-30 16:38:32] [TASK_7] [INFO] START TASK_7: Technical Feature Extraction (RSI, MACD, BB, SMA, EMA)
+[2026-06-30 16:38:32] [TASK_7] [INFO] Timestamp: 2026-06-30T16:38:32.888540
+[2026-06-30 16:38:32] [TASK_7] [INFO] ============================================================
+[2026-06-30 16:38:32] [TASK_7] [INFO] Input: data/prices/all_vn30_prices.csv (93824 rows)
+[2026-06-30 16:38:33] [TASK_7] [INFO] Starting Technical Feature Extraction (TASK 7)...
+[2026-06-30 16:38:33] [TASK_7] [INFO] Loaded 93824 daily price rows.
+[2026-06-30 16:38:38] [TASK_7] [INFO] Computed 1521 quarterly feature rows for 80 tickers.
+[2026-06-30 16:38:38] [TASK_7] [INFO] Saved 1521 rows to data/features/technical_features.csv
+[2026-06-30 16:38:38] [TASK_7] [INFO] Computing correlation matrix...
+[2026-06-30 16:38:38] [TASK_7] [WARNING] High correlation (0.970) between 'return_q' and 'return_mean_daily'
+[2026-06-30 16:38:38] [TASK_7] [WARNING] High correlation (0.998) between 'return_std_daily' and 'volatility_q'
+[2026-06-30 16:38:38] [TASK_7] [WARNING] High correlation (1.000) between 'sma20_end' and 'ema20_end'
+[2026-06-30 16:38:38] [TASK_7] [INFO] TASK 7 complete.
+[2026-06-30 16:38:38] [TASK_7] [INFO] ------------------------------------------------------------
+[2026-06-30 16:38:38] [TASK_7] [INFO] END TASK_7 — completed in 5.3 seconds
+[2026-06-30 16:38:38] [TASK_7] [INFO] Output: data/features/technical_features.csv (1521 rows)
+[2026-06-30 16:38:38] [TASK_7] [INFO] ============================================================

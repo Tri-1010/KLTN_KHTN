@@ -1,0 +1,74 @@
+[2026-06-30 08:56:35] [TASK_1] [INFO] ============================================================
+[2026-06-30 08:56:35] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-30 08:56:35] [TASK_1] [INFO] Tickers: 14 | Date range: 2022-01-01 to 2026-06-30
+[2026-06-30 08:56:35] [TASK_1] [INFO] ============================================================
+[2026-06-30 08:56:35] [TASK_1] [INFO] HOSE-80 expansion: 14 non-VN30 tickers included: REE, NT2, GEX, EVF, PNJ, DGW, FRT, MCH, VHC, CMG, GMD, VSC, PVT, HAH
+[2026-06-30 08:56:35] [TASK_1] [INFO] Validated 14 tickers total (0 VN30 + 14 expansion).
+[2026-06-30 08:56:35] [TASK_1] [INFO] Processing REE (1/14)...
+[2026-06-30 08:56:35] [TASK_1] [INFO] Fetched 1174 rows for REE (2021-10-12 to 2026-06-29).
+[2026-06-30 08:56:35] [TASK_1] [INFO] Saved REE → data/prices\REE.csv (1174 rows)
+[2026-06-30 08:56:36] [TASK_1] [INFO] Processing NT2 (2/14)...
+[2026-06-30 08:56:36] [TASK_1] [INFO] Fetched 1174 rows for NT2 (2021-10-12 to 2026-06-29).
+[2026-06-30 08:56:36] [TASK_1] [INFO] Saved NT2 → data/prices\NT2.csv (1174 rows)
+[2026-06-30 08:56:37] [TASK_1] [INFO] Processing GEX (3/14)...
+[2026-06-30 08:56:37] [TASK_1] [INFO] Fetched 1174 rows for GEX (2021-10-12 to 2026-06-29).
+[2026-06-30 08:56:37] [TASK_1] [INFO] Saved GEX → data/prices\GEX.csv (1174 rows)
+[2026-06-30 08:56:37] [TASK_1] [INFO] Processing EVF (4/14)...
+[2026-06-30 08:56:38] [TASK_1] [INFO] Fetched 1174 rows for EVF (2021-09-30 to 2026-06-29).
+[2026-06-30 08:56:38] [TASK_1] [INFO] Saved EVF → data/prices\EVF.csv (1174 rows)
+[2026-06-30 08:56:38] [TASK_1] [INFO] Processing PNJ (5/14)...
+[2026-06-30 08:56:38] [TASK_1] [INFO] Fetched 1174 rows for PNJ (2021-10-12 to 2026-06-29).
+[2026-06-30 08:56:38] [TASK_1] [INFO] Saved PNJ → data/prices\PNJ.csv (1174 rows)
+[2026-06-30 08:56:39] [TASK_1] [INFO] Processing DGW (6/14)...
+[2026-06-30 08:56:39] [TASK_1] [INFO] Fetched 1174 rows for DGW (2021-10-12 to 2026-06-29).
+[2026-06-30 08:56:39] [TASK_1] [INFO] Saved DGW → data/prices\DGW.csv (1174 rows)
+[2026-06-30 08:56:40] [TASK_1] [INFO] Processing FRT (7/14)...
+[2026-06-30 08:56:40] [TASK_1] [INFO] Fetched 1174 rows for FRT (2021-10-12 to 2026-06-29).
+[2026-06-30 08:56:40] [TASK_1] [INFO] Saved FRT → data/prices\FRT.csv (1174 rows)
+[2026-06-30 08:56:40] [TASK_1] [INFO] Processing MCH (8/14)...
+[2026-06-30 08:56:41] [TASK_1] [INFO] Fetched 1174 rows for MCH (2021-10-05 to 2026-06-29).
+[2026-06-30 08:56:41] [TASK_1] [INFO] Saved MCH → data/prices\MCH.csv (1174 rows)
+[2026-06-30 08:56:41] [TASK_1] [INFO] Processing VHC (9/14)...
+[2026-06-30 08:56:41] [TASK_1] [INFO] Fetched 1174 rows for VHC (2021-10-12 to 2026-06-29).
+[2026-06-30 08:56:41] [TASK_1] [INFO] Saved VHC → data/prices\VHC.csv (1174 rows)
+[2026-06-30 08:56:42] [TASK_1] [INFO] Processing CMG (10/14)...
+[2026-06-30 08:56:42] [TASK_1] [INFO] Fetched 1174 rows for CMG (2021-10-12 to 2026-06-29).
+[2026-06-30 08:56:42] [TASK_1] [INFO] Saved CMG → data/prices\CMG.csv (1174 rows)
+[2026-06-30 08:56:43] [TASK_1] [INFO] Processing GMD (11/14)...
+[2026-06-30 08:56:43] [TASK_1] [INFO] Fetched 1174 rows for GMD (2021-10-12 to 2026-06-29).
+[2026-06-30 08:56:43] [TASK_1] [INFO] Saved GMD → data/prices\GMD.csv (1174 rows)
+[2026-06-30 08:56:43] [TASK_1] [INFO] Processing VSC (12/14)...
+[2026-06-30 08:56:44] [TASK_1] [INFO] Fetched 1174 rows for VSC (2021-10-12 to 2026-06-29).
+[2026-06-30 08:56:44] [TASK_1] [INFO] Saved VSC → data/prices\VSC.csv (1174 rows)
+[2026-06-30 08:56:44] [TASK_1] [INFO] Processing PVT (13/14)...
+[2026-06-30 08:56:44] [TASK_1] [INFO] Fetched 1174 rows for PVT (2021-10-12 to 2026-06-29).
+[2026-06-30 08:56:44] [TASK_1] [INFO] Saved PVT → data/prices\PVT.csv (1174 rows)
+[2026-06-30 08:56:45] [TASK_1] [INFO] Processing HAH (14/14)...
+[2026-06-30 08:56:45] [TASK_1] [INFO] Fetched 1174 rows for HAH (2021-10-12 to 2026-06-29).
+[2026-06-30 08:56:45] [TASK_1] [INFO] Saved HAH → data/prices\HAH.csv (1174 rows)
+[2026-06-30 08:56:45] [TASK_1] [INFO] Saved consolidated file → data/prices\all_vn30_prices.csv (16436 rows, 14 tickers)
+[2026-06-30 08:56:45] [TASK_1] [INFO] ============================================================
+[2026-06-30 08:56:45] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-30 08:56:45] [TASK_1] [INFO] ============================================================
+[2026-06-30 08:56:45] [TASK_1] [INFO] Successfully collected: 14 tickers
+[2026-06-30 08:56:45] [TASK_1] [INFO] Expected trading days (business-day calendar): 1172
+[2026-06-30 08:56:45] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-30 08:56:45] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-30 08:56:45] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-30 08:56:45] [TASK_1] [INFO] CMG     2021-10-12  2026-06-29    1174
+[2026-06-30 08:56:45] [TASK_1] [INFO] DGW     2021-10-12  2026-06-29    1174
+[2026-06-30 08:56:45] [TASK_1] [INFO] EVF     2021-09-30  2026-06-29    1174
+[2026-06-30 08:56:45] [TASK_1] [INFO] FRT     2021-10-12  2026-06-29    1174
+[2026-06-30 08:56:45] [TASK_1] [INFO] GEX     2021-10-12  2026-06-29    1174
+[2026-06-30 08:56:45] [TASK_1] [INFO] GMD     2021-10-12  2026-06-29    1174
+[2026-06-30 08:56:45] [TASK_1] [INFO] HAH     2021-10-12  2026-06-29    1174
+[2026-06-30 08:56:45] [TASK_1] [INFO] MCH     2021-10-05  2026-06-29    1174
+[2026-06-30 08:56:45] [TASK_1] [INFO] NT2     2021-10-12  2026-06-29    1174
+[2026-06-30 08:56:45] [TASK_1] [INFO] PNJ     2021-10-12  2026-06-29    1174
+[2026-06-30 08:56:45] [TASK_1] [INFO] PVT     2021-10-12  2026-06-29    1174
+[2026-06-30 08:56:45] [TASK_1] [INFO] REE     2021-10-12  2026-06-29    1174
+[2026-06-30 08:56:45] [TASK_1] [INFO] VHC     2021-10-12  2026-06-29    1174
+[2026-06-30 08:56:45] [TASK_1] [INFO] VSC     2021-10-12  2026-06-29    1174
+[2026-06-30 08:56:45] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-30 08:56:45] [TASK_1] [INFO] Total rows: 16436 | Date range: 2022-01-01 to 2026-06-30
+[2026-06-30 08:56:45] [TASK_1] [INFO] ============================================================

@@ -14,6 +14,7 @@ Outputs:
     data/news/processed/all_news_processed.csv
 """
 
+import json
 import logging
 import math
 import os
@@ -33,6 +34,7 @@ from pipeline.logging_config import setup_logger
 # ---------------------------------------------------------------------------
 
 INPUT_PATH = "data/news/matched/all_news_matched.csv"
+ENRICHED_INPUT_PATH = "data/news/enriched/all_news_enriched.csv"
 OUTPUT_PATH = "data/news/processed/all_news_processed.csv"
 STOPWORDS_PATH = "config/stopwords_finance.txt"
 
@@ -130,27 +132,109 @@ def clean_text(text: str) -> str:
     return text
 
 
-def prepare_text_clean(title: str, description: str) -> str:
-    """Concatenate title and description, then clean.
+def _truthy_full_text_flag(value) -> bool | None:
+    """Return full-text availability flag, preserving missing as None."""
+    if value is None:
+        return None
+    try:
+        if pd.isna(value):
+            return None
+    except (TypeError, ValueError):
+        pass
+    if isinstance(value, bool):
+        return value
+    text = str(value).strip().lower()
+    if text in {"true", "1", "yes", "y"}:
+        return True
+    if text in {"false", "0", "no", "n"}:
+        return False
+    return None
 
-    Requirement 4.2: Concatenate title + description into single text_clean field.
+
+def _dedupe_text_parts(parts: List[str]) -> List[str]:
+    """Keep text parts in order while dropping exact duplicates."""
+    result: List[str] = []
+    seen = set()
+    for part in parts:
+        if not part:
+            continue
+        key = part.strip().lower()
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        result.append(part.strip())
+    return result
+
+
+def prepare_text_clean(
+    title: str,
+    description: str,
+    article_summary: str = "",
+    key_facts_text: str = "",
+    full_text: str = "",
+    lead: str = "",
+    full_text_available=None,
+) -> str:
+    """Concatenate article evidence text, then clean.
+
+    Uses enriched full text when available, adds compact lead/summary/key facts,
+    and falls back to title + description for legacy metadata-only rows.
 
     Args:
         title: Article title.
         description: Article description/summary.
+        article_summary: Full-text-derived summary if available.
+        key_facts_text: Extracted key facts if available.
+        full_text: Extracted article body if available.
+        lead: Article lead/og description from detail page if available.
+        full_text_available: Optional enrichment availability flag.
 
     Returns:
         Cleaned concatenated text.
     """
     title = str(title) if pd.notna(title) else ""
     description = str(description) if pd.notna(description) else ""
-    combined = f"{title} {description}".strip()
+    article_summary = str(article_summary) if pd.notna(article_summary) else ""
+    key_facts_text = str(key_facts_text) if pd.notna(key_facts_text) else ""
+    full_text = str(full_text) if pd.notna(full_text) else ""
+    lead = str(lead) if pd.notna(lead) else ""
+
+    flag = _truthy_full_text_flag(full_text_available)
+    use_full_text = bool(full_text.strip()) and flag is not False
+
+    if use_full_text:
+        evidence_parts = _dedupe_text_parts([full_text, lead, article_summary, key_facts_text])
+    else:
+        evidence_parts = _dedupe_text_parts([lead, article_summary, key_facts_text])
+        if not evidence_parts:
+            evidence_parts = [description]
+
+    combined = " ".join(_dedupe_text_parts([title, *evidence_parts])).strip()
     return clean_text(combined)
 
 
 # ---------------------------------------------------------------------------
 # Vietnamese tokenization (Req 4.3, 4.5)
 # ---------------------------------------------------------------------------
+
+
+def key_facts_to_text(key_facts_json: str) -> str:
+    """Convert key_facts_json from enriched news into compact text."""
+    if not key_facts_json or not isinstance(key_facts_json, str):
+        return ""
+    try:
+        facts = json.loads(key_facts_json)
+    except Exception:
+        return ""
+    if not isinstance(facts, list):
+        return ""
+    texts = []
+    for fact in facts:
+        if isinstance(fact, dict):
+            texts.append(str(fact.get("fact") or fact.get("evidence_quote") or ""))
+        else:
+            texts.append(str(fact))
+    return " ".join(t for t in texts if t).strip()
 
 
 def tokenize_vi(text: str, logger: Optional[logging.Logger] = None) -> str:
@@ -451,7 +535,7 @@ def run_preprocessing() -> pd.DataFrame:
     """Execute the full text preprocessing pipeline.
 
     1. Load matched news articles
-    2. Clean text (concatenate title + description)
+    2. Clean text (prefer enriched full text, fallback to title + description)
     3. Tokenize using underthesea (with fallback)
     4. Remove stopwords
     5. Deduplicate by URL and fuzzy title similarity
@@ -465,13 +549,14 @@ def run_preprocessing() -> pd.DataFrame:
     logger = setup_logger("TASK_4")
     logger.info("Starting Text Preprocessing (TASK 4)...")
 
-    # Load input
-    if not os.path.isfile(INPUT_PATH):
-        logger.error("Input file not found: %s", INPUT_PATH)
+    # Load input. Prefer enriched full-text summaries/key facts when available.
+    input_path = ENRICHED_INPUT_PATH if os.path.isfile(ENRICHED_INPUT_PATH) else INPUT_PATH
+    if not os.path.isfile(input_path):
+        logger.error("Input file not found: %s", input_path)
         return pd.DataFrame()
 
-    df = pd.read_csv(INPUT_PATH, encoding="utf-8")
-    logger.info("Loaded %d articles from %s.", len(df), INPUT_PATH)
+    df = pd.read_csv(input_path, encoding="utf-8")
+    logger.info("Loaded %d articles from %s.", len(df), input_path)
     count_before_dedup = len(df)
 
     if df.empty:
@@ -496,10 +581,18 @@ def run_preprocessing() -> pd.DataFrame:
     df = deduplicate_by_fuzzy_title(df, logger=logger)
     count_after_dedup = len(df)
 
-    # Step 3: Clean text — concatenate title + description (Req 4.1, 4.2)
+    # Step 3: Clean text — prefer enriched full text, fallback to metadata (Req 4.1, 4.2)
     logger.info("Cleaning text...")
     df["text_clean"] = df.apply(
-        lambda row: prepare_text_clean(row.get("title", ""), row.get("description", "")),
+        lambda row: prepare_text_clean(
+            row.get("title", ""),
+            row.get("description", ""),
+            row.get("article_summary", ""),
+            key_facts_to_text(row.get("key_facts_json", "")),
+            row.get("full_text", ""),
+            row.get("lead", ""),
+            row.get("full_text_available", None),
+        ),
         axis=1,
     )
 

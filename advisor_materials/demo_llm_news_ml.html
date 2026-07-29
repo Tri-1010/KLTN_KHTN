@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Demo luận văn: LLM đọc tin tức, ML kỹ thuật và decision support có bằng chứng.">
+  <title>Demo LLM + ML | Hỗ trợ quyết định chứng khoán</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --page: #f9f9f7; --surface: #fcfcfb; --surface-2: #f0efec; --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781;
+      --line: #e1e0d9; --border: rgba(11,11,11,.12); --blue: #2a78d6; --green: #008300; --red: #e34948; --amber: #eda100;
+      --purple: #4a3aa7; --grid: #e1e0d9; --shadow: 0 12px 34px rgba(22,22,17,.07); --focus: #104281;
+    }
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --page: #0d0d0d; --surface: #1a1a19; --surface-2: #272725; --ink: #fff; --ink-2: #c3c2b7; --muted: #aaa89f;
+      --line: #2c2c2a; --border: rgba(255,255,255,.13); --blue: #3987e5; --green: #0ca30c; --red: #e66767; --amber: #c98500;
+      --purple: #9085e9; --grid: #2c2c2a; --shadow: 0 12px 34px rgba(0,0,0,.26); --focus: #86b6ef;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--page); color: var(--ink); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.5; }
+    button { font: inherit; color: inherit; cursor: pointer; }
+    button:focus-visible, [tabindex]:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+    .shell { width: min(1180px, calc(100% - 32px)); margin: 0 auto; }
+    .topbar { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--page) 92%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
+    .topbar .shell { min-height: 57px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+    .brand { font-size: .9rem; font-weight: 760; letter-spacing: -.01em; }
+    .theme-btn, .ghost-btn, .filter-btn, .compact-btn { border: 1px solid var(--border); background: var(--surface); border-radius: 8px; padding: .45rem .7rem; font-weight: 650; }
+    .theme-btn:hover, .ghost-btn:hover, .filter-btn:hover, .compact-btn:hover { background: var(--surface-2); }
+    header { padding: 64px 0 24px; }
+    .eyebrow { color: var(--blue); font-weight: 800; font-size: .82rem; text-transform: uppercase; letter-spacing: .09em; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { font-size: clamp(2rem, 5vw, 4.25rem); letter-spacing: -.055em; line-height: 1.02; max-width: 920px; margin: 12px 0 18px; }
+    h2 { letter-spacing: -.035em; font-size: clamp(1.4rem, 3vw, 2.1rem); margin-bottom: .4rem; }
+    h3 { font-size: 1.05rem; letter-spacing: -.018em; margin-bottom: .35rem; }
+    .lede { max-width: 760px; font-size: 1.15rem; color: var(--ink-2); }
+    .badges, .chips, .legend, .metric-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .badge, .chip { display: inline-flex; align-items: center; gap: .35rem; border: 1px solid var(--border); border-radius: 999px; padding: .27rem .55rem; font-size: .79rem; font-weight: 700; background: var(--surface); }
+    .badge.blue, .chip.blue { color: var(--blue); border-color: color-mix(in srgb, var(--blue) 35%, var(--border)); }
+    .badge.green, .chip.green { color: var(--green); border-color: color-mix(in srgb, var(--green) 38%, var(--border)); }
+    .badge.red, .chip.red { color: var(--red); border-color: color-mix(in srgb, var(--red) 42%, var(--border)); }
+    .badge.amber, .chip.amber { color: var(--amber); border-color: color-mix(in srgb, var(--amber) 46%, var(--border)); }
+    .badge.purple { color: var(--purple); border-color: color-mix(in srgb, var(--purple) 40%, var(--border)); }
+    .guardrail { border: 1px solid color-mix(in srgb, var(--amber) 52%, var(--border)); background: color-mix(in srgb, var(--amber) 10%, var(--surface)); border-radius: 12px; padding: 14px 16px; margin: 22px 0 44px; }
+    .guardrail strong { display: block; margin-bottom: 4px; }
+    .guardrail ul { margin: 0; padding-left: 1.15rem; color: var(--ink-2); display: grid; gap: 2px; }
+    main { padding-bottom: 70px; }
+    section { scroll-margin-top: 86px; margin: 50px 0; }
+    .section-head { max-width: 800px; margin-bottom: 20px; }
+    .section-head p { color: var(--ink-2); margin-bottom: 0; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: clamp(16px, 3vw, 24px); box-shadow: var(--shadow); }
+    .grid { display: grid; gap: 18px; }
+    .two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .lifecycle { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; }
+    .step { text-align: left; padding: 14px; border: 1px solid var(--border); background: var(--surface); border-radius: 10px; min-height: 112px; }
+    .step:hover, .step.active { border-color: var(--blue); background: color-mix(in srgb, var(--blue) 7%, var(--surface)); }
+    .step-num { width: 27px; height: 27px; display: grid; place-items: center; border-radius: 50%; background: var(--surface-2); color: var(--blue); font-weight: 800; margin-bottom: 10px; }
+    .step strong { display: block; font-size: .93rem; }
+    .step span { display: block; color: var(--ink-2); font-size: .79rem; margin-top: 3px; }
+    .flow { display: grid; grid-template-columns: 1.05fr 38px 1.1fr 38px 1fr; align-items: stretch; gap: 8px; }
+    .flow-arrow { display: grid; place-items: center; color: var(--muted); font-weight: 900; font-size: 1.4rem; }
+    .news-list { display: grid; gap: 10px; }
+    .news-card { text-align: left; border: 1px solid var(--border); padding: 13px; background: var(--surface); border-radius: 10px; width: 100%; }
+    .news-card:hover, .news-card.selected { border-color: var(--blue); background: color-mix(in srgb, var(--blue) 6%, var(--surface)); }
+    .news-card .title-row { display:flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+    .news-card p { color: var(--ink-2); font-size: .88rem; margin: 7px 0; }
+    .news-card small { color: var(--muted); }
+    .extract-panel { min-height: 100%; }
+    .schema { display: grid; gap: 7px; margin: 13px 0; }
+    .schema-line { display: flex; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--line); padding-bottom: 7px; font-size: .89rem; }
+    .schema-line span:first-child { color: var(--ink-2); }
+    .schema-line strong { text-align: right; }
+    .feature-vector { font: 700 .82rem ui-monospace, SFMono-Regular, Consolas, monospace; white-space: pre-wrap; color: var(--blue); background: var(--surface-2); border-radius: 8px; padding: 12px; }
+    .detail-box { background: var(--surface-2); border-radius: 9px; padding: 12px; color: var(--ink-2); font-size: .9rem; }
+    .hidden { display: none !important; }
+    .method-strip { border-left: 4px solid var(--blue); padding: 10px 14px; background: color-mix(in srgb, var(--blue) 7%, var(--surface)); color: var(--ink-2); border-radius: 0 9px 9px 0; margin-bottom: 18px; }
+    .stat { padding: 15px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface-2); }
+    .stat .value { font-size: 1.7rem; line-height: 1; font-weight: 850; letter-spacing: -.04em; font-variant-numeric: tabular-nums; margin: 5px 0; }
+    .stat small { color: var(--ink-2); display: block; }
+    .warning { border: 1px solid color-mix(in srgb, var(--red) 40%, var(--border)); background: color-mix(in srgb, var(--red) 7%, var(--surface)); color: var(--ink-2); border-radius: 10px; padding: 13px; }
+    .warning strong { color: var(--ink); }
+    figure { margin: 0; }
+    .chart-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; padding: 10px; background: var(--surface); }
+    svg { display: block; width: 100%; min-width: 580px; height: auto; }
+    .chart-title { font-size: 14px; fill: var(--ink); font-weight: 750; }
+    .axis-text { font-size: 11px; fill: var(--muted); }
+    .mark-label { font-size: 11px; fill: var(--ink-2); font-weight: 700; }
+    .chart-grid { stroke: var(--grid); stroke-width: 1; }
+    .chart-baseline { stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 4 4; }
+    .bar-hit { fill: transparent; cursor: help; }
+    figcaption { color: var(--ink-2); font-size: .84rem; padding: 10px 2px 0; }
+    table { border-collapse: collapse; width: 100%; font-size: .86rem; margin-top: 14px; font-variant-numeric: tabular-nums; }
+    th, td { border-bottom: 1px solid var(--line); padding: 9px 8px; text-align: left; }
+    th { color: var(--ink-2); font-weight: 750; }
+    .table-scroll { overflow-x: auto; }
+    .case-grid { display: grid; grid-template-columns: .86fr 1.14fr; gap: 18px; align-items: start; }
+    .score { font-size: clamp(2.5rem, 6vw, 4.3rem); line-height: 1; letter-spacing: -.07em; font-weight: 900; font-variant-numeric: tabular-nums; margin: 15px 0 7px; }
+    .prob-track { height: 11px; border-radius: 99px; background: var(--surface-2); overflow: hidden; margin: 9px 0 5px; border: 1px solid var(--border); }
+    .prob-fill { height: 100%; width: 99.91%; background: var(--blue); }
+    .muted { color: var(--ink-2); }
+    .driver-controls { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0; }
+    .filter-btn.active { background: var(--blue); color: #fff; border-color: var(--blue); }
+    .explanation { display: grid; gap: 13px; }
+    .explanation-item { padding: 13px; border: 1px solid var(--border); border-radius: 10px; }
+    .explanation-item p, .explanation-item ul { margin-bottom: 0; color: var(--ink-2); }
+    .evidence-link { border: 0; padding: 0; background: transparent; color: var(--blue); font: inherit; font-weight: 800; text-decoration: underline; text-underline-offset: 3px; }
+    .evidence-link:hover { color: var(--purple); }
+    .focused { border-color: var(--blue) !important; box-shadow: 0 0 0 3px color-mix(in srgb, var(--blue) 18%, transparent); }
+    .pit { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .allow { border-top: 4px solid var(--green); }
+    .block { border-top: 4px solid var(--red); }
+    .list-check { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 8px; }
+    .list-check li { color: var(--ink-2); display: flex; gap: 9px; }
+    .list-check li::before { font-weight: 900; }
+    .allow .list-check li::before { content: "✓"; color: var(--green); }
+    .block .list-check li::before { content: "×"; color: var(--red); }
+    .review-control { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-top: 18px; padding: 14px; border: 1px dashed var(--border); border-radius: 10px; }
+    .review-card { border-color: var(--purple); background: color-mix(in srgb, var(--purple) 6%, var(--surface)); }
+    .tooltip { position: fixed; z-index: 30; max-width: 290px; pointer-events: none; background: var(--ink); color: var(--surface); border-radius: 8px; padding: 8px 10px; font-size: .78rem; box-shadow: var(--shadow); opacity: 0; transition: opacity .12s; }
+    .tooltip.show { opacity: 1; }
+    footer { border-top: 1px solid var(--border); padding: 28px 0 45px; color: var(--ink-2); font-size: .88rem; }
+    footer strong { color: var(--ink); }
+    @media (max-width: 840px) { .three, .four, .case-grid, .pit { grid-template-columns: 1fr 1fr; } .flow { grid-template-columns: 1fr; } .flow-arrow { transform: rotate(90deg); min-height: 30px; } .lifecycle { grid-template-columns: 1fr; } .step { min-height: auto; display: grid; grid-template-columns: 34px 1fr; align-items: start; gap: 8px; } .step-num { margin: 0; grid-row: span 2; } }
+    @media (max-width: 600px) { .shell { width: min(100% - 22px, 1180px); } header { padding-top: 42px; } .two, .three, .four, .case-grid, .pit { grid-template-columns: 1fr; } .topbar .shell { min-height: 52px; } .brand { font-size: .78rem; } .theme-btn { padding: .35rem .5rem; font-size: .8rem; } .review-control { align-items: flex-start; flex-direction: column; } }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+    @media print { .topbar, button, .tooltip { display: none !important; } body { background: #fff; color: #000; } .card { box-shadow: none; break-inside: avoid; } section { margin: 24px 0; } }
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="shell"><div class="brand">KLTN · Semantic news materiality</div><button class="theme-btn" id="themeToggle" type="button" aria-label="Đổi giao diện">◐ Giao diện tối</button></div></div>
+  <header class="shell">
+    <div class="eyebrow">Interactive thesis demonstration</div>
+    <h1>LLM đọc tin tức. ML kỹ thuật tạo tín hiệu. Evidence card giải thích cho user.</h1>
+    <p class="lede">Prototype minh họa hệ hỗ trợ quyết định: biến tin tức thành pseudo-label có bằng chứng, kết hợp với tín hiệu kỹ thuật, rồi giải thích điều mô hình biết — và điều mô hình chưa chứng minh được.</p>
+    <div class="badges"><span class="badge blue">● Research demo</span><span class="badge purple">◫ Point-in-time controlled</span><span class="badge amber">! Không phải khuyến nghị đầu tư</span></div>
+    <aside class="guardrail" aria-label="Nguyên tắc kiểm soát nghiên cứu"><strong>Guardrail nghiên cứu</strong><ul><li>Chỉ dùng tin có <code>published_at ≤ decision date</code>.</li><li>LLM consensus là pseudo-label, không phải human ground truth.</li><li>Bước Explain không dùng realized return, outcome label hay tin sau cutoff.</li><li>Không claim quan hệ nhân quả, alpha dài hạn hoặc predictive edge ổn định.</li></ul></aside>
+  </header>
+  <main class="shell">
+    <section id="lifecycle"><div class="section-head"><div class="eyebrow">01 · Lifecycle</div><h2>Chọn tín hiệu trước. Giải thích bằng chứng sau. Hậu kiểm tách riêng.</h2><p>Click một bước để xem đúng phần của quy trình. Outcome chỉ xuất hiện ở Review sau holding period.</p></div><div id="lifecycleSteps" class="lifecycle" aria-label="Chu trình decision support"></div></section>
+
+    <section id="extract"><div class="section-head"><div class="eyebrow">02 · LLM semantic extraction</div><h2>Tin tức không đi thẳng vào lời giải thích.</h2><p>LLM/consensus trước hết trích relevance, materiality, direction, event type và evidence span. Chỉ tin eligible mới đi vào ticker-level feature.</p></div>
+      <div class="flow"><div class="card"><h3>1. Bài báo nguồn</h3><div id="newsList" class="news-list"></div></div><div class="flow-arrow" aria-hidden="true">→</div><div class="card extract-panel"><h3>2. Pseudo-label consensus</h3><div id="schemaPanel"></div><button class="ghost-btn" id="whyBtn" type="button">Xem lý do & QC</button><div id="whyBox" class="detail-box hidden" style="margin-top:10px"></div></div><div class="flow-arrow" aria-hidden="true">→</div><div class="card"><h3>3. Feature + evidence</h3><p id="featureStatus" class="muted"></p><div id="vector" class="feature-vector"></div><button class="ghost-btn" id="simulateBtn" type="button" style="margin-top:12px">Mô phỏng trích xuất</button><p id="simulationStatus" class="muted" style="margin:10px 0 0;font-size:.85rem" aria-live="polite"></p></div></div>
+    </section>
+
+    <section id="compare"><div class="section-head"><div class="eyebrow">03 · ML evaluation</div><h2>So sánh phải bắt đầu từ baseline gần ngẫu nhiên.</h2><p>Semantic news có thể làm feature phong phú hơn. Câu hỏi nghiên cứu là liệu nó có cải thiện dự báo out-of-sample hay không — không được mặc định là có.</p></div>
+      <div class="card"><div class="method-strip"><strong>Thiết kế kiểm định:</strong> Purged expanding walk-forward · 3 folds · purge 20 phiên · 685.704 dự báo OOS · configs: technical, technical+keyword, technical+semantic, all.</div><div class="grid four"><div class="stat"><small>Paired baseline AUC</small><div class="value">0,4988</div><small>Technical baseline mean</small></div><div class="stat"><small>Paired comparison AUC</small><div class="value">0,5077</div><small>Mean delta +0,0089</small></div><div class="stat"><small>Paired baseline BA</small><div class="value">0,4962</div><small>Balanced accuracy mean</small></div><div class="stat"><small>Paired comparison BA</small><div class="value">0,5017</div><small>Mean delta +0,0055</small></div></div><div class="warning" style="margin:18px 0"><strong>Diễn giải bắt buộc:</strong> AUC và balanced accuracy vẫn gần random baseline 0,500. Hiện chưa có bằng chứng đủ mạnh về lọc cổ phiếu hữu ích ổn định.</div><figure><div class="chart-wrap"><div id="metricChart"></div></div><figcaption>So sánh paired daily means. Dữ liệu dùng để minh họa câu hỏi “có cải thiện hơn baseline không?”, không phải chứng minh alpha.</figcaption></figure><div class="table-scroll"><table><caption class="hidden">Bảng fallback cho biểu đồ OOS metrics</caption><thead><tr><th>Metric</th><th>Technical baseline</th><th>Comparison config</th><th>Mean delta</th><th>Diễn giải</th></tr></thead><tbody><tr><td>AUC</td><td>0,4988</td><td>0,5077</td><td>+0,0089</td><td>Gần 0,5</td></tr><tr><td>Balanced accuracy</td><td>0,4962</td><td>0,5017</td><td>+0,0055</td><td>Gần 0,5</td></tr></tbody></table></div></div>
+      <div class="card" style="margin-top:18px"><div class="eyebrow">Secondary exploratory evidence</div><h3>Materiality cao/trung bình so với thấp tại T+5</h3><div class="metric-row"><span class="badge green">↑ Adjusted return diff +2,23%</span><span class="badge blue">BH-FDR p = 0,0457</span><span class="badge">95% CI [+0,91%; +3,66%]</span><span class="badge amber">1 / 8 test robust-positive</span></div><p class="muted" style="margin:12px 0 0">Đây là association exploratory sau correction, không chứng minh tin trọng yếu gây ra return tương lai.</p></div>
+    </section>
+
+    <section id="explain"><div class="section-head"><div class="eyebrow">04 · Case study</div><h2>VHM 2025Q1: ML tạo candidate. Evidence layer tạo bối cảnh, risk và trigger.</h2><p>Ví dụ lấy từ decision card baseline. Card này hỗ trợ phân tích; không phải output LLM live và không phải lệnh mua.</p></div>
+      <div class="case-grid"><article class="card" id="mlSignal"><div class="badges"><span class="badge blue">VHM · 2025-03-31</span><span class="badge green">Buy Candidate</span></div><h3 style="margin-top:18px">Xác suất tăng theo ML</h3><div class="score">0,9991</div><div class="prob-track" aria-label="Xác suất tăng theo ML 0,9991"><div class="prob-fill"></div></div><small class="muted">Rank #2 trong kỳ · 5 news evidence trước decision date</small><div class="warning" style="margin-top:18px"><strong>Không diễn giải thành xác suất lợi nhuận thực tế.</strong> Đây là internal model score/rank từ dữ liệu lịch sử.</div></article>
+        <article class="card"><h3>Technical drivers</h3><p class="muted">Màu và nhãn tách “hỗ trợ tín hiệu” khỏi “rủi ro cần theo dõi”.</p><div class="driver-controls"><button class="filter-btn active" id="allDrivers" type="button">Tất cả driver</button><button class="filter-btn" id="riskDrivers" type="button">Chỉ xem rủi ro</button></div><figure><div class="chart-wrap"><div id="driverChart"></div></div><figcaption>Biểu đồ diverging dùng cùng một scale định tính: dấu dương cho hỗ trợ tín hiệu, dấu âm cho risk/watch. Giá trị gốc luôn nằm trên label.</figcaption></figure></article></div>
+      <article class="card" style="margin-top:18px"><div class="section-head" style="margin-bottom:14px"><div class="eyebrow">Evidence-grounded explanation</div><h3>Luận điểm có điều kiện, không phải khẳng định mua/bán</h3></div><div class="explanation" id="explanationPanel"><div class="explanation-item" id="thesis"><strong>Luận điểm ban đầu</strong><p>VHM được đưa vào Top-5 do technical ML score và momentum: <button class="evidence-link" data-target="mlSignal">ML-01</button>, <button class="evidence-link" data-target="driver-macd">TECH-01</button>, <button class="evidence-link" data-target="driver-sma">TECH-02</button>. Tín hiệu cần được đọc cùng risk và evidence quality.</p></div><div class="explanation-item" id="newsEvidence"><strong>Tin tức có thể truy vết</strong><p><button class="evidence-link" data-target="newsEvidence">NEWS-01</button> · Báo cáo tài chính hợp nhất kiểm toán 2024: Vinhomes lãi 35.000 tỷ đồng. Cùng bài nêu thu nhập Ban điều hành năm 2024 giảm 40% so với 2023. Đây là evidence để đọc bối cảnh, không tự động xác nhận fundamental thesis.</p></div><div class="explanation-item" id="riskEvidence"><strong>Rủi ro và giới hạn</strong><p><button class="evidence-link" data-target="driver-rsi">TECH-RISK-01</button> · RSI 86,1444 cho thấy trạng thái quá mua. <button class="evidence-link" data-target="qualityEvidence">DQ-01</button> · ticker matching ở mức <em>mixed</em>; một phần news/event cần kiểm tra thủ công trước khi dùng cho thesis định tính.</p></div><div class="explanation-item" id="qualityEvidence"><strong>Data quality evidence</strong><p><strong>DQ-01</strong> · Evidence pack ghi nhận ticker matching confidence <em>mixed</em>. Đây là cờ kiểm tra chất lượng: giữ lại cho review thủ công, không được diễn giải như bằng chứng support/risk.</p></div><div class="explanation-item"><strong>Monitoring triggers</strong><ul><li>ML score xuống dưới 0,55 hoặc giảm hơn 0,15.</li><li>Rank rơi khỏi Top-K, MACD histogram chuyển âm, hoặc giá mất SMA20.</li><li>RSI suy yếu mạnh, drawdown vượt 8–10%, hoặc xuất hiện tin rủi ro/trái thesis.</li></ul></div></div><div class="driver-controls"><button class="compact-btn" id="sourcesOnly" type="button">Chỉ xem nguồn</button><button class="compact-btn" id="fullExplain" type="button">Giải thích đầy đủ</button></div></article>
+    </section>
+
+    <section id="monitor"><div class="section-head"><div class="eyebrow">05 · Point-in-time separation</div><h2>Initial evidence pack và outcome review không được trộn lẫn.</h2><p>Tách như vậy giúp hạn chế hindsight bias: phần Explain chỉ biết những gì tồn tại trước ngày quyết định.</p></div><div class="pit"><article class="card allow"><h3>Được phép ở Select / Explain</h3><ul class="list-check"><li>ML score, rank và technical snapshot tại decision date.</li><li>Tin có <code>published_at ≤ 2025-03-31</code>.</li><li>Pseudo-label: relevance, materiality, direction, event type.</li><li>Evidence span, provenance và data-quality flags.</li></ul></article><article class="card block"><h3>Bị chặn ở Explain</h3><ul class="list-check"><li>Realized return và label sau holding period.</li><li>Tin, giá hoặc benchmark xuất hiện sau cutoff.</li><li>Outcome review và retrospective narrative.</li><li>Bất kỳ tín hiệu nào dùng hindsight để củng cố thesis.</li></ul></article></div><div class="review-control"><div><strong>Chế độ hiện tại: <span id="modeLabel">Initial evidence pack</span></strong><div class="muted" style="font-size:.88rem">Outcome review bị khóa và không được gửi vào phần Explain.</div></div><button class="ghost-btn" id="reviewToggle" type="button">Mở hậu kiểm (post-hoc)</button></div><article id="reviewCard" class="card review-card hidden" style="margin-top:18px"><div class="badges"><span class="badge purple">◫ Post-hoc only</span><span class="badge amber">Không quay ngược vào Explain</span></div><h3 style="margin-top:14px">Review sau holding period</h3><p class="muted">Khu này chỉ tồn tại để audit decision process sau khi thời gian nắm giữ kết thúc. Outcome không được dùng làm input cho pseudo-label, model score hoặc initial LLM explanation.</p><p><strong>Thông điệp demo:</strong> review giúp đánh giá quy trình và limitation; không biến một case retrospective thành bằng chứng hiệu quả đầu tư.</p></article></section>
+  </main>
+  <footer><div class="shell"><strong>Snapshot nghiên cứu.</strong> 150 consensus rows · 122 eligible rows · mean agreement 0,84 · 1/8 event test robust-positive sau BH-FDR · purged OOS metrics gần random baseline. Next steps: human annotation, audit contamination/ticker matching, paper-trading trước mọi claim về investment usefulness.</div></footer>
+  <div id="tooltip" class="tooltip" role="status" aria-live="polite"></div>
+  <script>
+    const DEMO = {
+      lifecycle: [
+        { id:'lifecycle', title:'Select', text:'ML kỹ thuật xếp hạng candidate.' },
+        { id:'extract', title:'Explain', text:'LLM trích evidence và semantic label.' },
+        { id:'monitor', title:'Monitor', text:'Theo dõi trigger, tin mới, quality.' },
+        { id:'monitor', title:'Update', text:'Cập nhật card, giữ đúng cutoff.' },
+        { id:'monitor', title:'Review', text:'Hậu kiểm sau holding period.' }
+      ],
+      news: [
+        { ticker:'VNM', date:'2025-10-06', headline:'VNM: Kết quả kinh doanh quý và định hướng tăng trưởng', evidence:'Doanh thu thuần đạt khoảng 29.710 tỷ đồng; thông tin được dùng làm evidence về kết quả kinh doanh.', relevance:'direct', materiality:'medium', direction:'support', event:'earnings', consensus:'unanimous', votes:'3 / 3 annotators', eligible:true, review:'Không có cờ review', reason:'Tin gắn trực tiếp với doanh nghiệp, có số liệu vận hành/kết quả và evidence span rõ. Có thể tạo feature support_earnings.' },
+        { ticker:'MBB', date:'2025-11-14', headline:'MBB: Thông tin liên quan đến trái phiếu MBB12348', evidence:'Sự kiện nêu việc tạm ngừng giao dịch trái phiếu MBB12348, cần đọc thêm bối cảnh và nguồn gốc thông tin.', relevance:'direct', materiality:'high', direction:'risk', event:'debt', consensus:'majority_vote', votes:'2 / 3 annotators', eligible:true, review:'Cờ: cần review thủ công', reason:'Tin trực tiếp liên quan MBB và có thể ảnh hưởng debt risk. Consensus không tuyệt đối; flag review giữ lại uncertainty thay vì che giấu.' },
+        { ticker:'UNKNOWN', date:'2025-07-14', headline:'Bitcoin vượt mốc 120.000 USD', evidence:'Tin thị trường crypto chung, không gắn trực tiếp với ticker VN30 cụ thể.', relevance:'irrelevant', materiality:'low', direction:'neutral', event:'market', consensus:'majority_vote', votes:'2 / 3 annotators', eligible:false, review:'Excluded khỏi ticker-level feature', reason:'Tin có thể phản ánh market-wide context, nhưng không đủ relevance để gán vào feature của một cổ phiếu cụ thể.' }
+      ],
+      metrics: { auc:[.498785985,.507727441], ba:[.496219420,.501728047] },
+      drivers: [
+        { id:'driver-macd', short:'MACD histogram', value:'0,1856', side:'support', note:'Momentum hỗ trợ tín hiệu tăng', magnitude:.82 },
+        { id:'driver-sma', short:'Price vs SMA20', value:'+7,68%', side:'support', note:'Giá cao hơn SMA20', magnitude:.64 },
+        { id:'driver-rsi', short:'RSI', value:'86,1444', side:'risk', note:'Quá mua, cần theo dõi', magnitude:.86 },
+        { id:'driver-range', short:'Price range q', value:'0,3511', side:'risk', note:'Biến động/range cao', magnitude:.55 },
+        { id:'driver-volume', short:'Volume change q', value:'-0,3710', side:'risk', note:'Khối lượng suy yếu', magnitude:.60 }
+      ]
+    };
+    let selectedNews = 0, riskOnly = false, sourcesOnly = false, reviewMode = false;
+    const $ = s => document.querySelector(s);
+    const tooltip = $('#tooltip');
+    const showTip = (event, text) => { tooltip.textContent = text; tooltip.style.left = Math.min(event.clientX + 14, innerWidth - 305) + 'px'; tooltip.style.top = Math.min(event.clientY + 14, innerHeight - 75) + 'px'; tooltip.classList.add('show'); };
+    const hideTip = () => tooltip.classList.remove('show');
+    const chip = (text, tone='') => `<span class="chip ${tone}">${text}</span>`;
+    function renderLifecycle() { $('#lifecycleSteps').innerHTML = DEMO.lifecycle.map((x,i) => `<button class="step ${i===0?'active':''}" type="button" data-step="${x.id}"><span class="step-num">${i+1}</span><span><strong>${x.title}</strong><span>${x.text}</span></span></button>`).join(''); document.querySelectorAll('.step').forEach(btn => btn.addEventListener('click', () => { document.querySelectorAll('.step').forEach(x=>x.classList.remove('active')); btn.classList.add('active'); $('#'+btn.dataset.step).scrollIntoView({behavior:'smooth',block:'start'}); })); }
+    function renderNews() { $('#newsList').innerHTML = DEMO.news.map((n,i)=>`<button class="news-card ${i===selectedNews?'selected':''}" data-news="${i}" type="button"><div class="title-row"><strong>${n.ticker}</strong><small>${n.date}</small></div><p>${n.headline}</p><div class="chips">${chip(n.relevance, n.relevance==='irrelevant'?'':'blue')}${chip(n.materiality, n.materiality==='high'?'amber':'')}${chip(n.direction, n.direction==='support'?'green':n.direction==='risk'?'red':'')}</div></button>`).join(''); document.querySelectorAll('[data-news]').forEach(btn=>btn.addEventListener('click',()=>{selectedNews=Number(btn.dataset.news); renderNews(); renderSchema();})); }
+    function renderSchema() { const n=DEMO.news[selectedNews]; $('#schemaPanel').innerHTML = `<div class="schema"><div class="schema-line"><span>Ticker relevance</span><strong>${n.relevance}</strong></div><div class="schema-line"><span>Materiality</span><strong>${n.materiality}</strong></div><div class="schema-line"><span>Direction</span><strong>${n.direction}</strong></div><div class="schema-line"><span>Event type</span><strong>${n.event}</strong></div><div class="schema-line"><span>Consensus</span><strong>${n.consensus}</strong></div><div class="schema-line"><span>Evidence span</span><strong>${n.evidence}</strong></div></div><div class="chips">${chip(n.votes,'purple')}${chip(n.review, n.eligible?'amber':'red')}</div>`; $('#whyBox').textContent = n.reason; $('#featureStatus').innerHTML = n.eligible ? `<strong style="color:var(--green)">✓ Eligible:</strong> semantic label được aggregate theo ticker-date.` : `<strong style="color:var(--red)">× Excluded:</strong> không cộng vào ticker-level news feature.`; $('#vector').textContent = n.eligible ? `{ ticker: '${n.ticker}', support: ${n.direction==='support'?1:0}, risk: ${n.direction==='risk'?1:0}, materiality: '${n.materiality}', event: '${n.event}' }` : `{ ticker: null, excluded_reason: 'irrelevant_to_stock' }`; }
+    function metricSvg() { const metrics=[['AUC',...DEMO.metrics.auc],['Balanced accuracy',...DEMO.metrics.ba]], W=680,H=278,x0=104,pw=500,yTop=40,yBot=224, scale=v=>yBot-(v-.45)/.10*(yBot-yTop); let marks=''; [0.45,.50,.55].forEach(v=>{const y=scale(v); marks+=`<line class="chart-grid" x1="${x0}" x2="${x0+pw}" y1="${y}" y2="${y}"/><text class="axis-text" x="${x0-10}" y="${y+4}" text-anchor="end">${v.toFixed(2).replace('.',',')}</text>`}); const baseline=scale(.5); marks+=`<line class="chart-baseline" x1="${x0}" x2="${x0+pw}" y1="${baseline}" y2="${baseline}"/><text class="axis-text" x="${x0+pw+4}" y="${baseline+4}">baseline 0,500</text>`; metrics.forEach((m,i)=>{const cx=x0+125+i*250; marks+=`<text class="chart-title" x="${cx}" y="262" text-anchor="middle">${m[0]}</text>`; [['Technical',m[1],'var(--blue)'],['Comparison',m[2],'var(--red)']].forEach((d,j)=>{const x=cx-39+j*62,y=scale(d[1]),h=yBot-y; marks+=`<rect x="${x}" y="${y}" width="46" height="${h}" rx="4" fill="${d[2]}"/><rect class="bar-hit" x="${x-8}" y="${y-8}" width="62" height="${h+16}" data-tip="${m[0]} · ${d[0]}: ${d[1].toFixed(4).replace('.',',')}"/><text class="mark-label" x="${x+23}" y="${y-7}" text-anchor="middle">${d[1].toFixed(4).replace('.',',')}</text>`;});}); return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="So sánh AUC và balanced accuracy giữa technical baseline và comparison config"><title>OOS metrics gần random baseline</title><desc>AUC và balanced accuracy của technical baseline và comparison config đều quanh 0,5.</desc>${marks}<g transform="translate(104,14)"><rect width="12" height="12" rx="2" fill="var(--blue)"/><text class="axis-text" x="18" y="10">Technical baseline</text><rect x="156" width="12" height="12" rx="2" fill="var(--red)"/><text class="axis-text" x="174" y="10">Comparison config</text></g></svg>`; }
+    function renderMetrics(){ $('#metricChart').innerHTML=metricSvg(); document.querySelectorAll('[data-tip]').forEach(x=>{x.addEventListener('pointermove',e=>showTip(e,x.dataset.tip));x.addEventListener('pointerleave',hideTip);x.addEventListener('focus',e=>showTip({clientX:120,clientY:120},x.dataset.tip));x.addEventListener('blur',hideTip);x.tabIndex=0;}); }
+    function driverSvg(){const ds=riskOnly?DEMO.drivers.filter(x=>x.side==='risk'):DEMO.drivers,W=690,H=70+ds.length*52,mid=345;let svg=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Technical drivers VHM"><title>VHM technical drivers</title><desc>Driver hỗ trợ nằm bên phải điểm giữa; driver rủi ro nằm bên trái.</desc><line x1="${mid}" x2="${mid}" y1="35" y2="${H-24}" stroke="var(--muted)" stroke-width="1.5"/><text class="axis-text" x="${mid-8}" y="20" text-anchor="end">Rủi ro / theo dõi</text><text class="axis-text" x="${mid+8}" y="20">Hỗ trợ tín hiệu</text>`;ds.forEach((d,i)=>{const y=48+i*52,w=d.magnitude*220,isSupport=d.side==='support',x=isSupport?mid:mid-w,color=isSupport?'var(--green)':'var(--red)';svg+=`<g id="${d.id}"><rect x="${x}" y="${y}" width="${w}" height="22" rx="4" fill="${color}"/><rect class="bar-hit" x="${x-8}" y="${y-7}" width="${w+16}" height="36" data-tip="${d.short}: ${d.value}. ${d.note}"/><text class="mark-label" x="${isSupport?mid+w+8:mid-w-8}" y="${y+15}" text-anchor="${isSupport?'start':'end'}">${isSupport?'Hỗ trợ':'Rủi ro'} · ${d.short} ${d.value}</text></g>`;});return svg+'</svg>';}
+    function renderDrivers(){ $('#driverChart').innerHTML=driverSvg(); document.querySelectorAll('[data-tip]').forEach(x=>{x.addEventListener('pointermove',e=>showTip(e,x.dataset.tip));x.addEventListener('pointerleave',hideTip);}); }
+    function toggleExplain(mode){sourcesOnly=mode; document.querySelectorAll('.explanation-item').forEach(x=>x.classList.toggle('hidden',sourcesOnly && !['newsEvidence','qualityEvidence'].includes(x.id))); $('#sourcesOnly').classList.toggle('active',sourcesOnly);}
+    function flashTarget(id){const node=$('#'+id); if(!node)return; document.querySelectorAll('.focused').forEach(x=>x.classList.remove('focused'));node.classList.add('focused');node.scrollIntoView({behavior:'smooth',block:'center'});setTimeout(()=>node.classList.remove('focused'),2200);}
+    function setReview(){if(!reviewMode){const ok=confirm('Mở hậu kiểm chỉ để xem post-hoc review? Outcome sẽ không được dùng lại cho Explain.');if(!ok)return;}reviewMode=!reviewMode;$('#reviewCard').classList.toggle('hidden',!reviewMode);$('#modeLabel').textContent=reviewMode?'Post-hoc review (outcome tách riêng)':'Initial evidence pack';$('#reviewToggle').textContent=reviewMode?'Khóa hậu kiểm':'Mở hậu kiểm (post-hoc)';}
+    $('#themeToggle').addEventListener('click',()=>{const dark=document.documentElement.dataset.theme==='dark';document.documentElement.dataset.theme=dark?'light':'dark';$('#themeToggle').textContent=dark?'◐ Giao diện tối':'◐ Giao diện sáng';});
+    $('#whyBtn').addEventListener('click',()=>$('#whyBox').classList.toggle('hidden'));
+    $('#simulateBtn').addEventListener('click',()=>{const label=$('#simulationStatus');label.textContent='Đang tách evidence span → semantic attributes → feature vector…';setTimeout(()=>label.textContent='Hoàn tất mô phỏng. Đây là data demo tĩnh, không gọi API/LLM live.',700);});
+    $('#allDrivers').addEventListener('click',()=>{riskOnly=false;$('#allDrivers').classList.add('active');$('#riskDrivers').classList.remove('active');renderDrivers();});
+    $('#riskDrivers').addEventListener('click',()=>{riskOnly=true;$('#riskDrivers').classList.add('active');$('#allDrivers').classList.remove('active');renderDrivers();});
+    $('#sourcesOnly').addEventListener('click',()=>toggleExplain(true));$('#fullExplain').addEventListener('click',()=>toggleExplain(false));$('#reviewToggle').addEventListener('click',setReview);
+    document.querySelectorAll('.evidence-link').forEach(x=>x.addEventListener('click',()=>flashTarget(x.dataset.target)));
+    renderLifecycle();renderNews();renderSchema();renderMetrics();renderDrivers();
+  </script>
+</body>
+</html>

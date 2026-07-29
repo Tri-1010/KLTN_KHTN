@@ -1,0 +1,513 @@
+[2026-06-29 11:37:56] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:37:56] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-29 11:37:56] [TASK_1] [INFO] Timestamp: 2026-06-29T11:37:56.171594
+[2026-06-29 11:37:56] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:37:56] [TASK_1] [ERROR] TASK FAILED: TASK_1 after 0.0 seconds
+[2026-06-29 11:37:56] [TASK_1] [ERROR] Exception: Simulated failure
+[2026-06-29 11:37:56] [TASK_1] [ERROR] Stack trace:
+Traceback (most recent call last):
+  File "C:\Users\User\KLTN_MASTER\pipeline\run_pipeline.py", line 659, in run_pipeline
+    executor(config, task_logger, smoke_test=smoke_test)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1173, in _execute_mock_call
+    raise effect
+RuntimeError: Simulated failure
+
+[2026-06-29 11:37:56] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:37:56] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-29 11:37:56] [TASK_1] [INFO] Timestamp: 2026-06-29T11:37:56.199751
+[2026-06-29 11:37:56] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:37:56] [TASK_1] [ERROR] TASK FAILED: TASK_1 after 0.0 seconds
+[2026-06-29 11:37:56] [TASK_1] [ERROR] Exception: Simulated failure
+[2026-06-29 11:37:56] [TASK_1] [ERROR] Stack trace:
+Traceback (most recent call last):
+  File "C:\Users\User\KLTN_MASTER\pipeline\run_pipeline.py", line 659, in run_pipeline
+    executor(config, task_logger, smoke_test=smoke_test)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\unittest\mock.py", line 1173, in _execute_mock_call
+    raise effect
+RuntimeError: Simulated failure
+
+[2026-06-29 11:37:56] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:37:56] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-29 11:37:56] [TASK_1] [INFO] Timestamp: 2026-06-29T11:37:56.332339
+[2026-06-29 11:37:56] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:37:56] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 11:37:56] [TASK_1] [INFO] END TASK_1 — completed in 0.0 seconds
+[2026-06-29 11:37:56] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:37:56] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:37:56] [TASK_1] [INFO] START TASK_1: Price Collection (vnstock OHLCV)
+[2026-06-29 11:37:56] [TASK_1] [INFO] Timestamp: 2026-06-29T11:37:56.839529
+[2026-06-29 11:37:56] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:37:56] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 11:37:56] [TASK_1] [INFO] END TASK_1 — completed in 0.0 seconds
+[2026-06-29 11:37:56] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:01] [TASK_1] [INFO] Validated 3/3 tickers against VN30 list.
+[2026-06-29 11:38:01] [TASK_1] [WARNING] Invalid tickers (not in VN30): INVALID — these will be skipped.
+[2026-06-29 11:38:01] [TASK_1] [INFO] Validated 2/3 tickers against VN30 list.
+[2026-06-29 11:38:01] [TASK_1] [WARNING] Invalid tickers (not in VN30): INVALID1, INVALID2 — these will be skipped.
+[2026-06-29 11:38:01] [TASK_1] [INFO] Validated 30/30 tickers against VN30 list.
+[2026-06-29 11:38:01] [TASK_1] [WARNING] [2026-06-29 11:38:01] Error fetching VNM (attempt 1/3): API down
+[2026-06-29 11:38:01] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-29 11:38:01] [TASK_1] [WARNING] [2026-06-29 11:38:01] Error fetching VNM (attempt 2/3): API down
+[2026-06-29 11:38:01] [TASK_1] [INFO] Retrying in 2s...
+[2026-06-29 11:38:01] [TASK_1] [WARNING] [2026-06-29 11:38:01] Error fetching VNM (attempt 3/3): API down
+[2026-06-29 11:38:01] [TASK_1] [ERROR] [2026-06-29 11:38:01] Failed to fetch data for VNM after 3 attempts.
+[2026-06-29 11:38:01] [TASK_1] [INFO] Fetched 2 rows for VNM (2024-01-02 to 2024-01-03).
+[2026-06-29 11:38:01] [TASK_1] [WARNING] Empty data returned for VNM (attempt 1/3).
+[2026-06-29 11:38:01] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-29 11:38:01] [TASK_1] [INFO] Fetched 1 rows for VNM (2024-01-02 to 2024-01-02).
+[2026-06-29 11:38:01] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:01] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-29 11:38:01] [TASK_1] [INFO] Tickers: 1 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-29 11:38:01] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:01] [TASK_1] [INFO] Validated 1/1 tickers against VN30 list.
+[2026-06-29 11:38:01] [TASK_1] [INFO] Processing VNM (1/1)...
+[2026-06-29 11:38:01] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-172\test_collect_prices_output_col0\prices\VNM.csv (2 rows)
+[2026-06-29 11:38:01] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-172\test_collect_prices_output_col0\prices\all_vn30_prices.csv (2 rows, 1 tickers)
+[2026-06-29 11:38:01] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:01] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-29 11:38:01] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:01] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-29 11:38:01] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-29 11:38:01] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 11:38:01] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-29 11:38:01] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 11:38:01] [TASK_1] [INFO] VNM     2024-01-02  2024-01-03       2
+[2026-06-29 11:38:01] [TASK_1] [WARNING] ⚠ VNM has 75.0% fewer trading days than expected (2 vs 8 expected). Check for missing data.
+[2026-06-29 11:38:01] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 11:38:01] [TASK_1] [INFO] Total rows: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-29 11:38:01] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:01] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:01] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-29 11:38:01] [TASK_1] [INFO] Tickers: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-29 11:38:01] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:01] [TASK_1] [INFO] Validated 2/2 tickers against VN30 list.
+[2026-06-29 11:38:01] [TASK_1] [INFO] Processing VNM (1/2)...
+[2026-06-29 11:38:01] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-172\test_individual_ticker_csv_sav0\prices\VNM.csv (1 rows)
+[2026-06-29 11:38:01] [TASK_1] [INFO] Processing FPT (2/2)...
+[2026-06-29 11:38:01] [TASK_1] [INFO] Saved FPT → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-172\test_individual_ticker_csv_sav0\prices\FPT.csv (1 rows)
+[2026-06-29 11:38:01] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-172\test_individual_ticker_csv_sav0\prices\all_vn30_prices.csv (2 rows, 2 tickers)
+[2026-06-29 11:38:01] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:01] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-29 11:38:01] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:01] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-29 11:38:01] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-29 11:38:01] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 11:38:01] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-29 11:38:01] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 11:38:01] [TASK_1] [INFO] FPT     2024-01-02  2024-01-02       1
+[2026-06-29 11:38:01] [TASK_1] [WARNING] ⚠ FPT has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-29 11:38:01] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-29 11:38:01] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-29 11:38:01] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 11:38:01] [TASK_1] [INFO] Total rows: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-29 11:38:01] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:01] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:01] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-29 11:38:01] [TASK_1] [INFO] Tickers: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-29 11:38:01] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:01] [TASK_1] [INFO] Validated 2/2 tickers against VN30 list.
+[2026-06-29 11:38:01] [TASK_1] [INFO] Processing VNM (1/2)...
+[2026-06-29 11:38:01] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-172\test_consolidated_csv_has_tick0\prices\VNM.csv (1 rows)
+[2026-06-29 11:38:02] [TASK_1] [INFO] Processing FPT (2/2)...
+[2026-06-29 11:38:02] [TASK_1] [INFO] Saved FPT → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-172\test_consolidated_csv_has_tick0\prices\FPT.csv (1 rows)
+[2026-06-29 11:38:02] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-172\test_consolidated_csv_has_tick0\prices\all_vn30_prices.csv (2 rows, 2 tickers)
+[2026-06-29 11:38:02] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:02] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-29 11:38:02] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:02] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-29 11:38:02] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-29 11:38:02] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 11:38:02] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-29 11:38:02] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 11:38:02] [TASK_1] [INFO] FPT     2024-01-02  2024-01-02       1
+[2026-06-29 11:38:02] [TASK_1] [WARNING] ⚠ FPT has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-29 11:38:02] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-29 11:38:02] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-29 11:38:02] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 11:38:02] [TASK_1] [INFO] Total rows: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-29 11:38:02] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:02] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:02] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-29 11:38:02] [TASK_1] [INFO] Tickers: 1 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-29 11:38:02] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:02] [TASK_1] [INFO] Validated 1/1 tickers against VN30 list.
+[2026-06-29 11:38:02] [TASK_1] [INFO] Processing VNM (1/1)...
+[2026-06-29 11:38:02] [TASK_1] [ERROR] [2026-06-29 11:38:02] FAILED: VNM — no data collected. Continuing with remaining tickers.
+[2026-06-29 11:38:02] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:02] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-29 11:38:02] [TASK_1] [INFO] Tickers: 2 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-29 11:38:02] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:02] [TASK_1] [INFO] Validated 2/2 tickers against VN30 list.
+[2026-06-29 11:38:02] [TASK_1] [INFO] Processing VNM (1/2)...
+[2026-06-29 11:38:02] [TASK_1] [INFO] Saved VNM → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-172\test_partial_failure_continues0\prices\VNM.csv (1 rows)
+[2026-06-29 11:38:02] [TASK_1] [INFO] Processing FPT (2/2)...
+[2026-06-29 11:38:02] [TASK_1] [ERROR] [2026-06-29 11:38:02] FAILED: FPT — no data collected. Continuing with remaining tickers.
+[2026-06-29 11:38:02] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-172\test_partial_failure_continues0\prices\all_vn30_prices.csv (1 rows, 1 tickers)
+[2026-06-29 11:38:02] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:02] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-29 11:38:02] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:02] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-29 11:38:02] [TASK_1] [WARNING] Failed tickers: FPT
+[2026-06-29 11:38:02] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-29 11:38:02] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 11:38:02] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-29 11:38:02] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 11:38:02] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-29 11:38:02] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-29 11:38:02] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 11:38:02] [TASK_1] [INFO] Total rows: 1 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-29 11:38:02] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:02] [TASK_1] [WARNING] [2026-06-29 11:38:02] Error fetching VNM (attempt 1/3): API down
+[2026-06-29 11:38:02] [TASK_1] [WARNING] [2026-06-29 11:38:02] Error fetching VNM (attempt 2/3): API down
+[2026-06-29 11:38:02] [TASK_1] [WARNING] [2026-06-29 11:38:02] Error fetching VNM (attempt 3/3): API down
+[2026-06-29 11:38:02] [TASK_1] [ERROR] [2026-06-29 11:38:02] Failed to fetch data for VNM after 3 attempts.
+[2026-06-29 11:38:02] [TASK_1] [WARNING] [2026-06-29 11:38:02] Error fetching VNM (attempt 1/3): API down
+[2026-06-29 11:38:02] [TASK_1] [WARNING] [2026-06-29 11:38:02] Error fetching VNM (attempt 2/3): API down
+[2026-06-29 11:38:02] [TASK_1] [WARNING] [2026-06-29 11:38:02] Error fetching VNM (attempt 3/3): API down
+[2026-06-29 11:38:02] [TASK_1] [ERROR] [2026-06-29 11:38:02] Failed to fetch data for VNM after 3 attempts.
+[2026-06-29 11:38:02] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:02] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-29 11:38:02] [TASK_1] [INFO] Tickers: 3 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-29 11:38:02] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:02] [TASK_1] [INFO] Validated 3/3 tickers against VN30 list.
+[2026-06-29 11:38:02] [TASK_1] [INFO] Processing VNM (1/3)...
+[2026-06-29 11:38:02] [TASK_1] [ERROR] [2026-06-29 11:38:02] FAILED: VNM — no data collected. Continuing with remaining tickers.
+[2026-06-29 11:38:03] [TASK_1] [INFO] Processing VCB (2/3)...
+[2026-06-29 11:38:03] [TASK_1] [INFO] Saved VCB → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-172\test_continues_after_ticker_fa0\prices\VCB.csv (2 rows)
+[2026-06-29 11:38:03] [TASK_1] [INFO] Processing FPT (3/3)...
+[2026-06-29 11:38:03] [TASK_1] [INFO] Saved FPT → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-172\test_continues_after_ticker_fa0\prices\FPT.csv (2 rows)
+[2026-06-29 11:38:03] [TASK_1] [INFO] Saved consolidated file → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-172\test_continues_after_ticker_fa0\prices\all_vn30_prices.csv (4 rows, 2 tickers)
+[2026-06-29 11:38:03] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:03] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-29 11:38:03] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:03] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-29 11:38:03] [TASK_1] [WARNING] Failed tickers: VNM
+[2026-06-29 11:38:03] [TASK_1] [INFO] Expected trading days (business-day calendar): 8
+[2026-06-29 11:38:03] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 11:38:03] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-29 11:38:03] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 11:38:03] [TASK_1] [INFO] FPT     2024-01-02  2024-01-03       2
+[2026-06-29 11:38:03] [TASK_1] [WARNING] ⚠ FPT has 75.0% fewer trading days than expected (2 vs 8 expected). Check for missing data.
+[2026-06-29 11:38:03] [TASK_1] [INFO] VCB     2024-01-02  2024-01-03       2
+[2026-06-29 11:38:03] [TASK_1] [WARNING] ⚠ VCB has 75.0% fewer trading days than expected (2 vs 8 expected). Check for missing data.
+[2026-06-29 11:38:03] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 11:38:03] [TASK_1] [INFO] Total rows: 4 | Date range: 2024-01-01 to 2024-01-10
+[2026-06-29 11:38:03] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:04] [TASK_1] [ERROR] [2026-06-29 11:38:04] FAILED: FPT — no data collected. Continuing with remaining tickers.
+[2026-06-29 11:38:04] [TASK_1] [WARNING] Failed tickers: FPT
+[2026-06-29 11:38:04] [TASK_1] [WARNING] ⚠ VNM has 87.5% fewer trading days than expected (1 vs 8 expected). Check for missing data.
+[2026-06-29 11:38:04] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:04] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-29 11:38:04] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:04] [TASK_1] [INFO] Successfully collected: 2 tickers
+[2026-06-29 11:38:04] [TASK_1] [INFO] Expected trading days (business-day calendar): 3
+[2026-06-29 11:38:04] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 11:38:04] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-29 11:38:04] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 11:38:04] [TASK_1] [INFO] FPT     2024-01-02  2024-01-03       2
+[2026-06-29 11:38:04] [TASK_1] [WARNING] ⚠ FPT has 33.3% fewer trading days than expected (2 vs 3 expected). Check for missing data.
+[2026-06-29 11:38:04] [TASK_1] [INFO] VNM     2024-01-02  2024-01-04       3
+[2026-06-29 11:38:04] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 11:38:04] [TASK_1] [INFO] Total rows: 5 | Date range: 2024-01-02 to 2024-01-04
+[2026-06-29 11:38:04] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:04] [TASK_1] [WARNING] ⚠ FPT has 53.1% fewer trading days than expected (30 vs 64 expected). Check for missing data.
+[2026-06-29 11:38:04] [TASK_1] [WARNING] ⚠ VNM has 6.2% fewer trading days than expected (60 vs 64 expected). Check for missing data.
+[2026-06-29 11:38:04] [TASK_1] [WARNING] Failed tickers: FPT, VCB
+[2026-06-29 11:38:04] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:04] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-29 11:38:04] [TASK_1] [INFO] ============================================================
+[2026-06-29 11:38:04] [TASK_1] [INFO] Successfully collected: 1 tickers
+[2026-06-29 11:38:04] [TASK_1] [INFO] Expected trading days (business-day calendar): 4
+[2026-06-29 11:38:04] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 11:38:04] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-29 11:38:04] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 11:38:04] [TASK_1] [INFO] VNM     2024-01-02  2024-01-02       1
+[2026-06-29 11:38:04] [TASK_1] [WARNING] ⚠ VNM has 75.0% fewer trading days than expected (1 vs 4 expected). Check for missing data.
+[2026-06-29 11:38:04] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 11:38:04] [TASK_1] [INFO] Total rows: 1 | Date range: 2024-01-02 to 2024-01-05
+[2026-06-29 11:38:04] [TASK_1] [INFO] ============================================================
+[2026-06-29 21:29:59] [TASK_1] [INFO] ============================================================
+[2026-06-29 21:29:59] [TASK_1] [INFO] TASK 1: Price Collection Started
+[2026-06-29 21:29:59] [TASK_1] [INFO] Tickers: 50 | Date range: 2022-01-01 to 2026-06-29
+[2026-06-29 21:29:59] [TASK_1] [INFO] ============================================================
+[2026-06-29 21:29:59] [TASK_1] [INFO] HOSE-80 expansion: 50 non-VN30 tickers included: EIB, LPB, MSB, NAB, OCB, PGB, VBB, BVB, ABB, KLB, BAB, VCI, HCM, VND, MBS, BSI, KDH, NVL, DXG, PDR, NLG, DIG, HDG, VCG, SCR, HSG, NKG, VGC, PHR, CSV, DPM, DCM, BMP, REE, NT2, PPC, GEX, EVF, PNJ, DGW, FRT, MCH, VHC, ANV, CMG, ELC, GMD, VSC, PVT, HAH
+[2026-06-29 21:29:59] [TASK_1] [INFO] Validated 50 tickers total (0 VN30 + 50 expansion).
+[2026-06-29 21:29:59] [TASK_1] [INFO] Processing EIB (1/50)...
+[2026-06-29 21:30:00] [TASK_1] [INFO] Fetched 1173 rows for EIB (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:00] [TASK_1] [INFO] Saved EIB → data/prices\EIB.csv (1173 rows)
+[2026-06-29 21:30:00] [TASK_1] [INFO] Processing LPB (2/50)...
+[2026-06-29 21:30:00] [TASK_1] [INFO] Fetched 1173 rows for LPB (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:00] [TASK_1] [INFO] Saved LPB → data/prices\LPB.csv (1173 rows)
+[2026-06-29 21:30:01] [TASK_1] [INFO] Processing MSB (3/50)...
+[2026-06-29 21:30:02] [TASK_1] [INFO] Fetched 1173 rows for MSB (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:02] [TASK_1] [INFO] Saved MSB → data/prices\MSB.csv (1173 rows)
+[2026-06-29 21:30:03] [TASK_1] [INFO] Processing NAB (4/50)...
+[2026-06-29 21:30:03] [TASK_1] [INFO] Fetched 1173 rows for NAB (2021-10-05 to 2026-06-29).
+[2026-06-29 21:30:03] [TASK_1] [INFO] Saved NAB → data/prices\NAB.csv (1173 rows)
+[2026-06-29 21:30:04] [TASK_1] [INFO] Processing OCB (5/50)...
+[2026-06-29 21:30:04] [TASK_1] [INFO] Fetched 1173 rows for OCB (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:04] [TASK_1] [INFO] Saved OCB → data/prices\OCB.csv (1173 rows)
+[2026-06-29 21:30:05] [TASK_1] [INFO] Processing PGB (6/50)...
+[2026-06-29 21:30:05] [TASK_1] [INFO] Fetched 1173 rows for PGB (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:05] [TASK_1] [INFO] Saved PGB → data/prices\PGB.csv (1173 rows)
+[2026-06-29 21:30:05] [TASK_1] [INFO] Processing VBB (7/50)...
+[2026-06-29 21:30:06] [TASK_1] [INFO] Fetched 1173 rows for VBB (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:06] [TASK_1] [INFO] Saved VBB → data/prices\VBB.csv (1173 rows)
+[2026-06-29 21:30:06] [TASK_1] [INFO] Processing BVB (8/50)...
+[2026-06-29 21:30:07] [TASK_1] [INFO] Fetched 1173 rows for BVB (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:07] [TASK_1] [INFO] Saved BVB → data/prices\BVB.csv (1173 rows)
+[2026-06-29 21:30:07] [TASK_1] [INFO] Processing ABB (9/50)...
+[2026-06-29 21:30:07] [TASK_1] [INFO] Fetched 1173 rows for ABB (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:07] [TASK_1] [INFO] Saved ABB → data/prices\ABB.csv (1173 rows)
+[2026-06-29 21:30:08] [TASK_1] [INFO] Processing KLB (10/50)...
+[2026-06-29 21:30:08] [TASK_1] [INFO] Fetched 1173 rows for KLB (2021-10-05 to 2026-06-29).
+[2026-06-29 21:30:08] [TASK_1] [INFO] Saved KLB → data/prices\KLB.csv (1173 rows)
+[2026-06-29 21:30:09] [TASK_1] [INFO] Processing BAB (11/50)...
+[2026-06-29 21:30:09] [TASK_1] [INFO] Fetched 1173 rows for BAB (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:09] [TASK_1] [INFO] Saved BAB → data/prices\BAB.csv (1173 rows)
+[2026-06-29 21:30:10] [TASK_1] [INFO] Processing VCI (12/50)...
+[2026-06-29 21:30:10] [TASK_1] [INFO] Fetched 1173 rows for VCI (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:10] [TASK_1] [INFO] Saved VCI → data/prices\VCI.csv (1173 rows)
+[2026-06-29 21:30:10] [TASK_1] [INFO] Processing HCM (13/50)...
+[2026-06-29 21:30:11] [TASK_1] [INFO] Fetched 1173 rows for HCM (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:11] [TASK_1] [INFO] Saved HCM → data/prices\HCM.csv (1173 rows)
+[2026-06-29 21:30:11] [TASK_1] [INFO] Processing VND (14/50)...
+[2026-06-29 21:30:12] [TASK_1] [INFO] Fetched 1173 rows for VND (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:12] [TASK_1] [INFO] Saved VND → data/prices\VND.csv (1173 rows)
+[2026-06-29 21:30:12] [TASK_1] [INFO] Processing MBS (15/50)...
+[2026-06-29 21:30:13] [TASK_1] [INFO] Fetched 1173 rows for MBS (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:13] [TASK_1] [INFO] Saved MBS → data/prices\MBS.csv (1173 rows)
+[2026-06-29 21:30:13] [TASK_1] [INFO] Processing BSI (16/50)...
+[2026-06-29 21:30:13] [TASK_1] [INFO] Fetched 1173 rows for BSI (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:13] [TASK_1] [INFO] Saved BSI → data/prices\BSI.csv (1173 rows)
+[2026-06-29 21:30:14] [TASK_1] [INFO] Processing KDH (17/50)...
+[2026-06-29 21:30:14] [TASK_1] [INFO] Fetched 1173 rows for KDH (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:14] [TASK_1] [INFO] Saved KDH → data/prices\KDH.csv (1173 rows)
+[2026-06-29 21:30:15] [TASK_1] [INFO] Processing NVL (18/50)...
+[2026-06-29 21:30:15] [TASK_1] [INFO] Fetched 1173 rows for NVL (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:15] [TASK_1] [INFO] Saved NVL → data/prices\NVL.csv (1173 rows)
+[2026-06-29 21:30:16] [TASK_1] [INFO] Processing DXG (19/50)...
+[2026-06-29 21:30:16] [TASK_1] [INFO] Fetched 1173 rows for DXG (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:16] [TASK_1] [INFO] Saved DXG → data/prices\DXG.csv (1173 rows)
+[2026-06-29 21:30:16] [TASK_1] [INFO] Processing PDR (20/50)...
+[2026-06-29 21:30:17] [TASK_1] [INFO] Fetched 1173 rows for PDR (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:17] [TASK_1] [INFO] Saved PDR → data/prices\PDR.csv (1173 rows)
+[2026-06-29 21:30:17] [TASK_1] [INFO] Processing NLG (21/50)...
+[2026-06-29 21:30:18] [TASK_1] [INFO] Fetched 1173 rows for NLG (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:18] [TASK_1] [INFO] Saved NLG → data/prices\NLG.csv (1173 rows)
+[2026-06-29 21:30:18] [TASK_1] [INFO] Processing DIG (22/50)...
+[2026-06-29 21:30:18] [TASK_1] [INFO] Fetched 1173 rows for DIG (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:18] [TASK_1] [INFO] Saved DIG → data/prices\DIG.csv (1173 rows)
+[2026-06-29 21:30:19] [TASK_1] [INFO] Processing HDG (23/50)...
+[2026-06-29 21:30:19] [TASK_1] [INFO] Fetched 1173 rows for HDG (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:19] [TASK_1] [INFO] Saved HDG → data/prices\HDG.csv (1173 rows)
+[2026-06-29 21:30:20] [TASK_1] [INFO] Processing VCG (24/50)...
+[2026-06-29 21:30:20] [TASK_1] [INFO] Fetched 1173 rows for VCG (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:20] [TASK_1] [INFO] Saved VCG → data/prices\VCG.csv (1173 rows)
+[2026-06-29 21:30:21] [TASK_1] [INFO] Processing SCR (25/50)...
+[2026-06-29 21:30:21] [TASK_1] [INFO] Fetched 1173 rows for SCR (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:21] [TASK_1] [INFO] Saved SCR → data/prices\SCR.csv (1173 rows)
+[2026-06-29 21:30:21] [TASK_1] [INFO] Processing HSG (26/50)...
+[2026-06-29 21:30:22] [TASK_1] [INFO] Fetched 1173 rows for HSG (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:22] [TASK_1] [INFO] Saved HSG → data/prices\HSG.csv (1173 rows)
+[2026-06-29 21:30:22] [TASK_1] [INFO] Processing NKG (27/50)...
+[2026-06-29 21:30:23] [TASK_1] [INFO] Fetched 1173 rows for NKG (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:23] [TASK_1] [INFO] Saved NKG → data/prices\NKG.csv (1173 rows)
+[2026-06-29 21:30:23] [TASK_1] [INFO] Processing VGC (28/50)...
+[2026-06-29 21:30:23] [TASK_1] [INFO] Fetched 1173 rows for VGC (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:23] [TASK_1] [INFO] Saved VGC → data/prices\VGC.csv (1173 rows)
+[2026-06-29 21:30:24] [TASK_1] [INFO] Processing PHR (29/50)...
+[2026-06-29 21:30:24] [TASK_1] [INFO] Fetched 1173 rows for PHR (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:24] [TASK_1] [INFO] Saved PHR → data/prices\PHR.csv (1173 rows)
+[2026-06-29 21:30:25] [TASK_1] [INFO] Processing CSV (30/50)...
+[2026-06-29 21:30:25] [TASK_1] [INFO] Fetched 1173 rows for CSV (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:25] [TASK_1] [INFO] Saved CSV → data/prices\CSV.csv (1173 rows)
+[2026-06-29 21:30:26] [TASK_1] [INFO] Processing DPM (31/50)...
+[2026-06-29 21:30:26] [TASK_1] [INFO] Fetched 1173 rows for DPM (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:26] [TASK_1] [INFO] Saved DPM → data/prices\DPM.csv (1173 rows)
+[2026-06-29 21:30:26] [TASK_1] [INFO] Processing DCM (32/50)...
+[2026-06-29 21:30:27] [TASK_1] [INFO] Fetched 1173 rows for DCM (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:27] [TASK_1] [INFO] Saved DCM → data/prices\DCM.csv (1173 rows)
+[2026-06-29 21:30:27] [TASK_1] [INFO] Processing BMP (33/50)...
+[2026-06-29 21:30:27] [TASK_1] [INFO] Fetched 1173 rows for BMP (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:27] [TASK_1] [INFO] Saved BMP → data/prices\BMP.csv (1173 rows)
+[2026-06-29 21:30:28] [TASK_1] [INFO] Processing REE (34/50)...
+[2026-06-29 21:30:28] [TASK_1] [WARNING] [2026-06-29 21:30:28] Error fetching REE (attempt 1/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:30:28] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-29 21:30:29] [TASK_1] [WARNING] [2026-06-29 21:30:29] Error fetching REE (attempt 2/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:30:29] [TASK_1] [INFO] Retrying in 2s...
+[2026-06-29 21:30:32] [TASK_1] [WARNING] [2026-06-29 21:30:32] Error fetching REE (attempt 3/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:30:32] [TASK_1] [ERROR] [2026-06-29 21:30:32] Failed to fetch data for REE after 3 attempts.
+[2026-06-29 21:30:32] [TASK_1] [ERROR] [2026-06-29 21:30:32] FAILED: REE — no data collected. Continuing with remaining tickers.
+[2026-06-29 21:30:32] [TASK_1] [INFO] Processing NT2 (35/50)...
+[2026-06-29 21:30:33] [TASK_1] [WARNING] [2026-06-29 21:30:33] Error fetching NT2 (attempt 1/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:30:33] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-29 21:30:34] [TASK_1] [WARNING] [2026-06-29 21:30:34] Error fetching NT2 (attempt 2/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:30:34] [TASK_1] [INFO] Retrying in 2s...
+[2026-06-29 21:30:36] [TASK_1] [WARNING] [2026-06-29 21:30:36] Error fetching NT2 (attempt 3/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:30:36] [TASK_1] [ERROR] [2026-06-29 21:30:36] Failed to fetch data for NT2 after 3 attempts.
+[2026-06-29 21:30:36] [TASK_1] [ERROR] [2026-06-29 21:30:36] FAILED: NT2 — no data collected. Continuing with remaining tickers.
+[2026-06-29 21:30:37] [TASK_1] [INFO] Processing PPC (36/50)...
+[2026-06-29 21:30:37] [TASK_1] [INFO] Fetched 1173 rows for PPC (2021-10-13 to 2026-06-29).
+[2026-06-29 21:30:37] [TASK_1] [INFO] Saved PPC → data/prices\PPC.csv (1173 rows)
+[2026-06-29 21:30:38] [TASK_1] [INFO] Processing GEX (37/50)...
+[2026-06-29 21:30:38] [TASK_1] [WARNING] [2026-06-29 21:30:38] Error fetching GEX (attempt 1/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:30:38] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-29 21:30:39] [TASK_1] [WARNING] [2026-06-29 21:30:39] Error fetching GEX (attempt 2/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:30:39] [TASK_1] [INFO] Retrying in 2s...
+[2026-06-29 21:30:41] [TASK_1] [WARNING] [2026-06-29 21:30:41] Error fetching GEX (attempt 3/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:30:41] [TASK_1] [ERROR] [2026-06-29 21:30:41] Failed to fetch data for GEX after 3 attempts.
+[2026-06-29 21:30:41] [TASK_1] [ERROR] [2026-06-29 21:30:41] FAILED: GEX — no data collected. Continuing with remaining tickers.
+[2026-06-29 21:30:42] [TASK_1] [INFO] Processing EVF (38/50)...
+[2026-06-29 21:30:42] [TASK_1] [WARNING] [2026-06-29 21:30:42] Error fetching EVF (attempt 1/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:30:42] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-29 21:30:43] [TASK_1] [WARNING] [2026-06-29 21:30:43] Error fetching EVF (attempt 2/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:30:43] [TASK_1] [INFO] Retrying in 2s...
+[2026-06-29 21:30:45] [TASK_1] [WARNING] [2026-06-29 21:30:45] Error fetching EVF (attempt 3/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:30:45] [TASK_1] [ERROR] [2026-06-29 21:30:45] Failed to fetch data for EVF after 3 attempts.
+[2026-06-29 21:30:45] [TASK_1] [ERROR] [2026-06-29 21:30:45] FAILED: EVF — no data collected. Continuing with remaining tickers.
+[2026-06-29 21:30:46] [TASK_1] [INFO] Processing PNJ (39/50)...
+[2026-06-29 21:30:46] [TASK_1] [WARNING] [2026-06-29 21:30:46] Error fetching PNJ (attempt 1/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:30:46] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-29 21:30:47] [TASK_1] [WARNING] [2026-06-29 21:30:47] Error fetching PNJ (attempt 2/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:30:47] [TASK_1] [INFO] Retrying in 2s...
+[2026-06-29 21:30:49] [TASK_1] [WARNING] [2026-06-29 21:30:49] Error fetching PNJ (attempt 3/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:30:49] [TASK_1] [ERROR] [2026-06-29 21:30:49] Failed to fetch data for PNJ after 3 attempts.
+[2026-06-29 21:30:49] [TASK_1] [ERROR] [2026-06-29 21:30:49] FAILED: PNJ — no data collected. Continuing with remaining tickers.
+[2026-06-29 21:30:49] [TASK_1] [INFO] Processing DGW (40/50)...
+[2026-06-29 21:30:49] [TASK_1] [WARNING] [2026-06-29 21:30:49] Error fetching DGW (attempt 1/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:30:49] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-29 21:30:51] [TASK_1] [WARNING] [2026-06-29 21:30:51] Error fetching DGW (attempt 2/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:30:51] [TASK_1] [INFO] Retrying in 2s...
+[2026-06-29 21:30:53] [TASK_1] [WARNING] [2026-06-29 21:30:53] Error fetching DGW (attempt 3/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:30:53] [TASK_1] [ERROR] [2026-06-29 21:30:53] Failed to fetch data for DGW after 3 attempts.
+[2026-06-29 21:30:53] [TASK_1] [ERROR] [2026-06-29 21:30:53] FAILED: DGW — no data collected. Continuing with remaining tickers.
+[2026-06-29 21:30:53] [TASK_1] [INFO] Processing FRT (41/50)...
+[2026-06-29 21:30:53] [TASK_1] [WARNING] [2026-06-29 21:30:53] Error fetching FRT (attempt 1/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:30:53] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-29 21:30:55] [TASK_1] [WARNING] [2026-06-29 21:30:55] Error fetching FRT (attempt 2/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:30:55] [TASK_1] [INFO] Retrying in 2s...
+[2026-06-29 21:30:57] [TASK_1] [WARNING] [2026-06-29 21:30:57] Error fetching FRT (attempt 3/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:30:57] [TASK_1] [ERROR] [2026-06-29 21:30:57] Failed to fetch data for FRT after 3 attempts.
+[2026-06-29 21:30:57] [TASK_1] [ERROR] [2026-06-29 21:30:57] FAILED: FRT — no data collected. Continuing with remaining tickers.
+[2026-06-29 21:30:57] [TASK_1] [INFO] Processing MCH (42/50)...
+[2026-06-29 21:30:58] [TASK_1] [WARNING] [2026-06-29 21:30:58] Error fetching MCH (attempt 1/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:30:58] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-29 21:30:59] [TASK_1] [WARNING] [2026-06-29 21:30:59] Error fetching MCH (attempt 2/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:30:59] [TASK_1] [INFO] Retrying in 2s...
+[2026-06-29 21:31:01] [TASK_1] [WARNING] [2026-06-29 21:31:01] Error fetching MCH (attempt 3/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:31:01] [TASK_1] [ERROR] [2026-06-29 21:31:01] Failed to fetch data for MCH after 3 attempts.
+[2026-06-29 21:31:01] [TASK_1] [ERROR] [2026-06-29 21:31:01] FAILED: MCH — no data collected. Continuing with remaining tickers.
+[2026-06-29 21:31:02] [TASK_1] [INFO] Processing VHC (43/50)...
+[2026-06-29 21:31:02] [TASK_1] [WARNING] [2026-06-29 21:31:02] Error fetching VHC (attempt 1/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:31:02] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-29 21:31:03] [TASK_1] [WARNING] [2026-06-29 21:31:03] Error fetching VHC (attempt 2/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:31:03] [TASK_1] [INFO] Retrying in 2s...
+[2026-06-29 21:31:06] [TASK_1] [WARNING] [2026-06-29 21:31:06] Error fetching VHC (attempt 3/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:31:06] [TASK_1] [ERROR] [2026-06-29 21:31:06] Failed to fetch data for VHC after 3 attempts.
+[2026-06-29 21:31:06] [TASK_1] [ERROR] [2026-06-29 21:31:06] FAILED: VHC — no data collected. Continuing with remaining tickers.
+[2026-06-29 21:31:06] [TASK_1] [INFO] Processing ANV (44/50)...
+[2026-06-29 21:31:07] [TASK_1] [INFO] Fetched 1173 rows for ANV (2021-10-13 to 2026-06-29).
+[2026-06-29 21:31:07] [TASK_1] [INFO] Saved ANV → data/prices\ANV.csv (1173 rows)
+[2026-06-29 21:31:07] [TASK_1] [INFO] Processing CMG (45/50)...
+[2026-06-29 21:31:07] [TASK_1] [WARNING] [2026-06-29 21:31:07] Error fetching CMG (attempt 1/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:31:07] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-29 21:31:09] [TASK_1] [WARNING] [2026-06-29 21:31:09] Error fetching CMG (attempt 2/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:31:09] [TASK_1] [INFO] Retrying in 2s...
+[2026-06-29 21:31:11] [TASK_1] [WARNING] [2026-06-29 21:31:11] Error fetching CMG (attempt 3/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:31:11] [TASK_1] [ERROR] [2026-06-29 21:31:11] Failed to fetch data for CMG after 3 attempts.
+[2026-06-29 21:31:11] [TASK_1] [ERROR] [2026-06-29 21:31:11] FAILED: CMG — no data collected. Continuing with remaining tickers.
+[2026-06-29 21:31:11] [TASK_1] [INFO] Processing ELC (46/50)...
+[2026-06-29 21:31:12] [TASK_1] [WARNING] [2026-06-29 21:31:12] Error fetching ELC (attempt 1/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:31:12] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-29 21:31:13] [TASK_1] [INFO] Fetched 1173 rows for ELC (2021-10-13 to 2026-06-29).
+[2026-06-29 21:31:13] [TASK_1] [INFO] Saved ELC → data/prices\ELC.csv (1173 rows)
+[2026-06-29 21:31:14] [TASK_1] [INFO] Processing GMD (47/50)...
+[2026-06-29 21:31:14] [TASK_1] [WARNING] [2026-06-29 21:31:14] Error fetching GMD (attempt 1/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:31:14] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-29 21:31:15] [TASK_1] [WARNING] [2026-06-29 21:31:15] Error fetching GMD (attempt 2/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:31:15] [TASK_1] [INFO] Retrying in 2s...
+[2026-06-29 21:31:18] [TASK_1] [WARNING] [2026-06-29 21:31:18] Error fetching GMD (attempt 3/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:31:18] [TASK_1] [ERROR] [2026-06-29 21:31:18] Failed to fetch data for GMD after 3 attempts.
+[2026-06-29 21:31:18] [TASK_1] [ERROR] [2026-06-29 21:31:18] FAILED: GMD — no data collected. Continuing with remaining tickers.
+[2026-06-29 21:31:18] [TASK_1] [INFO] Processing VSC (48/50)...
+[2026-06-29 21:31:18] [TASK_1] [WARNING] [2026-06-29 21:31:18] Error fetching VSC (attempt 1/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:31:18] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-29 21:31:20] [TASK_1] [WARNING] [2026-06-29 21:31:20] Error fetching VSC (attempt 2/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:31:20] [TASK_1] [INFO] Retrying in 2s...
+[2026-06-29 21:31:22] [TASK_1] [WARNING] [2026-06-29 21:31:22] Error fetching VSC (attempt 3/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:31:22] [TASK_1] [ERROR] [2026-06-29 21:31:22] Failed to fetch data for VSC after 3 attempts.
+[2026-06-29 21:31:22] [TASK_1] [ERROR] [2026-06-29 21:31:22] FAILED: VSC — no data collected. Continuing with remaining tickers.
+[2026-06-29 21:31:22] [TASK_1] [INFO] Processing PVT (49/50)...
+[2026-06-29 21:31:23] [TASK_1] [WARNING] [2026-06-29 21:31:23] Error fetching PVT (attempt 1/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:31:23] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-29 21:31:24] [TASK_1] [WARNING] [2026-06-29 21:31:24] Error fetching PVT (attempt 2/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:31:24] [TASK_1] [INFO] Retrying in 2s...
+[2026-06-29 21:31:26] [TASK_1] [WARNING] [2026-06-29 21:31:26] Error fetching PVT (attempt 3/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:31:26] [TASK_1] [ERROR] [2026-06-29 21:31:26] Failed to fetch data for PVT after 3 attempts.
+[2026-06-29 21:31:26] [TASK_1] [ERROR] [2026-06-29 21:31:26] FAILED: PVT — no data collected. Continuing with remaining tickers.
+[2026-06-29 21:31:27] [TASK_1] [INFO] Processing HAH (50/50)...
+[2026-06-29 21:31:27] [TASK_1] [WARNING] [2026-06-29 21:31:27] Error fetching HAH (attempt 1/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:31:27] [TASK_1] [INFO] Retrying in 1s...
+[2026-06-29 21:31:28] [TASK_1] [WARNING] [2026-06-29 21:31:28] Error fetching HAH (attempt 2/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:31:28] [TASK_1] [INFO] Retrying in 2s...
+[2026-06-29 21:31:30] [TASK_1] [WARNING] [2026-06-29 21:31:30] Error fetching HAH (attempt 3/3): Failed to fetch data: 429 - Too Many Requests
+[2026-06-29 21:31:30] [TASK_1] [ERROR] [2026-06-29 21:31:30] Failed to fetch data for HAH after 3 attempts.
+[2026-06-29 21:31:30] [TASK_1] [ERROR] [2026-06-29 21:31:30] FAILED: HAH — no data collected. Continuing with remaining tickers.
+[2026-06-29 21:31:31] [TASK_1] [INFO] Saved consolidated file → data/prices\all_vn30_prices.csv (42228 rows, 36 tickers)
+[2026-06-29 21:31:31] [TASK_1] [INFO] ============================================================
+[2026-06-29 21:31:31] [TASK_1] [INFO] PRICE COLLECTION SUMMARY
+[2026-06-29 21:31:31] [TASK_1] [INFO] ============================================================
+[2026-06-29 21:31:31] [TASK_1] [INFO] Successfully collected: 36 tickers
+[2026-06-29 21:31:31] [TASK_1] [WARNING] Failed tickers: REE, NT2, GEX, EVF, PNJ, DGW, FRT, MCH, VHC, CMG, GMD, VSC, PVT, HAH
+[2026-06-29 21:31:31] [TASK_1] [INFO] Expected trading days (business-day calendar): 1171
+[2026-06-29 21:31:31] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 21:31:31] [TASK_1] [INFO] Ticker    Earliest      Latest    Days
+[2026-06-29 21:31:31] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 21:31:31] [TASK_1] [INFO] ABB     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] ANV     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] BAB     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] BMP     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] BSI     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] BVB     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] CSV     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] DCM     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] DIG     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] DPM     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] DXG     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] EIB     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] ELC     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] HCM     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] HDG     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] HSG     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] KDH     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] KLB     2021-10-05  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] LPB     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] MBS     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] MSB     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] NAB     2021-10-05  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] NKG     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] NLG     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] NVL     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] OCB     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] PDR     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] PGB     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] PHR     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] PPC     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] SCR     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] VBB     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] VCG     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] VCI     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] VGC     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] VND     2021-10-13  2026-06-29    1173
+[2026-06-29 21:31:31] [TASK_1] [INFO] ------------------------------------------------------------
+[2026-06-29 21:31:31] [TASK_1] [INFO] Total rows: 42228 | Date range: 2022-01-01 to 2026-06-29
+[2026-06-29 21:31:31] [TASK_1] [INFO] ============================================================

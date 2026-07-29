@@ -87,6 +87,13 @@ Nguồn đã loại (bất khả thi): VnEconomy, VietnamFinance, Stockbiz, 24hm
 Kỹ thuật khám phá: API ẩn (Vietstock PagingNewsContent), sitemap theo ngày (KTCK), date từ URL ảnh
 (VnExpress), date từ id bài (VietnamBiz), header Brotli fix.
 
+## Full-text enrichment follow-up
+
+- [x] TASK 2B full-text enrichment đã chạy trên corpus 6 nguồn sau matching.
+- [x] Coverage sau repair: **45,949/45,968 unique URLs** có `full_text` (**99.96%**) theo `reports/decision_support/generated/ktck_missing_metadata_repair_summary.json`.
+- [x] Các nguồn gần như đủ full text: CafeF 100%, Kinh Tế Chứng Khoán 100%, TNCK 100%, VietnamBiz 100%, Vietstock 99.84%, VnExpress 99.94%.
+- [x] Downstream đã cập nhật: TASK 4 dùng `full_text/lead/article_summary/key_facts_json`; TASK 5-11 và báo cáo H1 đã rerun/cập nhật theo full-text corpus.
+
 ## Lưu ý rủi ro
 
 - Scraping phụ thuộc cấu trúc web thật; một số nguồn có thể không khả thi (chặn bot,

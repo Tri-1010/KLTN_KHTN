@@ -1,0 +1,98 @@
+[2026-06-30 09:58:35] [PIPELINE] [INFO] ============================================================
+[2026-06-30 09:58:35] [PIPELINE] [INFO] VN30 Stock Prediction Pipeline
+[2026-06-30 09:58:35] [PIPELINE] [INFO] Step: preprocess | Force: True | Smoke Test: False
+[2026-06-30 09:58:35] [PIPELINE] [INFO] ============================================================
+[2026-06-30 09:58:35] [PIPELINE] [INFO] Configuration loaded and validated from config/pipeline_config.yaml
+[2026-06-30 09:58:35] [PIPELINE] [INFO] Tasks to execute: TASK_4, TASK_5, TASK_6
+[2026-06-30 09:59:43] [PIPELINE] [INFO] ✓ TASK_4 completed in 67.2 seconds
+[2026-06-30 10:00:01] [PIPELINE] [INFO] ============================================================
+[2026-06-30 10:00:01] [PIPELINE] [INFO] VN30 Stock Prediction Pipeline
+[2026-06-30 10:00:01] [PIPELINE] [INFO] Step: features | Force: True | Smoke Test: False
+[2026-06-30 10:00:01] [PIPELINE] [INFO] ============================================================
+[2026-06-30 10:00:01] [PIPELINE] [INFO] Configuration loaded and validated from config/pipeline_config.yaml
+[2026-06-30 10:00:01] [PIPELINE] [INFO] Tasks to execute: TASK_4, TASK_5, TASK_6, TASK_7, TASK_8, TASK_9
+[2026-06-30 10:01:02] [PIPELINE] [INFO] ✓ TASK_4 completed in 61.0 seconds
+[2026-06-30 10:01:06] [PIPELINE] [INFO] ============================================================
+[2026-06-30 10:01:06] [PIPELINE] [INFO] VN30 Stock Prediction Pipeline
+[2026-06-30 10:01:06] [PIPELINE] [INFO] Step: train | Force: True | Smoke Test: False
+[2026-06-30 10:01:06] [PIPELINE] [INFO] ============================================================
+[2026-06-30 10:01:06] [PIPELINE] [INFO] Configuration loaded and validated from config/pipeline_config.yaml
+[2026-06-30 10:01:06] [PIPELINE] [INFO] Tasks to execute: TASK_10, TASK_11
+[2026-06-30 10:01:19] [PIPELINE] [INFO] ✓ TASK_10 completed in 13.7 seconds
+[2026-06-30 10:01:44] [PIPELINE] [INFO] ✓ TASK_11 completed in 24.1 seconds
+[2026-06-30 10:01:44] [PIPELINE] [INFO] Pipeline completed successfully in 37.9 seconds.
+[2026-06-30 13:08:49] [PIPELINE] [INFO] ============================================================
+[2026-06-30 13:08:49] [PIPELINE] [INFO] VN30 Stock Prediction Pipeline
+[2026-06-30 13:08:49] [PIPELINE] [INFO] Step: preprocess | Force: True | Smoke Test: False
+[2026-06-30 13:08:49] [PIPELINE] [INFO] ============================================================
+[2026-06-30 13:08:49] [PIPELINE] [INFO] Configuration loaded and validated from config/pipeline_config.yaml
+[2026-06-30 13:08:49] [PIPELINE] [INFO] Tasks to execute: TASK_4, TASK_5, TASK_6
+[2026-06-30 13:09:47] [PIPELINE] [INFO] ✓ TASK_4 completed in 57.9 seconds
+[2026-06-30 13:10:08] [PIPELINE] [INFO] ✓ TASK_5 completed in 20.3 seconds
+[2026-06-30 13:10:08] [PIPELINE] [INFO] ✓ TASK_6 completed in 0.8 seconds
+[2026-06-30 13:10:08] [PIPELINE] [INFO] Pipeline completed successfully in 79.6 seconds.
+[2026-06-30 13:10:09] [PIPELINE] [INFO] ============================================================
+[2026-06-30 13:10:09] [PIPELINE] [INFO] VN30 Stock Prediction Pipeline
+[2026-06-30 13:10:09] [PIPELINE] [INFO] Step: features | Force: True | Smoke Test: False
+[2026-06-30 13:10:09] [PIPELINE] [INFO] ============================================================
+[2026-06-30 13:10:09] [PIPELINE] [INFO] Configuration loaded and validated from config/pipeline_config.yaml
+[2026-06-30 13:10:09] [PIPELINE] [INFO] Tasks to execute: TASK_4, TASK_5, TASK_6, TASK_7, TASK_8, TASK_9
+[2026-06-30 13:11:02] [PIPELINE] [INFO] ✓ TASK_4 completed in 53.2 seconds
+[2026-06-30 13:11:08] [PIPELINE] [INFO] ✓ TASK_5 completed in 5.7 seconds
+[2026-06-30 13:11:09] [PIPELINE] [INFO] ✓ TASK_6 completed in 0.9 seconds
+[2026-06-30 13:11:22] [PIPELINE] [INFO] ✓ TASK_7 completed in 12.4 seconds
+[2026-06-30 13:11:28] [PIPELINE] [INFO] ✓ TASK_8 completed in 5.9 seconds
+[2026-06-30 13:11:32] [PIPELINE] [INFO] ✓ TASK_9 completed in 4.8 seconds
+[2026-06-30 13:11:32] [PIPELINE] [INFO] Pipeline completed successfully in 83.6 seconds.
+[2026-06-30 13:11:33] [PIPELINE] [INFO] ============================================================
+[2026-06-30 13:11:33] [PIPELINE] [INFO] VN30 Stock Prediction Pipeline
+[2026-06-30 13:11:33] [PIPELINE] [INFO] Step: train | Force: True | Smoke Test: False
+[2026-06-30 13:11:33] [PIPELINE] [INFO] ============================================================
+[2026-06-30 13:11:33] [PIPELINE] [INFO] Configuration loaded and validated from config/pipeline_config.yaml
+[2026-06-30 13:11:33] [PIPELINE] [INFO] Tasks to execute: TASK_10, TASK_11
+[2026-06-30 13:11:45] [PIPELINE] [INFO] ✓ TASK_10 completed in 11.4 seconds
+[2026-06-30 13:12:05] [PIPELINE] [INFO] ✓ TASK_11 completed in 20.0 seconds
+[2026-06-30 13:12:05] [PIPELINE] [INFO] Pipeline completed successfully in 31.5 seconds.
+[2026-06-30 16:02:20] [PIPELINE] [INFO] ============================================================
+[2026-06-30 16:02:20] [PIPELINE] [INFO] VN30 Stock Prediction Pipeline
+[2026-06-30 16:02:20] [PIPELINE] [INFO] Step: update_news | Force: True | Smoke Test: False
+[2026-06-30 16:02:20] [PIPELINE] [INFO] ============================================================
+[2026-06-30 16:02:20] [PIPELINE] [INFO] Configuration loaded and validated from config/pipeline_config.yaml
+[2026-06-30 16:02:21] [PIPELINE] [INFO] ============================================================
+[2026-06-30 16:02:21] [PIPELINE] [INFO] UPDATE NEWS: Incremental scrape + update
+[2026-06-30 16:02:21] [PIPELINE] [INFO] ============================================================
+[2026-06-30 16:34:40] [PIPELINE] [INFO] Re-running entity matching on updated corpus...
+[2026-06-30 16:34:51] [PIPELINE] [INFO] Re-running text preprocessing on updated corpus...
+[2026-06-30 16:36:01] [PIPELINE] [INFO] UPDATE NEWS complete.
+[2026-06-30 16:36:01] [PIPELINE] [INFO] ============================================================
+[2026-06-30 16:36:01] [PIPELINE] [INFO] VN30 Stock Prediction Pipeline
+[2026-06-30 16:36:01] [PIPELINE] [INFO] Step: preprocess | Force: True | Smoke Test: False
+[2026-06-30 16:36:01] [PIPELINE] [INFO] ============================================================
+[2026-06-30 16:36:01] [PIPELINE] [INFO] Configuration loaded and validated from config/pipeline_config.yaml
+[2026-06-30 16:36:01] [PIPELINE] [INFO] Tasks to execute: TASK_4, TASK_5, TASK_6
+[2026-06-30 16:37:10] [PIPELINE] [INFO] ✓ TASK_4 completed in 68.4 seconds
+[2026-06-30 16:37:17] [PIPELINE] [INFO] ✓ TASK_5 completed in 6.5 seconds
+[2026-06-30 16:37:17] [PIPELINE] [INFO] ✓ TASK_6 completed in 0.8 seconds
+[2026-06-30 16:37:17] [PIPELINE] [INFO] Pipeline completed successfully in 76.5 seconds.
+[2026-06-30 16:37:18] [PIPELINE] [INFO] ============================================================
+[2026-06-30 16:37:18] [PIPELINE] [INFO] VN30 Stock Prediction Pipeline
+[2026-06-30 16:37:18] [PIPELINE] [INFO] Step: features | Force: True | Smoke Test: False
+[2026-06-30 16:37:18] [PIPELINE] [INFO] ============================================================
+[2026-06-30 16:37:18] [PIPELINE] [INFO] Configuration loaded and validated from config/pipeline_config.yaml
+[2026-06-30 16:37:18] [PIPELINE] [INFO] Tasks to execute: TASK_4, TASK_5, TASK_6, TASK_7, TASK_8, TASK_9
+[2026-06-30 16:38:25] [PIPELINE] [INFO] ✓ TASK_4 completed in 66.7 seconds
+[2026-06-30 16:38:31] [PIPELINE] [INFO] ✓ TASK_5 completed in 6.2 seconds
+[2026-06-30 16:38:32] [PIPELINE] [INFO] ✓ TASK_6 completed in 0.8 seconds
+[2026-06-30 16:38:38] [PIPELINE] [INFO] ✓ TASK_7 completed in 5.3 seconds
+[2026-06-30 16:38:44] [PIPELINE] [INFO] ✓ TASK_8 completed in 5.8 seconds
+[2026-06-30 16:38:51] [PIPELINE] [INFO] ✓ TASK_9 completed in 7.3 seconds
+[2026-06-30 16:38:51] [PIPELINE] [INFO] Pipeline completed successfully in 93.1 seconds.
+[2026-06-30 16:38:52] [PIPELINE] [INFO] ============================================================
+[2026-06-30 16:38:52] [PIPELINE] [INFO] VN30 Stock Prediction Pipeline
+[2026-06-30 16:38:52] [PIPELINE] [INFO] Step: train | Force: True | Smoke Test: False
+[2026-06-30 16:38:52] [PIPELINE] [INFO] ============================================================
+[2026-06-30 16:38:52] [PIPELINE] [INFO] Configuration loaded and validated from config/pipeline_config.yaml
+[2026-06-30 16:38:52] [PIPELINE] [INFO] Tasks to execute: TASK_10, TASK_11
+[2026-06-30 16:39:00] [PIPELINE] [INFO] ✓ TASK_10 completed in 8.1 seconds
+[2026-06-30 16:39:12] [PIPELINE] [INFO] ✓ TASK_11 completed in 11.7 seconds
+[2026-06-30 16:39:12] [PIPELINE] [INFO] Pipeline completed successfully in 20.0 seconds.

@@ -49,16 +49,20 @@ python multi_llm_evidence_extraction/scripts/select_case_studies.py
 python multi_llm_evidence_extraction/scripts/generate_evidence_cards.py
 python multi_llm_evidence_extraction/scripts/run_outcome_review.py
 python multi_llm_evidence_extraction/scripts/generate_result_charts.py
+python multi_llm_evidence_extraction/scripts/build_lineage_manifest.py
 python multi_llm_evidence_extraction/scripts/write_claim_evidence_table.py
 python multi_llm_evidence_extraction/scripts/write_final_reports.py
 ```
 
-File chính:
+File chính và vai trò:
 
-- `de_cuong_chi_tiet_multi_llm_evidence_extraction.md` — đề cương chi tiết.
-- `reports/ket_qua_luan_van_semantic_news_materiality.md` — kết quả đã hiệu chỉnh.
-- `reports/claim_vs_evidence_table.md` — claim gates, provenance, hashes và freshness.
-- `reports/codex_review_consolidated.md` — tổng hợp hai vòng review, findings đã sửa và verification cuối.
+- `de_cuong_chi_tiet_multi_llm_evidence_extraction.md` — framing học thuật, câu hỏi `RQ-SM*`, giả thuyết `H-SM*`, primary/secondary scope; không phải report kết quả.
+- `reports/ket_qua_luan_van_semantic_news_materiality.md` — report kết quả thực nghiệm canonical, đọc số từ structured artifacts và giữ null findings.
+- `reports/claim_vs_evidence_table.md` — RQ–hypothesis–evidence matrix, claim gates, provenance, robustness availability, hashes và freshness.
+- `outputs/report_lineage_manifest.json` — manifest byte-level cho input report: path, availability, size, mtime UTC và SHA256; missing optional artifacts không làm pipeline fail.
+- `reports/codex_review_consolidated.md` — nhật ký review kỹ thuật lịch sử; không thay report kết quả hoặc lineage manifest.
+
+Optional robustness readers dùng `placebo_pre_event_stat_tests.csv`, `consensus_family_sensitivity_summary.csv`, `ml_paired_daily_metrics_outperform.csv`, `ml_bootstrap_delta_outperform.csv`, `topk_random_null_summary.csv` và `topk_cost_sensitivity_summary.csv` khi có. Thiếu file được ghi `unavailable`, không được suy diễn thành test đã pass.
 
 Kiểm tra report pipeline:
 
@@ -67,4 +71,4 @@ python -m pytest tests/test_multi_llm_backtest_reports.py -q -p no:cacheprovider
 python multi_llm_evidence_extraction/scripts/write_final_reports.py
 ```
 
-Giới hạn: business-day purge validation chưa thay thế trading-calendar chính thức của HOSE; kết quả ML/event/Top-K vẫn exploratory.
+Giới hạn: business-day purge validation chưa thay thế trading-calendar chính thức của HOSE; kết quả ML/event/Top-K vẫn exploratory. Ba annotation runs chỉ thuộc hai model families, nên không được diễn giải như ba hệ độc lập hoặc ba bằng chứng độc lập.

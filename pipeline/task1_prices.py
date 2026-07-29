@@ -52,34 +52,43 @@ def _resolve_end_date(end_date: str) -> str:
 
 def validate_tickers(tickers: List[str]) -> List[str]:
     """
-    Validate tickers against the canonical VN30 list.
+    Validate tickers — accepts any ticker symbol, not restricted to VN30.
+
+    Originally validated against the canonical VN30 list only. Updated to
+    support the HOSE-80 expansion (2026-06-29) which adds 50 non-VN30 tickers.
+    Non-VN30 tickers are accepted and logged at INFO level.
 
     Args:
         tickers: List of ticker symbols to validate.
 
     Returns:
-        List of valid VN30 tickers.
+        Deduplicated list of tickers (preserving order).
 
     Raises:
-        ValueError: If no valid tickers are found.
+        ValueError: If the tickers list is empty.
     """
-    valid = [t for t in tickers if t in VN30_TICKERS]
-    invalid = [t for t in tickers if t not in VN30_TICKERS]
+    if not tickers:
+        raise ValueError("No tickers provided.")
 
-    if invalid:
-        logger.warning(
-            "Invalid tickers (not in VN30): %s — these will be skipped.",
-            ", ".join(invalid),
+    # Deduplicate while preserving order
+    seen = set()
+    unique = []
+    for t in tickers:
+        if t not in seen:
+            seen.add(t)
+            unique.append(t)
+
+    vn30_set = set(VN30_TICKERS)
+    non_vn30 = [t for t in unique if t not in vn30_set]
+    if non_vn30:
+        logger.info(
+            "HOSE-80 expansion: %d non-VN30 tickers included: %s",
+            len(non_vn30), ", ".join(non_vn30),
         )
 
-    if not valid:
-        raise ValueError(
-            "No valid VN30 tickers provided. "
-            f"Expected tickers from: {VN30_TICKERS}"
-        )
-
-    logger.info("Validated %d/%d tickers against VN30 list.", len(valid), len(tickers))
-    return valid
+    logger.info("Validated %d tickers total (%d VN30 + %d expansion).",
+                len(unique), len(unique) - len(non_vn30), len(non_vn30))
+    return unique
 
 
 def _fetch_ticker_data(

@@ -1,0 +1,6 @@
+﻿field,total_rows,available_family_consensus,family_disagreement,family_insufficient,canonical_comparable,canonical_matches,canonical_mismatches,canonical_match_rate,canonical_available,canonical_status,artifact_schema_version
+ticker_relevance,150,133,15,2,133,133,0,1.0,True,available,consensus_family_sensitivity_summary_v1
+materiality,150,105,37,8,105,105,0,1.0,True,available,consensus_family_sensitivity_summary_v1
+direction,150,114,31,5,114,114,0,1.0,True,available,consensus_family_sensitivity_summary_v1
+event_type,150,125,21,4,125,125,0,1.0,True,available,consensus_family_sensitivity_summary_v1
+time_horizon,150,96,43,11,96,96,0,1.0,True,available,consensus_family_sensitivity_summary_v1

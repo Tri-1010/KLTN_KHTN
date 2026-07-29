@@ -21,6 +21,7 @@ from pipeline.task4_preprocess import (
     clean_text,
     deduplicate_by_fuzzy_title,
     deduplicate_by_url,
+    key_facts_to_text,
     load_stopwords,
     prepare_text_clean,
     remove_stopwords,
@@ -222,6 +223,70 @@ class TestTextConcatenation:
         """NaN values should be handled gracefully."""
         result = prepare_text_clean(float("nan"), float("nan"))
         assert result == ""
+
+    def test_prefers_article_summary_when_available(self):
+        """Enriched article summary should be used before legacy description."""
+        result = prepare_text_clean(
+            "Tiêu đề",
+            "Mô tả cũ",
+            article_summary="Tóm tắt từ toàn bài",
+            key_facts_text="Lợi nhuận tăng 20%",
+        )
+        assert "tóm tắt từ toàn bài" in result
+        assert "lợi nhuận tăng 20%" in result
+        assert "mô tả cũ" not in result
+
+    def test_prefers_full_text_when_available(self):
+        """Enriched full_text should be primary evidence text when available."""
+        result = prepare_text_clean(
+            "Tiêu đề",
+            "Mô tả cũ",
+            article_summary="Tóm tắt ngắn",
+            key_facts_text="Lợi nhuận tăng 20%",
+            full_text="Toàn văn bài báo nói doanh thu tăng mạnh và biên lợi nhuận cải thiện.",
+            lead="Sa pô bài viết",
+            full_text_available=True,
+        )
+        assert "tiêu đề" in result
+        assert "toàn văn bài báo" in result
+        assert "doanh thu tăng mạnh" in result
+        assert "sa pô bài viết" in result
+        assert "tóm tắt ngắn" in result
+        assert "lợi nhuận tăng 20%" in result
+        assert "mô tả cũ" not in result
+
+    def test_full_text_false_falls_back_to_enriched_summary(self):
+        """False full_text_available should ignore body and use summary/facts."""
+        result = prepare_text_clean(
+            "Tiêu đề",
+            "Mô tả cũ",
+            article_summary="Tóm tắt từ toàn bài",
+            key_facts_text="Cổ tức tiền mặt",
+            full_text="Nội dung lỗi không nên dùng",
+            full_text_available=False,
+        )
+        assert "tóm tắt từ toàn bài" in result
+        assert "cổ tức tiền mặt" in result
+        assert "nội dung lỗi" not in result
+        assert "mô tả cũ" not in result
+
+    def test_legacy_row_falls_back_to_description(self):
+        """Legacy metadata-only rows should still use description."""
+        result = prepare_text_clean(
+            "Tiêu đề",
+            "Mô tả cũ về lợi nhuận giảm",
+            full_text="",
+            full_text_available=None,
+        )
+        assert "tiêu đề" in result
+        assert "mô tả cũ về lợi nhuận giảm" in result
+
+    def test_key_facts_to_text_from_json(self):
+        """key_facts_json should be converted to compact text."""
+        facts = '[{"fact":"Doanh thu tăng 15%"},{"evidence_quote":"Cổ tức bằng tiền"}]'
+        result = key_facts_to_text(facts)
+        assert "Doanh thu tăng 15%" in result
+        assert "Cổ tức bằng tiền" in result
 
 
 # ---------------------------------------------------------------------------

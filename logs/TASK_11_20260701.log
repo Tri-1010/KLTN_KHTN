@@ -1,0 +1,1540 @@
+[2026-07-01 09:02:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:13] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 09:02:13] [TASK_11] [INFO] Timestamp: 2026-07-01T09:02:13.836688
+[2026-07-01 09:02:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:13] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 09:02:13] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 09:02:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:14] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:14] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 09:02:14] [TASK_11] [INFO] Timestamp: 2026-07-01T09:02:14.563498
+[2026-07-01 09:02:14] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:14] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 09:02:14] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 09:02:14] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:15] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-182\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 09:02:15] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-182\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 09:02:18] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-182\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 09:02:18] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 09:02:18] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-182\test_returns_dataframe0\top_kw.csv
+[2026-07-01 09:02:18] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 09:02:18] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-182\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 09:02:18] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 09:02:18] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-182\test_direction_labels_present0\top_kw.csv
+[2026-07-01 09:02:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:18] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 09:02:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:18] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 09:02:18] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 09:02:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:18] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 09:02:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:18] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 09:02:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:18] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 09:02:18] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 09:02:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:18] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 09:02:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:18] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 09:02:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:18] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 09:02:18] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 09:02:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:18] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 09:02:53] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:53] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 09:02:53] [TASK_11] [INFO] Timestamp: 2026-07-01T09:02:53.567627
+[2026-07-01 09:02:53] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:53] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 09:02:53] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 09:02:53] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:54] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:54] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 09:02:54] [TASK_11] [INFO] Timestamp: 2026-07-01T09:02:54.298589
+[2026-07-01 09:02:54] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:54] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 09:02:54] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 09:02:54] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:54] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-183\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 09:02:54] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-183\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 09:02:58] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-183\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 09:02:58] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 09:02:58] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-183\test_returns_dataframe0\top_kw.csv
+[2026-07-01 09:02:58] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 09:02:58] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-183\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 09:02:58] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 09:02:58] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-183\test_direction_labels_present0\top_kw.csv
+[2026-07-01 09:02:58] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:58] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 09:02:58] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:58] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 09:02:58] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 09:02:58] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:58] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 09:02:58] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:58] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 09:02:58] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:58] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 09:02:58] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 09:02:58] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:58] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 09:02:58] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:58] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 09:02:58] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:58] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 09:02:58] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 09:02:58] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:02:58] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 09:53:45] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:53:45] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 09:53:45] [TASK_11] [INFO] Timestamp: 2026-07-01T09:53:45.799521
+[2026-07-01 09:53:45] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:53:45] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 09:53:45] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 09:53:45] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:53:46] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:53:46] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 09:53:46] [TASK_11] [INFO] Timestamp: 2026-07-01T09:53:46.579913
+[2026-07-01 09:53:46] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:53:46] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 09:53:46] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 09:53:46] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:53:58] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-186\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 09:53:59] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-186\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 09:54:03] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-186\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 09:54:03] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 09:54:03] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-186\test_returns_dataframe0\top_kw.csv
+[2026-07-01 09:54:03] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 09:54:03] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-186\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 09:54:03] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 09:54:03] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-186\test_direction_labels_present0\top_kw.csv
+[2026-07-01 09:54:03] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:54:03] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 09:54:03] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:54:03] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 09:54:03] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 09:54:03] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:54:03] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 09:54:03] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:54:03] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 09:54:03] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:54:03] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 09:54:03] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 09:54:03] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:54:03] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 09:54:03] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:54:03] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 09:54:03] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:54:03] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 09:54:03] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 09:54:03] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:54:03] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 09:55:12] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:55:12] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 09:55:12] [TASK_11] [INFO] Timestamp: 2026-07-01T09:55:12.166356
+[2026-07-01 09:55:12] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:55:12] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 09:55:12] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 09:55:12] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:55:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:55:13] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 09:55:13] [TASK_11] [INFO] Timestamp: 2026-07-01T09:55:13.178470
+[2026-07-01 09:55:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:55:13] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 09:55:13] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 09:55:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:55:19] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-187\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 09:55:20] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-187\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 09:55:25] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-187\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 09:55:25] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 09:55:25] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-187\test_returns_dataframe0\top_kw.csv
+[2026-07-01 09:55:25] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 09:55:25] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-187\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 09:55:25] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 09:55:25] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-187\test_direction_labels_present0\top_kw.csv
+[2026-07-01 09:55:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:55:25] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 09:55:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:55:25] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 09:55:25] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 09:55:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:55:25] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 09:55:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:55:25] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 09:55:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:55:25] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 09:55:25] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 09:55:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:55:25] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 09:55:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:55:25] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 09:55:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:55:25] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 09:55:25] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 09:55:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 09:55:25] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 10:36:06] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:36:06] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 10:36:06] [TASK_11] [INFO] Timestamp: 2026-07-01T10:36:06.044588
+[2026-07-01 10:36:06] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:36:06] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 10:36:06] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 10:36:06] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:36:06] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:36:06] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 10:36:06] [TASK_11] [INFO] Timestamp: 2026-07-01T10:36:06.796829
+[2026-07-01 10:36:06] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:36:06] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 10:36:06] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 10:36:06] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:36:09] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-194\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 10:36:10] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-194\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 10:36:14] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-194\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 10:36:14] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 10:36:14] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-194\test_returns_dataframe0\top_kw.csv
+[2026-07-01 10:36:14] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 10:36:14] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-194\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 10:36:14] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 10:36:14] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-194\test_direction_labels_present0\top_kw.csv
+[2026-07-01 10:36:14] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:36:14] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 10:36:14] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:36:14] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 10:36:14] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 10:36:14] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:36:14] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 10:36:14] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:36:14] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 10:36:14] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:36:14] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 10:36:14] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 10:36:14] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:36:14] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 10:36:14] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:36:14] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 10:36:14] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:36:14] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 10:36:14] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 10:36:14] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:36:14] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 10:42:22] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:42:22] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 10:42:22] [TASK_11] [INFO] Timestamp: 2026-07-01T10:42:22.834926
+[2026-07-01 10:42:22] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:42:22] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 10:42:22] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 10:42:22] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:42:23] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:42:23] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 10:42:23] [TASK_11] [INFO] Timestamp: 2026-07-01T10:42:23.564202
+[2026-07-01 10:42:23] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:42:23] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 10:42:23] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 10:42:23] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:42:26] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-195\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 10:42:26] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-195\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 10:42:30] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-195\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 10:42:30] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 10:42:30] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-195\test_returns_dataframe0\top_kw.csv
+[2026-07-01 10:42:30] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 10:42:30] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-195\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 10:42:30] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 10:42:30] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-195\test_direction_labels_present0\top_kw.csv
+[2026-07-01 10:42:30] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:42:30] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 10:42:30] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:42:30] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 10:42:30] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 10:42:30] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:42:30] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 10:42:30] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:42:30] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 10:42:30] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:42:30] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 10:42:30] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 10:42:30] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:42:30] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 10:42:30] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:42:30] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 10:42:30] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:42:30] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 10:42:30] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 10:42:30] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:42:30] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 10:54:24] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:54:24] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 10:54:24] [TASK_11] [INFO] Timestamp: 2026-07-01T10:54:24.991098
+[2026-07-01 10:54:24] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:54:24] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 10:54:24] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 10:54:24] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:54:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:54:25] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 10:54:25] [TASK_11] [INFO] Timestamp: 2026-07-01T10:54:25.755614
+[2026-07-01 10:54:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:54:25] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 10:54:25] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 10:54:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:54:28] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-197\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 10:54:28] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-197\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 10:54:32] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-197\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 10:54:32] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 10:54:32] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-197\test_returns_dataframe0\top_kw.csv
+[2026-07-01 10:54:32] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 10:54:32] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-197\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 10:54:32] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 10:54:32] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-197\test_direction_labels_present0\top_kw.csv
+[2026-07-01 10:54:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:54:32] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 10:54:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:54:32] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 10:54:32] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 10:54:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:54:32] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 10:54:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:54:32] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 10:54:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:54:32] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 10:54:32] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 10:54:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:54:32] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 10:54:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:54:32] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 10:54:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:54:32] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 10:54:32] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 10:54:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 10:54:32] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 11:35:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:35:25] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 11:35:25] [TASK_11] [INFO] Timestamp: 2026-07-01T11:35:25.596651
+[2026-07-01 11:35:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:35:25] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 11:35:25] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 11:35:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:35:26] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:35:26] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 11:35:26] [TASK_11] [INFO] Timestamp: 2026-07-01T11:35:26.330818
+[2026-07-01 11:35:26] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:35:26] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 11:35:26] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 11:35:26] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:35:28] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-201\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 11:35:29] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-201\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 11:35:32] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-201\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 11:35:32] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 11:35:32] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-201\test_returns_dataframe0\top_kw.csv
+[2026-07-01 11:35:32] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 11:35:32] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-201\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 11:35:32] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 11:35:32] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-201\test_direction_labels_present0\top_kw.csv
+[2026-07-01 11:35:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:35:32] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 11:35:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:35:32] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 11:35:32] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 11:35:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:35:32] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 11:35:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:35:32] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 11:35:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:35:32] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 11:35:32] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 11:35:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:35:32] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 11:35:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:35:32] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 11:35:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:35:32] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 11:35:32] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 11:35:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:35:32] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 11:36:12] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:36:12] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 11:36:12] [TASK_11] [INFO] Timestamp: 2026-07-01T11:36:12.461471
+[2026-07-01 11:36:12] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:36:12] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 11:36:12] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 11:36:12] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:36:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:36:13] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 11:36:13] [TASK_11] [INFO] Timestamp: 2026-07-01T11:36:13.129024
+[2026-07-01 11:36:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:36:13] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 11:36:13] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 11:36:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:36:15] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-202\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 11:36:16] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-202\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 11:36:19] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-202\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 11:36:19] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 11:36:19] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-202\test_returns_dataframe0\top_kw.csv
+[2026-07-01 11:36:19] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 11:36:19] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-202\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 11:36:19] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 11:36:19] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-202\test_direction_labels_present0\top_kw.csv
+[2026-07-01 11:36:19] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:36:19] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 11:36:19] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:36:19] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 11:36:19] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 11:36:19] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:36:19] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 11:36:19] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:36:19] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 11:36:19] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:36:19] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 11:36:19] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 11:36:19] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:36:19] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 11:36:19] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:36:19] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 11:36:19] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:36:19] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 11:36:19] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 11:36:19] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:36:19] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 11:37:05] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:37:05] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 11:37:05] [TASK_11] [INFO] Timestamp: 2026-07-01T11:37:05.750035
+[2026-07-01 11:37:05] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:37:05] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 11:37:05] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 11:37:05] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:37:06] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:37:06] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 11:37:06] [TASK_11] [INFO] Timestamp: 2026-07-01T11:37:06.447425
+[2026-07-01 11:37:06] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:37:06] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 11:37:06] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 11:37:06] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:37:08] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-203\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 11:37:09] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-203\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 11:37:12] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-203\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 11:37:12] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 11:37:12] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-203\test_returns_dataframe0\top_kw.csv
+[2026-07-01 11:37:12] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 11:37:12] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-203\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 11:37:13] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 11:37:13] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-203\test_direction_labels_present0\top_kw.csv
+[2026-07-01 11:37:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:37:13] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 11:37:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:37:13] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 11:37:13] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 11:37:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:37:13] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 11:37:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:37:13] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 11:37:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:37:13] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 11:37:13] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 11:37:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:37:13] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 11:37:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:37:13] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 11:37:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:37:13] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 11:37:13] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 11:37:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:37:13] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 11:39:55] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:39:55] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 11:39:55] [TASK_11] [INFO] Timestamp: 2026-07-01T11:39:55.751780
+[2026-07-01 11:39:55] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:39:55] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 11:39:55] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 11:39:55] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:39:56] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:39:56] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 11:39:56] [TASK_11] [INFO] Timestamp: 2026-07-01T11:39:56.441939
+[2026-07-01 11:39:56] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:39:56] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 11:39:56] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 11:39:56] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:39:58] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-205\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 11:39:59] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-205\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 11:40:03] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-205\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 11:40:03] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 11:40:03] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-205\test_returns_dataframe0\top_kw.csv
+[2026-07-01 11:40:03] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 11:40:03] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-205\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 11:40:03] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 11:40:03] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-205\test_direction_labels_present0\top_kw.csv
+[2026-07-01 11:40:03] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:40:03] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 11:40:03] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:40:03] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 11:40:03] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 11:40:03] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:40:03] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 11:40:03] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:40:03] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 11:40:03] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:40:03] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 11:40:03] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 11:40:03] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:40:03] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 11:40:03] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:40:03] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 11:40:03] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:40:03] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 11:40:03] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 11:40:03] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:40:03] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 11:40:42] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:40:42] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 11:40:42] [TASK_11] [INFO] Timestamp: 2026-07-01T11:40:42.551763
+[2026-07-01 11:40:42] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:40:42] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 11:40:42] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 11:40:42] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:40:43] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:40:43] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 11:40:43] [TASK_11] [INFO] Timestamp: 2026-07-01T11:40:43.254928
+[2026-07-01 11:40:43] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:40:43] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 11:40:43] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 11:40:43] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:40:45] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-206\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 11:40:46] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-206\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 11:40:49] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-206\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 11:40:49] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 11:40:49] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-206\test_returns_dataframe0\top_kw.csv
+[2026-07-01 11:40:49] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 11:40:49] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-206\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 11:40:49] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 11:40:49] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-206\test_direction_labels_present0\top_kw.csv
+[2026-07-01 11:40:49] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:40:49] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 11:40:49] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:40:49] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 11:40:49] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 11:40:49] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:40:49] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 11:40:49] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:40:49] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 11:40:49] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:40:49] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 11:40:49] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 11:40:49] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:40:49] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 11:40:49] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:40:49] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 11:40:49] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:40:49] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 11:40:49] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 11:40:49] [TASK_11] [INFO] ============================================================
+[2026-07-01 11:40:49] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 12:37:24] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:37:24] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 12:37:24] [TASK_11] [INFO] Timestamp: 2026-07-01T12:37:24.944048
+[2026-07-01 12:37:24] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:37:24] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 12:37:24] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 12:37:24] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:37:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:37:25] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 12:37:25] [TASK_11] [INFO] Timestamp: 2026-07-01T12:37:25.678858
+[2026-07-01 12:37:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:37:25] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 12:37:25] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 12:37:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:37:28] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-214\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 12:37:29] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-214\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 12:37:32] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-214\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 12:37:32] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 12:37:32] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-214\test_returns_dataframe0\top_kw.csv
+[2026-07-01 12:37:32] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 12:37:32] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-214\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 12:37:32] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 12:37:32] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-214\test_direction_labels_present0\top_kw.csv
+[2026-07-01 12:37:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:37:32] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 12:37:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:37:32] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 12:37:32] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 12:37:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:37:32] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 12:37:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:37:32] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 12:37:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:37:32] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 12:37:32] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 12:37:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:37:32] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 12:37:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:37:32] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 12:37:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:37:32] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 12:37:32] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 12:37:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:37:32] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 12:38:24] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:38:24] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 12:38:24] [TASK_11] [INFO] Timestamp: 2026-07-01T12:38:24.827622
+[2026-07-01 12:38:24] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:38:24] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 12:38:24] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 12:38:24] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:38:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:38:25] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 12:38:25] [TASK_11] [INFO] Timestamp: 2026-07-01T12:38:25.549367
+[2026-07-01 12:38:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:38:25] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 12:38:25] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 12:38:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:38:28] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-215\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 12:38:28] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-215\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 12:38:32] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-215\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 12:38:32] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 12:38:32] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-215\test_returns_dataframe0\top_kw.csv
+[2026-07-01 12:38:32] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 12:38:32] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-215\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 12:38:32] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 12:38:32] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-215\test_direction_labels_present0\top_kw.csv
+[2026-07-01 12:38:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:38:32] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 12:38:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:38:32] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 12:38:32] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 12:38:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:38:32] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 12:38:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:38:32] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 12:38:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:38:32] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 12:38:32] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 12:38:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:38:32] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 12:38:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:38:32] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 12:38:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:38:32] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 12:38:32] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 12:38:32] [TASK_11] [INFO] ============================================================
+[2026-07-01 12:38:32] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 13:03:34] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:03:34] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 13:03:34] [TASK_11] [INFO] Timestamp: 2026-07-01T13:03:34.863425
+[2026-07-01 13:03:34] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:03:34] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 13:03:34] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 13:03:34] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:03:35] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:03:35] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 13:03:35] [TASK_11] [INFO] Timestamp: 2026-07-01T13:03:35.724221
+[2026-07-01 13:03:35] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:03:35] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 13:03:35] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 13:03:35] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:03:38] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-216\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 13:03:38] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-216\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 13:03:42] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-216\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 13:03:42] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 13:03:42] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-216\test_returns_dataframe0\top_kw.csv
+[2026-07-01 13:03:42] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 13:03:42] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-216\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 13:03:42] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 13:03:42] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-216\test_direction_labels_present0\top_kw.csv
+[2026-07-01 13:03:42] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:03:42] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 13:03:42] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:03:42] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 13:03:42] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 13:03:42] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:03:42] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 13:03:42] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:03:42] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 13:03:42] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:03:42] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 13:03:42] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 13:03:42] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:03:42] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 13:03:42] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:03:42] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 13:03:42] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:03:42] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 13:03:42] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 13:03:42] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:03:42] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 13:04:36] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:04:36] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 13:04:36] [TASK_11] [INFO] Timestamp: 2026-07-01T13:04:36.857096
+[2026-07-01 13:04:36] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:04:36] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 13:04:36] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 13:04:36] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:04:37] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:04:37] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 13:04:37] [TASK_11] [INFO] Timestamp: 2026-07-01T13:04:37.650915
+[2026-07-01 13:04:37] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:04:37] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 13:04:37] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 13:04:37] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:04:40] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-217\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 13:04:40] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-217\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 13:04:44] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-217\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 13:04:44] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 13:04:44] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-217\test_returns_dataframe0\top_kw.csv
+[2026-07-01 13:04:44] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 13:04:44] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-217\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 13:04:44] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 13:04:44] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-217\test_direction_labels_present0\top_kw.csv
+[2026-07-01 13:04:44] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:04:44] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 13:04:44] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:04:44] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 13:04:44] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 13:04:44] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:04:44] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 13:04:44] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:04:44] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 13:04:44] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:04:44] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 13:04:44] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 13:04:44] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:04:44] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 13:04:44] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:04:44] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 13:04:44] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:04:44] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 13:04:44] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 13:04:44] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:04:44] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 13:27:02] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:27:02] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 13:27:02] [TASK_11] [INFO] Timestamp: 2026-07-01T13:27:02.932907
+[2026-07-01 13:27:02] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:27:02] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 13:27:02] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 13:27:02] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:27:04] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:27:04] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 13:27:04] [TASK_11] [INFO] Timestamp: 2026-07-01T13:27:04.361349
+[2026-07-01 13:27:04] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:27:04] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 13:27:04] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 13:27:04] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:27:08] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-219\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 13:27:08] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-219\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 13:27:14] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-219\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 13:27:14] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 13:27:14] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-219\test_returns_dataframe0\top_kw.csv
+[2026-07-01 13:27:15] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 13:27:15] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-219\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 13:27:15] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 13:27:15] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-219\test_direction_labels_present0\top_kw.csv
+[2026-07-01 13:27:15] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:27:15] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 13:27:15] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:27:15] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 13:27:15] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 13:27:15] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:27:15] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 13:27:15] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:27:15] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 13:27:15] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:27:15] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 13:27:15] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 13:27:15] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:27:15] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 13:27:15] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:27:15] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 13:27:15] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:27:15] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 13:27:15] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 13:27:15] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:27:15] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 13:29:44] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:29:44] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 13:29:44] [TASK_11] [INFO] Timestamp: 2026-07-01T13:29:44.142891
+[2026-07-01 13:29:44] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:29:44] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 13:29:44] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 13:29:44] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:29:45] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:29:45] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 13:29:45] [TASK_11] [INFO] Timestamp: 2026-07-01T13:29:45.959655
+[2026-07-01 13:29:45] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:29:45] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 13:29:45] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 13:29:45] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:29:48] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-220\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 13:29:49] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-220\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 13:29:53] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-220\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 13:29:53] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 13:29:53] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-220\test_returns_dataframe0\top_kw.csv
+[2026-07-01 13:29:53] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 13:29:53] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-220\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 13:29:53] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 13:29:53] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-220\test_direction_labels_present0\top_kw.csv
+[2026-07-01 13:29:53] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:29:53] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 13:29:53] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:29:53] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 13:29:53] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 13:29:53] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:29:53] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 13:29:53] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:29:53] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 13:29:53] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:29:53] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 13:29:53] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 13:29:53] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:29:53] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 13:29:53] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:29:53] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 13:29:53] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:29:53] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 13:29:53] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 13:29:53] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:29:53] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 13:41:04] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:41:04] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 13:41:04] [TASK_11] [INFO] Timestamp: 2026-07-01T13:41:04.719811
+[2026-07-01 13:41:04] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:41:04] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 13:41:04] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 13:41:04] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:41:05] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:41:05] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 13:41:05] [TASK_11] [INFO] Timestamp: 2026-07-01T13:41:05.461304
+[2026-07-01 13:41:05] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:41:05] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 13:41:05] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 13:41:05] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:41:07] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-221\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 13:41:08] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-221\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 13:41:12] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-221\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 13:41:12] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 13:41:12] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-221\test_returns_dataframe0\top_kw.csv
+[2026-07-01 13:41:12] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 13:41:12] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-221\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 13:41:12] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 13:41:12] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-221\test_direction_labels_present0\top_kw.csv
+[2026-07-01 13:41:12] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:41:12] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 13:41:12] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:41:12] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 13:41:12] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 13:41:12] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:41:12] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 13:41:12] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:41:12] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 13:41:12] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:41:12] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 13:41:12] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 13:41:12] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:41:12] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 13:41:12] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:41:12] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 13:41:12] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:41:12] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 13:41:12] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 13:41:12] [TASK_11] [INFO] ============================================================
+[2026-07-01 13:41:12] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 14:01:54] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:01:54] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 14:01:54] [TASK_11] [INFO] Timestamp: 2026-07-01T14:01:54.071471
+[2026-07-01 14:01:54] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:01:54] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 14:01:54] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 14:01:54] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:01:54] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:01:54] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 14:01:54] [TASK_11] [INFO] Timestamp: 2026-07-01T14:01:54.790523
+[2026-07-01 14:01:54] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:01:54] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 14:01:54] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 14:01:54] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:01:56] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-222\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 14:01:57] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-222\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 14:02:00] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-222\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 14:02:00] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 14:02:00] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-222\test_returns_dataframe0\top_kw.csv
+[2026-07-01 14:02:00] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 14:02:00] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-222\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 14:02:00] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 14:02:00] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-222\test_direction_labels_present0\top_kw.csv
+[2026-07-01 14:02:00] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:02:00] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:02:00] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:02:00] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 14:02:00] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 14:02:00] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:02:00] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 14:02:00] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:02:00] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:02:00] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:02:00] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 14:02:00] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 14:02:00] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:02:00] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 14:02:00] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:02:00] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:02:00] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:02:00] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 14:02:00] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 14:02:00] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:02:00] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 14:03:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:03:13] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 14:03:13] [TASK_11] [INFO] Timestamp: 2026-07-01T14:03:13.884603
+[2026-07-01 14:03:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:03:13] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 14:03:13] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 14:03:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:03:14] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:03:14] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 14:03:14] [TASK_11] [INFO] Timestamp: 2026-07-01T14:03:14.693066
+[2026-07-01 14:03:14] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:03:14] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 14:03:14] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 14:03:14] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:03:17] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-223\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 14:03:17] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-223\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 14:03:21] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-223\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 14:03:21] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 14:03:21] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-223\test_returns_dataframe0\top_kw.csv
+[2026-07-01 14:03:21] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 14:03:21] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-223\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 14:03:21] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 14:03:21] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-223\test_direction_labels_present0\top_kw.csv
+[2026-07-01 14:03:21] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:03:21] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:03:21] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:03:21] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 14:03:21] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 14:03:21] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:03:21] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 14:03:21] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:03:21] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:03:21] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:03:21] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 14:03:21] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 14:03:21] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:03:21] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 14:03:21] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:03:21] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:03:21] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:03:21] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 14:03:21] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 14:03:21] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:03:21] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 14:05:39] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:05:39] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 14:05:39] [TASK_11] [INFO] Timestamp: 2026-07-01T14:05:39.053684
+[2026-07-01 14:05:39] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:05:39] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 14:05:39] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 14:05:39] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:05:39] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:05:39] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 14:05:39] [TASK_11] [INFO] Timestamp: 2026-07-01T14:05:39.774853
+[2026-07-01 14:05:39] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:05:39] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 14:05:39] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 14:05:39] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:05:42] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-224\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 14:05:42] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-224\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 14:05:45] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-224\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 14:05:45] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 14:05:45] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-224\test_returns_dataframe0\top_kw.csv
+[2026-07-01 14:05:45] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 14:05:45] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-224\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 14:05:45] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 14:05:45] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-224\test_direction_labels_present0\top_kw.csv
+[2026-07-01 14:05:45] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:05:45] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:05:45] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:05:45] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 14:05:45] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 14:05:45] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:05:45] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 14:05:45] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:05:45] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:05:45] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:05:45] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 14:05:45] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 14:05:45] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:05:45] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 14:05:45] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:05:45] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:05:45] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:05:45] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 14:05:45] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 14:05:45] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:05:45] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 14:07:28] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:07:28] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 14:07:28] [TASK_11] [INFO] Timestamp: 2026-07-01T14:07:28.846976
+[2026-07-01 14:07:28] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:07:28] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 14:07:28] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 14:07:28] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:07:29] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:07:29] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 14:07:29] [TASK_11] [INFO] Timestamp: 2026-07-01T14:07:29.576004
+[2026-07-01 14:07:29] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:07:29] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 14:07:29] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 14:07:29] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:07:31] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-225\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 14:07:31] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-225\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 14:07:35] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-225\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 14:07:35] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 14:07:35] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-225\test_returns_dataframe0\top_kw.csv
+[2026-07-01 14:07:35] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 14:07:35] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-225\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 14:07:35] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 14:07:35] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-225\test_direction_labels_present0\top_kw.csv
+[2026-07-01 14:07:35] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:07:35] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:07:35] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:07:35] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 14:07:35] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 14:07:35] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:07:35] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 14:07:35] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:07:35] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:07:35] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:07:35] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 14:07:35] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 14:07:35] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:07:35] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 14:07:35] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:07:35] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:07:35] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:07:35] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 14:07:35] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 14:07:35] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:07:35] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 14:08:43] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:08:43] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 14:08:43] [TASK_11] [INFO] Timestamp: 2026-07-01T14:08:43.128909
+[2026-07-01 14:08:43] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:08:43] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 14:08:43] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 14:08:43] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:08:44] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:08:44] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 14:08:44] [TASK_11] [INFO] Timestamp: 2026-07-01T14:08:44.066311
+[2026-07-01 14:08:44] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:08:44] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 14:08:44] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 14:08:44] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:08:46] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-226\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 14:08:46] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-226\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 14:08:50] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-226\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 14:08:50] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 14:08:50] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-226\test_returns_dataframe0\top_kw.csv
+[2026-07-01 14:08:50] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 14:08:50] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-226\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 14:08:50] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 14:08:50] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-226\test_direction_labels_present0\top_kw.csv
+[2026-07-01 14:08:50] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:08:50] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:08:50] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:08:50] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 14:08:50] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 14:08:50] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:08:50] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 14:08:50] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:08:50] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:08:50] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:08:50] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 14:08:50] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 14:08:50] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:08:50] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 14:08:50] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:08:50] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:08:50] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:08:50] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 14:08:50] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 14:08:50] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:08:50] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 14:30:45] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:30:45] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 14:30:45] [TASK_11] [INFO] Timestamp: 2026-07-01T14:30:45.889105
+[2026-07-01 14:30:45] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:30:45] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 14:30:45] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 14:30:45] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:30:46] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:30:46] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 14:30:46] [TASK_11] [INFO] Timestamp: 2026-07-01T14:30:46.589787
+[2026-07-01 14:30:46] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:30:46] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 14:30:46] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 14:30:46] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:30:48] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-232\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 14:30:49] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-232\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 14:30:52] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-232\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 14:30:52] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 14:30:52] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-232\test_returns_dataframe0\top_kw.csv
+[2026-07-01 14:30:52] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 14:30:52] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-232\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 14:30:52] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 14:30:52] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-232\test_direction_labels_present0\top_kw.csv
+[2026-07-01 14:30:52] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:30:52] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:30:52] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:30:52] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 14:30:52] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 14:30:52] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:30:52] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 14:30:52] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:30:52] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:30:52] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:30:52] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 14:30:52] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 14:30:52] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:30:52] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 14:30:52] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:30:52] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:30:52] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:30:52] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 14:30:52] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 14:30:52] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:30:52] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 14:31:45] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:31:45] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 14:31:45] [TASK_11] [INFO] Timestamp: 2026-07-01T14:31:45.840965
+[2026-07-01 14:31:45] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:31:45] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 14:31:45] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 14:31:45] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:31:46] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:31:46] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 14:31:46] [TASK_11] [INFO] Timestamp: 2026-07-01T14:31:46.611319
+[2026-07-01 14:31:46] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:31:46] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 14:31:46] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 14:31:46] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:31:48] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-233\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 14:31:48] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-233\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 14:31:52] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-233\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 14:31:52] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 14:31:52] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-233\test_returns_dataframe0\top_kw.csv
+[2026-07-01 14:31:52] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 14:31:52] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-233\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 14:31:52] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 14:31:52] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-233\test_direction_labels_present0\top_kw.csv
+[2026-07-01 14:31:52] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:31:52] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:31:52] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:31:52] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 14:31:52] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 14:31:52] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:31:52] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 14:31:52] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:31:52] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:31:52] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:31:52] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 14:31:52] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 14:31:52] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:31:52] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 14:31:52] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:31:52] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:31:52] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:31:52] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 14:31:52] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 14:31:52] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:31:52] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 14:48:17] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:48:17] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 14:48:17] [TASK_11] [INFO] Timestamp: 2026-07-01T14:48:17.339001
+[2026-07-01 14:48:17] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:48:17] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 14:48:17] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 14:48:17] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:48:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:48:18] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 14:48:18] [TASK_11] [INFO] Timestamp: 2026-07-01T14:48:18.060396
+[2026-07-01 14:48:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:48:18] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 14:48:18] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 14:48:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:48:19] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-238\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 14:48:20] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-238\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 14:48:23] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-238\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 14:48:23] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 14:48:23] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-238\test_returns_dataframe0\top_kw.csv
+[2026-07-01 14:48:23] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 14:48:23] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-238\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 14:48:23] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 14:48:23] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-238\test_direction_labels_present0\top_kw.csv
+[2026-07-01 14:48:23] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:48:23] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:48:23] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:48:23] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 14:48:23] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 14:48:23] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:48:23] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 14:48:23] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:48:23] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:48:23] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:48:23] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 14:48:23] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 14:48:23] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:48:23] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 14:48:23] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:48:23] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:48:23] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:48:23] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 14:48:23] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 14:48:23] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:48:23] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 14:49:20] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:49:20] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 14:49:20] [TASK_11] [INFO] Timestamp: 2026-07-01T14:49:20.905243
+[2026-07-01 14:49:20] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:49:20] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 14:49:20] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 14:49:20] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:49:21] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:49:21] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 14:49:21] [TASK_11] [INFO] Timestamp: 2026-07-01T14:49:21.606903
+[2026-07-01 14:49:21] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:49:21] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 14:49:21] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 14:49:21] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:49:23] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-239\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 14:49:23] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-239\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 14:49:27] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-239\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 14:49:27] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 14:49:27] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-239\test_returns_dataframe0\top_kw.csv
+[2026-07-01 14:49:27] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 14:49:27] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-239\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 14:49:27] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 14:49:27] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-239\test_direction_labels_present0\top_kw.csv
+[2026-07-01 14:49:27] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:49:27] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:49:27] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:49:27] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 14:49:27] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 14:49:27] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:49:27] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 14:49:27] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:49:27] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:49:27] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:49:27] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 14:49:27] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 14:49:27] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:49:27] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 14:49:27] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:49:27] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 14:49:27] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:49:27] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 14:49:27] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 14:49:27] [TASK_11] [INFO] ============================================================
+[2026-07-01 14:49:27] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 16:08:34] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:08:34] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 16:08:34] [TASK_11] [INFO] Timestamp: 2026-07-01T16:08:34.302856
+[2026-07-01 16:08:34] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:08:34] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 16:08:34] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 16:08:34] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:08:35] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:08:35] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 16:08:35] [TASK_11] [INFO] Timestamp: 2026-07-01T16:08:35.047229
+[2026-07-01 16:08:35] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:08:35] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 16:08:35] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 16:08:35] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:08:38] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-252\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 16:08:38] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-252\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 16:08:42] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-252\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 16:08:42] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 16:08:42] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-252\test_returns_dataframe0\top_kw.csv
+[2026-07-01 16:08:42] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 16:08:42] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-252\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 16:08:42] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 16:08:42] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-252\test_direction_labels_present0\top_kw.csv
+[2026-07-01 16:08:42] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:08:42] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 16:08:42] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:08:42] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 16:08:42] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 16:08:42] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:08:42] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 16:08:42] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:08:42] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 16:08:42] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:08:42] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 16:08:42] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 16:08:42] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:08:42] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 16:08:42] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:08:42] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 16:08:42] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:08:42] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 16:08:42] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 16:08:42] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:08:42] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 16:09:52] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:09:52] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 16:09:52] [TASK_11] [INFO] Timestamp: 2026-07-01T16:09:52.457906
+[2026-07-01 16:09:52] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:09:52] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 16:09:52] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 16:09:52] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:09:53] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:09:53] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 16:09:53] [TASK_11] [INFO] Timestamp: 2026-07-01T16:09:53.100695
+[2026-07-01 16:09:53] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:09:53] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 16:09:53] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 16:09:53] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:09:56] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-253\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 16:09:56] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-253\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 16:09:59] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-253\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 16:09:59] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 16:09:59] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-253\test_returns_dataframe0\top_kw.csv
+[2026-07-01 16:09:59] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 16:09:59] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-253\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 16:09:59] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 16:09:59] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-253\test_direction_labels_present0\top_kw.csv
+[2026-07-01 16:09:59] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:09:59] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 16:09:59] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:09:59] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 16:09:59] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 16:09:59] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:09:59] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 16:09:59] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:09:59] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 16:09:59] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:09:59] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 16:09:59] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 16:09:59] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:09:59] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 16:09:59] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:09:59] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 16:09:59] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:09:59] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 16:09:59] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 16:09:59] [TASK_11] [INFO] ============================================================
+[2026-07-01 16:09:59] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 17:19:10] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:19:10] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 17:19:10] [TASK_11] [INFO] Timestamp: 2026-07-01T17:19:10.751345
+[2026-07-01 17:19:10] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:19:10] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 17:19:10] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 17:19:10] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:19:11] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:19:11] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 17:19:11] [TASK_11] [INFO] Timestamp: 2026-07-01T17:19:11.471028
+[2026-07-01 17:19:11] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:19:11] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 17:19:11] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 17:19:11] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:19:15] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-270\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 17:19:15] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-270\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 17:19:18] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-270\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 17:19:18] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 17:19:18] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-270\test_returns_dataframe0\top_kw.csv
+[2026-07-01 17:19:18] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 17:19:18] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-270\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 17:19:18] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 17:19:18] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-270\test_direction_labels_present0\top_kw.csv
+[2026-07-01 17:19:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:19:18] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 17:19:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:19:18] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 17:19:18] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 17:19:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:19:18] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 17:19:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:19:18] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 17:19:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:19:18] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 17:19:18] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 17:19:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:19:18] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 17:19:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:19:18] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 17:19:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:19:18] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 17:19:18] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 17:19:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:19:18] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 17:31:11] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:31:11] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 17:31:11] [TASK_11] [INFO] Timestamp: 2026-07-01T17:31:11.521361
+[2026-07-01 17:31:11] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:31:11] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 17:31:11] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 17:31:11] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:31:12] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:31:12] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 17:31:12] [TASK_11] [INFO] Timestamp: 2026-07-01T17:31:12.280387
+[2026-07-01 17:31:12] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:31:12] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 17:31:12] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 17:31:12] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:31:15] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-273\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 17:31:16] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-273\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 17:31:19] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-273\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 17:31:19] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 17:31:19] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-273\test_returns_dataframe0\top_kw.csv
+[2026-07-01 17:31:19] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 17:31:19] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-273\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 17:31:19] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 17:31:19] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-273\test_direction_labels_present0\top_kw.csv
+[2026-07-01 17:31:19] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:31:19] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 17:31:19] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:31:19] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 17:31:19] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 17:31:19] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:31:19] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 17:31:19] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:31:19] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 17:31:19] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:31:19] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 17:31:19] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 17:31:19] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:31:19] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 17:31:19] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:31:19] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 17:31:19] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:31:19] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 17:31:19] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 17:31:19] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:31:19] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 17:34:05] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:34:05] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 17:34:05] [TASK_11] [INFO] Timestamp: 2026-07-01T17:34:05.429529
+[2026-07-01 17:34:05] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:34:05] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 17:34:05] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 17:34:05] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:34:06] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:34:06] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 17:34:06] [TASK_11] [INFO] Timestamp: 2026-07-01T17:34:06.139545
+[2026-07-01 17:34:06] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:34:06] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 17:34:06] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 17:34:06] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:34:09] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-275\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 17:34:09] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-275\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 17:34:13] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-275\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 17:34:13] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 17:34:13] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-275\test_returns_dataframe0\top_kw.csv
+[2026-07-01 17:34:13] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 17:34:13] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-275\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 17:34:13] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 17:34:13] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-275\test_direction_labels_present0\top_kw.csv
+[2026-07-01 17:34:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:34:13] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 17:34:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:34:13] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 17:34:13] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 17:34:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:34:13] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 17:34:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:34:13] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 17:34:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:34:13] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 17:34:13] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 17:34:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:34:13] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 17:34:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:34:13] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 17:34:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:34:13] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 17:34:13] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 17:34:13] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:34:13] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 17:36:36] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:36:36] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 17:36:36] [TASK_11] [INFO] Timestamp: 2026-07-01T17:36:36.802829
+[2026-07-01 17:36:36] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:36:36] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 17:36:36] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 17:36:36] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:36:37] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:36:37] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 17:36:37] [TASK_11] [INFO] Timestamp: 2026-07-01T17:36:37.522916
+[2026-07-01 17:36:37] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:36:37] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 17:36:37] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 17:36:37] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:36:40] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-276\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 17:36:41] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-276\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 17:36:44] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-276\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 17:36:44] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 17:36:44] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-276\test_returns_dataframe0\top_kw.csv
+[2026-07-01 17:36:44] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 17:36:44] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-276\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 17:36:44] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 17:36:44] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-276\test_direction_labels_present0\top_kw.csv
+[2026-07-01 17:36:44] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:36:44] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 17:36:44] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:36:44] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 17:36:44] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 17:36:44] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:36:44] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 17:36:44] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:36:44] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 17:36:44] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:36:44] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 17:36:44] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 17:36:44] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:36:44] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 17:36:44] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:36:44] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 17:36:44] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:36:44] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 17:36:44] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 17:36:44] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:36:44] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 17:41:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:41:18] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 17:41:18] [TASK_11] [INFO] Timestamp: 2026-07-01T17:41:18.100748
+[2026-07-01 17:41:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:41:18] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 17:41:18] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 17:41:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:41:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:41:18] [TASK_11] [INFO] START TASK_11: SHAP Analysis (feature importance)
+[2026-07-01 17:41:18] [TASK_11] [INFO] Timestamp: 2026-07-01T17:41:18.804560
+[2026-07-01 17:41:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:41:18] [TASK_11] [INFO] ------------------------------------------------------------
+[2026-07-01 17:41:18] [TASK_11] [INFO] END TASK_11 — completed in 0.0 seconds
+[2026-07-01 17:41:18] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:41:22] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-278\test_returns_sorted_series0\feat_imp.png
+[2026-07-01 17:41:22] [TASK_11] [INFO] Saved tree-based feature importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-278\test_top_n_limits_output0\feat_imp.png
+[2026-07-01 17:41:25] [TASK_11] [INFO] Saved permutation importance plot to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-278\test_returns_sorted_series1\perm_imp.png
+[2026-07-01 17:41:25] [TASK_11] [INFO] All top 5 keyword directions are aligned with their labels.
+[2026-07-01 17:41:25] [TASK_11] [INFO] Saved top 5 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-278\test_returns_dataframe0\top_kw.csv
+[2026-07-01 17:41:25] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 17:41:25] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-278\test_only_keyword_features_inc0\top_kw.csv
+[2026-07-01 17:41:25] [TASK_11] [INFO] All top 10 keyword directions are aligned with their labels.
+[2026-07-01 17:41:25] [TASK_11] [INFO] Saved top 10 keyword analysis to C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-278\test_direction_labels_present0\top_kw.csv
+[2026-07-01 17:41:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:41:25] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 17:41:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:41:25] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (75.3%)
+[2026-07-01 17:41:25] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.090000  (24.7%)
+[2026-07-01 17:41:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:41:25] [TASK_11] [INFO] Keyword features contribute 24.7% of total SHAP importance, providing empirical evidence for H1.
+[2026-07-01 17:41:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:41:25] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 17:41:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:41:25] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 17:41:25] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 17:41:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:41:25] [TASK_11] [INFO] Keyword features contribute 0%% of total SHAP importance. This suggests keywords may not add predictive value (H1 not supported).
+[2026-07-01 17:41:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:41:25] [TASK_11] [INFO] GROUP CONTRIBUTION ANALYSIS (H1 Evidence)
+[2026-07-01 17:41:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:41:25] [TASK_11] [INFO] Technical features: mean|SHAP| = 0.000000  (0.0%)
+[2026-07-01 17:41:25] [TASK_11] [INFO] Keyword features:   mean|SHAP| = 0.275000  (100.0%)
+[2026-07-01 17:41:25] [TASK_11] [INFO] ============================================================
+[2026-07-01 17:41:25] [TASK_11] [INFO] Keyword features contribute 100.0% of total SHAP importance, providing empirical evidence for H1.

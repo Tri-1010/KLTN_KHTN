@@ -43,6 +43,7 @@ def render_main_report(snapshot: dict[str, Any]) -> str:
     event = snapshot["event_tests"]
     ml = snapshot["ml"]
     topk = snapshot["topk"]
+    robustness = snapshot.get("robustness", {})
     count_rows = [[name, value] for name, value in counts.items()]
     method_rows = [[method, count] for method, count in sorted(consensus["methods"].items())]
     provenance_rows = [
@@ -80,7 +81,20 @@ def render_main_report(snapshot: dict[str, Any]) -> str:
         for row in rule["metrics"]
     ]
     topk_status = "verified" if topk["status"] == "verified_nonoverlap_turnover_cost" else "not verified"
-    event_claim = "exploratory positive evidence present" if event["claim_gate_pass"] else "no robust positive evidence after correction"
+    event_claim = "exploratory positive association present" if event["claim_gate_pass"] else "no robust positive association after correction"
+    event_fraction = f"{event['robust_results']}/{event['rows']}" if event["rows"] else "0/0"
+    rq_h_rows = [
+        ["RQ-SM1", "H-SM1", "Rule/keyword representation limits", "Descriptive/associational"],
+        ["RQ-SM2", "H-SM2", "Schema, agreement, manual sanity", "Descriptive; pseudo-labels"],
+        ["RQ-SM3", "H-SM3", "Event-window association and placebo", "Exploratory; not causal"],
+        ["RQ-SM4", "H-SM4", "Purged OOS ML metrics and deltas", "Secondary exploratory"],
+        ["RQ-SM5", "H-SM5", "Top-K null and cost sensitivity", "Secondary; no alpha"],
+        ["RQ-SM6", "H-SM6", "Evidence/lineage traceability", "Technical traceability only"],
+    ]
+    ml_metric_rows = [
+        [name, values.get("rows"), values.get("baseline_mean"), values.get("comparison_mean"), values.get("delta_mean")]
+        for name, values in sorted(robustness.get("ml_metrics", {}).items())
+    ]
     return "\n".join([
         "# Semantic news materiality study report",
         "",
@@ -88,9 +102,13 @@ def render_main_report(snapshot: dict[str, Any]) -> str:
         "",
         markdown_table(["artifact", "rows"], count_rows),
         "",
+        "## RQ–hypothesis–evidence matrix",
+        "",
+        markdown_table(["Research question", "Hypothesis", "Evidence focus", "Allowed interpretation"], rq_h_rows),
+        "",
         "## Semantic annotation schema",
         "",
-        "Semantic annotation schema separates ticker relevance, materiality, direction, event type, uncertainty, novelty, and exact evidence span.",
+        "Semantic annotation schema separates ticker relevance, materiality, direction, event type, uncertainty, novelty, and exact evidence span. This representation and its auditable evaluation are primary contribution; ML, ranking, and Top-K are secondary exploratory analyses.",
         "",
         "## Pseudo-label protocol and consensus",
         "",
@@ -112,7 +130,7 @@ def render_main_report(snapshot: dict[str, Any]) -> str:
         "",
         markdown_table(["field", "pair", "agree", "total", "agreement", "Cohen kappa"], agreement_rows) if agreement_rows else "_Agreement metrics unavailable._",
         "",
-        "Agreement measures annotator consistency; it does not turn pseudo-labels into human ground truth.",
+        "Agreement measures annotator consistency; it does not turn pseudo-labels into human ground truth. Three annotation runs represent only two model families, so they are not three independent systems or three independent evidence sources.",
         "",
         "## Manual sanity check",
         "",
@@ -120,7 +138,7 @@ def render_main_report(snapshot: dict[str, Any]) -> str:
         "",
         markdown_table(["field", "ok", "not ok", "reviewed", "ok rate"], manual_rows) if manual_rows else "_Manual sanity-check data unavailable._",
         "",
-        "This is a small quality-control sample, not full human ground truth.",
+        "This is a small, non-blinded quality-control sample, not full human ground truth; it cannot estimate population-level annotation accuracy.",
         "",
         "## Keyword/rule baseline versus semantic pseudo-labels",
         "",
@@ -138,9 +156,15 @@ def render_main_report(snapshot: dict[str, Any]) -> str:
         "",
         "## Semantic signal audit and corrected event-window tests",
         "",
-        f"Gate rule: `{event['gate_rule']}`. Tests={event['rows']}; BH-FDR significant={event['fdr_significant']}; positive-CI={event['positive_ci']}; robust-positive={event['robust_results']}; claim gate pass={event['claim_gate_pass']}. Interpretation: {event_claim}.",
+        f"Gate rule: `{event['gate_rule']}`. Tests={event['rows']}; BH-FDR significant={event['fdr_significant']}; positive-CI={event['positive_ci']}; joint robust-positive fraction={event_fraction}; claim gate pass={event['claim_gate_pass']}. Interpretation: {event_claim}.",
+        "",
+        "Planned comparisons are direct/high-or-medium materiality versus low materiality, support versus risk, event-type groups, and semantic versus keyword/news-count baselines. Counts above refer to corrected test rows, not fraction of articles; event-level denominators remain in structured event artifacts.",
         "",
         f"Consistency checks: FDR flag mismatches={event['reported_flag_mismatches']}; robust-positive flag mismatches={event.get('robust_flag_mismatches')}. Negative robust effects are not counted as support for a positive claim.",
+        "",
+        "## Optional robustness checks",
+        "",
+        f"Available={robustness.get('available', {})}; placebo joint-positive={robustness.get('placebo', {}).get('robust_results', 0)}/{robustness.get('placebo', {}).get('rows', 0)}; family-sensitivity rows={robustness.get('family_sensitivity_rows', 0)}. Missing optional artifacts remain unavailable and do not block report generation.",
         "",
         "## Point-in-time ML experiment",
         "",
@@ -148,15 +172,21 @@ def render_main_report(snapshot: dict[str, Any]) -> str:
         "",
         markdown_table(["fold", "train start", "train end", "test start", "test end", "purge trading days"], fold_rows) if fold_rows else "_Purged OOS fold metadata unavailable._",
         "",
+        markdown_table(["metric", "paired rows", "baseline mean", "comparison mean", "mean delta"], ml_metric_rows) if ml_metric_rows else "_Optional paired ML metrics/deltas unavailable._",
+        "",
+        f"Bootstrap delta rows={robustness.get('ml_bootstrap_rows', 0)}. Balanced accuracy/AUC near 0.5, weak F1/Precision@K, near-zero rank IC, or small/unstable deltas must be reported as near-random or null predictive evidence, not useful stock filtering.",
+        "",
         "## Non-overlap turnover-cost Top-K simulation",
         "",
         f"Rows={topk['rows']}; entry periods={topk['periods']}; top-K={topk['top_k']}; strategies={', '.join(topk['strategies']) or 'unavailable'}; holding days={topk.get('holding_period_days', [])}; cost rates={topk.get('round_trip_cost_rates', [])}.",
         "",
         f"Non-overlap={topk['non_overlapping']}; turnover-cost equation={topk['turnover_cost_verified']}; net-return equations={topk['net_return_verified']}; overall status={topk['status']} ({topk_status}).",
         "",
+        f"Random-null rows={robustness.get('topk_null_rows', 0)}; one-sided null p<=0.05 rows={robustness.get('topk_null_significant')}; cost-sensitivity rows={robustness.get('topk_cost_rows', 0)}; tested cost rates={robustness.get('topk_cost_rates', [])}. Passing accounting checks does not establish performance. Null-comparable results or gains erased by cost are null findings, not alpha.",
+        "",
         "## Evidence cards and outcome review",
         "",
-        f"Case candidates={counts.get('case_candidates')}; outcome-review labels={counts.get('outcome_reviews')}. These are post-hoc evidence audits, not trading recommendations.",
+        f"Case candidates={counts.get('case_candidates')}; outcome-review labels={counts.get('outcome_reviews')}. These are retrospective, selected-case structured reviews: not trading recommendations, semantic ground truth, causal validation, representative outcome accuracy, or evidence that cards improve human decisions.",
         "",
         "## Claim-vs-evidence summary",
         "",
@@ -164,8 +194,8 @@ def render_main_report(snapshot: dict[str, Any]) -> str:
         "",
         "## Interpretation rules and limitations",
         "",
-        "- LLM consensus labels are pseudo-labels, not ground truth.",
-        "- Event results require BH-FDR significance and a strictly positive bootstrap CI before supporting a positive exploratory claim.",
+        "- LLM consensus labels are pseudo-labels, not ground truth; three runs cover only two model families.",
+        "- Event results are associations. They require BH-FDR significance and a strictly positive bootstrap CI before supporting a positive exploratory claim; they never establish causality.",
         "- ML claims require fold metadata to verify purged, out-of-sample predictions.",
         "- Top-K claims require non-overlap plus turnover-scaled cost and net-return equation checks.",
         "- Weak or failed gates remain valid negative findings.",

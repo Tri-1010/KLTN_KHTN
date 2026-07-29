@@ -1,0 +1,47 @@
+[2026-07-04 21:25:47] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-07-04 21:25:47] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-07-04 21:25:47] [TASK_3] [INFO] Logged 1 unmatched article URLs to logs/unmatched_articles.log
+[2026-07-04 21:25:49] [TASK_3] [INFO] ============================================================
+[2026-07-04 21:25:49] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-07-04 21:25:49] [TASK_3] [INFO] Timestamp: 2026-07-04T21:25:49.376091
+[2026-07-04 21:25:49] [TASK_3] [INFO] ============================================================
+[2026-07-04 21:25:49] [TASK_3] [INFO] Input: data/news/tnck/tnck_raw.csv (1446 rows)
+[2026-07-04 21:25:49] [TASK_3] [INFO] Input: data/news/vietnambiz/vietnambiz_raw.csv (3598 rows)
+[2026-07-04 21:25:49] [TASK_3] [INFO] Input: data/news/vnexpress/vnexpress_raw.csv (1762 rows)
+[2026-07-04 21:25:49] [TASK_3] [INFO] Input: data/news/kinhtechungkhoan/kinhtechungkhoan_raw.csv (8513 rows)
+[2026-07-04 21:25:49] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-07-04 21:25:49] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-07-04 21:25:49] [TASK_3] [INFO] ============================================================
+[2026-07-04 21:25:50] [TASK_3] [INFO] ============================================================
+[2026-07-04 21:25:50] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-07-04 21:25:50] [TASK_3] [INFO] Timestamp: 2026-07-04T21:25:50.242487
+[2026-07-04 21:25:50] [TASK_3] [INFO] ============================================================
+[2026-07-04 21:25:50] [TASK_3] [INFO] Input: data/news/tnck/tnck_raw.csv (1446 rows)
+[2026-07-04 21:25:50] [TASK_3] [INFO] Input: data/news/vietnambiz/vietnambiz_raw.csv (3598 rows)
+[2026-07-04 21:25:50] [TASK_3] [INFO] Input: data/news/vnexpress/vnexpress_raw.csv (1762 rows)
+[2026-07-04 21:25:50] [TASK_3] [INFO] Input: data/news/kinhtechungkhoan/kinhtechungkhoan_raw.csv (8513 rows)
+[2026-07-04 21:25:50] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-07-04 21:25:50] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-07-04 21:25:50] [TASK_3] [INFO] ============================================================
+[2026-07-04 22:25:27] [TASK_3] [INFO] ============================================================
+[2026-07-04 22:25:27] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-07-04 22:25:27] [TASK_3] [INFO] Timestamp: 2026-07-04T22:25:27.629669
+[2026-07-04 22:25:27] [TASK_3] [INFO] ============================================================
+[2026-07-04 22:25:27] [TASK_3] [INFO] Input: data/news/tnck/tnck_raw.csv (1446 rows)
+[2026-07-04 22:25:27] [TASK_3] [INFO] Input: data/news/vietnambiz/vietnambiz_raw.csv (3598 rows)
+[2026-07-04 22:25:27] [TASK_3] [INFO] Input: data/news/vnexpress/vnexpress_raw.csv (1762 rows)
+[2026-07-04 22:25:27] [TASK_3] [INFO] Input: data/news/kinhtechungkhoan/kinhtechungkhoan_raw.csv (8513 rows)
+[2026-07-04 22:25:27] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-07-04 22:25:27] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-07-04 22:25:27] [TASK_3] [INFO] ============================================================
+[2026-07-04 22:25:28] [TASK_3] [INFO] ============================================================
+[2026-07-04 22:25:28] [TASK_3] [INFO] START TASK_3: Entity Matching (articles → tickers)
+[2026-07-04 22:25:28] [TASK_3] [INFO] Timestamp: 2026-07-04T22:25:28.486271
+[2026-07-04 22:25:28] [TASK_3] [INFO] ============================================================
+[2026-07-04 22:25:28] [TASK_3] [INFO] Input: data/news/tnck/tnck_raw.csv (1446 rows)
+[2026-07-04 22:25:28] [TASK_3] [INFO] Input: data/news/vietnambiz/vietnambiz_raw.csv (3598 rows)
+[2026-07-04 22:25:28] [TASK_3] [INFO] Input: data/news/vnexpress/vnexpress_raw.csv (1762 rows)
+[2026-07-04 22:25:28] [TASK_3] [INFO] Input: data/news/kinhtechungkhoan/kinhtechungkhoan_raw.csv (8513 rows)
+[2026-07-04 22:25:28] [TASK_3] [INFO] ------------------------------------------------------------
+[2026-07-04 22:25:28] [TASK_3] [INFO] END TASK_3 — completed in 0.0 seconds
+[2026-07-04 22:25:28] [TASK_3] [INFO] ============================================================

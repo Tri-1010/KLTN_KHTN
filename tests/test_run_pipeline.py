@@ -116,14 +116,17 @@ class TestStepTaskMapping:
     """Test that each --step value maps to the correct task sequence."""
 
     def test_step_all_runs_task_1_through_11(self):
-        """--step all should run TASK 1 through TASK 11 (not TASK 12)."""
+        """--step all should run TASK 1 through TASK 11 plus enrichment (not TASK 12)."""
         tasks = STEP_TASKS["all"]
-        expected = [f"TASK_{i}" for i in range(1, 12)]
+        expected = [
+            "TASK_1", "TASK_2", "TASK_3", "TASK_2B", "TASK_4", "TASK_5",
+            "TASK_6", "TASK_7", "TASK_8", "TASK_9", "TASK_10", "TASK_11",
+        ]
         assert tasks == expected
 
     def test_step_data_runs_task_1_2_3(self):
         tasks = STEP_TASKS["data"]
-        assert tasks == ["TASK_1", "TASK_2", "TASK_3"]
+        assert tasks == ["TASK_1", "TASK_2", "TASK_3", "TASK_2B"]
 
     def test_step_preprocess_runs_task_4_5_6(self):
         """--step preprocess should run TASK 4, 5, 6."""
@@ -625,7 +628,7 @@ class TestSmokeTestIntegration:
         captured_configs = {}
 
         def make_mock_executor(task_name):
-            def executor(config, logger, smoke_test=False):
+            def executor(config, logger, smoke_test=False, **kwargs):
                 captured_configs[task_name] = {
                     "tickers": config.get("tickers"),
                     "end_date": config.get("end_date"),
@@ -635,10 +638,12 @@ class TestSmokeTestIntegration:
         mock_executors = {
             f"TASK_{i}": make_mock_executor(f"TASK_{i}") for i in range(1, 12)
         }
+        mock_executors["TASK_2B"] = make_mock_executor("TASK_2B")
 
         with patch.dict("pipeline.run_pipeline.TASK_EXECUTORS", mock_executors):
             with patch.dict("pipeline.run_pipeline.TASK_CHECKPOINTS", {
-                f"TASK_{i}": [] for i in range(1, 12)
+                **{f"TASK_{i}": [] for i in range(1, 12)},
+                "TASK_2B": [],
             }):
                 with patch("pipeline.run_pipeline.verify_smoke_test_outputs",
                            return_value=(True, [], [])):
@@ -674,17 +679,19 @@ class TestSmokeTestIntegration:
         executed_tasks = []
 
         def make_mock_executor(task_name):
-            def executor(config, logger, smoke_test=False):
+            def executor(config, logger, smoke_test=False, **kwargs):
                 executed_tasks.append(task_name)
             return executor
 
         mock_executors = {
             f"TASK_{i}": make_mock_executor(f"TASK_{i}") for i in range(1, 12)
         }
+        mock_executors["TASK_2B"] = make_mock_executor("TASK_2B")
 
         with patch.dict("pipeline.run_pipeline.TASK_EXECUTORS", mock_executors):
             with patch.dict("pipeline.run_pipeline.TASK_CHECKPOINTS", {
-                f"TASK_{i}": [] for i in range(1, 12)
+                **{f"TASK_{i}": [] for i in range(1, 12)},
+                "TASK_2B": [],
             }):
                 with patch("pipeline.run_pipeline.verify_smoke_test_outputs",
                            return_value=(True, [], [])):
@@ -696,5 +703,31 @@ class TestSmokeTestIntegration:
                             config_path=str(config_path),
                         )
 
-        expected = [f"TASK_{i}" for i in range(1, 12)]
+        expected = ["TASK_1", "TASK_2", "TASK_3", "TASK_2B"] + [f"TASK_{i}" for i in range(4, 12)]
         assert executed_tasks == expected
+
+    def test_force_reaches_task_2b_executor(self, tmp_path):
+        config_path = tmp_path / "config.yaml"
+        config_path.write_text(yaml.dump({
+            "tickers": ["VNM"],
+            "start_date": "2022-01-01",
+            "end_date": "auto",
+            "train_cutoff": "2025-01-01",
+            "label_threshold": 0.02,
+            "min_news_per_period": 5,
+        }))
+        received = []
+
+        def executor(config, logger, smoke_test=False, force=False):
+            received.append(force)
+
+        with patch.dict("pipeline.run_pipeline.STEP_TASKS", {"enrich_news": ["TASK_2B"]}):
+            with patch.dict("pipeline.run_pipeline.TASK_CHECKPOINTS", {"TASK_2B": []}):
+                with patch.dict("pipeline.run_pipeline.TASK_EXECUTORS", {"TASK_2B": executor}):
+                    run_pipeline(
+                        step="enrich_news",
+                        force=True,
+                        config_path=str(config_path),
+                    )
+
+        assert received == [True]

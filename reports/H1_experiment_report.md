@@ -76,35 +76,67 @@ Xây lại toàn bộ đặc trưng + nhãn theo từng đơn vị thời gian (
 so sánh A vs C trung bình qua 4 thuật toán:
 
 | Đơn vị | Số mẫu | Số kỳ | Mean A | Mean C | Delta (C − A) |
-|---|---|---|---|---|---|
-| 2 tuần | 2556 | 115 | 0.694 | 0.694 | +0.0005 |
-| **1 tháng** | 1413 | 53 | 0.670 | 0.681 | **+0.0109** ← đỉnh |
-| 2 tháng | 761 | 26 | 0.700 | 0.698 | −0.0028 |
-| Quý | 506 | 17 | 0.652 | 0.636 | −0.0156 |
+|---|---:|---:|---:|---:|---:|
+| 1 tuần | 10.788 | 232 | 0,6709 | 0,6641 | −0,0068 |
+| 2 tuần | 7.090 | 117 | 0,7024 | 0,6954 | −0,0071 |
+| 1 tháng | 3.815 | 53 | 0,6938 | 0,6906 | −0,0032 |
+| 2 tháng | 2.042 | 26 | 0,6898 | 0,6786 | −0,0112 |
+| Quý | 1.348 | 17 | 0,6304 | 0,6398 | +0,0094 |
 
-Chi tiết đáng chú ý ở **đơn vị 1 tháng**: Random Forest A=0.671 → C=0.707, **+0.036** —
-mức cải thiện rõ rệt nhất của toàn bộ nghiên cứu (3/4 thuật toán có delta dương).
+Sau full-text enrichment, không còn "đỉnh" cải thiện ổn định ở 1 tháng/2 tháng. Delta trung bình âm ở 4/5 đơn vị thời gian; riêng quý dương nhỏ nhưng không nhất quán theo thuật toán.
 
-### Đồ thị "hình chuông" của đóng góp từ khóa
+### Không còn "hình chuông" sau full-text enrichment
 
 ```
-Quý (3 tháng):  -0.0156   ❌ giảm
-2 tháng:        -0.0028   ~ trung tính
-1 tháng:        +0.0109   ✅ đỉnh
-2 tuần:         +0.0005   ~ gần 0
+Quý (3 tháng):  +0.0094   ~ nhỏ, không nhất quán
+2 tháng:        -0.0112   ❌ giảm
+1 tháng:        -0.0032   ~ gần 0
+2 tuần:         -0.0071   ~ giảm nhẹ
+1 tuần:         -0.0068   ~ giảm nhẹ
 ```
 
-Đóng góp của từ khóa **không tăng đơn điệu** khi rút ngắn kỳ, mà đạt cực đại quanh **1 tháng**.
+Sau full-text enrichment, đóng góp của từ khóa **không có dạng hình chuông** nữa. Bốn đơn vị ngắn hơn quý đều âm nhẹ; riêng quý dương nhỏ nhưng không ổn định theo thuật toán. Điều này làm kết luận H1 âm rõ hơn so với các lần chạy metadata/keyword trước.
 
-### Giải thích
+### 5a-bis. Kết quả ở granularity 1 tuần (bổ sung)
 
-Hai lực đối nghịch:
-- **Rút ngắn kỳ → có lợi:** tin tức "tươi" hơn, khớp với khung tác động ngắn hạn của tin lên giá
-  (giải thích vì sao quý → tháng cải thiện).
-- **Rút quá ngắn → có hại:** ở 2 tuần, mỗi (mã, kỳ) có quá ít bài tin → tín hiệu từ khóa thưa và
-  nhiễu, đóng góp tan biến.
+Để trả lời trực tiếp câu hỏi "tín hiệu văn bản có xuất hiện ở khung thời gian ngắn hơn không",
+đã bổ sung đơn vị **1 tuần** (7 ngày lịch, ~5 phiên giao dịch) với cỡ mẫu rất lớn:
 
-**1 tháng** là điểm cân bằng giữa độ tươi của thông tin và mật độ tin đủ để khử nhiễu.
+| Đơn vị | n_samples | n_test | Δ(C−A) TB | Nhận xét |
+|---|---:|---:|---:|---|
+| **1 tuần** | **10.788** | **2.764** | **−0,0068** | Giảm nhẹ, n lớn → ước lượng tin cậy |
+| 2 tuần | 7.090 | 1.660 | −0,0071 | Giảm nhẹ |
+| 1 tháng | 3.815 | 785 | −0,0032 | ≈ 0 |
+| 2 tháng | 2.042 | 400 | −0,0112 | Giảm nhẹ |
+| Quý | 1.348 | 240 | +0,0094 | Dương nhỏ, không nhất quán |
+
+Chi tiết 1 tuần theo thuật toán:
+
+| Thuật toán | Config_A | Config_C | Δ(C−A) |
+|---|---:|---:|---:|
+| LightGBM | 0,6723 | 0,6662 | −0,0061 |
+| Logistic Regression | 0,6819 | 0,6851 | +0,0031 |
+| Random Forest | 0,6666 | 0,6590 | −0,0077 |
+| XGBoost | 0,6628 | 0,6460 | −0,0168 |
+
+**Diễn giải:**
+- Với **2.764 mẫu test** (cỡ mẫu lớn nhất trong toàn bộ thí nghiệm), Δ(C−A) = −0,0068 gần như bằng 0 nhưng theo chiều bất lợi cho Config_C.
+- 3/4 thuật toán ở cấp tuần âm; Logistic Regression dương rất nhỏ (+0,0031), không đủ tạo kết luận cải thiện.
+- Corpus ở cấp tuần không còn là lý do chính để nghi ngờ: cỡ mẫu lớn giúp ước lượng ổn định hơn, nhưng Config_C vẫn không thắng Config_A.
+- **Kết luận mạnh hơn:** tin tức tài chính tiếng Việt dưới dạng tần suất từ khóa không mang thêm giá trị dự báo ổn định ở bất kỳ khung thời gian nào đã kiểm tra (tuần, 2 tuần, tháng, 2 tháng, quý). Kết quả nhất quán với giả thuyết thị trường hiệu quả dạng vừa (Semi-strong EMH).
+
+### Giải thích (cập nhật)
+
+Ba lực đối nghịch:
+- **Rút ngắn kỳ → có lợi (lý thuyết):** tin tức "tươi" hơn, gần thời điểm phản ứng giá.
+- **Rút ngắn kỳ → có hại (thực tế):** mỗi (mã, kỳ) có quá ít bài tin → tín hiệu từ khóa
+  thưa và nhiễu, đóng góp tan biến.
+- **EMH:** kể cả ở khung ngắn, nếu thị trường đã phản ánh tin tức vào giá trước khi bài
+  báo xuất bản (hoặc ngay lúc xuất bản), thì đặc trưng từ khóa trích xuất *sau* khi bài
+  đăng không còn giá trị dự báo.
+
+Kết quả thực nghiệm ủng hộ lực thứ hai và thứ ba: **không tồn tại khung thời gian nào** mà
+đặc trưng tần suất từ khóa tạo ra cải thiện dự báo vượt trên đặc trưng kỹ thuật.
 
 ---
 
@@ -371,15 +403,69 @@ tần suất từ khóa**, chứ không phải do danh sách từ chưa đủ t�
 
 ---
 
+## 5h. Kiểm chứng sau khi dùng toàn văn bài báo — full-text enrichment 99.96%
+
+Sau khi đã enrich toàn văn gần như đầy đủ (`45.949/45.968` unique URLs có `full_text`, **99,96% coverage**), pipeline được chạy lại từ điểm văn bản được sử dụng: TASK 4 tiền xử lý full text → TASK 5/6 tổng hợp và nhãn → TASK 8/9 keyword features → TASK 10/11 train và SHAP.
+
+**Thay đổi dữ liệu sau full text:**
+
+| Chỉ tiêu | Giá trị |
+|---|---:|
+| Bài enriched input | 52.790 dòng |
+| Unique URL sau dedup | 45.968 |
+| Bài sau fuzzy-title dedup | 35.158 |
+| Average token/article | 714,8 |
+| Ticker-period pairs (`news_by_quarter`) | 1.450 |
+| Merged train/test samples | 1.348 |
+| Keyword features | 324 |
+
+Average token/article tăng lên rất mạnh, xác nhận TASK 4 đang thật sự dùng nội dung toàn văn chứ không còn chỉ dùng tiêu đề/mô tả.
+
+**Kết quả quý, cutoff 2025Q1 (TASK 10 production split):**
+
+| Thuật toán | Config A | Config B | Config C | C − A |
+|---|---:|---:|---:|---:|
+| LightGBM | **0,7599** | 0,4510 | 0,7357 | −0,0242 |
+| Logistic Regression | 0,7269 | 0,4999 | 0,7132 | −0,0138 |
+| Random Forest | 0,7351 | 0,5053 | 0,6679 | −0,0672 |
+| XGBoost | 0,7293 | 0,4792 | 0,7238 | −0,0055 |
+
+Best model vẫn là **LightGBM Config_A**. Config_B gần mức ngẫu nhiên; Config_C không cải thiện so với Config_A ở cả 4 thuật toán. Vì best model là Config_A, SHAP chạy trên 16 đặc trưng kỹ thuật và keyword contribution = **0%**.
+
+**Granularity sau full text (`reports/period_experiment.csv`):**
+
+| Đơn vị | n_samples | n_test | Mean Δ(C−A) |
+|---|---:|---:|---:|
+| 1 tuần | 10.788 | 2.764 | −0,0068 |
+| 2 tuần | 7.090 | 1.660 | −0,0071 |
+| 1 tháng | 3.815 | 785 | −0,0032 |
+| 2 tháng | 2.042 | 400 | −0,0112 |
+| Quý | 1.348 | 240 | +0,0094 |
+
+Sau full text, delta trung bình âm ở 4/5 đơn vị thời gian. Dấu dương nhỏ ở quý không ổn định theo thuật toán (LightGBM/Logistic Regression/XGBoost dương, Random Forest âm) và không đủ đảo kết luận H1.
+
+**McNemar sau full text:**
+
+- Random Forest, **1 tháng**: Config_A 0,6998 vs Config_C 0,6796; Δ = **−0,0202**, exact p = **0,0227**. Khác biệt có ý nghĩa thống kê nhưng theo chiều **Config_C tệ hơn Config_A**.
+- Random Forest, **2 tháng**: Config_A 0,7002 vs Config_C 0,6978; Δ = **−0,0024**, exact p = **0,4638**. Không có ý nghĩa thống kê.
+
+### Diễn giải
+
+Full text đã loại trừ phản biện quan trọng nhất còn lại: kết quả âm không phải do pipeline chỉ dùng title/description quá nghèo thông tin. Khi đưa gần như toàn văn corpus vào chuỗi xử lý, đặc trưng tần suất từ khóa vẫn không cải thiện dự báo; ở split production theo quý, Config_C còn kém Config_A rõ rệt. Điều này củng cố kết luận rằng giới hạn nằm ở cách biểu diễn tin tức bằng tần suất từ khóa trong bài toán dự báo theo kỳ, không phải do thiếu nội dung bài báo.
+
+➡️ **H1 tiếp tục không được ủng hộ, với bằng chứng mạnh hơn sau full-text enrichment.**
+
+---
+
 ## 6. Kết luận tổng hợp
 
 1. **Đặc trưng kỹ thuật là nền tảng dự báo chính** (Balanced Accuracy ~0.65–0.78); đặc trưng từ
    khóa đơn lẻ gần như không có sức dự báo.
 2. **Ở đơn vị quý, H1 không được ủng hộ** — kết hợp từ khóa không cải thiện, kết luận này bền qua
    nhiều ngưỡng thời gian.
-3. **Tín hiệu "đỉnh ở 1 tháng" (+3.6 điểm) là dao động ngẫu nhiên, không phải tín hiệu thật.**
-   McNemar đã cảnh báo (p=0.121); khi mở rộng corpus +48% (thêm VietnamBiz), mức cải thiện này biến
-   mất (delta về −0.024, p=1.000). Đây là minh hoạ regression to the mean.
+3. **Tín hiệu "đỉnh ở 1 tháng" (+3.6 điểm) trong corpus cũ là dao động ngẫu nhiên, không phải tín hiệu thật.**
+   McNemar đã cảnh báo (p=0.121); khi mở rộng corpus và sau đó dùng full text, mức cải thiện này biến
+   mất. Với full text, mean Δ(C−A) ở 1 tháng là −0,0032 và Random Forest 1 tháng còn cho Config_C kém Config_A có ý nghĩa thống kê (p=0,0227).
 4. **Kết luận cuối: H1 không được ủng hộ** — kiểm chứng qua nhiều ngưỡng thời gian, nhiều đơn vị
    thời gian, và **năm lần mở rộng corpus** (9.7k → 28k bài, gần gấp 3) với **6 nguồn cân bằng**
    (Kinh Tế Chứng Khoán 30%, CafeF 29%, Vietstock 18%, VietnamBiz 13%, VnExpress 6%, TNCK 4% —

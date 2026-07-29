@@ -15,7 +15,7 @@ from __future__ import annotations
 import json
 import os
 import warnings
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, Iterable, List, Optional, Tuple
 
 import joblib
 import numpy as np
@@ -37,6 +37,51 @@ from sklearn.impute import SimpleImputer
 from pipeline.logging_config import setup_logger
 
 logger = setup_logger("TASK_10")
+
+# ---------------------------------------------------------------------------
+# Soft import of the experiment feature registry (Req 3.1, 14.2)
+# ---------------------------------------------------------------------------
+# The registry lives in the optional ``experiments/`` package. Import it softly
+# so that ``task10_train`` still runs standalone (as the production pipeline)
+# when ``experiments/`` is absent. When it is missing, ``_is_new_keyword_column``
+# falls back to an inline copy of the same classification rules.
+try:  # pragma: no cover - exercised implicitly by both branches in CI
+    from experiments.feature_registry import is_keyword_column as _registry_is_keyword_column
+except ImportError:  # pragma: no cover - fallback when experiments/ is absent
+    _registry_is_keyword_column = None
+
+# New text-feature naming rules mirrored here for the standalone fallback so the
+# behaviour matches ``experiments.feature_registry`` exactly.
+_FALLBACK_NEW_KW_PREFIXES = ("sent_", "llm_", "ds_", "sector_", "emb_", "tfidfx_")
+_FALLBACK_NEW_KW_EXACT = {
+    "news_velocity",
+    "kw_novelty",
+    "kw_entropy",
+    "pos_neg_shift",
+    "news_spike",
+}
+_FALLBACK_NEG_SUFFIX = "_NEG"
+
+
+def _is_new_keyword_column(col: str) -> bool:
+    """Return True if *col* is a new text-feature column (A1/A2/A3/A6/B1/...).
+
+    Delegates to ``experiments.feature_registry.is_keyword_column`` when the
+    optional ``experiments/`` package is available; otherwise applies the same
+    rules inline so the production pipeline keeps working standalone.
+    """
+    if _registry_is_keyword_column is not None:
+        return _registry_is_keyword_column(col)
+
+    if not isinstance(col, str):
+        return False
+    if col in _FALLBACK_NEW_KW_EXACT:
+        return True
+    if any(col.startswith(p) for p in _FALLBACK_NEW_KW_PREFIXES):
+        return True
+    if col.endswith(_FALLBACK_NEG_SUFFIX) and col.startswith("kw_"):
+        return True
+    return False
 
 # Suppress convergence / user warnings during training
 warnings.filterwarnings("ignore", category=UserWarning)
@@ -119,7 +164,12 @@ def identify_feature_columns(
     for col in df.columns:
         if col in meta_cols:
             continue
-        if col in kw_exact or any(col.startswith(p) for p in kw_prefixes):
+        is_kw = (
+            col in kw_exact
+            or any(col.startswith(p) for p in kw_prefixes)
+            or _is_new_keyword_column(col)  # A2 _NEG, sent_, llm_, ds_, velocity, ...
+        )
+        if is_kw:
             kw_cols.append(col)
         else:
             tech_cols.append(col)
@@ -557,7 +607,9 @@ def run_model_training(
     kw_path: str = KW_FEATURES_PATH,
     labels_path: str = LABELS_PATH,
     cutoff: str = "2025Q1",
-) -> pd.DataFrame:
+    comparison_path: Optional[str] = None,
+    return_predictions: bool = False,
+) -> "pd.DataFrame | Tuple[pd.DataFrame, dict]":
     """Execute the full TASK 10 workflow.
 
     1. Load & merge data
@@ -570,8 +622,25 @@ def run_model_training(
     5. Save comparison table
     6. Highlight best model, save to disk
 
+    Args:
+        tech_path: Đường dẫn tệp đặc trưng kỹ thuật.
+        kw_path: Đường dẫn tệp đặc trưng từ khóa (có thể là bản version hóa
+            ``keyword_features_{id}.csv`` cho một thí nghiệm).
+        labels_path: Đường dẫn tệp nhãn.
+        cutoff: Ranh giới chia train/test theo thời gian (Train_Cutoff).
+        comparison_path: MỚI — đường dẫn ghi bảng so sánh. Khi ``None`` (mặc
+            định) hành vi giữ nguyên: dùng ``MODEL_COMPARISON_PATH`` qua
+            ``save_results``. Khi được cung cấp, bảng được ghi vào đường dẫn
+            này (Req 14.1 — cùng pipeline, chỉ khác artifact đầu ra).
+        return_predictions: MỚI — khi ``True``, trả thêm một dict predictions
+            (Config_A/Config_C trên cùng tập test) cần cho McNemar (Req 13.4).
+            Khi ``False`` (mặc định), chỉ trả về DataFrame như trước để không
+            ảnh hưởng caller/test hiện có.
+
     Returns:
-        DataFrame with model comparison results.
+        ``results_df`` khi ``return_predictions=False`` (mặc định); hoặc
+        ``(results_df, predictions)`` khi ``return_predictions=True``, trong đó
+        ``predictions`` là kết quả của :func:`run_configs_return_predictions`.
     """
     # 1. Load & merge
     merged = load_and_merge_data(tech_path, kw_path, labels_path)
@@ -667,7 +736,7 @@ def run_model_training(
             trained_models[f"{mname} - {config_name}"] = mmodel
 
     # 5. Save comparison table
-    results_df = save_results(all_results)
+    results_df = save_results(all_results, path=comparison_path or MODEL_COMPARISON_PATH)
 
     # 6. Best model
     best_model_name, best_config, best_ba = find_best_model(results_df)
@@ -688,4 +757,151 @@ def run_model_training(
         model_name=best_model_name,
     )
 
+    if return_predictions:
+        predictions = run_configs_return_predictions(
+            tech_path=tech_path,
+            kw_path=kw_path,
+            labels_path=labels_path,
+            cutoff=cutoff,
+        )
+        return results_df, predictions
+
     return results_df
+
+
+def run_configs_return_predictions(
+    tech_path: str = TECH_FEATURES_PATH,
+    kw_path: str = KW_FEATURES_PATH,
+    labels_path: str = LABELS_PATH,
+    cutoff: str = "2025Q1",
+    configs_to_run: Tuple[str, ...] = ("Config_A", "Config_C"),
+    model_name: str = "LightGBM",
+    tickers: Optional[Iterable[str]] = None,
+) -> Dict[str, Any]:
+    """Train the chosen configs and return predictions on the SAME test set.
+
+    Hàm cấp thấp tái sử dụng các helper đã có (``load_and_merge_data``,
+    ``identify_feature_columns``, ``get_feature_configs``, ``time_series_split``,
+    ``fit_imputer``, ``prepare_features``) để lấy ``y_test`` và predictions của
+    Config_A/Config_C trên **cùng một tập test** — cần cho McNemar (Req 13.4)
+    và cho việc retrain theo phân khúc (B3).
+
+    Logic tuân thủ các ràng buộc chống rò rỉ của ``run_model_training``:
+
+    - dùng cùng ``time_series_split`` (Req 4.1, không xáo trộn);
+    - fit imputer CHỈ trên train rồi transform test (Req 4.2).
+
+    Predictions của mọi config đến từ cùng ``test_df`` (đã sort theo
+    ``quarter_id``), do đó các mảng ``y_test`` và từng mảng trong
+    ``pred_by_config`` được căn theo cùng thứ tự hàng. Khóa căn chỉnh
+    ``(ticker, quarter_id)`` cũng được trả về để căn predictions giữa các tập
+    đặc trưng khác nhau bằng khóa (quan trọng cho McNemar giữa hai Config_C —
+    xem design "McNemar giữa hai Config_C").
+
+    Args:
+        tech_path: Đường dẫn đặc trưng kỹ thuật.
+        kw_path: Đường dẫn đặc trưng từ khóa (bản version hóa cho thí nghiệm).
+        labels_path: Đường dẫn nhãn.
+        cutoff: Train_Cutoff.
+        configs_to_run: Các config cần lấy predictions (mặc định A và C).
+        model_name: Thuật toán dùng để lấy predictions (mặc định LightGBM).
+        tickers: MỚI — nếu khác ``None``, chỉ giữ các hàng có ``ticker`` thuộc
+            tập này (dùng cho retrain theo phân khúc B3, Req 10.3). Khi ``None``
+            (mặc định), hành vi GIỮ NGUYÊN như trước (Req 14.1) — không lọc.
+            Guard rỗng/một-lớp-nhãn vẫn áp dụng SAU khi lọc, nên một phân khúc
+            quá nhỏ/thoái hóa sẽ ném ``ValueError`` sạch sẽ.
+
+    Returns:
+        Dict gồm:
+        - ``test_index``: ``pd.DataFrame`` các khóa ``(ticker, quarter_id)`` của
+          tập test, cùng thứ tự với ``y_test`` và các mảng predictions;
+        - ``y_test``: ``np.ndarray`` nhãn thật của tập test;
+        - ``pred_by_config``: dict ``{config_name: np.ndarray}`` nhãn dự đoán,
+          căn theo cùng các hàng test;
+        - ``model_name``: tên thuật toán đã dùng.
+    """
+    # 1. Load & merge
+    merged = load_and_merge_data(tech_path, kw_path, labels_path)
+
+    if merged.empty:
+        raise ValueError(
+            "No samples after merging technical/keyword/label data; "
+            "cannot compute predictions."
+        )
+    if merged["label_basic"].nunique() < 2:
+        raise ValueError(
+            "Training data has only one label class; at least two are "
+            "required to train a classifier for predictions."
+        )
+
+    # Optional per-segment filter (Req 10.3, B3). Applied AFTER the merge and
+    # its empty/one-class guards, BEFORE feature identification, so that a
+    # tiny/degenerate segment triggers the guards below and fails cleanly.
+    if tickers is not None:
+        ticker_set = set(tickers)
+        merged = merged[merged["ticker"].isin(ticker_set)]
+        if merged.empty:
+            raise ValueError(
+                "No samples after filtering merged data to the requested "
+                f"tickers ({sorted(ticker_set)}); cannot compute predictions."
+            )
+        if merged["label_basic"].nunique() < 2:
+            raise ValueError(
+                "Filtered segment has only one label class; at least two are "
+                "required to train a classifier for predictions."
+            )
+
+    # 2. Identify columns + configs
+    tech_cols, kw_cols = identify_feature_columns(merged)
+    configs = get_feature_configs(tech_cols, kw_cols)
+
+    # 3. Time-series split (same split for every config → aligned test rows)
+    train_df, test_df = time_series_split(merged, cutoff=cutoff)
+
+    # Aligned (ticker, quarter_id) keys for the test set, in row order.
+    test_index = test_df[["ticker", "quarter_id"]].reset_index(drop=True).copy()
+
+    y_test_arr: Optional[np.ndarray] = None
+    pred_by_config: Dict[str, np.ndarray] = {}
+
+    for config_name in configs_to_run:
+        feature_cols = configs[config_name]
+        available_cols = [c for c in feature_cols if c in train_df.columns]
+
+        # 4a. Fit imputer on train only, transform test (Req 4.2).
+        train_imputer, _ = fit_imputer(train_df, available_cols)
+        X_train, y_train = prepare_features(
+            train_df, available_cols, imputer=train_imputer
+        )
+        X_test, y_test = prepare_features(
+            test_df, available_cols, imputer=train_imputer
+        )
+
+        common_cols = [c for c in X_train.columns if c in X_test.columns]
+        X_train = X_train[common_cols]
+        X_test = X_test[common_cols]
+
+        # Capture y_test once (identical across configs — same test rows).
+        if y_test_arr is None:
+            y_test_arr = y_test.to_numpy()
+
+        # 4b. Train the chosen model for this config.
+        ml_models = build_ml_models(y_train)
+        if model_name not in ml_models:
+            raise KeyError(
+                f"Unknown model_name {model_name!r}; available: "
+                f"{sorted(ml_models)}"
+            )
+        model = ml_models[model_name]
+        model.fit(X_train, y_train)
+        pred_by_config[config_name] = np.asarray(model.predict(X_test))
+
+    if y_test_arr is None:
+        y_test_arr = np.asarray([], dtype=int)
+
+    return {
+        "test_index": test_index,
+        "y_test": y_test_arr,
+        "pred_by_config": pred_by_config,
+        "model_name": model_name,
+    }

@@ -5,11 +5,13 @@
 ```
 TASK 1: Thu thập dữ liệu giá cổ phiếu VN30
     ↓
-TASK 2: Scrape tin tức từ CafeF, Vietstock, TNCK
+TASK 2: Scrape metadata tin tức từ CafeF, Vietstock, TNCK và các nguồn mở rộng
     ↓
 TASK 3: Gắn tin tức với mã cổ phiếu (entity matching)
     ↓
-TASK 4: Tiền xử lý văn bản tiếng Việt
+TASK 2B: Làm giàu bài báo bằng toàn văn, summary, key facts
+    ↓
+TASK 4: Tiền xử lý văn bản tiếng Việt từ full text đã enrich
     ↓
 TASK 5: Tổng hợp dữ liệu theo cổ phiếu - quý
     ↓
@@ -68,7 +70,7 @@ Yêu cầu:
   Ví dụ: https://cafef.vn/thi-truong-chung-khoan/ACB-ctck.chn
 - Thu thập tất cả bài viết từ 01/01/2022 đến nay
 - Với mỗi bài viết cần lấy: tiêu đề, mô tả ngắn (nếu có), ngày đăng, URL bài viết, mã cổ phiếu
-- KHÔNG cần lấy toàn văn bài viết ở bước này, chỉ cần tiêu đề + mô tả là đủ
+- Bước scrape metadata chỉ bắt buộc lấy tiêu đề + mô tả + ngày + URL; toàn văn được lấy sau TASK 3 bằng TASK 2B full-text enrichment để tránh fetch các bài không liên quan
 - Xử lý phân trang: tự động lấy hết các trang kết quả
 - Rate limiting: sleep 1-2 giây giữa các request để tránh bị chặn
 - Lưu kết quả: data/news/cafef/{ticker}_cafef.csv
@@ -83,7 +85,7 @@ Lưu ý quan trọng:
 Môi trường: Python 3.10+, requests, BeautifulSoup4 đã cài đặt.
 ```
 
-### TASK 2B — Scrape Vietstock
+### TASK 2.2 — Scrape Vietstock
 
 ```
 Bạn là một kỹ sư thu thập dữ liệu web. Hãy viết script Python để scrape tin tức
@@ -104,7 +106,7 @@ tiêu đề và tóm tắt hiển thị công khai. Ghi chú vào log nếu có 
 Môi trường: Python 3.10+, requests, BeautifulSoup4.
 ```
 
-### TASK 2C — Scrape Tinnhanhchungkhoan
+### TASK 2.3 — Scrape Tinnhanhchungkhoan
 
 ```
 Bạn là một kỹ sư thu thập dữ liệu web. Hãy viết script Python để scrape tin tức
@@ -123,6 +125,43 @@ Môi trường: Python 3.10+, requests, BeautifulSoup4.
 
 ---
 
+## TASK 2B — Làm giàu bài báo bằng toàn văn (Full-text Enrichment)
+
+```
+Bạn là một kỹ sư dữ liệu/NLP. Hãy viết module Python để lấy toàn văn bài báo sau khi đã gắn mã cổ phiếu.
+
+Đầu vào:
+- data/news/matched/all_news_matched.csv
+
+Yêu cầu:
+1. Với mỗi URL bài báo đã match, fetch trang chi tiết và trích xuất:
+   - full_text: toàn văn bài báo nếu có
+   - lead: đoạn sapo/og:description nếu có
+   - author, published_at_detail, canonical_url
+   - extraction_status: ok/partial/failed/fetch_failed/restricted
+   - full_text_available, full_text_chars, content_hash
+
+2. Tạo bằng chứng rút gọn cho downstream:
+   - article_summary: tóm tắt rule-based ngắn từ description/full_text
+   - key_facts_json: danh sách fact có evidence_quote, fact_type, direction, confidence
+   - event_type_enriched, risk_flags_json, relevance_hint
+
+3. Tối ưu vận hành:
+   - Fetch một lần theo URL nhưng bảo toàn nhiều dòng ticker nếu một bài match nhiều mã
+   - Cache kết quả cũ theo URL; chỉ retry failed/partial/restricted khi cấu hình yêu cầu
+   - Rate-limit theo domain, dùng retry/backoff, checkpoint định kỳ
+   - Không nhúng toàn bộ full_text vào prompt LLM mặc định; dùng summary/key facts/hash để audit
+
+4. Đầu ra:
+   - data/news/enriched/all_news_enriched.csv
+
+5. TASK 4 phải ưu tiên đọc file enriched này nếu tồn tại; nếu không có thì fallback về data/news/matched/all_news_matched.csv.
+
+Môi trường: Python 3.10+, requests, BeautifulSoup4, pandas.
+```
+
+---
+
 ## TASK 3 — Gắn tin tức với mã cổ phiếu (Entity Matching)
 
 ```
@@ -131,8 +170,8 @@ với một hoặc nhiều mã cổ phiếu VN30 tương ứng.
 
 Đầu vào:
 - data/news/cafef/: các file CSV từ TASK 2A (đã có cột ticker, nhưng cần xác nhận lại)
-- data/news/vietstock/: các file CSV từ TASK 2B
-- data/news/tnck/tnck_raw.csv: file từ TASK 2C (chưa có ticker)
+- data/news/vietstock/: các file CSV từ TASK 2.2
+- data/news/tnck/tnck_raw.csv: file từ TASK 2.3 (chưa có ticker)
 
 Yêu cầu:
 1. Xây dựng dictionary mapping mã → danh sách tên nhận diện:
@@ -176,7 +215,7 @@ Môi trường: Python 3.10+, pandas, re.
 Bạn là một kỹ sư NLP. Hãy viết module Python để tiền xử lý văn bản tiếng Việt
 cho dữ liệu tin tức tài chính.
 
-Đầu vào: data/news/matched/all_news_matched.csv
+Đầu vào: ưu tiên data/news/enriched/all_news_enriched.csv; fallback data/news/matched/all_news_matched.csv nếu chưa enrich
 
 Yêu cầu:
 
@@ -185,7 +224,7 @@ Yêu cầu:
    - Loại bỏ HTML tags, ký tự đặc biệt, URL
    - Chuẩn hóa dấu câu tiếng Việt
    - Giữ lại số (vì "tăng 20%", "lợi nhuận 500 tỷ" có ý nghĩa tài chính)
-   - Kết hợp tiêu đề + mô tả thành một trường text duy nhất
+   - Kết hợp tiêu đề + full_text/lead/article_summary/key_facts_json thành một trường text duy nhất; fallback về mô tả nếu chưa có full text
 
 2. Tách từ (hàm tokenize_vi):
    - Sử dụng underthesea: word_tokenize(text, format="text")
@@ -697,7 +736,7 @@ Môi trường: Python 3.10+, argparse, pyyaml, logging.
 | 1 | TASK 1 | Chạy thử ngay để kiểm tra vnstock hoạt động |
 | 1-2 | TASK 2A | Scrape CafeF trước (ưu tiên vì có URL theo mã) |
 | 2 | TASK 3 | Chạy thử entity matching trên 5 mã trước |
-| 2-3 | TASK 2B, 2C | Scrape Vietstock và TNCK song song |
+| 2-3 | TASK 2.2, 2.3 | Scrape Vietstock và TNCK song song |
 | 3 | TASK 4, 5, 6 | Có thể chạy liên tiếp |
 | 4 | TASK 8 | Review thủ công danh sách từ khóa — quan trọng |
 | 4 | TASK 7, 9 | Chạy song song |

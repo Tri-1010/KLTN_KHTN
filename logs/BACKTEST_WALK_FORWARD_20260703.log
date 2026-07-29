@@ -1,0 +1,4 @@
+[2026-07-03 14:26:38] [BACKTEST_WALK_FORWARD] [INFO] Cutoff 2024Q3: n_test=556, BA=0.7229, AUC=0.7970, strat_net=0.6563, buy_hold=0.2818
+[2026-07-03 14:26:39] [BACKTEST_WALK_FORWARD] [INFO] Cutoff 2025Q1: n_test=400, BA=0.7599, AUC=0.8235, strat_net=0.6030, buy_hold=0.2535
+[2026-07-03 14:26:39] [BACKTEST_WALK_FORWARD] [INFO] Cutoff 2025Q3: n_test=240, BA=0.6400, AUC=0.7098, strat_net=0.1182, buy_hold=0.0072
+[2026-07-03 14:26:39] [BACKTEST_WALK_FORWARD] [INFO] Walk-forward hoàn tất: 3/3 cutoff hợp lệ, ghi reports\walk_forward_results.csv.

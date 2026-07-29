@@ -1,0 +1,25 @@
+model,density_group,config,n_samples,reliable,warning,balanced_accuracy,recall_class1,precision_class1
+Logistic_Regression,dense,Config_A,148,True,,0.7201390159136638,0.6233766233766234,0.7868852459016393
+Logistic_Regression,dense,Config_C,148,True,,0.6984635083226632,0.6363636363636364,0.7424242424242424
+Logistic_Regression,dense,delta_C_minus_A,148,True,,-0.021675507591000565,0.012987012987012991,-0.0444610034773969
+Logistic_Regression,sparse,Config_A,2,False,Không đủ mẫu: N=2 < 20; Chỉ có 1 lớp nhãn,1.0,1.0,1.0
+Logistic_Regression,sparse,Config_C,2,False,Không đủ mẫu: N=2 < 20; Chỉ có 1 lớp nhãn,1.0,1.0,1.0
+Logistic_Regression,sparse,delta_C_minus_A,2,False,Không đủ mẫu: N=2 < 20; Chỉ có 1 lớp nhãn,0.0,0.0,0.0
+Random_Forest,dense,Config_A,148,True,,0.7661423083958295,0.7012987012987013,0.8181818181818182
+Random_Forest,dense,Config_C,148,True,,0.7558075727089812,0.7792207792207793,0.759493670886076
+Random_Forest,dense,delta_C_minus_A,148,True,,-0.010334735686848284,0.07792207792207795,-0.05868814729574223
+Random_Forest,sparse,Config_A,2,False,Không đủ mẫu: N=2 < 20; Chỉ có 1 lớp nhãn,0.5,0.5,1.0
+Random_Forest,sparse,Config_C,2,False,Không đủ mẫu: N=2 < 20; Chỉ có 1 lớp nhãn,0.5,0.5,1.0
+Random_Forest,sparse,delta_C_minus_A,2,False,Không đủ mẫu: N=2 < 20; Chỉ có 1 lớp nhãn,0.0,0.0,0.0
+XGBoost,dense,Config_A,148,True,,0.7266325224071704,0.6363636363636364,0.7903225806451613
+XGBoost,dense,Config_C,148,True,,0.7173952807755625,0.6883116883116883,0.7464788732394366
+XGBoost,dense,delta_C_minus_A,148,True,,-0.009237241631607884,0.051948051948051965,-0.04384370740572463
+XGBoost,sparse,Config_A,2,False,Không đủ mẫu: N=2 < 20; Chỉ có 1 lớp nhãn,0.5,0.5,1.0
+XGBoost,sparse,Config_C,2,False,Không đủ mẫu: N=2 < 20; Chỉ có 1 lớp nhãn,0.5,0.5,1.0
+XGBoost,sparse,delta_C_minus_A,2,False,Không đủ mẫu: N=2 < 20; Chỉ có 1 lớp nhãn,0.0,0.0,0.0
+LightGBM,dense,Config_A,148,True,,0.7255350283519297,0.6623376623376623,0.7727272727272727
+LightGBM,dense,Config_C,148,True,,0.7103530272544357,0.6883116883116883,0.7361111111111112
+LightGBM,dense,delta_C_minus_A,148,True,,-0.015182001097494013,0.025974025974025983,-0.03661616161616155
+LightGBM,sparse,Config_A,2,False,Không đủ mẫu: N=2 < 20; Chỉ có 1 lớp nhãn,0.5,0.5,1.0
+LightGBM,sparse,Config_C,2,False,Không đủ mẫu: N=2 < 20; Chỉ có 1 lớp nhãn,0.5,0.5,1.0
+LightGBM,sparse,delta_C_minus_A,2,False,Không đủ mẫu: N=2 < 20; Chỉ có 1 lớp nhãn,0.0,0.0,0.0

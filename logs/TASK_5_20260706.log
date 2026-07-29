@@ -1,0 +1,367 @@
+[2026-07-06 08:47:51] [TASK_5] [INFO] ============================================================
+[2026-07-06 08:47:51] [TASK_5] [INFO] START TASK_5: Data Aggregation (group by ticker × quarter)
+[2026-07-06 08:47:51] [TASK_5] [INFO] Timestamp: 2026-07-06T08:47:51.787267
+[2026-07-06 08:47:51] [TASK_5] [INFO] ============================================================
+[2026-07-06 08:47:51] [TASK_5] [INFO] Input: data/prices/all_vn30_prices.csv (93824 rows)
+[2026-07-06 08:47:51] [TASK_5] [INFO] Input: data/news/processed/all_news_processed.csv (34979 rows)
+[2026-07-06 08:47:51] [TASK_5] [INFO] ------------------------------------------------------------
+[2026-07-06 08:47:51] [TASK_5] [INFO] END TASK_5 — completed in 0.0 seconds
+[2026-07-06 08:47:51] [TASK_5] [INFO] ============================================================
+[2026-07-06 08:47:55] [TASK_5] [INFO] ============================================================
+[2026-07-06 08:47:55] [TASK_5] [INFO] START TASK_5: Data Aggregation (group by ticker × quarter)
+[2026-07-06 08:47:55] [TASK_5] [INFO] Timestamp: 2026-07-06T08:47:55.653369
+[2026-07-06 08:47:55] [TASK_5] [INFO] ============================================================
+[2026-07-06 08:47:55] [TASK_5] [INFO] Input: data/prices/all_vn30_prices.csv (93824 rows)
+[2026-07-06 08:47:55] [TASK_5] [INFO] Input: data/news/processed/all_news_processed.csv (34979 rows)
+[2026-07-06 08:47:55] [TASK_5] [INFO] ------------------------------------------------------------
+[2026-07-06 08:47:55] [TASK_5] [INFO] END TASK_5 — completed in 0.0 seconds
+[2026-07-06 08:47:55] [TASK_5] [INFO] ============================================================
+[2026-07-06 08:56:24] [TASK_5] [INFO] ============================================================
+[2026-07-06 08:56:24] [TASK_5] [INFO] START TASK_5: Data Aggregation (group by ticker × quarter)
+[2026-07-06 08:56:24] [TASK_5] [INFO] Timestamp: 2026-07-06T08:56:24.088418
+[2026-07-06 08:56:24] [TASK_5] [INFO] ============================================================
+[2026-07-06 08:56:24] [TASK_5] [INFO] Input: data/prices/all_vn30_prices.csv (93824 rows)
+[2026-07-06 08:56:24] [TASK_5] [INFO] Input: data/news/processed/all_news_processed.csv (34979 rows)
+[2026-07-06 08:56:24] [TASK_5] [INFO] ------------------------------------------------------------
+[2026-07-06 08:56:24] [TASK_5] [INFO] END TASK_5 — completed in 0.0 seconds
+[2026-07-06 08:56:24] [TASK_5] [INFO] ============================================================
+[2026-07-06 08:56:27] [TASK_5] [INFO] ============================================================
+[2026-07-06 08:56:27] [TASK_5] [INFO] START TASK_5: Data Aggregation (group by ticker × quarter)
+[2026-07-06 08:56:27] [TASK_5] [INFO] Timestamp: 2026-07-06T08:56:27.918112
+[2026-07-06 08:56:27] [TASK_5] [INFO] ============================================================
+[2026-07-06 08:56:27] [TASK_5] [INFO] Input: data/prices/all_vn30_prices.csv (93824 rows)
+[2026-07-06 08:56:28] [TASK_5] [INFO] Input: data/news/processed/all_news_processed.csv (34979 rows)
+[2026-07-06 08:56:28] [TASK_5] [INFO] ------------------------------------------------------------
+[2026-07-06 08:56:28] [TASK_5] [INFO] END TASK_5 — completed in 0.0 seconds
+[2026-07-06 08:56:28] [TASK_5] [INFO] ============================================================
+[2026-07-06 14:10:38] [TASK_5] [INFO] ============================================================
+[2026-07-06 14:10:38] [TASK_5] [INFO] START TASK_5: Data Aggregation (group by ticker × quarter)
+[2026-07-06 14:10:38] [TASK_5] [INFO] Timestamp: 2026-07-06T14:10:38.912146
+[2026-07-06 14:10:38] [TASK_5] [INFO] ============================================================
+[2026-07-06 14:10:38] [TASK_5] [INFO] Input: data/prices/all_vn30_prices.csv (93824 rows)
+[2026-07-06 14:10:39] [TASK_5] [INFO] Input: data/news/processed/all_news_processed.csv (34979 rows)
+[2026-07-06 14:10:39] [TASK_5] [INFO] ------------------------------------------------------------
+[2026-07-06 14:10:39] [TASK_5] [INFO] END TASK_5 — completed in 0.0 seconds
+[2026-07-06 14:10:39] [TASK_5] [INFO] ============================================================
+[2026-07-06 14:10:41] [TASK_5] [INFO] ============================================================
+[2026-07-06 14:10:41] [TASK_5] [INFO] START TASK_5: Data Aggregation (group by ticker × quarter)
+[2026-07-06 14:10:41] [TASK_5] [INFO] Timestamp: 2026-07-06T14:10:41.903719
+[2026-07-06 14:10:41] [TASK_5] [INFO] ============================================================
+[2026-07-06 14:10:41] [TASK_5] [INFO] Input: data/prices/all_vn30_prices.csv (93824 rows)
+[2026-07-06 14:10:42] [TASK_5] [INFO] Input: data/news/processed/all_news_processed.csv (34979 rows)
+[2026-07-06 14:10:42] [TASK_5] [INFO] ------------------------------------------------------------
+[2026-07-06 14:10:42] [TASK_5] [INFO] END TASK_5 — completed in 0.0 seconds
+[2026-07-06 14:10:42] [TASK_5] [INFO] ============================================================
+[2026-07-06 15:29:04] [TASK_5] [INFO] ============================================================
+[2026-07-06 15:29:04] [TASK_5] [INFO] START TASK_5: Data Aggregation (group by ticker × quarter)
+[2026-07-06 15:29:04] [TASK_5] [INFO] Timestamp: 2026-07-06T15:29:04.240853
+[2026-07-06 15:29:04] [TASK_5] [INFO] ============================================================
+[2026-07-06 15:29:04] [TASK_5] [INFO] Input: data/prices/all_vn30_prices.csv (93824 rows)
+[2026-07-06 15:29:04] [TASK_5] [INFO] Input: data/news/processed/all_news_processed.csv (34979 rows)
+[2026-07-06 15:29:04] [TASK_5] [INFO] ------------------------------------------------------------
+[2026-07-06 15:29:04] [TASK_5] [INFO] END TASK_5 — completed in 0.0 seconds
+[2026-07-06 15:29:04] [TASK_5] [INFO] ============================================================
+[2026-07-06 15:29:07] [TASK_5] [INFO] ============================================================
+[2026-07-06 15:29:07] [TASK_5] [INFO] START TASK_5: Data Aggregation (group by ticker × quarter)
+[2026-07-06 15:29:07] [TASK_5] [INFO] Timestamp: 2026-07-06T15:29:07.693499
+[2026-07-06 15:29:07] [TASK_5] [INFO] ============================================================
+[2026-07-06 15:29:07] [TASK_5] [INFO] Input: data/prices/all_vn30_prices.csv (93824 rows)
+[2026-07-06 15:29:07] [TASK_5] [INFO] Input: data/news/processed/all_news_processed.csv (34979 rows)
+[2026-07-06 15:29:07] [TASK_5] [INFO] ------------------------------------------------------------
+[2026-07-06 15:29:07] [TASK_5] [INFO] END TASK_5 — completed in 0.0 seconds
+[2026-07-06 15:29:07] [TASK_5] [INFO] ============================================================
+[2026-07-06 20:55:45] [TASK_5] [INFO] ============================================================
+[2026-07-06 20:55:45] [TASK_5] [INFO] START TASK_5: Data Aggregation (group by ticker × quarter)
+[2026-07-06 20:55:45] [TASK_5] [INFO] Timestamp: 2026-07-06T20:55:45.762933
+[2026-07-06 20:55:45] [TASK_5] [INFO] ============================================================
+[2026-07-06 20:55:45] [TASK_5] [INFO] Input: data/prices/all_vn30_prices.csv (93824 rows)
+[2026-07-06 20:55:45] [TASK_5] [INFO] Input: data/news/processed/all_news_processed.csv (34979 rows)
+[2026-07-06 20:55:45] [TASK_5] [INFO] ------------------------------------------------------------
+[2026-07-06 20:55:45] [TASK_5] [INFO] END TASK_5 — completed in 0.0 seconds
+[2026-07-06 20:55:45] [TASK_5] [INFO] ============================================================
+[2026-07-06 20:55:49] [TASK_5] [INFO] ============================================================
+[2026-07-06 20:55:49] [TASK_5] [INFO] START TASK_5: Data Aggregation (group by ticker × quarter)
+[2026-07-06 20:55:49] [TASK_5] [INFO] Timestamp: 2026-07-06T20:55:49.489952
+[2026-07-06 20:55:49] [TASK_5] [INFO] ============================================================
+[2026-07-06 20:55:49] [TASK_5] [INFO] Input: data/prices/all_vn30_prices.csv (93824 rows)
+[2026-07-06 20:55:49] [TASK_5] [INFO] Input: data/news/processed/all_news_processed.csv (34979 rows)
+[2026-07-06 20:55:49] [TASK_5] [INFO] ------------------------------------------------------------
+[2026-07-06 20:55:49] [TASK_5] [INFO] END TASK_5 — completed in 0.0 seconds
+[2026-07-06 20:55:49] [TASK_5] [INFO] ============================================================
+[2026-07-06 20:56:22] [TASK_5] [INFO] ============================================================
+[2026-07-06 20:56:22] [TASK_5] [INFO] START TASK_5: Data Aggregation (group by ticker × quarter)
+[2026-07-06 20:56:22] [TASK_5] [INFO] Timestamp: 2026-07-06T20:56:22.877009
+[2026-07-06 20:56:22] [TASK_5] [INFO] ============================================================
+[2026-07-06 20:56:22] [TASK_5] [INFO] Input: data/prices/all_vn30_prices.csv (93824 rows)
+[2026-07-06 20:56:23] [TASK_5] [INFO] Input: data/news/processed/all_news_processed.csv (34979 rows)
+[2026-07-06 20:56:23] [TASK_5] [INFO] ------------------------------------------------------------
+[2026-07-06 20:56:23] [TASK_5] [INFO] END TASK_5 — completed in 0.0 seconds
+[2026-07-06 20:56:23] [TASK_5] [INFO] ============================================================
+[2026-07-06 20:56:26] [TASK_5] [INFO] ============================================================
+[2026-07-06 20:56:26] [TASK_5] [INFO] START TASK_5: Data Aggregation (group by ticker × quarter)
+[2026-07-06 20:56:26] [TASK_5] [INFO] Timestamp: 2026-07-06T20:56:26.552433
+[2026-07-06 20:56:26] [TASK_5] [INFO] ============================================================
+[2026-07-06 20:56:26] [TASK_5] [INFO] Input: data/prices/all_vn30_prices.csv (93824 rows)
+[2026-07-06 20:56:26] [TASK_5] [INFO] Input: data/news/processed/all_news_processed.csv (34979 rows)
+[2026-07-06 20:56:26] [TASK_5] [INFO] ------------------------------------------------------------
+[2026-07-06 20:56:26] [TASK_5] [INFO] END TASK_5 — completed in 0.0 seconds
+[2026-07-06 20:56:26] [TASK_5] [INFO] ============================================================
+[2026-07-06 21:14:57] [TASK_5] [INFO] ============================================================
+[2026-07-06 21:14:57] [TASK_5] [INFO] START TASK_5: Data Aggregation (group by ticker × quarter)
+[2026-07-06 21:14:57] [TASK_5] [INFO] Timestamp: 2026-07-06T21:14:57.562311
+[2026-07-06 21:14:57] [TASK_5] [INFO] ============================================================
+[2026-07-06 21:14:57] [TASK_5] [INFO] Input: data/prices/all_vn30_prices.csv (93824 rows)
+[2026-07-06 21:15:02] [TASK_5] [INFO] Input: data/news/processed/all_news_processed.csv (35175 rows)
+[2026-07-06 21:15:03] [TASK_5] [INFO] Starting Data Aggregation (TASK 5)...
+[2026-07-06 21:15:11] [TASK_5] [INFO] Loaded 93824 price rows and 35158 news articles.
+[2026-07-06 21:15:16] [TASK_5] [INFO] News aggregation: 1450 (ticker, quarter) pairs → data/aggregated/news_by_quarter.csv
+[2026-07-06 21:15:17] [TASK_5] [INFO] Price aggregation: 1521 (ticker, quarter) pairs → data/aggregated/prices_by_quarter.csv
+[2026-07-06 21:15:21] [TASK_5] [INFO] Master dataset: 1428 rows → data/aggregated/master_dataset.csv
+[2026-07-06 21:15:21] [TASK_5] [INFO] ============================================================
+[2026-07-06 21:15:21] [TASK_5] [INFO] AGGREGATION REPORT
+[2026-07-06 21:15:21] [TASK_5] [INFO] ============================================================
+[2026-07-06 21:15:21] [TASK_5] [INFO] Total (ticker, quarter) pairs: 1428
+[2026-07-06 21:15:21] [TASK_5] [INFO]   Year 2022: 313 pairs
+[2026-07-06 21:15:21] [TASK_5] [INFO]   Year 2023: 319 pairs
+[2026-07-06 21:15:21] [TASK_5] [INFO]   Year 2024: 316 pairs
+[2026-07-06 21:15:21] [TASK_5] [INFO]   Year 2025: 320 pairs
+[2026-07-06 21:15:21] [TASK_5] [INFO]   Year 2026: 160 pairs
+[2026-07-06 21:15:21] [TASK_5] [WARNING] 193 (ticker, quarter) pairs have news_count < 5:
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   ANV 2022Q1 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   ANV 2023Q3 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   ANV 2023Q4 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   ANV 2024Q1 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   ANV 2024Q2 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   ANV 2025Q1 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   BAB 2022Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   BAB 2024Q2 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   BAB 2024Q3 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   BCM 2022Q4 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   BMP 2022Q1 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   BMP 2022Q3 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   BMP 2022Q4 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   BMP 2023Q1 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   BMP 2023Q3 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   BMP 2023Q4 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   BMP 2024Q1 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   BMP 2024Q3 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   BMP 2024Q4 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   BSI 2022Q2 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   BSI 2022Q3 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   BSI 2022Q4 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   BSI 2023Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   BSI 2023Q4 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   BSI 2024Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   BVB 2023Q3 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   BVB 2023Q4 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   BVB 2024Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   BVH 2022Q1 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   BVH 2023Q2 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   BVH 2024Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   CMG 2025Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   CSV 2022Q1 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   CSV 2022Q3 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   CSV 2022Q4 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   CSV 2023Q1 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   CSV 2023Q4 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   CSV 2026Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   DCM 2022Q1 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   DCM 2022Q3 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   DCM 2023Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   DCM 2023Q2 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   DCM 2023Q3 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   DCM 2024Q3 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   DGW 2022Q1 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   DGW 2023Q2 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   DGW 2023Q3 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   DGW 2024Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   DPM 2022Q1 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   DPM 2022Q2 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   DPM 2023Q4 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   DXG 2022Q2 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   DXG 2023Q3 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   ELC 2022Q3 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   ELC 2022Q4 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   ELC 2023Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   ELC 2023Q2 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   ELC 2023Q3 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   ELC 2024Q3 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   ELC 2024Q4 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   EVF 2022Q1 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   EVF 2024Q3 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   FRT 2022Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   FRT 2022Q2 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   FRT 2022Q3 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   FRT 2023Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   FRT 2023Q2 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   FRT 2023Q3 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   FRT 2023Q4 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   FRT 2024Q2 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   FRT 2024Q3 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   GAS 2023Q4 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   GEX 2022Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   GMD 2022Q4 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   GMD 2023Q1 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   GMD 2023Q4 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   GMD 2024Q3 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   GVR 2023Q1 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   GVR 2023Q3 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   HAH 2022Q1 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   HAH 2023Q4 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   HDG 2022Q4 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   HDG 2023Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   HDG 2023Q3 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   HDG 2023Q4 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   HDG 2024Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   HDG 2024Q2 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   HDG 2024Q4 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   HDG 2025Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   HSG 2022Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   KDH 2022Q1 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   KDH 2023Q4 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   KLB 2022Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   KLB 2022Q3 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   KLB 2022Q4 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   KLB 2023Q2 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   KLB 2023Q3 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   KLB 2023Q4 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   KLB 2024Q1 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   KLB 2024Q2 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   MCH 2022Q1 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   MCH 2022Q2 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   MCH 2022Q4 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   MCH 2023Q1 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   MCH 2023Q2 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   MCH 2023Q4 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   MCH 2024Q1 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   MSB 2022Q1 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   NAB 2022Q1 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   NKG 2022Q1 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   NKG 2022Q3 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   NKG 2022Q4 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   NKG 2023Q1 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   NKG 2023Q4 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   NKG 2024Q1 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   NLG 2022Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   NLG 2022Q2 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   NLG 2022Q3 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   NLG 2023Q1 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   NLG 2023Q3 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   NT2 2022Q1 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   NT2 2022Q3 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   NT2 2023Q2 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   NT2 2023Q3 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   NT2 2024Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   NT2 2024Q2 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   NT2 2024Q4 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   NT2 2025Q1 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   NT2 2026Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PDR 2024Q3 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PGB 2022Q1 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PGB 2022Q2 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PGB 2022Q3 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PGB 2023Q3 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PHR 2022Q1 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PHR 2022Q3 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PHR 2023Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PHR 2023Q4 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PHR 2024Q3 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PHR 2024Q4 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PHR 2025Q1 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PHR 2025Q2 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PHR 2025Q4 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PLX 2023Q4 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   POW 2022Q4 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PPC 2022Q1 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PPC 2022Q3 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PPC 2023Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PPC 2024Q4 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PPC 2025Q1 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PPC 2025Q2 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PVT 2022Q1 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PVT 2022Q2 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PVT 2023Q1 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PVT 2023Q2 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PVT 2023Q3 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PVT 2023Q4 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   PVT 2024Q4 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   REE 2022Q1 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   REE 2022Q3 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   REE 2022Q4 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   REE 2023Q3 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   REE 2023Q4 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   REE 2024Q4 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   SAB 2022Q3 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   SCR 2023Q1 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   SCR 2023Q2 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   SCR 2023Q3 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   SCR 2023Q4 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   SCR 2024Q1 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   TPB 2022Q1 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   VCG 2022Q1 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   VCG 2022Q3 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   VCG 2022Q4 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   VCG 2024Q1 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   VCG 2024Q3 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   VCG 2025Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   VCI 2023Q4 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   VGC 2022Q1 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   VGC 2022Q4 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   VGC 2023Q4 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   VGC 2024Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   VHC 2022Q1 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   VHC 2022Q4 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   VHM 2022Q1 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   VJC 2023Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   VND 2022Q1 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   VRE 2022Q1 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   VRE 2022Q4 — news_count=2
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   VRE 2024Q3 — news_count=4
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   VRE 2024Q4 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   VRE 2026Q1 — news_count=3
+[2026-07-06 21:15:21] [TASK_5] [WARNING]   VSC 2023Q4 — news_count=1
+[2026-07-06 21:15:21] [TASK_5] [INFO] ============================================================
+[2026-07-06 21:15:24] [TASK_5] [INFO] Coverage heatmap saved to reports/coverage_heatmap.png
+[2026-07-06 21:15:24] [TASK_5] [INFO] TASK 5 complete.
+[2026-07-06 21:15:24] [TASK_5] [INFO] ------------------------------------------------------------
+[2026-07-06 21:15:24] [TASK_5] [INFO] END TASK_5 — completed in 22.5 seconds
+[2026-07-06 21:15:26] [TASK_5] [INFO] Output: data/aggregated/news_by_quarter.csv (1450 rows)
+[2026-07-06 21:15:26] [TASK_5] [INFO] Output: data/aggregated/prices_by_quarter.csv (1521 rows)
+[2026-07-06 21:15:28] [TASK_5] [INFO] Output: data/aggregated/master_dataset.csv (1428 rows)
+[2026-07-06 21:15:28] [TASK_5] [INFO] ============================================================
+[2026-07-06 23:10:48] [TASK_5] [INFO] ============================================================
+[2026-07-06 23:10:48] [TASK_5] [INFO] START TASK_5: Data Aggregation (group by ticker × quarter)
+[2026-07-06 23:10:48] [TASK_5] [INFO] Timestamp: 2026-07-06T23:10:48.230323
+[2026-07-06 23:10:48] [TASK_5] [INFO] ============================================================
+[2026-07-06 23:10:48] [TASK_5] [INFO] Input: data/prices/all_vn30_prices.csv (93824 rows)
+[2026-07-06 23:10:53] [TASK_5] [INFO] Input: data/news/processed/all_news_processed.csv (35175 rows)
+[2026-07-06 23:10:53] [TASK_5] [INFO] ------------------------------------------------------------
+[2026-07-06 23:10:53] [TASK_5] [INFO] END TASK_5 — completed in 0.0 seconds
+[2026-07-06 23:10:53] [TASK_5] [INFO] ============================================================
+[2026-07-06 23:11:07] [TASK_5] [INFO] ============================================================
+[2026-07-06 23:11:07] [TASK_5] [INFO] START TASK_5: Data Aggregation (group by ticker × quarter)
+[2026-07-06 23:11:07] [TASK_5] [INFO] Timestamp: 2026-07-06T23:11:07.176464
+[2026-07-06 23:11:07] [TASK_5] [INFO] ============================================================
+[2026-07-06 23:11:07] [TASK_5] [INFO] Input: data/prices/all_vn30_prices.csv (93824 rows)
+[2026-07-06 23:11:12] [TASK_5] [INFO] Input: data/news/processed/all_news_processed.csv (35175 rows)
+[2026-07-06 23:11:12] [TASK_5] [INFO] ------------------------------------------------------------
+[2026-07-06 23:11:12] [TASK_5] [INFO] END TASK_5 — completed in 0.0 seconds
+[2026-07-06 23:11:12] [TASK_5] [INFO] ============================================================
+[2026-07-06 23:12:06] [TASK_5] [INFO] ============================================================
+[2026-07-06 23:12:06] [TASK_5] [INFO] START TASK_5: Data Aggregation (group by ticker × quarter)
+[2026-07-06 23:12:06] [TASK_5] [INFO] Timestamp: 2026-07-06T23:12:06.954336
+[2026-07-06 23:12:06] [TASK_5] [INFO] ============================================================
+[2026-07-06 23:12:06] [TASK_5] [INFO] Input: data/prices/all_vn30_prices.csv (93824 rows)
+[2026-07-06 23:12:12] [TASK_5] [INFO] Input: data/news/processed/all_news_processed.csv (35175 rows)
+[2026-07-06 23:12:12] [TASK_5] [INFO] ------------------------------------------------------------
+[2026-07-06 23:12:12] [TASK_5] [INFO] END TASK_5 — completed in 0.0 seconds
+[2026-07-06 23:12:12] [TASK_5] [INFO] ============================================================
+[2026-07-06 23:12:25] [TASK_5] [INFO] ============================================================
+[2026-07-06 23:12:25] [TASK_5] [INFO] START TASK_5: Data Aggregation (group by ticker × quarter)
+[2026-07-06 23:12:25] [TASK_5] [INFO] Timestamp: 2026-07-06T23:12:25.151816
+[2026-07-06 23:12:25] [TASK_5] [INFO] ============================================================
+[2026-07-06 23:12:25] [TASK_5] [INFO] Input: data/prices/all_vn30_prices.csv (93824 rows)
+[2026-07-06 23:12:30] [TASK_5] [INFO] Input: data/news/processed/all_news_processed.csv (35175 rows)
+[2026-07-06 23:12:30] [TASK_5] [INFO] ------------------------------------------------------------
+[2026-07-06 23:12:30] [TASK_5] [INFO] END TASK_5 — completed in 0.0 seconds
+[2026-07-06 23:12:30] [TASK_5] [INFO] ============================================================

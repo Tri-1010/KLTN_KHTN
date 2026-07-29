@@ -1,0 +1,1061 @@
+segment_type,segment_name,n_samples,keyword,direction,n_occurrences,n_excluded,chi_statistic,chi_p_raw,chi_p_adj,chi_test_used,mw_statistic,mw_p_raw,mw_p_adj,logit_coef,logit_ci_lower,logit_ci_upper,logit_p_raw,logit_p_adj,significant_chi,significant_mw,significant_logit,significant_any
+sector,Banking,425,lợi nhuận tăng,positive,17,0,0.7770891965459672,0.3780328478929389,1.0,chi_square,23041.0,0.2664754299650953,0.5812036498075347,,,,,,False,False,False,False
+sector,Banking,425,tăng trưởng mạnh,positive,12,0,0.0,1.0,1.0,chi_square,22526.0,0.9199469954548617,0.9490576406314507,,,,,,False,False,False,False
+sector,Banking,425,vượt kế hoạch,positive,10,0,0.6261682242990654,0.5347993353933245,1.0,fisher_exact,22323.0,0.4711085861285622,0.7328355784222078,,,,,,False,False,False,False
+sector,Banking,425,kỷ lục,positive,16,0,0.4345644483208492,0.5097577003531089,1.0,chi_square,22925.5,0.3857655351628868,0.6231597106477402,,,,,,False,False,False,False
+sector,Banking,425,tăng trưởng,positive,130,0,0.1465526577733581,0.7018517733130524,1.0,chi_square,22877.0,0.7614258013461083,0.8494390359302239,,,,,,False,False,False,False
+sector,Banking,425,lãi ròng,positive,2,0,0.0,0.23663706992230854,0.903523357885178,fisher_exact,22345.0,0.14714756225934666,0.5812036498075347,,,,,,False,False,False,False
+sector,Banking,425,kết quả tích cực,positive,1,0,inf,1.0,1.0,fisher_exact,22666.5,0.33217778678993615,0.5812036498075347,,,,,,False,False,False,False
+sector,Banking,425,lãi lớn,positive,3,0,0.47235023041474655,0.6145991451578623,1.0,fisher_exact,22447.5,0.5309338864926167,0.7399891335297363,,,,,,False,False,False,False
+sector,Banking,425,lãi đậm,positive,2,0,0.0,0.23663706992230854,0.903523357885178,fisher_exact,22345.0,0.14714756225934666,0.5812036498075347,,,,,,False,False,False,False
+sector,Banking,425,báo lãi,positive,35,0,0.0372971248270412,0.8468613595101084,1.0,chi_square,22788.5,0.7092291344076473,0.8274339901422553,,,,,,False,False,False,False
+sector,Banking,425,lợi nhuận kỷ lục,positive,1,0,0.0,0.48705882352941177,1.0,fisher_exact,22454.0,0.30700876175742153,0.5812036498075347,,,,,,False,False,False,False
+sector,Banking,425,lãi kỷ lục,positive,5,0,3.850467289719626,0.37288644472764343,1.0,fisher_exact,22869.0,0.19622443480227947,0.5812036498075347,,,,,,False,False,False,False
+sector,Banking,425,bứt phá,positive,25,0,1.2186104601560075,0.2696335222269608,0.9437173277943628,chi_square,23242.5,0.18832858348652826,0.5812036498075347,,,,,,False,False,False,False
+sector,Banking,425,tăng vọt,positive,3,0,1.9074074074074074,1.0,1.0,fisher_exact,22660.5,0.5971464592552752,0.7399891335297363,,,,,,False,False,False,False
+sector,Banking,425,tăng mạnh,positive,22,0,0.008893578692496542,0.9248662647066368,1.0,chi_square,22706.5,0.7685400801273454,0.8494390359302239,,,,,,False,False,False,False
+sector,Banking,425,khởi sắc,positive,3,0,1.9074074074074074,1.0,1.0,fisher_exact,22660.0,0.5990388223812151,0.7399891335297363,,,,,,False,False,False,False
+sector,Banking,425,phục hồi,positive,4,0,2.874418604651163,0.6237318668365861,1.0,fisher_exact,22763.0,0.3459545534568659,0.5812036498075347,,,,,,False,False,False,False
+sector,Banking,425,lập đỉnh,positive,3,0,1.9074074074074074,1.0,1.0,fisher_exact,22660.0,0.5990388223812151,0.7399891335297363,,,,,,False,False,False,False
+sector,Banking,425,hoàn thành kế hoạch,positive,5,0,inf,0.061448009600662205,0.5161632806455626,fisher_exact,23080.5,0.028734479365893534,0.3017120333418821,,,,,,False,False,False,False
+sector,Banking,425,chia cổ tức,positive,62,0,5.718013778419349,0.01679171545259344,0.3526260245044623,chi_square,24482.0,0.01354998393912653,0.28454966272165716,,,,,,False,False,False,False
+sector,Banking,425,mua lại cổ phiếu,positive,4,0,0.9490740740740741,1.0,1.0,fisher_exact,22554.0,0.9679694290191438,0.9679694290191438,,,,,,False,False,False,False
+sector,Banking,425,tăng vốn điều lệ,positive,119,0,4.180746511179635,0.04088568789142468,0.5161632806455626,chi_square,24815.0,0.02464106221739082,0.3017120333418821,,,,,,False,False,False,False
+sector,Banking,425,cổ tức tiền mặt,positive,16,0,0.4345644483208492,0.5097577003531089,1.0,chi_square,22957.0,0.3457866952273908,0.5812036498075347,,,,,,False,False,False,False
+sector,Banking,425,trả nợ,positive,14,0,1.5896645544716703,0.20737406616980192,0.903523357885178,chi_square,23150.0,0.1339628761685206,0.5812036498075347,,,,,,False,False,False,False
+sector,Banking,425,hệ số an toàn vốn,positive,3,0,1.9074074074074074,1.0,1.0,fisher_exact,22661.0,0.5952581809383624,0.7399891335297363,,,,,,False,False,False,False
+sector,Banking,425,ký kết hợp đồng,positive,28,0,0.11380504394978895,0.7358530478944425,1.0,chi_square,22266.0,0.5859104438453722,0.7399891335297363,,,,,,False,False,False,False
+sector,Banking,425,mở rộng thị trường,positive,1,0,inf,1.0,1.0,fisher_exact,22666.5,0.33217778678993615,0.5812036498075347,,,,,,False,False,False,False
+sector,Banking,425,hợp tác chiến lược,positive,10,0,0.39867109634551495,0.21070320455006397,0.903523357885178,fisher_exact,22119.5,0.1825230867531482,0.5812036498075347,,,,,,False,False,False,False
+sector,Banking,425,sụt giảm,negative,2,0,0.0,0.23663706992230854,0.903523357885178,fisher_exact,22345.0,0.14714756225934666,0.5812036498075347,,,,,,False,False,False,False
+sector,Banking,425,lao dốc,negative,1,0,inf,1.0,1.0,fisher_exact,22666.5,0.33217778678993615,0.5812036498075347,,,,,,False,False,False,False
+sector,Banking,425,giảm sâu,negative,1,0,inf,1.0,1.0,fisher_exact,22666.5,0.33217778678993615,0.5812036498075347,,,,,,False,False,False,False
+sector,Banking,425,giảm mạnh,negative,8,0,0.9485981308411215,1.0,1.0,fisher_exact,22535.0,0.9264610301402256,0.9490576406314507,,,,,,False,False,False,False
+sector,Banking,425,không chia cổ tức,negative,1,0,inf,1.0,1.0,fisher_exact,22666.5,0.33217778678993615,0.5812036498075347,,,,,,False,False,False,False
+sector,Banking,425,nợ xấu,negative,51,0,3.5848970525625896,0.058307029337944294,0.5161632806455626,chi_square,23980.0,0.047370624048595926,0.3979132420082058,,,,,,False,False,False,False
+sector,Banking,425,đóng cửa,negative,1,0,inf,1.0,1.0,fisher_exact,22666.5,0.33217778678993615,0.5812036498075347,,,,,,False,False,False,False
+sector,Banking,425,vi phạm,negative,12,0,0.0,1.0,1.0,chi_square,22528.0,0.92431997255206,0.9490576406314507,,,,,,False,False,False,False
+sector,Banking,425,khởi tố,negative,1,0,inf,1.0,1.0,fisher_exact,22666.5,0.33217778678993615,0.5812036498075347,,,,,,False,False,False,False
+sector,Banking,425,đại hội cổ đông,neutral,20,0,2.2062782679006316,0.13744991715549965,0.903523357885178,chi_square,23340.0,0.09452824209050664,0.5812036498075347,,,,,,False,False,False,False
+sector,Banking,425,thay CEO,neutral,1,0,inf,1.0,1.0,fisher_exact,22666.5,0.33217778678993615,0.5812036498075347,,,,,,False,False,False,False
+sector,Banking,425,sáp nhập,neutral,3,0,0.47235023041474655,0.6145991451578623,1.0,fisher_exact,22449.5,0.5381031003344274,0.7399891335297363,,,,,,False,False,False,False
+sector,Banking,425,mua lại,neutral,51,0,0.010309936890511299,0.9191235053930707,1.0,chi_square,22867.0,0.6709304597352101,0.8051165516822522,,,,,,False,False,False,False
+sector,Banking,425,thoái vốn,neutral,8,0,inf,0.007447644675529781,0.31280107637225085,fisher_exact,23391.0,0.005480613083401579,0.23018574950286633,,,,,,False,False,False,False
+sector,Banking,425,doanh thu tăng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,lợi nhuận sau thuế tăng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,lãi khủng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,doanh thu kỷ lục,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,lợi nhuận cải thiện,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,cổ tức cao,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,phát hành thưởng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,giảm nợ,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,cải thiện tài chính,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,dòng tiền dương,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,tiền mặt dồi dào,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,dự án mới,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,đầu tư mới,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,thắng thầu,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,xuất khẩu tăng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,lợi nhuận giảm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,doanh thu giảm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,lợi nhuận âm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,thua lỗ,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,lỗ ròng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,dưới kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,kết quả tiêu cực,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,lợi nhuận thấp hơn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,báo lỗ,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,lỗ nặng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,lỗ lớn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,lỗ kỷ lục,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,lỗ lũy kế,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,tụt dốc,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,kinh doanh sa sút,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,âm vốn chủ sở hữu,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,lợi nhuận không tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,doanh thu không tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,không tăng trưởng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,tăng trưởng chậm lại,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,không hoàn thành kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,không đạt kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,chưa có lãi,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,hủy cổ tức,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,giảm cổ tức,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,phát hành pha loãng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,chào bán giá thấp,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,nợ vay tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,áp lực tài chính,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,nợ quá hạn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,hệ số nợ cao,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,thiếu thanh khoản,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,dòng tiền âm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,hủy hợp đồng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,dự án trì hoãn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,thu hẹp hoạt động,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,dừng dự án,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,bị phạt,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,bị thanh tra,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,bị kiểm toán từ chối,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,cảnh báo,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,đình chỉ,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,điều tra,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,tranh chấp pháp lý,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,bị kiện,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,họp HĐQT,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,thay đổi lãnh đạo,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,phát hành cổ phiếu mới,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Banking,425,niêm yết thêm,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,lợi nhuận tăng,positive,7,0,0.4358974358974359,0.4491396643011202,1.0,fisher_exact,3491.0,0.32514246299581273,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,doanh thu tăng,positive,7,0,0.8376623376623377,1.0,1.0,fisher_exact,3575.0,0.8241728505173516,0.9118508133383464,,,,,,False,False,False,False
+sector,Consumer,170,tăng trưởng mạnh,positive,2,0,1.1265822784810127,1.0,1.0,fisher_exact,3604.5,0.9466902796798203,0.9652528341833463,,,,,,False,False,False,False
+sector,Consumer,170,vượt kế hoạch,positive,3,0,2.282051282051282,0.6017105066878824,1.0,fisher_exact,3650.0,0.4980256995723461,0.7121857514088983,,,,,,False,False,False,False
+sector,Consumer,170,kỷ lục,positive,22,0,0.0,1.0,1.0,chi_square,3548.0,0.7828008500235724,0.8849053087222992,,,,,,False,False,False,False
+sector,Consumer,170,tăng trưởng,positive,44,0,0.0,1.0,1.0,chi_square,3591.0,0.97250631315781,0.97250631315781,,,,,,False,False,False,False
+sector,Consumer,170,lãi ròng,positive,11,0,0.04083682739343117,0.8398532139437356,1.0,chi_square,3665.5,0.6341532728681409,0.7759191914148279,,,,,,False,False,False,False
+sector,Consumer,170,kết quả tích cực,positive,1,0,inf,0.47058823529411753,1.0,fisher_exact,3645.0,0.29423562602358366,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,lãi khủng,positive,1,0,inf,0.47058823529411753,1.0,fisher_exact,3645.0,0.29423562602358366,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,lãi lớn,positive,1,0,0.0,1.0,1.0,fisher_exact,3560.0,0.3518411865497372,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,lãi đậm,positive,1,0,0.0,1.0,1.0,fisher_exact,3560.0,0.3518411865497372,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,báo lãi,positive,27,0,0.8599617974617966,0.3537493825072131,1.0,chi_square,3336.5,0.19687435895427685,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,lợi nhuận kỷ lục,positive,1,0,0.0,1.0,1.0,fisher_exact,3560.0,0.3518411865497372,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,doanh thu kỷ lục,positive,1,0,0.0,1.0,1.0,fisher_exact,3560.0,0.3518411865497372,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,lãi kỷ lục,positive,10,0,2.780821917808219,0.19306886422233793,1.0,fisher_exact,3796.5,0.1334814555699219,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,bứt phá,positive,6,0,2.3157894736842106,0.42189931803029646,1.0,fisher_exact,3701.0,0.32635240568640944,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,tăng vọt,positive,1,0,inf,0.47058823529411753,1.0,fisher_exact,3645.0,0.29423562602358366,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,tăng mạnh,positive,8,0,1.9333333333333333,0.47722257861693773,1.0,fisher_exact,3702.5,0.38548237800426166,0.6264088642569252,,,,,,False,False,False,False
+sector,Consumer,170,khởi sắc,positive,2,0,1.1265822784810127,1.0,1.0,fisher_exact,3605.5,0.9333907522030012,0.9652528341833463,,,,,,False,False,False,False
+sector,Consumer,170,phục hồi,positive,9,0,0.8947368421052632,1.0,1.0,fisher_exact,3587.0,0.9198912599012491,0.9652528341833463,,,,,,False,False,False,False
+sector,Consumer,170,lập đỉnh,positive,5,0,1.7142857142857142,0.66706243446771,1.0,fisher_exact,3656.0,0.5538601916644796,0.752940808946625,,,,,,False,False,False,False
+sector,Consumer,170,hoàn thành kế hoạch,positive,3,0,2.282051282051282,0.6017105066878824,1.0,fisher_exact,3649.0,0.5067475538871007,0.7121857514088983,,,,,,False,False,False,False
+sector,Consumer,170,chia cổ tức,positive,17,0,0.06558641975308642,0.7978748132874031,1.0,chi_square,3684.5,0.6144337288457545,0.7759191914148279,,,,,,False,False,False,False
+sector,Consumer,170,cổ tức cao,positive,1,0,inf,0.47058823529411753,1.0,fisher_exact,3645.0,0.29423562602358366,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,mua lại cổ phiếu,positive,15,0,3.475403225806452,0.062287539804194825,1.0,chi_square,3926.0,0.03887061417303913,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,tăng vốn điều lệ,positive,24,0,0.626833222349062,0.42851929360810637,1.0,chi_square,3395.5,0.29283314097149016,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,cổ tức tiền mặt,positive,11,0,0.0,1.0,1.0,chi_square,3584.0,0.9096493013920747,0.9652528341833463,,,,,,False,False,False,False
+sector,Consumer,170,giảm nợ,positive,2,0,0.0,0.4987817612252001,1.0,fisher_exact,3520.0,0.18387623341467563,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,trả nợ,positive,2,0,0.0,0.4987817612252001,1.0,fisher_exact,3520.0,0.18387623341467563,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,ký kết hợp đồng,positive,9,0,0.5454545454545454,0.503038747574126,1.0,fisher_exact,3498.0,0.4141375892340492,0.6525804436415321,,,,,,False,False,False,False
+sector,Consumer,170,mở rộng thị trường,positive,1,0,inf,0.47058823529411753,1.0,fisher_exact,3645.0,0.29423562602358366,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,đầu tư mới,positive,1,0,0.0,1.0,1.0,fisher_exact,3560.0,0.3518411865497372,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,hợp tác chiến lược,positive,1,0,0.0,1.0,1.0,fisher_exact,3560.0,0.3518411865497372,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,lợi nhuận giảm,negative,5,0,0.7435897435897436,1.0,1.0,fisher_exact,3568.5,0.7409005540316411,0.856151751325452,,,,,,False,False,False,False
+sector,Consumer,170,thua lỗ,negative,1,0,inf,0.47058823529411753,1.0,fisher_exact,3645.0,0.29423562602358366,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,sụt giảm,negative,6,0,inf,0.009799949792395799,0.5095973892045815,fisher_exact,3870.0,0.0084896602691407,0.4414623339953164,,,,,,False,False,False,False
+sector,Consumer,170,lỗ lớn,negative,1,0,0.0,1.0,1.0,fisher_exact,3560.0,0.3518411865497372,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,lỗ lũy kế,negative,1,0,inf,0.47058823529411753,1.0,fisher_exact,3645.0,0.29423562602358366,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,lao dốc,negative,3,0,2.282051282051282,0.6017105066878824,1.0,fisher_exact,3650.0,0.4980256995723461,0.7121857514088983,,,,,,False,False,False,False
+sector,Consumer,170,giảm sâu,negative,4,0,3.4675324675324677,0.3433390788906002,1.0,fisher_exact,3696.5,0.2536838773581592,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,giảm mạnh,negative,7,0,7.216216216216216,0.05246808926053023,1.0,fisher_exact,3830.0,0.03741218216563867,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,không chia cổ tức,negative,1,0,inf,0.47058823529411753,1.0,fisher_exact,3645.0,0.29423562602358366,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,đóng cửa,negative,3,0,0.5569620253164557,1.0,1.0,fisher_exact,3565.5,0.6416254852084153,0.7759191914148279,,,,,,False,False,False,False
+sector,Consumer,170,bị phạt,negative,3,0,0.5569620253164557,1.0,1.0,fisher_exact,3564.0,0.6269989611134761,0.7759191914148279,,,,,,False,False,False,False
+sector,Consumer,170,vi phạm,negative,10,0,0.7368421052631579,0.750928705938539,1.0,fisher_exact,3541.5,0.6570200868736185,0.7764782844870036,,,,,,False,False,False,False
+sector,Consumer,170,cảnh báo,negative,1,0,inf,0.47058823529411753,1.0,fisher_exact,3645.0,0.29423562602358366,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,đại hội cổ đông,neutral,3,0,inf,0.10213316095669038,1.0,fisher_exact,3735.0,0.06559898813930502,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,họp HĐQT,neutral,7,0,1.5263157894736843,0.707775309720716,1.0,fisher_exact,3664.0,0.5647056067099687,0.752940808946625,,,,,,False,False,False,False
+sector,Consumer,170,thay CEO,neutral,1,0,inf,0.47058823529411753,1.0,fisher_exact,3645.0,0.29423562602358366,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,mua lại,neutral,14,0,1.1419064153439151,0.28524985251153095,1.0,chi_square,3804.5,0.18157180970108944,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,niêm yết thêm,neutral,1,0,inf,0.47058823529411753,1.0,fisher_exact,3645.0,0.29423562602358366,0.5901852161479463,,,,,,False,False,False,False
+sector,Consumer,170,thoái vốn,neutral,3,0,2.282051282051282,0.6017105066878824,1.0,fisher_exact,3650.0,0.4980256995723461,0.7121857514088983,,,,,,False,False,False,False
+sector,Consumer,170,lợi nhuận sau thuế tăng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,lợi nhuận cải thiện,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,phát hành thưởng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,cải thiện tài chính,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,hệ số an toàn vốn,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,dòng tiền dương,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,tiền mặt dồi dào,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,dự án mới,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,thắng thầu,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,xuất khẩu tăng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,doanh thu giảm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,lợi nhuận âm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,lỗ ròng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,dưới kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,kết quả tiêu cực,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,lợi nhuận thấp hơn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,báo lỗ,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,lỗ nặng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,lỗ kỷ lục,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,tụt dốc,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,kinh doanh sa sút,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,âm vốn chủ sở hữu,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,lợi nhuận không tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,doanh thu không tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,không tăng trưởng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,tăng trưởng chậm lại,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,không hoàn thành kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,không đạt kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,chưa có lãi,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,hủy cổ tức,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,giảm cổ tức,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,phát hành pha loãng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,chào bán giá thấp,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,nợ xấu,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,nợ vay tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,áp lực tài chính,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,nợ quá hạn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,hệ số nợ cao,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,thiếu thanh khoản,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,dòng tiền âm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,hủy hợp đồng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,dự án trì hoãn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,thu hẹp hoạt động,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,dừng dự án,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,bị thanh tra,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,bị kiểm toán từ chối,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,đình chỉ,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,khởi tố,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,điều tra,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,tranh chấp pháp lý,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,bị kiện,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,thay đổi lãnh đạo,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,sáp nhập,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Consumer,170,phát hành cổ phiếu mới,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,lợi nhuận tăng,positive,1,0,inf,0.46564885496183217,1.0,fisher_exact,2170.0,0.29100016969831155,0.6546779977567802,,,,,,False,False,False,False
+sector,Energy,131,doanh thu tăng,positive,2,0,1.15,1.0,1.0,fisher_exact,2140.0,0.9221199474603667,0.9393885330021223,,,,,,False,False,False,False
+sector,Energy,131,tăng trưởng mạnh,positive,1,0,0.0,1.0,1.0,fisher_exact,2104.5,0.358514141628713,0.6546779977567802,,,,,,False,False,False,False
+sector,Energy,131,vượt kế hoạch,positive,3,0,0.5666666666666667,1.0,1.0,fisher_exact,2110.0,0.6626420654526229,0.8697177109065677,,,,,,False,False,False,False
+sector,Energy,131,kỷ lục,positive,6,0,1.1551724137931034,1.0,1.0,fisher_exact,2149.0,0.8634662429728801,0.9393885330021223,,,,,,False,False,False,False
+sector,Energy,131,tăng trưởng,positive,13,0,0.10512211114809064,0.7457673921028145,1.0,chi_square,2069.5,0.5631944924836227,0.8156609891142123,,,,,,False,False,False,False
+sector,Energy,131,lãi ròng,positive,3,0,2.3389830508474576,0.5976593972333365,1.0,fisher_exact,2175.5,0.47629462248725707,0.7581603599134906,,,,,,False,False,False,False
+sector,Energy,131,lãi lớn,positive,2,0,1.15,1.0,1.0,fisher_exact,2140.0,0.9221199474603667,0.9393885330021223,,,,,,False,False,False,False
+sector,Energy,131,lãi đậm,positive,1,0,inf,0.46564885496183217,1.0,fisher_exact,2170.0,0.29100016969831155,0.6546779977567802,,,,,,False,False,False,False
+sector,Energy,131,báo lãi,positive,19,0,0.02984658110440029,0.8628387976002605,1.0,chi_square,2065.5,0.6031620648223404,0.8444268907512765,,,,,,False,False,False,False
+sector,Energy,131,doanh thu kỷ lục,positive,2,0,1.15,1.0,1.0,fisher_exact,2139.0,0.9393885330021223,0.9393885330021223,,,,,,False,False,False,False
+sector,Energy,131,lãi kỷ lục,positive,5,0,0.275,0.3713428081770884,1.0,fisher_exact,2047.0,0.22389243274137027,0.6546779977567802,,,,,,False,False,False,False
+sector,Energy,131,bứt phá,positive,3,0,2.3389830508474576,0.5976593972333365,1.0,fisher_exact,2175.5,0.47629462248725707,0.7581603599134906,,,,,,False,False,False,False
+sector,Energy,131,tăng vọt,positive,1,0,0.0,1.0,1.0,fisher_exact,2104.5,0.358514141628713,0.6546779977567802,,,,,,False,False,False,False
+sector,Energy,131,tăng mạnh,positive,5,0,4.842105263157895,0.1834056581806851,1.0,fisher_exact,2246.5,0.12285724822148782,0.6546779977567802,,,,,,False,False,False,False
+sector,Energy,131,khởi sắc,positive,1,0,0.0,1.0,1.0,fisher_exact,2104.5,0.358514141628713,0.6546779977567802,,,,,,False,False,False,False
+sector,Energy,131,lập đỉnh,positive,1,0,0.0,1.0,1.0,fisher_exact,2104.5,0.358514141628713,0.6546779977567802,,,,,,False,False,False,False
+sector,Energy,131,hoàn thành kế hoạch,positive,1,0,inf,0.46564885496183217,1.0,fisher_exact,2170.0,0.29100016969831155,0.6546779977567802,,,,,,False,False,False,False
+sector,Energy,131,chia cổ tức,positive,6,0,6.160714285714286,0.09649837824924072,1.0,fisher_exact,2282.0,0.062024275199087216,0.6546779977567802,,,,,,False,False,False,False
+sector,Energy,131,tăng vốn điều lệ,positive,10,0,0.7485380116959064,0.7503531822412921,1.0,fisher_exact,2097.0,0.707054049222399,0.8998869717375988,,,,,,False,False,False,False
+sector,Energy,131,cổ tức tiền mặt,positive,4,0,1.152542372881356,1.0,1.0,fisher_exact,2144.0,0.8953117912299917,0.9393885330021223,,,,,,False,False,False,False
+sector,Energy,131,ký kết hợp đồng,positive,3,0,0.0,0.2477980035231943,1.0,fisher_exact,2043.5,0.10514097415209528,0.6546779977567802,,,,,,False,False,False,False
+sector,Energy,131,hợp tác chiến lược,positive,1,0,0.0,1.0,1.0,fisher_exact,2104.5,0.358514141628713,0.6546779977567802,,,,,,False,False,False,False
+sector,Energy,131,doanh thu giảm,negative,2,0,inf,0.21491485613623018,1.0,fisher_exact,2205.0,0.13106747741323688,0.6546779977567802,,,,,,False,False,False,False
+sector,Energy,131,sụt giảm,negative,4,0,3.5689655172413794,0.33781442461319966,1.0,fisher_exact,2208.0,0.26171329962802814,0.6546779977567802,,,,,,False,False,False,False
+sector,Energy,131,lỗ lớn,negative,1,0,inf,0.46564885496183217,1.0,fisher_exact,2170.0,0.29100016969831155,0.6546779977567802,,,,,,False,False,False,False
+sector,Energy,131,lao dốc,negative,2,0,1.15,1.0,1.0,fisher_exact,2140.0,0.9221199474603667,0.9393885330021223,,,,,,False,False,False,False
+sector,Energy,131,giảm sâu,negative,2,0,0.0,0.49853200234879624,1.0,fisher_exact,2074.0,0.18871890258398427,0.6546779977567802,,,,,,False,False,False,False
+sector,Energy,131,giảm mạnh,negative,3,0,2.3389830508474576,0.5976593972333365,1.0,fisher_exact,2174.5,0.48738880280152974,0.7581603599134906,,,,,,False,False,False,False
+sector,Energy,131,không đạt kế hoạch,negative,1,0,inf,0.46564885496183217,1.0,fisher_exact,2170.0,0.29100016969831155,0.6546779977567802,,,,,,False,False,False,False
+sector,Energy,131,không chia cổ tức,negative,2,0,inf,0.21491485613623018,1.0,fisher_exact,2205.0,0.13106747741323688,0.6546779977567802,,,,,,False,False,False,False
+sector,Energy,131,nợ xấu,negative,2,0,1.15,1.0,1.0,fisher_exact,2140.0,0.9221199474603667,0.9393885330021223,,,,,,False,False,False,False
+sector,Energy,131,bị phạt,negative,2,0,1.15,1.0,1.0,fisher_exact,2140.0,0.9221199474603667,0.9393885330021223,,,,,,False,False,False,False
+sector,Energy,131,vi phạm,negative,9,0,0.5517241379310345,0.5020999272611416,1.0,fisher_exact,2059.0,0.426928259028604,0.7471244533000571,,,,,,False,False,False,False
+sector,Energy,131,bị kiểm toán từ chối,negative,1,0,inf,0.46564885496183217,1.0,fisher_exact,2170.0,0.29100016969831155,0.6546779977567802,,,,,,False,False,False,False
+sector,Energy,131,cảnh báo,negative,5,0,1.7586206896551724,0.6633961492601732,1.0,fisher_exact,2179.0,0.5454090792592647,0.8156609891142123,,,,,,False,False,False,False
+sector,Energy,131,đình chỉ,negative,1,0,inf,0.46564885496183217,1.0,fisher_exact,2170.0,0.29100016969831155,0.6546779977567802,,,,,,False,False,False,False
+sector,Energy,131,khởi tố,negative,1,0,0.0,1.0,1.0,fisher_exact,2104.5,0.358514141628713,0.6546779977567802,,,,,,False,False,False,False
+sector,Energy,131,đại hội cổ đông,neutral,1,0,0.0,1.0,1.0,fisher_exact,2104.5,0.358514141628713,0.6546779977567802,,,,,,False,False,False,False
+sector,Energy,131,sáp nhập,neutral,3,0,0.5666666666666667,1.0,1.0,fisher_exact,2108.0,0.6370109750297697,0.8630471274596879,,,,,,False,False,False,False
+sector,Energy,131,mua lại,neutral,7,0,0.4406779661016949,0.4483436890652839,1.0,fisher_exact,2053.5,0.33758043374274327,0.6546779977567802,,,,,,False,False,False,False
+sector,Energy,131,thoái vốn,neutral,5,0,0.7570621468926554,1.0,1.0,fisher_exact,2114.5,0.781013616891381,0.9393885330021223,,,,,,False,False,False,False
+sector,Energy,131,lợi nhuận sau thuế tăng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,kết quả tích cực,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,lãi khủng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,lợi nhuận kỷ lục,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,phục hồi,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,lợi nhuận cải thiện,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,cổ tức cao,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,mua lại cổ phiếu,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,phát hành thưởng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,giảm nợ,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,trả nợ,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,cải thiện tài chính,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,hệ số an toàn vốn,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,dòng tiền dương,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,tiền mặt dồi dào,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,mở rộng thị trường,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,dự án mới,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,đầu tư mới,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,thắng thầu,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,xuất khẩu tăng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,lợi nhuận giảm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,lợi nhuận âm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,thua lỗ,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,lỗ ròng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,dưới kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,kết quả tiêu cực,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,lợi nhuận thấp hơn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,báo lỗ,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,lỗ nặng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,lỗ kỷ lục,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,lỗ lũy kế,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,tụt dốc,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,kinh doanh sa sút,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,âm vốn chủ sở hữu,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,lợi nhuận không tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,doanh thu không tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,không tăng trưởng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,tăng trưởng chậm lại,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,không hoàn thành kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,chưa có lãi,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,hủy cổ tức,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,giảm cổ tức,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,phát hành pha loãng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,chào bán giá thấp,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,nợ vay tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,áp lực tài chính,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,nợ quá hạn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,hệ số nợ cao,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,thiếu thanh khoản,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,dòng tiền âm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,hủy hợp đồng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,dự án trì hoãn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,thu hẹp hoạt động,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,đóng cửa,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,dừng dự án,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,bị thanh tra,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,điều tra,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,tranh chấp pháp lý,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,bị kiện,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,họp HĐQT,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,thay đổi lãnh đạo,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,thay CEO,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,phát hành cổ phiếu mới,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Energy,131,niêm yết thêm,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,lợi nhuận tăng,positive,2,0,0.9302325581395349,1.0,1.0,fisher_exact,3521.0,0.9730414414135492,0.9730414414135492,,,,,,False,False,False,False
+sector,Industrial,168,doanh thu tăng,positive,1,0,0.0,0.48214285714285704,1.0,fisher_exact,3480.0,0.30561659644538763,0.6966729914445274,,,,,,False,False,False,False
+sector,Industrial,168,tăng trưởng mạnh,positive,1,0,0.0,0.48214285714285704,1.0,fisher_exact,3480.0,0.30561659644538763,0.6966729914445274,,,,,,False,False,False,False
+sector,Industrial,168,vượt kế hoạch,positive,6,0,0.9285714285714286,1.0,1.0,fisher_exact,3518.0,0.9606274452675002,0.9730414414135492,,,,,,False,False,False,False
+sector,Industrial,168,kỷ lục,positive,8,0,1.5853658536585367,0.7213105507236334,1.0,fisher_exact,3594.5,0.5442088690463411,0.8956388016240243,,,,,,False,False,False,False
+sector,Industrial,168,tăng trưởng,positive,6,0,1.9036144578313252,0.6830290329658908,1.0,fisher_exact,3600.5,0.4500670696258299,0.843875755548431,,,,,,False,False,False,False
+sector,Industrial,168,lãi ròng,positive,3,0,0.45930232558139533,0.6096176837375162,1.0,fisher_exact,3477.0,0.5244295420160652,0.8956388016240243,,,,,,False,False,False,False
+sector,Industrial,168,kết quả tích cực,positive,1,0,inf,1.0,1.0,fisher_exact,3564.0,0.3405956847062134,0.6966729914445274,,,,,,False,False,False,False
+sector,Industrial,168,lãi lớn,positive,2,0,0.0,0.2309666381522669,1.0,fisher_exact,3436.5,0.14385376994371157,0.6966729914445274,,,,,,False,False,False,False
+sector,Industrial,168,lãi đậm,positive,2,0,0.9302325581395349,1.0,1.0,fisher_exact,3520.5,0.966304805045689,0.9730414414135492,,,,,,False,False,False,False
+sector,Industrial,168,báo lãi,positive,24,0,0.22349936143039573,0.6363864191256821,1.0,chi_square,3636.5,0.5572863654549485,0.8956388016240243,,,,,,False,False,False,False
+sector,Industrial,168,lãi kỷ lục,positive,6,0,0.9285714285714286,1.0,1.0,fisher_exact,3516.0,0.9448999020711426,0.9730414414135492,,,,,,False,False,False,False
+sector,Industrial,168,bứt phá,positive,4,0,0.9294117647058824,1.0,1.0,fisher_exact,3519.5,0.9664436441920038,0.9730414414135492,,,,,,False,False,False,False
+sector,Industrial,168,tăng vọt,positive,1,0,inf,1.0,1.0,fisher_exact,3564.0,0.3405956847062134,0.6966729914445274,,,,,,False,False,False,False
+sector,Industrial,168,tăng mạnh,positive,3,0,0.45930232558139533,0.6096176837375162,1.0,fisher_exact,3477.0,0.5244295420160652,0.8956388016240243,,,,,,False,False,False,False
+sector,Industrial,168,khởi sắc,positive,1,0,inf,1.0,1.0,fisher_exact,3564.0,0.3405956847062134,0.6966729914445274,,,,,,False,False,False,False
+sector,Industrial,168,hoàn thành kế hoạch,positive,3,0,1.8823529411764706,1.0,1.0,fisher_exact,3560.0,0.6183743004012907,0.8976401134857446,,,,,,False,False,False,False
+sector,Industrial,168,chia cổ tức,positive,13,0,0.5069564473346453,0.47645936323423643,1.0,chi_square,3379.5,0.3255149413988383,0.6966729914445274,,,,,,False,False,False,False
+sector,Industrial,168,mua lại cổ phiếu,positive,1,0,0.0,0.48214285714285704,1.0,fisher_exact,3480.0,0.30561659644538763,0.6966729914445274,,,,,,False,False,False,False
+sector,Industrial,168,tăng vốn điều lệ,positive,7,0,0.6875,0.7123781965801602,1.0,fisher_exact,3475.0,0.6598752555425167,0.927949578106664,,,,,,False,False,False,False
+sector,Industrial,168,cổ tức tiền mặt,positive,14,0,0.4876349703935911,0.4849841909684516,1.0,chi_square,3671.5,0.32866192934725413,0.6966729914445274,,,,,,False,False,False,False
+sector,Industrial,168,trả nợ,positive,1,0,inf,1.0,1.0,fisher_exact,3564.0,0.3405956847062134,0.6966729914445274,,,,,,False,False,False,False
+sector,Industrial,168,ký kết hợp đồng,positive,5,0,0.611764705882353,0.6729983061610141,1.0,fisher_exact,3475.0,0.6047450065513784,0.8976401134857446,,,,,,False,False,False,False
+sector,Industrial,168,mở rộng thị trường,positive,1,0,0.0,0.48214285714285704,1.0,fisher_exact,3480.0,0.30561659644538763,0.6966729914445274,,,,,,False,False,False,False
+sector,Industrial,168,đầu tư mới,positive,1,0,inf,1.0,1.0,fisher_exact,3564.0,0.3405956847062134,0.6966729914445274,,,,,,False,False,False,False
+sector,Industrial,168,hợp tác chiến lược,positive,1,0,0.0,0.48214285714285704,1.0,fisher_exact,3480.0,0.30561659644538763,0.6966729914445274,,,,,,False,False,False,False
+sector,Industrial,168,lợi nhuận giảm,negative,5,0,0.2238372093023256,0.19740319556284155,1.0,fisher_exact,3389.0,0.14847581688725522,0.6966729914445274,,,,,,False,False,False,False
+sector,Industrial,168,doanh thu giảm,negative,1,0,0.0,0.48214285714285704,1.0,fisher_exact,3480.0,0.30561659644538763,0.6966729914445274,,,,,,False,False,False,False
+sector,Industrial,168,thua lỗ,negative,2,0,0.0,0.2309666381522669,1.0,fisher_exact,3436.5,0.14385376994371157,0.6966729914445274,,,,,,False,False,False,False
+sector,Industrial,168,lỗ ròng,negative,2,0,0.9302325581395349,1.0,1.0,fisher_exact,3520.0,0.959571779706791,0.9730414414135492,,,,,,False,False,False,False
+sector,Industrial,168,sụt giảm,negative,6,0,0.9285714285714286,1.0,1.0,fisher_exact,3514.5,0.9331175785749555,0.9730414414135492,,,,,,False,False,False,False
+sector,Industrial,168,báo lỗ,negative,2,0,0.9302325581395349,1.0,1.0,fisher_exact,3520.0,0.959571779706791,0.9730414414135492,,,,,,False,False,False,False
+sector,Industrial,168,lỗ nặng,negative,2,0,0.9302325581395349,1.0,1.0,fisher_exact,3521.0,0.9730414414135492,0.9730414414135492,,,,,,False,False,False,False
+sector,Industrial,168,lỗ kỷ lục,negative,2,0,inf,0.49764756201881954,1.0,fisher_exact,3604.5,0.1737642871286582,0.6966729914445274,,,,,,False,False,False,False
+sector,Industrial,168,lao dốc,negative,2,0,0.9302325581395349,1.0,1.0,fisher_exact,3520.0,0.959571779706791,0.9730414414135492,,,,,,False,False,False,False
+sector,Industrial,168,giảm sâu,negative,1,0,0.0,0.48214285714285704,1.0,fisher_exact,3480.0,0.30561659644538763,0.6966729914445274,,,,,,False,False,False,False
+sector,Industrial,168,giảm mạnh,negative,5,0,3.855421686746988,0.3690790848283092,1.0,fisher_exact,3642.5,0.2013173599710183,0.6966729914445274,,,,,,False,False,False,False
+sector,Industrial,168,không chia cổ tức,negative,1,0,inf,1.0,1.0,fisher_exact,3564.0,0.3405956847062134,0.6966729914445274,,,,,,False,False,False,False
+sector,Industrial,168,bị phạt,negative,3,0,1.8823529411764706,1.0,1.0,fisher_exact,3562.0,0.5990056184667818,0.8976401134857446,,,,,,False,False,False,False
+sector,Industrial,168,vi phạm,negative,10,0,0.6024096385542169,0.5242823683767381,1.0,fisher_exact,3420.5,0.4275241390778338,0.8364602721088054,,,,,,False,False,False,False
+sector,Industrial,168,đại hội cổ đông,neutral,2,0,0.9302325581395349,1.0,1.0,fisher_exact,3521.0,0.9730414414135492,0.9730414414135492,,,,,,False,False,False,False
+sector,Industrial,168,họp HĐQT,neutral,1,0,0.0,0.48214285714285704,1.0,fisher_exact,3480.0,0.30561659644538763,0.6966729914445274,,,,,,False,False,False,False
+sector,Industrial,168,sáp nhập,neutral,2,0,0.9302325581395349,1.0,1.0,fisher_exact,3520.0,0.959571779706791,0.9730414414135492,,,,,,False,False,False,False
+sector,Industrial,168,mua lại,neutral,1,0,inf,1.0,1.0,fisher_exact,3564.0,0.3405956847062134,0.6966729914445274,,,,,,False,False,False,False
+sector,Industrial,168,thoái vốn,neutral,4,0,0.9294117647058824,1.0,1.0,fisher_exact,3518.5,0.9568644214501407,0.9730414414135492,,,,,,False,False,False,False
+sector,Industrial,168,lợi nhuận sau thuế tăng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,lãi khủng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,lợi nhuận kỷ lục,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,doanh thu kỷ lục,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,phục hồi,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,lập đỉnh,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,lợi nhuận cải thiện,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,cổ tức cao,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,phát hành thưởng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,giảm nợ,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,cải thiện tài chính,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,hệ số an toàn vốn,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,dòng tiền dương,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,tiền mặt dồi dào,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,dự án mới,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,thắng thầu,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,xuất khẩu tăng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,lợi nhuận âm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,dưới kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,kết quả tiêu cực,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,lợi nhuận thấp hơn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,lỗ lớn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,lỗ lũy kế,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,tụt dốc,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,kinh doanh sa sút,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,âm vốn chủ sở hữu,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,lợi nhuận không tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,doanh thu không tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,không tăng trưởng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,tăng trưởng chậm lại,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,không hoàn thành kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,không đạt kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,chưa có lãi,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,hủy cổ tức,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,giảm cổ tức,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,phát hành pha loãng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,chào bán giá thấp,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,nợ xấu,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,nợ vay tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,áp lực tài chính,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,nợ quá hạn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,hệ số nợ cao,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,thiếu thanh khoản,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,dòng tiền âm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,hủy hợp đồng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,dự án trì hoãn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,thu hẹp hoạt động,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,đóng cửa,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,dừng dự án,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,bị thanh tra,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,bị kiểm toán từ chối,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,cảnh báo,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,đình chỉ,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,khởi tố,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,điều tra,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,tranh chấp pháp lý,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,bị kiện,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,thay đổi lãnh đạo,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,thay CEO,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,phát hành cổ phiếu mới,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Industrial,168,niêm yết thêm,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,lợi nhuận tăng,positive,2,0,1.2947368421052632,1.0,1.0,fisher_exact,5965.5,0.865884009815713,0.8718381432190778,,,,,,False,False,False,False
+sector,RealEstate,220,doanh thu tăng,positive,4,0,0.4245614035087719,0.6338240118559335,1.0,fisher_exact,5869.5,0.4492129149625017,0.8466603427284077,,,,,,False,False,False,False
+sector,RealEstate,220,tăng trưởng mạnh,positive,2,0,1.2947368421052632,1.0,1.0,fisher_exact,5966.5,0.855676600686196,0.8718381432190778,,,,,,False,False,False,False
+sector,RealEstate,220,vượt kế hoạch,positive,1,0,inf,0.43636363636363645,1.0,fisher_exact,6014.0,0.2595946583172707,0.8436826395311297,,,,,,False,False,False,False
+sector,RealEstate,220,kỷ lục,positive,12,0,0.5722354692238766,0.44937196542366686,1.0,chi_square,6144.0,0.2986774429997404,0.8466603427284077,,,,,,False,False,False,False
+sector,RealEstate,220,tăng trưởng,positive,14,0,9.013716295318627,0.002679610219537966,0.13933973141597422,chi_square,6592.0,0.0012464012412766485,0.06481286454638571,,,,,,False,False,False,False
+sector,RealEstate,220,lãi ròng,positive,29,0,2.3880263993151196,0.1222679025924138,1.0,chi_square,6425.5,0.08573297947084715,0.8436826395311297,,,,,,False,False,False,False
+sector,RealEstate,220,lãi lớn,positive,3,0,0.6421052631578947,1.0,1.0,fisher_exact,5918.0,0.7217191275269574,0.8718381432190778,,,,,,False,False,False,False
+sector,RealEstate,220,báo lãi,positive,32,0,0.04277459927648124,0.8361502720620554,1.0,chi_square,6016.5,0.8235940094278096,0.8718381432190778,,,,,,False,False,False,False
+sector,RealEstate,220,doanh thu kỷ lục,positive,3,0,2.617021276595745,0.5817884766986188,1.0,fisher_exact,6027.0,0.42832445646081985,0.8466603427284077,,,,,,False,False,False,False
+sector,RealEstate,220,lãi kỷ lục,positive,5,0,5.3478260869565215,0.17018549015532802,1.0,fisher_exact,6150.5,0.10140771549528893,0.8436826395311297,,,,,,False,False,False,False
+sector,RealEstate,220,bứt phá,positive,3,0,2.617021276595745,0.5817884766986188,1.0,fisher_exact,6027.0,0.42832445646081985,0.8466603427284077,,,,,,False,False,False,False
+sector,RealEstate,220,tăng vọt,positive,6,0,1.3010752688172043,1.0,1.0,fisher_exact,5994.5,0.7505452218935075,0.8718381432190778,,,,,,False,False,False,False
+sector,RealEstate,220,tăng mạnh,positive,9,0,2.688888888888889,0.18306994732822837,1.0,fisher_exact,6172.5,0.17096014381277824,0.8436826395311297,,,,,,False,False,False,False
+sector,RealEstate,220,khởi sắc,positive,1,0,inf,0.43636363636363645,1.0,fisher_exact,6014.0,0.2595946583172707,0.8436826395311297,,,,,,False,False,False,False
+sector,RealEstate,220,phục hồi,positive,5,0,5.3478260869565215,0.17018549015532802,1.0,fisher_exact,6150.0,0.10227489960769905,0.8436826395311297,,,,,,False,False,False,False
+sector,RealEstate,220,lập đỉnh,positive,5,0,0.8581560283687943,1.0,1.0,fisher_exact,5930.5,0.8620742169946988,0.8718381432190778,,,,,,False,False,False,False
+sector,RealEstate,220,hoàn thành kế hoạch,positive,5,0,0.8581560283687943,1.0,1.0,fisher_exact,5932.0,0.8718381432190778,0.8718381432190778,,,,,,False,False,False,False
+sector,RealEstate,220,chia cổ tức,positive,10,0,1.3076923076923077,0.750576015306564,1.0,fisher_exact,6015.5,0.7092931613197222,0.8718381432190778,,,,,,False,False,False,False
+sector,RealEstate,220,mua lại cổ phiếu,positive,4,0,3.967741935483871,0.3203259728834694,1.0,fisher_exact,6091.5,0.199581070898047,0.8436826395311297,,,,,,False,False,False,False
+sector,RealEstate,220,tăng vốn điều lệ,positive,25,0,0.03070719602977652,0.8608952285865966,1.0,chi_square,5850.0,0.6940205099300576,0.8718381432190778,,,,,,False,False,False,False
+sector,RealEstate,220,cổ tức tiền mặt,positive,3,0,2.617021276595745,0.5817884766986188,1.0,fisher_exact,6027.0,0.42832445646081985,0.8466603427284077,,,,,,False,False,False,False
+sector,RealEstate,220,giảm nợ,positive,1,0,inf,0.43636363636363645,1.0,fisher_exact,6014.0,0.2595946583172707,0.8436826395311297,,,,,,False,False,False,False
+sector,RealEstate,220,trả nợ,positive,4,0,3.967741935483871,0.3203259728834694,1.0,fisher_exact,6090.5,0.20283441970255633,0.8436826395311297,,,,,,False,False,False,False
+sector,RealEstate,220,ký kết hợp đồng,positive,12,0,0.024908132582023734,0.8745961913945841,1.0,chi_square,6030.5,0.6720733009316644,0.8718381432190778,,,,,,False,False,False,False
+sector,RealEstate,220,dự án mới,positive,1,0,0.0,1.0,1.0,fisher_exact,5904.0,0.38390855986612926,0.8466603427284077,,,,,,False,False,False,False
+sector,RealEstate,220,lợi nhuận giảm,negative,1,0,inf,0.43636363636363645,1.0,fisher_exact,6014.0,0.2595946583172707,0.8436826395311297,,,,,,False,False,False,False
+sector,RealEstate,220,doanh thu giảm,negative,2,0,1.2947368421052632,1.0,1.0,fisher_exact,5965.5,0.865884009815713,0.8718381432190778,,,,,,False,False,False,False
+sector,RealEstate,220,lợi nhuận âm,negative,1,0,0.0,1.0,1.0,fisher_exact,5904.0,0.38390855986612926,0.8466603427284077,,,,,,False,False,False,False
+sector,RealEstate,220,thua lỗ,negative,2,0,1.2947368421052632,1.0,1.0,fisher_exact,5965.5,0.865884009815713,0.8718381432190778,,,,,,False,False,False,False
+sector,RealEstate,220,lỗ ròng,negative,4,0,3.967741935483871,0.3203259728834694,1.0,fisher_exact,6090.5,0.20283441970255633,0.8436826395311297,,,,,,False,False,False,False
+sector,RealEstate,220,sụt giảm,negative,2,0,1.2947368421052632,1.0,1.0,fisher_exact,5965.5,0.865884009815713,0.8718381432190778,,,,,,False,False,False,False
+sector,RealEstate,220,báo lỗ,negative,4,0,1.297872340425532,1.0,1.0,fisher_exact,5979.0,0.8068031024885727,0.8718381432190778,,,,,,False,False,False,False
+sector,RealEstate,220,lỗ nặng,negative,1,0,0.0,1.0,1.0,fisher_exact,5904.0,0.38390855986612926,0.8466603427284077,,,,,,False,False,False,False
+sector,RealEstate,220,lỗ kỷ lục,negative,2,0,1.2947368421052632,1.0,1.0,fisher_exact,5965.5,0.865884009815713,0.8718381432190778,,,,,,False,False,False,False
+sector,RealEstate,220,lỗ lũy kế,negative,1,0,0.0,1.0,1.0,fisher_exact,5904.0,0.38390855986612926,0.8466603427284077,,,,,,False,False,False,False
+sector,RealEstate,220,lao dốc,negative,2,0,1.2947368421052632,1.0,1.0,fisher_exact,5965.5,0.865884009815713,0.8718381432190778,,,,,,False,False,False,False
+sector,RealEstate,220,giảm sâu,negative,11,0,1.5866666666666667,0.5393631063634422,1.0,fisher_exact,6075.0,0.4884578900356198,0.8466603427284077,,,,,,False,False,False,False
+sector,RealEstate,220,giảm mạnh,negative,8,0,9.674157303370787,0.02265991774654645,0.5891578614102077,fisher_exact,6340.5,0.010612366635601493,0.2759215325256388,,,,,,False,False,False,False
+sector,RealEstate,220,không chia cổ tức,negative,2,0,1.2947368421052632,1.0,1.0,fisher_exact,5965.5,0.865884009815713,0.8718381432190778,,,,,,False,False,False,False
+sector,RealEstate,220,nợ xấu,negative,2,0,1.2947368421052632,1.0,1.0,fisher_exact,5965.5,0.865884009815713,0.8718381432190778,,,,,,False,False,False,False
+sector,RealEstate,220,nợ vay tăng,negative,2,0,0.0,0.5058530510585305,1.0,fisher_exact,5856.0,0.21472249482054306,0.8436826395311297,,,,,,False,False,False,False
+sector,RealEstate,220,đóng cửa,negative,5,0,1.967741935483871,0.6552972951112953,1.0,fisher_exact,6041.0,0.4640689500429551,0.8466603427284077,,,,,,False,False,False,False
+sector,RealEstate,220,bị phạt,negative,2,0,1.2947368421052632,1.0,1.0,fisher_exact,5966.5,0.855676600686196,0.8718381432190778,,,,,,False,False,False,False
+sector,RealEstate,220,vi phạm,negative,16,0,0.0735850035578747,0.786186793520791,1.0,chi_square,6057.0,0.6200918960256145,0.8718381432190778,,,,,,False,False,False,False
+sector,RealEstate,220,bị thanh tra,negative,1,0,0.0,1.0,1.0,fisher_exact,5904.0,0.38390855986612926,0.8466603427284077,,,,,,False,False,False,False
+sector,RealEstate,220,cảnh báo,negative,6,0,1.3010752688172043,1.0,1.0,fisher_exact,5992.5,0.7620564181138108,0.8718381432190778,,,,,,False,False,False,False
+sector,RealEstate,220,điều tra,negative,1,0,inf,0.43636363636363645,1.0,fisher_exact,6014.0,0.2595946583172707,0.8436826395311297,,,,,,False,False,False,False
+sector,RealEstate,220,đại hội cổ đông,neutral,3,0,2.617021276595745,0.5817884766986188,1.0,fisher_exact,6029.0,0.41603144244202617,0.8466603427284077,,,,,,False,False,False,False
+sector,RealEstate,220,sáp nhập,neutral,7,0,1.7536231884057971,0.7017546190194643,1.0,fisher_exact,6054.0,0.4758770932940771,0.8466603427284077,,,,,,False,False,False,False
+sector,RealEstate,220,mua lại,neutral,27,0,1.2682680661049934,0.26009184111528094,1.0,chi_square,6297.0,0.19672977582517293,0.8436826395311297,,,,,,False,False,False,False
+sector,RealEstate,220,thoái vốn,neutral,13,0,0.0,1.0,1.0,chi_square,5992.0,0.8364527486031945,0.8718381432190778,,,,,,False,False,False,False
+sector,RealEstate,220,lợi nhuận sau thuế tăng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,kết quả tích cực,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,lãi khủng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,lãi đậm,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,lợi nhuận kỷ lục,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,lợi nhuận cải thiện,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,cổ tức cao,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,phát hành thưởng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,cải thiện tài chính,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,hệ số an toàn vốn,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,dòng tiền dương,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,tiền mặt dồi dào,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,mở rộng thị trường,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,đầu tư mới,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,hợp tác chiến lược,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,thắng thầu,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,xuất khẩu tăng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,dưới kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,kết quả tiêu cực,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,lợi nhuận thấp hơn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,lỗ lớn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,tụt dốc,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,kinh doanh sa sút,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,âm vốn chủ sở hữu,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,lợi nhuận không tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,doanh thu không tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,không tăng trưởng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,tăng trưởng chậm lại,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,không hoàn thành kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,không đạt kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,chưa có lãi,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,hủy cổ tức,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,giảm cổ tức,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,phát hành pha loãng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,chào bán giá thấp,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,áp lực tài chính,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,nợ quá hạn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,hệ số nợ cao,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,thiếu thanh khoản,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,dòng tiền âm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,hủy hợp đồng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,dự án trì hoãn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,thu hẹp hoạt động,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,dừng dự án,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,bị kiểm toán từ chối,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,đình chỉ,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,khởi tố,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,tranh chấp pháp lý,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,bị kiện,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,họp HĐQT,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,thay đổi lãnh đạo,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,thay CEO,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,phát hành cổ phiếu mới,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,RealEstate,220,niêm yết thêm,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,lợi nhuận tăng,positive,3,0,0.46078431372549017,0.6101170117011702,1.0,fisher_exact,1246.5,0.5327433565107547,0.7429737550894401,,,,,,False,False,False,False
+sector,Securities,101,vượt kế hoạch,positive,1,0,0.0,0.4851485148514851,1.0,fisher_exact,1248.0,0.31232917321389575,0.6074403904110394,,,,,,False,False,False,False
+sector,Securities,101,kỷ lục,positive,9,0,1.196808510638298,1.0,1.0,fisher_exact,1287.5,0.8581371971775009,0.9765009485123286,,,,,,False,False,False,False
+sector,Securities,101,tăng trưởng,positive,13,0,1.6999783355380882,0.1922908103748292,1.0,chi_square,1147.5,0.14118578660180212,0.6074403904110394,,,,,,False,False,False,False
+sector,Securities,101,lãi ròng,positive,2,0,0.0,0.23287128712871286,1.0,fisher_exact,1222.0,0.14704436785684136,0.6074403904110394,,,,,,False,False,False,False
+sector,Securities,101,kết quả tích cực,positive,1,0,0.0,0.4851485148514851,1.0,fisher_exact,1248.0,0.31232917321389575,0.6074403904110394,,,,,,False,False,False,False
+sector,Securities,101,lãi lớn,positive,2,0,0.9411764705882353,1.0,1.0,fisher_exact,1273.0,0.9887676224429222,0.9919773573012066,,,,,,False,False,False,False
+sector,Securities,101,báo lãi,positive,22,0,0.0,1.0,1.0,chi_square,1283.5,0.9325097833512033,0.9919773573012066,,,,,,False,False,False,False
+sector,Securities,101,lãi kỷ lục,positive,6,0,0.17254901960784313,0.10533898750699812,1.0,fisher_exact,1169.0,0.08306254167538124,0.6074403904110394,,,,,,False,False,False,False
+sector,Securities,101,bứt phá,positive,1,0,0.0,0.4851485148514851,1.0,fisher_exact,1248.0,0.31232917321389575,0.6074403904110394,,,,,,False,False,False,False
+sector,Securities,101,tăng mạnh,positive,5,0,0.6133333333333333,0.6718847142446203,1.0,fisher_exact,1244.0,0.5938420696704134,0.7838715319649457,,,,,,False,False,False,False
+sector,Securities,101,khởi sắc,positive,1,0,0.0,0.4851485148514851,1.0,fisher_exact,1248.0,0.31232917321389575,0.6074403904110394,,,,,,False,False,False,False
+sector,Securities,101,phục hồi,positive,5,0,0.6133333333333333,0.6718847142446203,1.0,fisher_exact,1246.0,0.6191027911438368,0.7857843118364083,,,,,,False,False,False,False
+sector,Securities,101,lập đỉnh,positive,1,0,0.0,0.4851485148514851,1.0,fisher_exact,1248.0,0.31232917321389575,0.6074403904110394,,,,,,False,False,False,False
+sector,Securities,101,chia cổ tức,positive,2,0,0.9411764705882353,1.0,1.0,fisher_exact,1272.0,0.966311769765188,0.9919773573012066,,,,,,False,False,False,False
+sector,Securities,101,tăng vốn điều lệ,positive,15,0,0.46866892105679503,0.4936001652299491,1.0,chi_square,1199.5,0.4163025859282461,0.6868992667816061,,,,,,False,False,False,False
+sector,Securities,101,cổ tức tiền mặt,positive,5,0,0.22058823529411764,0.19598083519692172,1.0,fisher_exact,1194.5,0.1532639796134576,0.6074403904110394,,,,,,False,False,False,False
+sector,Securities,101,ký kết hợp đồng,positive,4,0,0.3006535947712418,0.3528472847284728,1.0,fisher_exact,1222.0,0.3003678543543561,0.6074403904110394,,,,,,False,False,False,False
+sector,Securities,101,đầu tư mới,positive,1,0,0.0,0.4851485148514851,1.0,fisher_exact,1248.0,0.31232917321389575,0.6074403904110394,,,,,,False,False,False,False
+sector,Securities,101,hợp tác chiến lược,positive,1,0,inf,1.0,1.0,fisher_exact,1298.5,0.3416477184700353,0.6074403904110394,,,,,,False,False,False,False
+sector,Securities,101,sụt giảm,negative,4,0,2.938775510204082,0.618073807380738,1.0,fisher_exact,1321.0,0.3497384066002954,0.6074403904110394,,,,,,False,False,False,False
+sector,Securities,101,báo lỗ,negative,1,0,inf,1.0,1.0,fisher_exact,1298.5,0.3416477184700353,0.6074403904110394,,,,,,False,False,False,False
+sector,Securities,101,giảm sâu,negative,1,0,inf,1.0,1.0,fisher_exact,1298.5,0.3416477184700353,0.6074403904110394,,,,,,False,False,False,False
+sector,Securities,101,giảm mạnh,negative,4,0,2.938775510204082,0.618073807380738,1.0,fisher_exact,1322.0,0.33947331663498825,0.6074403904110394,,,,,,False,False,False,False
+sector,Securities,101,đóng cửa,negative,10,0,0.5972222222222222,0.5175340473504406,1.0,fisher_exact,1218.0,0.4668260459825364,0.7002390689738046,,,,,,False,False,False,False
+sector,Securities,101,vi phạm,negative,13,0,0.013175440630797786,0.9086160759580084,1.0,chi_square,1235.5,0.6572215942081554,0.8032708373655232,,,,,,False,False,False,False
+sector,Securities,101,cảnh báo,negative,7,0,1.2777777777777777,1.0,1.0,fisher_exact,1299.0,0.7053491300830808,0.8313043318836308,,,,,,False,False,False,False
+sector,Securities,101,đình chỉ,negative,4,0,0.94,1.0,1.0,fisher_exact,1273.0,0.9919773573012066,0.9919773573012066,,,,,,False,False,False,False
+sector,Securities,101,đại hội cổ đông,neutral,3,0,0.46078431372549017,0.6101170117011702,1.0,fisher_exact,1247.0,0.5403445491559564,0.7429737550894401,,,,,,False,False,False,False
+sector,Securities,101,họp HĐQT,neutral,4,0,2.938775510204082,0.618073807380738,1.0,fisher_exact,1323.0,0.32940351876229157,0.6074403904110394,,,,,,False,False,False,False
+sector,Securities,101,sáp nhập,neutral,1,0,inf,1.0,1.0,fisher_exact,1298.5,0.3416477184700353,0.6074403904110394,,,,,,False,False,False,False
+sector,Securities,101,mua lại,neutral,6,0,1.9583333333333333,0.678720449364524,1.0,fisher_exact,1319.0,0.46048074994591714,0.7002390689738046,,,,,,False,False,False,False
+sector,Securities,101,thoái vốn,neutral,1,0,inf,1.0,1.0,fisher_exact,1298.5,0.3416477184700353,0.6074403904110394,,,,,,False,False,False,False
+sector,Securities,101,doanh thu tăng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,tăng trưởng mạnh,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,lợi nhuận sau thuế tăng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,lãi khủng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,lãi đậm,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,lợi nhuận kỷ lục,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,doanh thu kỷ lục,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,tăng vọt,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,hoàn thành kế hoạch,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,lợi nhuận cải thiện,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,cổ tức cao,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,mua lại cổ phiếu,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,phát hành thưởng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,giảm nợ,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,trả nợ,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,cải thiện tài chính,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,hệ số an toàn vốn,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,dòng tiền dương,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,tiền mặt dồi dào,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,mở rộng thị trường,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,dự án mới,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,thắng thầu,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,xuất khẩu tăng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,lợi nhuận giảm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,doanh thu giảm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,lợi nhuận âm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,thua lỗ,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,lỗ ròng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,dưới kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,kết quả tiêu cực,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,lợi nhuận thấp hơn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,lỗ nặng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,lỗ lớn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,lỗ kỷ lục,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,lỗ lũy kế,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,lao dốc,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,tụt dốc,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,kinh doanh sa sút,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,âm vốn chủ sở hữu,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,lợi nhuận không tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,doanh thu không tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,không tăng trưởng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,tăng trưởng chậm lại,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,không hoàn thành kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,không đạt kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,chưa có lãi,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,không chia cổ tức,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,hủy cổ tức,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,giảm cổ tức,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,phát hành pha loãng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,chào bán giá thấp,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,nợ xấu,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,nợ vay tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,áp lực tài chính,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,nợ quá hạn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,hệ số nợ cao,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,thiếu thanh khoản,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,dòng tiền âm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,hủy hợp đồng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,dự án trì hoãn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,thu hẹp hoạt động,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,dừng dự án,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,bị phạt,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,bị thanh tra,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,bị kiểm toán từ chối,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,khởi tố,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,điều tra,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,tranh chấp pháp lý,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,bị kiện,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,thay đổi lãnh đạo,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,thay CEO,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,phát hành cổ phiếu mới,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Securities,101,niêm yết thêm,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,lợi nhuận tăng,positive,2,0,0.0,0.1984313725490196,1.0,fisher_exact,294.0,0.12167903862721373,0.8301273695958623,,,,,,False,False,False,False
+sector,Technology,51,doanh thu tăng,positive,3,0,0.3888888888888889,0.5825210084033613,1.0,fisher_exact,305.5,0.4577037567674882,0.8620990005473802,,,,,,False,False,False,False
+sector,Technology,51,tăng trưởng mạnh,positive,3,0,1.6923076923076923,1.0,1.0,fisher_exact,330.0,0.7277580758840565,0.97002850361805,,,,,,False,False,False,False
+sector,Technology,51,vượt kế hoạch,positive,1,0,0.0,0.45098039215686275,1.0,fisher_exact,308.0,0.2873517817831831,0.8301273695958623,,,,,,False,False,False,False
+sector,Technology,51,kỷ lục,positive,5,0,0.5128205128205128,0.6471661004827464,1.0,fisher_exact,303.0,0.4973648080081039,0.8620990005473802,,,,,,False,False,False,False
+sector,Technology,51,tăng trưởng,positive,17,0,0.0,1.0,1.0,chi_square,321.5,1.0,1.0,,,,,,False,False,False,False
+sector,Technology,51,lãi ròng,positive,8,0,0.7916666666666666,1.0,1.0,fisher_exact,310.0,0.7309280337555716,0.97002850361805,,,,,,False,False,False,False
+sector,Technology,51,báo lãi,positive,8,0,1.4492753623188406,0.7152690863579475,1.0,fisher_exact,340.0,0.6007360011711289,0.97002850361805,,,,,,False,False,False,False
+sector,Technology,51,lãi kỷ lục,positive,2,0,0.8148148148148148,1.0,1.0,fisher_exact,320.0,0.9327197150173558,0.97002850361805,,,,,,False,False,False,False
+sector,Technology,51,tăng vọt,positive,1,0,inf,1.0,1.0,fisher_exact,333.5,0.3859850515709651,0.8363009450704243,,,,,,False,False,False,False
+sector,Technology,51,tăng mạnh,positive,3,0,0.0,0.08504201680672269,1.0,fisher_exact,280.0,0.054078785153383095,0.7030242069939802,,,,,,False,False,False,False
+sector,Technology,51,chia cổ tức,positive,5,0,1.26,1.0,1.0,fisher_exact,330.0,0.7832021824421422,0.97002850361805,,,,,,False,False,False,False
+sector,Technology,51,mua lại cổ phiếu,positive,8,0,0.08465608465608465,0.016431253352404793,0.4272125871625246,fisher_exact,237.0,0.011490258409373148,0.29874671864370184,,,,,,False,False,False,False
+sector,Technology,51,tăng vốn điều lệ,positive,13,0,0.0,1.0,1.0,chi_square,318.0,0.9310544535711301,0.97002850361805,,,,,,False,False,False,False
+sector,Technology,51,cổ tức tiền mặt,positive,5,0,1.26,1.0,1.0,fisher_exact,328.5,0.8257786587709823,0.97002850361805,,,,,,False,False,False,False
+sector,Technology,51,ký kết hợp đồng,positive,3,0,0.3888888888888889,0.5825210084033613,1.0,fisher_exact,306.5,0.48629190043752435,0.8620990005473802,,,,,,False,False,False,False
+sector,Technology,51,hợp tác chiến lược,positive,1,0,0.0,0.45098039215686275,1.0,fisher_exact,308.0,0.2873517817831831,0.8301273695958623,,,,,,False,False,False,False
+sector,Technology,51,thắng thầu,positive,2,0,0.8148148148148148,1.0,1.0,fisher_exact,320.0,0.9327197150173558,0.97002850361805,,,,,,False,False,False,False
+sector,Technology,51,sụt giảm,negative,1,0,0.0,0.45098039215686275,1.0,fisher_exact,308.0,0.2873517817831831,0.8301273695958623,,,,,,False,False,False,False
+sector,Technology,51,lao dốc,negative,1,0,inf,1.0,1.0,fisher_exact,333.5,0.3859850515709651,0.8363009450704243,,,,,,False,False,False,False
+sector,Technology,51,giảm sâu,negative,1,0,0.0,0.45098039215686275,1.0,fisher_exact,308.0,0.2873517817831831,0.8301273695958623,,,,,,False,False,False,False
+sector,Technology,51,tụt dốc,negative,1,0,0.0,0.45098039215686275,1.0,fisher_exact,308.0,0.2873517817831831,0.8301273695958623,,,,,,False,False,False,False
+sector,Technology,51,vi phạm,negative,2,0,0.8148148148148148,1.0,1.0,fisher_exact,320.0,0.9327197150173558,0.97002850361805,,,,,,False,False,False,False
+sector,Technology,51,sáp nhập,neutral,1,0,inf,1.0,1.0,fisher_exact,333.5,0.3859850515709651,0.8363009450704243,,,,,,False,False,False,False
+sector,Technology,51,mua lại,neutral,6,0,0.8,1.0,1.0,fisher_exact,317.0,0.8790051534034617,0.97002850361805,,,,,,False,False,False,False
+sector,Technology,51,thoái vốn,neutral,2,0,inf,0.4949019607843137,1.0,fisher_exact,345.0,0.20538685022580205,0.8301273695958623,,,,,,False,False,False,False
+sector,Technology,51,lợi nhuận sau thuế tăng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,kết quả tích cực,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,lãi khủng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,lãi lớn,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,lãi đậm,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,lợi nhuận kỷ lục,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,doanh thu kỷ lục,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,bứt phá,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,khởi sắc,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,phục hồi,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,lập đỉnh,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,hoàn thành kế hoạch,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,lợi nhuận cải thiện,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,cổ tức cao,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,phát hành thưởng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,giảm nợ,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,trả nợ,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,cải thiện tài chính,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,hệ số an toàn vốn,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,dòng tiền dương,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,tiền mặt dồi dào,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,mở rộng thị trường,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,dự án mới,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,đầu tư mới,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,xuất khẩu tăng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,lợi nhuận giảm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,doanh thu giảm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,lợi nhuận âm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,thua lỗ,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,lỗ ròng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,dưới kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,kết quả tiêu cực,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,lợi nhuận thấp hơn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,báo lỗ,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,lỗ nặng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,lỗ lớn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,lỗ kỷ lục,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,lỗ lũy kế,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,giảm mạnh,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,kinh doanh sa sút,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,âm vốn chủ sở hữu,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,lợi nhuận không tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,doanh thu không tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,không tăng trưởng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,tăng trưởng chậm lại,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,không hoàn thành kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,không đạt kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,chưa có lãi,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,không chia cổ tức,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,hủy cổ tức,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,giảm cổ tức,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,phát hành pha loãng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,chào bán giá thấp,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,nợ xấu,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,nợ vay tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,áp lực tài chính,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,nợ quá hạn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,hệ số nợ cao,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,thiếu thanh khoản,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,dòng tiền âm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,hủy hợp đồng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,dự án trì hoãn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,thu hẹp hoạt động,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,đóng cửa,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,dừng dự án,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,bị phạt,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,bị thanh tra,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,bị kiểm toán từ chối,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,cảnh báo,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,đình chỉ,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,khởi tố,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,điều tra,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,tranh chấp pháp lý,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,bị kiện,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,đại hội cổ đông,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,họp HĐQT,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,thay đổi lãnh đạo,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,thay CEO,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,phát hành cổ phiếu mới,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Technology,51,niêm yết thêm,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,tăng trưởng mạnh,positive,3,0,0.3977272727272727,0.586382113821138,1.0,fisher_exact,806.5,0.46503924344068037,0.6652101603680612,,,,,,False,False,False,False
+sector,Transport,82,vượt kế hoạch,positive,1,0,inf,1.0,1.0,fisher_exact,851.0,0.3776375485639252,0.5775633095683561,,,,,,False,False,False,False
+sector,Transport,82,kỷ lục,positive,5,0,0.5271317829457365,0.6536403290030953,1.0,fisher_exact,801.0,0.4861151171920447,0.6652101603680612,,,,,,False,False,False,False
+sector,Transport,82,tăng trưởng,positive,3,0,0.0,0.0877371273712737,1.0,fisher_exact,765.0,0.05492749657622522,0.5775633095683561,,,,,,False,False,False,False
+sector,Transport,82,lãi ròng,positive,6,0,4.5,0.21501571393513352,1.0,fisher_exact,905.0,0.13726671601318913,0.5775633095683561,,,,,,False,False,False,False
+sector,Transport,82,lãi lớn,positive,1,0,inf,1.0,1.0,fisher_exact,851.0,0.3776375485639252,0.5775633095683561,,,,,,False,False,False,False
+sector,Transport,82,báo lãi,positive,8,0,2.6923076923076925,0.2840132427870683,1.0,fisher_exact,898.0,0.2394117149573397,0.5775633095683561,,,,,,False,False,False,False
+sector,Transport,82,lãi kỷ lục,positive,3,0,1.6744186046511629,1.0,1.0,fisher_exact,848.0,0.6673939089646039,0.8262972206228429,,,,,,False,False,False,False
+sector,Transport,82,bứt phá,positive,2,0,0.8181818181818182,1.0,1.0,fisher_exact,829.0,0.9166813899236366,0.9166813899236366,,,,,,False,False,False,False
+sector,Transport,82,tăng mạnh,positive,1,0,0.0,0.45121951219512185,1.0,fisher_exact,810.0,0.28089330382390354,0.5775633095683561,,,,,,False,False,False,False
+sector,Transport,82,lập đỉnh,positive,2,0,0.8181818181818182,1.0,1.0,fisher_exact,828.0,0.8890656951978139,0.9166813899236366,,,,,,False,False,False,False
+sector,Transport,82,chia cổ tức,positive,4,0,inf,0.12294603958697814,1.0,fisher_exact,906.5,0.06652467682777721,0.5775633095683561,,,,,,False,False,False,False
+sector,Transport,82,mua lại cổ phiếu,positive,1,0,inf,1.0,1.0,fisher_exact,851.0,0.3776375485639252,0.5775633095683561,,,,,,False,False,False,False
+sector,Transport,82,tăng vốn điều lệ,positive,9,0,0.36904761904761907,0.2870732832270668,1.0,fisher_exact,759.5,0.21313788887574647,0.5775633095683561,,,,,,False,False,False,False
+sector,Transport,82,cổ tức tiền mặt,positive,2,0,inf,0.4986449864498645,1.0,fisher_exact,869.5,0.20304939679414025,0.5775633095683561,,,,,,False,False,False,False
+sector,Transport,82,ký kết hợp đồng,positive,6,0,0.8095238095238095,1.0,1.0,fisher_exact,822.0,0.8364906683398472,0.9097319571903382,,,,,,False,False,False,False
+sector,Transport,82,lợi nhuận giảm,negative,1,0,0.0,0.45121951219512185,1.0,fisher_exact,810.0,0.28089330382390354,0.5775633095683561,,,,,,False,False,False,False
+sector,Transport,82,sụt giảm,negative,1,0,inf,1.0,1.0,fisher_exact,851.0,0.3776375485639252,0.5775633095683561,,,,,,False,False,False,False
+sector,Transport,82,lao dốc,negative,1,0,inf,1.0,1.0,fisher_exact,851.0,0.3776375485639252,0.5775633095683561,,,,,,False,False,False,False
+sector,Transport,82,giảm sâu,negative,2,0,inf,0.4986449864498645,1.0,fisher_exact,869.5,0.2030838267999321,0.5775633095683561,,,,,,False,False,False,False
+sector,Transport,82,giảm mạnh,negative,1,0,0.0,0.45121951219512185,1.0,fisher_exact,810.0,0.28089330382390354,0.5775633095683561,,,,,,False,False,False,False
+sector,Transport,82,vi phạm,negative,3,0,1.6744186046511629,1.0,1.0,fisher_exact,846.0,0.7095723774394895,0.8385855369739422,,,,,,False,False,False,False
+sector,Transport,82,đại hội cổ đông,neutral,2,0,inf,0.4986449864498645,1.0,fisher_exact,869.5,0.2030838267999321,0.5775633095683561,,,,,,False,False,False,False
+sector,Transport,82,sáp nhập,neutral,1,0,inf,1.0,1.0,fisher_exact,851.0,0.3776375485639252,0.5775633095683561,,,,,,False,False,False,False
+sector,Transport,82,mua lại,neutral,6,0,1.7073170731707317,0.6851275718209957,1.0,fisher_exact,862.5,0.5426237462547636,0.7054108701311926,,,,,,False,False,False,False
+sector,Transport,82,thoái vốn,neutral,5,0,1.25,1.0,1.0,fisher_exact,842.0,0.8397525758680046,0.9097319571903382,,,,,,False,False,False,False
+sector,Transport,82,lợi nhuận tăng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,doanh thu tăng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,lợi nhuận sau thuế tăng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,kết quả tích cực,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,lãi khủng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,lãi đậm,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,lợi nhuận kỷ lục,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,doanh thu kỷ lục,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,tăng vọt,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,khởi sắc,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,phục hồi,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,hoàn thành kế hoạch,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,lợi nhuận cải thiện,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,cổ tức cao,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,phát hành thưởng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,giảm nợ,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,trả nợ,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,cải thiện tài chính,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,hệ số an toàn vốn,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,dòng tiền dương,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,tiền mặt dồi dào,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,mở rộng thị trường,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,dự án mới,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,đầu tư mới,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,hợp tác chiến lược,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,thắng thầu,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,xuất khẩu tăng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,doanh thu giảm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,lợi nhuận âm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,thua lỗ,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,lỗ ròng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,dưới kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,kết quả tiêu cực,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,lợi nhuận thấp hơn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,báo lỗ,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,lỗ nặng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,lỗ lớn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,lỗ kỷ lục,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,lỗ lũy kế,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,tụt dốc,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,kinh doanh sa sút,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,âm vốn chủ sở hữu,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,lợi nhuận không tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,doanh thu không tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,không tăng trưởng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,tăng trưởng chậm lại,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,không hoàn thành kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,không đạt kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,chưa có lãi,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,không chia cổ tức,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,hủy cổ tức,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,giảm cổ tức,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,phát hành pha loãng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,chào bán giá thấp,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,nợ xấu,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,nợ vay tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,áp lực tài chính,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,nợ quá hạn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,hệ số nợ cao,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,thiếu thanh khoản,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,dòng tiền âm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,hủy hợp đồng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,dự án trì hoãn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,thu hẹp hoạt động,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,đóng cửa,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,dừng dự án,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,bị phạt,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,bị thanh tra,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,bị kiểm toán từ chối,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,cảnh báo,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,đình chỉ,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,khởi tố,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,điều tra,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,tranh chấp pháp lý,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,bị kiện,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,họp HĐQT,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,thay đổi lãnh đạo,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,thay CEO,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,phát hành cổ phiếu mới,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+sector,Transport,82,niêm yết thêm,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,lợi nhuận tăng,positive,9,0,0.7904761904761904,0.7509823067039445,1.0,fisher_exact,32381.5,0.7319317788688162,0.8132575320764625,,,,,,False,False,False,False
+cap_group,large_cap,510,doanh thu tăng,positive,7,0,0.741106719367589,0.7238626549208204,1.0,fisher_exact,32381.0,0.6971658728010871,0.8044221609243313,,,,,,False,False,False,False
+cap_group,large_cap,510,tăng trưởng mạnh,positive,15,0,0.2588275098425197,0.6109268177689007,1.0,chi_square,32885.0,0.44437152993689644,0.5796150390481257,,,,,,False,False,False,False
+cap_group,large_cap,510,vượt kế hoạch,positive,13,0,0.3320474358491957,0.5644559635520141,1.0,chi_square,32109.0,0.37563236800826316,0.5796150390481257,,,,,,False,False,False,False
+cap_group,large_cap,510,kỷ lục,positive,52,0,0.4925843238429507,0.48277675609657,1.0,chi_square,33155.5,0.46181776506203853,0.5895545936962194,,,,,,False,False,False,False
+cap_group,large_cap,510,tăng trưởng,positive,135,0,1.3255105807086627,0.24960546320853627,1.0,chi_square,34037.5,0.23770906992678553,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,lãi ròng,positive,25,0,0.6404141341626752,0.42356087297987544,1.0,chi_square,33118.5,0.3303427793601228,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,lãi khủng,positive,1,0,inf,1.0,1.0,fisher_exact,32639.0,0.32111729070478756,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,lãi lớn,positive,6,0,0.4921259842519685,0.44897268350659475,1.0,fisher_exact,32254.0,0.407348498250245,0.5796150390481257,,,,,,False,False,False,False
+cap_group,large_cap,510,lãi đậm,positive,1,0,inf,1.0,1.0,fisher_exact,32639.0,0.32111729070478756,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,báo lãi,positive,84,0,0.025188772583829618,0.8738975863464189,1.0,chi_square,32018.0,0.6461235213320243,0.7810913474574309,,,,,,False,False,False,False
+cap_group,large_cap,510,lợi nhuận kỷ lục,positive,2,0,0.0,0.24755190877922875,1.0,fisher_exact,32256.0,0.15607731712841483,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,doanh thu kỷ lục,positive,5,0,0.6587926509186351,0.6850381495991288,1.0,fisher_exact,32383.0,0.6509094562145258,0.7810913474574309,,,,,,False,False,False,False
+cap_group,large_cap,510,lãi kỷ lục,positive,15,0,0.0,1.0,1.0,chi_square,32638.0,0.7966524750358897,0.8535562232527389,,,,,,False,False,False,False
+cap_group,large_cap,510,bứt phá,positive,28,0,0.31566497748749694,0.5742245560904768,1.0,chi_square,33015.0,0.4442779463093336,0.5796150390481257,,,,,,False,False,False,False
+cap_group,large_cap,510,tăng vọt,positive,5,0,4.015873015873016,0.3725563137683433,1.0,fisher_exact,32892.0,0.18142869634797,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,tăng mạnh,positive,33,0,2.007053366124848,0.15656916268264892,1.0,chi_square,33644.0,0.11078877839822225,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,khởi sắc,positive,5,0,4.015873015873016,0.3725563137683433,1.0,fisher_exact,32892.0,0.18142869634797,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,phục hồi,positive,13,0,0.00020515563855574463,0.9885720865939397,1.0,chi_square,32365.0,0.7470952482623725,0.8150129981044064,,,,,,False,False,False,False
+cap_group,large_cap,510,lập đỉnh,positive,6,0,2.0,0.6856618364316058,1.0,fisher_exact,32760.0,0.4258046409340219,0.5796150390481257,,,,,,False,False,False,False
+cap_group,large_cap,510,hoàn thành kế hoạch,positive,6,0,2.0,0.6856618364316058,1.0,fisher_exact,32760.0,0.42580434089899877,0.5796150390481257,,,,,,False,False,False,False
+cap_group,large_cap,510,chia cổ tức,positive,74,0,8.152398774601107,0.004300423930327448,0.2580254358196469,chi_square,35506.5,0.003309254756444317,0.19855528538665904,,,,,,False,False,False,False
+cap_group,large_cap,510,mua lại cổ phiếu,positive,14,0,3.542614569359998,0.05981111086423715,0.8182423642571328,chi_square,33527.5,0.03115788653056027,0.4060253050954788,,,,,,False,False,False,False
+cap_group,large_cap,510,tăng vốn điều lệ,positive,93,0,0.7666716314210511,0.38124868329846795,1.0,chi_square,33719.0,0.281555325245722,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,cổ tức tiền mặt,positive,29,0,0.5522055011951581,0.45741792528804215,1.0,chi_square,33169.5,0.3252232954673444,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,giảm nợ,positive,2,0,0.0,0.24755190877922875,1.0,fisher_exact,32256.0,0.15607731712841483,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,trả nợ,positive,13,0,2.793623753232599,0.09463999193014717,0.825707676277286,chi_square,33394.5,0.05220542837358439,0.5220542837358438,,,,,,False,False,False,False
+cap_group,large_cap,510,hệ số an toàn vốn,positive,3,0,1.9921259842519685,1.0,1.0,fisher_exact,32638.0,0.5690745203771383,0.7113431504714229,,,,,,False,False,False,False
+cap_group,large_cap,510,ký kết hợp đồng,positive,32,0,1.6928889641230631,0.19322057753443578,1.0,chi_square,31517.5,0.15526714818360804,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,mở rộng thị trường,positive,2,0,0.9921568627450981,1.0,1.0,fisher_exact,32511.5,1.0,1.0,,,,,,False,False,False,False
+cap_group,large_cap,510,dự án mới,positive,1,0,0.0,0.4980392156862745,1.0,fisher_exact,32384.0,0.31730678663899825,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,hợp tác chiến lược,positive,9,0,0.12058823529411765,0.02006235010406841,0.6018705031220523,fisher_exact,31618.5,0.018617482597942263,0.4060253050954788,,,,,,False,False,False,False
+cap_group,large_cap,510,thắng thầu,positive,2,0,0.9921568627450981,1.0,1.0,fisher_exact,32511.5,1.0,1.0,,,,,,False,False,False,False
+cap_group,large_cap,510,lợi nhuận giảm,negative,6,0,2.0,0.6856618364316058,1.0,fisher_exact,32764.5,0.4174393799150421,0.5796150390481257,,,,,,False,False,False,False
+cap_group,large_cap,510,doanh thu giảm,negative,1,0,inf,1.0,1.0,fisher_exact,32639.0,0.32111729070478756,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,lợi nhuận âm,negative,1,0,0.0,0.4980392156862745,1.0,fisher_exact,32384.0,0.31730678663899825,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,thua lỗ,negative,1,0,inf,1.0,1.0,fisher_exact,32639.0,0.32111729070478756,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,sụt giảm,negative,9,0,2.008,0.5039409443070642,1.0,fisher_exact,32892.5,0.3166719470471937,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,lỗ lớn,negative,1,0,0.0,0.4980392156862745,1.0,fisher_exact,32384.0,0.31730678663899825,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,lỗ lũy kế,negative,1,0,inf,1.0,1.0,fisher_exact,32639.0,0.32111729070478756,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,lao dốc,negative,6,0,5.039840637450199,0.2160035524367121,1.0,fisher_exact,33016.5,0.10485854674589506,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,giảm sâu,negative,7,0,0.741106719367589,0.7238626549208204,1.0,fisher_exact,32378.0,0.6905601377019828,0.8044221609243313,,,,,,False,False,False,False
+cap_group,large_cap,510,giảm mạnh,negative,20,0,0.4442045103597544,0.5051000672097029,1.0,chi_square,32980.5,0.40297813842146124,0.5796150390481257,,,,,,False,False,False,False
+cap_group,large_cap,510,tụt dốc,negative,1,0,0.0,0.4980392156862745,1.0,fisher_exact,32384.0,0.31730678663899825,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,không đạt kế hoạch,negative,1,0,inf,1.0,1.0,fisher_exact,32639.0,0.32111729070478756,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,không chia cổ tức,negative,2,0,inf,0.4990253861859085,1.0,fisher_exact,32766.0,0.15934264686161548,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,nợ xấu,negative,40,0,4.474672485903731,0.03440079498322372,0.6880158996644744,chi_square,34261.5,0.02415417473313055,0.4060253050954788,,,,,,False,False,False,False
+cap_group,large_cap,510,đóng cửa,negative,8,0,7.112449799196787,0.0681868636880944,0.8182423642571328,fisher_exact,33272.5,0.0338354420912899,0.4060253050954788,,,,,,False,False,False,False
+cap_group,large_cap,510,bị phạt,negative,2,0,0.9921568627450981,1.0,1.0,fisher_exact,32510.5,0.9955706277085764,1.0,,,,,,False,False,False,False
+cap_group,large_cap,510,vi phạm,negative,6,0,0.4921259842519685,0.44897268350659475,1.0,fisher_exact,32252.0,0.4037153447927905,0.5796150390481257,,,,,,False,False,False,False
+cap_group,large_cap,510,bị kiểm toán từ chối,negative,1,0,inf,1.0,1.0,fisher_exact,32639.0,0.32111729070478756,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,cảnh báo,negative,1,0,inf,1.0,1.0,fisher_exact,32639.0,0.32111729070478756,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,đình chỉ,negative,1,0,inf,1.0,1.0,fisher_exact,32639.0,0.32111729070478756,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,khởi tố,negative,2,0,0.9921568627450981,1.0,1.0,fisher_exact,32510.5,0.9955706277085764,1.0,,,,,,False,False,False,False
+cap_group,large_cap,510,đại hội cổ đông,neutral,18,0,2.7652346188124164,0.09633256223235004,0.825707676277286,chi_square,33507.0,0.0615413862490195,0.5274975964201671,,,,,,False,False,False,False
+cap_group,large_cap,510,thay CEO,neutral,1,0,inf,1.0,1.0,fisher_exact,32639.0,0.32111729070478756,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,sáp nhập,neutral,9,0,0.7904761904761904,0.7509823067039445,1.0,fisher_exact,32377.0,0.7230282271677456,0.8132575320764625,,,,,,False,False,False,False
+cap_group,large_cap,510,mua lại,neutral,43,0,0.8636406887121908,0.3527218722965769,1.0,chi_square,33374.5,0.28237727679410085,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,niêm yết thêm,neutral,1,0,inf,1.0,1.0,fisher_exact,32639.0,0.32111729070478756,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,thoái vốn,neutral,14,0,1.796043930571399,0.1801915011294778,1.0,chi_square,33256.0,0.11442760633450826,0.5356909935569558,,,,,,False,False,False,False
+cap_group,large_cap,510,lợi nhuận sau thuế tăng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,kết quả tích cực,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,lợi nhuận cải thiện,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,cổ tức cao,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,phát hành thưởng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,cải thiện tài chính,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,dòng tiền dương,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,tiền mặt dồi dào,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,đầu tư mới,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,xuất khẩu tăng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,lỗ ròng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,dưới kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,kết quả tiêu cực,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,lợi nhuận thấp hơn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,báo lỗ,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,lỗ nặng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,lỗ kỷ lục,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,kinh doanh sa sút,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,âm vốn chủ sở hữu,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,lợi nhuận không tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,doanh thu không tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,không tăng trưởng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,tăng trưởng chậm lại,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,không hoàn thành kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,chưa có lãi,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,hủy cổ tức,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,giảm cổ tức,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,phát hành pha loãng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,chào bán giá thấp,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,nợ vay tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,áp lực tài chính,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,nợ quá hạn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,hệ số nợ cao,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,thiếu thanh khoản,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,dòng tiền âm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,hủy hợp đồng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,dự án trì hoãn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,thu hẹp hoạt động,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,dừng dự án,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,bị thanh tra,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,điều tra,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,tranh chấp pháp lý,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,bị kiện,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,họp HĐQT,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,thay đổi lãnh đạo,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,large_cap,510,phát hành cổ phiếu mới,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,lợi nhuận tăng,positive,25,0,0.009397314438451465,0.9227742443417745,1.0,chi_square,88036.5,0.7806339218957692,0.9183928492891402,,,,,,False,False,False,False
+cap_group,mid_cap,838,doanh thu tăng,positive,10,0,0.4411764705882353,0.34170208879217256,1.0,fisher_exact,86953.5,0.22783986926812938,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,tăng trưởng mạnh,positive,9,0,0.293398533007335,0.1780521356457619,1.0,fisher_exact,86737.0,0.10596497180603662,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,vượt kế hoạch,positive,13,0,0.004815525638787611,0.9446760138747202,1.0,chi_square,88029.0,0.708834474716022,0.8970763315800369,,,,,,False,False,False,False
+cap_group,mid_cap,838,kỷ lục,positive,31,0,0.0,1.0,1.0,chi_square,87646.5,0.929388279492198,0.9742461774213923,,,,,,False,False,False,False
+cap_group,mid_cap,838,tăng trưởng,positive,105,0,0.043360432246426044,0.8350480742174209,1.0,chi_square,87098.5,0.7471490071660423,0.8970763315800369,,,,,,False,False,False,False
+cap_group,mid_cap,838,lãi ròng,positive,39,0,0.014916678292865304,0.9027930109526895,1.0,chi_square,88160.5,0.7475636096500308,0.8970763315800369,,,,,,False,False,False,False
+cap_group,mid_cap,838,kết quả tích cực,positive,4,0,3.1323529411764706,0.3648001350488196,1.0,fisher_exact,88183.5,0.2987850532900569,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,lãi lớn,positive,8,0,0.6205882352941177,0.7256519871885723,1.0,fisher_exact,87365.5,0.5167688721223717,0.8088740364997253,,,,,,False,False,False,False
+cap_group,mid_cap,838,lãi đậm,positive,5,0,0.2579268292682927,0.3739616715625386,1.0,fisher_exact,87141.5,0.19428310168200968,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,báo lãi,positive,91,0,0.1722645218550929,0.678107047576638,1.0,chi_square,88723.0,0.606655527374794,0.8088740364997253,,,,,,False,False,False,False
+cap_group,mid_cap,838,doanh thu kỷ lục,positive,1,0,inf,0.4904534606205251,1.0,fisher_exact,87962.0,0.3092048986583832,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,lãi kỷ lục,positive,27,0,0.24225398239292523,0.6225828886924067,1.0,chi_square,88467.0,0.5028206327873919,0.8088740364997253,,,,,,False,False,False,False
+cap_group,mid_cap,838,bứt phá,positive,16,0,1.794161143873817,0.18041998999551745,1.0,chi_square,89079.5,0.10908417432547012,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,tăng vọt,positive,8,0,1.0393120393120394,1.0,1.0,fisher_exact,87782.0,0.9553938290032904,0.9742461774213923,,,,,,False,False,False,False
+cap_group,mid_cap,838,tăng mạnh,positive,23,0,0.5670567484088812,0.45143086225500695,1.0,chi_square,86782.5,0.33010931410283817,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,khởi sắc,positive,4,0,0.34471544715447155,0.6243770029375231,1.0,fisher_exact,87347.0,0.3375931553369902,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,phục hồi,positive,10,0,2.448844884488449,0.2158016763009188,1.0,fisher_exact,88629.0,0.1816411879376003,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,lập đỉnh,positive,11,0,0.29525594695602553,0.5868719160322448,1.0,chi_square,87170.5,0.40300110483911544,0.7111784203043214,,,,,,False,False,False,False
+cap_group,mid_cap,838,hoàn thành kế hoạch,positive,11,0,1.6333275539898262,0.20124341817801583,1.0,chi_square,88833.0,0.11647741155082254,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,chia cổ tức,positive,45,0,0.1920446693215962,0.6612202776398053,1.0,chi_square,88584.5,0.5414785624187244,0.8088740364997253,,,,,,False,False,False,False
+cap_group,mid_cap,838,cổ tức cao,positive,1,0,inf,0.4904534606205251,1.0,fisher_exact,87962.0,0.3092048986583832,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,mua lại cổ phiếu,positive,19,0,0.7126999905248024,0.3985489350481969,1.0,chi_square,86794.0,0.29087284534088476,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,tăng vốn điều lệ,positive,129,0,0.021652602889269606,0.8830150186625945,1.0,chi_square,87437.5,0.8877501901183175,0.9742461774213923,,,,,,False,False,False,False
+cap_group,mid_cap,838,cổ tức tiền mặt,positive,31,0,0.2251120503890956,0.6351720968250816,1.0,chi_square,88506.0,0.5086785453621094,0.8088740364997253,,,,,,False,False,False,False
+cap_group,mid_cap,838,giảm nợ,positive,1,0,inf,0.4904534606205251,1.0,fisher_exact,87962.0,0.3092048986583832,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,trả nợ,positive,8,0,1.0393120393120394,1.0,1.0,fisher_exact,87776.5,0.962822276495356,0.9742461774213923,,,,,,False,False,False,False
+cap_group,mid_cap,838,ký kết hợp đồng,positive,38,0,0.14265484932565886,0.7056558682775903,1.0,chi_square,87038.5,0.5742202831766036,0.8088740364997253,,,,,,False,False,False,False
+cap_group,mid_cap,838,mở rộng thị trường,positive,1,0,inf,0.4904534606205251,1.0,fisher_exact,87962.0,0.3092048986583832,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,đầu tư mới,positive,3,0,0.5182926829268293,1.0,1.0,fisher_exact,87550.0,0.5847843668904398,0.8088740364997253,,,,,,False,False,False,False
+cap_group,mid_cap,838,hợp tác chiến lược,positive,6,0,1.0392156862745099,1.0,1.0,fisher_exact,87777.0,0.9563485948133548,0.9742461774213923,,,,,,False,False,False,False
+cap_group,mid_cap,838,lợi nhuận giảm,negative,6,0,0.0,0.030861893466584002,0.92585680399752,fisher_exact,86515.5,0.01597996955928201,0.47939908677846027,,,,,,False,False,False,False
+cap_group,mid_cap,838,doanh thu giảm,negative,4,0,1.039119804400978,1.0,1.0,fisher_exact,87762.5,0.9742461774213923,0.9742461774213923,,,,,,False,False,False,False
+cap_group,mid_cap,838,thua lỗ,negative,4,0,0.34471544715447155,0.6243770029375231,1.0,fisher_exact,87344.0,0.33399126769212406,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,lỗ ròng,negative,6,0,2.0884520884520885,0.44314360987858553,1.0,fisher_exact,88190.5,0.3880971879208208,0.7056312507651287,,,,,,False,False,False,False
+cap_group,mid_cap,838,sụt giảm,negative,17,0,1.123307425923876,0.28920739264759165,1.0,chi_square,88855.0,0.19602296427780996,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,báo lỗ,negative,7,0,1.389025389025389,0.720608825188362,1.0,fisher_exact,87983.0,0.6717413844315878,0.876184414475984,,,,,,False,False,False,False
+cap_group,mid_cap,838,lỗ nặng,negative,3,0,0.5182926829268293,1.0,1.0,fisher_exact,87552.0,0.5885831441053269,0.8088740364997253,,,,,,False,False,False,False
+cap_group,mid_cap,838,lỗ lớn,negative,1,0,inf,0.4904534606205251,1.0,fisher_exact,87962.0,0.3092048986583832,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,lỗ kỷ lục,negative,4,0,3.1323529411764706,0.3648001350488196,1.0,fisher_exact,88184.0,0.298229514387246,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,lỗ lũy kế,negative,1,0,0.0,1.0,1.0,fisher_exact,87543.0,0.3277288781529847,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,lao dốc,negative,6,0,1.0392156862745099,1.0,1.0,fisher_exact,87775.0,0.9594637650932578,0.9742461774213923,,,,,,False,False,False,False
+cap_group,mid_cap,838,giảm sâu,negative,16,0,0.6964373724676833,0.40398338432112646,1.0,chi_square,88646.5,0.27975891652252816,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,giảm mạnh,negative,16,0,8.146841949572284,0.004313621704797321,0.2588173022878393,chi_square,90336.5,0.0018324106289558518,0.10994463773735111,,,,,,False,False,False,False
+cap_group,mid_cap,838,không chia cổ tức,negative,5,0,4.186732186732187,0.20900275072199562,1.0,fisher_exact,88395.0,0.1668033227132545,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,nợ xấu,negative,15,0,0.005569878472754101,0.9405078163809674,1.0,chi_square,88013.5,0.7423166978336976,0.8970763315800369,,,,,,False,False,False,False
+cap_group,mid_cap,838,nợ vay tăng,negative,2,0,0.0,0.4995851190323436,1.0,fisher_exact,87337.5,0.16556240916538412,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,đóng cửa,negative,11,0,3.089283181630154,0.07880951841251066,1.0,chi_square,86333.0,0.040457166082074364,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,bị phạt,negative,8,0,1.0393120393120394,1.0,1.0,fisher_exact,87786.5,0.949318874271737,0.9742461774213923,,,,,,False,False,False,False
+cap_group,mid_cap,838,vi phạm,negative,69,0,0.11369242075903604,0.7359789011346503,1.0,chi_square,86870.5,0.5992263033975731,0.8088740364997253,,,,,,False,False,False,False
+cap_group,mid_cap,838,bị thanh tra,negative,1,0,0.0,1.0,1.0,fisher_exact,87543.0,0.3277288781529847,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,cảnh báo,negative,18,0,0.10254270129896488,0.7487993699627113,1.0,chi_square,88247.5,0.5709245274989394,0.8088740364997253,,,,,,False,False,False,False
+cap_group,mid_cap,838,đình chỉ,negative,4,0,1.039119804400978,1.0,1.0,fisher_exact,87766.5,0.9666193477833922,0.9742461774213923,,,,,,False,False,False,False
+cap_group,mid_cap,838,điều tra,negative,1,0,inf,0.4904534606205251,1.0,fisher_exact,87962.0,0.3092048986583832,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,đại hội cổ đông,neutral,16,0,0.6964373724676833,0.40398338432112646,1.0,chi_square,88637.0,0.28488054218337644,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,họp HĐQT,neutral,12,0,0.12776958566231794,0.7207559110763662,1.0,chi_square,88221.0,0.5126004936643016,0.8088740364997253,,,,,,False,False,False,False
+cap_group,mid_cap,838,thay CEO,neutral,1,0,inf,0.4904534606205251,1.0,fisher_exact,87962.0,0.3092048986583832,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,sáp nhập,neutral,9,0,2.093827160493827,0.33263436228699617,1.0,fisher_exact,88409.0,0.2912670122074863,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,mua lại,neutral,75,0,0.4322480431428203,0.51088792445311,1.0,chi_square,89267.0,0.38147099319310385,0.7056312507651287,,,,,,False,False,False,False
+cap_group,mid_cap,838,thoái vốn,neutral,27,0,0.7806061481053364,0.3769558222526167,1.0,chi_square,88928.5,0.2710082786013731,0.6534061071038519,,,,,,False,False,False,False
+cap_group,mid_cap,838,lợi nhuận sau thuế tăng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,lãi khủng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,lợi nhuận kỷ lục,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,lợi nhuận cải thiện,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,phát hành thưởng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,cải thiện tài chính,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,hệ số an toàn vốn,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,dòng tiền dương,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,tiền mặt dồi dào,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,dự án mới,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,thắng thầu,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,xuất khẩu tăng,positive,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,lợi nhuận âm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,dưới kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,kết quả tiêu cực,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,lợi nhuận thấp hơn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,tụt dốc,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,kinh doanh sa sút,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,âm vốn chủ sở hữu,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,lợi nhuận không tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,doanh thu không tăng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,không tăng trưởng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,tăng trưởng chậm lại,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,không hoàn thành kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,không đạt kế hoạch,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,chưa có lãi,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,hủy cổ tức,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,giảm cổ tức,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,phát hành pha loãng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,chào bán giá thấp,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,áp lực tài chính,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,nợ quá hạn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,hệ số nợ cao,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,thiếu thanh khoản,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,dòng tiền âm,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,hủy hợp đồng,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,dự án trì hoãn,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,thu hẹp hoạt động,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,dừng dự án,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,bị kiểm toán từ chối,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,khởi tố,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,tranh chấp pháp lý,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,bị kiện,negative,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,thay đổi lãnh đạo,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,phát hành cổ phiếu mới,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False
+cap_group,mid_cap,838,niêm yết thêm,neutral,0,1,,,,excluded,,,,,,,,,False,False,False,False

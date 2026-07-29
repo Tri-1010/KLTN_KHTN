@@ -1,0 +1,52 @@
+[2026-07-03 07:40:56] [BACKTEST_INTERPRET] [INFO] Tính SHAP (TreeExplainer) thành công cho RandomForestClassifier: 16 đặc trưng.
+[2026-07-03 07:40:56] [BACKTEST_INTERPRET] [INFO] Đã ghi bảng tầm quan trọng đặc trưng (16 đặc trưng, SHAP=True) → C:\Users\User\AppData\Local\Temp\tmp9nfkvlnh\technical_feature_importance.csv
+[2026-07-03 07:40:56] [BACKTEST_INTERPRET] [INFO] Đã lưu biểu đồ tầm quan trọng đặc trưng → C:\Users\User\AppData\Local\Temp\tmp9nfkvlnh\technical_feature_importance.png
+[2026-07-03 07:40:57] [BACKTEST_INTERPRET] [INFO] Mô hình LogisticRegression không phải mô hình cây — bỏ qua SHAP, fallback về permutation importance cho cột xếp hạng.
+[2026-07-03 07:40:57] [BACKTEST_INTERPRET] [INFO] Fallback: dùng permutation importance làm giá trị mean_abs_shap (SHAP không khả dụng cho mô hình này).
+[2026-07-03 07:40:57] [BACKTEST_INTERPRET] [INFO] Đã ghi bảng tầm quan trọng đặc trưng (16 đặc trưng, SHAP=False) → C:\Users\User\AppData\Local\Temp\tmpccq4bp9z\technical_feature_importance.csv
+[2026-07-03 07:40:57] [BACKTEST_INTERPRET] [INFO] Đã lưu biểu đồ tầm quan trọng đặc trưng → C:\Users\User\AppData\Local\Temp\tmpccq4bp9z\technical_feature_importance.png
+[2026-07-03 07:41:05] [BACKTEST_INTERPRET] [INFO] Tính SHAP (TreeExplainer) thành công cho RandomForestClassifier: 16 đặc trưng.
+[2026-07-03 07:41:05] [BACKTEST_INTERPRET] [INFO] Đã ghi bảng tầm quan trọng đặc trưng (16 đặc trưng, SHAP=True) → C:\Users\User\AppData\Local\Temp\tmpsv_5gtyo\technical_feature_importance.csv
+[2026-07-03 07:41:05] [BACKTEST_INTERPRET] [INFO] Đã lưu biểu đồ tầm quan trọng đặc trưng → C:\Users\User\AppData\Local\Temp\tmpsv_5gtyo\technical_feature_importance.png
+[2026-07-03 07:41:06] [BACKTEST_INTERPRET] [INFO] Mô hình LogisticRegression không phải mô hình cây — bỏ qua SHAP, fallback về permutation importance cho cột xếp hạng.
+[2026-07-03 07:41:06] [BACKTEST_INTERPRET] [INFO] Fallback: dùng permutation importance làm giá trị mean_abs_shap (SHAP không khả dụng cho mô hình này).
+[2026-07-03 07:41:06] [BACKTEST_INTERPRET] [INFO] Đã ghi bảng tầm quan trọng đặc trưng (16 đặc trưng, SHAP=False) → C:\Users\User\AppData\Local\Temp\tmp95eyn1bg\technical_feature_importance.csv
+[2026-07-03 07:41:07] [BACKTEST_INTERPRET] [INFO] Đã lưu biểu đồ tầm quan trọng đặc trưng → C:\Users\User\AppData\Local\Temp\tmp95eyn1bg\technical_feature_importance.png
+[2026-07-03 11:28:46] [BACKTEST_INTERPRET] [INFO] Tính SHAP (TreeExplainer) thành công cho RandomForestClassifier: 16 đặc trưng.
+[2026-07-03 11:28:46] [BACKTEST_INTERPRET] [INFO] Đã ghi bảng tầm quan trọng đặc trưng (16 đặc trưng, SHAP=True) → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-286\test_tree_model_path_ranking_t0\technical_feature_importance.csv
+[2026-07-03 11:28:47] [BACKTEST_INTERPRET] [INFO] Đã lưu biểu đồ tầm quan trọng đặc trưng → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-286\test_tree_model_path_ranking_t0\technical_feature_importance.png
+[2026-07-03 11:28:47] [BACKTEST_INTERPRET] [INFO] Mô hình LogisticRegression không phải mô hình cây — bỏ qua SHAP, fallback về permutation importance cho cột xếp hạng.
+[2026-07-03 11:28:47] [BACKTEST_INTERPRET] [INFO] Fallback: dùng permutation importance làm giá trị mean_abs_shap (SHAP không khả dụng cho mô hình này).
+[2026-07-03 11:28:47] [BACKTEST_INTERPRET] [INFO] Đã ghi bảng tầm quan trọng đặc trưng (16 đặc trưng, SHAP=False) → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-286\test_logistic_regression_fallb0\technical_feature_importance.csv
+[2026-07-03 11:28:47] [BACKTEST_INTERPRET] [INFO] Đã lưu biểu đồ tầm quan trọng đặc trưng → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-286\test_logistic_regression_fallb0\technical_feature_importance.png
+[2026-07-03 11:29:10] [BACKTEST_INTERPRET] [INFO] Tính SHAP (TreeExplainer) thành công cho RandomForestClassifier: 16 đặc trưng.
+[2026-07-03 11:29:10] [BACKTEST_INTERPRET] [INFO] Đã ghi bảng tầm quan trọng đặc trưng (16 đặc trưng, SHAP=True) → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-287\test_tree_model_path_ranking_t0\technical_feature_importance.csv
+[2026-07-03 11:29:10] [BACKTEST_INTERPRET] [INFO] Đã lưu biểu đồ tầm quan trọng đặc trưng → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-287\test_tree_model_path_ranking_t0\technical_feature_importance.png
+[2026-07-03 11:29:10] [BACKTEST_INTERPRET] [INFO] Mô hình LogisticRegression không phải mô hình cây — bỏ qua SHAP, fallback về permutation importance cho cột xếp hạng.
+[2026-07-03 11:29:10] [BACKTEST_INTERPRET] [INFO] Fallback: dùng permutation importance làm giá trị mean_abs_shap (SHAP không khả dụng cho mô hình này).
+[2026-07-03 11:29:10] [BACKTEST_INTERPRET] [INFO] Đã ghi bảng tầm quan trọng đặc trưng (16 đặc trưng, SHAP=False) → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-287\test_logistic_regression_fallb0\technical_feature_importance.csv
+[2026-07-03 11:29:10] [BACKTEST_INTERPRET] [INFO] Đã lưu biểu đồ tầm quan trọng đặc trưng → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-287\test_logistic_regression_fallb0\technical_feature_importance.png
+[2026-07-03 13:36:13] [BACKTEST_INTERPRET] [INFO] Tính SHAP (TreeExplainer) thành công cho RandomForestClassifier: 16 đặc trưng.
+[2026-07-03 13:36:13] [BACKTEST_INTERPRET] [INFO] Đã ghi bảng tầm quan trọng đặc trưng (16 đặc trưng, SHAP=True) → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-291\test_tree_model_path_ranking_t0\technical_feature_importance.csv
+[2026-07-03 13:36:13] [BACKTEST_INTERPRET] [INFO] Đã lưu biểu đồ tầm quan trọng đặc trưng → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-291\test_tree_model_path_ranking_t0\technical_feature_importance.png
+[2026-07-03 13:36:13] [BACKTEST_INTERPRET] [INFO] Mô hình LogisticRegression không phải mô hình cây — bỏ qua SHAP, fallback về permutation importance cho cột xếp hạng.
+[2026-07-03 13:36:13] [BACKTEST_INTERPRET] [INFO] Fallback: dùng permutation importance làm giá trị mean_abs_shap (SHAP không khả dụng cho mô hình này).
+[2026-07-03 13:36:13] [BACKTEST_INTERPRET] [INFO] Đã ghi bảng tầm quan trọng đặc trưng (16 đặc trưng, SHAP=False) → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-291\test_logistic_regression_fallb0\technical_feature_importance.csv
+[2026-07-03 13:36:13] [BACKTEST_INTERPRET] [INFO] Đã lưu biểu đồ tầm quan trọng đặc trưng → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-291\test_logistic_regression_fallb0\technical_feature_importance.png
+[2026-07-03 13:38:05] [BACKTEST_INTERPRET] [INFO] Tính SHAP (TreeExplainer) thành công cho RandomForestClassifier: 16 đặc trưng.
+[2026-07-03 13:38:05] [BACKTEST_INTERPRET] [INFO] Đã ghi bảng tầm quan trọng đặc trưng (16 đặc trưng, SHAP=True) → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-292\test_tree_model_path_ranking_t0\technical_feature_importance.csv
+[2026-07-03 13:38:05] [BACKTEST_INTERPRET] [INFO] Đã lưu biểu đồ tầm quan trọng đặc trưng → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-292\test_tree_model_path_ranking_t0\technical_feature_importance.png
+[2026-07-03 13:38:06] [BACKTEST_INTERPRET] [INFO] Mô hình LogisticRegression không phải mô hình cây — bỏ qua SHAP, fallback về permutation importance cho cột xếp hạng.
+[2026-07-03 13:38:06] [BACKTEST_INTERPRET] [INFO] Fallback: dùng permutation importance làm giá trị mean_abs_shap (SHAP không khả dụng cho mô hình này).
+[2026-07-03 13:38:06] [BACKTEST_INTERPRET] [INFO] Đã ghi bảng tầm quan trọng đặc trưng (16 đặc trưng, SHAP=False) → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-292\test_logistic_regression_fallb0\technical_feature_importance.csv
+[2026-07-03 13:38:06] [BACKTEST_INTERPRET] [INFO] Đã lưu biểu đồ tầm quan trọng đặc trưng → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-292\test_logistic_regression_fallb0\technical_feature_importance.png
+[2026-07-03 14:23:03] [BACKTEST_INTERPRET] [INFO] Tính SHAP (TreeExplainer) thành công cho RandomForestClassifier: 16 đặc trưng.
+[2026-07-03 14:23:03] [BACKTEST_INTERPRET] [INFO] Đã ghi bảng tầm quan trọng đặc trưng (16 đặc trưng, SHAP=True) → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-293\test_tree_model_path_ranking_t0\technical_feature_importance.csv
+[2026-07-03 14:23:03] [BACKTEST_INTERPRET] [INFO] Đã lưu biểu đồ tầm quan trọng đặc trưng → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-293\test_tree_model_path_ranking_t0\technical_feature_importance.png
+[2026-07-03 14:23:04] [BACKTEST_INTERPRET] [INFO] Mô hình LogisticRegression không phải mô hình cây — bỏ qua SHAP, fallback về permutation importance cho cột xếp hạng.
+[2026-07-03 14:23:04] [BACKTEST_INTERPRET] [INFO] Fallback: dùng permutation importance làm giá trị mean_abs_shap (SHAP không khả dụng cho mô hình này).
+[2026-07-03 14:23:04] [BACKTEST_INTERPRET] [INFO] Đã ghi bảng tầm quan trọng đặc trưng (16 đặc trưng, SHAP=False) → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-293\test_logistic_regression_fallb0\technical_feature_importance.csv
+[2026-07-03 14:23:04] [BACKTEST_INTERPRET] [INFO] Đã lưu biểu đồ tầm quan trọng đặc trưng → C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-293\test_logistic_regression_fallb0\technical_feature_importance.png
+[2026-07-03 14:26:47] [BACKTEST_INTERPRET] [INFO] Tính SHAP (TreeExplainer) thành công cho LGBMClassifier: 16 đặc trưng.
+[2026-07-03 14:26:47] [BACKTEST_INTERPRET] [INFO] Đã ghi bảng tầm quan trọng đặc trưng (16 đặc trưng, SHAP=True) → reports\technical_feature_importance.csv
+[2026-07-03 14:26:48] [BACKTEST_INTERPRET] [INFO] Đã lưu biểu đồ tầm quan trọng đặc trưng → reports\technical_feature_importance.png

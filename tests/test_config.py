@@ -22,18 +22,24 @@ def test_pipeline_config_loads():
 
 
 def test_pipeline_config_tickers():
-    """Verify all 30 VN30 tickers are present."""
+    """Verify the HOSE-80 universe (80 tickers) is present.
+
+    Config was expanded from the original 30 VN30 constituents to 80 tickers
+    (HOSE-80 expansion adopted 2026-06-29). The 30 VN30 tickers remain a
+    subset of the configured list.
+    """
     with open("config/pipeline_config.yaml", "r", encoding="utf-8") as f:
         config = yaml.safe_load(f)
 
-    expected_tickers = [
+    vn30_tickers = [
         "ACB", "BCM", "BID", "BVH", "CTG", "FPT", "GAS", "GVR",
         "HDB", "HPG", "MBB", "MSN", "MWG", "PLX", "POW", "SAB",
         "SHB", "SSB", "SSI", "STB", "TCB", "TPB", "VCB", "VHM",
         "VIB", "VIC", "VJC", "VNM", "VPB", "VRE",
     ]
-    assert len(config["tickers"]) == 30
-    assert sorted(config["tickers"]) == sorted(expected_tickers)
+    assert len(config["tickers"]) == 80
+    # All 30 VN30 tickers must remain present in the expanded universe.
+    assert set(vn30_tickers).issubset(set(config["tickers"]))
 
 
 def test_pipeline_config_values():

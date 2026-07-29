@@ -1,0 +1,408 @@
+[2026-07-06 08:47:52] [TASK_10] [INFO] ============================================================
+[2026-07-06 08:47:52] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-07-06 08:47:52] [TASK_10] [INFO] Timestamp: 2026-07-06T08:47:52.277855
+[2026-07-06 08:47:52] [TASK_10] [INFO] ============================================================
+[2026-07-06 08:47:52] [TASK_10] [INFO] Input: data/features/technical_features.csv (1521 rows)
+[2026-07-06 08:47:52] [TASK_10] [INFO] Input: data/features/keyword_features.csv (1450 rows)
+[2026-07-06 08:47:52] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (1428 rows)
+[2026-07-06 08:47:52] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-07-06 08:47:52] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-07-06 08:47:52] [TASK_10] [INFO] ============================================================
+[2026-07-06 08:47:56] [TASK_10] [INFO] ============================================================
+[2026-07-06 08:47:56] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-07-06 08:47:56] [TASK_10] [INFO] Timestamp: 2026-07-06T08:47:56.098417
+[2026-07-06 08:47:56] [TASK_10] [INFO] ============================================================
+[2026-07-06 08:47:56] [TASK_10] [INFO] Input: data/features/technical_features.csv (1521 rows)
+[2026-07-06 08:47:56] [TASK_10] [INFO] Input: data/features/keyword_features.csv (1450 rows)
+[2026-07-06 08:47:56] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (1428 rows)
+[2026-07-06 08:47:56] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-07-06 08:47:56] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-07-06 08:47:56] [TASK_10] [INFO] ============================================================
+[2026-07-06 08:56:24] [TASK_10] [INFO] ============================================================
+[2026-07-06 08:56:24] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-07-06 08:56:24] [TASK_10] [INFO] Timestamp: 2026-07-06T08:56:24.549191
+[2026-07-06 08:56:24] [TASK_10] [INFO] ============================================================
+[2026-07-06 08:56:24] [TASK_10] [INFO] Input: data/features/technical_features.csv (1521 rows)
+[2026-07-06 08:56:24] [TASK_10] [INFO] Input: data/features/keyword_features.csv (1450 rows)
+[2026-07-06 08:56:24] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (1428 rows)
+[2026-07-06 08:56:24] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-07-06 08:56:24] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-07-06 08:56:24] [TASK_10] [INFO] ============================================================
+[2026-07-06 08:56:28] [TASK_10] [INFO] ============================================================
+[2026-07-06 08:56:28] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-07-06 08:56:28] [TASK_10] [INFO] Timestamp: 2026-07-06T08:56:28.382069
+[2026-07-06 08:56:28] [TASK_10] [INFO] ============================================================
+[2026-07-06 08:56:28] [TASK_10] [INFO] Input: data/features/technical_features.csv (1521 rows)
+[2026-07-06 08:56:28] [TASK_10] [INFO] Input: data/features/keyword_features.csv (1450 rows)
+[2026-07-06 08:56:28] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (1428 rows)
+[2026-07-06 08:56:28] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-07-06 08:56:28] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-07-06 08:56:28] [TASK_10] [INFO] ============================================================
+[2026-07-06 14:10:39] [TASK_10] [INFO] ============================================================
+[2026-07-06 14:10:39] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-07-06 14:10:39] [TASK_10] [INFO] Timestamp: 2026-07-06T14:10:39.934281
+[2026-07-06 14:10:39] [TASK_10] [INFO] ============================================================
+[2026-07-06 14:10:39] [TASK_10] [INFO] Input: data/features/technical_features.csv (1521 rows)
+[2026-07-06 14:10:39] [TASK_10] [INFO] Input: data/features/keyword_features.csv (1450 rows)
+[2026-07-06 14:10:40] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (1428 rows)
+[2026-07-06 14:10:40] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-07-06 14:10:40] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-07-06 14:10:40] [TASK_10] [INFO] ============================================================
+[2026-07-06 14:10:42] [TASK_10] [INFO] ============================================================
+[2026-07-06 14:10:42] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-07-06 14:10:42] [TASK_10] [INFO] Timestamp: 2026-07-06T14:10:42.576381
+[2026-07-06 14:10:42] [TASK_10] [INFO] ============================================================
+[2026-07-06 14:10:42] [TASK_10] [INFO] Input: data/features/technical_features.csv (1521 rows)
+[2026-07-06 14:10:42] [TASK_10] [INFO] Input: data/features/keyword_features.csv (1450 rows)
+[2026-07-06 14:10:42] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (1428 rows)
+[2026-07-06 14:10:42] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-07-06 14:10:42] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-07-06 14:10:42] [TASK_10] [INFO] ============================================================
+[2026-07-06 15:29:04] [TASK_10] [INFO] ============================================================
+[2026-07-06 15:29:04] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-07-06 15:29:04] [TASK_10] [INFO] Timestamp: 2026-07-06T15:29:04.680046
+[2026-07-06 15:29:04] [TASK_10] [INFO] ============================================================
+[2026-07-06 15:29:04] [TASK_10] [INFO] Input: data/features/technical_features.csv (1521 rows)
+[2026-07-06 15:29:04] [TASK_10] [INFO] Input: data/features/keyword_features.csv (1450 rows)
+[2026-07-06 15:29:04] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (1428 rows)
+[2026-07-06 15:29:04] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-07-06 15:29:04] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-07-06 15:29:04] [TASK_10] [INFO] ============================================================
+[2026-07-06 15:29:08] [TASK_10] [INFO] ============================================================
+[2026-07-06 15:29:08] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-07-06 15:29:08] [TASK_10] [INFO] Timestamp: 2026-07-06T15:29:08.172612
+[2026-07-06 15:29:08] [TASK_10] [INFO] ============================================================
+[2026-07-06 15:29:08] [TASK_10] [INFO] Input: data/features/technical_features.csv (1521 rows)
+[2026-07-06 15:29:08] [TASK_10] [INFO] Input: data/features/keyword_features.csv (1450 rows)
+[2026-07-06 15:29:08] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (1428 rows)
+[2026-07-06 15:29:08] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-07-06 15:29:08] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-07-06 15:29:08] [TASK_10] [INFO] ============================================================
+[2026-07-06 20:55:46] [TASK_10] [INFO] ============================================================
+[2026-07-06 20:55:46] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-07-06 20:55:46] [TASK_10] [INFO] Timestamp: 2026-07-06T20:55:46.223420
+[2026-07-06 20:55:46] [TASK_10] [INFO] ============================================================
+[2026-07-06 20:55:46] [TASK_10] [INFO] Input: data/features/technical_features.csv (1521 rows)
+[2026-07-06 20:55:46] [TASK_10] [INFO] Input: data/features/keyword_features.csv (1450 rows)
+[2026-07-06 20:55:46] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (1428 rows)
+[2026-07-06 20:55:46] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-07-06 20:55:46] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-07-06 20:55:46] [TASK_10] [INFO] ============================================================
+[2026-07-06 20:55:49] [TASK_10] [INFO] ============================================================
+[2026-07-06 20:55:49] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-07-06 20:55:49] [TASK_10] [INFO] Timestamp: 2026-07-06T20:55:49.952949
+[2026-07-06 20:55:49] [TASK_10] [INFO] ============================================================
+[2026-07-06 20:55:49] [TASK_10] [INFO] Input: data/features/technical_features.csv (1521 rows)
+[2026-07-06 20:55:49] [TASK_10] [INFO] Input: data/features/keyword_features.csv (1450 rows)
+[2026-07-06 20:55:50] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (1428 rows)
+[2026-07-06 20:55:50] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-07-06 20:55:50] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-07-06 20:55:50] [TASK_10] [INFO] ============================================================
+[2026-07-06 20:56:15] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-07-06 20:56:15] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-07-06 20:56:15] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-07-06 20:56:15] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-07-06 20:56:15] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2024Q4; falling back to last 20% of quarters (1 test quarters).
+[2026-07-06 20:56:15] [TASK_10] [INFO] Time-series split — train: 21 rows (7 quarters), test: 3 rows (1 quarters)
+[2026-07-06 20:56:16] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-07-06 20:56:16] [TASK_10] [INFO] Confusion matrix for Dummy - Config_A:
+[[10  0]
+ [ 2  0]]
+[2026-07-06 20:56:23] [TASK_10] [INFO] ============================================================
+[2026-07-06 20:56:23] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-07-06 20:56:23] [TASK_10] [INFO] Timestamp: 2026-07-06T20:56:23.331517
+[2026-07-06 20:56:23] [TASK_10] [INFO] ============================================================
+[2026-07-06 20:56:23] [TASK_10] [INFO] Input: data/features/technical_features.csv (1521 rows)
+[2026-07-06 20:56:23] [TASK_10] [INFO] Input: data/features/keyword_features.csv (1450 rows)
+[2026-07-06 20:56:23] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (1428 rows)
+[2026-07-06 20:56:23] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-07-06 20:56:23] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-07-06 20:56:23] [TASK_10] [INFO] ============================================================
+[2026-07-06 20:56:26] [TASK_10] [INFO] ============================================================
+[2026-07-06 20:56:26] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-07-06 20:56:26] [TASK_10] [INFO] Timestamp: 2026-07-06T20:56:26.998647
+[2026-07-06 20:56:26] [TASK_10] [INFO] ============================================================
+[2026-07-06 20:56:27] [TASK_10] [INFO] Input: data/features/technical_features.csv (1521 rows)
+[2026-07-06 20:56:27] [TASK_10] [INFO] Input: data/features/keyword_features.csv (1450 rows)
+[2026-07-06 20:56:27] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (1428 rows)
+[2026-07-06 20:56:27] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-07-06 20:56:27] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-07-06 20:56:27] [TASK_10] [INFO] ============================================================
+[2026-07-06 21:27:47] [TASK_10] [INFO] ============================================================
+[2026-07-06 21:27:47] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-07-06 21:27:47] [TASK_10] [INFO] Timestamp: 2026-07-06T21:27:47.490416
+[2026-07-06 21:27:47] [TASK_10] [INFO] ============================================================
+[2026-07-06 21:27:47] [TASK_10] [INFO] Input: data/features/technical_features.csv (1521 rows)
+[2026-07-06 21:27:47] [TASK_10] [INFO] Input: data/features/keyword_features.csv (1450 rows)
+[2026-07-06 21:27:48] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (1428 rows)
+[2026-07-06 21:27:53] [TASK_10] [INFO] Merged dataset: 1348 rows, 343 columns
+[2026-07-06 21:27:53] [TASK_10] [INFO] Feature columns — technical: 16, keyword: 324
+[2026-07-06 21:27:53] [TASK_10] [INFO] Time-series split — train: 948 rows (12 quarters), test: 400 rows (5 quarters)
+[2026-07-06 21:27:53] [TASK_10] [INFO] === Config_A (16 features) ===
+[2026-07-06 21:27:53] [TASK_10] [INFO]   Train: 948 samples, Test: 400 samples, Features: 16
+[2026-07-06 21:27:53] [TASK_10] [INFO] Confusion matrix for Majority_Class - Config_A:
+[[  0 210]
+ [  0 190]]
+[2026-07-06 21:27:53] [TASK_10] [INFO] Confusion matrix for Naive_Momentum - Config_A:
+[[ 88 122]
+ [ 85 105]]
+[2026-07-06 21:27:53] [TASK_10] [INFO]   Training Logistic_Regression …
+[2026-07-06 21:27:53] [TASK_10] [INFO] Confusion matrix for Logistic_Regression - Config_A:
+[[155  55]
+ [ 54 136]]
+[2026-07-06 21:27:53] [TASK_10] [INFO]   Training Random_Forest …
+[2026-07-06 21:27:54] [TASK_10] [INFO] Confusion matrix for Random_Forest - Config_A:
+[[154  56]
+ [ 50 140]]
+[2026-07-06 21:27:54] [TASK_10] [INFO]   Training XGBoost …
+[2026-07-06 21:27:54] [TASK_10] [INFO] Confusion matrix for XGBoost - Config_A:
+[[156  54]
+ [ 54 136]]
+[2026-07-06 21:27:54] [TASK_10] [INFO]   Training LightGBM …
+[2026-07-06 21:27:55] [TASK_10] [INFO] Confusion matrix for LightGBM - Config_A:
+[[160  50]
+ [ 46 144]]
+[2026-07-06 21:27:55] [TASK_10] [INFO] === Config_B (324 features) ===
+[2026-07-06 21:27:55] [TASK_10] [INFO]   Train: 948 samples, Test: 400 samples, Features: 324
+[2026-07-06 21:27:55] [TASK_10] [INFO] Confusion matrix for Majority_Class - Config_B:
+[[  0 210]
+ [  0 190]]
+[2026-07-06 21:27:56] [TASK_10] [INFO] Confusion matrix for Naive_Momentum - Config_B:
+[[ 88 122]
+ [ 85 105]]
+[2026-07-06 21:27:56] [TASK_10] [INFO]   Training Logistic_Regression …
+[2026-07-06 21:27:56] [TASK_10] [INFO] Confusion matrix for Logistic_Regression - Config_B:
+[[ 95 115]
+ [ 86 104]]
+[2026-07-06 21:27:56] [TASK_10] [INFO]   Training Random_Forest …
+[2026-07-06 21:27:56] [TASK_10] [INFO] Confusion matrix for Random_Forest - Config_B:
+[[ 63 147]
+ [ 55 135]]
+[2026-07-06 21:27:56] [TASK_10] [INFO]   Training XGBoost …
+[2026-07-06 21:27:57] [TASK_10] [INFO] Confusion matrix for XGBoost - Config_B:
+[[ 62 148]
+ [ 64 126]]
+[2026-07-06 21:27:57] [TASK_10] [INFO]   Training LightGBM …
+[2026-07-06 21:27:57] [TASK_10] [INFO] Confusion matrix for LightGBM - Config_B:
+[[ 59 151]
+ [ 72 118]]
+[2026-07-06 21:27:57] [TASK_10] [INFO] === Config_C (340 features) ===
+[2026-07-06 21:27:58] [TASK_10] [INFO]   Train: 948 samples, Test: 400 samples, Features: 340
+[2026-07-06 21:27:58] [TASK_10] [INFO] Confusion matrix for Majority_Class - Config_C:
+[[  0 210]
+ [  0 190]]
+[2026-07-06 21:27:58] [TASK_10] [INFO] Confusion matrix for Naive_Momentum - Config_C:
+[[ 88 122]
+ [ 85 105]]
+[2026-07-06 21:27:58] [TASK_10] [INFO]   Training Logistic_Regression …
+[2026-07-06 21:27:58] [TASK_10] [INFO] Confusion matrix for Logistic_Regression - Config_C:
+[[147  63]
+ [ 52 138]]
+[2026-07-06 21:27:58] [TASK_10] [INFO]   Training Random_Forest …
+[2026-07-06 21:27:58] [TASK_10] [INFO] Confusion matrix for Random_Forest - Config_C:
+[[107 103]
+ [ 33 157]]
+[2026-07-06 21:27:58] [TASK_10] [INFO]   Training XGBoost …
+[2026-07-06 21:28:00] [TASK_10] [INFO] Confusion matrix for XGBoost - Config_C:
+[[136  74]
+ [ 38 152]]
+[2026-07-06 21:28:00] [TASK_10] [INFO]   Training LightGBM …
+[2026-07-06 21:28:00] [TASK_10] [INFO] Confusion matrix for LightGBM - Config_C:
+[[141  69]
+ [ 38 152]]
+[2026-07-06 21:28:00] [TASK_10] [INFO] Saved model comparison to reports/model_comparison.csv (18 rows)
+[2026-07-06 21:28:00] [TASK_10] [INFO] Best model: LightGBM (Config_A) — Balanced Accuracy = 0.7599
+[2026-07-06 21:28:00] [TASK_10] [INFO] Majority_Class: Config_C does not improve over Config_A by 0.0000 (BA: 0.5000 → 0.5000)
+[2026-07-06 21:28:00] [TASK_10] [INFO] Note: Config_C does not improve over Config_A for Majority_Class. This is still a valid research finding.
+[2026-07-06 21:28:00] [TASK_10] [INFO] Naive_Momentum: Config_C does not improve over Config_A by 0.0000 (BA: 0.4858 → 0.4858)
+[2026-07-06 21:28:00] [TASK_10] [INFO] Note: Config_C does not improve over Config_A for Naive_Momentum. This is still a valid research finding.
+[2026-07-06 21:28:00] [TASK_10] [INFO] Logistic_Regression: Config_C does not improve over Config_A by 0.0138 (BA: 0.7269 → 0.7132)
+[2026-07-06 21:28:00] [TASK_10] [INFO] Note: Config_C does not improve over Config_A for Logistic_Regression. This is still a valid research finding.
+[2026-07-06 21:28:00] [TASK_10] [INFO] Random_Forest: Config_C does not improve over Config_A by 0.0672 (BA: 0.7351 → 0.6679)
+[2026-07-06 21:28:00] [TASK_10] [INFO] Note: Config_C does not improve over Config_A for Random_Forest. This is still a valid research finding.
+[2026-07-06 21:28:00] [TASK_10] [INFO] XGBoost: Config_C does not improve over Config_A by 0.0055 (BA: 0.7293 → 0.7238)
+[2026-07-06 21:28:00] [TASK_10] [INFO] Note: Config_C does not improve over Config_A for XGBoost. This is still a valid research finding.
+[2026-07-06 21:28:00] [TASK_10] [INFO] LightGBM: Config_C does not improve over Config_A by 0.0242 (BA: 0.7599 → 0.7357)
+[2026-07-06 21:28:00] [TASK_10] [INFO] Note: Config_C does not improve over Config_A for LightGBM. This is still a valid research finding.
+[2026-07-06 21:28:00] [TASK_10] [INFO] Saved best model to models/best_model.pkl
+[2026-07-06 21:28:00] [TASK_10] [INFO] Saved best model metadata to models/best_model.pkl.meta.json
+[2026-07-06 21:28:00] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-07-06 21:28:00] [TASK_10] [INFO] END TASK_10 — completed in 11.6 seconds
+[2026-07-06 21:28:00] [TASK_10] [INFO] Output: reports/model_comparison.csv (18 rows)
+[2026-07-06 21:28:00] [TASK_10] [INFO] ============================================================
+[2026-07-06 21:28:04] [TASK_10] [INFO] Merged dataset: 1348 rows, 343 columns
+[2026-07-06 21:28:04] [TASK_10] [INFO] Time-series split — train: 948 rows (12 quarters), test: 400 rows (5 quarters)
+[2026-07-06 21:28:17] [TASK_10] [INFO] Merged dataset: 1348 rows, 343 columns
+[2026-07-06 21:28:17] [TASK_10] [INFO] Time-series split — train: 948 rows (12 quarters), test: 400 rows (5 quarters)
+[2026-07-06 21:28:20] [TASK_10] [INFO] Merged dataset: 1348 rows, 343 columns
+[2026-07-06 21:28:20] [TASK_10] [INFO] Time-series split — train: 948 rows (12 quarters), test: 400 rows (5 quarters)
+[2026-07-06 21:30:13] [TASK_10] [INFO] Confusion matrix for Logistic_Regression - Config_A:
+[[972 533]
+ [355 904]]
+[2026-07-06 21:30:14] [TASK_10] [INFO] Confusion matrix for Random_Forest - Config_A:
+[[969 536]
+ [391 868]]
+[2026-07-06 21:30:14] [TASK_10] [INFO] Confusion matrix for XGBoost - Config_A:
+[[955 550]
+ [389 870]]
+[2026-07-06 21:30:15] [TASK_10] [INFO] Confusion matrix for LightGBM - Config_A:
+[[968 537]
+ [376 883]]
+[2026-07-06 21:30:16] [TASK_10] [INFO] Confusion matrix for Logistic_Regression - Config_C:
+[[991 514]
+ [363 896]]
+[2026-07-06 21:30:17] [TASK_10] [INFO] Confusion matrix for Random_Forest - Config_C:
+[[873 632]
+ [330 929]]
+[2026-07-06 21:30:18] [TASK_10] [INFO] Confusion matrix for XGBoost - Config_C:
+[[865 640]
+ [356 903]]
+[2026-07-06 21:30:19] [TASK_10] [INFO] Confusion matrix for LightGBM - Config_C:
+[[884 621]
+ [321 938]]
+[2026-07-06 21:31:09] [TASK_10] [INFO] Confusion matrix for Logistic_Regression - Config_A:
+[[635 313]
+ [179 533]]
+[2026-07-06 21:31:09] [TASK_10] [INFO] Confusion matrix for Random_Forest - Config_A:
+[[623 325]
+ [166 546]]
+[2026-07-06 21:31:10] [TASK_10] [INFO] Confusion matrix for XGBoost - Config_A:
+[[602 346]
+ [196 516]]
+[2026-07-06 21:31:10] [TASK_10] [INFO] Confusion matrix for LightGBM - Config_A:
+[[647 301]
+ [189 523]]
+[2026-07-06 21:31:11] [TASK_10] [INFO] Confusion matrix for Logistic_Regression - Config_C:
+[[641 307]
+ [185 527]]
+[2026-07-06 21:31:11] [TASK_10] [INFO] Confusion matrix for Random_Forest - Config_C:
+[[566 382]
+ [160 552]]
+[2026-07-06 21:31:12] [TASK_10] [INFO] Confusion matrix for XGBoost - Config_C:
+[[572 376]
+ [160 552]]
+[2026-07-06 21:31:13] [TASK_10] [INFO] Confusion matrix for LightGBM - Config_C:
+[[580 368]
+ [154 558]]
+[2026-07-06 21:31:53] [TASK_10] [INFO] Confusion matrix for Logistic_Regression - Config_A:
+[[317 146]
+ [105 217]]
+[2026-07-06 21:31:53] [TASK_10] [INFO] Confusion matrix for Random_Forest - Config_A:
+[[290 173]
+ [ 73 249]]
+[2026-07-06 21:31:54] [TASK_10] [INFO] Confusion matrix for XGBoost - Config_A:
+[[305 158]
+ [ 84 238]]
+[2026-07-06 21:31:54] [TASK_10] [INFO] Confusion matrix for LightGBM - Config_A:
+[[309 154]
+ [ 88 234]]
+[2026-07-06 21:31:55] [TASK_10] [INFO] Confusion matrix for Logistic_Regression - Config_C:
+[[291 172]
+ [ 78 244]]
+[2026-07-06 21:31:55] [TASK_10] [INFO] Confusion matrix for Random_Forest - Config_C:
+[[244 219]
+ [ 54 268]]
+[2026-07-06 21:31:56] [TASK_10] [INFO] Confusion matrix for XGBoost - Config_C:
+[[263 200]
+ [ 59 263]]
+[2026-07-06 21:31:56] [TASK_10] [INFO] Confusion matrix for LightGBM - Config_C:
+[[263 200]
+ [ 56 266]]
+[2026-07-06 21:32:33] [TASK_10] [INFO] Confusion matrix for Logistic_Regression - Config_A:
+[[136  91]
+ [ 63 110]]
+[2026-07-06 21:32:33] [TASK_10] [INFO] Confusion matrix for Random_Forest - Config_A:
+[[146  81]
+ [ 42 131]]
+[2026-07-06 21:32:33] [TASK_10] [INFO] Confusion matrix for XGBoost - Config_A:
+[[159  68]
+ [ 44 129]]
+[2026-07-06 21:32:33] [TASK_10] [INFO] Confusion matrix for LightGBM - Config_A:
+[[153  74]
+ [ 41 132]]
+[2026-07-06 21:32:34] [TASK_10] [INFO] Confusion matrix for Logistic_Regression - Config_C:
+[[137  90]
+ [ 53 120]]
+[2026-07-06 21:32:34] [TASK_10] [INFO] Confusion matrix for Random_Forest - Config_C:
+[[120 107]
+ [ 23 150]]
+[2026-07-06 21:32:35] [TASK_10] [INFO] Confusion matrix for XGBoost - Config_C:
+[[120 107]
+ [ 28 145]]
+[2026-07-06 21:32:36] [TASK_10] [INFO] Confusion matrix for LightGBM - Config_C:
+[[118 109]
+ [ 26 147]]
+[2026-07-06 21:33:11] [TASK_10] [INFO] Confusion matrix for Logistic_Regression - Config_A:
+[[100  54]
+ [ 39  47]]
+[2026-07-06 21:33:11] [TASK_10] [INFO] Confusion matrix for Random_Forest - Config_A:
+[[101  53]
+ [ 32  54]]
+[2026-07-06 21:33:11] [TASK_10] [INFO] Confusion matrix for XGBoost - Config_A:
+[[101  53]
+ [ 32  54]]
+[2026-07-06 21:33:11] [TASK_10] [INFO] Confusion matrix for LightGBM - Config_A:
+[[104  50]
+ [ 34  52]]
+[2026-07-06 21:33:12] [TASK_10] [INFO] Confusion matrix for Logistic_Regression - Config_C:
+[[94 60]
+ [33 53]]
+[2026-07-06 21:33:12] [TASK_10] [INFO] Confusion matrix for Random_Forest - Config_C:
+[[63 91]
+ [14 72]]
+[2026-07-06 21:33:13] [TASK_10] [INFO] Confusion matrix for XGBoost - Config_C:
+[[92 62]
+ [23 63]]
+[2026-07-06 21:33:13] [TASK_10] [INFO] Confusion matrix for LightGBM - Config_C:
+[[88 66]
+ [22 64]]
+[2026-07-06 23:11:02] [TASK_10] [INFO] ============================================================
+[2026-07-06 23:11:02] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-07-06 23:11:02] [TASK_10] [INFO] Timestamp: 2026-07-06T23:11:02.407147
+[2026-07-06 23:11:02] [TASK_10] [INFO] ============================================================
+[2026-07-06 23:11:02] [TASK_10] [INFO] Input: data/features/technical_features.csv (1521 rows)
+[2026-07-06 23:11:02] [TASK_10] [INFO] Input: data/features/keyword_features.csv (1450 rows)
+[2026-07-06 23:11:03] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (1428 rows)
+[2026-07-06 23:11:03] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-07-06 23:11:03] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-07-06 23:11:03] [TASK_10] [INFO] ============================================================
+[2026-07-06 23:11:20] [TASK_10] [INFO] ============================================================
+[2026-07-06 23:11:20] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-07-06 23:11:20] [TASK_10] [INFO] Timestamp: 2026-07-06T23:11:20.872721
+[2026-07-06 23:11:20] [TASK_10] [INFO] ============================================================
+[2026-07-06 23:11:20] [TASK_10] [INFO] Input: data/features/technical_features.csv (1521 rows)
+[2026-07-06 23:11:20] [TASK_10] [INFO] Input: data/features/keyword_features.csv (1450 rows)
+[2026-07-06 23:11:22] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (1428 rows)
+[2026-07-06 23:11:22] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-07-06 23:11:22] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-07-06 23:11:22] [TASK_10] [INFO] ============================================================
+[2026-07-06 23:11:59] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-07-06 23:11:59] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-07-06 23:11:59] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-07-06 23:11:59] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-07-06 23:11:59] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2024Q4; falling back to last 20% of quarters (1 test quarters).
+[2026-07-06 23:11:59] [TASK_10] [INFO] Time-series split — train: 21 rows (7 quarters), test: 3 rows (1 quarters)
+[2026-07-06 23:11:59] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-07-06 23:11:59] [TASK_10] [INFO] Confusion matrix for Dummy - Config_A:
+[[10  0]
+ [ 2  0]]
+[2026-07-06 23:12:20] [TASK_10] [INFO] ============================================================
+[2026-07-06 23:12:20] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-07-06 23:12:20] [TASK_10] [INFO] Timestamp: 2026-07-06T23:12:20.422144
+[2026-07-06 23:12:20] [TASK_10] [INFO] ============================================================
+[2026-07-06 23:12:20] [TASK_10] [INFO] Input: data/features/technical_features.csv (1521 rows)
+[2026-07-06 23:12:20] [TASK_10] [INFO] Input: data/features/keyword_features.csv (1450 rows)
+[2026-07-06 23:12:21] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (1428 rows)
+[2026-07-06 23:12:21] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-07-06 23:12:21] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-07-06 23:12:21] [TASK_10] [INFO] ============================================================
+[2026-07-06 23:12:38] [TASK_10] [INFO] ============================================================
+[2026-07-06 23:12:38] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-07-06 23:12:38] [TASK_10] [INFO] Timestamp: 2026-07-06T23:12:38.584530
+[2026-07-06 23:12:38] [TASK_10] [INFO] ============================================================
+[2026-07-06 23:12:38] [TASK_10] [INFO] Input: data/features/technical_features.csv (1521 rows)
+[2026-07-06 23:12:38] [TASK_10] [INFO] Input: data/features/keyword_features.csv (1450 rows)
+[2026-07-06 23:12:39] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (1428 rows)
+[2026-07-06 23:12:39] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-07-06 23:12:39] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-07-06 23:12:39] [TASK_10] [INFO] ============================================================

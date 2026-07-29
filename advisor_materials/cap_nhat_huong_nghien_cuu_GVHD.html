@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Cập nhật hướng nghiên cứu luận văn</title>
+<style>
+@page { size: 13.333in 7.5in; margin: 0; }
+* { box-sizing: border-box; }
+body { margin:0; background:#d8dde3; font-family:Aptos, "Segoe UI", Arial, sans-serif; color:#1c2630; }
+.slide { width:13.333in; height:7.5in; padding:.36in .72in .38in; background:#fff; page-break-after:always; position:relative; overflow:hidden; }
+.slide:last-child { page-break-after:auto; }
+.leftbar { position:absolute; left:0; top:0; bottom:0; width:.23in; background:#007076; }
+.kicker { color:#007076; font-size:10pt; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+h1 { color:#122b46; font-size:27pt; line-height:1.08; margin:.24in 0 .16in; }
+h2 { color:#122b46; font-size:15pt; margin:0 0 .12in; }
+p { margin:0; line-height:1.25; }
+.rule { height:3px; width:1.04in; background:#007076; margin:.12in 0 .16in; }
+.footer { position:absolute; bottom:.13in; left:.72in; right:.72in; border-top:1px solid #d7dee4; padding-top:.07in; color:#5b6773; font-size:8pt; display:flex; justify-content:space-between; }
+.page { position:absolute; top:.39in; right:.72in; color:#5b6773; font-size:11pt; font-weight:700; }
+.hero h1 { font-size:33pt; max-width:8.3in; margin-top:.18in; }
+.hero .subtitle { max-width:7.8in; font-size:17pt; }
+.flow { display:flex; gap:.48in; margin-top:.82in; align-items:center; }
+.flowcard { height:1.56in; width:3.32in; border-radius:10px; padding:.2in .22in .18in .28in; display:flex; gap:.2in; border-left:5px solid; }
+.flowcard b { color:#122b46; font-size:18pt; line-height:.9; min-width:1.05in; }
+.flowcard span { font-size:11.2pt; line-height:1.2; }
+.arrow { color:#007076; font-size:24pt; margin-left:-.35in; margin-right:-.35in; }
+.grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:.18in; margin-top:.3in; }
+.stat { min-height:1.38in; border-radius:10px; padding:.16in .2in .1in .25in; border-left:5px solid; }
+.stat .value { color:#122b46; font-size:25pt; font-weight:700; line-height:1.08; }
+.stat .label { color:#5b6773; font-size:11.5pt; margin-top:.08in; white-space:pre-line; }
+.twocol { display:grid; grid-template-columns:1fr 1fr; gap:.24in; margin-top:.42in; }
+.panel { border:1px solid #d7dee4; border-radius:10px; padding:.25in .28in; min-height:2.8in; }
+ul { padding-left:.22in; margin:.15in 0 0; } li { margin:0 0 .12in; line-height:1.17; font-size:13pt; }
+.keyword-layout { display:grid; grid-template-columns:5.8in 1fr; gap:.48in; margin-top:.1in; }
+table { border-collapse:collapse; width:100%; font-size:10.5pt; margin-top:.2in; } th { background:#122b46; color:#fff; padding:.12in .08in; text-align:center; } td { border:1px solid #d7dee4; padding:.12in .08in; text-align:center; } td:first-child { text-align:left; } tr:nth-child(even) td { background:#edf6fa; }
+.callout { border-radius:10px; padding:.2in .25in; margin-top:.22in; }
+.callout strong { display:block; margin-bottom:.08in; }
+.chart { width:100%; height:auto; object-fit:contain; }
+.schema-layout { display:grid; grid-template-columns:5.8in 1fr; gap:.5in; margin-top:.16in; }
+.schema-row { display:flex; align-items:center; min-height:.53in; margin:.11in 0; gap:.26in; }
+.schema-head { background:#e8f6f4; color:#007076; min-width:2.15in; text-align:center; padding:.12in .1in; font-size:11pt; font-weight:700; border-radius:8px; }
+.schema-body { font-size:12.5pt; }
+.metric-row { display:flex; gap:.18in; margin-top:.1in; }
+.metric-small { flex:1; padding:.12in .16in; border-radius:8px; min-height:.67in; }
+.metric-small b { display:block; color:#122b46; font-size:18pt; line-height:.9; }
+.metric-small span { color:#5b6773; font-size:8.7pt; }
+.result-layout { display:grid; grid-template-columns:1.25fr .95fr; gap:.34in; margin-top:.1in; }
+.result-card { padding:.2in .25in; border-radius:10px; min-height:1.38in; margin-bottom:.17in; }
+.result-card .tag { font-size:12.5pt; font-weight:700; }
+.result-card .big { float:left; color:#122b46; font-size:25pt; font-weight:700; margin:.08in .16in 0 0; }
+.result-card p { font-size:10.6pt; padding-top:.12in; }
+.dashboard-layout { display:grid; grid-template-columns:5.56in 1fr; gap:.4in; margin-top:.15in; }
+.dashboard { width:5.56in; height:4.63in; object-fit:cover; object-position:top; border:1px solid #d7dee4; }
+.step { display:flex; gap:.16in; margin:.13in 0; align-items:center; }
+.step b { background:#007076; color:#fff; min-width:.46in; height:.38in; padding-top:.1in; text-align:center; font-size:9pt; border-radius:8px; }
+.step span { font-size:12.2pt; }
+.note { color:#5b6773; font-size:10.7pt; margin-top:.13in; }
+</style>
+</head>
+<body>
+
+<section class="slide hero">
+<div class="leftbar"></div>
+<div class="kicker">Cập nhật hướng nghiên cứu luận văn</div>
+<h1>Từ keyword-based<br>đến LLM hỗ trợ quyết định</h1>
+<p class="subtitle">Mục tiêu mới: kết hợp tín hiệu kỹ thuật, hiểu ngữ cảnh tin tức và bằng chứng có thể kiểm tra.</p>
+<div class="flow">
+  <div class="flowcard" style="background:#fcf6ea;border-color:#c4751b"><b>Keyword<br>đếm từ</b><span>Đã thử nhiều cách<br>nhưng không ổn định</span></div><span class="arrow">→</span>
+  <div class="flowcard" style="background:#e8f6f4;border-color:#007076"><b>LLM<br>đọc ngữ cảnh</b><span>Trích relevance, materiality,<br>direction, evidence span</span></div><span class="arrow">→</span>
+  <div class="flowcard" style="background:#edf6fa;border-color:#122b46"><b>Decision<br>support</b><span>Evidence card + dashboard<br>hỗ trợ nhà đầu tư</span></div>
+</div>
+<p style="margin-top:.67in;color:#5b6773;font-size:11pt">Bản cập nhật ngắn gửi GVHD</p>
+<div class="footer"><span>Nguồn: advisor_pitch_one_page.md; ket_qua_luan_van_semantic_news_materiality.md</span><span>KLTN | Cập nhật hướng nghiên cứu</span></div>
+</section>
+
+<section class="slide">
+<div class="kicker">Tiến độ nghiên cứu</div><div class="page">02</div><h1>Các hạng mục đã hoàn thành</h1><div class="rule"></div>
+<div class="grid4">
+ <div class="stat" style="background:#edf6fa;border-color:#122b46"><div class="value">28.062</div><div class="label">bài tin unique<br>6 nguồn</div></div>
+ <div class="stat" style="background:#e8f6f4;border-color:#007076"><div class="value">685.704</div><div class="label">dự báo ML out-of-sample<br>3 purged folds</div></div>
+ <div class="stat" style="background:#fcf6ea;border-color:#c4751b"><div class="value">150</div><div class="label">LLM consensus rows<br>122 eligible</div></div>
+ <div class="stat" style="background:#edf6fa;border-color:#122b46"><div class="value">25</div><div class="label">evidence packs<br>+ decision cards</div></div>
+</div>
+<div class="twocol">
+ <div class="panel"><h2>Dữ liệu và mô hình</h2><ul><li>Crawl và chuẩn hóa tin tức; ghép với giá và mã VN30.</li><li>Xây dựng đặc trưng kỹ thuật, kiểm định walk-forward có purge 20 phiên.</li><li>Xây dựng schema LLM: relevance, materiality, direction, event type, evidence span.</li></ul></div>
+ <div class="panel"><h2>LLM và sản phẩm hỗ trợ</h2><ul><li>Sinh consensus pseudo-label, kiểm tra agreement và QC thủ công.</li><li>Tạo evidence pack, decision card, monitoring timeline và dashboard prototype.</li><li>Theo dõi outcome tách biệt dữ liệu sẵn có tại thời điểm ra quyết định.</li></ul></div>
+</div>
+<div class="footer"><span>Nguồn: ket_qua_luan_van_semantic_news_materiality.md; decision-support generated summary</span><span>KLTN | Cập nhật hướng nghiên cứu</span></div>
+</section>
+
+<section class="slide">
+<div class="kicker">Baseline keyword</div><div class="page">03</div><h1>Keyword: kết quả phản biện, không phải tín hiệu chính</h1><div class="rule"></div>
+<div class="keyword-layout">
+ <div><p style="font-size:15pt">Keyword có ích để tạo baseline minh bạch. Nhưng rule-based không nắm được ngữ cảnh và materiality.</p>
+ <table><tr><th>Đại diện rule</th><th>Accuracy</th><th>Macro-F1</th></tr><tr><td>Direction</td><td>37,7%</td><td>22,8%</td></tr><tr><td>Event type</td><td>14,8%</td><td>8,7%</td></tr><tr><td>Materiality</td><td>22,1%</td><td>15,9%</td></tr><tr><td>Ticker relevance</td><td>68,9%</td><td>20,9%</td></tr></table>
+ <div class="callout" style="background:#fcf6ea"><strong style="color:#c4751b">Nguyên nhân chính</strong><p style="font-size:12pt">Thiếu context/materiality • ticker mismatch • tin thị trường chung • boilerplate • mixed direction</p></div>
+ </div>
+ <div><img class="chart" src="../multi_llm_evidence_extraction/reports/charts/rule_vs_semantic_confusion.png" alt="So sánh keyword rule với semantic labels"></div>
+</div>
+<p style="margin-top:.18in;color:#122b46;font-size:14pt;font-weight:700">Kết luận: giữ keyword như baseline phản biện; không dùng làm hướng đóng góp chính.</p>
+<div class="footer"><span>Nguồn: ket_qua_luan_van_semantic_news_materiality.md — rule vs semantic, n=122</span><span>KLTN | Cập nhật hướng nghiên cứu</span></div>
+</section>
+
+<section class="slide">
+<div class="kicker">Semantic evidence extraction</div><div class="page">04</div><h1>LLM nâng cấp biểu diễn tin tức thành bằng chứng</h1><div class="rule"></div>
+<p style="font-size:15pt">Thay vì đếm từ, LLM trích xuất cấu trúc và câu bằng chứng có thể truy vết.</p>
+<div class="schema-layout">
+ <div>
+  <div class="schema-row"><span class="schema-head">Ticker relevance</span><span class="schema-body">Tin có liên quan trực tiếp đến mã?</span></div>
+  <div class="schema-row"><span class="schema-head">Materiality</span><span class="schema-body">Mức độ trọng yếu của thông tin?</span></div>
+  <div class="schema-row"><span class="schema-head">Direction</span><span class="schema-body">Tác động support / risk / neutral?</span></div>
+  <div class="schema-row"><span class="schema-head">Event type</span><span class="schema-body">Sự kiện nào đang diễn ra?</span></div>
+  <div class="schema-row"><span class="schema-head">Evidence span</span><span class="schema-body">Câu nào chứng minh nhãn?</span></div>
+  <p class="note">Lưu ý: consensus là pseudo-label, không phải human ground truth.</p>
+ </div>
+ <div><img class="chart" src="../multi_llm_evidence_extraction/reports/charts/agreement_heatmap.png" alt="Agreement heatmap giữa các annotator"><div class="metric-row"><div class="metric-small" style="background:#edf6fa"><b>150</b><span>consensus rows</span></div><div class="metric-small" style="background:#e8f6f4"><b>122</b><span>eligible rows</span></div><div class="metric-small" style="background:#fcf6ea"><b>0,84</b><span>mean agreement</span></div></div></div>
+</div>
+<div class="footer"><span>Nguồn: ket_qua_luan_van_semantic_news_materiality.md — pseudo-label, agreement, manual QC</span><span>KLTN | Cập nhật hướng nghiên cứu</span></div>
+</section>
+
+<section class="slide">
+<div class="kicker">Kết quả và giới hạn</div><div class="page">05</div><h1>Kết quả thực nghiệm: có tín hiệu ban đầu, claim có kiểm soát</h1><div class="rule"></div>
+<div class="result-layout">
+ <div><img class="chart" src="../multi_llm_evidence_extraction/reports/charts/event_window_adjusted_returns.png" alt="Lợi suất điều chỉnh VNINDEX theo event window"><p style="margin-top:.16in;color:#122b46;font-size:13pt;font-weight:700">Giá trị hiện tại: bằng chứng exploratory + quy trình kiểm định có thể audit.</p></div>
+ <div>
+  <div class="result-card" style="background:#e8f6f4"><div class="tag" style="color:#007076">Event-window exploratory</div><div class="big">1 / 8</div><p>test robust-positive sau BH-FDR; materiality cao/trung bình vs thấp tại T+5: +2,23% adjusted return.</p></div>
+  <div class="result-card" style="background:#edf6fa"><div class="tag" style="color:#122b46">Technical + semantic ML</div><div class="big">3 folds</div><p>685.704 dự báo OOS, purge 20 phiên. AUC/BA gần 0,5; chưa có bằng chứng lọc cổ phiếu hữu ích ổn định.</p></div>
+  <div class="result-card" style="background:#fcf6ea;min-height:1.1in"><div class="tag" style="color:#c4751b">Kỷ luật diễn giải</div><p>Không claim nhân quả, alpha dài hạn, hay khuyến nghị đầu tư.</p></div>
+ </div>
+</div>
+<div class="footer"><span>Nguồn: event_window_stat_tests_report.md; ket_qua_luan_van_semantic_news_materiality.md</span><span>KLTN | Cập nhật hướng nghiên cứu</span></div>
+</section>
+
+<section class="slide">
+<div class="kicker">Định hướng mới</div><div class="page">06</div><h1>Prototype hỗ trợ nhà đầu tư và bước tiếp theo</h1><div class="rule"></div>
+<div class="dashboard-layout">
+ <div><img class="dashboard" src="../streamlit_dashboard.png" alt="EvidenceTrace dashboard"><div class="callout" style="background:#edf6fa;margin-top:.04in;text-align:center;padding:.11in"><p style="font-size:10.4pt;color:#122b46;font-weight:700">Dashboard: tín hiệu kỹ thuật + evidence semantic + monitoring + outcome review</p></div></div>
+ <div><h2>Giá trị của hướng mới</h2><ul><li>Không chỉ trả về score: cho thấy tin nào, vì sao trọng yếu và câu bằng chứng.</li><li>Tách point-in-time evidence khỏi outcome review để hạn chế hindsight bias.</li><li>Keyword giữ vai trò baseline minh bạch và phần phản biện học thuật.</li></ul>
+ <h2 style="margin-top:.22in">Bước tiếp theo</h2>
+ <div class="step"><b>01</b><span>Mở rộng human annotation và kiểm tra liên-chủ thể.</span></div>
+ <div class="step"><b>02</b><span>Audit contamination, ticker matching và dữ liệu point-in-time.</span></div>
+ <div class="step"><b>03</b><span>Paper-trading trước bất kỳ claim nào về tính hữu ích đầu tư.</span></div>
+ </div>
+</div>
+<div class="footer"><span>Nguồn: EvidenceTrace dashboard; reports/decision_support; canonical semantic news materiality report</span><span>KLTN | Cập nhật hướng nghiên cứu</span></div>
+</section>
+</body></html>

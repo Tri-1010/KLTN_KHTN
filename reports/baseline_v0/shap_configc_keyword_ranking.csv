@@ -1,0 +1,319 @@
+keyword,direction,mean_shap,mean_abs_shap,shap_direction,direction_consistent
+tăng trưởng,positive,0.0035116410140505713,0.0068518137437743945,positive,True
+nợ xấu,negative,0.0008262059508263786,0.006589264477719167,positive,False
+tăng trưởng,positive,0.0027070852778143806,0.006372203395018794,positive,True
+nợ xấu,negative,0.0007535885255704254,0.005800434307816818,positive,False
+báo lãi,positive,0.0009234639095246831,0.0035859051201265744,positive,True
+chia cổ tức,positive,0.0013263787036647762,0.0035651883537180886,positive,True
+nợ xấu,negative,-0.00016128734435526162,0.0033247890331380646,negative,True
+tăng vốn điều lệ,positive,0.00015022334888850023,0.003054819036165471,positive,True
+tăng trưởng,positive,0.0008229329760260006,0.0027575969858873546,positive,True
+chia cổ tức,positive,5.357712732490355e-05,0.0026564653829139924,positive,True
+tăng vốn điều lệ,positive,0.0006425895764992271,0.0026429877263378218,positive,True
+tăng vốn điều lệ,positive,-0.0004912908057671533,0.0026286732115230233,negative,False
+mua lại cổ phiếu,positive,4.948056534786188e-05,0.0020030305386186317,positive,True
+bứt phá,positive,0.0005128702307406746,0.0018415242356745207,positive,True
+tăng mạnh,positive,0.0007763246130259146,0.0017810238432548209,positive,True
+báo lãi,positive,0.0009469932163696313,0.0017413597418391206,positive,True
+mua lại cổ phiếu,positive,3.870172365045644e-05,0.001676356780910846,positive,True
+kỷ lục,positive,-0.0001080320735284757,0.0014416444482262154,negative,False
+tăng trưởng mạnh,positive,9.235600919581914e-05,0.0013974992407622994,positive,True
+chia cổ tức,positive,-9.134040509915407e-06,0.001374858396911294,negative,False
+lãi ròng,positive,0.00029702261935661756,0.0013002620172042302,positive,True
+báo lãi,positive,-2.083880381392337e-05,0.0012701641568781399,negative,False
+tăng mạnh,positive,0.00010976316410701533,0.0012341107493217176,positive,True
+lãi ròng,positive,0.0004160658914303613,0.0012192647419159367,positive,True
+mua lại,neutral,-0.000766198767014783,0.00118028492429244,negative,False
+mua lại,neutral,-6.674049663597765e-05,0.0011667086839011564,negative,False
+mua lại cổ phiếu,positive,0.00017276945768290853,0.0010740491999184539,positive,True
+kỷ lục,positive,-3.664137696274025e-06,0.0009419248677373808,negative,False
+giảm mạnh,negative,0.000126593520057856,0.0009232295045443612,positive,False
+mua lại,neutral,-9.428071889396757e-05,0.0008954557945835674,negative,False
+bứt phá,positive,0.00042370970517660285,0.0008405769047644262,positive,True
+giảm mạnh,negative,-0.00046155275082026485,0.0008215253082378709,negative,True
+đại hội cổ đông,neutral,0.0002752818049507839,0.0008194936286899136,positive,False
+doanh thu kỷ lục,positive,0.00028036971495465737,0.0008063754122474783,positive,True
+hợp tác chiến lược,positive,0.00010177302885602245,0.0008000566190809595,positive,True
+thoái vốn,neutral,-0.00035430631493923136,0.0007986030432678891,negative,False
+cổ tức tiền mặt,positive,0.00015873020312422544,0.0007875808180085817,positive,True
+trả nợ,positive,-0.00011496809581575111,0.0007667801038897033,negative,False
+hợp tác chiến lược,positive,0.0001727198880995253,0.0007399975393118748,positive,True
+giảm mạnh,negative,-0.00028120944455480907,0.0007346594194926945,negative,True
+thoái vốn,neutral,-0.00022753045997323247,0.0007075490118985603,negative,False
+trả nợ,positive,-0.00029726196665874545,0.0006969655121021668,negative,False
+cổ tức tiền mặt,positive,-0.0001439122640040038,0.0006957467452283733,negative,False
+doanh thu tăng,positive,0.00038240953618851286,0.0006847181516919657,positive,True
+thoái vốn,neutral,0.00010915906157630589,0.0006769212243416865,positive,False
+kỷ lục,positive,0.00025244394379944814,0.0006735388876954163,positive,True
+vượt kế hoạch,positive,3.080960119304842e-05,0.000654139386562862,positive,True
+ký kết hợp đồng,positive,-0.00014786351609814055,0.0006221673338112734,negative,False
+sụt giảm,negative,-0.0004898627753259225,0.0005998528885226328,negative,True
+tăng mạnh,positive,0.00010660481816274136,0.000572936272465775,positive,True
+cổ tức tiền mặt,positive,8.769119914303367e-05,0.0005663541887617686,positive,True
+phục hồi,positive,0.00010970300259013189,0.0005432777338160403,positive,True
+ký kết hợp đồng,positive,-0.0001460499019524582,0.0005390956442099014,negative,False
+vượt kế hoạch,positive,0.0004595650964340429,0.000537490939485224,positive,True
+doanh thu kỷ lục,positive,0.00014384594501829043,0.0005340161805094982,positive,True
+sụt giảm,negative,-0.0004900098252472578,0.0004900098252472578,negative,True
+doanh thu tăng,positive,6.960999867215446e-05,0.0004814254868133063,positive,True
+lãi ròng,positive,0.00011960046845398587,0.0004761740018637296,positive,True
+lãi kỷ lục,positive,0.00010187735733256435,0.000475565311047586,positive,True
+ký kết hợp đồng,positive,0.00013817180349515973,0.0004565050392415355,positive,True
+phục hồi,positive,0.0003735419795987251,0.0004150917887722106,positive,True
+tăng trưởng mạnh,positive,0.00015040167825041388,0.0004012300178423049,positive,True
+lợi nhuận giảm,negative,-0.0002584594623935688,0.00038039861442778014,negative,True
+hệ số an toàn vốn,positive,0.0003570103165100352,0.0003607272642617165,positive,True
+lợi nhuận giảm,negative,-0.00030354655610839054,0.00035785211846868725,negative,True
+đại hội cổ đông,neutral,0.00023013219864577471,0.0003409621221280732,positive,False
+lợi nhuận tăng,positive,-0.00020577290597786319,0.00034031948588732853,negative,False
+phục hồi,positive,0.00012557331647264396,0.00033980162204728384,positive,True
+lãi kỷ lục,positive,-0.00013973452429105157,0.0003332669360026302,negative,False
+khởi sắc,positive,-7.118341473238712e-05,0.0003104822512754388,negative,False
+đại hội cổ đông,neutral,-5.117472047197918e-05,0.0003018422191659352,negative,False
+tăng trưởng mạnh,positive,-6.068604398952804e-06,0.0002895050556878384,negative,False
+doanh thu kỷ lục,positive,0.00010810043316783453,0.0002842762428380659,positive,True
+trả nợ,positive,-0.00011128622489135564,0.00027291879637541156,negative,False
+lợi nhuận giảm,negative,-0.00016724475039330797,0.00027211268807015605,negative,True
+lập đỉnh,positive,0.00010853303346082356,0.0002709426361064549,positive,True
+lập đỉnh,positive,0.00015668006507576988,0.00026172373021833724,positive,True
+hoàn thành kế hoạch,positive,-0.00024818601223624285,0.00024818601223624285,negative,False
+lãi kỷ lục,positive,-7.892088451893447e-05,0.00023277528869642235,negative,False
+doanh thu tăng,positive,0.0001888021838377785,0.00022415806812375294,positive,True
+lập đỉnh,positive,-3.545174979656424e-05,0.00022178734628299063,negative,False
+khởi sắc,positive,-0.0001924434720449539,0.00021337220993424545,negative,False
+lợi nhuận tăng,positive,1.1571510657066162e-06,0.00019526499140012525,positive,True
+hợp tác chiến lược,positive,4.30224963896769e-05,0.00018802403231723682,positive,True
+bứt phá,positive,-9.821444355960924e-05,0.00018708808119159424,negative,False
+hệ số an toàn vốn,positive,9.745024871772432e-05,0.00017834053882879712,positive,True
+vượt kế hoạch,positive,0.0001431376798189342,0.00017690539671361873,positive,True
+vi phạm,negative,0.00016206707274479788,0.00017369219365151765,positive,False
+tăng vọt,positive,-9.616134184250636e-05,0.00016937146943002393,negative,False
+lao dốc,negative,-0.00010035809014570753,0.00016069776847979392,negative,True
+lao dốc,negative,-3.488847944295387e-05,0.00013823628240980946,negative,True
+khởi sắc,positive,-0.00012324723616467166,0.0001358547666643121,negative,False
+lao dốc,negative,-0.00012847674149069578,0.00012990097958922206,negative,True
+thua lỗ,negative,-0.00012738778970603,0.00012738778970603,negative,True
+sụt giảm,negative,-9.664702945301967e-05,0.00012374438709086545,negative,True
+vi phạm,negative,0.0001097705578938746,0.00011149266637976059,positive,False
+lợi nhuận tăng,positive,9.393854267916314e-06,9.69835606340437e-05,positive,True
+lợi nhuận âm,negative,9.224738286823242e-05,9.224738286823242e-05,positive,False
+thua lỗ,negative,-8.89972992937528e-05,8.89972992937528e-05,negative,True
+đóng cửa,negative,4.349566666631411e-06,8.648158829265961e-05,positive,False
+tăng vọt,positive,-8.522223285791102e-05,8.536135537598283e-05,negative,False
+hoàn thành kế hoạch,positive,3.5668028581598e-05,7.94989902418751e-05,positive,True
+sáp nhập,neutral,5.1290327274571496e-05,7.944156040901913e-05,positive,False
+hoàn thành kế hoạch,positive,-5.4002622414483074e-05,7.762516492320571e-05,negative,False
+doanh thu giảm,negative,-7.350395366486888e-05,7.350395366486888e-05,negative,True
+lãi đậm,positive,-7.08561161900601e-05,7.08561161900601e-05,negative,False
+vi phạm,negative,-6.918249173441001e-06,6.98242647804153e-05,negative,True
+doanh thu giảm,negative,-6.389276706235816e-05,6.389276706235816e-05,negative,True
+đóng cửa,negative,-4.392433893515998e-06,5.552955686456168e-05,negative,True
+thua lỗ,negative,-5.325299233838232e-05,5.325299233838232e-05,negative,True
+đóng cửa,negative,-1.6679344538284103e-05,5.001947522758672e-05,negative,True
+giảm sâu,negative,3.537925521906957e-06,4.841400108601243e-05,positive,False
+hệ số an toàn vốn,positive,-3.868795839231041e-05,4.83794992579403e-05,negative,False
+lãi đậm,positive,-4.677362485355555e-05,4.677362485355555e-05,negative,False
+lỗ lớn,negative,3.972550118184983e-05,3.972550118184983e-05,positive,False
+mở rộng thị trường,positive,1.6846054003762824e-05,3.3757473377340516e-05,positive,True
+lãi lớn,positive,-2.3611279883340863e-05,3.315518187780624e-05,negative,False
+giảm nợ,positive,3.121834630878287e-05,3.2676693123452876e-05,positive,True
+lợi nhuận âm,negative,3.1169631851656465e-05,3.1169631851656465e-05,positive,False
+lãi lớn,positive,2.1446102412207012e-05,2.8691409037430334e-05,positive,True
+sáp nhập,neutral,9.762952020202037e-06,2.7349476182225024e-05,positive,False
+sáp nhập,neutral,1.031881203749349e-05,2.5496540990382135e-05,positive,False
+không đạt kế hoạch,negative,-1.990342289787944e-05,1.990342289787944e-05,negative,True
+giảm nợ,positive,1.1817517007381682e-05,1.860179276662282e-05,positive,True
+tăng vọt,positive,-1.120919118616126e-05,1.734936484056492e-05,negative,False
+giảm sâu,negative,8.243251960426533e-07,1.6977147080471443e-05,positive,False
+dự án mới,positive,1.6656041641893195e-05,1.6656041641893195e-05,positive,True
+giảm sâu,negative,1.0551939257004943e-05,1.6263300684472085e-05,positive,False
+dự án mới,positive,8.013238940710594e-06,8.013238940710594e-06,positive,True
+doanh thu giảm,negative,-7.5911550080914835e-06,7.5911550080914835e-06,negative,True
+không đạt kế hoạch,negative,-6.1850542524729425e-06,6.1850542524729425e-06,negative,True
+lỗ lớn,negative,3.219925348757995e-06,3.219925348757995e-06,positive,False
+mở rộng thị trường,positive,1.3840111013325531e-06,1.8511013389325908e-06,positive,True
+cảnh báo,negative,-1.584064549091842e-19,1.567282002963577e-18,negative,True
+cổ tức cao,positive,0.0,0.0,negative,False
+phát hành thưởng,positive,0.0,0.0,negative,False
+phát hành thưởng,positive,0.0,0.0,negative,False
+cổ tức cao,positive,0.0,0.0,negative,False
+áp lực tài chính,negative,0.0,0.0,negative,False
+lợi nhuận cải thiện,positive,0.0,0.0,negative,False
+cải thiện tài chính,positive,0.0,0.0,negative,False
+tranh chấp pháp lý,negative,0.0,0.0,negative,False
+lợi nhuận cải thiện,positive,0.0,0.0,negative,False
+dòng tiền dương,positive,0.0,0.0,negative,False
+tiền mặt dồi dào,positive,0.0,0.0,negative,False
+cải thiện tài chính,positive,0.0,0.0,negative,False
+dòng tiền dương,positive,0.0,0.0,negative,False
+bị kiện,negative,0.0,0.0,negative,False
+xuất khẩu tăng,positive,0.0,0.0,negative,False
+dưới kế hoạch,negative,0.0,0.0,negative,False
+lỗ ròng,negative,0.0,0.0,negative,False
+niêm yết thêm,neutral,0.0,0.0,negative,False
+phát hành cổ phiếu mới,neutral,0.0,0.0,negative,False
+lợi nhuận sau thuế tăng,positive,0.0,0.0,negative,False
+kết quả tích cực,positive,0.0,0.0,negative,False
+lãi khủng,positive,0.0,0.0,negative,False
+lợi nhuận sau thuế tăng,positive,0.0,0.0,negative,False
+lợi nhuận kỷ lục,positive,0.0,0.0,negative,False
+kết quả tích cực,positive,0.0,0.0,negative,False
+thắng thầu,positive,0.0,0.0,negative,False
+đầu tư mới,positive,0.0,0.0,negative,False
+thay CEO,neutral,0.0,0.0,negative,False
+thay đổi lãnh đạo,neutral,0.0,0.0,negative,False
+họp HĐQT,neutral,0.0,0.0,negative,False
+mở rộng thị trường,positive,0.0,0.0,negative,False
+tiền mặt dồi dào,positive,0.0,0.0,negative,False
+đầu tư mới,positive,0.0,0.0,negative,False
+dự án mới,positive,0.0,0.0,negative,False
+khởi tố,negative,0.0,0.0,negative,False
+điều tra,negative,0.0,0.0,negative,False
+chưa có lãi,negative,0.0,0.0,negative,False
+tụt dốc,negative,0.0,0.0,negative,False
+kinh doanh sa sút,negative,0.0,0.0,negative,False
+âm vốn chủ sở hữu,negative,0.0,0.0,negative,False
+lợi nhuận không tăng,negative,0.0,0.0,negative,False
+doanh thu không tăng,negative,0.0,0.0,negative,False
+không tăng trưởng,negative,0.0,0.0,negative,False
+tăng trưởng chậm lại,negative,0.0,0.0,negative,False
+không hoàn thành kế hoạch,negative,0.0,0.0,negative,False
+hệ số nợ cao,negative,0.0,0.0,negative,False
+thiếu thanh khoản,negative,0.0,0.0,negative,False
+không chia cổ tức,negative,0.0,0.0,negative,False
+nợ quá hạn,negative,0.0,0.0,negative,False
+hủy cổ tức,negative,0.0,0.0,negative,False
+giảm cổ tức,negative,0.0,0.0,negative,False
+phát hành pha loãng,negative,0.0,0.0,negative,False
+chào bán giá thấp,negative,0.0,0.0,negative,False
+lãi khủng,positive,0.0,0.0,negative,False
+nợ vay tăng,negative,0.0,0.0,negative,False
+lãi lớn,positive,0.0,0.0,negative,False
+dòng tiền âm,negative,0.0,0.0,negative,False
+thắng thầu,positive,0.0,0.0,negative,False
+bị kiểm toán từ chối,negative,0.0,0.0,negative,False
+xuất khẩu tăng,positive,0.0,0.0,negative,False
+lợi nhuận kỷ lục,positive,0.0,0.0,negative,False
+đình chỉ,negative,0.0,0.0,negative,False
+lợi nhuận âm,negative,0.0,0.0,negative,False
+lỗ ròng,negative,0.0,0.0,negative,False
+dưới kế hoạch,negative,0.0,0.0,negative,False
+kết quả tiêu cực,negative,0.0,0.0,negative,False
+lợi nhuận thấp hơn,negative,0.0,0.0,negative,False
+bị thanh tra,negative,0.0,0.0,negative,False
+hủy hợp đồng,negative,0.0,0.0,negative,False
+bị phạt,negative,0.0,0.0,negative,False
+báo lỗ,negative,0.0,0.0,negative,False
+lỗ nặng,negative,0.0,0.0,negative,False
+dừng dự án,negative,0.0,0.0,negative,False
+thu hẹp hoạt động,negative,0.0,0.0,negative,False
+lỗ kỷ lục,negative,0.0,0.0,negative,False
+dự án trì hoãn,negative,0.0,0.0,negative,False
+lỗ lũy kế,negative,0.0,0.0,negative,False
+dự án trì hoãn,negative,0.0,0.0,negative,False
+điều tra,negative,0.0,0.0,negative,False
+niêm yết thêm,neutral,0.0,0.0,negative,False
+thắng thầu,positive,0.0,0.0,negative,False
+kết quả tích cực,positive,0.0,0.0,negative,False
+lãi khủng,positive,0.0,0.0,negative,False
+lãi đậm,positive,0.0,0.0,negative,False
+hủy cổ tức,negative,0.0,0.0,negative,False
+lợi nhuận kỷ lục,positive,0.0,0.0,negative,False
+không chia cổ tức,negative,0.0,0.0,negative,False
+chưa có lãi,negative,0.0,0.0,negative,False
+không đạt kế hoạch,negative,0.0,0.0,negative,False
+không hoàn thành kế hoạch,negative,0.0,0.0,negative,False
+tăng trưởng chậm lại,negative,0.0,0.0,negative,False
+không tăng trưởng,negative,0.0,0.0,negative,False
+doanh thu không tăng,negative,0.0,0.0,negative,False
+lợi nhuận cải thiện,positive,0.0,0.0,negative,False
+lợi nhuận không tăng,negative,0.0,0.0,negative,False
+cổ tức cao,positive,0.0,0.0,negative,False
+âm vốn chủ sở hữu,negative,0.0,0.0,negative,False
+phát hành thưởng,positive,0.0,0.0,negative,False
+kinh doanh sa sút,negative,0.0,0.0,negative,False
+tụt dốc,negative,0.0,0.0,negative,False
+giảm nợ,positive,0.0,0.0,negative,False
+cải thiện tài chính,positive,0.0,0.0,negative,False
+dòng tiền dương,positive,0.0,0.0,negative,False
+tiền mặt dồi dào,positive,0.0,0.0,negative,False
+lợi nhuận sau thuế tăng,positive,0.0,0.0,negative,False
+giảm cổ tức,negative,0.0,0.0,negative,False
+phát hành pha loãng,negative,0.0,0.0,negative,False
+hủy hợp đồng,negative,0.0,0.0,negative,False
+dừng dự án,negative,0.0,0.0,negative,False
+bị phạt,negative,0.0,0.0,negative,False
+bị thanh tra,negative,0.0,0.0,negative,False
+bị kiểm toán từ chối,negative,0.0,0.0,negative,False
+cảnh báo,negative,0.0,0.0,negative,False
+đình chỉ,negative,0.0,0.0,negative,False
+khởi tố,negative,0.0,0.0,negative,False
+điều tra,negative,0.0,0.0,negative,False
+tranh chấp pháp lý,negative,0.0,0.0,negative,False
+bị kiện,negative,0.0,0.0,negative,False
+họp HĐQT,neutral,0.0,0.0,negative,False
+chào bán giá thấp,negative,0.0,0.0,negative,False
+thay đổi lãnh đạo,neutral,0.0,0.0,negative,False
+thay CEO,neutral,0.0,0.0,negative,False
+dòng tiền âm,negative,0.0,0.0,negative,False
+phát hành cổ phiếu mới,neutral,0.0,0.0,negative,False
+niêm yết thêm,neutral,0.0,0.0,negative,False
+thiếu thanh khoản,negative,0.0,0.0,negative,False
+hệ số nợ cao,negative,0.0,0.0,negative,False
+nợ quá hạn,negative,0.0,0.0,negative,False
+áp lực tài chính,negative,0.0,0.0,negative,False
+nợ vay tăng,negative,0.0,0.0,negative,False
+đầu tư mới,positive,0.0,0.0,negative,False
+xuất khẩu tăng,positive,0.0,0.0,negative,False
+phát hành cổ phiếu mới,neutral,0.0,0.0,negative,False
+lỗ lũy kế,negative,0.0,0.0,negative,False
+áp lực tài chính,negative,0.0,0.0,negative,False
+nợ quá hạn,negative,0.0,0.0,negative,False
+hệ số nợ cao,negative,0.0,0.0,negative,False
+thiếu thanh khoản,negative,0.0,0.0,negative,False
+dòng tiền âm,negative,0.0,0.0,negative,False
+hủy hợp đồng,negative,0.0,0.0,negative,False
+dự án trì hoãn,negative,0.0,0.0,negative,False
+thu hẹp hoạt động,negative,0.0,0.0,negative,False
+dừng dự án,negative,0.0,0.0,negative,False
+bị phạt,negative,0.0,0.0,negative,False
+bị thanh tra,negative,0.0,0.0,negative,False
+bị kiểm toán từ chối,negative,0.0,0.0,negative,False
+cảnh báo,negative,0.0,0.0,negative,False
+đình chỉ,negative,0.0,0.0,negative,False
+khởi tố,negative,0.0,0.0,negative,False
+thu hẹp hoạt động,negative,0.0,0.0,negative,False
+tranh chấp pháp lý,negative,0.0,0.0,negative,False
+bị kiện,negative,0.0,0.0,negative,False
+lợi nhuận thấp hơn,negative,0.0,0.0,negative,False
+họp HĐQT,neutral,0.0,0.0,negative,False
+thay đổi lãnh đạo,neutral,0.0,0.0,negative,False
+thay CEO,neutral,0.0,0.0,negative,False
+kết quả tiêu cực,negative,0.0,0.0,negative,False
+nợ vay tăng,negative,0.0,0.0,negative,False
+báo lỗ,negative,0.0,0.0,negative,False
+chào bán giá thấp,negative,0.0,0.0,negative,False
+tụt dốc,negative,0.0,0.0,negative,False
+lỗ ròng,negative,0.0,0.0,negative,False
+dưới kế hoạch,negative,0.0,0.0,negative,False
+lỗ kỷ lục,negative,0.0,0.0,negative,False
+kết quả tiêu cực,negative,0.0,0.0,negative,False
+lợi nhuận thấp hơn,negative,0.0,0.0,negative,False
+báo lỗ,negative,0.0,0.0,negative,False
+lỗ lớn,negative,0.0,0.0,negative,False
+lỗ kỷ lục,negative,0.0,0.0,negative,False
+lỗ lũy kế,negative,0.0,0.0,negative,False
+lỗ nặng,negative,0.0,0.0,negative,False
+kinh doanh sa sút,negative,0.0,0.0,negative,False
+phát hành pha loãng,negative,0.0,0.0,negative,False
+âm vốn chủ sở hữu,negative,0.0,0.0,negative,False
+lợi nhuận không tăng,negative,0.0,0.0,negative,False
+doanh thu không tăng,negative,0.0,0.0,negative,False
+không tăng trưởng,negative,0.0,0.0,negative,False
+tăng trưởng chậm lại,negative,0.0,0.0,negative,False
+không hoàn thành kế hoạch,negative,0.0,0.0,negative,False
+chưa có lãi,negative,0.0,0.0,negative,False
+không chia cổ tức,negative,0.0,0.0,negative,False
+hủy cổ tức,negative,0.0,0.0,negative,False
+giảm cổ tức,negative,0.0,0.0,negative,False
+lỗ nặng,negative,0.0,0.0,negative,False

@@ -2357,3 +2357,399 @@ ValueError: No training samples after merging technical/keyword/label data. This
 [2026-06-28 22:04:17] [TASK_10] [INFO] Confusion matrix for Dummy - Config_A:
 [[10  0]
  [ 2  0]]
+[2026-06-28 22:37:16] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:37:16] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-06-28 22:37:16] [TASK_10] [INFO] Timestamp: 2026-06-28T22:37:16.426638
+[2026-06-28 22:37:16] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:37:16] [TASK_10] [INFO] Input: data/features/technical_features.csv (570 rows)
+[2026-06-28 22:37:16] [TASK_10] [INFO] Input: data/features/keyword_features.csv (560 rows)
+[2026-06-28 22:37:16] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (540 rows)
+[2026-06-28 22:37:16] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-06-28 22:37:16] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-06-28 22:37:16] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:37:16] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:37:16] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-06-28 22:37:16] [TASK_10] [INFO] Timestamp: 2026-06-28T22:37:16.808620
+[2026-06-28 22:37:16] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:37:16] [TASK_10] [INFO] Input: data/features/technical_features.csv (570 rows)
+[2026-06-28 22:37:16] [TASK_10] [INFO] Input: data/features/keyword_features.csv (560 rows)
+[2026-06-28 22:37:16] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (540 rows)
+[2026-06-28 22:37:16] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-06-28 22:37:16] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-06-28 22:37:16] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:37:16] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 22:37:16] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 22:37:16] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 22:37:16] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 22:37:16] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2024Q4; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:37:16] [TASK_10] [INFO] Time-series split — train: 21 rows (7 quarters), test: 3 rows (1 quarters)
+[2026-06-28 22:37:16] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 22:37:17] [TASK_10] [INFO] Confusion matrix for Dummy - Config_A:
+[[10  0]
+ [ 2  0]]
+[2026-06-28 22:37:53] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:37:53] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-06-28 22:37:53] [TASK_10] [INFO] Timestamp: 2026-06-28T22:37:53.409398
+[2026-06-28 22:37:53] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:37:53] [TASK_10] [INFO] Input: data/features/technical_features.csv (570 rows)
+[2026-06-28 22:37:53] [TASK_10] [INFO] Input: data/features/keyword_features.csv (560 rows)
+[2026-06-28 22:37:53] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (540 rows)
+[2026-06-28 22:37:53] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-06-28 22:37:53] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-06-28 22:37:53] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:37:53] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:37:53] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-06-28 22:37:53] [TASK_10] [INFO] Timestamp: 2026-06-28T22:37:53.790563
+[2026-06-28 22:37:53] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:37:53] [TASK_10] [INFO] Input: data/features/technical_features.csv (570 rows)
+[2026-06-28 22:37:53] [TASK_10] [INFO] Input: data/features/keyword_features.csv (560 rows)
+[2026-06-28 22:37:53] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (540 rows)
+[2026-06-28 22:37:53] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-06-28 22:37:53] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-06-28 22:37:53] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:37:53] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 22:37:53] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 22:37:53] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 22:37:53] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 22:37:53] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2024Q4; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:37:53] [TASK_10] [INFO] Time-series split — train: 21 rows (7 quarters), test: 3 rows (1 quarters)
+[2026-06-28 22:37:53] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 22:37:53] [TASK_10] [INFO] Confusion matrix for Dummy - Config_A:
+[[10  0]
+ [ 2  0]]
+[2026-06-28 22:44:25] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:44:25] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-06-28 22:44:25] [TASK_10] [INFO] Timestamp: 2026-06-28T22:44:25.811581
+[2026-06-28 22:44:25] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:44:25] [TASK_10] [INFO] Input: data/features/technical_features.csv (570 rows)
+[2026-06-28 22:44:25] [TASK_10] [INFO] Input: data/features/keyword_features.csv (560 rows)
+[2026-06-28 22:44:25] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (540 rows)
+[2026-06-28 22:44:25] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-06-28 22:44:25] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-06-28 22:44:25] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:44:26] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:44:26] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-06-28 22:44:26] [TASK_10] [INFO] Timestamp: 2026-06-28T22:44:26.190551
+[2026-06-28 22:44:26] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:44:26] [TASK_10] [INFO] Input: data/features/technical_features.csv (570 rows)
+[2026-06-28 22:44:26] [TASK_10] [INFO] Input: data/features/keyword_features.csv (560 rows)
+[2026-06-28 22:44:26] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (540 rows)
+[2026-06-28 22:44:26] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-06-28 22:44:26] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-06-28 22:44:26] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:44:26] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 22:44:26] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 22:44:26] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 22:44:26] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 22:44:26] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2024Q4; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:44:26] [TASK_10] [INFO] Time-series split — train: 21 rows (7 quarters), test: 3 rows (1 quarters)
+[2026-06-28 22:44:26] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 22:44:26] [TASK_10] [INFO] Confusion matrix for Dummy - Config_A:
+[[10  0]
+ [ 2  0]]
+[2026-06-28 22:49:55] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:49:55] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:49:57] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:49:57] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:49:58] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:49:58] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:49:59] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:49:59] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:50:00] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:50:00] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:50:01] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:50:01] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:50:02] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:50:02] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:50:03] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:50:03] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:50:03] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2024Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:50:03] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:55:00] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:55:00] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:55:02] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:55:02] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:55:03] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:55:03] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:55:04] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:55:04] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:55:05] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:55:05] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:55:06] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:55:06] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:55:06] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:55:06] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:55:07] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:55:07] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:55:08] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2024Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:55:08] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:55:10] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:55:10] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-06-28 22:55:10] [TASK_10] [INFO] Timestamp: 2026-06-28T22:55:10.094823
+[2026-06-28 22:55:10] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:55:10] [TASK_10] [INFO] Input: data/features/technical_features.csv (570 rows)
+[2026-06-28 22:55:10] [TASK_10] [INFO] Input: data/features/keyword_features.csv (560 rows)
+[2026-06-28 22:55:10] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (540 rows)
+[2026-06-28 22:55:10] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-06-28 22:55:10] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-06-28 22:55:10] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:55:10] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:55:10] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-06-28 22:55:10] [TASK_10] [INFO] Timestamp: 2026-06-28T22:55:10.483256
+[2026-06-28 22:55:10] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:55:10] [TASK_10] [INFO] Input: data/features/technical_features.csv (570 rows)
+[2026-06-28 22:55:10] [TASK_10] [INFO] Input: data/features/keyword_features.csv (560 rows)
+[2026-06-28 22:55:10] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (540 rows)
+[2026-06-28 22:55:10] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-06-28 22:55:10] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-06-28 22:55:10] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:55:10] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 22:55:10] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 22:55:10] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 22:55:10] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 22:55:10] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2024Q4; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:55:10] [TASK_10] [INFO] Time-series split — train: 21 rows (7 quarters), test: 3 rows (1 quarters)
+[2026-06-28 22:55:10] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 22:55:10] [TASK_10] [INFO] Confusion matrix for Dummy - Config_A:
+[[10  0]
+ [ 2  0]]
+[2026-06-28 22:56:18] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:56:18] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:56:21] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:56:21] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:56:22] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:56:22] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:56:23] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:56:23] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:56:24] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:56:24] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:56:25] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:56:25] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:56:26] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:56:26] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:56:26] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:56:26] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:56:27] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2024Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:56:27] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 22:56:29] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:56:29] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-06-28 22:56:29] [TASK_10] [INFO] Timestamp: 2026-06-28T22:56:29.302413
+[2026-06-28 22:56:29] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:56:29] [TASK_10] [INFO] Input: data/features/technical_features.csv (570 rows)
+[2026-06-28 22:56:29] [TASK_10] [INFO] Input: data/features/keyword_features.csv (560 rows)
+[2026-06-28 22:56:29] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (540 rows)
+[2026-06-28 22:56:29] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-06-28 22:56:29] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-06-28 22:56:29] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:56:29] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:56:29] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-06-28 22:56:29] [TASK_10] [INFO] Timestamp: 2026-06-28T22:56:29.676447
+[2026-06-28 22:56:29] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:56:29] [TASK_10] [INFO] Input: data/features/technical_features.csv (570 rows)
+[2026-06-28 22:56:29] [TASK_10] [INFO] Input: data/features/keyword_features.csv (560 rows)
+[2026-06-28 22:56:29] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (540 rows)
+[2026-06-28 22:56:29] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-06-28 22:56:29] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-06-28 22:56:29] [TASK_10] [INFO] ============================================================
+[2026-06-28 22:56:29] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 22:56:29] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 22:56:29] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 22:56:29] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 22:56:29] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2024Q4; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 22:56:29] [TASK_10] [INFO] Time-series split — train: 21 rows (7 quarters), test: 3 rows (1 quarters)
+[2026-06-28 22:56:29] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 22:56:29] [TASK_10] [INFO] Confusion matrix for Dummy - Config_A:
+[[10  0]
+ [ 2  0]]
+[2026-06-28 23:02:01] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:02:01] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:02:04] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:02:04] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:02:04] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:02:04] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:02:05] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:02:05] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:02:06] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:02:06] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:02:07] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:02:07] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:02:08] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:02:08] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:02:08] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:02:08] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:02:09] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2024Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:02:09] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:02:11] [TASK_10] [INFO] ============================================================
+[2026-06-28 23:02:11] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-06-28 23:02:11] [TASK_10] [INFO] Timestamp: 2026-06-28T23:02:11.275856
+[2026-06-28 23:02:11] [TASK_10] [INFO] ============================================================
+[2026-06-28 23:02:11] [TASK_10] [INFO] Input: data/features/technical_features.csv (570 rows)
+[2026-06-28 23:02:11] [TASK_10] [INFO] Input: data/features/keyword_features.csv (560 rows)
+[2026-06-28 23:02:11] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (540 rows)
+[2026-06-28 23:02:11] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-06-28 23:02:11] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-06-28 23:02:11] [TASK_10] [INFO] ============================================================
+[2026-06-28 23:02:11] [TASK_10] [INFO] ============================================================
+[2026-06-28 23:02:11] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-06-28 23:02:11] [TASK_10] [INFO] Timestamp: 2026-06-28T23:02:11.646499
+[2026-06-28 23:02:11] [TASK_10] [INFO] ============================================================
+[2026-06-28 23:02:11] [TASK_10] [INFO] Input: data/features/technical_features.csv (570 rows)
+[2026-06-28 23:02:11] [TASK_10] [INFO] Input: data/features/keyword_features.csv (560 rows)
+[2026-06-28 23:02:11] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (540 rows)
+[2026-06-28 23:02:11] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-06-28 23:02:11] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-06-28 23:02:11] [TASK_10] [INFO] ============================================================
+[2026-06-28 23:02:11] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 23:02:11] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 23:02:11] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 23:02:11] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 23:02:11] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2024Q4; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:02:11] [TASK_10] [INFO] Time-series split — train: 21 rows (7 quarters), test: 3 rows (1 quarters)
+[2026-06-28 23:02:11] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 23:02:11] [TASK_10] [INFO] Confusion matrix for Dummy - Config_A:
+[[10  0]
+ [ 2  0]]
+[2026-06-28 23:02:33] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:02:33] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:02:35] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:02:35] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:02:36] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:02:36] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:02:37] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:02:37] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:02:38] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:02:38] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:02:39] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:02:39] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:02:39] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:02:39] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:02:40] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:02:40] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:02:41] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2024Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:02:41] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:02:43] [TASK_10] [INFO] ============================================================
+[2026-06-28 23:02:43] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-06-28 23:02:43] [TASK_10] [INFO] Timestamp: 2026-06-28T23:02:43.180786
+[2026-06-28 23:02:43] [TASK_10] [INFO] ============================================================
+[2026-06-28 23:02:43] [TASK_10] [INFO] Input: data/features/technical_features.csv (570 rows)
+[2026-06-28 23:02:43] [TASK_10] [INFO] Input: data/features/keyword_features.csv (560 rows)
+[2026-06-28 23:02:43] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (540 rows)
+[2026-06-28 23:02:43] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-06-28 23:02:43] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-06-28 23:02:43] [TASK_10] [INFO] ============================================================
+[2026-06-28 23:02:43] [TASK_10] [INFO] ============================================================
+[2026-06-28 23:02:43] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-06-28 23:02:43] [TASK_10] [INFO] Timestamp: 2026-06-28T23:02:43.572154
+[2026-06-28 23:02:43] [TASK_10] [INFO] ============================================================
+[2026-06-28 23:02:43] [TASK_10] [INFO] Input: data/features/technical_features.csv (570 rows)
+[2026-06-28 23:02:43] [TASK_10] [INFO] Input: data/features/keyword_features.csv (560 rows)
+[2026-06-28 23:02:43] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (540 rows)
+[2026-06-28 23:02:43] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-06-28 23:02:43] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-06-28 23:02:43] [TASK_10] [INFO] ============================================================
+[2026-06-28 23:02:43] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 23:02:43] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 23:02:43] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 23:02:43] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 23:02:43] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2024Q4; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:02:43] [TASK_10] [INFO] Time-series split — train: 21 rows (7 quarters), test: 3 rows (1 quarters)
+[2026-06-28 23:02:43] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 23:02:43] [TASK_10] [INFO] Confusion matrix for Dummy - Config_A:
+[[10  0]
+ [ 2  0]]
+[2026-06-28 23:08:13] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:08:13] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:08:15] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:08:15] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:08:16] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:08:16] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:08:16] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:08:16] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:08:17] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:08:17] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:08:18] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:08:18] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:08:19] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:08:19] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:08:20] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:08:20] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:08:21] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2024Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:08:21] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:08:22] [TASK_10] [INFO] ============================================================
+[2026-06-28 23:08:22] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-06-28 23:08:22] [TASK_10] [INFO] Timestamp: 2026-06-28T23:08:22.413593
+[2026-06-28 23:08:22] [TASK_10] [INFO] ============================================================
+[2026-06-28 23:08:22] [TASK_10] [INFO] Input: data/features/technical_features.csv (570 rows)
+[2026-06-28 23:08:22] [TASK_10] [INFO] Input: data/features/keyword_features.csv (560 rows)
+[2026-06-28 23:08:22] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (540 rows)
+[2026-06-28 23:08:22] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-06-28 23:08:22] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-06-28 23:08:22] [TASK_10] [INFO] ============================================================
+[2026-06-28 23:08:22] [TASK_10] [INFO] ============================================================
+[2026-06-28 23:08:22] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-06-28 23:08:22] [TASK_10] [INFO] Timestamp: 2026-06-28T23:08:22.783886
+[2026-06-28 23:08:22] [TASK_10] [INFO] ============================================================
+[2026-06-28 23:08:22] [TASK_10] [INFO] Input: data/features/technical_features.csv (570 rows)
+[2026-06-28 23:08:22] [TASK_10] [INFO] Input: data/features/keyword_features.csv (560 rows)
+[2026-06-28 23:08:22] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (540 rows)
+[2026-06-28 23:08:22] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-06-28 23:08:22] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-06-28 23:08:22] [TASK_10] [INFO] ============================================================
+[2026-06-28 23:08:22] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 23:08:22] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 23:08:22] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 23:08:22] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 23:08:22] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2024Q4; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:08:22] [TASK_10] [INFO] Time-series split — train: 21 rows (7 quarters), test: 3 rows (1 quarters)
+[2026-06-28 23:08:22] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 23:08:22] [TASK_10] [INFO] Confusion matrix for Dummy - Config_A:
+[[10  0]
+ [ 2  0]]
+[2026-06-28 23:08:44] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:08:44] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:08:46] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:08:46] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:08:47] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:08:47] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:08:48] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:08:48] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:08:49] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:08:49] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:08:50] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:08:50] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:08:50] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:08:50] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:08:51] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2025Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:08:51] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:08:52] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2024Q1; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:08:52] [TASK_10] [INFO] Time-series split — train: 30 rows (3 quarters), test: 10 rows (1 quarters)
+[2026-06-28 23:08:53] [TASK_10] [INFO] ============================================================
+[2026-06-28 23:08:53] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-06-28 23:08:53] [TASK_10] [INFO] Timestamp: 2026-06-28T23:08:53.979394
+[2026-06-28 23:08:53] [TASK_10] [INFO] ============================================================
+[2026-06-28 23:08:53] [TASK_10] [INFO] Input: data/features/technical_features.csv (570 rows)
+[2026-06-28 23:08:53] [TASK_10] [INFO] Input: data/features/keyword_features.csv (560 rows)
+[2026-06-28 23:08:54] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (540 rows)
+[2026-06-28 23:08:54] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-06-28 23:08:54] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-06-28 23:08:54] [TASK_10] [INFO] ============================================================
+[2026-06-28 23:08:54] [TASK_10] [INFO] ============================================================
+[2026-06-28 23:08:54] [TASK_10] [INFO] START TASK_10: Model Training (3 configs × 4 algorithms)
+[2026-06-28 23:08:54] [TASK_10] [INFO] Timestamp: 2026-06-28T23:08:54.362947
+[2026-06-28 23:08:54] [TASK_10] [INFO] ============================================================
+[2026-06-28 23:08:54] [TASK_10] [INFO] Input: data/features/technical_features.csv (570 rows)
+[2026-06-28 23:08:54] [TASK_10] [INFO] Input: data/features/keyword_features.csv (560 rows)
+[2026-06-28 23:08:54] [TASK_10] [INFO] Input: data/aggregated/master_with_labels.csv (540 rows)
+[2026-06-28 23:08:54] [TASK_10] [INFO] ------------------------------------------------------------
+[2026-06-28 23:08:54] [TASK_10] [INFO] END TASK_10 — completed in 0.0 seconds
+[2026-06-28 23:08:54] [TASK_10] [INFO] ============================================================
+[2026-06-28 23:08:54] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 23:08:54] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 23:08:54] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 23:08:54] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 23:08:54] [TASK_10] [WARNING] Fewer than 4 test quarters with cutoff 2024Q4; falling back to last 20% of quarters (1 test quarters).
+[2026-06-28 23:08:54] [TASK_10] [INFO] Time-series split — train: 21 rows (7 quarters), test: 3 rows (1 quarters)
+[2026-06-28 23:08:54] [TASK_10] [INFO] Time-series split — train: 12 rows (4 quarters), test: 12 rows (4 quarters)
+[2026-06-28 23:08:54] [TASK_10] [INFO] Confusion matrix for Dummy - Config_A:
+[[10  0]
+ [ 2  0]]

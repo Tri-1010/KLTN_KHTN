@@ -10,6 +10,7 @@ Usage:
     python pipeline/run_pipeline.py --step features
     python pipeline/run_pipeline.py --step train
     python pipeline/run_pipeline.py --step update_news
+    python pipeline/run_pipeline.py --step enrich_news
     python pipeline/run_pipeline.py --step all --smoke-test
     python pipeline/run_pipeline.py --step all --force
 """
@@ -43,7 +44,7 @@ from pipeline.logging_config import setup_logger
 # Constants
 # ---------------------------------------------------------------------------
 
-VALID_STEPS = ("all", "data", "preprocess", "features", "train", "update_news")
+VALID_STEPS = ("all", "data", "preprocess", "features", "train", "update_news", "enrich_news")
 
 SMOKE_TEST_TICKERS = ["VNM", "VCB", "FPT"]
 SMOKE_TEST_QUARTERS = ["2022Q1", "2022Q2", "2022Q3", "2022Q4"]
@@ -67,7 +68,11 @@ TASK_CHECKPOINTS: Dict[str, List[str]] = {
         "data/news/cafef",  # directory with per-ticker files
         "data/news/vietstock",
         "data/news/tnck/tnck_raw.csv",
+        "data/news/vietnambiz/vietnambiz_raw.csv",
+        "data/news/vnexpress/vnexpress_raw.csv",
+        "data/news/kinhtechungkhoan/kinhtechungkhoan_raw.csv",
     ],
+    "TASK_2B": ["data/news/enriched/all_news_enriched.csv"],
     "TASK_3": ["data/news/matched/all_news_matched.csv"],
     "TASK_4": ["data/news/processed/all_news_processed.csv"],
     "TASK_5": [
@@ -86,10 +91,11 @@ TASK_CHECKPOINTS: Dict[str, List[str]] = {
 # Step → task mapping
 STEP_TASKS: Dict[str, List[str]] = {
     "all": [
-        "TASK_1", "TASK_2", "TASK_3", "TASK_4", "TASK_5", "TASK_6",
+        "TASK_1", "TASK_2", "TASK_3", "TASK_2B", "TASK_4", "TASK_5", "TASK_6",
         "TASK_7", "TASK_8", "TASK_9", "TASK_10", "TASK_11",
     ],
-    "data": ["TASK_1", "TASK_2", "TASK_3"],
+    "data": ["TASK_1", "TASK_2", "TASK_3", "TASK_2B"],
+    "enrich_news": ["TASK_2B"],
     "preprocess": ["TASK_4", "TASK_5", "TASK_6"],
     "features": [
         "TASK_4", "TASK_5", "TASK_6",  # prerequisites
@@ -105,8 +111,12 @@ REQUIRED_DIRECTORIES = [
     "data/news/cafef",
     "data/news/vietstock",
     "data/news/tnck",
+    "data/news/vietnambiz",
+    "data/news/vnexpress",
+    "data/news/kinhtechungkhoan",
     "data/news/matched",
     "data/news/processed",
+    "data/news/enriched",
     "data/aggregated",
     "data/features",
     "models",
@@ -127,6 +137,7 @@ REQUIRED_PIPELINE_FILES = [
     "pipeline/run_pipeline.py",
     "pipeline/task1_prices.py",
     "pipeline/task2_scrape.py",
+    "pipeline/task2b_enrich_articles.py",
     "pipeline/task3_matching.py",
     "pipeline/task4_preprocess.py",
     "pipeline/task5_aggregate.py",
@@ -366,14 +377,21 @@ def execute_task_2(config: Dict[str, Any], logger, smoke_test: bool = False) -> 
     tickers = SMOKE_TEST_TICKERS if smoke_test else config.get("tickers")
     start_date = config.get("start_date", "2022-01-01")
 
-    for src in ["cafef", "vietstock", "tnck", "vietnambiz", "vnexpress"]:
+    for src in ["cafef", "vietstock", "tnck", "vietnambiz", "vnexpress", "kinhtechungkhoan"]:
         results = {}
-        if src in ("tnck", "vietnambiz", "vnexpress"):
+        if src in ("tnck", "vietnambiz", "vnexpress", "kinhtechungkhoan"):
             results["ALL"] = scrape_source(src, ticker="ALL", start_date=start_date)
         else:
             for t in tickers:
                 results[t] = scrape_source(src, ticker=t, start_date=start_date)
         print_scraping_report(src, results)
+
+
+def execute_task_2b(config: Dict[str, Any], logger, smoke_test: bool = False, force: bool = False) -> None:
+    """Execute TASK 2B: Article Full-Text Enrichment."""
+    from pipeline.task2b_enrich_articles import run_enrichment
+
+    run_enrichment(force=force)
 
 
 def execute_task_3(config: Dict[str, Any], logger, smoke_test: bool = False) -> None:
@@ -443,6 +461,7 @@ def execute_task_11(config: Dict[str, Any], logger, smoke_test: bool = False) ->
 TASK_EXECUTORS = {
     "TASK_1": execute_task_1,
     "TASK_2": execute_task_2,
+    "TASK_2B": execute_task_2b,
     "TASK_3": execute_task_3,
     "TASK_4": execute_task_4,
     "TASK_5": execute_task_5,
@@ -457,7 +476,8 @@ TASK_EXECUTORS = {
 # Human-readable task descriptions
 TASK_DESCRIPTIONS = {
     "TASK_1": "Price Collection (vnstock OHLCV)",
-    "TASK_2": "News Scraping (CafeF, Vietstock, TNCK)",
+    "TASK_2": "News Scraping (CafeF, Vietstock, TNCK, VietnamBiz, VnExpress, Kinhtechungkhoan)",
+    "TASK_2B": "Article Full-Text Enrichment (detail pages → summaries/key facts)",
     "TASK_3": "Entity Matching (articles → tickers)",
     "TASK_4": "Text Preprocessing (clean, tokenize, deduplicate)",
     "TASK_5": "Data Aggregation (group by ticker × quarter)",
@@ -512,8 +532,16 @@ def log_task_end(task_name: str, task_logger, elapsed: float) -> None:
 def _get_input_files(task_name: str) -> List[str]:
     """Return known input files for a task."""
     mapping = {
-        "TASK_3": ["data/news/cafef", "data/news/vietstock", "data/news/tnck/tnck_raw.csv"],
-        "TASK_4": ["data/news/matched/all_news_matched.csv"],
+        "TASK_2B": ["data/news/matched/all_news_matched.csv"],
+        "TASK_3": [
+            "data/news/cafef",
+            "data/news/vietstock",
+            "data/news/tnck/tnck_raw.csv",
+            "data/news/vietnambiz/vietnambiz_raw.csv",
+            "data/news/vnexpress/vnexpress_raw.csv",
+            "data/news/kinhtechungkhoan/kinhtechungkhoan_raw.csv",
+        ],
+        "TASK_4": ["data/news/enriched/all_news_enriched.csv", "data/news/matched/all_news_matched.csv"],
         "TASK_5": ["data/prices/all_vn30_prices.csv", "data/news/processed/all_news_processed.csv"],
         "TASK_6": ["data/aggregated/master_dataset.csv"],
         "TASK_7": ["data/prices/all_vn30_prices.csv"],
@@ -540,6 +568,7 @@ def execute_update_news(config: Dict[str, Any], force: bool, logger) -> None:
     matching, and re-runs text preprocessing on the updated corpus.
     """
     from pipeline.task2_scrape import print_scraping_report, scrape_source
+    from pipeline.task2b_enrich_articles import run_enrichment
     from pipeline.task3_matching import run_matching
     from pipeline.task4_preprocess import run_preprocessing
 
@@ -551,9 +580,9 @@ def execute_update_news(config: Dict[str, Any], force: bool, logger) -> None:
     logger.info("=" * 60)
 
     # Step 1: Scrape new articles (duplicate detection built into scrape_source)
-    for src in ["cafef", "vietstock", "tnck"]:
+    for src in ["cafef", "vietstock", "tnck", "vietnambiz", "vnexpress", "kinhtechungkhoan"]:
         results = {}
-        if src == "tnck":
+        if src in ("tnck", "vietnambiz", "vnexpress", "kinhtechungkhoan"):
             results["ALL"] = scrape_source(src, ticker="ALL", start_date=start_date)
         else:
             for t in tickers:
@@ -564,7 +593,11 @@ def execute_update_news(config: Dict[str, Any], force: bool, logger) -> None:
     logger.info("Re-running entity matching on updated corpus...")
     run_matching()
 
-    # Step 3: Re-run text preprocessing on updated matched corpus
+    # Step 3: Enrich matched news with full article text and structured evidence
+    logger.info("Enriching matched news with full article text...")
+    run_enrichment(force=force)
+
+    # Step 4: Re-run text preprocessing on updated matched/enriched corpus
     logger.info("Re-running text preprocessing on updated corpus...")
     run_preprocessing()
 
@@ -656,7 +689,10 @@ def run_pipeline(
 
         task_start = time.time()
         try:
-            executor(config, task_logger, smoke_test=smoke_test)
+            if task_name == "TASK_2B":
+                executor(config, task_logger, smoke_test=smoke_test, force=force)
+            else:
+                executor(config, task_logger, smoke_test=smoke_test)
             elapsed = time.time() - task_start
             log_task_end(task_name, task_logger, elapsed)
             task_timings.append({
@@ -966,7 +1002,8 @@ def build_parser() -> argparse.ArgumentParser:
         epilog="""
 Steps:
   all          Execute TASK 1 through TASK 11 in sequential order
-  data         Execute TASK 1, 2, 3 (data collection)
+  data         Execute TASK 1, 2, 3, 2B (data collection + article enrichment)
+  enrich_news  Execute TASK 2B only (full-text article enrichment)
   preprocess   Execute TASK 4, 5, 6 (text preprocessing + aggregation + labels)
   features     Execute TASK 4-6 (prerequisites) then TASK 7, 8, 9 (features)
   train        Execute TASK 10, 11 (model training + SHAP analysis)

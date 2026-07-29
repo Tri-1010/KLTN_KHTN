@@ -1,0 +1,4 @@
+[2026-07-02 11:17:06] [BACKTEST_SIGNALS] [INFO] Generated signals with model=LightGBM, config=Config_A, cutoff=2025Q1, 400 test rows.
+[2026-07-02 11:21:39] [BACKTEST_SIGNALS] [INFO] Generated signals with model=LightGBM, config=Config_A, cutoff=2025Q1, 400 test rows.
+[2026-07-02 17:47:03] [BACKTEST_SIGNALS] [INFO] Generated signals with model=LightGBM, config=Config_A, cutoff=2025Q1, 400 test rows.
+[2026-07-02 17:49:49] [BACKTEST_SIGNALS] [INFO] Generated signals with model=LightGBM, config=Config_A, cutoff=2025Q1, 400 test rows.

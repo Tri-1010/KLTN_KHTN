@@ -25,6 +25,7 @@ def _load(name: str):
 backtest = _load("run_topk_simulation")
 claim_writer = _load("write_claim_evidence_table")
 final_writer = _load("write_final_reports")
+lineage = _load("build_lineage_manifest")
 
 
 def test_turnover_for_unchanged_and_disjoint_holdings():
@@ -275,4 +276,51 @@ def test_report_renderers_use_dynamic_snapshot_without_writing(tmp_path):
     assert "## Conclusion" in report
     assert "macro-F1" in report
     assert "Top-K" in report
+    assert "RQ–hypothesis–evidence matrix" in report
+    assert "two model families" in report
+    assert "retrospective" in report
+    assert "joint-positive fraction" in claim
     assert not list(tmp_path.rglob("*.md"))
+
+
+def test_optional_robustness_readers_preserve_missing_fallbacks(tmp_path):
+    output_dir = tmp_path / "outputs"
+    data_dir = tmp_path / "data"
+    output_dir.mkdir()
+    data_dir.mkdir()
+    snapshot = claim_writer.build_artifact_snapshot(output_dir, data_dir)
+    assert not any(snapshot["robustness"]["available"].values())
+    assert snapshot["robustness"]["topk_null_significant"] is None
+    assert snapshot["artifacts"]["family_sensitivity"]["freshness"] == "missing"
+    report = final_writer.render_main_report(snapshot)
+    assert "Missing optional artifacts remain unavailable" in report
+
+
+def test_optional_robustness_summary_reports_ml_deltas_and_topk_null():
+    summary = claim_writer.optional_robustness_summary({
+        "placebo": pd.DataFrame(),
+        "ml_paired": pd.DataFrame({
+            "metric": ["auc", "auc"], "baseline_value": [0.49, 0.51],
+            "comparison_value": [0.50, 0.50], "delta": [0.01, -0.01],
+        }),
+        "ml_bootstrap": pd.DataFrame({"delta": [0.0]}),
+        "topk_null": pd.DataFrame({"one_sided_null_p_value": [0.04, 0.40]}),
+        "topk_cost": pd.DataFrame({"round_trip_cost_rate": [0.0, 0.005]}),
+        "family_sensitivity": pd.DataFrame(),
+    })
+    assert summary["ml_metrics"]["auc"]["baseline_mean"] == 0.5
+    assert summary["ml_metrics"]["auc"]["delta_mean"] == 0.0
+    assert summary["topk_null_significant"] == 1
+    assert summary["topk_cost_rates"] == [0.0, 0.005]
+
+
+def test_lineage_manifest_records_hash_and_missing_optional(tmp_path):
+    available = tmp_path / "available.csv"
+    missing = tmp_path / "missing.csv"
+    available.write_text("value\n1\n", encoding="utf-8")
+    manifest = lineage.build_manifest([available, missing], tmp_path)
+    assert manifest["manifest_schema_version"] == "semantic_report_lineage_v1"
+    assert manifest["available_count"] == 1
+    assert manifest["missing_optional_count"] == 1
+    assert manifest["artifacts"][0]["sha256"] == lineage.sha256_file(available)
+    assert manifest["artifacts"][1]["status"] == "missing_optional"

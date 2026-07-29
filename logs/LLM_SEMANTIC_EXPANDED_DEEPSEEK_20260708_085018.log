@@ -1,0 +1,3 @@
+2026-07-08T08:50:21 start provider=deepseek model=deepseek-chat candidates=7624 batch_size=200 max_batches=0 log=logs\LLM_SEMANTIC_EXPANDED_DEEPSEEK_20260708_085018.log
+2026-07-08T08:50:27 initial ok=409 missing=7214 error=1
+2026-07-08T08:50:29 batch 1 annotate n=200 pending_before=7215 top_tickers=HDG,BVB,CMG,VGC,VBB,DCM,GVR,EVF

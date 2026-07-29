@@ -1,0 +1,834 @@
+[2026-07-03 13:37:09] [TASK_8] [INFO] ============================================================
+[2026-07-03 13:37:09] [TASK_8] [INFO] START TASK_8: Keyword Building (curate financial keywords)
+[2026-07-03 13:37:09] [TASK_8] [INFO] Timestamp: 2026-07-03T13:37:09.379591
+[2026-07-03 13:37:09] [TASK_8] [INFO] ============================================================
+[2026-07-03 13:37:09] [TASK_8] [INFO] Input: data/news/processed/all_news_processed.csv (34979 rows)
+[2026-07-03 13:37:09] [TASK_8] [INFO] ------------------------------------------------------------
+[2026-07-03 13:37:09] [TASK_8] [INFO] END TASK_8 — completed in 0.0 seconds
+[2026-07-03 13:37:09] [TASK_8] [INFO] ============================================================
+[2026-07-03 13:37:10] [TASK_8] [INFO] ============================================================
+[2026-07-03 13:37:10] [TASK_8] [INFO] START TASK_8: Keyword Building (curate financial keywords)
+[2026-07-03 13:37:10] [TASK_8] [INFO] Timestamp: 2026-07-03T13:37:10.085885
+[2026-07-03 13:37:10] [TASK_8] [INFO] ============================================================
+[2026-07-03 13:37:10] [TASK_8] [INFO] Input: data/news/processed/all_news_processed.csv (34979 rows)
+[2026-07-03 13:37:10] [TASK_8] [INFO] ------------------------------------------------------------
+[2026-07-03 13:37:10] [TASK_8] [INFO] END TASK_8 — completed in 0.0 seconds
+[2026-07-03 13:37:10] [TASK_8] [INFO] ============================================================
+[2026-07-03 13:37:26] [TASK_8] [INFO] Starting Keyword Builder (TASK 8)...
+[2026-07-03 13:37:26] [TASK_8] [INFO] Loaded 23 stopwords.
+[2026-07-03 13:37:26] [TASK_8] [INFO] Extracting keyword candidates from 10 documents...
+[2026-07-03 13:37:26] [TASK_8] [INFO] Saved 176 keyword candidates to C:\Users\User\AppData\Local\Temp\tmpwllm88mm\keyword_candidates.csv (unigrams: 83, bigrams: 93).
+[2026-07-03 13:37:26] [TASK_8] [INFO] Curated keyword list: 43 positive, 54 negative, 9 neutral (total: 106).
+[2026-07-03 13:37:26] [TASK_8] [INFO] Saved flat keyword list to C:\Users\User\AppData\Local\Temp\tmpwllm88mm\keywords_finance.json.
+[2026-07-03 13:37:26] [TASK_8] [INFO] Saved group-level keyword breakdown to C:\Users\User\AppData\Local\Temp\tmpwllm88mm\keywords_by_group.json.
+[2026-07-03 13:37:26] [TASK_8] [INFO] ======================================================================
+[2026-07-03 13:37:26] [TASK_8] [INFO] KEYWORD CORPUS FREQUENCY REPORT
+[2026-07-03 13:37:26] [TASK_8] [INFO] ======================================================================
+[2026-07-03 13:37:26] [TASK_8] [INFO] 
+--- POSITIVE keywords (43) ---
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lợi nhuận tăng                           1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   doanh thu tăng                           1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   kỷ lục                                   1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   tăng trưởng                              1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   tăng mạnh                                1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   chia cổ tức                              1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   cổ tức cao                               1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   cổ tức tiền mặt                          1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   giảm nợ                                  1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   trả nợ                                   1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   cải thiện tài chính                      1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   dòng tiền dương                          1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   ký kết hợp đồng                          1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   mở rộng thị trường                       1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   xuất khẩu tăng                           1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   tăng trưởng mạnh                         0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   vượt kế hoạch                            0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lãi ròng                                 0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lợi nhuận sau thuế tăng                  0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   kết quả tích cực                         0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lãi khủng                                0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lãi lớn                                  0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lãi đậm                                  0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   báo lãi                                  0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lợi nhuận kỷ lục                         0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   doanh thu kỷ lục                         0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lãi kỷ lục                               0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   bứt phá                                  0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   tăng vọt                                 0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   khởi sắc                                 0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   phục hồi                                 0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lập đỉnh                                 0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   hoàn thành kế hoạch                      0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lợi nhuận cải thiện                      0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   mua lại cổ phiếu                         0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   phát hành thưởng                         0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   tăng vốn điều lệ                         0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   hệ số an toàn vốn                        0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   tiền mặt dồi dào                         0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   dự án mới                                0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   đầu tư mới                               0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   hợp tác chiến lược                       0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   thắng thầu                               0
+[2026-07-03 13:37:26] [TASK_8] [INFO] 
+--- NEGATIVE keywords (54) ---
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lợi nhuận giảm                           1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   doanh thu giảm                           1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   sụt giảm                                 1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   giảm mạnh                                1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   nợ xấu                                   1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   áp lực tài chính                         1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   dòng tiền âm                             1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   hủy hợp đồng                             1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   dự án trì hoãn                           1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   đóng cửa                                 1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   bị phạt                                  1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   vi phạm                                  1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   bị thanh tra                             1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lợi nhuận âm                             0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   thua lỗ                                  0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lỗ ròng                                  0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   dưới kế hoạch                            0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   kết quả tiêu cực                         0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lợi nhuận thấp hơn                       0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   báo lỗ                                   0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lỗ nặng                                  0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lỗ lớn                                   0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lỗ kỷ lục                                0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lỗ lũy kế                                0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lao dốc                                  0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   giảm sâu                                 0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   tụt dốc                                  0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   kinh doanh sa sút                        0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   âm vốn chủ sở hữu                        0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lợi nhuận không tăng                     0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   doanh thu không tăng                     0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   không tăng trưởng                        0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   tăng trưởng chậm lại                     0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   không hoàn thành kế hoạch                0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   không đạt kế hoạch                       0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   chưa có lãi                              0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   không chia cổ tức                        0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   hủy cổ tức                               0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   giảm cổ tức                              0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   phát hành pha loãng                      0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   chào bán giá thấp                        0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   nợ vay tăng                              0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   nợ quá hạn                               0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   hệ số nợ cao                             0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   thiếu thanh khoản                        0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   thu hẹp hoạt động                        0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   dừng dự án                               0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   bị kiểm toán từ chối                     0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   cảnh báo                                 0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   đình chỉ                                 0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   khởi tố                                  0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   điều tra                                 0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   tranh chấp pháp lý                       0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   bị kiện                                  0
+[2026-07-03 13:37:26] [TASK_8] [INFO] 
+--- NEUTRAL keywords (9) ---
+[2026-07-03 13:37:26] [TASK_8] [INFO]   đại hội cổ đông                          1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   thay đổi lãnh đạo                        1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   sáp nhập                                 1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   mua lại                                  1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   phát hành cổ phiếu mới                   1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   thoái vốn                                1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   họp HĐQT                                 0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   thay CEO                                 0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   niêm yết thêm                            0
+[2026-07-03 13:37:26] [TASK_8] [INFO] 
+Total keyword occurrences in corpus: 34
+[2026-07-03 13:37:26] [TASK_8] [INFO] Keywords with zero occurrences: 72 / 106
+[2026-07-03 13:37:26] [TASK_8] [INFO] ======================================================================
+[2026-07-03 13:37:26] [TASK_8] [INFO] Keyword Builder (TASK 8) complete.
+[2026-07-03 13:37:26] [TASK_8] [INFO] Starting Keyword Builder (TASK 8)...
+[2026-07-03 13:37:26] [TASK_8] [INFO] Loaded 23 stopwords.
+[2026-07-03 13:37:26] [TASK_8] [INFO] Extracting keyword candidates from 10 documents...
+[2026-07-03 13:37:26] [TASK_8] [INFO] Saved 176 keyword candidates to C:\Users\User\AppData\Local\Temp\tmppicxkal4\keyword_candidates.csv (unigrams: 83, bigrams: 93).
+[2026-07-03 13:37:26] [TASK_8] [INFO] Curated keyword list: 43 positive, 54 negative, 9 neutral (total: 106).
+[2026-07-03 13:37:26] [TASK_8] [INFO] Saved flat keyword list to C:\Users\User\AppData\Local\Temp\tmppicxkal4\keywords_finance.json.
+[2026-07-03 13:37:26] [TASK_8] [INFO] Saved group-level keyword breakdown to C:\Users\User\AppData\Local\Temp\tmppicxkal4\keywords_by_group.json.
+[2026-07-03 13:37:26] [TASK_8] [INFO] ======================================================================
+[2026-07-03 13:37:26] [TASK_8] [INFO] KEYWORD CORPUS FREQUENCY REPORT
+[2026-07-03 13:37:26] [TASK_8] [INFO] ======================================================================
+[2026-07-03 13:37:26] [TASK_8] [INFO] 
+--- POSITIVE keywords (43) ---
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lợi nhuận tăng                           1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   doanh thu tăng                           1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   kỷ lục                                   1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   tăng trưởng                              1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   tăng mạnh                                1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   chia cổ tức                              1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   cổ tức cao                               1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   cổ tức tiền mặt                          1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   giảm nợ                                  1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   trả nợ                                   1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   cải thiện tài chính                      1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   dòng tiền dương                          1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   ký kết hợp đồng                          1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   mở rộng thị trường                       1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   xuất khẩu tăng                           1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   tăng trưởng mạnh                         0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   vượt kế hoạch                            0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lãi ròng                                 0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lợi nhuận sau thuế tăng                  0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   kết quả tích cực                         0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lãi khủng                                0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lãi lớn                                  0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lãi đậm                                  0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   báo lãi                                  0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lợi nhuận kỷ lục                         0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   doanh thu kỷ lục                         0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lãi kỷ lục                               0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   bứt phá                                  0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   tăng vọt                                 0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   khởi sắc                                 0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   phục hồi                                 0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lập đỉnh                                 0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   hoàn thành kế hoạch                      0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lợi nhuận cải thiện                      0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   mua lại cổ phiếu                         0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   phát hành thưởng                         0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   tăng vốn điều lệ                         0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   hệ số an toàn vốn                        0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   tiền mặt dồi dào                         0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   dự án mới                                0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   đầu tư mới                               0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   hợp tác chiến lược                       0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   thắng thầu                               0
+[2026-07-03 13:37:26] [TASK_8] [INFO] 
+--- NEGATIVE keywords (54) ---
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lợi nhuận giảm                           1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   doanh thu giảm                           1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   sụt giảm                                 1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   giảm mạnh                                1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   nợ xấu                                   1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   áp lực tài chính                         1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   dòng tiền âm                             1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   hủy hợp đồng                             1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   dự án trì hoãn                           1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   đóng cửa                                 1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   bị phạt                                  1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   vi phạm                                  1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   bị thanh tra                             1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lợi nhuận âm                             0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   thua lỗ                                  0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lỗ ròng                                  0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   dưới kế hoạch                            0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   kết quả tiêu cực                         0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lợi nhuận thấp hơn                       0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   báo lỗ                                   0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lỗ nặng                                  0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lỗ lớn                                   0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lỗ kỷ lục                                0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lỗ lũy kế                                0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lao dốc                                  0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   giảm sâu                                 0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   tụt dốc                                  0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   kinh doanh sa sút                        0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   âm vốn chủ sở hữu                        0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   lợi nhuận không tăng                     0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   doanh thu không tăng                     0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   không tăng trưởng                        0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   tăng trưởng chậm lại                     0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   không hoàn thành kế hoạch                0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   không đạt kế hoạch                       0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   chưa có lãi                              0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   không chia cổ tức                        0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   hủy cổ tức                               0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   giảm cổ tức                              0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   phát hành pha loãng                      0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   chào bán giá thấp                        0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   nợ vay tăng                              0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   nợ quá hạn                               0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   hệ số nợ cao                             0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   thiếu thanh khoản                        0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   thu hẹp hoạt động                        0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   dừng dự án                               0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   bị kiểm toán từ chối                     0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   cảnh báo                                 0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   đình chỉ                                 0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   khởi tố                                  0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   điều tra                                 0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   tranh chấp pháp lý                       0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   bị kiện                                  0
+[2026-07-03 13:37:26] [TASK_8] [INFO] 
+--- NEUTRAL keywords (9) ---
+[2026-07-03 13:37:26] [TASK_8] [INFO]   đại hội cổ đông                          1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   thay đổi lãnh đạo                        1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   sáp nhập                                 1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   mua lại                                  1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   phát hành cổ phiếu mới                   1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   thoái vốn                                1
+[2026-07-03 13:37:26] [TASK_8] [INFO]   họp HĐQT                                 0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   thay CEO                                 0
+[2026-07-03 13:37:26] [TASK_8] [INFO]   niêm yết thêm                            0
+[2026-07-03 13:37:26] [TASK_8] [INFO] 
+Total keyword occurrences in corpus: 34
+[2026-07-03 13:37:26] [TASK_8] [INFO] Keywords with zero occurrences: 72 / 106
+[2026-07-03 13:37:26] [TASK_8] [INFO] ======================================================================
+[2026-07-03 13:37:26] [TASK_8] [INFO] Keyword Builder (TASK 8) complete.
+[2026-07-03 13:37:26] [TASK_8] [INFO] Starting Keyword Builder (TASK 8)...
+[2026-07-03 13:37:26] [TASK_8] [INFO] Loaded 23 stopwords.
+[2026-07-03 13:37:26] [TASK_8] [INFO] No corpus provided — skipping candidate extraction.
+[2026-07-03 13:37:26] [TASK_8] [INFO] Curated keyword list: 43 positive, 54 negative, 9 neutral (total: 106).
+[2026-07-03 13:37:26] [TASK_8] [INFO] Saved flat keyword list to C:\Users\User\AppData\Local\Temp\tmp3zu46l2b\keywords_finance.json.
+[2026-07-03 13:37:26] [TASK_8] [INFO] Saved group-level keyword breakdown to C:\Users\User\AppData\Local\Temp\tmp3zu46l2b\keywords_by_group.json.
+[2026-07-03 13:37:26] [TASK_8] [INFO] No corpus provided — skipping frequency report.
+[2026-07-03 13:37:26] [TASK_8] [INFO] Keyword Builder (TASK 8) complete.
+[2026-07-03 13:38:46] [TASK_8] [INFO] ============================================================
+[2026-07-03 13:38:46] [TASK_8] [INFO] START TASK_8: Keyword Building (curate financial keywords)
+[2026-07-03 13:38:46] [TASK_8] [INFO] Timestamp: 2026-07-03T13:38:46.871250
+[2026-07-03 13:38:46] [TASK_8] [INFO] ============================================================
+[2026-07-03 13:38:47] [TASK_8] [INFO] Input: data/news/processed/all_news_processed.csv (34979 rows)
+[2026-07-03 13:38:47] [TASK_8] [INFO] ------------------------------------------------------------
+[2026-07-03 13:38:47] [TASK_8] [INFO] END TASK_8 — completed in 0.0 seconds
+[2026-07-03 13:38:47] [TASK_8] [INFO] ============================================================
+[2026-07-03 13:38:47] [TASK_8] [INFO] ============================================================
+[2026-07-03 13:38:47] [TASK_8] [INFO] START TASK_8: Keyword Building (curate financial keywords)
+[2026-07-03 13:38:47] [TASK_8] [INFO] Timestamp: 2026-07-03T13:38:47.508207
+[2026-07-03 13:38:47] [TASK_8] [INFO] ============================================================
+[2026-07-03 13:38:47] [TASK_8] [INFO] Input: data/news/processed/all_news_processed.csv (34979 rows)
+[2026-07-03 13:38:47] [TASK_8] [INFO] ------------------------------------------------------------
+[2026-07-03 13:38:47] [TASK_8] [INFO] END TASK_8 — completed in 0.0 seconds
+[2026-07-03 13:38:47] [TASK_8] [INFO] ============================================================
+[2026-07-03 13:39:01] [TASK_8] [INFO] Starting Keyword Builder (TASK 8)...
+[2026-07-03 13:39:01] [TASK_8] [INFO] Loaded 23 stopwords.
+[2026-07-03 13:39:01] [TASK_8] [INFO] Extracting keyword candidates from 10 documents...
+[2026-07-03 13:39:01] [TASK_8] [INFO] Saved 176 keyword candidates to C:\Users\User\AppData\Local\Temp\tmpma1pfkas\keyword_candidates.csv (unigrams: 83, bigrams: 93).
+[2026-07-03 13:39:01] [TASK_8] [INFO] Curated keyword list: 43 positive, 54 negative, 9 neutral (total: 106).
+[2026-07-03 13:39:01] [TASK_8] [INFO] Saved flat keyword list to C:\Users\User\AppData\Local\Temp\tmpma1pfkas\keywords_finance.json.
+[2026-07-03 13:39:01] [TASK_8] [INFO] Saved group-level keyword breakdown to C:\Users\User\AppData\Local\Temp\tmpma1pfkas\keywords_by_group.json.
+[2026-07-03 13:39:01] [TASK_8] [INFO] ======================================================================
+[2026-07-03 13:39:01] [TASK_8] [INFO] KEYWORD CORPUS FREQUENCY REPORT
+[2026-07-03 13:39:01] [TASK_8] [INFO] ======================================================================
+[2026-07-03 13:39:01] [TASK_8] [INFO] 
+--- POSITIVE keywords (43) ---
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lợi nhuận tăng                           1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   doanh thu tăng                           1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   kỷ lục                                   1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   tăng trưởng                              1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   tăng mạnh                                1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   chia cổ tức                              1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   cổ tức cao                               1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   cổ tức tiền mặt                          1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   giảm nợ                                  1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   trả nợ                                   1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   cải thiện tài chính                      1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   dòng tiền dương                          1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   ký kết hợp đồng                          1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   mở rộng thị trường                       1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   xuất khẩu tăng                           1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   tăng trưởng mạnh                         0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   vượt kế hoạch                            0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lãi ròng                                 0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lợi nhuận sau thuế tăng                  0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   kết quả tích cực                         0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lãi khủng                                0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lãi lớn                                  0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lãi đậm                                  0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   báo lãi                                  0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lợi nhuận kỷ lục                         0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   doanh thu kỷ lục                         0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lãi kỷ lục                               0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   bứt phá                                  0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   tăng vọt                                 0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   khởi sắc                                 0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   phục hồi                                 0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lập đỉnh                                 0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   hoàn thành kế hoạch                      0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lợi nhuận cải thiện                      0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   mua lại cổ phiếu                         0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   phát hành thưởng                         0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   tăng vốn điều lệ                         0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   hệ số an toàn vốn                        0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   tiền mặt dồi dào                         0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   dự án mới                                0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   đầu tư mới                               0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   hợp tác chiến lược                       0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   thắng thầu                               0
+[2026-07-03 13:39:01] [TASK_8] [INFO] 
+--- NEGATIVE keywords (54) ---
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lợi nhuận giảm                           1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   doanh thu giảm                           1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   sụt giảm                                 1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   giảm mạnh                                1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   nợ xấu                                   1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   áp lực tài chính                         1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   dòng tiền âm                             1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   hủy hợp đồng                             1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   dự án trì hoãn                           1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   đóng cửa                                 1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   bị phạt                                  1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   vi phạm                                  1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   bị thanh tra                             1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lợi nhuận âm                             0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   thua lỗ                                  0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lỗ ròng                                  0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   dưới kế hoạch                            0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   kết quả tiêu cực                         0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lợi nhuận thấp hơn                       0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   báo lỗ                                   0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lỗ nặng                                  0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lỗ lớn                                   0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lỗ kỷ lục                                0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lỗ lũy kế                                0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lao dốc                                  0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   giảm sâu                                 0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   tụt dốc                                  0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   kinh doanh sa sút                        0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   âm vốn chủ sở hữu                        0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lợi nhuận không tăng                     0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   doanh thu không tăng                     0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   không tăng trưởng                        0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   tăng trưởng chậm lại                     0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   không hoàn thành kế hoạch                0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   không đạt kế hoạch                       0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   chưa có lãi                              0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   không chia cổ tức                        0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   hủy cổ tức                               0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   giảm cổ tức                              0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   phát hành pha loãng                      0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   chào bán giá thấp                        0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   nợ vay tăng                              0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   nợ quá hạn                               0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   hệ số nợ cao                             0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   thiếu thanh khoản                        0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   thu hẹp hoạt động                        0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   dừng dự án                               0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   bị kiểm toán từ chối                     0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   cảnh báo                                 0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   đình chỉ                                 0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   khởi tố                                  0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   điều tra                                 0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   tranh chấp pháp lý                       0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   bị kiện                                  0
+[2026-07-03 13:39:01] [TASK_8] [INFO] 
+--- NEUTRAL keywords (9) ---
+[2026-07-03 13:39:01] [TASK_8] [INFO]   đại hội cổ đông                          1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   thay đổi lãnh đạo                        1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   sáp nhập                                 1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   mua lại                                  1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   phát hành cổ phiếu mới                   1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   thoái vốn                                1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   họp HĐQT                                 0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   thay CEO                                 0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   niêm yết thêm                            0
+[2026-07-03 13:39:01] [TASK_8] [INFO] 
+Total keyword occurrences in corpus: 34
+[2026-07-03 13:39:01] [TASK_8] [INFO] Keywords with zero occurrences: 72 / 106
+[2026-07-03 13:39:01] [TASK_8] [INFO] ======================================================================
+[2026-07-03 13:39:01] [TASK_8] [INFO] Keyword Builder (TASK 8) complete.
+[2026-07-03 13:39:01] [TASK_8] [INFO] Starting Keyword Builder (TASK 8)...
+[2026-07-03 13:39:01] [TASK_8] [INFO] Loaded 23 stopwords.
+[2026-07-03 13:39:01] [TASK_8] [INFO] Extracting keyword candidates from 10 documents...
+[2026-07-03 13:39:01] [TASK_8] [INFO] Saved 176 keyword candidates to C:\Users\User\AppData\Local\Temp\tmpfz4js1q6\keyword_candidates.csv (unigrams: 83, bigrams: 93).
+[2026-07-03 13:39:01] [TASK_8] [INFO] Curated keyword list: 43 positive, 54 negative, 9 neutral (total: 106).
+[2026-07-03 13:39:01] [TASK_8] [INFO] Saved flat keyword list to C:\Users\User\AppData\Local\Temp\tmpfz4js1q6\keywords_finance.json.
+[2026-07-03 13:39:01] [TASK_8] [INFO] Saved group-level keyword breakdown to C:\Users\User\AppData\Local\Temp\tmpfz4js1q6\keywords_by_group.json.
+[2026-07-03 13:39:01] [TASK_8] [INFO] ======================================================================
+[2026-07-03 13:39:01] [TASK_8] [INFO] KEYWORD CORPUS FREQUENCY REPORT
+[2026-07-03 13:39:01] [TASK_8] [INFO] ======================================================================
+[2026-07-03 13:39:01] [TASK_8] [INFO] 
+--- POSITIVE keywords (43) ---
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lợi nhuận tăng                           1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   doanh thu tăng                           1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   kỷ lục                                   1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   tăng trưởng                              1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   tăng mạnh                                1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   chia cổ tức                              1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   cổ tức cao                               1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   cổ tức tiền mặt                          1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   giảm nợ                                  1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   trả nợ                                   1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   cải thiện tài chính                      1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   dòng tiền dương                          1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   ký kết hợp đồng                          1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   mở rộng thị trường                       1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   xuất khẩu tăng                           1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   tăng trưởng mạnh                         0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   vượt kế hoạch                            0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lãi ròng                                 0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lợi nhuận sau thuế tăng                  0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   kết quả tích cực                         0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lãi khủng                                0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lãi lớn                                  0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lãi đậm                                  0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   báo lãi                                  0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lợi nhuận kỷ lục                         0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   doanh thu kỷ lục                         0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lãi kỷ lục                               0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   bứt phá                                  0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   tăng vọt                                 0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   khởi sắc                                 0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   phục hồi                                 0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lập đỉnh                                 0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   hoàn thành kế hoạch                      0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lợi nhuận cải thiện                      0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   mua lại cổ phiếu                         0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   phát hành thưởng                         0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   tăng vốn điều lệ                         0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   hệ số an toàn vốn                        0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   tiền mặt dồi dào                         0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   dự án mới                                0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   đầu tư mới                               0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   hợp tác chiến lược                       0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   thắng thầu                               0
+[2026-07-03 13:39:01] [TASK_8] [INFO] 
+--- NEGATIVE keywords (54) ---
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lợi nhuận giảm                           1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   doanh thu giảm                           1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   sụt giảm                                 1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   giảm mạnh                                1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   nợ xấu                                   1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   áp lực tài chính                         1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   dòng tiền âm                             1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   hủy hợp đồng                             1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   dự án trì hoãn                           1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   đóng cửa                                 1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   bị phạt                                  1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   vi phạm                                  1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   bị thanh tra                             1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lợi nhuận âm                             0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   thua lỗ                                  0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lỗ ròng                                  0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   dưới kế hoạch                            0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   kết quả tiêu cực                         0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lợi nhuận thấp hơn                       0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   báo lỗ                                   0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lỗ nặng                                  0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lỗ lớn                                   0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lỗ kỷ lục                                0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lỗ lũy kế                                0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lao dốc                                  0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   giảm sâu                                 0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   tụt dốc                                  0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   kinh doanh sa sút                        0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   âm vốn chủ sở hữu                        0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   lợi nhuận không tăng                     0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   doanh thu không tăng                     0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   không tăng trưởng                        0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   tăng trưởng chậm lại                     0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   không hoàn thành kế hoạch                0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   không đạt kế hoạch                       0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   chưa có lãi                              0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   không chia cổ tức                        0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   hủy cổ tức                               0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   giảm cổ tức                              0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   phát hành pha loãng                      0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   chào bán giá thấp                        0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   nợ vay tăng                              0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   nợ quá hạn                               0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   hệ số nợ cao                             0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   thiếu thanh khoản                        0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   thu hẹp hoạt động                        0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   dừng dự án                               0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   bị kiểm toán từ chối                     0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   cảnh báo                                 0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   đình chỉ                                 0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   khởi tố                                  0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   điều tra                                 0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   tranh chấp pháp lý                       0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   bị kiện                                  0
+[2026-07-03 13:39:01] [TASK_8] [INFO] 
+--- NEUTRAL keywords (9) ---
+[2026-07-03 13:39:01] [TASK_8] [INFO]   đại hội cổ đông                          1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   thay đổi lãnh đạo                        1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   sáp nhập                                 1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   mua lại                                  1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   phát hành cổ phiếu mới                   1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   thoái vốn                                1
+[2026-07-03 13:39:01] [TASK_8] [INFO]   họp HĐQT                                 0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   thay CEO                                 0
+[2026-07-03 13:39:01] [TASK_8] [INFO]   niêm yết thêm                            0
+[2026-07-03 13:39:01] [TASK_8] [INFO] 
+Total keyword occurrences in corpus: 34
+[2026-07-03 13:39:01] [TASK_8] [INFO] Keywords with zero occurrences: 72 / 106
+[2026-07-03 13:39:01] [TASK_8] [INFO] ======================================================================
+[2026-07-03 13:39:01] [TASK_8] [INFO] Keyword Builder (TASK 8) complete.
+[2026-07-03 13:39:01] [TASK_8] [INFO] Starting Keyword Builder (TASK 8)...
+[2026-07-03 13:39:01] [TASK_8] [INFO] Loaded 23 stopwords.
+[2026-07-03 13:39:01] [TASK_8] [INFO] No corpus provided — skipping candidate extraction.
+[2026-07-03 13:39:01] [TASK_8] [INFO] Curated keyword list: 43 positive, 54 negative, 9 neutral (total: 106).
+[2026-07-03 13:39:01] [TASK_8] [INFO] Saved flat keyword list to C:\Users\User\AppData\Local\Temp\tmptackds4z\keywords_finance.json.
+[2026-07-03 13:39:01] [TASK_8] [INFO] Saved group-level keyword breakdown to C:\Users\User\AppData\Local\Temp\tmptackds4z\keywords_by_group.json.
+[2026-07-03 13:39:01] [TASK_8] [INFO] No corpus provided — skipping frequency report.
+[2026-07-03 13:39:01] [TASK_8] [INFO] Keyword Builder (TASK 8) complete.
+[2026-07-03 14:23:48] [TASK_8] [INFO] ============================================================
+[2026-07-03 14:23:48] [TASK_8] [INFO] START TASK_8: Keyword Building (curate financial keywords)
+[2026-07-03 14:23:48] [TASK_8] [INFO] Timestamp: 2026-07-03T14:23:48.233056
+[2026-07-03 14:23:48] [TASK_8] [INFO] ============================================================
+[2026-07-03 14:23:48] [TASK_8] [INFO] Input: data/news/processed/all_news_processed.csv (34979 rows)
+[2026-07-03 14:23:48] [TASK_8] [INFO] ------------------------------------------------------------
+[2026-07-03 14:23:48] [TASK_8] [INFO] END TASK_8 — completed in 0.0 seconds
+[2026-07-03 14:23:48] [TASK_8] [INFO] ============================================================
+[2026-07-03 14:23:48] [TASK_8] [INFO] ============================================================
+[2026-07-03 14:23:48] [TASK_8] [INFO] START TASK_8: Keyword Building (curate financial keywords)
+[2026-07-03 14:23:48] [TASK_8] [INFO] Timestamp: 2026-07-03T14:23:48.903556
+[2026-07-03 14:23:48] [TASK_8] [INFO] ============================================================
+[2026-07-03 14:23:49] [TASK_8] [INFO] Input: data/news/processed/all_news_processed.csv (34979 rows)
+[2026-07-03 14:23:49] [TASK_8] [INFO] ------------------------------------------------------------
+[2026-07-03 14:23:49] [TASK_8] [INFO] END TASK_8 — completed in 0.0 seconds
+[2026-07-03 14:23:49] [TASK_8] [INFO] ============================================================
+[2026-07-03 14:24:03] [TASK_8] [INFO] Starting Keyword Builder (TASK 8)...
+[2026-07-03 14:24:03] [TASK_8] [INFO] Loaded 23 stopwords.
+[2026-07-03 14:24:03] [TASK_8] [INFO] Extracting keyword candidates from 10 documents...
+[2026-07-03 14:24:03] [TASK_8] [INFO] Saved 176 keyword candidates to C:\Users\User\AppData\Local\Temp\tmpp5cq44s0\keyword_candidates.csv (unigrams: 83, bigrams: 93).
+[2026-07-03 14:24:03] [TASK_8] [INFO] Curated keyword list: 43 positive, 54 negative, 9 neutral (total: 106).
+[2026-07-03 14:24:03] [TASK_8] [INFO] Saved flat keyword list to C:\Users\User\AppData\Local\Temp\tmpp5cq44s0\keywords_finance.json.
+[2026-07-03 14:24:03] [TASK_8] [INFO] Saved group-level keyword breakdown to C:\Users\User\AppData\Local\Temp\tmpp5cq44s0\keywords_by_group.json.
+[2026-07-03 14:24:03] [TASK_8] [INFO] ======================================================================
+[2026-07-03 14:24:03] [TASK_8] [INFO] KEYWORD CORPUS FREQUENCY REPORT
+[2026-07-03 14:24:03] [TASK_8] [INFO] ======================================================================
+[2026-07-03 14:24:03] [TASK_8] [INFO] 
+--- POSITIVE keywords (43) ---
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lợi nhuận tăng                           1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   doanh thu tăng                           1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   kỷ lục                                   1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   tăng trưởng                              1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   tăng mạnh                                1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   chia cổ tức                              1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   cổ tức cao                               1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   cổ tức tiền mặt                          1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   giảm nợ                                  1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   trả nợ                                   1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   cải thiện tài chính                      1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   dòng tiền dương                          1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   ký kết hợp đồng                          1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   mở rộng thị trường                       1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   xuất khẩu tăng                           1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   tăng trưởng mạnh                         0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   vượt kế hoạch                            0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lãi ròng                                 0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lợi nhuận sau thuế tăng                  0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   kết quả tích cực                         0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lãi khủng                                0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lãi lớn                                  0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lãi đậm                                  0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   báo lãi                                  0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lợi nhuận kỷ lục                         0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   doanh thu kỷ lục                         0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lãi kỷ lục                               0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   bứt phá                                  0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   tăng vọt                                 0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   khởi sắc                                 0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   phục hồi                                 0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lập đỉnh                                 0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   hoàn thành kế hoạch                      0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lợi nhuận cải thiện                      0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   mua lại cổ phiếu                         0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   phát hành thưởng                         0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   tăng vốn điều lệ                         0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   hệ số an toàn vốn                        0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   tiền mặt dồi dào                         0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   dự án mới                                0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   đầu tư mới                               0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   hợp tác chiến lược                       0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   thắng thầu                               0
+[2026-07-03 14:24:03] [TASK_8] [INFO] 
+--- NEGATIVE keywords (54) ---
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lợi nhuận giảm                           1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   doanh thu giảm                           1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   sụt giảm                                 1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   giảm mạnh                                1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   nợ xấu                                   1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   áp lực tài chính                         1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   dòng tiền âm                             1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   hủy hợp đồng                             1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   dự án trì hoãn                           1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   đóng cửa                                 1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   bị phạt                                  1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   vi phạm                                  1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   bị thanh tra                             1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lợi nhuận âm                             0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   thua lỗ                                  0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lỗ ròng                                  0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   dưới kế hoạch                            0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   kết quả tiêu cực                         0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lợi nhuận thấp hơn                       0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   báo lỗ                                   0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lỗ nặng                                  0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lỗ lớn                                   0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lỗ kỷ lục                                0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lỗ lũy kế                                0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lao dốc                                  0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   giảm sâu                                 0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   tụt dốc                                  0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   kinh doanh sa sút                        0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   âm vốn chủ sở hữu                        0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lợi nhuận không tăng                     0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   doanh thu không tăng                     0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   không tăng trưởng                        0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   tăng trưởng chậm lại                     0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   không hoàn thành kế hoạch                0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   không đạt kế hoạch                       0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   chưa có lãi                              0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   không chia cổ tức                        0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   hủy cổ tức                               0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   giảm cổ tức                              0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   phát hành pha loãng                      0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   chào bán giá thấp                        0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   nợ vay tăng                              0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   nợ quá hạn                               0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   hệ số nợ cao                             0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   thiếu thanh khoản                        0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   thu hẹp hoạt động                        0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   dừng dự án                               0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   bị kiểm toán từ chối                     0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   cảnh báo                                 0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   đình chỉ                                 0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   khởi tố                                  0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   điều tra                                 0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   tranh chấp pháp lý                       0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   bị kiện                                  0
+[2026-07-03 14:24:03] [TASK_8] [INFO] 
+--- NEUTRAL keywords (9) ---
+[2026-07-03 14:24:03] [TASK_8] [INFO]   đại hội cổ đông                          1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   thay đổi lãnh đạo                        1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   sáp nhập                                 1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   mua lại                                  1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   phát hành cổ phiếu mới                   1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   thoái vốn                                1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   họp HĐQT                                 0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   thay CEO                                 0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   niêm yết thêm                            0
+[2026-07-03 14:24:03] [TASK_8] [INFO] 
+Total keyword occurrences in corpus: 34
+[2026-07-03 14:24:03] [TASK_8] [INFO] Keywords with zero occurrences: 72 / 106
+[2026-07-03 14:24:03] [TASK_8] [INFO] ======================================================================
+[2026-07-03 14:24:03] [TASK_8] [INFO] Keyword Builder (TASK 8) complete.
+[2026-07-03 14:24:03] [TASK_8] [INFO] Starting Keyword Builder (TASK 8)...
+[2026-07-03 14:24:03] [TASK_8] [INFO] Loaded 23 stopwords.
+[2026-07-03 14:24:03] [TASK_8] [INFO] Extracting keyword candidates from 10 documents...
+[2026-07-03 14:24:03] [TASK_8] [INFO] Saved 176 keyword candidates to C:\Users\User\AppData\Local\Temp\tmp65chik0q\keyword_candidates.csv (unigrams: 83, bigrams: 93).
+[2026-07-03 14:24:03] [TASK_8] [INFO] Curated keyword list: 43 positive, 54 negative, 9 neutral (total: 106).
+[2026-07-03 14:24:03] [TASK_8] [INFO] Saved flat keyword list to C:\Users\User\AppData\Local\Temp\tmp65chik0q\keywords_finance.json.
+[2026-07-03 14:24:03] [TASK_8] [INFO] Saved group-level keyword breakdown to C:\Users\User\AppData\Local\Temp\tmp65chik0q\keywords_by_group.json.
+[2026-07-03 14:24:03] [TASK_8] [INFO] ======================================================================
+[2026-07-03 14:24:03] [TASK_8] [INFO] KEYWORD CORPUS FREQUENCY REPORT
+[2026-07-03 14:24:03] [TASK_8] [INFO] ======================================================================
+[2026-07-03 14:24:03] [TASK_8] [INFO] 
+--- POSITIVE keywords (43) ---
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lợi nhuận tăng                           1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   doanh thu tăng                           1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   kỷ lục                                   1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   tăng trưởng                              1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   tăng mạnh                                1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   chia cổ tức                              1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   cổ tức cao                               1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   cổ tức tiền mặt                          1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   giảm nợ                                  1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   trả nợ                                   1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   cải thiện tài chính                      1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   dòng tiền dương                          1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   ký kết hợp đồng                          1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   mở rộng thị trường                       1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   xuất khẩu tăng                           1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   tăng trưởng mạnh                         0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   vượt kế hoạch                            0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lãi ròng                                 0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lợi nhuận sau thuế tăng                  0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   kết quả tích cực                         0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lãi khủng                                0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lãi lớn                                  0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lãi đậm                                  0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   báo lãi                                  0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lợi nhuận kỷ lục                         0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   doanh thu kỷ lục                         0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lãi kỷ lục                               0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   bứt phá                                  0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   tăng vọt                                 0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   khởi sắc                                 0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   phục hồi                                 0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lập đỉnh                                 0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   hoàn thành kế hoạch                      0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lợi nhuận cải thiện                      0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   mua lại cổ phiếu                         0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   phát hành thưởng                         0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   tăng vốn điều lệ                         0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   hệ số an toàn vốn                        0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   tiền mặt dồi dào                         0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   dự án mới                                0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   đầu tư mới                               0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   hợp tác chiến lược                       0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   thắng thầu                               0
+[2026-07-03 14:24:03] [TASK_8] [INFO] 
+--- NEGATIVE keywords (54) ---
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lợi nhuận giảm                           1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   doanh thu giảm                           1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   sụt giảm                                 1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   giảm mạnh                                1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   nợ xấu                                   1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   áp lực tài chính                         1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   dòng tiền âm                             1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   hủy hợp đồng                             1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   dự án trì hoãn                           1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   đóng cửa                                 1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   bị phạt                                  1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   vi phạm                                  1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   bị thanh tra                             1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lợi nhuận âm                             0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   thua lỗ                                  0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lỗ ròng                                  0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   dưới kế hoạch                            0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   kết quả tiêu cực                         0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lợi nhuận thấp hơn                       0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   báo lỗ                                   0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lỗ nặng                                  0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lỗ lớn                                   0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lỗ kỷ lục                                0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lỗ lũy kế                                0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lao dốc                                  0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   giảm sâu                                 0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   tụt dốc                                  0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   kinh doanh sa sút                        0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   âm vốn chủ sở hữu                        0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   lợi nhuận không tăng                     0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   doanh thu không tăng                     0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   không tăng trưởng                        0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   tăng trưởng chậm lại                     0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   không hoàn thành kế hoạch                0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   không đạt kế hoạch                       0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   chưa có lãi                              0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   không chia cổ tức                        0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   hủy cổ tức                               0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   giảm cổ tức                              0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   phát hành pha loãng                      0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   chào bán giá thấp                        0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   nợ vay tăng                              0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   nợ quá hạn                               0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   hệ số nợ cao                             0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   thiếu thanh khoản                        0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   thu hẹp hoạt động                        0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   dừng dự án                               0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   bị kiểm toán từ chối                     0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   cảnh báo                                 0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   đình chỉ                                 0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   khởi tố                                  0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   điều tra                                 0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   tranh chấp pháp lý                       0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   bị kiện                                  0
+[2026-07-03 14:24:03] [TASK_8] [INFO] 
+--- NEUTRAL keywords (9) ---
+[2026-07-03 14:24:03] [TASK_8] [INFO]   đại hội cổ đông                          1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   thay đổi lãnh đạo                        1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   sáp nhập                                 1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   mua lại                                  1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   phát hành cổ phiếu mới                   1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   thoái vốn                                1
+[2026-07-03 14:24:03] [TASK_8] [INFO]   họp HĐQT                                 0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   thay CEO                                 0
+[2026-07-03 14:24:03] [TASK_8] [INFO]   niêm yết thêm                            0
+[2026-07-03 14:24:03] [TASK_8] [INFO] 
+Total keyword occurrences in corpus: 34
+[2026-07-03 14:24:03] [TASK_8] [INFO] Keywords with zero occurrences: 72 / 106
+[2026-07-03 14:24:03] [TASK_8] [INFO] ======================================================================
+[2026-07-03 14:24:03] [TASK_8] [INFO] Keyword Builder (TASK 8) complete.
+[2026-07-03 14:24:03] [TASK_8] [INFO] Starting Keyword Builder (TASK 8)...
+[2026-07-03 14:24:03] [TASK_8] [INFO] Loaded 23 stopwords.
+[2026-07-03 14:24:03] [TASK_8] [INFO] No corpus provided — skipping candidate extraction.
+[2026-07-03 14:24:03] [TASK_8] [INFO] Curated keyword list: 43 positive, 54 negative, 9 neutral (total: 106).
+[2026-07-03 14:24:03] [TASK_8] [INFO] Saved flat keyword list to C:\Users\User\AppData\Local\Temp\tmpda_f05fd\keywords_finance.json.
+[2026-07-03 14:24:03] [TASK_8] [INFO] Saved group-level keyword breakdown to C:\Users\User\AppData\Local\Temp\tmpda_f05fd\keywords_by_group.json.
+[2026-07-03 14:24:03] [TASK_8] [INFO] No corpus provided — skipping frequency report.
+[2026-07-03 14:24:03] [TASK_8] [INFO] Keyword Builder (TASK 8) complete.

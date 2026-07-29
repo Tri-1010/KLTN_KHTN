@@ -1,0 +1,131 @@
+[2026-06-29 21:29:55] [EXPANSION] [INFO] HOSE-80 Expansion: 50 new tickers to crawl
+[2026-06-29 21:29:55] [EXPANSION] [INFO] New tickers: EIB, LPB, MSB, NAB, OCB, PGB, VBB, BVB, ABB, KLB, BAB, VCI, HCM, VND, MBS, BSI, KDH, NVL, DXG, PDR, NLG, DIG, HDG, VCG, SCR, HSG, NKG, VGC, PHR, CSV, DPM, DCM, BMP, REE, NT2, PPC, GEX, EVF, PNJ, DGW, FRT, MCH, VHC, ANV, CMG, ELC, GMD, VSC, PVT, HAH
+[2026-06-29 21:29:55] [EXPANSION] [INFO] Start date: 2022-01-01
+[2026-06-29 21:29:55] [EXPANSION] [INFO] ============================================================
+[2026-06-29 21:29:55] [EXPANSION] [INFO] STEP 1: Collecting prices for 50 new tickers
+[2026-06-29 21:29:55] [EXPANSION] [INFO] ============================================================
+[2026-06-29 21:29:59] [EXPANSION] [INFO] Collecting prices for: EIB, LPB, MSB, NAB, OCB, PGB, VBB, BVB, ABB, KLB, BAB, VCI, HCM, VND, MBS, BSI, KDH, NVL, DXG, PDR, NLG, DIG, HDG, VCG, SCR, HSG, NKG, VGC, PHR, CSV, DPM, DCM, BMP, REE, NT2, PPC, GEX, EVF, PNJ, DGW, FRT, MCH, VHC, ANV, CMG, ELC, GMD, VSC, PVT, HAH
+[2026-06-29 21:30:34] [EXPANSION] [INFO] HOSE-80 Expansion: 50 new tickers to crawl
+[2026-06-29 21:30:34] [EXPANSION] [INFO] New tickers: EIB, LPB, MSB, NAB, OCB, PGB, VBB, BVB, ABB, KLB, BAB, VCI, HCM, VND, MBS, BSI, KDH, NVL, DXG, PDR, NLG, DIG, HDG, VCG, SCR, HSG, NKG, VGC, PHR, CSV, DPM, DCM, BMP, REE, NT2, PPC, GEX, EVF, PNJ, DGW, FRT, MCH, VHC, ANV, CMG, ELC, GMD, VSC, PVT, HAH
+[2026-06-29 21:30:34] [EXPANSION] [INFO] Start date: 2022-01-01
+[2026-06-29 21:30:34] [EXPANSION] [INFO] ============================================================
+[2026-06-29 21:30:34] [EXPANSION] [INFO] STEP 2: Scraping CafeF for 50 new tickers
+[2026-06-29 21:30:34] [EXPANSION] [INFO] ============================================================
+[2026-06-29 21:30:34] [EXPANSION] [INFO] [1/50] EIB — CafeF new crawl
+[2026-06-29 21:30:54] [EXPANSION] [INFO]   CafeF EIB: 384 articles collected
+[2026-06-29 21:30:55] [EXPANSION] [INFO] [2/50] LPB — CafeF new crawl
+[2026-06-29 21:31:31] [EXPANSION] [INFO] Step 1 complete
+[2026-06-29 21:31:31] [EXPANSION] [INFO] ============================================================
+[2026-06-29 21:31:31] [EXPANSION] [INFO] EXPANSION CRAWL COMPLETE
+[2026-06-29 21:31:31] [EXPANSION] [INFO] Next steps:
+[2026-06-29 21:31:31] [EXPANSION] [INFO]   1. python -m pipeline.run_pipeline --step preprocess --force
+[2026-06-29 21:31:31] [EXPANSION] [INFO]   2. python -m pipeline.run_pipeline --step features --force
+[2026-06-29 21:31:31] [EXPANSION] [INFO]   3. python -m pipeline.run_pipeline --step train --force
+[2026-06-29 21:31:31] [EXPANSION] [INFO]   4. python -m pipeline.experiment_keyword_significance
+[2026-06-29 21:31:31] [EXPANSION] [INFO] ============================================================
+[2026-06-29 21:31:34] [EXPANSION] [INFO]   CafeF LPB: 766 articles collected
+[2026-06-29 21:31:35] [EXPANSION] [INFO] [3/50] MSB — CafeF new crawl
+[2026-06-29 21:31:56] [EXPANSION] [INFO]   CafeF MSB: 388 articles collected
+[2026-06-29 21:31:57] [EXPANSION] [INFO] [4/50] NAB — CafeF new crawl
+[2026-06-29 21:32:12] [EXPANSION] [INFO]   CafeF NAB: 286 articles collected
+[2026-06-29 21:32:13] [EXPANSION] [INFO] [5/50] OCB — CafeF new crawl
+[2026-06-29 21:32:35] [EXPANSION] [INFO]   CafeF OCB: 409 articles collected
+[2026-06-29 21:32:36] [EXPANSION] [INFO] [6/50] PGB — CafeF new crawl
+[2026-06-29 21:32:48] [EXPANSION] [INFO]   CafeF PGB: 209 articles collected
+[2026-06-29 21:32:49] [EXPANSION] [INFO] [7/50] VBB — CafeF new crawl
+[2026-06-29 21:33:07] [EXPANSION] [INFO]   CafeF VBB: 347 articles collected
+[2026-06-29 21:33:08] [EXPANSION] [INFO] [8/50] BVB — CafeF new crawl
+[2026-06-29 21:33:26] [EXPANSION] [INFO]   CafeF BVB: 313 articles collected
+[2026-06-29 21:33:27] [EXPANSION] [INFO] [9/50] ABB — CafeF new crawl
+[2026-06-29 21:33:39] [EXPANSION] [INFO]   CafeF ABB: 236 articles collected
+[2026-06-29 21:33:40] [EXPANSION] [INFO] [10/50] KLB — CafeF new crawl
+[2026-06-29 21:33:49] [EXPANSION] [INFO]   CafeF KLB: 171 articles collected
+[2026-06-29 21:33:50] [EXPANSION] [INFO] [11/50] BAB — CafeF new crawl
+[2026-06-29 21:34:04] [EXPANSION] [INFO]   CafeF BAB: 258 articles collected
+[2026-06-29 21:34:05] [EXPANSION] [INFO] [12/50] VCI — CafeF new crawl
+[2026-06-29 21:34:20] [EXPANSION] [INFO]   CafeF VCI: 282 articles collected
+[2026-06-29 21:34:21] [EXPANSION] [INFO] [13/50] HCM — CafeF new crawl
+[2026-06-29 21:34:34] [EXPANSION] [INFO]   CafeF HCM: 219 articles collected
+[2026-06-29 21:34:35] [EXPANSION] [INFO] [14/50] VND — CafeF new crawl
+[2026-06-29 21:35:01] [EXPANSION] [INFO]   CafeF VND: 500 articles collected
+[2026-06-29 21:35:02] [EXPANSION] [INFO] [15/50] MBS — CafeF new crawl
+[2026-06-29 21:35:11] [EXPANSION] [INFO]   CafeF MBS: 179 articles collected
+[2026-06-29 21:35:12] [EXPANSION] [INFO] [16/50] BSI — CafeF new crawl
+[2026-06-29 21:35:39] [EXPANSION] [INFO]   CafeF BSI: 195 articles collected
+[2026-06-29 21:35:40] [EXPANSION] [INFO] [17/50] KDH — CafeF new crawl
+[2026-06-29 21:35:50] [EXPANSION] [INFO]   CafeF KDH: 174 articles collected
+[2026-06-29 21:35:51] [EXPANSION] [INFO] [18/50] NVL — CafeF new crawl
+[2026-06-29 21:36:20] [EXPANSION] [INFO]   CafeF NVL: 547 articles collected
+[2026-06-29 21:36:21] [EXPANSION] [INFO] [19/50] DXG — CafeF new crawl
+[2026-06-29 21:36:33] [EXPANSION] [INFO]   CafeF DXG: 211 articles collected
+[2026-06-29 21:36:34] [EXPANSION] [INFO] [20/50] PDR — CafeF new crawl
+[2026-06-29 21:36:49] [EXPANSION] [INFO]   CafeF PDR: 283 articles collected
+[2026-06-29 21:36:50] [EXPANSION] [INFO] [21/50] NLG — CafeF new crawl
+[2026-06-29 21:37:00] [EXPANSION] [INFO]   CafeF NLG: 194 articles collected
+[2026-06-29 21:37:01] [EXPANSION] [INFO] [22/50] DIG — CafeF new crawl
+[2026-06-29 21:37:18] [EXPANSION] [INFO]   CafeF DIG: 299 articles collected
+[2026-06-29 21:37:19] [EXPANSION] [INFO] [23/50] HDG — CafeF new crawl
+[2026-06-29 21:37:28] [EXPANSION] [INFO]   CafeF HDG: 157 articles collected
+[2026-06-29 21:37:29] [EXPANSION] [INFO] [24/50] VCG — CafeF new crawl
+[2026-06-29 21:37:38] [EXPANSION] [INFO]   CafeF VCG: 151 articles collected
+[2026-06-29 21:37:39] [EXPANSION] [INFO] [25/50] SCR — CafeF new crawl
+[2026-06-29 21:37:48] [EXPANSION] [INFO]   CafeF SCR: 166 articles collected
+[2026-06-29 21:37:49] [EXPANSION] [INFO] [26/50] HSG — CafeF new crawl
+[2026-06-29 21:38:00] [EXPANSION] [INFO]   CafeF HSG: 199 articles collected
+[2026-06-29 21:38:01] [EXPANSION] [INFO] [27/50] NKG — CafeF new crawl
+[2026-06-29 21:38:11] [EXPANSION] [INFO]   CafeF NKG: 160 articles collected
+[2026-06-29 21:38:12] [EXPANSION] [INFO] [28/50] VGC — CafeF new crawl
+[2026-06-29 21:38:19] [EXPANSION] [INFO]   CafeF VGC: 136 articles collected
+[2026-06-29 21:38:20] [EXPANSION] [INFO] [29/50] PHR — CafeF new crawl
+[2026-06-29 21:38:27] [EXPANSION] [INFO]   CafeF PHR: 107 articles collected
+[2026-06-29 21:38:28] [EXPANSION] [INFO] [30/50] CSV — CafeF new crawl
+[2026-06-29 21:38:37] [EXPANSION] [INFO]   CafeF CSV: 154 articles collected
+[2026-06-29 21:38:38] [EXPANSION] [INFO] [31/50] DPM — CafeF new crawl
+[2026-06-29 21:38:46] [EXPANSION] [INFO]   CafeF DPM: 151 articles collected
+[2026-06-29 21:38:47] [EXPANSION] [INFO] [32/50] DCM — CafeF new crawl
+[2026-06-29 21:38:54] [EXPANSION] [INFO]   CafeF DCM: 127 articles collected
+[2026-06-29 21:38:55] [EXPANSION] [INFO] [33/50] BMP — CafeF new crawl
+[2026-06-29 21:39:02] [EXPANSION] [INFO]   CafeF BMP: 96 articles collected
+[2026-06-29 21:39:03] [EXPANSION] [INFO] [34/50] REE — CafeF new crawl
+[2026-06-29 21:39:15] [EXPANSION] [INFO]   CafeF REE: 199 articles collected
+[2026-06-29 21:39:16] [EXPANSION] [INFO] [35/50] NT2 — CafeF new crawl
+[2026-06-29 21:39:23] [EXPANSION] [INFO]   CafeF NT2: 92 articles collected
+[2026-06-29 21:39:24] [EXPANSION] [INFO] [36/50] PPC — CafeF new crawl
+[2026-06-29 21:39:30] [EXPANSION] [INFO]   CafeF PPC: 106 articles collected
+[2026-06-29 21:39:31] [EXPANSION] [INFO] [37/50] GEX — CafeF new crawl
+[2026-06-29 21:39:42] [EXPANSION] [INFO]   CafeF GEX: 194 articles collected
+[2026-06-29 21:39:43] [EXPANSION] [INFO] [38/50] EVF — CafeF new crawl
+[2026-06-29 21:39:55] [EXPANSION] [INFO]   CafeF EVF: 202 articles collected
+[2026-06-29 21:39:56] [EXPANSION] [INFO] [39/50] PNJ — CafeF new crawl
+[2026-06-29 21:40:11] [EXPANSION] [INFO]   CafeF PNJ: 267 articles collected
+[2026-06-29 21:40:12] [EXPANSION] [INFO] [40/50] DGW — CafeF new crawl
+[2026-06-29 21:40:25] [EXPANSION] [INFO]   CafeF DGW: 221 articles collected
+[2026-06-29 21:40:26] [EXPANSION] [INFO] [41/50] FRT — CafeF new crawl
+[2026-06-29 21:40:35] [EXPANSION] [INFO]   CafeF FRT: 153 articles collected
+[2026-06-29 21:40:36] [EXPANSION] [INFO] [42/50] MCH — CafeF new crawl
+[2026-06-29 21:40:46] [EXPANSION] [INFO]   CafeF MCH: 163 articles collected
+[2026-06-29 21:40:47] [EXPANSION] [INFO] [43/50] VHC — CafeF new crawl
+[2026-06-29 21:40:57] [EXPANSION] [INFO]   CafeF VHC: 175 articles collected
+[2026-06-29 21:40:58] [EXPANSION] [INFO] [44/50] ANV — CafeF new crawl
+[2026-06-29 21:41:05] [EXPANSION] [INFO]   CafeF ANV: 112 articles collected
+[2026-06-29 21:41:06] [EXPANSION] [INFO] [45/50] CMG — CafeF new crawl
+[2026-06-29 21:41:16] [EXPANSION] [INFO]   CafeF CMG: 194 articles collected
+[2026-06-29 21:41:17] [EXPANSION] [INFO] [46/50] ELC — CafeF new crawl
+[2026-06-29 21:41:29] [EXPANSION] [INFO]   CafeF ELC: 195 articles collected
+[2026-06-29 21:41:30] [EXPANSION] [INFO] [47/50] GMD — CafeF new crawl
+[2026-06-29 21:41:39] [EXPANSION] [INFO]   CafeF GMD: 157 articles collected
+[2026-06-29 21:41:40] [EXPANSION] [INFO] [48/50] VSC — CafeF new crawl
+[2026-06-29 21:41:51] [EXPANSION] [INFO]   CafeF VSC: 216 articles collected
+[2026-06-29 21:41:52] [EXPANSION] [INFO] [49/50] PVT — CafeF new crawl
+[2026-06-29 21:41:59] [EXPANSION] [INFO]   CafeF PVT: 104 articles collected
+[2026-06-29 21:42:00] [EXPANSION] [INFO] [50/50] HAH — CafeF new crawl
+[2026-06-29 21:42:11] [EXPANSION] [INFO]   CafeF HAH: 206 articles collected
+[2026-06-29 21:42:12] [EXPANSION] [INFO] Step 2 complete
+[2026-06-29 21:42:12] [EXPANSION] [INFO] ============================================================
+[2026-06-29 21:42:12] [EXPANSION] [INFO] EXPANSION CRAWL COMPLETE
+[2026-06-29 21:42:12] [EXPANSION] [INFO] Next steps:
+[2026-06-29 21:42:12] [EXPANSION] [INFO]   1. python -m pipeline.run_pipeline --step preprocess --force
+[2026-06-29 21:42:12] [EXPANSION] [INFO]   2. python -m pipeline.run_pipeline --step features --force
+[2026-06-29 21:42:12] [EXPANSION] [INFO]   3. python -m pipeline.run_pipeline --step train --force
+[2026-06-29 21:42:12] [EXPANSION] [INFO]   4. python -m pipeline.experiment_keyword_significance
+[2026-06-29 21:42:12] [EXPANSION] [INFO] ============================================================

@@ -1,0 +1,17 @@
+variant,relevance_variant,annotations,tickers
+core_material,direct,279,30
+core_material,direct_indirect,288,30
+core_material,any_relevance,291,30
+core_material,indirect_only,9,7
+plus_operation_governance,direct,1367,91
+plus_operation_governance,direct_indirect,1398,91
+plus_operation_governance,any_relevance,1500,91
+plus_operation_governance,indirect_only,31,13
+plus_macro_market,direct,1530,91
+plus_macro_market,direct_indirect,1569,91
+plus_macro_market,any_relevance,1705,91
+plus_macro_market,indirect_only,39,16
+all_event_types,direct,8956,91
+all_event_types,direct_indirect,9251,91
+all_event_types,any_relevance,12133,91
+all_event_types,indirect_only,295,54
