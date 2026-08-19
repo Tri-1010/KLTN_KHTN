@@ -670,7 +670,9 @@ Tạo lineage từ dữ liệu → signal → evidence → card → monitoring �
 
 ## 15. Câu kết luận đề xuất cho luận văn
 
-> Nghiên cứu cho thấy việc biểu diễn tin tức tài chính tiếng Việt bằng tần suất từ khóa không tạo giá trị dự báo gia tăng ổn định ngoài các chỉ báo kỹ thuật trong các thiết lập đã kiểm tra. Ngược lại, các đặc trưng semantic material-event do LLM trích xuất cho thấy khả năng bổ sung thông tin có điều kiện tại một số horizon ngắn và trung hạn khi được kết hợp với technical ML và kiểm soát chặt event relevance. Trên cơ sở đó, luận văn đề xuất hệ thống hỗ trợ quyết định theo hướng ML-led và evidence-grounded: ML tạo tín hiệu và xếp hạng, semantic extraction cấu trúc hóa bằng chứng tin tức, LLM decision card tổng hợp luận điểm và rủi ro có truy vết, còn dashboard hỗ trợ monitoring và outcome review. Hệ thống không được diễn giải như mô hình giao dịch tự động, bằng chứng causal hoặc nguồn alpha ổn định.
+> Canonical same-sample run so sánh keyword và semantic trên cùng article spine, T+20 target, rows, folds, Random Forest và matched Top-K. Primary semantic-minus-keyword Balanced Accuracy delta gần 0 và không đạt statistical gate; vì vậy chưa có đủ bằng chứng semantic cải thiện keyword trong primary preregistered setting. Kết quả này không phủ định giá trị semantic cho representation quality, evidence grounding, risk articulation và traceability. Trên cơ sở đó, luận văn đề xuất hệ thống hỗ trợ quyết định theo hướng ML-led và evidence-grounded: ML tạo tín hiệu cần kiểm tra, semantic extraction cấu trúc hóa bằng chứng tin tức, LLM decision card tổng hợp luận điểm và rủi ro có truy vết, còn dashboard hỗ trợ monitoring và outcome review. Hệ thống không được diễn giải như mô hình giao dịch tự động, bằng chứng causal hoặc nguồn alpha ổn định.
+
+Bản nộp canonical: `thesis_submission/README.md`, `thesis_submission/proposal/de_cuong.md`, `thesis_submission/thesis/luan_van.md`. Mọi số same-sample phải đọc từ `canonical_150_v7` artifacts và bundle checksums; các track cũ giữ vai trò legacy evidence dưới protocol khác.
 
 ---
 
