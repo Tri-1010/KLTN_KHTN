@@ -41,3 +41,26 @@ ui_artifacts/*
 !ui_artifacts/fixtures/
 !ui_artifacts/fixtures/**
 reports/decision_support/generated/runs/
+
+# Local datasets, experiment caches and checkpoint sweeps
+# These remain on the machine or in an approved shared data root; see docs/local-data.md.
+data/news/**
+!data/news/
+!data/news/README_RESTRICTED.md
+data/experiments/**
+!data/experiments/
+!data/experiments/**/
+!data/experiments/**/.gitkeep
+data/aggregated/*.csv
+data/prices/*.csv
+data/prices_extended/**
+!data/prices/
+!data/prices/.gitkeep
+!data/prices_extended/
+!data/prices_extended/.gitkeep
+
+# Large derived predictions are local/reproducible experiment outputs.
+multi_llm_evidence_extraction/outputs/ml_panel_outperform.csv
+multi_llm_evidence_extraction/outputs/ml_predictions_outperform.csv
+reports/*prediction*.csv
+reports/**/*prediction*.csv

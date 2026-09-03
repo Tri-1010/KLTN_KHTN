@@ -1,1 +1,0 @@
-cache_key,content_hash,ticker,article_date,title,url,is_stock_relevant,sentiment,sentiment_score,importance_score,information_magnitude_score,uncertainty_score,novelty_hint_score,reasoning_confidence,time_horizon,event_type,relevance_to_ticker,summary,reason,provider,requested_model,response_model,request_id,prompt_sha256,input_sha256,extracted_at_utc,status,error

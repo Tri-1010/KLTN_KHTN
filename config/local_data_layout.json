@@ -1,0 +1,32 @@
+{
+  "schema_version": "1",
+  "description": "Local data sections excluded from Git and optionally shared between worktrees through directory junctions.",
+  "data_root_layout": "The configured data root contains these paths directly, for example <DataRoot>\\news.",
+  "sections": [
+    {
+      "path": "news",
+      "classification": "restricted-source-data",
+      "rebuild": "Restore from the approved internal data backup; do not commit raw news."
+    },
+    {
+      "path": "experiments",
+      "classification": "local-derived-data-and-checkpoints",
+      "rebuild": "Recreate through the documented experiment runners when the required source data and credentials are available."
+    },
+    {
+      "path": "aggregated",
+      "classification": "local-derived-data",
+      "rebuild": "Recreate from the documented aggregation pipeline."
+    },
+    {
+      "path": "prices",
+      "classification": "local-market-data",
+      "rebuild": "Restore from the approved internal data backup or rebuild through the market-data workflow."
+    },
+    {
+      "path": "prices_extended",
+      "classification": "local-market-data",
+      "rebuild": "Restore from the approved internal data backup or rebuild through the market-data workflow."
+    }
+  ]
+}

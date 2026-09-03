@@ -1,5 +1,7 @@
 # Semantic News Materiality Study
 
+> Dữ liệu nguồn, cache, checkpoint và các tệp dự báo lớn được quản lý cục bộ, không theo Git. Xem [`../docs/local-data.md`](../docs/local-data.md) trước khi chạy workflow cần dữ liệu hoặc dùng worktree.
+
 Thư mục này dành cho hướng nghiên cứu đã chỉnh lại:
 
 > Đánh giá đặc trưng tin tức có xét độ liên quan và trọng yếu trong hỗ trợ phân tích cổ phiếu Việt Nam.
@@ -72,3 +74,35 @@ python multi_llm_evidence_extraction/scripts/write_final_reports.py
 ```
 
 Giới hạn: business-day purge validation chưa thay thế trading-calendar chính thức của HOSE; kết quả ML/event/Top-K vẫn exploratory. Ba annotation runs chỉ thuộc hai model families, nên không được diễn giải như ba hệ độc lập hoặc ba bằng chứng độc lập.
+
+## Harmonized keyword–semantic comparison
+
+Protocol khóa tại `config/harmonized_comparison_v5.json`. Keyword, semantic và shared coverage dùng cùng article spine, effective date, trading-session windows, T+20 target, row universe và target-exit-aware folds. Mọi artifact mới nằm dưới `outputs/harmonized/<run-id>/` và `reports/harmonized/<run-id>/`; không ghi đè outputs canonical phía trên.
+
+Pilot validation/build/run:
+
+```text
+python multi_llm_evidence_extraction/scripts/build_outperform_targets.py --mode harmonized --output multi_llm_evidence_extraction/outputs/harmonized/pilot_v1/harmonized_outperform_targets.csv
+python multi_llm_evidence_extraction/scripts/build_harmonized_comparison.py --mode pilot --run-id pilot_v1 --validate-only
+python multi_llm_evidence_extraction/scripts/build_harmonized_comparison.py --mode pilot --run-id pilot_v1
+python multi_llm_evidence_extraction/scripts/run_harmonized_comparison.py --mode pilot --run-id pilot_v1 --fast
+```
+
+Sample500 preparation is deterministic and preserves every traceable base-sample row:
+
+```text
+python multi_llm_evidence_extraction/scripts/build_annotation_sample.py --n 500 --seed 42 --base-sample multi_llm_evidence_extraction/data/sample_news_for_annotation.csv --output multi_llm_evidence_extraction/data/sample_news_for_annotation_500_v1.csv --summary multi_llm_evidence_extraction/reports/sample_selection_500_v1.md --sample-id sample500_v1
+python multi_llm_evidence_extraction/scripts/run_semantic_annotation.py --input multi_llm_evidence_extraction/data/sample_news_for_annotation_500_v1.csv --annotator a --provider anthropic --model claude-opus-5 --run-id sample500_v1_a --output-dir multi_llm_evidence_extraction/outputs/annotation_runs/sample500_v1/a --offline --only-missing --anthropic-batch
+# Lặp cùng lệnh cho annotator b và c với run-id/output-dir riêng.
+# Chỉ build consensus sau khi ba run-scoped label files có terminal coverage và provenance đầy đủ.
+python multi_llm_evidence_extraction/scripts/build_consensus_labels.py --strict-expansion --expected-sample multi_llm_evidence_extraction/data/sample_news_for_annotation_500_v1.csv --inputs multi_llm_evidence_extraction/outputs/annotation_runs/sample500_v1/a/labels_annotator_a.jsonl multi_llm_evidence_extraction/outputs/annotation_runs/sample500_v1/b/labels_annotator_b.jsonl multi_llm_evidence_extraction/outputs/annotation_runs/sample500_v1/c/labels_annotator_c.jsonl --jsonl-output multi_llm_evidence_extraction/outputs/annotation_runs/sample500_v1/pseudo_labels_consensus.jsonl --csv-output multi_llm_evidence_extraction/outputs/annotation_runs/sample500_v1/pseudo_labels_consensus.csv
+```
+
+`--anthropic-batch` chỉ tạo batch-ready request file theo `custom_id`; code không submit paid API. Helper contracts cung cấp official `messages.count_tokens` request shape cho cost-estimate tooling và map batch-result records theo `custom_id`, không theo thứ tự. CLI hiện không gọi token-count endpoint và không ingest remote batch results; submission/ingestion chỉ thực hiện sau user authorization trong workflow riêng.
+
+Claim limits:
+
+- Pilot: chỉ delta OOS trên common stratified article spine.
+- Sample500: chỉ balanced validation sample.
+- Cả hai không hỗ trợ claim full-corpus superiority, alpha, ground truth, causal effect hoặc khuyến nghị đầu tư.
+- Top-K thưa phải ghi `not_estimable_in_pilot` hoặc `not_estimable_in_sample500`, không thay bằng hiệu ứng 0.
