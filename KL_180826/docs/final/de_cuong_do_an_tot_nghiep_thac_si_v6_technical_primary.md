@@ -36,12 +36,11 @@ header-includes:
 
 \vspace{1.2cm}
 
-{\fontsize{16}{20}\selectfont\textbf{HỆ THỐNG HỖ TRỢ QUYẾT ĐỊNH CỔ PHIẾU\\DỰA TRÊN TÍN HIỆU HỌC MÁY VÀ BẰNG CHỨNG\\TIN TỨC NGỮ NGHĨA CÓ TRUY VẾT}}
+{\fontsize{16}{20}\selectfont\textbf{THIẾT KẾ VÀ ĐÁNH GIÁ KHUNG HỖ TRỢ PHÂN TÍCH\\CỔ PHIẾU VIỆT NAM KẾT HỢP TÍN HIỆU HỌC MÁY\\VỚI BẰNG CHỨNG CÓ TRUY VẾT TỪ TIN TỨC}}
 
 \vspace{0.9cm}
 
-{\large \textbf{\underline{ĐỀ CƯƠNG ĐỒ ÁN TỐT NGHIỆP THẠC SĨ}}}\\
-\textit{\underline{CẦN XÁC NHẬN: tên gọi bìa đề cương với GVHD/Phòng Đào tạo Sau đại học.}}
+{\large \textbf{\underline{ĐỀ CƯƠNG ĐỒ ÁN TỐT NGHIỆP THẠC SĨ}}}
 
 \end{center}
 
@@ -73,7 +72,7 @@ TP. Hồ Chí Minh -- Năm 2026
 
 ## 1.1. Bối cảnh nghiên cứu
 
-Thị trường chứng khoán Việt Nam tạo ra lượng lớn dữ liệu giao dịch và tin tức công khai. Dữ liệu giá, khối lượng và các chỉ báo dẫn xuất từ chúng cung cấp cơ sở để xây dựng đặc trưng kỹ thuật phục vụ các mô hình học máy [1]. Đồng thời, tin tức tiếng Việt phản ánh các sự kiện có thể ảnh hưởng đến doanh nghiệp và nhà đầu tư, như kết quả kinh doanh, cổ tức, phát hành, nợ vay, dự án, thay đổi quản trị và rủi ro pháp lý. Việc khai thác kết hợp hai nguồn dữ liệu này có tiềm năng bổ sung thông tin cho nhau, nhưng cũng đặt ra yêu cầu phải bảo đảm mọi dữ liệu chỉ được sử dụng tại thời điểm chúng thực sự khả dụng [2].
+Thị trường chứng khoán Việt Nam tạo ra lượng lớn dữ liệu giao dịch và tin tức công khai. Dữ liệu giá, khối lượng và các chỉ báo dẫn xuất từ chúng cung cấp cơ sở để xây dựng đặc trưng kỹ thuật cho mô hình học máy [1]. Trong khi đó, tin tức tiếng Việt phản ánh những sự kiện có thể ảnh hưởng đến doanh nghiệp và nhà đầu tư, như kết quả kinh doanh, cổ tức, phát hành, nợ vay, dự án, thay đổi quản trị và rủi ro pháp lý. Việc kết hợp dữ liệu giao dịch với tin tức có thể bổ sung thông tin cho mô hình dự báo [2]. Tuy nhiên, mọi đặc trưng phải chỉ sử dụng thông tin đã khả dụng tại thời điểm ra quyết định.
 
 Trong thực tiễn phân tích, xác suất tăng giá hoặc thứ hạng cổ phiếu chưa đủ để hình thành một hồ sơ quyết định có thể kiểm chứng. Người sử dụng cần biết tín hiệu được tạo từ dữ liệu nào, thông tin nào củng cố hoặc làm suy yếu nhận định, rủi ro nào cần được theo dõi, và kết quả thực tế sau thời hạn đánh giá có phù hợp với luận điểm ban đầu hay không. Vì vậy, vấn đề trung tâm của đồ án là thu hẹp khoảng cách giữa đầu ra dự báo của mô hình và một quy trình hỗ trợ quyết định có khả năng giải thích, truy vết, theo dõi và hậu kiểm.
 
@@ -81,12 +80,12 @@ Trên cơ sở đó, đồ án hướng đến xây dựng một **nguyên mẫu
 
 Để bảo đảm tính khách quan của so sánh, mẫu đánh giá chính bao gồm mọi quan sát có dữ liệu giao dịch và biến mục tiêu hợp lệ, không phụ thuộc vào việc tại thời điểm đánh giá có tin tức liên quan hay không. Đối với các quan sát không có tin phù hợp, các đặc trưng tin tức được quy ước bằng không theo quy tắc xác định trước. Độ phủ tin tức, việc liên kết bài viết với mã cổ phiếu, thời điểm đăng tải và chất lượng trích xuất thông tin được theo dõi riêng trong kiểm tra chất lượng dữ liệu, phân tầng và phân tích độ nhạy; các yếu tố này không được dùng để lọc mẫu đánh giá chính hoặc làm biến dự báo.
 
-Mô hình ngôn ngữ lớn (Large Language Model - LLM) **không được sử dụng như một mô hình dự báo giá độc lập**. Vai trò của mô hình là hỗ trợ trích xuất, cấu trúc hóa và tổng hợp thông tin từ tin tức trên cơ sở dữ liệu đầu vào có thể kiểm tra [3], [4]. Nghiên cứu đánh giá ba cấu hình dự báo gồm: cấu hình chỉ sử dụng đặc trưng kỹ thuật làm mốc so sánh; cấu hình kết hợp đặc trưng kỹ thuật với biểu diễn từ khóa; và cấu hình kết hợp đặc trưng kỹ thuật với biểu diễn ngữ nghĩa. Hiệu quả của việc bổ sung tin tức được xác định từ kết quả thực nghiệm trên cùng mẫu quan sát, không được giả định trước theo hướng cải thiện. Trên nền tảng đó, nguyên mẫu duy trì sự tách biệt giữa thông tin có tại thời điểm ra quyết định, thông tin phục vụ theo dõi và dữ liệu dùng cho hậu kiểm, qua đó bảo đảm khả năng truy vết và hạn chế rò rỉ thông tin theo thời gian.
+Mô hình ngôn ngữ lớn (Large Language Model - LLM) **không được sử dụng như một mô hình dự báo giá độc lập**. Trong đồ án, mô hình chỉ hỗ trợ trích xuất, cấu trúc hóa và tổng hợp thông tin từ dữ liệu đầu vào có thể kiểm tra. Nghiên cứu đánh giá ba cấu hình dự báo: chỉ sử dụng đặc trưng kỹ thuật; kết hợp đặc trưng kỹ thuật với biểu diễn từ khóa; và kết hợp đặc trưng kỹ thuật với biểu diễn ngữ nghĩa. Hiệu quả của việc bổ sung tin tức được xác định từ kết quả thực nghiệm trên cùng mẫu quan sát. Nguyên mẫu đồng thời tách thông tin có tại thời điểm ra quyết định khỏi dữ liệu dùng cho theo dõi và hậu kiểm, qua đó hỗ trợ truy vết và hạn chế rò rỉ thông tin theo thời gian.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.84\textwidth]{assets/khung_nghien_cuu_tong_quat_v6.svg}
-\caption{Khung nghiên cứu tổng quát: dữ liệu được căn chỉnh theo đúng thời điểm khả dụng; cấu hình kỹ thuật chỉ gồm đặc trưng kỹ thuật, cấu hình từ khóa bổ sung biểu diễn từ khóa và cấu hình ngữ nghĩa bổ sung biểu diễn ngữ nghĩa. Hai so sánh giữa từng cấu hình có tin tức với cấu hình kỹ thuật được kiểm định trong cùng một họ giả thuyết; so sánh giữa cấu hình từ khóa và cấu hình ngữ nghĩa chỉ nhằm đối chiếu trực tiếp hai cách biểu diễn. Độ phủ tin tức được dùng cho kiểm tra dữ liệu, phân tầng và phân tích độ nhạy, không làm biến dự báo hoặc bộ lọc mẫu chính. EvidenceTrace duy trì ba vùng quyết định ban đầu, theo dõi và hậu kiểm để kiểm soát rò rỉ.}
+\caption{Khung nghiên cứu tổng quát gồm ba cấu hình dự báo được đánh giá trên cùng mẫu quan sát và quy trình EvidenceTrace tách thông tin ban đầu, theo dõi và hậu kiểm.}
 \label{fig:research-framework}
 \end{figure}
 
@@ -94,21 +93,25 @@ Mô hình ngôn ngữ lớn (Large Language Model - LLM) **không được sử 
 
 ### 1.2.1. Nghiên cứu quốc tế
 
-Dự báo xu hướng giá cổ phiếu bằng học máy dựa trên dữ liệu giá, khối lượng và chỉ báo kỹ thuật là hướng nghiên cứu đã phát triển lâu [1]. Bên cạnh đó, tin tức và bài báo công khai được khai thác bằng nhiều phương pháp biểu diễn, từ từ khóa, TF-IDF và phân tích cảm xúc đến mô hình ngôn ngữ tiền huấn luyện và trích xuất sự kiện [5], [6], [7], [8], [2]. Trong văn bản tài chính, ý nghĩa của từ ngữ có thể khác với ngữ cảnh phổ thông, do đó biểu diễn dựa trên từ khóa cần được sử dụng và diễn giải thận trọng [13]. Các nghiên cứu theo hướng sự kiện cho thấy loại sự kiện và ngữ cảnh có thể chứa nhiều thông tin hơn so với việc chỉ đếm tần suất từ khóa [7].
+Dự báo xu hướng giá cổ phiếu bằng học máy từ dữ liệu giá, khối lượng và chỉ báo kỹ thuật là hướng nghiên cứu đã được quan tâm từ lâu [1]. Tin tức và bài báo công khai cũng được khai thác bằng nhiều cách, từ từ khóa, TF-IDF và phân tích cảm xúc đến mô hình ngôn ngữ tiền huấn luyện và trích xuất sự kiện [2], [5], [6], [7], [8]. Do từ ngữ trong văn bản tài chính có thể mang nghĩa khác với ngữ cảnh thông thường, các cách biểu diễn dựa trên từ khóa cần được xây dựng và diễn giải thận trọng [13]. Nghiên cứu theo hướng sự kiện còn cho thấy loại sự kiện và ngữ cảnh có thể cung cấp thông tin mà việc đếm từ khóa khó phản ánh đầy đủ [7].
 
-Gần đây, LLM được thử nghiệm trong phân tích tài chính [4]. Tuy nhiên, việc dùng trực tiếp LLM để dự báo hoặc tạo khuyến nghị làm phát sinh rủi ro về nội dung thiếu căn cứ, kiến thức lẫn từ tương lai và khó kiểm soát [3], [18]. Một hướng phù hợp hơn đối với hệ thống hỗ trợ quyết định là dùng LLM cho tác vụ có cấu trúc, ràng buộc đầu ra bằng bằng chứng, duy trì truy vết nguồn và tách rõ dữ liệu tại thời điểm quyết định với dữ liệu dùng cho theo dõi, hậu kiểm.
+Gần đây, LLM đã được thử nghiệm trong phân tích tài chính [4]. Tuy nhiên, việc dùng trực tiếp LLM để dự báo hoặc tạo khuyến nghị có thể làm phát sinh nội dung thiếu căn cứ, rò rỉ thông tin từ tương lai và kết quả khó kiểm soát [3], [18]. Vì vậy, trong một hệ thống hỗ trợ quyết định, LLM phù hợp hơn với các tác vụ có cấu trúc, được ràng buộc bằng bằng chứng, có khả năng truy vết nguồn và tách biệt dữ liệu tại thời điểm ra quyết định khỏi dữ liệu theo dõi, hậu kiểm.
 
 ### 1.2.2. Nghiên cứu trong nước
 
-Các nghiên cứu về thị trường chứng khoán Việt Nam đã áp dụng học máy cho dự báo xu hướng giá từ dữ liệu và chỉ báo kỹ thuật, nhận diện trạng thái bong bóng thị trường, hoặc phân tích liên hệ giữa thông tin kế toán và lợi suất cổ phiếu [20], [21], [22]. PhoBERT cung cấp một mô hình ngôn ngữ tiền huấn luyện cho tiếng Việt, tạo nền tảng để khai thác văn bản trong các bài toán miền cụ thể [9]. Trong phạm vi tổng quan hiện tại, nghiên cứu chưa tìm thấy công trình công bố nào đồng thời so sánh biểu diễn tin tức từ khóa và biểu diễn ngữ nghĩa trên cùng mẫu theo nguyên tắc *point-in-time*, gắn đầu ra ngữ nghĩa với đoạn bằng chứng có truy vết nguồn, và tách riêng đánh giá dự báo khỏi đánh giá khả năng truy vết trong hệ thống hỗ trợ quyết định. Nhận định này được giới hạn trong phạm vi tài liệu đã rà soát và sẽ tiếp tục được kiểm chứng trong quá trình triển khai.
+Các nghiên cứu về thị trường chứng khoán Việt Nam đã áp dụng học máy để dự báo xu hướng giá từ dữ liệu và chỉ báo kỹ thuật, nhận diện trạng thái bong bóng thị trường, hoặc phân tích mối liên hệ giữa thông tin kế toán và lợi suất cổ phiếu [20], [21], [22].
+
+Đối với dữ liệu văn bản, PhoBERT cung cấp một mô hình ngôn ngữ tiền huấn luyện cho tiếng Việt, tạo nền tảng để khai thác văn bản trong các bài toán chuyên biệt [9].
+
+Trong phạm vi tài liệu đã rà soát, chưa tìm thấy công trình nào đồng thời so sánh biểu diễn tin tức dựa trên từ khóa và biểu diễn ngữ nghĩa trên cùng mẫu theo nguyên tắc *point-in-time*, gắn đầu ra ngữ nghĩa với đoạn bằng chứng có thể truy vết về nguồn, và tách đánh giá khả năng dự báo khỏi đánh giá khả năng truy vết trong hệ thống hỗ trợ quyết định. Nhận định này sẽ tiếp tục được cập nhật trong quá trình thực hiện đồ án.
 
 ## 1.3. Khoảng trống nghiên cứu
 
 - Nhiều nghiên cứu dừng ở dự báo tăng/giảm hoặc xếp hạng, chưa tổ chức đủ quy trình hỗ trợ quyết định gồm tín hiệu, bằng chứng, rủi ro, theo dõi và hậu kiểm.
-- Biểu diễn tần suất từ khóa dễ tái lập nhưng chưa thể hiện đầy đủ mức liên quan theo mã, tính trọng yếu, loại sự kiện, chiều tác động và đoạn bằng chứng nguyên văn [7], [2], [13].
-- Việc kết luận tin tức “có ích” hoặc “không có ích” dễ thiếu chính xác nếu không tách vai trò tin tức như biến dự báo và như bằng chứng hỗ trợ quyết định.
-- Khoảng trống trọng tâm không phải chỉ là bổ sung một mô hình mới, mà là thiết kế so sánh tái lập được trong đó các biểu diễn tin tức chịu cùng mẫu quan sát, biến mục tiêu, mốc thời gian khả dụng, cách chia tập, mô hình và quy tắc đánh giá; các kết quả dự báo, chất lượng biểu diễn, nội dung có bằng chứng và khả năng truy vết được diễn giải thành các lớp kết luận riêng.
-- Nhãn giả do mô hình tạo cần được đánh giá về tính hợp lệ kỹ thuật, độ ổn định, tính hợp lệ của đoạn bằng chứng và khả năng truy vết nguồn, thay vì mặc định xem là nhãn chuẩn [11]. Mức độ đồng thuận hoặc ổn định giữa các lần/chủ thể trích xuất không tự xác lập tính đúng theo chuẩn chuyên gia [19].
+- Biểu diễn dựa trên tần suất từ khóa dễ tái lập nhưng khó phản ánh đầy đủ mức liên quan với từng mã cổ phiếu, tính trọng yếu, loại sự kiện, chiều tác động và đoạn bằng chứng nguyên văn [2], [7]. Khác biệt về ngữ nghĩa của từ ngữ tài chính càng làm rõ giới hạn này [13].
+- Việc kết luận tin tức “có ích” hoặc “không có ích” dễ thiếu chính xác nếu không tách vai trò tin tức như đặc trưng dự báo và như bằng chứng hỗ trợ quyết định.
+- Khoảng trống trọng tâm không chỉ nằm ở việc bổ sung một mô hình mới, mà còn ở việc xây dựng một phép so sánh có thể tái lập. Các cách biểu diễn tin tức cần được đánh giá trên cùng mẫu quan sát, biến mục tiêu, mốc thời gian khả dụng, cách chia tập, mô hình và quy tắc đánh giá. Kết quả về khả năng dự báo, chất lượng biểu diễn, nội dung có bằng chứng và khả năng truy vết cũng cần được diễn giải riêng.
+- Nhãn giả (*pseudo-label*) do mô hình tạo cần được kiểm tra về cấu trúc, độ ổn định, đoạn bằng chứng và khả năng truy vết, thay vì mặc định là nhãn chuẩn [11]. Mức độ đồng thuận giữa các lần trích xuất không tự xác lập độ đúng theo chuẩn chuyên gia [19].
 - Việc đánh giá thẻ quyết định do LLM tạo ra cần tách biệt với đánh giá khả năng dự báo; đồng thời phải kiểm tra mức bám sát bằng chứng, nội dung phát sinh ngoài bằng chứng và cách trình bày rủi ro [3].
 
 ---
@@ -126,8 +129,8 @@ Nghiên cứu áp dụng nguyên tắc **phương pháp cố định, phạm vi 
 - Làm rõ sự khác nhau giữa tin tức như đặc trưng dự báo và tin tức như bằng chứng có cấu trúc.
 - Bổ sung bằng chứng thực nghiệm về hiệu quả và giới hạn của cách biểu diễn từ khóa và ngữ nghĩa trên dữ liệu cổ phiếu Việt Nam trong cùng một giao thức so sánh có thể tái lập.
 - Đề xuất khung biểu diễn tin tức theo các sự kiện trọng yếu có ngữ nghĩa, gắn với đoạn bằng chứng và thông tin truy vết nguồn.
-- Đánh giá nhãn giả ngữ nghĩa theo các tiêu chí hợp lệ kỹ thuật và truy vết, thay vì mặc định xem đầu ra của mô hình là nhãn chuẩn [11], [19].
-- Phân biệt các kết luận về hiệu quả dự báo, chất lượng biểu diễn, chất lượng nội dung có bằng chứng và khả năng truy vết; kết nối các lớp này trong một quy trình hỗ trợ quyết định thống nhất [12].
+- Đánh giá quy trình tạo nhãn giả ngữ nghĩa về tính đầy đủ của cấu trúc, độ ổn định giữa các lần trích xuất, khả năng đối chiếu với đoạn bằng chứng, thông tin truy vết nguồn và các dạng lỗi thường gặp.
+- Phân biệt kết luận về hiệu quả dự báo, chất lượng biểu diễn, chất lượng nội dung có bằng chứng và khả năng truy vết; kết nối các lớp này trong một quy trình hỗ trợ quyết định thống nhất.
 
 ## 2.3. Ý nghĩa thực tiễn
 
@@ -143,7 +146,7 @@ Nghiên cứu áp dụng nguyên tắc **phương pháp cố định, phạm vi 
 
 ## 3.1. Mục tiêu tổng quát
 
-Xây dựng và đánh giá nguyên mẫu hệ thống hỗ trợ quyết định cổ phiếu, kết hợp tín hiệu học máy với tin tức tiếng Việt. Trong hệ thống này, tin tức vừa được khai thác như một nguồn đặc trưng để kiểm định, vừa được tổ chức thành bằng chứng ngữ nghĩa có thể truy vết. Nguyên mẫu cung cấp gói bằng chứng, thẻ quyết định có kiểm soát và bảng điều khiển EvidenceTrace phục vụ theo dõi và hậu kiểm. Nghiên cứu chú trọng đánh giá ngoài mẫu, hạn chế rò rỉ dữ liệu theo thời gian và đưa ra các kết luận phù hợp với bằng chứng thu được.
+Xây dựng và đánh giá khung hỗ trợ phân tích cổ phiếu, được hiện thực hóa bằng một nguyên mẫu kết hợp tín hiệu học máy với tin tức tiếng Việt. Trong khung này, tin tức vừa được khai thác như một nguồn đặc trưng để kiểm định, vừa được tổ chức thành bằng chứng ngữ nghĩa có thể truy vết. Nguyên mẫu cung cấp gói bằng chứng, thẻ quyết định có kiểm soát và bảng điều khiển EvidenceTrace phục vụ theo dõi và hậu kiểm. Nghiên cứu chú trọng đánh giá ngoài mẫu, hạn chế rò rỉ dữ liệu theo thời gian và đưa ra các kết luận phù hợp với bằng chứng thu được.
 
 ## 3.2. Mục tiêu cụ thể
 
@@ -161,11 +164,11 @@ Xây dựng và đánh giá nguyên mẫu hệ thống hỗ trợ quyết địn
 
 Nghiên cứu sử dụng một mẫu đánh giá chung gồm các quan sát có dữ liệu giao dịch, biến mục tiêu và đặc trưng kỹ thuật khả dụng đúng thời điểm. Ba cấu hình được đánh giá là cấu hình kỹ thuật, cấu hình từ khóa và cấu hình ngữ nghĩa. Các quan sát không có tin tức phù hợp vẫn thuộc mẫu chính theo quy tắc xử lý đặc trưng đã xác định trước. Thông tin về mức độ phủ tin tức chỉ được sử dụng để kiểm tra chất lượng dữ liệu, phân tích theo nhóm và đánh giá độ nhạy.
 
-1. **RQ1.** Trên cùng mẫu quan sát và cùng giao thức đánh giá ngoài mẫu, việc bổ sung biểu diễn tin tức từ khóa hoặc biểu diễn tin tức ngữ nghĩa vào đặc trưng kỹ thuật có làm thay đổi hiệu quả dự báo so với cấu hình kỹ thuật hay không?
+1. **RQ1.** Trên cùng mẫu quan sát và cùng giao thức đánh giá ngoài mẫu, việc bổ sung biểu diễn tin tức dựa trên từ khóa hoặc biểu diễn ngữ nghĩa vào đặc trưng kỹ thuật có làm thay đổi hiệu quả dự báo so với cấu hình kỹ thuật hay không?
 
-2. **RQ2.** Quy trình trích xuất sự kiện trọng yếu có ngữ nghĩa có đạt các tiêu chí hợp lệ kỹ thuật và truy vết đã xác định trước — gồm tính hợp lệ cấu trúc, khả năng gắn đoạn bằng chứng, tính đầy đủ của định danh nguồn, độ ổn định và phân loại lỗi — hay không?
+2. **RQ2.** Quy trình trích xuất sự kiện trọng yếu từ tin tức có tạo được đầu ra có cấu trúc, có thể đối chiếu với đoạn bằng chứng và truy vết về nguồn theo các tiêu chí kỹ thuật đã xác định trước hay không?
 
-RQ1 là câu hỏi thực nghiệm chính. So sánh cấu hình từ khóa với cấu hình kỹ thuật và so sánh cấu hình ngữ nghĩa với cấu hình kỹ thuật được thực hiện riêng trong cùng một họ kiểm định. So sánh trực tiếp giữa cấu hình từ khóa và cấu hình ngữ nghĩa chỉ nhằm đối chiếu hai cách biểu diễn tin tức trong cùng điều kiện thực nghiệm; không được diễn giải là biểu diễn ngữ nghĩa tạo giá trị dự báo tăng thêm ngoài biểu diễn từ khóa. RQ2 đánh giá tính vận hành, tính nhất quán và khả năng truy vết của quy trình trích xuất; không xác nhận tính đúng ngữ nghĩa theo chuẩn chuyên gia.
+RQ1 là câu hỏi thực nghiệm chính và được xem xét qua hai so sánh: cấu hình từ khóa với cấu hình kỹ thuật, và cấu hình ngữ nghĩa với cấu hình kỹ thuật. So sánh trực tiếp giữa cấu hình từ khóa và cấu hình ngữ nghĩa chỉ nhằm đối chiếu bổ sung hai cách biểu diễn tin tức trong cùng điều kiện thực nghiệm. RQ2 đánh giá tính vận hành, tính nhất quán và khả năng truy vết của quy trình trích xuất.
 
 ## 4.2. Giả thuyết nghiên cứu
 
@@ -174,10 +177,6 @@ RQ1 là câu hỏi thực nghiệm chính. So sánh cấu hình từ khóa với
 - **H2 — Giá trị dự báo của biểu diễn ngữ nghĩa:** Trên mẫu đánh giá chung và theo tiêu chí đánh giá ngoài mẫu đã xác định trước, cấu hình ngữ nghĩa có hiệu quả dự báo khác với cấu hình kỹ thuật.
 
 H1 và H2 thuộc cùng một họ giả thuyết về giá trị dự báo của tin tức. Hai giả thuyết được kiểm định trên cùng biến mục tiêu, cùng mẫu quan sát, cùng cách chia tập, cùng mô hình chính và cùng tiêu chí đánh giá đã khóa trước. Khi đánh giá đồng thời hai biểu diễn tin tức, nghiên cứu áp dụng quy tắc hiệu chỉnh đa kiểm định đã xác định trước.
-
-So sánh giữa cấu hình từ khóa và cấu hình ngữ nghĩa được báo cáo như một đối chiếu trực tiếp giữa hai cách biểu diễn tin tức. Kết quả của đối chiếu này không được diễn giải là biểu diễn ngữ nghĩa tạo giá trị dự báo tăng thêm ngoài biểu diễn từ khóa. Chất lượng của biểu diễn ngữ nghĩa, thẻ quyết định và EvidenceTrace được đánh giá theo RQ2 và các tiêu chí kiểm tra kỹ thuật đã xác định trước; các đánh giá này không được diễn giải là tính đúng ở mức chuyên gia, hiệu quả đầu tư hay chất lượng quyết định của người dùng. Nếu có thể bố trí một tập đánh giá thủ công độc lập với quy mô phù hợp, mức độ phù hợp giữa pseudo-label và đánh giá thủ công được báo cáo riêng; nếu không, mọi kết luận về pseudo-label chỉ giới hạn ở tính hợp lệ kỹ thuật và khả năng truy vết.
-
-Giả thuyết thống kê vận hành, họ kiểm định và cổng kết luận được quy định tại phần mô hình, cấu hình so sánh và đánh giá ngoài mẫu sau khi hồ sơ cấu hình chính được khóa. Trường hợp không bác bỏ giả thuyết không chỉ được hiểu là chưa có đủ bằng chứng về khác biệt trong phạm vi và giao thức đã khảo sát; kết quả này không chứng minh các cấu hình tương đương hoặc biểu diễn tin tức không có giá trị.
 
 ---
 
@@ -199,7 +198,7 @@ Giả thuyết thống kê vận hành, họ kiểm định và cổng kết lu�
 | Tập cổ phiếu thực nghiệm | Được lựa chọn từ một hoặc một số sàn giao dịch có dữ liệu phù hợp, theo các tiêu chí đã xác định trước về thanh khoản, thời gian niêm yết và mức độ đầy đủ của dữ liệu; tập cuối cùng được khóa trước lần đánh giá chính thức |
 | Giai đoạn dữ liệu | Khoảng thời gian mà dữ liệu giá đáp ứng yêu cầu về độ đầy đủ, thời điểm ghi nhận và chất lượng; được khóa trước lần đánh giá chính thức. Độ phủ tin tức trong giai đoạn này được ghi nhận để kiểm tra chất lượng dữ liệu, phân tích theo nhóm và đánh giá độ nhạy |
 | Dữ liệu giá | Dữ liệu OHLCV theo ngày và các biến dẫn xuất kỹ thuật |
-| Dữ liệu tin tức | Tin tức và bài báo công khai bằng tiếng Việt, có thời điểm đăng và thông tin nguồn phù hợp |
+| Dữ liệu tin tức | Tin tức và bài báo công khai bằng tiếng Việt, có thời điểm đăng hoặc ngày ghi nhận đủ để áp dụng quy tắc ánh xạ bảo thủ, kèm thông tin nguồn phù hợp |
 | Biến mục tiêu và thời hạn dự báo | Một số thời hạn ngắn và trung hạn được xác định trước; một thời hạn chính, biến mục tiêu và chỉ số tham chiếu được khóa trước lần đánh giá cuối cùng |
 | Vai trò học máy | Tạo xác suất, thứ hạng và danh sách cổ phiếu ứng viên phục vụ phân tích |
 | Vai trò tin tức | Được kiểm định như nguồn đặc trưng bổ sung và được khai thác như bằng chứng có cấu trúc |
@@ -207,13 +206,11 @@ Giả thuyết thống kê vận hành, họ kiểm định và cổng kết lu�
 | Sản phẩm ứng dụng | Nguyên mẫu bảng điều khiển EvidenceTrace phục vụ truy vết, theo dõi và hậu kiểm kết quả |
 | Hình thức quyết định | Hỗ trợ phân tích; người dùng là người ra quyết định cuối cùng |
 
-
-
 ## 5.3. Giới hạn của đồ án
 
 - Không xây dựng hệ thống giao dịch tự động và không đưa ra khuyến nghị đầu tư thực tế.
 - Không cam kết lợi nhuận hoặc hiệu quả khi triển khai trong môi trường thực tế.
-- Nhãn ngữ nghĩa do mô hình tạo ra được xem là nhãn giả, không phải nhãn chuẩn của chuyên gia. Các chỉ số về cấu trúc, độ ổn định, đoạn bằng chứng, định danh nguồn và phân tích lỗi chỉ đánh giá tính hợp lệ kỹ thuật và khả năng truy vết; mức độ đồng thuận không tự xác lập tính đúng theo chuẩn chuyên gia [11], [19].
+- Nhãn ngữ nghĩa do mô hình tạo ra được xem là nhãn giả, không phải nhãn chuẩn của chuyên gia; các kết quả liên quan chỉ được diễn giải trong phạm vi tính hợp lệ kỹ thuật và khả năng truy vết [11], [19].
 - EvidenceTrace chỉ là nguyên mẫu phục vụ nghiên cứu, chưa phải hệ thống vận hành thực tế.
 - Nghiên cứu có thể chịu ảnh hưởng của sai lệch sống sót và sai lệch về độ bao phủ, do ưu tiên các mã cổ phiếu và giai đoạn có dữ liệu đủ chất lượng; hạn chế này phải được báo cáo rõ.
 - Nghiên cứu không giả định mọi cách đưa tin tức vào mô hình sẽ làm tăng hiệu năng dự báo.
@@ -229,13 +226,16 @@ Nghiên cứu được triển khai theo hai giai đoạn. Giai đoạn đầu �
 
 Sau giai đoạn đánh giá tính khả thi, nghiên cứu khóa tập cổ phiếu, giai đoạn dữ liệu, biến mục tiêu, thời hạn dự báo, nhóm đặc trưng, quy tắc chia tập và tiêu chí đánh giá trước lần đánh giá chính thức. Các phương án còn lại chỉ được sử dụng cho phân tích bổ sung hoặc phân tích độ nhạy; mọi thay đổi sau thời điểm khóa phải được ghi nhận riêng.
 
-Bài toán chính là tạo tín hiệu và xếp hạng các cổ phiếu ứng viên trong thời hạn ngắn hoặc trung hạn. Quy trình chỉ sử dụng dữ liệu khả dụng tại thời điểm ra quyết định [10], [18]. Với bài viết có thời điểm công bố đáng tin cậy, thời điểm khả dụng được xác định theo múi giờ của nguồn và lịch giao dịch; bài xuất hiện sau giờ đóng cửa, vào ngày nghỉ hoặc cuối tuần chỉ được dùng từ phiên giao dịch hợp lệ kế tiếp. Với nguồn chỉ cung cấp ngày nhưng không có giờ công bố đáng tin cậy, nghiên cứu áp dụng quy tắc bảo thủ: bài viết chỉ được ánh xạ vào phiên giao dịch đầu tiên sau ngày ghi nhận của nguồn và không được dùng để xây dựng đặc trưng hoặc bằng chứng cho phiên cùng ngày. Bài viết không thể ánh xạ xác định vào một phiên giao dịch hợp lệ, cũng như trường hợp không xác định được mã cổ phiếu liên quan, được ghi nhận trong nhật ký chất lượng dữ liệu và suy giảm mẫu, không đưa vào đặc trưng chính hoặc vùng bằng chứng ban đầu. Mọi bước xử lý dữ liệu, lựa chọn đặc trưng và huấn luyện mô hình được thực hiện trong phạm vi dữ liệu được phép của từng tập. Tin tức xuất hiện sau thời điểm ra quyết định chỉ phục vụ theo dõi, còn kết quả thực tế chỉ được dùng cho hậu kiểm sau khi kết thúc thời hạn dự báo. Các quan sát phụ thuộc theo thời gian được xử lý bằng cách chia tập và phương pháp suy luận phù hợp.
+Bài toán chính là tạo tín hiệu và xếp hạng cổ phiếu ứng viên trong một số thời hạn ngắn và trung hạn. Quy trình chỉ sử dụng thông tin đã khả dụng tại thời điểm ra quyết định [10], [18].
+
+Với bài viết có thời điểm công bố đáng tin cậy, thời điểm khả dụng được xác định theo múi giờ của nguồn và lịch giao dịch. Bài được công bố sau giờ đóng cửa, vào cuối tuần hoặc ngày nghỉ chỉ được dùng từ phiên giao dịch hợp lệ kế tiếp. Nếu nguồn chỉ cung cấp ngày mà không có giờ công bố đáng tin cậy, bài viết được dùng từ phiên giao dịch đầu tiên sau ngày ghi nhận của nguồn và không ảnh hưởng đến đặc trưng hoặc bằng chứng của phiên cùng ngày.
+
+Những bài không thể xác định phiên giao dịch tương ứng hoặc không xác định được mã cổ phiếu liên quan được ghi nhận trong báo cáo chất lượng dữ liệu và nhật ký sàng lọc mẫu; chúng không được dùng để xây dựng đặc trưng chính hoặc bằng chứng ban đầu. Mọi bước xử lý dữ liệu, lựa chọn đặc trưng và huấn luyện mô hình chỉ sử dụng phần dữ liệu tương ứng với từng tập. Tin tức xuất hiện sau thời điểm ra quyết định chỉ phục vụ theo dõi, còn kết quả thực tế chỉ được dùng cho hậu kiểm sau khi kết thúc thời hạn dự báo. Sự phụ thuộc theo thời gian giữa các quan sát được xử lý thông qua cách chia tập và phương pháp suy luận phù hợp.
 
 ## 6.2. Dữ liệu giao dịch và đặc trưng kỹ thuật
 
 Dữ liệu giao dịch theo ngày gồm giá mở cửa (Open), giá cao nhất (High), giá thấp nhất (Low), giá đóng cửa (Close), khối lượng giao dịch (Volume) và các biến điều chỉnh nếu nguồn dữ liệu cung cấp đáng tin cậy. Các nhóm đặc trưng kỹ thuật dự kiến gồm:
 
-- lợi suất và lợi suất logarit;
 - biến động lịch sử;
 - thanh khoản và biến đổi khối lượng;
 - xu hướng và động lượng;
@@ -245,19 +245,19 @@ Dữ liệu giao dịch theo ngày gồm giá mở cửa (Open), giá cao nhất
 - Bollinger Bands;
 - các đặc trưng thị trường hoặc chỉ số tham chiếu, nếu bảo đảm đúng thời điểm khả dụng.
 
-Các đặc trưng kỹ thuật được tính từ dữ liệu đã khả dụng trước thời điểm ra quyết định và được trễ theo quy tắc đã khóa trước [1]. Danh sách chi tiết có thể được điều chỉnh trong Giai đoạn A dựa trên tập huấn luyện và tập xác thực. Sau khi quy trình chính được khóa, các nhóm đặc trưng của thí nghiệm chính không được thay đổi dựa trên kết quả của tập kiểm tra cuối cùng.
+Các đặc trưng kỹ thuật được tính từ dữ liệu đã khả dụng trước thời điểm ra quyết định và được làm trễ theo quy tắc xác định trước. Danh sách chi tiết có thể được điều chỉnh trong giai đoạn đánh giá tính khả thi dựa trên tập huấn luyện và tập xác thực. Sau khi quy trình chính được khóa, các nhóm đặc trưng của thí nghiệm chính không được thay đổi dựa trên kết quả của tập kiểm tra cuối cùng.
 
 ## 6.3. Dữ liệu tin tức và các cách biểu diễn
 
 Tin tức tiếng Việt được thu thập từ các nguồn cho phép xác định thời điểm đăng hoặc ngày ghi nhận theo quy tắc bảo thủ, đồng thời truy vết nguồn gốc. Mỗi bản ghi dự kiến gồm tiêu đề, nội dung hoặc phần tóm tắt sẵn có, thời điểm đăng hoặc ngày ghi nhận, nguồn, địa chỉ URL hoặc mã định danh nguồn và mã cổ phiếu liên quan.
 
-Các bước xử lý gồm làm sạch, chuẩn hóa, loại bỏ bản tin trùng lặp, liên kết với mã cổ phiếu và xác định thời điểm khả dụng. Phương pháp cơ sở dựa trên từ khóa biểu diễn tần suất xuất hiện của các từ hoặc cụm từ liên quan dưới dạng số lần xuất hiện, tần suất chuẩn hóa hoặc TF-IDF. Nếu sử dụng TF-IDF, việc ước lượng trọng số chỉ được thực hiện trên tập huấn luyện tương ứng. Thông tin về mức độ phủ tin tức được ghi nhận để kiểm tra chất lượng dữ liệu và phân tích độ nhạy, không được đưa vào mô hình như một đặc trưng dự báo. Quy trình lưu riêng các trạng thái không có tin hợp lệ, thiếu thời điểm, không thể ánh xạ phiên giao dịch, lỗi liên kết mã và lỗi trích xuất; chỉ trường hợp thực sự không có tin hợp lệ mới được mã hóa theo quy tắc đã khóa trước.
+Các bước xử lý gồm làm sạch, chuẩn hóa, loại bỏ bản tin trùng lặp, liên kết với mã cổ phiếu và xác định thời điểm khả dụng. Phương pháp cơ sở dựa trên từ khóa biểu diễn tần suất xuất hiện của các từ hoặc cụm từ liên quan dưới dạng số lần xuất hiện, tần suất chuẩn hóa hoặc TF-IDF. Nếu sử dụng TF-IDF, trọng số chỉ được ước lượng trên tập huấn luyện tương ứng. Độ phủ tin tức được ghi nhận để kiểm tra chất lượng dữ liệu và phân tích độ nhạy, không được đưa vào mô hình như một đặc trưng dự báo. Quy trình phân biệt các trạng thái: không có tin hợp lệ, thiếu thời điểm, không xác định được phiên giao dịch, lỗi liên kết mã và lỗi trích xuất.
 
-Biểu diễn ngữ nghĩa ghi nhận mức độ liên quan đến mã cổ phiếu, mức độ trọng yếu, loại sự kiện, chiều tác động, đoạn bằng chứng và thông tin nguồn phục vụ truy vết. Đầu ra từ mô hình ngôn ngữ lớn được gọi là **nhãn giả** (*pseudo-label*), không mặc định là nhãn chuẩn của chuyên gia [11]. Chất lượng trích xuất được đánh giá thông qua tính hợp lệ cấu trúc, độ ổn định, khả năng gắn đoạn bằng chứng, mức độ đầy đủ thông tin nguồn và phân loại lỗi. Các phép kiểm tra này chỉ đánh giá tính vận hành, tính nhất quán và khả năng truy vết của quy trình; không xác lập tính đúng ngữ nghĩa ở mức chuyên gia. Nếu có tập đánh giá thủ công độc lập phù hợp, mức độ phù hợp được báo cáo riêng theo tiêu chí đã xác định; nếu không, các kết luận về pseudo-label chỉ giới hạn ở tính hợp lệ kỹ thuật và khả năng truy vết [19]. Phân tích liên hệ giữa đặc trưng ngữ nghĩa và biến động sau sự kiện, nếu thực hiện, chỉ mang tính khám phá.
+Biểu diễn ngữ nghĩa ghi nhận mức độ liên quan đến mã cổ phiếu, mức độ trọng yếu, loại sự kiện, chiều tác động, đoạn bằng chứng và thông tin nguồn. Đầu ra của LLM được xem là **nhãn giả** (*pseudo-label*), không phải nhãn chuẩn của chuyên gia [11]. Quy trình được đánh giá qua tính đầy đủ của cấu trúc, độ ổn định giữa các lần trích xuất, khả năng đối chiếu với đoạn bằng chứng, thông tin truy vết nguồn và các dạng lỗi thường gặp. Nếu có tập đánh giá thủ công độc lập phù hợp, mức độ phù hợp với nhãn giả sẽ được báo cáo riêng; nếu không, kết luận chỉ giới hạn ở tính vận hành và khả năng truy vết [19]. Phân tích mối liên hệ giữa đặc trưng ngữ nghĩa và biến động sau sự kiện, nếu thực hiện, chỉ mang tính khám phá.
 
 ## 6.4. Mô hình, cấu hình so sánh và đánh giá ngoài mẫu
 
-Mô hình chính dự kiến là **Random Forest** [14]. Logistic Regression được sử dụng để kiểm tra độ vững; XGBoost hoặc LightGBM, nếu được triển khai, chỉ thuộc phân tích độ nhạy [15]. Việc lựa chọn đặc trưng và điều chỉnh siêu tham số chỉ sử dụng dữ liệu huấn luyện và xác thực theo thời gian, không sử dụng tập kiểm tra cuối cùng.
+Mô hình chính dự kiến là **Random Forest** [14]. Logistic Regression được sử dụng để kiểm tra độ vững; XGBoost [15] hoặc LightGBM [23], nếu được triển khai, chỉ thuộc phân tích độ nhạy. Việc lựa chọn đặc trưng và điều chỉnh siêu tham số chỉ sử dụng dữ liệu huấn luyện và xác thực theo thời gian, không sử dụng tập kiểm tra cuối cùng.
 
 Nghiên cứu đánh giá ba cấu hình:
 
@@ -269,7 +269,7 @@ Nghiên cứu đánh giá ba cấu hình:
 
 Ba cấu hình sử dụng cùng biến mục tiêu, mẫu quan sát, cách chia tập theo thời gian, mô hình chính và nhóm đặc trưng kỹ thuật. Quan sát không có tin phù hợp vẫn được giữ trong mẫu chính; các đặc trưng tin tức được xử lý theo một quy tắc thống nhất và khóa trước.
 
-Độ phủ tin tức được lưu riêng để kiểm tra chất lượng dữ liệu, phân tích theo nhóm và phân tích độ nhạy; không được dùng làm đặc trưng dự báo, bộ lọc quan sát hoặc tiêu chí xác định mẫu chính. Quy trình dữ liệu phải phân biệt trường hợp thực sự không có tin với lỗi liên kết mã cổ phiếu, thiếu thời điểm đăng hoặc lỗi trích xuất. Chỉ trường hợp không có tin hợp lệ mới được mã hóa theo quy tắc đã khóa trước; các lỗi dữ liệu phải được ghi nhận riêng.
+Độ phủ tin tức được lưu riêng để kiểm tra chất lượng dữ liệu, phân tích theo nhóm và phân tích độ nhạy; không được dùng làm đặc trưng dự báo, bộ lọc quan sát hoặc tiêu chí xác định mẫu chính. Trong mẫu chính, chỉ quan sát thực sự không có tin hợp lệ mới được xử lý theo quy tắc mã hóa đã xác định trước; các lỗi về thời điểm, ánh xạ phiên giao dịch, liên kết mã hoặc trích xuất được báo cáo riêng.
 
 ### Kế hoạch phân tích
 
@@ -294,7 +294,7 @@ Nếu Balanced Accuracy không phù hợp hoặc không xác định được, t
 
 Chênh lệch giữa các cấu hình được tính trên cùng các quan sát ngoài mẫu và cùng đơn vị bắt cặp. Do dữ liệu có phụ thuộc theo thời gian, khoảng tin cậy và kiểm định sử dụng phương pháp phù hợp với chuỗi thời gian, chẳng hạn lấy mẫu lại theo khối [16] hoặc kiểm định hoán vị theo quy tắc đã khóa. Hai kiểm định của H1 và H2 thuộc cùng một họ và được hiệu chỉnh bằng Benjamini–Hochberg [17].
 
-Nghiên cứu báo cáo đầy đủ ước lượng chênh lệch, khoảng tin cậy, giá trị $p$ và kết quả sau hiệu chỉnh. Không bác bỏ giả thuyết không không được diễn giải là chứng minh các cấu hình tương đương hoặc chứng minh thông tin tin tức không có giá trị. Precision@K chỉ phản ánh chất lượng xếp hạng. Mô phỏng danh mục Top-K, nếu có, là phân tích kinh tế thăm dò và không được dùng để khẳng định alpha, lợi nhuận có thể triển khai hoặc hiệu quả đầu tư thực tế.
+Nghiên cứu báo cáo đầy đủ ước lượng chênh lệch, khoảng tin cậy, giá trị $p$ và kết quả sau hiệu chỉnh. Precision@K chỉ phản ánh chất lượng xếp hạng. Mô phỏng danh mục Top-K, nếu có, là phân tích kinh tế thăm dò và không được dùng để khẳng định alpha, lợi nhuận có thể triển khai hoặc hiệu quả đầu tư thực tế.
 
 ## 6.5. Gói bằng chứng, EvidenceTrace và hậu kiểm
 
@@ -305,7 +305,7 @@ Với mỗi trường hợp phân tích, hệ thống xây dựng một gói b�
 - sự kiện tin tức liên quan, đoạn bằng chứng, nguồn và thời điểm đăng;
 - mức độ bất định, yếu tố rủi ro và khoảng trống thông tin.
 
-Từ gói bằng chứng, hệ thống tạo thẻ quyết định theo cấu trúc thống nhất, gồm tín hiệu chính, bằng chứng củng cố và phản biện, yếu tố rủi ro, điều kiện cần theo dõi và thời điểm hậu kiểm. Thẻ được đánh giá bằng các tiêu chí kỹ thuật: mức độ đầy đủ của trường thông tin, tính hợp lệ của tham chiếu nguồn, khả năng truy vết đoạn bằng chứng và sự nhất quán giữa nội dung trình bày với bằng chứng được dẫn. Các tiêu chí này không đo chất lượng quyết định của người dùng, hiệu quả đầu tư hoặc lợi nhuận.
+Từ gói bằng chứng, hệ thống tạo thẻ quyết định theo cấu trúc thống nhất, gồm tín hiệu chính, bằng chứng ủng hộ và bằng chứng trái chiều, yếu tố rủi ro, điều kiện cần theo dõi và thời điểm hậu kiểm. Thẻ được đánh giá bằng các tiêu chí kỹ thuật: mức độ đầy đủ của trường thông tin, tính hợp lệ của tham chiếu nguồn, khả năng truy vết đoạn bằng chứng và sự nhất quán giữa nội dung trình bày với bằng chứng được dẫn. Các tiêu chí này không đo chất lượng quyết định của người dùng, hiệu quả đầu tư hoặc lợi nhuận.
 
 ### EvidenceTrace và hậu kiểm kỹ thuật
 
@@ -315,7 +315,7 @@ EvidenceTrace được tổ chức thành ba vùng thời gian:
 2. **Vùng theo dõi:** ghi nhận các tin tức hoặc sự kiện xuất hiện sau thời điểm lập thẻ;
 3. **Vùng hậu kiểm:** hiển thị biến mục tiêu hoặc kết quả quan sát được sau khi kết thúc thời hạn dự báo.
 
-Nguyên mẫu được kiểm tra trên một số trường hợp lựa chọn trước nhằm đánh giá:
+Nguyên mẫu được kiểm tra trên một tập trường hợp được xác định trước nhằm đánh giá:
 
 - tính hợp lệ của mã định danh nguồn và thời điểm đăng;
 - khả năng truy xuất đoạn bằng chứng;
@@ -323,7 +323,7 @@ Nguyên mẫu được kiểm tra trên một số trường hợp lựa chọn 
 - sự phân tách đúng giữa thông tin ban đầu, theo dõi và hậu kiểm;
 - việc tuân thủ ranh giới thời gian.
 
-Một trường hợp không đạt nếu thiếu định danh nguồn bắt buộc, bằng chứng không thể truy xuất, dữ liệu tương lai xuất hiện trong vùng ban đầu hoặc thời điểm dữ liệu vi phạm quy tắc khả dụng. Việc lựa chọn và kiểm tra các trường hợp EvidenceTrace chỉ nhằm xác minh hoạt động kỹ thuật của nguyên mẫu, không dùng để ước lượng hiệu quả dự báo, chất lượng quyết định hoặc lợi nhuận.
+Một trường hợp không đạt nếu thiếu định danh nguồn bắt buộc, bằng chứng không thể truy xuất, dữ liệu tương lai xuất hiện trong vùng ban đầu hoặc dữ liệu được sử dụng trước khi thực sự khả dụng. Việc lựa chọn và kiểm tra các trường hợp EvidenceTrace chỉ nhằm xác minh hoạt động kỹ thuật của nguyên mẫu, không dùng để ước lượng hiệu quả dự báo, chất lượng quyết định hoặc lợi nhuận.
 
 ## 6.6. Kiểm soát rò rỉ dữ liệu và giới hạn diễn giải
 
@@ -350,9 +350,9 @@ Kết luận của nghiên cứu chỉ phản ánh hiệu quả dự báo ngoài
 | Xử lý dữ liệu | Pandas, NumPy | Làm sạch, căn chỉnh, tổng hợp |
 | Dữ liệu thị trường | vnstock hoặc nguồn tương đương | Thu thập dữ liệu giá |
 | Thu thập tin tức | BeautifulSoup, Scrapy hoặc công cụ tương đương | Thu thập bài viết |
-| Xử lý tiếng Việt | underthesea, VnCoreNLP, PhoBERT hoặc công cụ phù hợp | Chuẩn hóa và biểu diễn văn bản khi cần [9] |
-| Học máy | scikit-learn, XGBoost, LightGBM | Xây dựng mô hình cơ sở và so sánh các cấu hình [15], [23] |
-| Giải thích mô hình | SHAP, permutation importance | Giải thích tín hiệu của mô hình [12] |
+| Xử lý tiếng Việt | underthesea, VnCoreNLP, PhoBERT [9] hoặc công cụ phù hợp | Chuẩn hóa và biểu diễn văn bản khi cần |
+| Học máy | scikit-learn, XGBoost, LightGBM | Xây dựng mô hình cơ sở và so sánh các cấu hình |
+| Giải thích mô hình | SHAP [12], permutation importance | Giải thích tín hiệu của mô hình |
 | LLM và API | Mô hình phù hợp được truy cập qua API | Trích xuất thông tin ngữ nghĩa và tạo thẻ quyết định |
 | Đánh giá thống kê | SciPy, statsmodels hoặc công cụ tương đương | Ước lượng khoảng tin cậy, kiểm định và hiệu chỉnh đa kiểm định |
 | Bảng điều khiển | Streamlit, Dash, FastAPI hoặc bộ công nghệ tương đương | Xây dựng nguyên mẫu EvidenceTrace |
@@ -367,8 +367,8 @@ Danh sách công cụ có thể được điều chỉnh trong quá trình tri�
 
 1. Bộ tiêu chí đánh giá tính khả thi của dữ liệu, hồ sơ cấu hình chính và bộ dữ liệu đã căn chỉnh theo đúng thời điểm khả dụng.
 2. Kết quả đánh giá ngoài mẫu của cấu hình kỹ thuật, cấu hình từ khóa và cấu hình ngữ nghĩa; báo cáo đầy đủ kết quả kiểm định H1, H2, kết quả đối chiếu trực tiếp giữa hai biểu diễn tin tức, cũng như các trường hợp không ước lượng được.
-3. Cấu trúc biểu diễn sự kiện trọng yếu có ngữ nghĩa và báo cáo tính hợp lệ kỹ thuật của pseudo-label, gồm tính hợp lệ cấu trúc, tính ổn định, tính hợp lệ của đoạn bằng chứng, khả năng truy vết nguồn và phân loại lỗi; báo cáo riêng mức độ phù hợp với đánh giá thủ công nếu có tập đánh giá độc lập phù hợp.
-4. Các gói bằng chứng, thẻ quyết định và kết quả kiểm tra kỹ thuật về tính đầy đủ, tính hợp lệ của tham chiếu nguồn, khả năng truy vết và ranh giới thời gian.
+3. Cấu trúc biểu diễn sự kiện ngữ nghĩa và báo cáo đánh giá quy trình tạo nhãn giả về cấu trúc, độ ổn định, đoạn bằng chứng, khả năng truy vết nguồn và các dạng lỗi thường gặp.
+4. Các gói bằng chứng, thẻ quyết định và kết quả kiểm tra về tính đầy đủ, tính hợp lệ của tham chiếu nguồn, khả năng truy vết và ranh giới thời gian.
 5. Nguyên mẫu EvidenceTrace phục vụ theo dõi, truy vết và hậu kiểm trên một số trường hợp nghiên cứu đã được rà soát.
 6. Ma trận liên kết giữa kết luận, bằng chứng và giới hạn, cùng nhật ký thay đổi quy trình nhằm bảo đảm diễn giải trung thực kết quả nghiên cứu.
 
@@ -380,8 +380,8 @@ Danh sách công cụ có thể được điều chỉnh trong quá trình tri�
 - Cung cấp một giao thức so sánh tái lập được giữa cấu hình kỹ thuật, cấu hình từ khóa và cấu hình ngữ nghĩa trên cùng mẫu quan sát, biến mục tiêu, cách chia tập và quy tắc *point-in-time* đã khóa trước.
 - Bổ sung bằng chứng thực nghiệm có kiểm soát về hiệu quả và giới hạn của các biểu diễn tin tức trên dữ liệu cổ phiếu Việt Nam trong phạm vi và giao thức đã khảo sát.
 - Đề xuất và đánh giá cấu trúc bằng chứng tin tức dựa trên sự kiện trọng yếu có ngữ nghĩa, kèm đoạn bằng chứng, thông tin truy vết nguồn và ranh giới thời gian rõ ràng.
-- Xây dựng quy trình kiểm tra tính hợp lệ kỹ thuật của pseudo-label và thẻ quyết định dựa trên cấu trúc, độ ổn định, bằng chứng, provenance và phân loại lỗi; không diễn giải các kiểm tra này là xác nhận nhãn chuẩn ở mức chuyên gia.
-- Tổ chức nguyên mẫu hỗ trợ quyết định dựa trên tín hiệu học máy, trong đó LLM chỉ đóng vai trò trích xuất và tổng hợp thông tin có ràng buộc bằng chứng, thay vì trực tiếp dự báo giá.
+- Xây dựng quy trình kiểm tra nhãn giả và thẻ quyết định dựa trên cấu trúc, độ ổn định, đoạn bằng chứng, thông tin truy vết nguồn và các dạng lỗi thường gặp.
+- Tổ chức nguyên mẫu hỗ trợ phân tích dựa trên tín hiệu học máy, trong đó LLM chỉ đóng vai trò trích xuất và tổng hợp thông tin có ràng buộc bằng chứng, thay vì trực tiếp dự báo giá.
 - Phân biệt rõ các nhóm kết luận về khả năng dự báo, chất lượng biểu diễn, chất lượng nội dung được tạo từ bằng chứng, khả năng truy vết và kết quả hậu kiểm.
 
 ---
