@@ -1,0 +1,384 @@
+{
+  "decision_id": "2025Q3_VIC_02",
+  "snapshot_mode": "full_evidence",
+  "ticker": "VIC",
+  "decision_date": "2025-09-30",
+  "period_id": "2025Q3",
+  "holding_horizon": "next_quarter_or_period_return_in_signals",
+  "ml_signal": {
+    "model_name": "technical_Config_A_from_existing_pipeline",
+    "pred_proba_up": 0.9970068380521899,
+    "pred_label": 1,
+    "rank_in_period": 2,
+    "source_signal_class": "Buy Candidate",
+    "display_status": "Model candidate"
+  },
+  "technical_snapshot": {
+    "rsi_end_q": 83.94257466926713,
+    "macd_hist_mean_q": 0.20040437309325893,
+    "price_vs_sma20": 0.22107026913812958,
+    "return_2q_ago": 0.4306857424765664,
+    "return_q": 0.829497907949791,
+    "return_prev_q": 0.6013400335008373,
+    "volume_change_q": -0.4838746133712379,
+    "return_mean_daily": 0.009933861383748185,
+    "price_range_q": 0.748385784737404,
+    "sma20_end": 71.6175
+  },
+  "top_drivers": [
+    {
+      "feature": "rsi_end_q",
+      "value": 83.94257466926713,
+      "direction": "positive_but_overbought_risk",
+      "explanation": "RSI cuối kỳ là driver kỹ thuật quan trọng nhất trong mô hình."
+    },
+    {
+      "feature": "macd_hist_mean_q",
+      "value": 0.20040437309325893,
+      "direction": "supports_up_signal",
+      "explanation": "MACD histogram trung bình phản ánh động lượng xu hướng."
+    },
+    {
+      "feature": "price_vs_sma20",
+      "value": 0.22107026913812958,
+      "direction": "supports_up_signal",
+      "explanation": "Vị trí giá so với SMA20 phản ánh trạng thái trên/dưới đường trung bình."
+    },
+    {
+      "feature": "return_2q_ago",
+      "value": 0.4306857424765664,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trễ hai kỳ phản ánh động lượng/quán tính lịch sử."
+    },
+    {
+      "feature": "return_q",
+      "value": 0.829497907949791,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trong kỳ hiện tại phản ánh xu hướng gần nhất."
+    },
+    {
+      "feature": "return_prev_q",
+      "value": 0.6013400335008373,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất kỳ trước bổ sung thông tin động lượng."
+    },
+    {
+      "feature": "volume_change_q",
+      "value": -0.4838746133712379,
+      "direction": "weak_or_negative",
+      "explanation": "Thay đổi khối lượng phản ánh mức độ quan tâm của thị trường."
+    },
+    {
+      "feature": "return_mean_daily",
+      "value": 0.009933861383748185,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trung bình ngày phản ánh xu hướng ngắn trong kỳ."
+    },
+    {
+      "feature": "price_range_q",
+      "value": 0.748385784737404,
+      "direction": "risk_high_volatility",
+      "explanation": "Biên độ giá trong kỳ phản ánh biến động/rủi ro."
+    },
+    {
+      "feature": "sma20_end",
+      "value": 71.6175,
+      "direction": "context",
+      "explanation": "SMA20 cuối kỳ phản ánh mặt bằng xu hướng ngắn hạn."
+    }
+  ],
+  "news_evidence": [
+    {
+      "evidence_id": "N001",
+      "published_at": "2025-09-30",
+      "source": "cafef",
+      "title": "VIC: CBTT phát hành trái phiếu riêng lẻ 3.500 tỷ",
+      "article_summary": "Tập đoàn Vingroup - Công ty Cổ phần thông báo phát hành trái phiếu riêng lẻ 3.500 tỷ VIC: CBTT phát hành trái phiếu riêng lẻ 3.500 tỷ Tập đoàn Vingroup - Công ty Cổ phần thông báo phát hành trái phiếu riêng lẻ 3.500 tỷ",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "VIC: CBTT phát hành trái phiếu riêng lẻ 3.500 tỷ Tập đoàn Vingroup - Công ty Cổ phần thông báo phát hành trái phiếu riêng lẻ 3.500 tỷ VIC: CBTT phát hành trái phiếu riêng lẻ 3.500 tỷ Tập đoàn Vingroup - Công ty Cổ phần thông báo phát hành trái phiếu riêng lẻ 3.500 tỷ",
+          "evidence_quote": "VIC: CBTT phát hành trái phiếu riêng lẻ 3.500 tỷ Tập đoàn Vingroup - Công ty Cổ phần thông báo phát hành trái phiếu riêng lẻ 3.500 tỷ VIC: CBTT phát hành trái phiếu riêng lẻ 3.500 tỷ Tập đoàn Vingroup - Công ty Cổ phần thông báo phát hành t",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "debt_risk"
+      ],
+      "event_type": "debt_risk,capital",
+      "match_confidence": "exact",
+      "evidence_span": "VIC: CBTT phát hành trái phiếu riêng lẻ 3.500 tỷ Tập đoàn Vingroup - Công ty Cổ phần thông báo phát hành trái phiếu riêng lẻ 3.500 tỷ",
+      "url": "https://cafef.vn/du-lieu/VIC-2307622/vic-cbtt-phat-hanh-trai-phieu-rieng-le-3500-ty.chn",
+      "content_hash": "3a74acc9177d6b03087b23d5ad3ce374f1ad4415c635d4008e521c76964d2592",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N002",
+      "published_at": "2025-09-30",
+      "source": "kinhtechungkhoan",
+      "title": "co phieu ho vingroup lai thang hoa ty phu pham nhat vuong lap ky luc chua tung co 1405072.html",
+      "article_summary": "Cổ phiếu nhóm Vingroup đồng loạt bứt phá, đưa tỷ phú Phạm Nhật Vượng lần đầu thiết lập cột mốc lịch sử mới, khẳng định vị thế trên bản đồ toàn cầu. Trong phiên giao dịch ngày 30/9, nhóm cổ phiếu thuộc hệ sinh thái Tập đoàn Vingroup tiếp tục trở thành tâm điểm của thị trường khi đồng loạt tăng giá. Trong đó, cổ phiếu Vingroup (VIC) và Vinhomes (VHM) cùng ghi nhận mức tăng từ 1% đến 2%, đóng vai trò trụ cột nâng đỡ thị trường.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "co phieu ho vingroup lai thang hoa ty phu pham nhat vuong lap ky luc chua tung co 1405072.html nan Cổ phiếu nhóm Vingroup đồng loạt bứt phá, đưa tỷ phú Phạm Nhật Vượng lần đầu thiết lập cột mốc lịch sử mới, khẳng định vị thế trên bản đồ toàn cầu.",
+          "evidence_quote": "co phieu ho vingroup lai thang hoa ty phu pham nhat vuong lap ky luc chua tung co 1405072.html nan Cổ phiếu nhóm Vingroup đồng loạt bứt phá, đưa tỷ phú Phạm Nhật Vượng lần đầu thiết lập cột mốc lịch sử mới, khẳng định vị thế trên bản đồ toà",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Trong phiên giao dịch ngày 30/9, nhóm cổ phiếu thuộc hệ sinh thái Tập đoàn Vingroup tiếp tục trở thành tâm điểm của thị trường khi đồng loạt tăng giá.",
+          "evidence_quote": "Trong phiên giao dịch ngày 30/9, nhóm cổ phiếu thuộc hệ sinh thái Tập đoàn Vingroup tiếp tục trở thành tâm điểm của thị trường khi đồng loạt tăng giá.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Trong đó, cổ phiếu Vingroup (VIC) và Vinhomes (VHM) cùng ghi nhận mức tăng từ 1% đến 2%, đóng vai trò trụ cột nâng đỡ thị trường.",
+          "evidence_quote": "Trong đó, cổ phiếu Vingroup (VIC) và Vinhomes (VHM) cùng ghi nhận mức tăng từ 1% đến 2%, đóng vai trò trụ cột nâng đỡ thị trường.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Nổi bật nhất trong số này đến từ cổ phiếu của Vincom Retail (VRE) khi bất ngờ tăng trần ngay từ đầu phiên, đưa thị giá lên 32.100 đồng/cổ phiếu, mức cao nhất trong hơn ba năm qua.",
+          "evidence_quote": "Nổi bật nhất trong số này đến từ cổ phiếu của Vincom Retail (VRE) khi bất ngờ tăng trần ngay từ đầu phiên, đưa thị giá lên 32.100 đồng/cổ phiếu, mức cao nhất trong hơn ba năm qua.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Với diễn biến này, vốn hóa của VRE đã vọt lên gần 73.000 tỷ đồng, tạo cú hích lớn cho toàn bộ “họ” Vingroup.",
+          "evidence_quote": "Với diễn biến này, vốn hóa của VRE đã vọt lên gần 73.000 tỷ đồng, tạo cú hích lớn cho toàn bộ “họ” Vingroup.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "debt_risk",
+        "governance"
+      ],
+      "event_type": "dividend,earnings,debt_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Cổ phiếu nhóm Vingroup đồng loạt bứt phá, đưa tỷ phú Phạm Nhật Vượng lần đầu thiết lập cột mốc lịch sử mới, khẳng định vị thế trên bản đồ toàn cầu. Trong phiên giao dịch ngày 30/9, nhóm cổ phiếu thuộc hệ sinh thái Tập đoàn Vingroup tiếp tục trở thành tâm điểm của thị trường khi đồng loạt tăng giá. Trong đó, cổ phiếu Vingroup (VIC) và Vinhomes (VHM) cùng ghi nhận mức tăng từ 1% đến 2%, đóng vai trò trụ cột nâng đỡ thị trường. Nổi bật nhất trong số này đến từ cổ phiếu của Vincom Retail (VRE) khi b",
+      "url": "https://kinhtechungkhoan.vn/co-phieu-ho-vingroup-lai-thang-hoa-ty-phu-pham-nhat-vuong-lap-ky-luc-chua-tung-co-1405072.html",
+      "content_hash": "f9f79fb1e535a9d6dd990aa9346151ff8564cd764403c02c6469763be51fb366",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N003",
+      "published_at": "2025-09-30",
+      "source": "kinhtechungkhoan",
+      "title": "du co diem tua vingroup chung khoan cuoi thang 9 van giam sau 1405020.html",
+      "article_summary": "Thị trường chứng khoán Việt Nam sáng 30/9 khởi đầu với đôi chút lạc quan từ nhóm cổ phiếu trụ, nhưng áp lực bán gia tăng nhanh chóng về cuối phiên đã kéo chỉ số chung chìm sâu trong sắc đỏ. Đóng cửa phiên sáng 30/9, VN-Index giảm 11,12 điểm, tương đương 0,67%, lùi về 1.655,36 điểm. Độ rộng thị trường thể hiện sự tiêu cực khi sàn HOSE có tới 273 mã giảm, trong khi chỉ 45 mã giữ được sắc xanh.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "du co diem tua vingroup chung khoan cuoi thang 9 van giam sau 1405020.html nan Thị trường chứng khoán Việt Nam sáng 30/9 khởi đầu với đôi chút lạc quan từ nhóm cổ phiếu trụ, nhưng áp lực bán gia tăng nhanh chóng về cuối phiên đã kéo chỉ số chung chìm sâu trong sắc đỏ.",
+          "evidence_quote": "du co diem tua vingroup chung khoan cuoi thang 9 van giam sau 1405020.html nan Thị trường chứng khoán Việt Nam sáng 30/9 khởi đầu với đôi chút lạc quan từ nhóm cổ phiếu trụ, nhưng áp lực bán gia tăng nhanh chóng về cuối phiên đã kéo chỉ số ",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Đóng cửa phiên sáng 30/9, VN-Index giảm 11,12 điểm, tương đương 0,67%, lùi về 1.655,36 điểm.",
+          "evidence_quote": "Đóng cửa phiên sáng 30/9, VN-Index giảm 11,12 điểm, tương đương 0,67%, lùi về 1.655,36 điểm.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Độ rộng thị trường thể hiện sự tiêu cực khi sàn HOSE có tới 273 mã giảm, trong khi chỉ 45 mã giữ được sắc xanh.",
+          "evidence_quote": "Độ rộng thị trường thể hiện sự tiêu cực khi sàn HOSE có tới 273 mã giảm, trong khi chỉ 45 mã giữ được sắc xanh.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Thanh khoản cải thiện mạnh với hơn 615,8 triệu đơn vị khớp lệnh, giá trị đạt 17.465 tỷ đồng, tăng lần lượt 46% và 40% so với sáng hôm qua.",
+          "evidence_quote": "Thanh khoản cải thiện mạnh với hơn 615,8 triệu đơn vị khớp lệnh, giá trị đạt 17.465 tỷ đồng, tăng lần lượt 46% và 40% so với sáng hôm qua.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "VRE là cái tên nổi bật khi giữ vững giá trần tại 32.100 đồng/cổ phiếu, khớp gần 14 triệu đơn vị và còn dư mua giá trần hơn 2,8 triệu đơn vị.",
+          "evidence_quote": "VRE là cái tên nổi bật khi giữ vững giá trần tại 32.100 đồng/cổ phiếu, khớp gần 14 triệu đơn vị và còn dư mua giá trần hơn 2,8 triệu đơn vị.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "debt_risk",
+        "governance"
+      ],
+      "event_type": "debt_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Thị trường chứng khoán Việt Nam sáng 30/9 khởi đầu với đôi chút lạc quan từ nhóm cổ phiếu trụ, nhưng áp lực bán gia tăng nhanh chóng về cuối phiên đã kéo chỉ số chung chìm sâu trong sắc đỏ. Đóng cửa phiên sáng 30/9, VN-Index giảm 11,12 điểm, tương đương 0,67%, lùi về 1.655,36 điểm. Độ rộng thị trường thể hiện sự tiêu cực khi sàn HOSE có tới 273 mã giảm, trong khi chỉ 45 mã giữ được sắc xanh. Thanh khoản cải thiện mạnh với hơn 615,8 triệu đơn vị khớp lệnh, giá trị đạt 17.465 tỷ đồng, tăng lần lượ",
+      "url": "https://kinhtechungkhoan.vn/du-co-diem-tua-vingroup-chung-khoan-cuoi-thang-9-van-giam-sau-1405020.html",
+      "content_hash": "ee27ea424252431c303e1aa5d66705a1772280b641973cdfc960ef7130723a3e",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N004",
+      "published_at": "2025-09-30",
+      "source": "kinhtechungkhoan",
+      "title": "vingroup tao dau an dac biet mang nang luong truoc do chua tung co tai viet nam 1404977.html",
+      "article_summary": "Vingroup ghi dấu ấn mới trong hành trình năng lượng với bước đi lần đầu có mặt tại Việt Nam, mở ra tham vọng 80GW và kế hoạch 30 tỷ USD đến 2035. Ngày 29/9/2025 tại Hà Nội, Công ty CP Năng lượng VinEnergo (thuộc Tập đoàn Vingroup) và Trung tâm FIMO (Trường Đại học Công nghệ - Đại học Quốc gia Hà Nội) đã ký biên bản hợp tác chuyển giao bộ dữ liệu đo gió ngoài khơi NASA OSW (Offshore Wind) lần đầu tiên có mặt tại Việt Nam. Đây được xem là bước đi quan trọng trong kế hoạch đầu tư 30 tỷ USD vào năng lượng tái tạo của Vingroup , hướng tới mục tiêu 80GW công suất đến năm 2035 và mở rộng ra thị trường quốc tế.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "vingroup tao dau an dac biet mang nang luong truoc do chua tung co tai viet nam 1404977.html nan Vingroup ghi dấu ấn mới trong hành trình năng lượng với bước đi lần đầu có mặt tại Việt Nam, mở ra tham vọng 80GW và kế hoạch 30 tỷ USD đến 2035.",
+          "evidence_quote": "vingroup tao dau an dac biet mang nang luong truoc do chua tung co tai viet nam 1404977.html nan Vingroup ghi dấu ấn mới trong hành trình năng lượng với bước đi lần đầu có mặt tại Việt Nam, mở ra tham vọng 80GW và kế hoạch 30 tỷ USD đến 203",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Ngày 29/9/2025 tại Hà Nội, Công ty CP Năng lượng VinEnergo (thuộc Tập đoàn Vingroup) và Trung tâm FIMO (Trường Đại học Công nghệ - Đại học Quốc gia Hà Nội) đã ký biên bản hợp tác chuyển giao bộ dữ liệu đo gió ngoài khơi NASA OSW (Offshore Wind) lần đầu tiên có mặt tại Việt Nam.",
+          "evidence_quote": "Ngày 29/9/2025 tại Hà Nội, Công ty CP Năng lượng VinEnergo (thuộc Tập đoàn Vingroup) và Trung tâm FIMO (Trường Đại học Công nghệ - Đại học Quốc gia Hà Nội) đã ký biên bản hợp tác chuyển giao bộ dữ liệu đo gió ngoài khơi NASA OSW (Offshore W",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Đây được xem là bước đi quan trọng trong kế hoạch đầu tư 30 tỷ USD vào năng lượng tái tạo của Vingroup , hướng tới mục tiêu 80GW công suất đến năm 2035 và mở rộng ra thị trường quốc tế.",
+          "evidence_quote": "Đây được xem là bước đi quan trọng trong kế hoạch đầu tư 30 tỷ USD vào năng lượng tái tạo của Vingroup , hướng tới mục tiêu 80GW công suất đến năm 2035 và mở rộng ra thị trường quốc tế.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Nguồn dữ liệu được thu thập trong hơn một thập kỷ bằng radar vệ tinh, bao phủ diện tích hơn 1 triệu km² dọc bờ biển, hải đảo và bãi cạn của Việt Nam.",
+          "evidence_quote": "Nguồn dữ liệu được thu thập trong hơn một thập kỷ bằng radar vệ tinh, bao phủ diện tích hơn 1 triệu km² dọc bờ biển, hải đảo và bãi cạn của Việt Nam.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Kết quả chính thức được công bố giữa năm 2025, lưu trữ theo định dạng chuẩn GeoTIFF.",
+          "evidence_quote": "Kết quả chính thức được công bố giữa năm 2025, lưu trữ theo định dạng chuẩn GeoTIFF.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "debt_risk",
+        "governance"
+      ],
+      "event_type": "debt_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vingroup ghi dấu ấn mới trong hành trình năng lượng với bước đi lần đầu có mặt tại Việt Nam, mở ra tham vọng 80GW và kế hoạch 30 tỷ USD đến 2035. Ngày 29/9/2025 tại Hà Nội, Công ty CP Năng lượng VinEnergo (thuộc Tập đoàn Vingroup) và Trung tâm FIMO (Trường Đại học Công nghệ - Đại học Quốc gia Hà Nội) đã ký biên bản hợp tác chuyển giao bộ dữ liệu đo gió ngoài khơi NASA OSW (Offshore Wind) lần đầu tiên có mặt tại Việt Nam. Đây được xem là bước đi quan trọng trong kế hoạch đầu tư 30 tỷ USD vào năng",
+      "url": "https://kinhtechungkhoan.vn/vingroup-tao-dau-an-dac-biet-mang-nang-luong-truoc-do-chua-tung-co-tai-viet-nam-1404977.html",
+      "content_hash": "d2a8afa80e89ae733f1554deb933ae1f351018a633df735f7abe5b00e8777f21",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N005",
+      "published_at": "2025-09-29",
+      "source": "kinhtechungkhoan",
+      "title": "doi tac cua vingroup masterise novaland rot them von cho du an biet thu sinh thai gan 29 ha 1404790.html",
+      "article_summary": "Đối tác của Vingroup, Masterise, Novaland… vừa công bố kế hoạch tăng vốn để triển khai dự án biệt thự sinh thái gần 29 ha tại Phú Thọ. Ngày 26/9, Hội đồng quản trị Công ty CP Đầu tư và Công nghệ HVC (HOSE: HVH) đã thông qua nghị quyết điều chỉnh tăng vốn góp tại công ty con là Công ty TNHH Đầu tư HVC và Hồ Gươm Hòa Bình (HVC Hòa Bình). HVC Hòa Bình được thành lập năm 2023, trụ sở đặt tại phường Kỳ Sơn, tỉnh Phú Thọ (trước đây thuộc tỉnh Hòa Bình), hoạt động trong lĩnh vực bất động sản .",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "doi tac cua vingroup masterise novaland rot them von cho du an biet thu sinh thai gan 29 ha 1404790.html nan Đối tác của Vingroup, Masterise, Novaland… vừa công bố kế hoạch tăng vốn để triển khai dự án biệt thự sinh thái gần 29 ha tại Phú Thọ.",
+          "evidence_quote": "doi tac cua vingroup masterise novaland rot them von cho du an biet thu sinh thai gan 29 ha 1404790.html nan Đối tác của Vingroup, Masterise, Novaland… vừa công bố kế hoạch tăng vốn để triển khai dự án biệt thự sinh thái gần 29 ha tại Phú T",
+          "fact_type": "capital",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Ngày 26/9, Hội đồng quản trị Công ty CP Đầu tư và Công nghệ HVC (HOSE: HVH) đã thông qua nghị quyết điều chỉnh tăng vốn góp tại công ty con là Công ty TNHH Đầu tư HVC và Hồ Gươm Hòa Bình (HVC Hòa Bình).",
+          "evidence_quote": "Ngày 26/9, Hội đồng quản trị Công ty CP Đầu tư và Công nghệ HVC (HOSE: HVH) đã thông qua nghị quyết điều chỉnh tăng vốn góp tại công ty con là Công ty TNHH Đầu tư HVC và Hồ Gươm Hòa Bình (HVC Hòa Bình).",
+          "fact_type": "capital",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "HVC Hòa Bình được thành lập năm 2023, trụ sở đặt tại phường Kỳ Sơn, tỉnh Phú Thọ (trước đây thuộc tỉnh Hòa Bình), hoạt động trong lĩnh vực bất động sản .",
+          "evidence_quote": "HVC Hòa Bình được thành lập năm 2023, trụ sở đặt tại phường Kỳ Sơn, tỉnh Phú Thọ (trước đây thuộc tỉnh Hòa Bình), hoạt động trong lĩnh vực bất động sản .",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Hiện công ty có vốn điều lệ 150 tỷ đồng, trong đó HVH nắm 70% (105 tỷ đồng) và Công ty CP Tập đoàn Hồ Gươm nắm 30% (45 tỷ đồng).",
+          "evidence_quote": "Hiện công ty có vốn điều lệ 150 tỷ đồng, trong đó HVH nắm 70% (105 tỷ đồng) và Công ty CP Tập đoàn Hồ Gươm nắm 30% (45 tỷ đồng).",
+          "fact_type": "capital",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Theo kế hoạch, HVC Hòa Bình sẽ tăng vốn điều lệ từ 150 tỷ đồng lên 350 tỷ đồng thông qua việc các thành viên góp thêm vốn theo tỷ lệ hiện tại.",
+          "evidence_quote": "Theo kế hoạch, HVC Hòa Bình sẽ tăng vốn điều lệ từ 150 tỷ đồng lên 350 tỷ đồng thông qua việc các thành viên góp thêm vốn theo tỷ lệ hiện tại.",
+          "fact_type": "capital",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "governance"
+      ],
+      "event_type": "debt_risk,capital,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Đối tác của Vingroup, Masterise, Novaland… vừa công bố kế hoạch tăng vốn để triển khai dự án biệt thự sinh thái gần 29 ha tại Phú Thọ. Ngày 26/9, Hội đồng quản trị Công ty CP Đầu tư và Công nghệ HVC (HOSE: HVH) đã thông qua nghị quyết điều chỉnh tăng vốn góp tại công ty con là Công ty TNHH Đầu tư HVC và Hồ Gươm Hòa Bình (HVC Hòa Bình). HVC Hòa Bình được thành lập năm 2023, trụ sở đặt tại phường Kỳ Sơn, tỉnh Phú Thọ (trước đây thuộc tỉnh Hòa Bình), hoạt động trong lĩnh vực bất động sản . Hiện côn",
+      "url": "https://kinhtechungkhoan.vn/doi-tac-cua-vingroup-masterise-novaland-rot-them-von-cho-du-an-biet-thu-sinh-thai-gan-29-ha-1404790.html",
+      "content_hash": "0f765bc11550204dcb39cfc20e4d4b328dfd26c484e8efcfc2ba8aedb983ab05",
+      "extraction_status": "ok"
+    }
+  ],
+  "data_quality_flags": {
+    "news_coverage": "high",
+    "ticker_matching_confidence": "mixed",
+    "full_text_coverage": 5,
+    "summary_coverage": 5,
+    "key_fact_coverage": 5,
+    "missing_fields": []
+  },
+  "guardrails": {
+    "initial_prompt_safe": true,
+    "news_cutoff": "2025-09-30",
+    "not_investment_advice": true,
+    "no_post_decision_data": true,
+    "full_text_excerpt_chars": 500
+  },
+  "provenance": {
+    "name": "initial_evidence",
+    "path": "reports/decision_support/generated/evidence_packs_initial.json",
+    "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+    "zone": "initial",
+    "record_count": 25,
+    "schema_version": "evidence-pack-initial-v1",
+    "generated_at_utc": null,
+    "provenance_status": null
+  }
+}

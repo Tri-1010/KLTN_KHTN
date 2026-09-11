@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "11b64ee6831d5a88",
+    "ticker": "VIC",
+    "article_date": "2025-04-02",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": true,
+    "consensus_direction": "support",
+    "consensus_materiality": "medium",
+    "consensus_event_type": "project",
+    "evidence_span": "mới đây Tập đoàn Vingroup tổ chức lễ khởi công dự án khu đô thị mới Hậu Nghĩa - Đức Hòa tại huyện Đức Hòa, Long An. Dự án được tập đoàn Vingroup gọi tên là Vinhomes Green City",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "none"
+    ],
+    "requires_human_review": false,
+    "review_flags": [
+      "none"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

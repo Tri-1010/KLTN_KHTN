@@ -1,0 +1,26 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "09d75de8414ae409",
+    "ticker": "UNKNOWN",
+    "article_date": "2025-07-14",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": false,
+    "consensus_direction": "neutral",
+    "consensus_materiality": "low",
+    "consensus_event_type": "market",
+    "evidence_span": "bitcoin đã vượt mốc 120.000 USD lần đầu tiên trong lịch sử",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "numeric_score_outlier",
+      "unclear_relevance"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "numeric_score_outlier",
+      "unclear_relevance"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

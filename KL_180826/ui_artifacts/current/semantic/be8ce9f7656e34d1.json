@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "be8ce9f7656e34d1",
+    "ticker": "NVL",
+    "article_date": "2025-04-24",
+    "consensus_method": "unanimous",
+    "agreement_level": "high",
+    "analysis_eligible": true,
+    "consensus_direction": "mixed",
+    "consensus_materiality": "high",
+    "consensus_event_type": "governance",
+    "evidence_span": "Novaland đặt hai phương án (PA) về kế hoạch kinh doanh với doanh thu dự kiến tăng 15 – 48%: PA1 với doanh thu thuần 13.411 tỷ đồng, lỗ sau thuế 12 tỷ đồng và PA2 với doanh thu thuần 10.453 tỷ đồng, lỗ sau thuế 688 tỷ đồng.",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "unclear_direction"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "unclear_direction"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

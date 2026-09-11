@@ -1,0 +1,390 @@
+{
+  "decision_id": "2025Q4_ABB_03",
+  "snapshot_mode": "full_evidence",
+  "ticker": "ABB",
+  "decision_date": "2025-12-31",
+  "period_id": "2025Q4",
+  "holding_horizon": "next_quarter_or_period_return_in_signals",
+  "ml_signal": {
+    "model_name": "technical_Config_A_from_existing_pipeline",
+    "pred_proba_up": 0.9925587966120623,
+    "pred_label": 1,
+    "rank_in_period": 3,
+    "source_signal_class": "Buy Candidate",
+    "display_status": "Model candidate"
+  },
+  "technical_snapshot": {
+    "rsi_end_q": 66.26886472073552,
+    "macd_hist_mean_q": 0.0216105821083708,
+    "price_vs_sma20": 0.028815218911735965,
+    "return_2q_ago": 0.06371191135734072,
+    "return_q": 0.2983230361871139,
+    "return_prev_q": 0.46354166666666674,
+    "volume_change_q": -0.3838155395206998,
+    "return_mean_daily": 0.004301626176972389,
+    "price_range_q": 0.2842016094875053,
+    "sma20_end": 14.298
+  },
+  "top_drivers": [
+    {
+      "feature": "rsi_end_q",
+      "value": 66.26886472073552,
+      "direction": "supports_up_signal",
+      "explanation": "RSI cuối kỳ là driver kỹ thuật quan trọng nhất trong mô hình."
+    },
+    {
+      "feature": "macd_hist_mean_q",
+      "value": 0.0216105821083708,
+      "direction": "supports_up_signal",
+      "explanation": "MACD histogram trung bình phản ánh động lượng xu hướng."
+    },
+    {
+      "feature": "price_vs_sma20",
+      "value": 0.028815218911735965,
+      "direction": "supports_up_signal",
+      "explanation": "Vị trí giá so với SMA20 phản ánh trạng thái trên/dưới đường trung bình."
+    },
+    {
+      "feature": "return_2q_ago",
+      "value": 0.06371191135734072,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trễ hai kỳ phản ánh động lượng/quán tính lịch sử."
+    },
+    {
+      "feature": "return_q",
+      "value": 0.2983230361871139,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trong kỳ hiện tại phản ánh xu hướng gần nhất."
+    },
+    {
+      "feature": "return_prev_q",
+      "value": 0.46354166666666674,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất kỳ trước bổ sung thông tin động lượng."
+    },
+    {
+      "feature": "volume_change_q",
+      "value": -0.3838155395206998,
+      "direction": "weak_or_negative",
+      "explanation": "Thay đổi khối lượng phản ánh mức độ quan tâm của thị trường."
+    },
+    {
+      "feature": "return_mean_daily",
+      "value": 0.004301626176972389,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trung bình ngày phản ánh xu hướng ngắn trong kỳ."
+    },
+    {
+      "feature": "price_range_q",
+      "value": 0.2842016094875053,
+      "direction": "normal",
+      "explanation": "Biên độ giá trong kỳ phản ánh biến động/rủi ro."
+    },
+    {
+      "feature": "sma20_end",
+      "value": 14.298,
+      "direction": "context",
+      "explanation": "SMA20 cuối kỳ phản ánh mặt bằng xu hướng ngắn hạn."
+    }
+  ],
+  "news_evidence": [
+    {
+      "evidence_id": "N001",
+      "published_at": "2025-12-29",
+      "source": "vietstock",
+      "title": "ABBank chốt quyền chào bán cổ phiếu ra công chúng, tăng vốn lên 13,455 tỷ",
+      "article_summary": "ABBank chốt quyền chào bán cổ phiếu ra công chúng, tăng vốn lên 13,455 tỷ Ngày 31/12/2025, Ngân hàng TMCP An Bình (ABBank, UPCoM: ABB ) nhận được giấy chứng nhận đăng ký chào bán thêm cổ phiếu ra công chúng, theo đó tăng vốn điều lệ thêm hơn 3,105 tỷ đồng. Cụ thể, ABBank dự kiến chào bán hơn 310.5 triệu cp với giá 10,000 đồng/cp cho cổ đông hiện hữu. Tỷ lệ thực hiện quyền: 100:30 (cổ đông sở hữu 100 cp tại ngày chốt danh sách được mua thêm 30 cp mới).",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "ABBank chốt quyền chào bán cổ phiếu ra công chúng, tăng vốn lên 13,455 tỷ nan ABBank chốt quyền chào bán cổ phiếu ra công chúng, tăng vốn lên 13,455 tỷ Ngày 31/12/2025, Ngân hàng TMCP An Bình (ABBank, UPCoM: ABB ) nhận được giấy chứng nhận đăng ký chào bán thêm cổ phiếu ra công chúng, theo đó tăng v",
+          "evidence_quote": "ABBank chốt quyền chào bán cổ phiếu ra công chúng, tăng vốn lên 13,455 tỷ nan ABBank chốt quyền chào bán cổ phiếu ra công chúng, tăng vốn lên 13,455 tỷ Ngày 31/12/2025, Ngân hàng TMCP An Bình (ABBank, UPCoM: ABB ) nhận được giấy chứng nhận ",
+          "fact_type": "capital",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Cụ thể, ABBank dự kiến chào bán hơn 310.5 triệu cp với giá 10,000 đồng/cp cho cổ đông hiện hữu.",
+          "evidence_quote": "Cụ thể, ABBank dự kiến chào bán hơn 310.5 triệu cp với giá 10,000 đồng/cp cho cổ đông hiện hữu.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Tỷ lệ thực hiện quyền: 100:30 (cổ đông sở hữu 100 cp tại ngày chốt danh sách được mua thêm 30 cp mới).",
+          "evidence_quote": "Tỷ lệ thực hiện quyền: 100:30 (cổ đông sở hữu 100 cp tại ngày chốt danh sách được mua thêm 30 cp mới).",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Vốn điều lệ dự kiến tăng từ mức 10,350 tỷ đồng lên 13,455 tỷ đồng.",
+          "evidence_quote": "Vốn điều lệ dự kiến tăng từ mức 10,350 tỷ đồng lên 13,455 tỷ đồng.",
+          "fact_type": "capital",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Ngày đăng ký cuối cùng chốt danh sách cổ đông là 15/01.",
+          "evidence_quote": "Ngày đăng ký cuối cùng chốt danh sách cổ đông là 15/01.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "capital_dilution"
+      ],
+      "event_type": "capital,market",
+      "match_confidence": "exact",
+      "evidence_span": "ABBank chốt quyền chào bán cổ phiếu ra công chúng, tăng vốn lên 13,455 tỷ Ngày 31/12/2025, Ngân hàng TMCP An Bình (ABBank, UPCoM: ABB ) nhận được giấy chứng nhận đăng ký chào bán thêm cổ phiếu ra công chúng, theo đó tăng vốn điều lệ thêm hơn 3,105 tỷ đồng. Cụ thể, ABBank dự kiến chào bán hơn 310.5 triệu cp với giá 10,000 đồng/cp cho cổ đông hiện hữu. Tỷ lệ thực hiện quyền: 100:30 (cổ đông sở hữu 100 cp tại ngày chốt danh sách được mua thêm 30 cp mới). Vốn điều lệ dự kiến tăng từ mức 10,350 tỷ đồ",
+      "url": "https://vietstock.vn/2026/01/abbank-chot-quyen-chao-ban-co-phieu-ra-cong-chung-tang-von-len-13455-ty-757-1387399.htm",
+      "content_hash": "65914d80b523789deddfd395725f91de5b8d31977f850cabb35454d02bf7df9d",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N002",
+      "published_at": "2025-12-29",
+      "source": "vietstock",
+      "title": "CBTT về việc đăng ký giao dịch trái phiếu ABB12517 của Ngân hàng TMCP An Bình (ABBANK)",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "CBTT về việc đăng ký giao dịch trái phiếu ABB12517 của Ngân hàng TMCP An Bình (ABBANK) nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHI",
+          "evidence_quote": "CBTT về việc đăng ký giao dịch trái phiếu ABB12517 của Ngân hàng TMCP An Bình (ABBANK) nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến c",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Công ty TNHH Đầu tư Starbay Hà Nội hoàn tất đợt phát hành riêng lẻ lô trái phiếu STA12601 với tổng giá trị 2,780 tỷ đồng.",
+          "evidence_quote": "Công ty TNHH Đầu tư Starbay Hà Nội hoàn tất đợt phát hành riêng lẻ lô trái phiếu STA12601 với tổng giá trị 2,780 tỷ đồng.",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Công ty TNHH Thăng Long hoàn tất đợt chào bán riêng lẻ lô trái phiếu THL12602 với tổng giá trị 763 tỷ đồng.",
+          "evidence_quote": "Công ty TNHH Thăng Long hoàn tất đợt chào bán riêng lẻ lô trái phiếu THL12602 với tổng giá trị 763 tỷ đồng.",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "CTCP Bất động sản Bcons PS (Bcons PS Land, BPSC) mới đây tiếp tục huy động lô trái phiếu mới 140 tỷ đồng, lãi suất 12%/năm.",
+          "evidence_quote": "CTCP Bất động sản Bcons PS (Bcons PS Land, BPSC) mới đây tiếp tục huy động lô trái phiếu mới 140 tỷ đồng, lãi suất 12%/năm.",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Theo thông tin công bố từ Tập đoàn PC1 (HOSE: PC1), Ủy ban Chứng khoán Nhà nước (UBCKNN) đã ra quyết định buộc Doanh nghiệp thu hồi lô trái phiếu trị giá 900 tỷ...",
+          "evidence_quote": "Theo thông tin công bố từ Tập đoàn PC1 (HOSE: PC1), Ủy ban Chứng khoán Nhà nước (UBCKNN) đã ra quyết định buộc Doanh nghiệp thu hồi lô trái phiếu trị giá 900 tỷ...",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2025/12/cbtt-ve-viec-dang-ky-giao-dich-trai-phieu-abb12517-cua-ngan-hang-tmcp-an-binh-abbank-3118-1385881.htm",
+      "content_hash": "f64b0dc86a86139f6afe8922f6bc7b83eda1cd4c43c0d9c3dcfef1368784fddb",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N003",
+      "published_at": "2025-12-26",
+      "source": "cafef",
+      "title": "ABB: Tài liệu họp Đại hội đồng cổ đông",
+      "article_summary": "Tài liệu họp Đại hội đồng cổ đông ABB: Tài liệu họp Đại hội đồng cổ đông Tài liệu họp Đại hội đồng cổ đông",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "ABB: Tài liệu họp Đại hội đồng cổ đông Tài liệu họp Đại hội đồng cổ đông ABB: Tài liệu họp Đại hội đồng cổ đông Tài liệu họp Đại hội đồng cổ đông",
+          "evidence_quote": "ABB: Tài liệu họp Đại hội đồng cổ đông Tài liệu họp Đại hội đồng cổ đông ABB: Tài liệu họp Đại hội đồng cổ đông Tài liệu họp Đại hội đồng cổ đông",
+          "fact_type": "governance",
+          "direction": "neutral",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "governance"
+      ],
+      "event_type": "governance",
+      "match_confidence": "exact",
+      "evidence_span": "ABB: Tài liệu họp Đại hội đồng cổ đông Tài liệu họp Đại hội đồng cổ đông",
+      "url": "https://cafef.vn/du-lieu/ABB-2370034/abb-tai-lieu-hop-dai-hoi-dong-co-dong.chn",
+      "content_hash": "ea017a72520cbe8249e760d0910200334ff7bc29995dc5cec2e1f38570069b57",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N004",
+      "published_at": "2025-12-26",
+      "source": "vietstock",
+      "title": "CBTT về việc đăng ký giao dịch trái phiếu ABB12516 của Ngân hàng TMCP An Bình (ABBANK)",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "CBTT về việc đăng ký giao dịch trái phiếu ABB12516 của Ngân hàng TMCP An Bình (ABBANK) nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHI",
+          "evidence_quote": "CBTT về việc đăng ký giao dịch trái phiếu ABB12516 của Ngân hàng TMCP An Bình (ABBANK) nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến c",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Công ty TNHH Đầu tư Starbay Hà Nội hoàn tất đợt phát hành riêng lẻ lô trái phiếu STA12601 với tổng giá trị 2,780 tỷ đồng.",
+          "evidence_quote": "Công ty TNHH Đầu tư Starbay Hà Nội hoàn tất đợt phát hành riêng lẻ lô trái phiếu STA12601 với tổng giá trị 2,780 tỷ đồng.",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Công ty TNHH Thăng Long hoàn tất đợt chào bán riêng lẻ lô trái phiếu THL12602 với tổng giá trị 763 tỷ đồng.",
+          "evidence_quote": "Công ty TNHH Thăng Long hoàn tất đợt chào bán riêng lẻ lô trái phiếu THL12602 với tổng giá trị 763 tỷ đồng.",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "CTCP Bất động sản Bcons PS (Bcons PS Land, BPSC) mới đây tiếp tục huy động lô trái phiếu mới 140 tỷ đồng, lãi suất 12%/năm.",
+          "evidence_quote": "CTCP Bất động sản Bcons PS (Bcons PS Land, BPSC) mới đây tiếp tục huy động lô trái phiếu mới 140 tỷ đồng, lãi suất 12%/năm.",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Theo thông tin công bố từ Tập đoàn PC1 (HOSE: PC1), Ủy ban Chứng khoán Nhà nước (UBCKNN) đã ra quyết định buộc Doanh nghiệp thu hồi lô trái phiếu trị giá 900 tỷ...",
+          "evidence_quote": "Theo thông tin công bố từ Tập đoàn PC1 (HOSE: PC1), Ủy ban Chứng khoán Nhà nước (UBCKNN) đã ra quyết định buộc Doanh nghiệp thu hồi lô trái phiếu trị giá 900 tỷ...",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2025/12/cbtt-ve-viec-dang-ky-giao-dich-trai-phieu-abb12516-cua-ngan-hang-tmcp-an-binh-abbank-3118-1385892.htm",
+      "content_hash": "c8ee8029ebf158f4f61fdcc4d1f3dbfb3e09703b32e799194477e91fab8c417d",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N005",
+      "published_at": "2025-12-24",
+      "source": "vietstock",
+      "title": "ABB: Tài liệu họp Đại hội đồng cổ đông",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "ABB: Tài liệu họp Đại hội đồng cổ đông nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IP",
+          "evidence_quote": "ABB: Tài liệu họp Đại hội đồng cổ đông nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiế",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Ngày 30/06/2026, CTCP Nhiệt điện Quảng Ninh (UPCoM: QTP) đã tổ chức ĐHĐCĐ bất thường năm 2026 nhằm thông qua việc điều chỉnh dự án nâng cấp, cải tạo hệ thống xử lý...",
+          "evidence_quote": "Ngày 30/06/2026, CTCP Nhiệt điện Quảng Ninh (UPCoM: QTP) đã tổ chức ĐHĐCĐ bất thường năm 2026 nhằm thông qua việc điều chỉnh dự án nâng cấp, cải tạo hệ thống xử lý...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Ngày 30/06, CTCP Tập đoàn Gemadept (HOSE: GMD) và CJ Logistics Hong Kong Holdings Limited đã tổ chức lễ hoàn tất giao dịch, chính thức khép lại các thỏa thuận...",
+          "evidence_quote": "Ngày 30/06, CTCP Tập đoàn Gemadept (HOSE: GMD) và CJ Logistics Hong Kong Holdings Limited đã tổ chức lễ hoàn tất giao dịch, chính thức khép lại các thỏa thuận...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Sáng ngày 02/07, Brand Finance đã công bố Bảng xếp hạng 100 thương hiệu giá trị nhất Việt Nam (Brand Finance Vietnam 100 2026).",
+          "evidence_quote": "Sáng ngày 02/07, Brand Finance đã công bố Bảng xếp hạng 100 thương hiệu giá trị nhất Việt Nam (Brand Finance Vietnam 100 2026).",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Trong báo cáo năm 2025, PNJ giới thiệu Công ty TNHH Một Thành viên Giám Định PNJ (PNJ Laboratory) có “kinh nghiệm tới gần 30 năm trong lĩnh vực dịch vụ giám định đã...",
+          "evidence_quote": "Trong báo cáo năm 2025, PNJ giới thiệu Công ty TNHH Một Thành viên Giám Định PNJ (PNJ Laboratory) có “kinh nghiệm tới gần 30 năm trong lĩnh vực dịch vụ giám định đã...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2025/12/abb-tai-lieu-hop-dai-hoi-dong-co-dong-737-1385147.htm",
+      "content_hash": "85da28b44197bb0b60cfcb30cd9eac083351f20dff72fa66a3710c8216b4c268",
+      "extraction_status": "ok"
+    }
+  ],
+  "data_quality_flags": {
+    "news_coverage": "high",
+    "ticker_matching_confidence": "mixed",
+    "full_text_coverage": 5,
+    "summary_coverage": 5,
+    "key_fact_coverage": 5,
+    "missing_fields": []
+  },
+  "guardrails": {
+    "initial_prompt_safe": true,
+    "news_cutoff": "2025-12-31",
+    "not_investment_advice": true,
+    "no_post_decision_data": true,
+    "full_text_excerpt_chars": 500
+  },
+  "provenance": {
+    "name": "initial_evidence",
+    "path": "reports/decision_support/generated/evidence_packs_initial.json",
+    "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+    "zone": "initial",
+    "record_count": 25,
+    "schema_version": "evidence-pack-initial-v1",
+    "generated_at_utc": null,
+    "provenance_status": null
+  }
+}

@@ -1,0 +1,29 @@
+# Vietnamese Financial Stopwords
+# ================================
+# Custom financial stopwords for VN30 news preprocessing.
+# One stopword per line. Lines starting with # are comments.
+# Edit this file to add/remove stopwords as needed.
+
+công ty
+doanh nghiệp
+cho biết
+theo đó
+được biết
+chia sẻ
+theo ông
+theo bà
+tại đây
+trong đó
+hiện nay
+thời gian
+năm nay
+năm ngoái
+quý này
+tháng này
+ngày hôm nay
+vừa qua
+mới đây
+theo thông tin
+được biết thêm
+cụ thể
+đáng chú ý

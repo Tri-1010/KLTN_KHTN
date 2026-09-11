@@ -1,0 +1,343 @@
+{
+  "decision_id": "2025Q1_VIC_03",
+  "snapshot_mode": "full_evidence",
+  "ticker": "VIC",
+  "decision_date": "2025-03-31",
+  "period_id": "2025Q1",
+  "holding_horizon": "next_quarter_or_period_return_in_signals",
+  "ml_signal": {
+    "model_name": "technical_Config_A_from_existing_pipeline",
+    "pred_proba_up": 0.9981398250260798,
+    "pred_label": 1,
+    "rank_in_period": 3,
+    "source_signal_class": "Buy Candidate",
+    "display_status": "Model candidate"
+  },
+  "technical_snapshot": {
+    "rsi_end_q": 91.10431541618765,
+    "macd_hist_mean_q": 0.1246856309080669,
+    "price_vs_sma20": 0.1354070825910773,
+    "return_2q_ago": 0.01547388781431336,
+    "return_q": 0.4306857424765664,
+    "return_prev_q": -0.04160756501182029,
+    "volume_change_q": 0.8264844950295648,
+    "return_mean_daily": 0.006340964202580277,
+    "price_range_q": 0.44185210651331414,
+    "sma20_end": 25.5415
+  },
+  "top_drivers": [
+    {
+      "feature": "rsi_end_q",
+      "value": 91.10431541618765,
+      "direction": "positive_but_overbought_risk",
+      "explanation": "RSI cuối kỳ là driver kỹ thuật quan trọng nhất trong mô hình."
+    },
+    {
+      "feature": "macd_hist_mean_q",
+      "value": 0.1246856309080669,
+      "direction": "supports_up_signal",
+      "explanation": "MACD histogram trung bình phản ánh động lượng xu hướng."
+    },
+    {
+      "feature": "price_vs_sma20",
+      "value": 0.1354070825910773,
+      "direction": "supports_up_signal",
+      "explanation": "Vị trí giá so với SMA20 phản ánh trạng thái trên/dưới đường trung bình."
+    },
+    {
+      "feature": "return_2q_ago",
+      "value": 0.01547388781431336,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trễ hai kỳ phản ánh động lượng/quán tính lịch sử."
+    },
+    {
+      "feature": "return_q",
+      "value": 0.4306857424765664,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trong kỳ hiện tại phản ánh xu hướng gần nhất."
+    },
+    {
+      "feature": "return_prev_q",
+      "value": -0.04160756501182029,
+      "direction": "weak_or_negative",
+      "explanation": "Lợi suất kỳ trước bổ sung thông tin động lượng."
+    },
+    {
+      "feature": "volume_change_q",
+      "value": 0.8264844950295648,
+      "direction": "supports_up_signal",
+      "explanation": "Thay đổi khối lượng phản ánh mức độ quan tâm của thị trường."
+    },
+    {
+      "feature": "return_mean_daily",
+      "value": 0.006340964202580277,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trung bình ngày phản ánh xu hướng ngắn trong kỳ."
+    },
+    {
+      "feature": "price_range_q",
+      "value": 0.44185210651331414,
+      "direction": "risk_high_volatility",
+      "explanation": "Biên độ giá trong kỳ phản ánh biến động/rủi ro."
+    },
+    {
+      "feature": "sma20_end",
+      "value": 25.5415,
+      "direction": "context",
+      "explanation": "SMA20 cuối kỳ phản ánh mặt bằng xu hướng ngắn hạn."
+    }
+  ],
+  "news_evidence": [
+    {
+      "evidence_id": "N001",
+      "published_at": "2025-03-31",
+      "source": "cafef",
+      "title": "VIC: Giải trình chênh lệch BCTC kiểm toán năm 2024 so với cùng kỳ năm trước",
+      "article_summary": "Tập đoàn Vingroup - Công ty Cổ phần giải trình chênh lệch BCTC kiểm toán năm 2024 so với cùng kỳ năm trước VIC: Giải trình chênh lệch BCTC kiểm toán năm 2024 so với cùng kỳ năm trước Tập đoàn Vingroup - Công ty Cổ phần giải trình chênh lệch BCTC kiểm toán năm 2024 so với cùng kỳ năm trước",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "VIC: Giải trình chênh lệch BCTC kiểm toán năm 2024 so với cùng kỳ năm trước Tập đoàn Vingroup - Công ty Cổ phần giải trình chênh lệch BCTC kiểm toán năm 2024 so với cùng kỳ năm trước VIC: Giải trình chênh lệch BCTC kiểm toán năm 2024 so với cùng kỳ năm trước Tập đoàn Vingroup - Công ty Cổ phần giải ",
+          "evidence_quote": "VIC: Giải trình chênh lệch BCTC kiểm toán năm 2024 so với cùng kỳ năm trước Tập đoàn Vingroup - Công ty Cổ phần giải trình chênh lệch BCTC kiểm toán năm 2024 so với cùng kỳ năm trước VIC: Giải trình chênh lệch BCTC kiểm toán năm 2024 so với",
+          "fact_type": "legal_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "legal_risk"
+      ],
+      "event_type": "legal_risk",
+      "match_confidence": "exact",
+      "evidence_span": "VIC: Giải trình chênh lệch BCTC kiểm toán năm 2024 so với cùng kỳ năm trước Tập đoàn Vingroup - Công ty Cổ phần giải trình chênh lệch BCTC kiểm toán năm 2024 so với cùng kỳ năm trước",
+      "url": "https://cafef.vn/du-lieu/VIC-2161501/vic-giai-trinh-chenh-lech-bctc-kiem-toan-nam-2024-so-voi-cung-ky-nam-truoc.chn",
+      "content_hash": "0f6af9e85d4231589a7c643bf317dfa3942ba22c057104e061113589fde1602c",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N002",
+      "published_at": "2025-03-31",
+      "source": "vietnambiz",
+      "title": "Chủ tịch Vingroup nhận thù lao 0 đồng",
+      "article_summary": "Ngày 31/3, Báo cáo Tài chính hợp nhất kiểm toán của Vingroup công bố chi tiết thù lao của Hội đồng quản trị, Tổng Giám đốc và các thành viên quản lý khác, Ban kiểm soát trong năm 2024. Năm 2024, Chủ tịch Vingroup Phạm Nhật Vượng tiếp tục không nhận thù lao, tương tự năm 2023. Bà Nguyễn Diệu Linh - Phó Chủ tịch Vingroup, cũng không nhận thù lao trong cả hai năm 2024 và 2023.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "Chủ tịch Vingroup nhận thù lao 0 đồng nan Ngày 31/3, Báo cáo Tài chính hợp nhất kiểm toán của Vingroup công bố chi tiết thù lao của Hội đồng quản trị, Tổng Giám đốc và các thành viên quản lý khác, Ban kiểm soát trong năm 2024.",
+          "evidence_quote": "Chủ tịch Vingroup nhận thù lao 0 đồng nan Ngày 31/3, Báo cáo Tài chính hợp nhất kiểm toán của Vingroup công bố chi tiết thù lao của Hội đồng quản trị, Tổng Giám đốc và các thành viên quản lý khác, Ban kiểm soát trong năm 2024.",
+          "fact_type": "legal_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Năm 2024, Chủ tịch Vingroup Phạm Nhật Vượng tiếp tục không nhận thù lao, tương tự năm 2023.",
+          "evidence_quote": "Năm 2024, Chủ tịch Vingroup Phạm Nhật Vượng tiếp tục không nhận thù lao, tương tự năm 2023.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Bà Nguyễn Diệu Linh - Phó Chủ tịch Vingroup, cũng không nhận thù lao trong cả hai năm 2024 và 2023.",
+          "evidence_quote": "Bà Nguyễn Diệu Linh - Phó Chủ tịch Vingroup, cũng không nhận thù lao trong cả hai năm 2024 và 2023.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Năm 2024, tổng thù lao của thành viên Hội đồng quản trị Vingroup hơn 12 tỷ đồng, tăng 4,45% so với 2023.",
+          "evidence_quote": "Năm 2024, tổng thù lao của thành viên Hội đồng quản trị Vingroup hơn 12 tỷ đồng, tăng 4,45% so với 2023.",
+          "fact_type": "governance",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Trong đó, Phó Chủ tịch Nguyễn Việt Quang nhận thù lao cao nhất 2,78 tỷ đồng.",
+          "evidence_quote": "Trong đó, Phó Chủ tịch Nguyễn Việt Quang nhận thù lao cao nhất 2,78 tỷ đồng.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "capital,legal_risk,governance",
+      "match_confidence": "exact",
+      "evidence_span": "Ngày 31/3, Báo cáo Tài chính hợp nhất kiểm toán của Vingroup công bố chi tiết thù lao của Hội đồng quản trị, Tổng Giám đốc và các thành viên quản lý khác, Ban kiểm soát trong năm 2024. Năm 2024, Chủ tịch Vingroup Phạm Nhật Vượng tiếp tục không nhận thù lao, tương tự năm 2023. Bà Nguyễn Diệu Linh - Phó Chủ tịch Vingroup, cũng không nhận thù lao trong cả hai năm 2024 và 2023. Ông Phạm Nhật Vượng - Chủ tịch Vingroup. (Ảnh: Vingroup). Năm 2024, tổng thù lao của thành viên Hội đồng quản trị Vingroup",
+      "url": "https://vietnambiz.vn/chu-tich-vingroup-nhan-thu-lao-0-dong-2025331151841489.htm",
+      "content_hash": "76fafbb3b784b31dd2f2247de05b7f12b762ec8ae7d888d8c9afc087c6e6cefd",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N003",
+      "published_at": "2025-03-31",
+      "source": "kinhtechungkhoan",
+      "title": "ong pham nhat vuong khong nhan thu lao tai vingroup van ho tro hang chuc nghin ty cho vinfast 1364957.html",
+      "article_summary": "Chủ tịch Vingroup Phạm Nhật Vượng tiếp tục rót thêm 8.277 tỷ đồng từ tài sản cá nhân để hỗ trợ VinFast, nâng tổng mức tài trợ lên hơn 27.000 tỷ đồng trong hai năm qua. Tại Vingroup, ông Vượng không nhận thù lao, không bán cổ phiếu VIC và cam kết hỗ trợ VinFast đến “khi hết tiền”. Báo cáo tài chính kiểm toán năm 2024 của Tập đoàn Vingroup - CTCP (HOSE: VIC) vừa công bố cho thấy, Chủ tịch HĐQT Phạm Nhật Vượng tiếp tục mạnh tay rót thêm 8.277 tỷ đồng từ tài sản cá nhân để tài trợ cho VinFast – công ty con chuyên sản xuất ôtô điện.",
+      "key_facts": [],
+      "risk_flags": [
+        "audit_issue",
+        "debt_risk",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Chủ tịch Vingroup Phạm Nhật Vượng tiếp tục rót thêm 8.277 tỷ đồng từ tài sản cá nhân để hỗ trợ VinFast, nâng tổng mức tài trợ lên hơn 27.000 tỷ đồng trong hai năm qua. Tại Vingroup, ông Vượng không nhận thù lao, không bán cổ phiếu VIC và cam kết hỗ trợ VinFast đến “khi hết tiền”. Báo cáo tài chính kiểm toán năm 2024 của Tập đoàn Vingroup - CTCP (HOSE: VIC) vừa công bố cho thấy, Chủ tịch HĐQT Phạm Nhật Vượng tiếp tục mạnh tay rót thêm 8.277 tỷ đồng từ tài sản cá nhân để tài trợ cho VinFast – công",
+      "url": "https://kinhtechungkhoan.vn/ong-pham-nhat-vuong-khong-nhan-thu-lao-tai-vingroup-van-ho-tro-hang-chuc-nghin-ty-cho-vinfast-1364957.html",
+      "content_hash": "9d0c223aed10d33ea90ddb28318551d3500d89b559ec5ebd0fad9976126f4b6e",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N004",
+      "published_at": "2025-03-27",
+      "source": "kinhtechungkhoan",
+      "title": "nha o xa hoi vingroup chot gia hon 20 trieu dong m2 can lon nhat chi 1 4 ty dong 1364263.html",
+      "article_summary": "Vingroup công bố giá bán nhà ở xã hội đầu tiên tại Thanh Hóa, với mức tối đa 20,65 triệu đồng/m2. Hai block nhà cao 9 tầng cung cấp 280 căn hộ, dự kiến bàn giao tháng 11/2025. Tập đoàn Vingroup vừa được Sở Xây dựng tỉnh Thanh Hóa phê duyệt giá bán cho khu nhà ở xã hội tại lô đất NOXH-02 thuộc dự án Khu đô thị trung tâm TP Thanh Hóa (tên thương mại Vinhomes Star City), đặt tại phường Đông Hương và Đông Hải.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "nha o xa hoi vingroup chot gia hon 20 trieu dong m2 can lon nhat chi 1 4 ty dong 1364263.html nan Vingroup công bố giá bán nhà ở xã hội đầu tiên tại Thanh Hóa, với mức tối đa 20,65 triệu đồng/m2.",
+          "evidence_quote": "nha o xa hoi vingroup chot gia hon 20 trieu dong m2 can lon nhat chi 1 4 ty dong 1364263.html nan Vingroup công bố giá bán nhà ở xã hội đầu tiên tại Thanh Hóa, với mức tối đa 20,65 triệu đồng/m2.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Hai block nhà cao 9 tầng cung cấp 280 căn hộ, dự kiến bàn giao tháng 11/2025.",
+          "evidence_quote": "Hai block nhà cao 9 tầng cung cấp 280 căn hộ, dự kiến bàn giao tháng 11/2025.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Tập đoàn Vingroup vừa được Sở Xây dựng tỉnh Thanh Hóa phê duyệt giá bán cho khu nhà ở xã hội tại lô đất NOXH-02 thuộc dự án Khu đô thị trung tâm TP Thanh Hóa (tên thương mại Vinhomes Star City), đặt tại phường Đông Hương và Đông Hải.",
+          "evidence_quote": "Tập đoàn Vingroup vừa được Sở Xây dựng tỉnh Thanh Hóa phê duyệt giá bán cho khu nhà ở xã hội tại lô đất NOXH-02 thuộc dự án Khu đô thị trung tâm TP Thanh Hóa (tên thương mại Vinhomes Star City), đặt tại phường Đông Hương và Đông Hải.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Theo thông tin được công bố, lô NOXH-02 gồm 2 block nhà cao 9 tầng nổi và 1 tầng hầm, tổng cộng 280 căn hộ, trong đó có 223 căn bán và 57 căn cho thuê.",
+          "evidence_quote": "Theo thông tin được công bố, lô NOXH-02 gồm 2 block nhà cao 9 tầng nổi và 1 tầng hầm, tổng cộng 280 căn hộ, trong đó có 223 căn bán và 57 căn cho thuê.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Mức giá bán bình quân tối đa được phê duyệt là 20,65 triệu đồng/m2 (đã bao gồm VAT 5% nhưng chưa bao gồm phí bảo trì).",
+          "evidence_quote": "Mức giá bán bình quân tối đa được phê duyệt là 20,65 triệu đồng/m2 (đã bao gồm VAT 5% nhưng chưa bao gồm phí bảo trì).",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "debt_risk",
+        "governance"
+      ],
+      "event_type": "debt_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vingroup công bố giá bán nhà ở xã hội đầu tiên tại Thanh Hóa, với mức tối đa 20,65 triệu đồng/m2. Hai block nhà cao 9 tầng cung cấp 280 căn hộ, dự kiến bàn giao tháng 11/2025. Tập đoàn Vingroup vừa được Sở Xây dựng tỉnh Thanh Hóa phê duyệt giá bán cho khu nhà ở xã hội tại lô đất NOXH-02 thuộc dự án Khu đô thị trung tâm TP Thanh Hóa (tên thương mại Vinhomes Star City), đặt tại phường Đông Hương và Đông Hải. Đây là dự án nhà ở xã hội đầu tiên của Vingroup chính thức công bố giá bán, đánh dấu bước",
+      "url": "https://kinhtechungkhoan.vn/nha-o-xa-hoi-vingroup-chot-gia-hon-20-trieu-dong-m2-can-lon-nhat-chi-1-4-ty-dong-1364263.html",
+      "content_hash": "59933feaea8def6e298dc10de53e8f4cc2efa2728218cd53bfb1ca955c3875ef",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N005",
+      "published_at": "2025-03-25",
+      "source": "tnck",
+      "title": "Giao dịch chứng khoán phiên sáng 25/3: Nhóm Vingroup duy trì sắc xanh, cổ phiếu ORS được giải cứu",
+      "article_summary": "Trong phiên hôm qua, thị trường rung lắc trong phần lớn thời gian giao dịch khi sắc đỏ chiếm lĩnh bảng điện tử gây áp lực, trong khi cặp đôi lớn nhà Vin là VIC-VHM lại tỏa sáng nâng đỡ. Điểm nhấn đến từ cuối phiên, khi lực cầu hoạt động tích cực đã giúp nhóm VN30 cân bằng hơn, trong khi các cổ phiếu họ Vingroup tiếp tục bay cao, cùng SHB duy trì sức hút đã giúp VN-Index có nhịp tăng hơn 8 điểm và vượt 1.330 điểm khi đóng cửa. Bước sang phiên giao dịch sáng nay 25/3, đà hồi phục tiếp diễn khi sắc xanh trở lại chiếm ưu thế trên bảng điện tử, trong khi các cổ phiếu Vingroup là VIC, VRE, VHM vẫn đang là những mã dẫn đầu mức tăng trong rổ VN30 dù không còn bùng nổ như phiên hôm qua, nhích 2% đến hơn 4%.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "Giao dịch chứng khoán phiên sáng 25/3: Nhóm Vingroup duy trì sắc xanh, cổ phiếu ORS được giải cứu nan Trong phiên hôm qua, thị trường rung lắc trong phần lớn thời gian giao dịch khi sắc đỏ chiếm lĩnh bảng điện tử gây áp lực, trong khi cặp đôi lớn nhà Vin là VIC-VHM lại tỏa sáng nâng đỡ.",
+          "evidence_quote": "Giao dịch chứng khoán phiên sáng 25/3: Nhóm Vingroup duy trì sắc xanh, cổ phiếu ORS được giải cứu nan Trong phiên hôm qua, thị trường rung lắc trong phần lớn thời gian giao dịch khi sắc đỏ chiếm lĩnh bảng điện tử gây áp lực, trong khi cặp đ",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Điểm nhấn đến từ cuối phiên, khi lực cầu hoạt động tích cực đã giúp nhóm VN30 cân bằng hơn, trong khi các cổ phiếu họ Vingroup tiếp tục bay cao, cùng SHB duy trì sức hút đã giúp VN-Index có nhịp tăng hơn 8 điểm và vượt 1.330 điểm khi đóng cửa.",
+          "evidence_quote": "Điểm nhấn đến từ cuối phiên, khi lực cầu hoạt động tích cực đã giúp nhóm VN30 cân bằng hơn, trong khi các cổ phiếu họ Vingroup tiếp tục bay cao, cùng SHB duy trì sức hút đã giúp VN-Index có nhịp tăng hơn 8 điểm và vượt 1.330 điểm khi đóng c",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Bước sang phiên giao dịch sáng nay 25/3, đà hồi phục tiếp diễn khi sắc xanh trở lại chiếm ưu thế trên bảng điện tử, trong khi các cổ phiếu Vingroup là VIC, VRE, VHM vẫn đang là những mã dẫn đầu mức tăng trong rổ VN30 dù không còn bùng nổ như phiên hôm qua, nhích 2% đến hơn 4%.",
+          "evidence_quote": "Bước sang phiên giao dịch sáng nay 25/3, đà hồi phục tiếp diễn khi sắc xanh trở lại chiếm ưu thế trên bảng điện tử, trong khi các cổ phiếu Vingroup là VIC, VRE, VHM vẫn đang là những mã dẫn đầu mức tăng trong rổ VN30 dù không còn bùng nổ nh",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Đáng chú ý khác là cổ phiếu ORS khi đã có tín hiệu được giải cứu trong phiên này, khi lượng bán giá sàn được hấp thụ hết và thậm chí còn tăng điểm nhẹ sau hơn 1 giờ giao dịch nhờ lực cầu bắt đáy tiếp tục gia tăng, khớp lệnh hơn 24 triệu đơn vị.",
+          "evidence_quote": "Đáng chú ý khác là cổ phiếu ORS khi đã có tín hiệu được giải cứu trong phiên này, khi lượng bán giá sàn được hấp thụ hết và thậm chí còn tăng điểm nhẹ sau hơn 1 giờ giao dịch nhờ lực cầu bắt đáy tiếp tục gia tăng, khớp lệnh hơn 24 triệu đơn",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Các cổ phiếu công ty chứng khoán khác dường như cũng được hưởng lợi về mặt tâm lý và đa số cũng tăng với thanh khoản cải thiện, dù đà tăng của nhiều mã vẫn còn khiêm tốn, ngoại trừ VIX khi nhích hơn 3% và đang là mã khớp lệnh cao nhất sàn với hơn 31 triệu đơn vị.",
+          "evidence_quote": "Các cổ phiếu công ty chứng khoán khác dường như cũng được hưởng lợi về mặt tâm lý và đa số cũng tăng với thanh khoản cải thiện, dù đà tăng của nhiều mã vẫn còn khiêm tốn, ngoại trừ VIX khi nhích hơn 3% và đang là mã khớp lệnh cao nhất sàn v",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "governance"
+      ],
+      "event_type": "governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Trong phiên hôm qua, thị trường rung lắc trong phần lớn thời gian giao dịch khi sắc đỏ chiếm lĩnh bảng điện tử gây áp lực, trong khi cặp đôi lớn nhà Vin là VIC-VHM lại tỏa sáng nâng đỡ. Điểm nhấn đến từ cuối phiên, khi lực cầu hoạt động tích cực đã giúp nhóm VN30 cân bằng hơn, trong khi các cổ phiếu họ Vingroup tiếp tục bay cao, cùng SHB duy trì sức hút đã giúp VN-Index có nhịp tăng hơn 8 điểm và vượt 1.330 điểm khi đóng cửa. Bước sang phiên giao dịch sáng nay 25/3, đà hồi phục tiếp diễn khi sắc",
+      "url": "https://www.tinnhanhchungkhoan.vn/giao-dich-chung-khoan-phien-sang-253-nhom-vingroup-duy-tri-sac-xanh-co-phieu-ors-duoc-giai-cuu-post366064.html",
+      "content_hash": "2038c0d28278c1b7b1ca4ba0b5dd55939e06052ff0471225b20e60828ccee75c",
+      "extraction_status": "ok"
+    }
+  ],
+  "data_quality_flags": {
+    "news_coverage": "high",
+    "ticker_matching_confidence": "mixed",
+    "full_text_coverage": 5,
+    "summary_coverage": 5,
+    "key_fact_coverage": 4,
+    "missing_fields": []
+  },
+  "guardrails": {
+    "initial_prompt_safe": true,
+    "news_cutoff": "2025-03-31",
+    "not_investment_advice": true,
+    "no_post_decision_data": true,
+    "full_text_excerpt_chars": 500
+  },
+  "provenance": {
+    "name": "initial_evidence",
+    "path": "reports/decision_support/generated/evidence_packs_initial.json",
+    "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+    "zone": "initial",
+    "record_count": 25,
+    "schema_version": "evidence-pack-initial-v1",
+    "generated_at_utc": null,
+    "provenance_status": null
+  }
+}

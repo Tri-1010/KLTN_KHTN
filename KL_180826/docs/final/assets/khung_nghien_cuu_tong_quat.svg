@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1380" role="img" aria-labelledby="title desc">
+  <title id="title">Khung nghiên cứu EvidenceTrace</title>
+  <desc id="desc">Sơ đồ dọc mô tả dữ liệu point-in-time, ba cấu hình E B C, so sánh ngoài mẫu, bằng chứng ngữ nghĩa, EvidenceTrace và ba vùng thời gian.</desc>
+  <defs>
+    <marker id="arrow-ink" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto"><path d="M0,0 L0,8 L10,4 z" fill="#162A3A"/></marker>
+    <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto"><path d="M0,0 L0,8 L10,4 z" fill="#2E6F95"/></marker>
+    <marker id="arrow-copper" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto"><path d="M0,0 L0,8 L10,4 z" fill="#A44A3F"/></marker>
+    <style>
+      .title { font: 700 27px 'Times New Roman', Times, serif; fill:#162A3A; letter-spacing:.5px; }
+      .subtitle { font: 16px 'Times New Roman', Times, serif; fill:#4D606B; }
+      .lane { font: 700 16px Arial, Helvetica, sans-serif; fill:#162A3A; letter-spacing:1px; }
+      .box-title { font: 700 19px 'Times New Roman', Times, serif; fill:#162A3A; }
+      .box-copy { font: 15px Arial, Helvetica, sans-serif; fill:#40515B; }
+      .code { font: 700 21px Arial, Helvetica, sans-serif; fill:#162A3A; }
+      .micro { font: 13px Arial, Helvetica, sans-serif; fill:#4D606B; }
+      .zone { font: 700 15px Arial, Helvetica, sans-serif; fill:#162A3A; letter-spacing:.3px; }
+      .box { fill:#FFFFFF; stroke:#162A3A; stroke-width:2; }
+      .tech { fill:#EFF7FA; stroke:#2E6F95; stroke-width:2.5; }
+      .semantic { fill:#FFF3EF; stroke:#A44A3F; stroke-width:2.5; }
+      .audit { fill:#F4F7F8; stroke:#607582; stroke-width:2; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="1380" fill="#FFFFFF"/>
+  <rect x="48" y="36" width="904" height="88" fill="#F4F7F8" stroke="#D7E0E5" stroke-width="2"/>
+  <text x="500" y="75" text-anchor="middle" class="title">KHUNG NGHIÊN CỨU VÀ RANH GIỚI THỜI GIAN</text>
+  <text x="500" y="103" text-anchor="middle" class="subtitle">tín hiệu học máy · bằng chứng ngữ nghĩa · hỗ trợ quyết định có truy vết</text>
+
+  <text x="60" y="164" class="lane">1. ĐÁNH GIÁ DỰ BÁO NGOÀI MẪU</text>
+  <line x1="60" y1="177" x2="940" y2="177" stroke="#D7E0E5" stroke-width="2"/>
+
+  <rect x="100" y="204" width="330" height="105" class="box"/>
+  <text x="265" y="240" text-anchor="middle" class="box-title">Dữ liệu khả dụng tại t0</text>
+  <text x="265" y="267" text-anchor="middle" class="box-copy">OHLCV · tin tức đã căn chỉnh</text>
+  <text x="265" y="289" text-anchor="middle" class="box-copy">theo point-in-time</text>
+
+  <rect x="570" y="204" width="330" height="105" class="tech"/>
+  <text x="735" y="240" text-anchor="middle" class="box-title">Đặc trưng chung</text>
+  <text x="735" y="267" text-anchor="middle" class="box-copy">Technical + Coverage</text>
+  <text x="735" y="289" text-anchor="middle" class="micro">giữ cố định giữa E, B và C</text>
+
+  <line x1="430" y1="256" x2="560" y2="256" stroke="#2E6F95" stroke-width="3" marker-end="url(#arrow-blue)"/>
+  <text x="495" y="240" text-anchor="middle" class="micro">căn chỉnh PIT</text>
+
+  <line x1="500" y1="315" x2="500" y2="365" stroke="#162A3A" stroke-width="3" marker-end="url(#arrow-ink)"/>
+  <text x="520" y="346" class="micro">xây cấu hình trên cùng mẫu</text>
+
+  <rect x="100" y="382" width="800" height="130" class="audit"/>
+  <text x="128" y="412" class="micro">CẤU HÌNH SO SÁNH</text>
+  <rect x="140" y="430" width="205" height="58" class="tech"/>
+  <text x="178" y="465" class="code">E</text><text x="210" y="465" class="micro">Technical + Coverage</text>
+  <rect x="397" y="430" width="205" height="58" class="box"/>
+  <text x="435" y="465" class="code">B</text><text x="467" y="465" class="micro">E + Keyword</text>
+  <rect x="654" y="430" width="205" height="58" class="semantic"/>
+  <text x="692" y="465" class="code">C</text><text x="724" y="465" class="micro">E + Semantic</text>
+
+  <line x1="500" y1="522" x2="500" y2="570" stroke="#162A3A" stroke-width="3" marker-end="url(#arrow-ink)"/>
+  <rect x="145" y="584" width="710" height="105" class="audit"/>
+  <text x="500" y="620" text-anchor="middle" class="box-title">Đánh giá ngoài mẫu theo cặp</text>
+  <text x="500" y="647" text-anchor="middle" class="box-copy">expanding folds · purge · train-only transforms</text>
+  <text x="500" y="671" text-anchor="middle" class="box-copy">tiêu chí chính đã khóa · suy luận thống kê theo protocol</text>
+
+  <text x="60" y="748" class="lane">2. BẰNG CHỨNG VÀ NGUYÊN MẪU EVIDENCETRACE</text>
+  <line x1="60" y1="761" x2="940" y2="761" stroke="#D7E0E5" stroke-width="2"/>
+
+  <rect x="84" y="792" width="190" height="116" class="box"/>
+  <text x="179" y="830" text-anchor="middle" class="box-title">Tin tức đã</text>
+  <text x="179" y="854" text-anchor="middle" class="box-title">liên kết mã</text>
+  <text x="179" y="879" text-anchor="middle" class="micro">nguồn · timestamp · ID</text>
+
+  <line x1="274" y1="850" x2="330" y2="850" stroke="#A44A3F" stroke-width="3" marker-end="url(#arrow-copper)"/>
+  <rect x="342" y="792" width="240" height="116" class="semantic"/>
+  <text x="462" y="830" text-anchor="middle" class="box-title">Sự kiện ngữ nghĩa</text>
+  <text x="462" y="856" text-anchor="middle" class="micro">relevance · materiality · event</text>
+  <text x="462" y="878" text-anchor="middle" class="micro">direction · evidence span</text>
+
+  <line x1="582" y1="850" x2="638" y2="850" stroke="#A44A3F" stroke-width="3" marker-end="url(#arrow-copper)"/>
+  <rect x="650" y="792" width="266" height="116" class="audit"/>
+  <text x="783" y="830" text-anchor="middle" class="box-title">EvidenceTrace</text>
+  <text x="783" y="856" text-anchor="middle" class="micro">gói bằng chứng · thẻ quyết định</text>
+  <text x="783" y="878" text-anchor="middle" class="micro">theo dõi · provenance · hậu kiểm</text>
+
+  <text x="60" y="966" class="lane">3. BA VÙNG THỜI GIAN VÀ KIỂM SOÁT RÒ RỈ</text>
+  <line x1="60" y1="979" x2="940" y2="979" stroke="#D7E0E5" stroke-width="2"/>
+
+  <rect x="65" y="1008" width="270" height="177" fill="#EFF7FA" stroke="#2E6F95" stroke-width="2"/>
+  <text x="87" y="1040" class="zone">QUYẾT ĐỊNH BAN ĐẦU · t0</text>
+  <text x="87" y="1070" class="micro">signal · evidence · thẻ ban đầu</text>
+  <text x="87" y="1095" class="micro">chỉ dữ liệu đã khả dụng</text>
+  <text x="87" y="1120" class="micro">không có outcome tương lai</text>
+  <circle cx="103" cy="1151" r="13" fill="#FFFFFF" stroke="#A44A3F" stroke-width="2"/>
+  <line x1="94" y1="1142" x2="112" y2="1160" stroke="#A44A3F" stroke-width="3"/>
+  <text x="127" y="1156" class="micro">outcome bị cấm</text>
+
+  <rect x="365" y="1008" width="270" height="177" fill="#F4F7F8" stroke="#2B7A78" stroke-width="2"/>
+  <text x="387" y="1040" class="zone">THEO DÕI · t0 &lt; t &lt; t_exit</text>
+  <text x="387" y="1070" class="micro">sự kiện sau quyết định</text>
+  <text x="387" y="1095" class="micro">timestamp · nguồn · trigger</text>
+  <text x="387" y="1120" class="micro">không đổi initial state</text>
+
+  <rect x="665" y="1008" width="270" height="177" fill="#FFF3EF" stroke="#A44A3F" stroke-width="2"/>
+  <text x="687" y="1040" class="zone">HẬU KIỂM · t ≥ t_exit</text>
+  <text x="687" y="1070" class="micro">outcome · benchmark · review</text>
+  <text x="687" y="1095" class="micro">chỉ mở sau horizon</text>
+  <text x="687" y="1120" class="micro">không quay lại thẻ ban đầu</text>
+
+  <line x1="335" y1="1098" x2="355" y2="1098" stroke="#2B7A78" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#arrow-ink)"/>
+  <line x1="635" y1="1098" x2="655" y2="1098" stroke="#A44A3F" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#arrow-copper)"/>
+  <path d="M800 1198 L800 1255 L200 1255 L200 1198" fill="none" stroke="#A44A3F" stroke-width="2.5" stroke-dasharray="8 6"/>
+  <line x1="186" y1="1242" x2="214" y2="1270" stroke="#A44A3F" stroke-width="4"/>
+  <line x1="214" y1="1242" x2="186" y2="1270" stroke="#A44A3F" stroke-width="4"/>
+  <text x="500" y="1287" text-anchor="middle" class="micro">Không có luồng outcome quay lại quyết định ban đầu.</text>
+
+  <line x1="90" y1="1335" x2="125" y2="1335" stroke="#162A3A" stroke-width="3" marker-end="url(#arrow-ink)"/>
+  <text x="140" y="1340" class="micro">luồng dữ liệu/bằng chứng được phép</text>
+  <line x1="560" y1="1335" x2="595" y2="1335" stroke="#162A3A" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#arrow-ink)"/>
+  <text x="610" y="1340" class="micro">tiến trình thời gian hoặc audit-only</text>
+</svg>

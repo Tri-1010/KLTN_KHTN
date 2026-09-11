@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "a25a3dff25b23e69",
+    "ticker": "HSG",
+    "article_date": "2024-03-20",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": true,
+    "consensus_direction": "support",
+    "consensus_materiality": "high",
+    "consensus_event_type": "earnings",
+    "evidence_span": "Đối với kịch bản thận trọng, HSG đặt kế hoạch lợi nhuận ròng năm 2024 đặt ở mức 400 tỷ đồng, tăng 13 lần so với cùng kỳ.",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "none"
+    ],
+    "requires_human_review": false,
+    "review_flags": [
+      "none"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

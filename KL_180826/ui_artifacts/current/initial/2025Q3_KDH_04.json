@@ -1,0 +1,321 @@
+{
+  "decision_id": "2025Q3_KDH_04",
+  "snapshot_mode": "full_evidence",
+  "ticker": "KDH",
+  "decision_date": "2025-09-30",
+  "period_id": "2025Q3",
+  "holding_horizon": "next_quarter_or_period_return_in_signals",
+  "ml_signal": {
+    "model_name": "technical_Config_A_from_existing_pipeline",
+    "pred_proba_up": 0.9921091193919478,
+    "pred_label": 1,
+    "rank_in_period": 4,
+    "source_signal_class": "Buy Candidate",
+    "display_status": "Model candidate"
+  },
+  "technical_snapshot": {
+    "rsi_end_q": 48.196812458907225,
+    "macd_hist_mean_q": 0.009544549665859284,
+    "price_vs_sma20": -0.022061482820976575,
+    "return_2q_ago": -0.07230046948356804,
+    "return_q": 0.26260739633918556,
+    "return_prev_q": -0.09817813765182186,
+    "volume_change_q": 1.0518421006643062,
+    "return_mean_daily": 0.003959400016418273,
+    "price_range_q": 0.3684509915458701,
+    "sma20_end": 34.5625
+  },
+  "top_drivers": [
+    {
+      "feature": "rsi_end_q",
+      "value": 48.196812458907225,
+      "direction": "weak_or_neutral",
+      "explanation": "RSI cuối kỳ là driver kỹ thuật quan trọng nhất trong mô hình."
+    },
+    {
+      "feature": "macd_hist_mean_q",
+      "value": 0.009544549665859284,
+      "direction": "supports_up_signal",
+      "explanation": "MACD histogram trung bình phản ánh động lượng xu hướng."
+    },
+    {
+      "feature": "price_vs_sma20",
+      "value": -0.022061482820976575,
+      "direction": "weak_or_negative",
+      "explanation": "Vị trí giá so với SMA20 phản ánh trạng thái trên/dưới đường trung bình."
+    },
+    {
+      "feature": "return_2q_ago",
+      "value": -0.07230046948356804,
+      "direction": "weak_or_negative",
+      "explanation": "Lợi suất trễ hai kỳ phản ánh động lượng/quán tính lịch sử."
+    },
+    {
+      "feature": "return_q",
+      "value": 0.26260739633918556,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trong kỳ hiện tại phản ánh xu hướng gần nhất."
+    },
+    {
+      "feature": "return_prev_q",
+      "value": -0.09817813765182186,
+      "direction": "weak_or_negative",
+      "explanation": "Lợi suất kỳ trước bổ sung thông tin động lượng."
+    },
+    {
+      "feature": "volume_change_q",
+      "value": 1.0518421006643062,
+      "direction": "supports_up_signal",
+      "explanation": "Thay đổi khối lượng phản ánh mức độ quan tâm của thị trường."
+    },
+    {
+      "feature": "return_mean_daily",
+      "value": 0.003959400016418273,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trung bình ngày phản ánh xu hướng ngắn trong kỳ."
+    },
+    {
+      "feature": "price_range_q",
+      "value": 0.3684509915458701,
+      "direction": "risk_high_volatility",
+      "explanation": "Biên độ giá trong kỳ phản ánh biến động/rủi ro."
+    },
+    {
+      "feature": "sma20_end",
+      "value": 34.5625,
+      "direction": "context",
+      "explanation": "SMA20 cuối kỳ phản ánh mặt bằng xu hướng ngắn hạn."
+    }
+  ],
+  "news_evidence": [
+    {
+      "evidence_id": "N001",
+      "published_at": "2025-09-30",
+      "source": "kinhtechungkhoan",
+      "title": "khoi ngoai lai giao dich kem tich cuc tam diem kdh cung hpg 1405056.html",
+      "article_summary": "Khối ngoại bán ròng 1.268 tỷ đồng phiên cuối tháng 9, KDH và HPG bị xả mạnh, trong khi CII và SHB là điểm sáng được gom mạnh. Phiên giao dịch cuối cùng tháng 9/2025 khép lại trong trạng thái giằng co, VN-Index giảm nhẹ gần 5 điểm, dừng tại 1.661,7 điểm. Thanh khoản vẫn duy trì ở mức cao với giá trị khớp lệnh trên HoSE đạt 29.155 tỷ đồng, tăng so với khoảng 23.380 tỷ đồng của phiên 29/9, cho thấy dòng tiền trong nước vẫn khá sôi động dù chỉ số suy yếu.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "khoi ngoai lai giao dich kem tich cuc tam diem kdh cung hpg 1405056.html nan Khối ngoại bán ròng 1.268 tỷ đồng phiên cuối tháng 9, KDH và HPG bị xả mạnh, trong khi CII và SHB là điểm sáng được gom mạnh.",
+          "evidence_quote": "khoi ngoai lai giao dich kem tich cuc tam diem kdh cung hpg 1405056.html nan Khối ngoại bán ròng 1.268 tỷ đồng phiên cuối tháng 9, KDH và HPG bị xả mạnh, trong khi CII và SHB là điểm sáng được gom mạnh.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Phiên giao dịch cuối cùng tháng 9/2025 khép lại trong trạng thái giằng co, VN-Index giảm nhẹ gần 5 điểm, dừng tại 1.661,7 điểm.",
+          "evidence_quote": "Phiên giao dịch cuối cùng tháng 9/2025 khép lại trong trạng thái giằng co, VN-Index giảm nhẹ gần 5 điểm, dừng tại 1.661,7 điểm.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Thanh khoản vẫn duy trì ở mức cao với giá trị khớp lệnh trên HoSE đạt 29.155 tỷ đồng, tăng so với khoảng 23.380 tỷ đồng của phiên 29/9, cho thấy dòng tiền trong nước vẫn khá sôi động dù chỉ số suy yếu.",
+          "evidence_quote": "Thanh khoản vẫn duy trì ở mức cao với giá trị khớp lệnh trên HoSE đạt 29.155 tỷ đồng, tăng so với khoảng 23.380 tỷ đồng của phiên 29/9, cho thấy dòng tiền trong nước vẫn khá sôi động dù chỉ số suy yếu.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Tuy nhiên, điểm trừ lớn tiếp tục đến từ khối ngoại khi nhóm này bán ròng 1.268 tỷ đồng trên toàn thị trường.",
+          "evidence_quote": "Tuy nhiên, điểm trừ lớn tiếp tục đến từ khối ngoại khi nhóm này bán ròng 1.268 tỷ đồng trên toàn thị trường.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Trên HoSE, khối ngoại bán ròng 1.280 tỷ đồng, cao hơn mức 749 tỷ đồng của phiên 29/9.",
+          "evidence_quote": "Trên HoSE, khối ngoại bán ròng 1.280 tỷ đồng, cao hơn mức 749 tỷ đồng của phiên 29/9.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "debt_risk",
+        "governance"
+      ],
+      "event_type": "debt_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Khối ngoại bán ròng 1.268 tỷ đồng phiên cuối tháng 9, KDH và HPG bị xả mạnh, trong khi CII và SHB là điểm sáng được gom mạnh. Phiên giao dịch cuối cùng tháng 9/2025 khép lại trong trạng thái giằng co, VN-Index giảm nhẹ gần 5 điểm, dừng tại 1.661,7 điểm. Thanh khoản vẫn duy trì ở mức cao với giá trị khớp lệnh trên HoSE đạt 29.155 tỷ đồng, tăng so với khoảng 23.380 tỷ đồng của phiên 29/9, cho thấy dòng tiền trong nước vẫn khá sôi động dù chỉ số suy yếu. Tuy nhiên, điểm trừ lớn tiếp tục đến từ khối",
+      "url": "https://kinhtechungkhoan.vn/khoi-ngoai-lai-giao-dich-kem-tich-cuc-tam-diem-kdh-cung-hpg-1405056.html",
+      "content_hash": "f9af03323a011256497d18d5ec9267edc99b248255f121fc8ff2b078cd5c3266",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N002",
+      "published_at": "2025-09-29",
+      "source": "vietstock",
+      "title": "KDH: Báo cáo kết quả giao dịch cổ phiếu của tổ chức có liên quan đến Người nội bộ Vietnam Investment Limited",
+      "article_summary": "KDH: Báo cáo kết quả giao dịch cổ phiếu của tổ chức có liên quan đến Người nội bộ Vietnam Investment Limited Vietnam Investment Limited báo cáo kết quả giao dịch cổ phiếu của tổ chức có liên quan đến Người nội bộ Công ty Cổ phần Đầu tư và Kinh doanh nhà Khang Điền như sau: Vietnam Investment Limited báo cáo kết quả giao dịch cổ phiếu của tổ chức có liên quan đến Người nội bộ Công ty Cổ phần Đầu tư và Kinh doanh nhà Khang Điền như sau: KDH: Báo cáo kết quả giao dịch cổ phiếu của tổ chức có liên quan đến Người nội bộ Vietnam Investment Limited",
+      "key_facts": [],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "exact",
+      "evidence_span": "KDH: Báo cáo kết quả giao dịch cổ phiếu của tổ chức có liên quan đến Người nội bộ Vietnam Investment Limited Vietnam Investment Limited báo cáo kết quả giao dịch cổ phiếu của tổ chức có liên quan đến Người nội bộ Công ty Cổ phần Đầu tư và Kinh doanh nhà Khang Điền như sau: Vietnam Investment Limited báo cáo kết quả giao dịch cổ phiếu của tổ chức có liên quan đến Người nội bộ Công ty Cổ phần Đầu tư và Kinh doanh nhà Khang Điền như sau: KDH: Báo cáo kết quả giao dịch cổ phiếu của tổ chức có liên q",
+      "url": "https://vietstock.vn/2025/10/kdh-bao-cao-ket-qua-giao-dich-co-phieu-cua-to-chuc-co-lien-quan-den-nguoi-noi-bo-vietnam-investment-limited-739-1357492.htm",
+      "content_hash": "060a4dd3dde35bd3988c0d6915d0525eecdc9f7480207dcae483ae29f8a04eaa",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N003",
+      "published_at": "2025-09-26",
+      "source": "vietstock",
+      "title": "Lãnh đạo mua bán cổ phiếu: Hai quỹ lớn muốn thoái vốn tại KDH và OPC",
+      "article_summary": "Lãnh đạo mua bán cổ phiếu: Hai quỹ lớn muốn thoái vốn tại KDH và OPC Thị trường chứng khoán tuần từ 22–26/9/2025 ghi nhận loạt giao dịch cổ phiếu đáng chú ý của lãnh đạo và người thân. Từ thương vụ gom 8 triệu cp của Phó Chủ tịch PC1 đến động thái muốn thoái vốn hàng trăm tỷ đồng của các quỹ lớn. Phó Chủ tịch PC1 hoàn tất gom 8 triệu cp Ngày 22/9, Phó Chủ tịch HĐQT Tập đoàn PC1 ( HOSE : PC1 ) - ông Phan Ngọc Hiếu báo cáo đã hoàn tất mua 8 triệu cp tại Doanh nghiệp như đăng ký.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "Lãnh đạo mua bán cổ phiếu: Hai quỹ lớn muốn thoái vốn tại KDH và OPC nan Lãnh đạo mua bán cổ phiếu: Hai quỹ lớn muốn thoái vốn tại KDH và OPC Thị trường chứng khoán tuần từ 22–26/9/2025 ghi nhận loạt giao dịch cổ phiếu đáng chú ý của lãnh đạo và người thân.",
+          "evidence_quote": "Lãnh đạo mua bán cổ phiếu: Hai quỹ lớn muốn thoái vốn tại KDH và OPC nan Lãnh đạo mua bán cổ phiếu: Hai quỹ lớn muốn thoái vốn tại KDH và OPC Thị trường chứng khoán tuần từ 22–26/9/2025 ghi nhận loạt giao dịch cổ phiếu đáng chú ý của lãnh đ",
+          "fact_type": "governance",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Từ thương vụ gom 8 triệu cp của Phó Chủ tịch PC1 đến động thái muốn thoái vốn hàng trăm tỷ đồng của các quỹ lớn.",
+          "evidence_quote": "Từ thương vụ gom 8 triệu cp của Phó Chủ tịch PC1 đến động thái muốn thoái vốn hàng trăm tỷ đồng của các quỹ lớn.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Phó Chủ tịch PC1 hoàn tất gom 8 triệu cp Ngày 22/9, Phó Chủ tịch HĐQT Tập đoàn PC1 ( HOSE : PC1 ) - ông Phan Ngọc Hiếu báo cáo đã hoàn tất mua 8 triệu cp tại Doanh nghiệp như đăng ký.",
+          "evidence_quote": "Phó Chủ tịch PC1 hoàn tất gom 8 triệu cp Ngày 22/9, Phó Chủ tịch HĐQT Tập đoàn PC1 ( HOSE : PC1 ) - ông Phan Ngọc Hiếu báo cáo đã hoàn tất mua 8 triệu cp tại Doanh nghiệp như đăng ký.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Qua đó, nâng tỷ lệ sở hữu tại Tập đoàn PC1 từ 0% lên mức 2.24%.",
+          "evidence_quote": "Qua đó, nâng tỷ lệ sở hữu tại Tập đoàn PC1 từ 0% lên mức 2.24%.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Thương vụ được vị lãnh đạo Công ty thực hiện theo hình thức thỏa thuận trong các ngày 16/9 và 18/9.",
+          "evidence_quote": "Thương vụ được vị lãnh đạo Công ty thực hiện theo hình thức thỏa thuận trong các ngày 16/9 và 18/9.",
+          "fact_type": "governance",
+          "direction": "neutral",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "governance"
+      ],
+      "event_type": "governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Lãnh đạo mua bán cổ phiếu: Hai quỹ lớn muốn thoái vốn tại KDH và OPC Thị trường chứng khoán tuần từ 22–26/9/2025 ghi nhận loạt giao dịch cổ phiếu đáng chú ý của lãnh đạo và người thân. Từ thương vụ gom 8 triệu cp của Phó Chủ tịch PC1 đến động thái muốn thoái vốn hàng trăm tỷ đồng của các quỹ lớn. Phó Chủ tịch PC1 hoàn tất gom 8 triệu cp Ngày 22/9, Phó Chủ tịch HĐQT Tập đoàn PC1 ( HOSE : PC1 ) - ông Phan Ngọc Hiếu báo cáo đã hoàn tất mua 8 triệu cp tại Doanh nghiệp như đăng ký. Qua đó, nâng tỷ lệ",
+      "url": "https://vietstock.vn/2025/09/lanh-dao-mua-ban-co-phieu-hai-quy-lon-muon-thoai-von-tai-kdh-va-opc-739-1356399.htm",
+      "content_hash": "76c50d6df49f26a65d4494705cd828d2861f8ab95dccf825021fc4bc7f958e77",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N004",
+      "published_at": "2025-09-25",
+      "source": "vietstock",
+      "title": "Quỹ thuộc VinaCapital đăng ký bán hơn 9 triệu cp KDH",
+      "article_summary": "Quỹ thuộc VinaCapital đăng ký bán hơn 9 triệu cp KDH Vietnam Investment Limited - một quỹ thuộc VinaCapital - đăng ký bán gần 9.3 triệu cp của CTCP Đầu tư và Kinh doanh Nhà Khang Điền ( HOSE : KDH ) trong thời gian từ 30/09-29/10 nhằm cơ cấu danh mục đầu tư. Nếu giao dịch diễn ra thành công, tỷ lệ sở hữu của Vietnam Investment Limited tại KDH sẽ giảm từ 1.189% xuống còn 0.361%, tương đương hơn 4 triệu cp. Chiếu theo giá mở cửa phiên 26/09 (33,650 đồng/cp), ước tính giá trị giao dịch gần 313 tỷ đồng.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "Quỹ thuộc VinaCapital đăng ký bán hơn 9 triệu cp KDH nan Quỹ thuộc VinaCapital đăng ký bán hơn 9 triệu cp KDH Vietnam Investment Limited - một quỹ thuộc VinaCapital - đăng ký bán gần 9.3 triệu cp của CTCP Đầu tư và Kinh doanh Nhà Khang Điền ( HOSE : KDH ) trong thời gian từ 30/09-29/10 nhằm cơ cấu d",
+          "evidence_quote": "Quỹ thuộc VinaCapital đăng ký bán hơn 9 triệu cp KDH nan Quỹ thuộc VinaCapital đăng ký bán hơn 9 triệu cp KDH Vietnam Investment Limited - một quỹ thuộc VinaCapital - đăng ký bán gần 9.3 triệu cp của CTCP Đầu tư và Kinh doanh Nhà Khang Điền",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Nếu giao dịch diễn ra thành công, tỷ lệ sở hữu của Vietnam Investment Limited tại KDH sẽ giảm từ 1.189% xuống còn 0.361%, tương đương hơn 4 triệu cp.",
+          "evidence_quote": "Nếu giao dịch diễn ra thành công, tỷ lệ sở hữu của Vietnam Investment Limited tại KDH sẽ giảm từ 1.189% xuống còn 0.361%, tương đương hơn 4 triệu cp.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Chiếu theo giá mở cửa phiên 26/09 (33,650 đồng/cp), ước tính giá trị giao dịch gần 313 tỷ đồng.",
+          "evidence_quote": "Chiếu theo giá mở cửa phiên 26/09 (33,650 đồng/cp), ước tính giá trị giao dịch gần 313 tỷ đồng.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Trước đó, trong thời gian từ 12/08-10/09, một quỹ khác thuộc VinaCapital là Quỹ đầu tư Cổ phiếu Hưng Thịnh VinaCapital tuy đăng ký mua vào 850,000 cp nhưng không thực hiện bất kỳ giao dịch nào với lý do diễn biến thị trường chưa phù hợp.",
+          "evidence_quote": "Trước đó, trong thời gian từ 12/08-10/09, một quỹ khác thuộc VinaCapital là Quỹ đầu tư Cổ phiếu Hưng Thịnh VinaCapital tuy đăng ký mua vào 850,000 cp nhưng không thực hiện bất kỳ giao dịch nào với lý do diễn biến thị trường chưa phù hợp.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Theo đó, quỹ này vẫn giữ nguyên số cổ phiếu nắm giữ 616,410 cp (tỷ lệ 0.0549%).",
+          "evidence_quote": "Theo đó, quỹ này vẫn giữ nguyên số cổ phiếu nắm giữ 616,410 cp (tỷ lệ 0.0549%).",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [],
+      "event_type": "market",
+      "match_confidence": "exact",
+      "evidence_span": "Quỹ thuộc VinaCapital đăng ký bán hơn 9 triệu cp KDH Vietnam Investment Limited - một quỹ thuộc VinaCapital - đăng ký bán gần 9.3 triệu cp của CTCP Đầu tư và Kinh doanh Nhà Khang Điền ( HOSE : KDH ) trong thời gian từ 30/09-29/10 nhằm cơ cấu danh mục đầu tư. Nếu giao dịch diễn ra thành công, tỷ lệ sở hữu của Vietnam Investment Limited tại KDH sẽ giảm từ 1.189% xuống còn 0.361%, tương đương hơn 4 triệu cp. Chiếu theo giá mở cửa phiên 26/09 (33,650 đồng/cp), ước tính giá trị giao dịch gần 313 tỷ đ",
+      "url": "https://vietstock.vn/2025/09/quy-thuoc-vinacapital-dang-ky-ban-hon-9-trieu-cp-kdh-739-1355850.htm",
+      "content_hash": "a3348b6b129f79a5965da6b6549ab75b47472507c5e020b837fc8ca75a8bf248",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N005",
+      "published_at": "2025-09-11",
+      "source": "vietstock",
+      "title": "KDH: Thông báo giao dịch cổ phiếu của tổ chức có liên quan đến người nội bộ Vietnam Investment Limited",
+      "article_summary": "KDH: Thông báo giao dịch cổ phiếu của tổ chức có liên quan đến người nội bộ Vietnam Investment Limited Vietnam Investment Limited thông báo giao dịch cổ phiếu của tổ chức có liên quan đến người nội bộ Công ty Cổ phần Đầu tư và Kinh doanh nhà Khang Điền như sau: Vietnam Investment Limited thông báo giao dịch cổ phiếu của tổ chức có liên quan đến người nội bộ Công ty Cổ phần Đầu tư và Kinh doanh nhà Khang Điền như sau: KDH: Thông báo giao dịch cổ phiếu của tổ chức có liên quan đến người nội bộ Vietnam Investment Limited",
+      "key_facts": [],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "exact",
+      "evidence_span": "KDH: Thông báo giao dịch cổ phiếu của tổ chức có liên quan đến người nội bộ Vietnam Investment Limited Vietnam Investment Limited thông báo giao dịch cổ phiếu của tổ chức có liên quan đến người nội bộ Công ty Cổ phần Đầu tư và Kinh doanh nhà Khang Điền như sau: Vietnam Investment Limited thông báo giao dịch cổ phiếu của tổ chức có liên quan đến người nội bộ Công ty Cổ phần Đầu tư và Kinh doanh nhà Khang Điền như sau: KDH: Thông báo giao dịch cổ phiếu của tổ chức có liên quan đến người nội bộ Vie",
+      "url": "https://vietstock.vn/2025/09/kdh-thong-bao-giao-dich-co-phieu-cua-to-chuc-co-lien-quan-den-nguoi-noi-bo-vietnam-investment-limited-739-1355539.htm",
+      "content_hash": "40f2b9a81b1d1f5f66971092a2ccf80289b7567fa63af73c4ada66820903c1ae",
+      "extraction_status": "ok"
+    }
+  ],
+  "data_quality_flags": {
+    "news_coverage": "high",
+    "ticker_matching_confidence": "mixed",
+    "full_text_coverage": 5,
+    "summary_coverage": 5,
+    "key_fact_coverage": 3,
+    "missing_fields": []
+  },
+  "guardrails": {
+    "initial_prompt_safe": true,
+    "news_cutoff": "2025-09-30",
+    "not_investment_advice": true,
+    "no_post_decision_data": true,
+    "full_text_excerpt_chars": 500
+  },
+  "provenance": {
+    "name": "initial_evidence",
+    "path": "reports/decision_support/generated/evidence_packs_initial.json",
+    "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+    "zone": "initial",
+    "record_count": 25,
+    "schema_version": "evidence-pack-initial-v1",
+    "generated_at_utc": null,
+    "provenance_status": null
+  }
+}

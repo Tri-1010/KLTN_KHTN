@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "b5c5faadc54a7529",
+    "ticker": "SHB",
+    "article_date": "2026-03-02",
+    "consensus_method": "unanimous",
+    "agreement_level": "high",
+    "analysis_eligible": true,
+    "consensus_direction": "support",
+    "consensus_materiality": "high",
+    "consensus_event_type": "capital",
+    "evidence_span": "SHB được chấp thuận tăng vốn điều lệ lên 53,442 tỷ đồng",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "data_quality_issue"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "data_quality_issue"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

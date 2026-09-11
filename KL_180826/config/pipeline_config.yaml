@@ -1,0 +1,199 @@
+# VN30 + HOSE80 Stock Prediction Pipeline Configuration
+# ======================================================
+#
+# Ticker expansion criteria (adopted 2026-06-29):
+#   1. Listed on HOSE only (HNX/UPCoM excluded — lower news coverage)
+#   2. Average daily trading value >= 50 billion VND (last 6 months)
+#      This equals approximately P25(VN30) / 4, ensuring sufficient liquidity
+#      for prices to incorporate information efficiently.
+#   3. Market capitalisation >= 2,000 billion VND
+#      (P25 of mid-cap HOSE universe; large enough to receive regular media
+#      coverage by major Vietnamese financial outlets)
+#   4. Continuously listed since before 2022-01-01
+#      (ensures a full time-series for the research period)
+#   5. Excludes: covered warrants, ETFs, stocks under ST/warning status
+#
+# Original VN30 constituents: 30 tickers
+# Added HOSE-80 expansion:    50 tickers
+# Total:                       80 tickers
+
+tickers:
+  # --- VN30 (original 30 constituents) ---
+  - ACB
+  - BCM
+  - BID
+  - BVH
+  - CTG
+  - FPT
+  - GAS
+  - GVR
+  - HDB
+  - HPG
+  - MBB
+  - MSN
+  - MWG
+  - PLX
+  - POW
+  - SAB
+  - SHB
+  - SSB
+  - SSI
+  - STB
+  - TCB
+  - TPB
+  - VCB
+  - VHM
+  - VIB
+  - VIC
+  - VJC
+  - VNM
+  - VPB
+  - VRE
+
+  # --- HOSE-80 expansion (50 tickers added 2026-06-29) ---
+
+  # Banking & Finance (11)
+  - EIB   # Eximbank
+  - LPB   # LienVietPostBank
+  - MSB   # Maritime Bank
+  - NAB   # Nam A Bank
+  - OCB   # Orient Commercial Bank
+  - PGB   # PG Bank
+  - VBB   # Viet Capital Bank
+  - BVB   # Viet Capital Bank (alternate)
+  - ABB   # An Binh Bank
+  - KLB   # Kien Long Bank
+  - BAB   # Bac A Bank
+
+  # Securities (5)
+  - VCI   # Viet Capital Securities
+  - HCM   # Ho Chi Minh Securities (HSC)
+  - VND   # VNDirect
+  - MBS   # MB Securities
+  - BSI   # BSC Securities (BIDV)
+
+  # Real Estate (9)
+  - KDH   # Khang Dien House
+  - NVL   # NovaLand
+  - DXG   # Dat Xanh Group
+  - PDR   # Phat Dat Real Estate
+  - NLG   # Nam Long Real Estate
+  - DIG   # DIC Corp
+  - HDG   # Ha Do Group
+  - VCG   # Vinaconex
+  - SCR   # Sacomreal
+
+  # Industrial / Manufacturing (8)
+  - HSG   # Hoa Sen Group (steel)
+  - NKG   # Nam Kim Steel
+  - VGC   # Viglacera (ceramics/glass)
+  - PHR   # Phuoc Hoa Rubber
+  - CSV   # Southern Rubber Industry
+  - DPM   # PetroVietnam Fertilizer
+  - DCM   # Can Tho Fertilizer
+  - BMP   # Binh Minh Plastics
+
+  # Energy & Utilities (5)
+  - REE   # Refrigeration Electrical Engineering
+  - NT2   # PetroVietnam Power Nhon Trach 2
+  - PPC   # Pha Lai Thermal Power
+  - GEX   # Gelex Group
+  - EVF   # EVN Finance
+
+  # Consumer / Retail (6)
+  - PNJ   # PNJ Gold & Gems
+  - DGW   # Digiworld
+  - FRT   # FPT Retail
+  - MCH   # Masan Consumer Holdings
+  - VHC   # Vinh Hoan (seafood)
+  - ANV   # Nam Viet Corp (seafood)
+
+  # Technology / Telecom (2)
+  - CMG   # CMC Technology Group
+  - ELC   # Electrics of Vietnam
+
+  # Transport / Logistics (4)
+  - GMD   # Gemadept (logistics/port)
+  - VSC   # Vietnam Container Shipping
+  - PVT   # PetroVietnam Transportation
+  - HAH   # Hai An Transport & Stevedoring
+
+# Date range for data collection
+start_date: "2022-01-01"
+end_date: "auto"  # Resolves to current date at runtime
+
+# Aggregation unit
+quarter_unit: "quarter"
+
+# Train/test split cutoff (all quarters before this date are training)
+train_cutoff: "2025-01-01"
+
+# Label configuration
+label_threshold: 0.02  # ±2% threshold for label_threshold
+
+# LEGACY quarterly pipeline only. This threshold and the downstream inner news
+# merge are not the V6 primary row rule. V6 keeps target-ok rows with lagged
+# technical availability, including no-news rows, and never uses coverage for
+# prediction or eligibility.
+min_news_per_period: 5
+
+# Smoke test configuration
+smoke_test:
+  tickers:
+    - VNM
+    - VCB
+    - FPT
+  quarters:
+    - "2022Q1"
+    - "2022Q2"
+    - "2022Q3"
+    - "2022Q4"
+
+# Scraping configuration
+scraping:
+  rate_limit_seconds: 1.0
+  rate_limit_vietstock_seconds: 1.5
+  max_retries: 3
+  backoff_factor: 2
+  request_timeout: 30
+
+# Full article enrichment configuration
+article_enrichment:
+  enabled: true
+  store_full_text: true
+  max_articles_per_run: 0  # 0 = no cap
+  detail_rate_limit_seconds: 0.5
+  max_retries: 3
+  request_timeout: 30
+  backoff_factor: 2
+  max_text_chars: 12000
+  summary_max_chars: 1200
+  cache_by_url: true
+  extractor_version: "fulltext_v3_cafef_api_fallback"
+  parallel_domains: 6
+  checkpoint_every: 100
+  retry_failed: true
+  retry_partial: true
+  retry_restricted: true
+  retry_sources:
+    - cafef
+    - kinhtechungkhoan
+  min_full_text_chars: 300
+  cafef_api_fallback_enabled: true
+  cafef_api_fallback_max_pages: 50
+  cafef_api_fallback_news_types:
+    - 1
+    - 2
+  cafef_try_detail_for_disclosures: false
+
+# Monitoring configuration
+monitoring:
+  enabled: true
+  lookback_days: 7
+  max_news_per_ticker: 20
+
+# Logging configuration
+logging:
+  level: "INFO"
+  format: "[%(asctime)s] [%(task_name)s] [%(levelname)s] %(message)s"
+  log_dir: "logs"

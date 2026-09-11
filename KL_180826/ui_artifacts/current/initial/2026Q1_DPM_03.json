@@ -1,0 +1,314 @@
+{
+  "decision_id": "2026Q1_DPM_03",
+  "snapshot_mode": "full_evidence",
+  "ticker": "DPM",
+  "decision_date": "2026-03-31",
+  "period_id": "2026Q1",
+  "holding_horizon": "next_quarter_or_period_return_in_signals",
+  "ml_signal": {
+    "model_name": "technical_Config_A_from_existing_pipeline",
+    "pred_proba_up": 0.9718740266791716,
+    "pred_label": 1,
+    "rank_in_period": 3,
+    "source_signal_class": "Buy Candidate",
+    "display_status": "Model candidate"
+  },
+  "technical_snapshot": {
+    "rsi_end_q": 52.11230805457214,
+    "macd_hist_mean_q": 0.0901514938262197,
+    "price_vs_sma20": -0.024509803921568513,
+    "return_2q_ago": 0.18117647058823536,
+    "return_q": 0.3266666666666667,
+    "return_prev_q": -0.11,
+    "volume_change_q": 1.8162517054285672,
+    "return_mean_daily": 0.005695196967683415,
+    "price_range_q": 0.5050327372227108,
+    "sma20_end": 30.599999999999998
+  },
+  "top_drivers": [
+    {
+      "feature": "rsi_end_q",
+      "value": 52.11230805457214,
+      "direction": "supports_up_signal",
+      "explanation": "RSI cuối kỳ là driver kỹ thuật quan trọng nhất trong mô hình."
+    },
+    {
+      "feature": "macd_hist_mean_q",
+      "value": 0.0901514938262197,
+      "direction": "supports_up_signal",
+      "explanation": "MACD histogram trung bình phản ánh động lượng xu hướng."
+    },
+    {
+      "feature": "price_vs_sma20",
+      "value": -0.024509803921568513,
+      "direction": "weak_or_negative",
+      "explanation": "Vị trí giá so với SMA20 phản ánh trạng thái trên/dưới đường trung bình."
+    },
+    {
+      "feature": "return_2q_ago",
+      "value": 0.18117647058823536,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trễ hai kỳ phản ánh động lượng/quán tính lịch sử."
+    },
+    {
+      "feature": "return_q",
+      "value": 0.3266666666666667,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trong kỳ hiện tại phản ánh xu hướng gần nhất."
+    },
+    {
+      "feature": "return_prev_q",
+      "value": -0.11,
+      "direction": "weak_or_negative",
+      "explanation": "Lợi suất kỳ trước bổ sung thông tin động lượng."
+    },
+    {
+      "feature": "volume_change_q",
+      "value": 1.8162517054285672,
+      "direction": "supports_up_signal",
+      "explanation": "Thay đổi khối lượng phản ánh mức độ quan tâm của thị trường."
+    },
+    {
+      "feature": "return_mean_daily",
+      "value": 0.005695196967683415,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trung bình ngày phản ánh xu hướng ngắn trong kỳ."
+    },
+    {
+      "feature": "price_range_q",
+      "value": 0.5050327372227108,
+      "direction": "risk_high_volatility",
+      "explanation": "Biên độ giá trong kỳ phản ánh biến động/rủi ro."
+    },
+    {
+      "feature": "sma20_end",
+      "value": 30.599999999999998,
+      "direction": "context",
+      "explanation": "SMA20 cuối kỳ phản ánh mặt bằng xu hướng ngắn hạn."
+    }
+  ],
+  "news_evidence": [
+    {
+      "evidence_id": "N001",
+      "published_at": "2026-03-26",
+      "source": "cafef",
+      "title": "DPM: Thông báo mời họp ĐHĐCĐ thường niên năm 2026",
+      "article_summary": "Tổng Công ty Phân bón và Hóa chất Dầu khí - Công ty Cổ phần thông báo mời họp ĐHĐCĐ thường niên năm 2026 DPM: Thông báo mời họp ĐHĐCĐ thường niên năm 2026 Tổng Công ty Phân bón và Hóa chất Dầu khí - Công ty Cổ phần thông báo mời họp ĐHĐCĐ thường niên năm 2026",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "DPM: Thông báo mời họp ĐHĐCĐ thường niên năm 2026 Tổng Công ty Phân bón và Hóa chất Dầu khí - Công ty Cổ phần thông báo mời họp ĐHĐCĐ thường niên năm 2026 DPM: Thông báo mời họp ĐHĐCĐ thường niên năm 2026 Tổng Công ty Phân bón và Hóa chất Dầu khí - Công ty Cổ phần thông báo mời họp ĐHĐCĐ thường niên",
+          "evidence_quote": "DPM: Thông báo mời họp ĐHĐCĐ thường niên năm 2026 Tổng Công ty Phân bón và Hóa chất Dầu khí - Công ty Cổ phần thông báo mời họp ĐHĐCĐ thường niên năm 2026 DPM: Thông báo mời họp ĐHĐCĐ thường niên năm 2026 Tổng Công ty Phân bón và Hóa chất D",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "exact",
+      "evidence_span": "DPM: Thông báo mời họp ĐHĐCĐ thường niên năm 2026 Tổng Công ty Phân bón và Hóa chất Dầu khí - Công ty Cổ phần thông báo mời họp ĐHĐCĐ thường niên năm 2026",
+      "url": "https://cafef.vn/du-lieu/DPM-2540745/dpm-thong-bao-moi-hop-dhdcd-thuong-nien-nam-2026.chn",
+      "content_hash": "0c70c34bbd77b6d32a268a89e10c48a378731767ca051f49d21f0fdcca1a77ec",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N002",
+      "published_at": "2026-03-26",
+      "source": "cafef",
+      "title": "DPM: Giải trình biến động KQKD năm 2025 sau kiểm toán so với cùng kỳ năm trước",
+      "article_summary": "Tổng Công ty Phân bón và Hóa chất Dầu khí - Công ty Cổ phần giải trình biến động KQKD năm 2025 sau kiểm toán so với cùng kỳ năm trước DPM: Giải trình biến động KQKD năm 2025 sau kiểm toán so với cùng kỳ năm trước Tổng Công ty Phân bón và Hóa chất Dầu khí - Công ty Cổ phần giải trình biến động KQKD năm 2025 sau kiểm toán so với cùng kỳ năm trước",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "DPM: Giải trình biến động KQKD năm 2025 sau kiểm toán so với cùng kỳ năm trước Tổng Công ty Phân bón và Hóa chất Dầu khí - Công ty Cổ phần giải trình biến động KQKD năm 2025 sau kiểm toán so với cùng kỳ năm trước DPM: Giải trình biến động KQKD năm 2025 sau kiểm toán so với cùng kỳ năm trước Tổng Côn",
+          "evidence_quote": "DPM: Giải trình biến động KQKD năm 2025 sau kiểm toán so với cùng kỳ năm trước Tổng Công ty Phân bón và Hóa chất Dầu khí - Công ty Cổ phần giải trình biến động KQKD năm 2025 sau kiểm toán so với cùng kỳ năm trước DPM: Giải trình biến động K",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "legal_risk"
+      ],
+      "event_type": "earnings,legal_risk",
+      "match_confidence": "exact",
+      "evidence_span": "DPM: Giải trình biến động KQKD năm 2025 sau kiểm toán so với cùng kỳ năm trước Tổng Công ty Phân bón và Hóa chất Dầu khí - Công ty Cổ phần giải trình biến động KQKD năm 2025 sau kiểm toán so với cùng kỳ năm trước",
+      "url": "https://cafef.vn/du-lieu/DPM-2656900/dpm-giai-trinh-bien-dong-kqkd-nam-2025-sau-kiem-toan-so-voi-cung-ky-nam-truoc.chn",
+      "content_hash": "39ed2681459514584fb6c6fb812366913fd6bd71a8f148045c3ff1cd67fd99dc",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N003",
+      "published_at": "2026-03-26",
+      "source": "cafef",
+      "title": "DPM: Công bố thông tin BCTC Hợp nhất và Riêng năm 2025 đã kiểm toán",
+      "article_summary": "Tổng Công ty Phân bón và Hóa chất Dầu khí - Công ty Cổ phần công bố thông tin BCTC HN và Riêng năm 2025 đã kiểm toán DPM: Công bố thông tin BCTC Hợp nhất và Riêng năm 2025 đã kiểm toán Tổng Công ty Phân bón và Hóa chất Dầu khí - Công ty Cổ phần công bố thông tin BCTC HN và Riêng năm 2025 đã kiểm toán",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "DPM: Công bố thông tin BCTC Hợp nhất và Riêng năm 2025 đã kiểm toán Tổng Công ty Phân bón và Hóa chất Dầu khí - Công ty Cổ phần công bố thông tin BCTC HN và Riêng năm 2025 đã kiểm toán DPM: Công bố thông tin BCTC Hợp nhất và Riêng năm 2025 đã kiểm toán Tổng Công ty Phân bón và Hóa chất Dầu khí - Côn",
+          "evidence_quote": "DPM: Công bố thông tin BCTC Hợp nhất và Riêng năm 2025 đã kiểm toán Tổng Công ty Phân bón và Hóa chất Dầu khí - Công ty Cổ phần công bố thông tin BCTC HN và Riêng năm 2025 đã kiểm toán DPM: Công bố thông tin BCTC Hợp nhất và Riêng năm 2025 ",
+          "fact_type": "legal_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "legal_risk"
+      ],
+      "event_type": "legal_risk",
+      "match_confidence": "exact",
+      "evidence_span": "DPM: Công bố thông tin BCTC Hợp nhất và Riêng năm 2025 đã kiểm toán Tổng Công ty Phân bón và Hóa chất Dầu khí - Công ty Cổ phần công bố thông tin BCTC HN và Riêng năm 2025 đã kiểm toán",
+      "url": "https://cafef.vn/du-lieu/DPM-2656919/dpm-cong-bo-thong-tin-bctc-hop-nhat-va-rieng-nam-2025-da-kiem-toan.chn",
+      "content_hash": "c6b879e531bade8fa902958dd9965fc512c9762378d24ad0dbfcc34f2bc23d89",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N004",
+      "published_at": "2026-03-26",
+      "source": "vietstock",
+      "title": "DPM dự kiến trả cổ tức năm 2025 bằng tiền mặt, tỷ lệ 15%",
+      "article_summary": "DPM dự kiến trả cổ tức năm 2025 bằng tiền mặt, tỷ lệ 15% Tổng công ty Phân bón và Hóa chất Dầu khí (PVFCCo - Phú Mỹ, HoSE: DPM ), đơn vị thành viên của Tập đoàn Công nghiệp - Năng lượng Quốc gia Việt Nam (Petrovietnam) vừa công bố tài liệu ĐHĐCĐ thường niên năm 2026, dự kiến diễn ra vào ngày 23/04, với mức trả cổ tức dự kiến 1,500 đồng/cổ phiếu. Với kết quả kinh doanh tích cực trong năm 2025, doanh nghiệp dự kiến trình cổ đông thông qua phương án chi trả cổ tức bằng tiền mặt ở mức 15%, tương đương 1,500 đồng/cổ phiếu, cao hơn so với mức 1,200 đồng/cổ phiếu đã được phê duyệt tại kỳ ĐHĐCĐ trước. Với vốn điều lệ hơn 6,800 tỷ đồng, ước tính tổng số tiền chi trả cổ tức lên tới hơn 1,019 tỷ đồng.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "DPM dự kiến trả cổ tức năm 2025 bằng tiền mặt, tỷ lệ 15% nan DPM dự kiến trả cổ tức năm 2025 bằng tiền mặt, tỷ lệ 15% Tổng công ty Phân bón và Hóa chất Dầu khí (PVFCCo - Phú Mỹ, HoSE: DPM ), đơn vị thành viên của Tập đoàn Công nghiệp - Năng lượng Quốc gia Việt Nam (Petrovietnam) vừa công bố tài liệu",
+          "evidence_quote": "DPM dự kiến trả cổ tức năm 2025 bằng tiền mặt, tỷ lệ 15% nan DPM dự kiến trả cổ tức năm 2025 bằng tiền mặt, tỷ lệ 15% Tổng công ty Phân bón và Hóa chất Dầu khí (PVFCCo - Phú Mỹ, HoSE: DPM ), đơn vị thành viên của Tập đoàn Công nghiệp - Năng",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Với kết quả kinh doanh tích cực trong năm 2025, doanh nghiệp dự kiến trình cổ đông thông qua phương án chi trả cổ tức bằng tiền mặt ở mức 15%, tương đương 1,500 đồng/cổ phiếu, cao hơn so với mức 1,200 đồng/cổ phiếu đã được phê duyệt tại kỳ ĐHĐCĐ trước.",
+          "evidence_quote": "Với kết quả kinh doanh tích cực trong năm 2025, doanh nghiệp dự kiến trình cổ đông thông qua phương án chi trả cổ tức bằng tiền mặt ở mức 15%, tương đương 1,500 đồng/cổ phiếu, cao hơn so với mức 1,200 đồng/cổ phiếu đã được phê duyệt tại kỳ ",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Với vốn điều lệ hơn 6,800 tỷ đồng, ước tính tổng số tiền chi trả cổ tức lên tới hơn 1,019 tỷ đồng.",
+          "evidence_quote": "Với vốn điều lệ hơn 6,800 tỷ đồng, ước tính tổng số tiền chi trả cổ tức lên tới hơn 1,019 tỷ đồng.",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Kết quả này đến từ một năm 2025 vượt kỳ vọng của PVFCCo - Phú Mỹ.",
+          "evidence_quote": "Kết quả này đến từ một năm 2025 vượt kỳ vọng của PVFCCo - Phú Mỹ.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Cụ thể, doanh thu hợp nhất đạt 16,564.4 tỷ đồng, hoàn thành 133% kế hoạch năm và tăng 23% so với năm 2024; lợi nhuận sau thuế hợp nhất đạt 1,095 tỷ đồng, vượt 342% mục tiêu đề ra và tăng 98% so với cùng kỳ.",
+          "evidence_quote": "Cụ thể, doanh thu hợp nhất đạt 16,564.4 tỷ đồng, hoàn thành 133% kế hoạch năm và tăng 23% so với năm 2024; lợi nhuận sau thuế hợp nhất đạt 1,095 tỷ đồng, vượt 342% mục tiêu đề ra và tăng 98% so với cùng kỳ.",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [],
+      "event_type": "dividend,earnings,capital,market",
+      "match_confidence": "exact",
+      "evidence_span": "DPM dự kiến trả cổ tức năm 2025 bằng tiền mặt, tỷ lệ 15% Tổng công ty Phân bón và Hóa chất Dầu khí (PVFCCo - Phú Mỹ, HoSE: DPM ), đơn vị thành viên của Tập đoàn Công nghiệp - Năng lượng Quốc gia Việt Nam (Petrovietnam) vừa công bố tài liệu ĐHĐCĐ thường niên năm 2026, dự kiến diễn ra vào ngày 23/04, với mức trả cổ tức dự kiến 1,500 đồng/cổ phiếu. Với kết quả kinh doanh tích cực trong năm 2025, doanh nghiệp dự kiến trình cổ đông thông qua phương án chi trả cổ tức bằng tiền mặt ở mức 15%, tương đươ",
+      "url": "https://vietstock.vn/2026/04/dpm-du-kien-tra-co-tuc-nam-2025-bang-tien-mat-ty-le-15-738-1421521.htm",
+      "content_hash": "5d00a4a37100e2173ae06741b38090df3b560dff4d7c88995608dbaf74e23275",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N005",
+      "published_at": "2026-03-26",
+      "source": "vietstock",
+      "title": "DPM: Công bố thông tin BCTC HN và Riêng năm 2025 đã kiểm toán",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "DPM: Công bố thông tin BCTC HN và Riêng năm 2025 đã kiểm toán nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh C",
+          "evidence_quote": "DPM: Công bố thông tin BCTC HN và Riêng năm 2025 đã kiểm toán nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu ",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Ngày 30/06/2026, CTCP Nhiệt điện Quảng Ninh (UPCoM: QTP) đã tổ chức ĐHĐCĐ bất thường năm 2026 nhằm thông qua việc điều chỉnh dự án nâng cấp, cải tạo hệ thống xử lý...",
+          "evidence_quote": "Ngày 30/06/2026, CTCP Nhiệt điện Quảng Ninh (UPCoM: QTP) đã tổ chức ĐHĐCĐ bất thường năm 2026 nhằm thông qua việc điều chỉnh dự án nâng cấp, cải tạo hệ thống xử lý...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Ngày 30/06, CTCP Tập đoàn Gemadept (HOSE: GMD) và CJ Logistics Hong Kong Holdings Limited đã tổ chức lễ hoàn tất giao dịch, chính thức khép lại các thỏa thuận...",
+          "evidence_quote": "Ngày 30/06, CTCP Tập đoàn Gemadept (HOSE: GMD) và CJ Logistics Hong Kong Holdings Limited đã tổ chức lễ hoàn tất giao dịch, chính thức khép lại các thỏa thuận...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Sáng ngày 02/07, Brand Finance đã công bố Bảng xếp hạng 100 thương hiệu giá trị nhất Việt Nam (Brand Finance Vietnam 100 2026).",
+          "evidence_quote": "Sáng ngày 02/07, Brand Finance đã công bố Bảng xếp hạng 100 thương hiệu giá trị nhất Việt Nam (Brand Finance Vietnam 100 2026).",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Trong báo cáo năm 2025, PNJ giới thiệu Công ty TNHH Một Thành viên Giám Định PNJ (PNJ Laboratory) có “kinh nghiệm tới gần 30 năm trong lĩnh vực dịch vụ giám định đã...",
+          "evidence_quote": "Trong báo cáo năm 2025, PNJ giới thiệu Công ty TNHH Một Thành viên Giám Định PNJ (PNJ Laboratory) có “kinh nghiệm tới gần 30 năm trong lĩnh vực dịch vụ giám định đã...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2026/03/dpm-cong-bo-thong-tin-bctc-hn-va-rieng-nam-2025-da-kiem-toan-737-1417069.htm",
+      "content_hash": "c6f36fc9725e2974d932dc12a030e7f94e8a2627fc33567728bd8dfb6ce70a99",
+      "extraction_status": "ok"
+    }
+  ],
+  "data_quality_flags": {
+    "news_coverage": "high",
+    "ticker_matching_confidence": "mixed",
+    "full_text_coverage": 5,
+    "summary_coverage": 5,
+    "key_fact_coverage": 5,
+    "missing_fields": []
+  },
+  "guardrails": {
+    "initial_prompt_safe": true,
+    "news_cutoff": "2026-03-31",
+    "not_investment_advice": true,
+    "no_post_decision_data": true,
+    "full_text_excerpt_chars": 500
+  },
+  "provenance": {
+    "name": "initial_evidence",
+    "path": "reports/decision_support/generated/evidence_packs_initial.json",
+    "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+    "zone": "initial",
+    "record_count": 25,
+    "schema_version": "evidence-pack-initial-v1",
+    "generated_at_utc": null,
+    "provenance_status": null
+  }
+}

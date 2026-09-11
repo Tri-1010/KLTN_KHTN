@@ -1,0 +1,37 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "af9039c77cbcc1b7",
+    "ticker": "HCM",
+    "article_date": "2023-04-19",
+    "consensus_method": "disagreement",
+    "agreement_level": "low",
+    "analysis_eligible": false,
+    "consensus_direction": "disagreement",
+    "consensus_materiality": "disagreement",
+    "consensus_event_type": "legal",
+    "evidence_span": null,
+    "disagreement_fields": [
+      "direction",
+      "materiality"
+    ],
+    "quality_flags": [
+      "categorical_disagreement",
+      "data_quality_issue",
+      "missing_or_disputed_evidence",
+      "numeric_score_outlier",
+      "unclear_direction",
+      "unclear_relevance"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "categorical_disagreement",
+      "data_quality_issue",
+      "missing_or_disputed_evidence",
+      "numeric_score_outlier",
+      "unclear_direction",
+      "unclear_relevance"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

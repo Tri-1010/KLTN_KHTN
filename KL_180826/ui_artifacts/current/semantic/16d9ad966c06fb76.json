@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "16d9ad966c06fb76",
+    "ticker": "PPC",
+    "article_date": "2023-03-23",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": true,
+    "consensus_direction": "risk",
+    "consensus_materiality": "high",
+    "consensus_event_type": "legal",
+    "evidence_span": "PPC: Quyết định đưa cổ phiếu vào diện cảnh báo từ 29.3.2023",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "none"
+    ],
+    "requires_human_review": false,
+    "review_flags": [
+      "none"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

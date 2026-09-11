@@ -1,0 +1,17 @@
+{
+  "schema_version": "portable-source-revision-v1",
+  "source_repository": "Tri-1010/KLTN_KHTN",
+  "source_branch_at_bundle_start": "feat/thesis-harmonized-final-submission",
+  "canonical_run_id": "canonical_150_v7",
+  "frozen_artifacts": [
+    "thesis_submission/canonical_results",
+    "multi_llm_evidence_extraction/outputs/harmonized/canonical_150_v7",
+    "ui_artifacts/current"
+  ],
+  "path_mapping": "../path_mapping.json",
+  "notes": [
+    "This bundle is an internal portable copy. It is not a replacement for the source repository history.",
+    "Historic absolute paths retained inside frozen artifacts map through path_mapping.json.",
+    "Raw news is internal-only and excluded from Git by design."
+  ]
+}

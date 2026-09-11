@@ -1,0 +1,84 @@
+{
+  "artifact_schema_version": "harmonized_canonical_summary_v1",
+  "study_id": "harmonized_keyword_semantic_v1",
+  "protocol_version": "harmonized_comparison_v5",
+  "protocol_sha256": "ae4fd6ec0cf095b4608d09ecfbdeb5c1663b742c80a1bbd1cac02567c259f3ae",
+  "run_id": "canonical_150_v7",
+  "mode": "pilot",
+  "run_tier": "canonical",
+  "claim_level": "common_stratified_article_spine_only",
+  "primary": {
+    "family": "P1",
+    "baseline_config": "B_technical_coverage_keyword",
+    "comparison_config": "C_technical_coverage_semantic",
+    "model": "RandomForest",
+    "metric": "balanced_accuracy",
+    "topk": 10,
+    "status": "ok",
+    "improvement_delta": -0.0066099144757681355,
+    "bootstrap_ci_low": -0.05436679292929294,
+    "bootstrap_ci_high": 0.0242987991852321,
+    "p_value": 0.7456254374562544,
+    "p_value_bh": 0.8698963436989634,
+    "n_paired_dates": 410,
+    "n_folds": 3,
+    "gate_pass": false
+  },
+  "audits": {
+    "coverage": true,
+    "folds": true
+  },
+  "attrition": {
+    "sampled_articles": 150,
+    "joined_articles": 150,
+    "eligible_articles": 122,
+    "mapped_eligible_articles": 114,
+    "analytic_spine_articles": 114,
+    "panel_target_available_rows": 92080,
+    "panel_eligible_rows": 5656
+  },
+  "topk": [
+    {
+      "family": "T1",
+      "model": "LogisticRegression",
+      "k": 5,
+      "periods": 22,
+      "folds": 3,
+      "status": "ok",
+      "drop_reason": ""
+    },
+    {
+      "family": "T1",
+      "model": "LogisticRegression",
+      "k": 10,
+      "periods": 9,
+      "folds": 1,
+      "status": "not_estimable_in_pilot",
+      "drop_reason": "universe_below_k"
+    },
+    {
+      "family": "T1",
+      "model": "RandomForest",
+      "k": 5,
+      "periods": 22,
+      "folds": 3,
+      "status": "ok",
+      "drop_reason": ""
+    },
+    {
+      "family": "T1",
+      "model": "RandomForest",
+      "k": 10,
+      "periods": 9,
+      "folds": 1,
+      "status": "not_estimable_in_pilot",
+      "drop_reason": "universe_below_k"
+    }
+  ],
+  "limitations": [
+    "common_stratified_article_spine_only",
+    "semantic_labels_are_pseudo_labels",
+    "topk_is_exploratory_not_alpha",
+    "no_causal_or_investment_advice_claim"
+  ]
+}

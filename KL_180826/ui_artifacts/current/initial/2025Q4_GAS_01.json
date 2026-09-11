@@ -1,0 +1,422 @@
+{
+  "decision_id": "2025Q4_GAS_01",
+  "snapshot_mode": "full_evidence",
+  "ticker": "GAS",
+  "decision_date": "2025-12-31",
+  "period_id": "2025Q4",
+  "holding_horizon": "next_quarter_or_period_return_in_signals",
+  "ml_signal": {
+    "model_name": "technical_Config_A_from_existing_pipeline",
+    "pred_proba_up": 0.9977169088235865,
+    "pred_label": 1,
+    "rank_in_period": 1,
+    "source_signal_class": "Buy Candidate",
+    "display_status": "Model candidate"
+  },
+  "technical_snapshot": {
+    "rsi_end_q": 67.5243409235251,
+    "macd_hist_mean_q": 0.1337493322570629,
+    "price_vs_sma20": 0.09597335755373908,
+    "return_2q_ago": 0.004406672961913773,
+    "return_q": 0.19471947194719477,
+    "return_prev_q": -0.033600000000000026,
+    "volume_change_q": -0.07063736767311526,
+    "return_mean_daily": 0.0029299763581694463,
+    "price_range_q": 0.31615619102917686,
+    "sma20_end": 66.06
+  },
+  "top_drivers": [
+    {
+      "feature": "rsi_end_q",
+      "value": 67.5243409235251,
+      "direction": "supports_up_signal",
+      "explanation": "RSI cuối kỳ là driver kỹ thuật quan trọng nhất trong mô hình."
+    },
+    {
+      "feature": "macd_hist_mean_q",
+      "value": 0.1337493322570629,
+      "direction": "supports_up_signal",
+      "explanation": "MACD histogram trung bình phản ánh động lượng xu hướng."
+    },
+    {
+      "feature": "price_vs_sma20",
+      "value": 0.09597335755373908,
+      "direction": "supports_up_signal",
+      "explanation": "Vị trí giá so với SMA20 phản ánh trạng thái trên/dưới đường trung bình."
+    },
+    {
+      "feature": "return_2q_ago",
+      "value": 0.004406672961913773,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trễ hai kỳ phản ánh động lượng/quán tính lịch sử."
+    },
+    {
+      "feature": "return_q",
+      "value": 0.19471947194719477,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trong kỳ hiện tại phản ánh xu hướng gần nhất."
+    },
+    {
+      "feature": "return_prev_q",
+      "value": -0.033600000000000026,
+      "direction": "weak_or_negative",
+      "explanation": "Lợi suất kỳ trước bổ sung thông tin động lượng."
+    },
+    {
+      "feature": "volume_change_q",
+      "value": -0.07063736767311526,
+      "direction": "weak_or_negative",
+      "explanation": "Thay đổi khối lượng phản ánh mức độ quan tâm của thị trường."
+    },
+    {
+      "feature": "return_mean_daily",
+      "value": 0.0029299763581694463,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trung bình ngày phản ánh xu hướng ngắn trong kỳ."
+    },
+    {
+      "feature": "price_range_q",
+      "value": 0.31615619102917686,
+      "direction": "normal",
+      "explanation": "Biên độ giá trong kỳ phản ánh biến động/rủi ro."
+    },
+    {
+      "feature": "sma20_end",
+      "value": 66.06,
+      "direction": "context",
+      "explanation": "SMA20 cuối kỳ phản ánh mặt bằng xu hướng ngắn hạn."
+    }
+  ],
+  "news_evidence": [
+    {
+      "evidence_id": "N001",
+      "published_at": "2025-12-31",
+      "source": "vietstock",
+      "title": "GAS: Nghị quyết HĐQT số 102 ngày 31/12/2025",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "GAS: Nghị quyết HĐQT số 102 ngày 31/12/2025 nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M",
+          "evidence_quote": "GAS: Nghị quyết HĐQT số 102 ngày 31/12/2025 nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Ngày 30/06/2026, CTCP Nhiệt điện Quảng Ninh (UPCoM: QTP) đã tổ chức ĐHĐCĐ bất thường năm 2026 nhằm thông qua việc điều chỉnh dự án nâng cấp, cải tạo hệ thống xử lý...",
+          "evidence_quote": "Ngày 30/06/2026, CTCP Nhiệt điện Quảng Ninh (UPCoM: QTP) đã tổ chức ĐHĐCĐ bất thường năm 2026 nhằm thông qua việc điều chỉnh dự án nâng cấp, cải tạo hệ thống xử lý...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Ngày 30/06, CTCP Tập đoàn Gemadept (HOSE: GMD) và CJ Logistics Hong Kong Holdings Limited đã tổ chức lễ hoàn tất giao dịch, chính thức khép lại các thỏa thuận...",
+          "evidence_quote": "Ngày 30/06, CTCP Tập đoàn Gemadept (HOSE: GMD) và CJ Logistics Hong Kong Holdings Limited đã tổ chức lễ hoàn tất giao dịch, chính thức khép lại các thỏa thuận...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Sáng ngày 02/07, Brand Finance đã công bố Bảng xếp hạng 100 thương hiệu giá trị nhất Việt Nam (Brand Finance Vietnam 100 2026).",
+          "evidence_quote": "Sáng ngày 02/07, Brand Finance đã công bố Bảng xếp hạng 100 thương hiệu giá trị nhất Việt Nam (Brand Finance Vietnam 100 2026).",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Trong báo cáo năm 2025, PNJ giới thiệu Công ty TNHH Một Thành viên Giám Định PNJ (PNJ Laboratory) có “kinh nghiệm tới gần 30 năm trong lĩnh vực dịch vụ giám định đã...",
+          "evidence_quote": "Trong báo cáo năm 2025, PNJ giới thiệu Công ty TNHH Một Thành viên Giám Định PNJ (PNJ Laboratory) có “kinh nghiệm tới gần 30 năm trong lĩnh vực dịch vụ giám định đã...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2026/01/gas-nghi-quyet-hdqt-so-102-ngay-31-12-2025-737-1387637.htm",
+      "content_hash": "79efd7dad0e4386c706e7a27fdace7d834f0ffc8240a785c14692f25e81536fa",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N002",
+      "published_at": "2025-12-26",
+      "source": "vietstock",
+      "title": "GAS: CBTT đáp ứng điều kiện công ty đại chúng",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "GAS: CBTT đáp ứng điều kiện công ty đại chúng nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn -",
+          "evidence_quote": "GAS: CBTT đáp ứng điều kiện công ty đại chúng nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Tr",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Trong ít ngày từ 30/06 - 02/07, Ủy ban Chứng khoán Nhà nước (UBCKNN) quyết định xử phạt hàng loạt doanh nghiệp vì lỗi công bố thông tin.",
+          "evidence_quote": "Trong ít ngày từ 30/06 - 02/07, Ủy ban Chứng khoán Nhà nước (UBCKNN) quyết định xử phạt hàng loạt doanh nghiệp vì lỗi công bố thông tin.",
+          "fact_type": "legal_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Phiên giao dịch ngày 03/07 chứng kiến diễn biến trái chiều khi khối ngoại tiếp tục bán ròng 789 tỷ đồng, trong khi tự doanh công ty chứng khoán mua ròng mạnh 551 tỷ...",
+          "evidence_quote": "Phiên giao dịch ngày 03/07 chứng kiến diễn biến trái chiều khi khối ngoại tiếp tục bán ròng 789 tỷ đồng, trong khi tự doanh công ty chứng khoán mua ròng mạnh 551 tỷ...",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Tháng 6, khối ngoại bán ròng hơn 15 ngàn tỷ đồng trên HOSE, ghi nhận quy mô giao dịch lớn tại VIC.",
+          "evidence_quote": "Tháng 6, khối ngoại bán ròng hơn 15 ngàn tỷ đồng trên HOSE, ghi nhận quy mô giao dịch lớn tại VIC.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Lũy kế nửa đầu năm, khối ngoại đã bán ròng gần 80 ngàn tỷ đồng...",
+          "evidence_quote": "Lũy kế nửa đầu năm, khối ngoại đã bán ròng gần 80 ngàn tỷ đồng...",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2026/01/gas-cbtt-dap-ung-dieu-kien-cong-ty-dai-chung-830-1387629.htm",
+      "content_hash": "ea767816ede94b14ffb5c84b773f11fde882d13663c9bef7db03ffdd16b57777",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N003",
+      "published_at": "2025-12-24",
+      "source": "tnck",
+      "title": "PV GAS chủ động đảm bảo nguồn cung khí thiên nhiên năm 2026, tạo đà bứt phá tăng trưởng cho kinh tế - xã hội",
+      "article_summary": "Trong bối cảnh Đảng và Nhà nước đặt mục tiêu tăng trưởng kinh tế đạt tốc độ cao cho giai đoạn 2026–2030, việc đảm bảo an ninh năng lượng quốc gia, ổn định nguồn cung và duy trì nhịp độ phát triển bền vững ngày càng trở nên cấp thiết. Với vai trò là đơn vị nòng cốt trong lĩnh vực công nghiệp khí của Tập đoàn Công nghiệp – Năng lượng Quốc gia Việt Nam (Petrovietnam), Tổng công ty Khí Việt Nam (PV GAS) đang chủ động triển khai đồng bộ các giải pháp nhằm bảo đảm nguồn khí ổn định cho nền kinh tế trong năm 2026 và các năm tiếp theo. Trong suốt 35 năm hình thành và phát triển, PV GAS đã cung cấp trên 193 tỷ m 3 khí thiên nhiên, đóng góp đặc biệt quan trọng trong việc đảm bảo an ninh năng lượng (khí phục vụ cho sản xuất điện), an ninh lương thực (khí phục vụ sản xuất phân đạm), phát triển sản xuất công nghiệp, giao thông vận tải và quá trình chuyển dịch năng lượng tại Việt Nam.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "PV GAS chủ động đảm bảo nguồn cung khí thiên nhiên năm 2026, tạo đà bứt phá tăng trưởng cho kinh tế - xã hội nan Trong bối cảnh Đảng và Nhà nước đặt mục tiêu tăng trưởng kinh tế đạt tốc độ cao cho giai đoạn 2026–2030, việc đảm bảo an ninh năng lượng quốc gia, ổn định nguồn cung và duy trì nhịp độ ph",
+          "evidence_quote": "PV GAS chủ động đảm bảo nguồn cung khí thiên nhiên năm 2026, tạo đà bứt phá tăng trưởng cho kinh tế - xã hội nan Trong bối cảnh Đảng và Nhà nước đặt mục tiêu tăng trưởng kinh tế đạt tốc độ cao cho giai đoạn 2026–2030, việc đảm bảo an ninh n",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Với vai trò là đơn vị nòng cốt trong lĩnh vực công nghiệp khí của Tập đoàn Công nghiệp – Năng lượng Quốc gia Việt Nam (Petrovietnam), Tổng công ty Khí Việt Nam (PV GAS) đang chủ động triển khai đồng bộ các giải pháp nhằm bảo đảm nguồn khí ổn định cho nền kinh tế trong năm 2026 và các năm tiếp theo.",
+          "evidence_quote": "Với vai trò là đơn vị nòng cốt trong lĩnh vực công nghiệp khí của Tập đoàn Công nghiệp – Năng lượng Quốc gia Việt Nam (Petrovietnam), Tổng công ty Khí Việt Nam (PV GAS) đang chủ động triển khai đồng bộ các giải pháp nhằm bảo đảm nguồn khí ổ",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Trong suốt 35 năm hình thành và phát triển, PV GAS đã cung cấp trên 193 tỷ m 3 khí thiên nhiên, đóng góp đặc biệt quan trọng trong việc đảm bảo an ninh năng lượng (khí phục vụ cho sản xuất điện), an ninh lương thực (khí phục vụ sản xuất phân đạm), phát triển sản xuất công nghiệp, giao thông vận tải ",
+          "evidence_quote": "Trong suốt 35 năm hình thành và phát triển, PV GAS đã cung cấp trên 193 tỷ m 3 khí thiên nhiên, đóng góp đặc biệt quan trọng trong việc đảm bảo an ninh năng lượng (khí phục vụ cho sản xuất điện), an ninh lương thực (khí phục vụ sản xuất phâ",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Hoạt động của PV GAS đã đóng góp cho ngân sách Nhà nước trên 114 nghìn tỷ đồng, tạo công ăn việc làm cho hàng trăm nghìn người lao động.",
+          "evidence_quote": "Hoạt động của PV GAS đã đóng góp cho ngân sách Nhà nước trên 114 nghìn tỷ đồng, tạo công ăn việc làm cho hàng trăm nghìn người lao động.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Năm 2025, PV GAS ghi nhận mốc doanh thu cao nhất trong lịch sử 35 năm hình thành và phát triển, nộp ngân sách Nhà nước trên 7,8 nghìn tỷ đồng cho thấy sự tăng trưởng ổn định và hiệu quả điều hành được nâng lên một bước mới.",
+          "evidence_quote": "Năm 2025, PV GAS ghi nhận mốc doanh thu cao nhất trong lịch sử 35 năm hình thành và phát triển, nộp ngân sách Nhà nước trên 7,8 nghìn tỷ đồng cho thấy sự tăng trưởng ổn định và hiệu quả điều hành được nâng lên một bước mới.",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "governance"
+      ],
+      "event_type": "earnings,governance,market",
+      "match_confidence": "partial",
+      "evidence_span": "Trong bối cảnh Đảng và Nhà nước đặt mục tiêu tăng trưởng kinh tế đạt tốc độ cao cho giai đoạn 2026–2030, việc đảm bảo an ninh năng lượng quốc gia, ổn định nguồn cung và duy trì nhịp độ phát triển bền vững ngày càng trở nên cấp thiết. Với vai trò là đơn vị nòng cốt trong lĩnh vực công nghiệp khí của Tập đoàn Công nghiệp – Năng lượng Quốc gia Việt Nam (Petrovietnam), Tổng công ty Khí Việt Nam (PV GAS) đang chủ động triển khai đồng bộ các giải pháp nhằm bảo đảm nguồn khí ổn định cho nền kinh tế tro",
+      "url": "https://www.tinnhanhchungkhoan.vn/pv-gas-chu-dong-dam-bao-nguon-cung-khi-thien-nhien-nam-2026-tao-da-but-pha-tang-truong-cho-kinh-te-xa-hoi-post382698.html",
+      "content_hash": "c819d3e0959ee63d62a42e3e2271e0b35352ecbe49731c686d5fd5874f2e6cc9",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N004",
+      "published_at": "2025-12-22",
+      "source": "kinhtechungkhoan",
+      "title": "truoc them tran danh lon nganh dau khi kinh nghiem cua pv gas quyet dinh su thanh bai 1419950.html",
+      "article_summary": "Xu hướng thúc đẩy đầu tư hạ tầng dầu khí đang làm nổi bật vai trò của PV GAS, khi kinh nghiệm dự án lớn được đặt trước những yêu cầu triển khai mới của ngành. Chính sách 2026–2030 và nhu cầu hiện hữu về hạ tầng khí Trong bối cảnh ngành dầu khí Việt Nam bước vào giai đoạn thúc đẩy đầu tư hạ tầng, Tổng công ty Khí Việt Nam – CTCP ( PV GAS , HOSE: GAS) đang đứng trước một giai đoạn bản lề gắn với các dự án khí quy mô lớn. Việc Quốc hội thông qua Nghị quyết về cơ chế, chính sách phát triển năng lượng quốc gia giai đoạn 2026–2030 được xem là bước mở quan trọng, tạo điều kiện tháo gỡ nhiều vướng mắc kéo dài trong triển khai các dự án dầu khí trọng điểm.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "truoc them tran danh lon nganh dau khi kinh nghiem cua pv gas quyet dinh su thanh bai 1419950.html nan Xu hướng thúc đẩy đầu tư hạ tầng dầu khí đang làm nổi bật vai trò của PV GAS, khi kinh nghiệm dự án lớn được đặt trước những yêu cầu triển khai mới của ngành.",
+          "evidence_quote": "truoc them tran danh lon nganh dau khi kinh nghiem cua pv gas quyet dinh su thanh bai 1419950.html nan Xu hướng thúc đẩy đầu tư hạ tầng dầu khí đang làm nổi bật vai trò của PV GAS, khi kinh nghiệm dự án lớn được đặt trước những yêu cầu triể",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Chính sách 2026–2030 và nhu cầu hiện hữu về hạ tầng khí Trong bối cảnh ngành dầu khí Việt Nam bước vào giai đoạn thúc đẩy đầu tư hạ tầng, Tổng công ty Khí Việt Nam – CTCP ( PV GAS , HOSE: GAS) đang đứng trước một giai đoạn bản lề gắn với các dự án khí quy mô lớn.",
+          "evidence_quote": "Chính sách 2026–2030 và nhu cầu hiện hữu về hạ tầng khí Trong bối cảnh ngành dầu khí Việt Nam bước vào giai đoạn thúc đẩy đầu tư hạ tầng, Tổng công ty Khí Việt Nam – CTCP ( PV GAS , HOSE: GAS) đang đứng trước một giai đoạn bản lề gắn với cá",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Việc Quốc hội thông qua Nghị quyết về cơ chế, chính sách phát triển năng lượng quốc gia giai đoạn 2026–2030 được xem là bước mở quan trọng, tạo điều kiện tháo gỡ nhiều vướng mắc kéo dài trong triển khai các dự án dầu khí trọng điểm.",
+          "evidence_quote": "Việc Quốc hội thông qua Nghị quyết về cơ chế, chính sách phát triển năng lượng quốc gia giai đoạn 2026–2030 được xem là bước mở quan trọng, tạo điều kiện tháo gỡ nhiều vướng mắc kéo dài trong triển khai các dự án dầu khí trọng điểm.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Nghị quyết về phát triển năng lượng quốc gia giai đoạn 2026–2030 tập trung tháo gỡ các nút thắt liên quan đến thủ tục đầu tư, đất đai, chuyển mục đích sử dụng rừng và các yêu cầu pháp lý đối với dự án dầu khí quan trọng.",
+          "evidence_quote": "Nghị quyết về phát triển năng lượng quốc gia giai đoạn 2026–2030 tập trung tháo gỡ các nút thắt liên quan đến thủ tục đầu tư, đất đai, chuyển mục đích sử dụng rừng và các yêu cầu pháp lý đối với dự án dầu khí quan trọng.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Giai đoạn 2026–2030 cũng là thời điểm hàng loạt dự án điện khí LNG, kho cảng LNG và các nguồn khí mới được lên kế hoạch triển khai hoặc đưa vào vận hành.",
+          "evidence_quote": "Giai đoạn 2026–2030 cũng là thời điểm hàng loạt dự án điện khí LNG, kho cảng LNG và các nguồn khí mới được lên kế hoạch triển khai hoặc đưa vào vận hành.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "debt_risk",
+        "governance"
+      ],
+      "event_type": "debt_risk,governance,market",
+      "match_confidence": "partial",
+      "evidence_span": "Xu hướng thúc đẩy đầu tư hạ tầng dầu khí đang làm nổi bật vai trò của PV GAS, khi kinh nghiệm dự án lớn được đặt trước những yêu cầu triển khai mới của ngành. Chính sách 2026–2030 và nhu cầu hiện hữu về hạ tầng khí Trong bối cảnh ngành dầu khí Việt Nam bước vào giai đoạn thúc đẩy đầu tư hạ tầng, Tổng công ty Khí Việt Nam – CTCP ( PV GAS , HOSE: GAS) đang đứng trước một giai đoạn bản lề gắn với các dự án khí quy mô lớn. Việc Quốc hội thông qua Nghị quyết về cơ chế, chính sách phát triển năng lượn",
+      "url": "https://kinhtechungkhoan.vn/truoc-them-tran-danh-lon-nganh-dau-khi-kinh-nghiem-cua-pv-gas-quyet-dinh-su-thanh-bai-1419950.html",
+      "content_hash": "f79924425d188b1123abcb0211b0106db6e069ec918ea3df96fe5e8a0d0129b8",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N005",
+      "published_at": "2025-12-18",
+      "source": "kinhtechungkhoan",
+      "title": "loi nhuan quy iv 2025 cua pv gas giam hon 26 so voi cung ky 1419358.html",
+      "article_summary": "Dù doanh thu quý IV tăng mạnh, PV GAS ghi nhận lợi nhuận trước thuế giảm hơn 26% so với cùng kỳ. Kết quả kinh doanh vượt kế hoạch, lợi nhuận quý IV chịu áp lực chi phí Tổng công ty Khí Việt Nam ( PV GAS , HOSE: GAS) mới đây đã công bố ước tính kết quả kinh doanh năm 2025 với nhiều chỉ tiêu vượt xa kế hoạch được giao. Cụ thể, doanh thu hợp nhất cả năm ước đạt khoảng 134.000 tỷ đồng, tăng 27% so với năm 2024.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "loi nhuan quy iv 2025 cua pv gas giam hon 26 so voi cung ky 1419358.html nan Dù doanh thu quý IV tăng mạnh, PV GAS ghi nhận lợi nhuận trước thuế giảm hơn 26% so với cùng kỳ.",
+          "evidence_quote": "loi nhuan quy iv 2025 cua pv gas giam hon 26 so voi cung ky 1419358.html nan Dù doanh thu quý IV tăng mạnh, PV GAS ghi nhận lợi nhuận trước thuế giảm hơn 26% so với cùng kỳ.",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Kết quả kinh doanh vượt kế hoạch, lợi nhuận quý IV chịu áp lực chi phí Tổng công ty Khí Việt Nam ( PV GAS , HOSE: GAS) mới đây đã công bố ước tính kết quả kinh doanh năm 2025 với nhiều chỉ tiêu vượt xa kế hoạch được giao.",
+          "evidence_quote": "Kết quả kinh doanh vượt kế hoạch, lợi nhuận quý IV chịu áp lực chi phí Tổng công ty Khí Việt Nam ( PV GAS , HOSE: GAS) mới đây đã công bố ước tính kết quả kinh doanh năm 2025 với nhiều chỉ tiêu vượt xa kế hoạch được giao.",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Cụ thể, doanh thu hợp nhất cả năm ước đạt khoảng 134.000 tỷ đồng, tăng 27% so với năm 2024.",
+          "evidence_quote": "Cụ thể, doanh thu hợp nhất cả năm ước đạt khoảng 134.000 tỷ đồng, tăng 27% so với năm 2024.",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Lợi nhuận trước thuế ước đạt 14.500 tỷ đồng, tăng 10%, trong khi số nộp ngân sách Nhà nước đạt hơn 7.800 tỷ đồng, tăng khoảng 11%.",
+          "evidence_quote": "Lợi nhuận trước thuế ước đạt 14.500 tỷ đồng, tăng 10%, trong khi số nộp ngân sách Nhà nước đạt hơn 7.800 tỷ đồng, tăng khoảng 11%.",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Với kết quả này, PV GAS đã hoàn thành 181% kế hoạch doanh thu và vượt 218% chỉ tiêu lợi nhuận trước thuế năm 2025.",
+          "evidence_quote": "Với kết quả này, PV GAS đã hoàn thành 181% kế hoạch doanh thu và vượt 218% chỉ tiêu lợi nhuận trước thuế năm 2025.",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "debt_risk",
+        "earnings_warning",
+        "governance"
+      ],
+      "event_type": "earnings,debt_risk,governance,market",
+      "match_confidence": "partial",
+      "evidence_span": "Dù doanh thu quý IV tăng mạnh, PV GAS ghi nhận lợi nhuận trước thuế giảm hơn 26% so với cùng kỳ. Kết quả kinh doanh vượt kế hoạch, lợi nhuận quý IV chịu áp lực chi phí Tổng công ty Khí Việt Nam ( PV GAS , HOSE: GAS) mới đây đã công bố ước tính kết quả kinh doanh năm 2025 với nhiều chỉ tiêu vượt xa kế hoạch được giao. Cụ thể, doanh thu hợp nhất cả năm ước đạt khoảng 134.000 tỷ đồng, tăng 27% so với năm 2024. Lợi nhuận trước thuế ước đạt 14.500 tỷ đồng, tăng 10%, trong khi số nộp ngân sách Nhà nướ",
+      "url": "https://kinhtechungkhoan.vn/loi-nhuan-quy-iv-2025-cua-pv-gas-giam-hon-26-so-voi-cung-ky-1419358.html",
+      "content_hash": "fa1aa332b0cb1ab05ab6aedde5d283fd7c748d50adf5547550f9d24e82c52eb3",
+      "extraction_status": "ok"
+    }
+  ],
+  "data_quality_flags": {
+    "news_coverage": "high",
+    "ticker_matching_confidence": "mixed",
+    "full_text_coverage": 5,
+    "summary_coverage": 5,
+    "key_fact_coverage": 5,
+    "missing_fields": []
+  },
+  "guardrails": {
+    "initial_prompt_safe": true,
+    "news_cutoff": "2025-12-31",
+    "not_investment_advice": true,
+    "no_post_decision_data": true,
+    "full_text_excerpt_chars": 500
+  },
+  "provenance": {
+    "name": "initial_evidence",
+    "path": "reports/decision_support/generated/evidence_packs_initial.json",
+    "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+    "zone": "initial",
+    "record_count": 25,
+    "schema_version": "evidence-pack-initial-v1",
+    "generated_at_utc": null,
+    "provenance_status": null
+  }
+}

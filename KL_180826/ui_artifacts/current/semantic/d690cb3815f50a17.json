@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "d690cb3815f50a17",
+    "ticker": "LPB",
+    "article_date": "2025-09-17",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": true,
+    "consensus_direction": "neutral",
+    "consensus_materiality": "low",
+    "consensus_event_type": "debt",
+    "evidence_span": "CBTT về việc đăng ký giao dịch trái phiếu LPB12502 của Ngân hàng Thương mại Cổ phần Lộc Phát Việt Nam (tên cũ: Ngân hàng Thương mại cổ phần Bưu Điện Liên Việt)",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "none"
+    ],
+    "requires_human_review": false,
+    "review_flags": [
+      "none"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

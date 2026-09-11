@@ -1,0 +1,223 @@
+{
+  "decision_id": "2025Q4_MCH_02",
+  "snapshot_mode": "full_evidence",
+  "ticker": "MCH",
+  "decision_date": "2025-12-31",
+  "period_id": "2025Q4",
+  "holding_horizon": "next_quarter_or_period_return_in_signals",
+  "ml_signal": {
+    "model_name": "technical_Config_A_from_existing_pipeline",
+    "pred_proba_up": 0.9944298168290505,
+    "pred_label": 1,
+    "rank_in_period": 2,
+    "source_signal_class": "Buy Candidate",
+    "display_status": "Model candidate"
+  },
+  "technical_snapshot": {
+    "rsi_end_q": 66.06094473916028,
+    "macd_hist_mean_q": 0.22683360964630253,
+    "price_vs_sma20": 0.021768580503021603,
+    "return_2q_ago": -0.10768823373642865,
+    "return_q": 0.7236641221374045,
+    "return_prev_q": 0.05161548464539358,
+    "volume_change_q": 0.25228163165401385,
+    "return_mean_daily": 0.009214549325207676,
+    "price_range_q": 0.5656884037914879,
+    "sma20_end": 176.79150000000004
+  },
+  "top_drivers": [
+    {
+      "feature": "rsi_end_q",
+      "value": 66.06094473916028,
+      "direction": "supports_up_signal",
+      "explanation": "RSI cuối kỳ là driver kỹ thuật quan trọng nhất trong mô hình."
+    },
+    {
+      "feature": "macd_hist_mean_q",
+      "value": 0.22683360964630253,
+      "direction": "supports_up_signal",
+      "explanation": "MACD histogram trung bình phản ánh động lượng xu hướng."
+    },
+    {
+      "feature": "price_vs_sma20",
+      "value": 0.021768580503021603,
+      "direction": "supports_up_signal",
+      "explanation": "Vị trí giá so với SMA20 phản ánh trạng thái trên/dưới đường trung bình."
+    },
+    {
+      "feature": "return_2q_ago",
+      "value": -0.10768823373642865,
+      "direction": "weak_or_negative",
+      "explanation": "Lợi suất trễ hai kỳ phản ánh động lượng/quán tính lịch sử."
+    },
+    {
+      "feature": "return_q",
+      "value": 0.7236641221374045,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trong kỳ hiện tại phản ánh xu hướng gần nhất."
+    },
+    {
+      "feature": "return_prev_q",
+      "value": 0.05161548464539358,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất kỳ trước bổ sung thông tin động lượng."
+    },
+    {
+      "feature": "volume_change_q",
+      "value": 0.25228163165401385,
+      "direction": "supports_up_signal",
+      "explanation": "Thay đổi khối lượng phản ánh mức độ quan tâm của thị trường."
+    },
+    {
+      "feature": "return_mean_daily",
+      "value": 0.009214549325207676,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trung bình ngày phản ánh xu hướng ngắn trong kỳ."
+    },
+    {
+      "feature": "price_range_q",
+      "value": 0.5656884037914879,
+      "direction": "risk_high_volatility",
+      "explanation": "Biên độ giá trong kỳ phản ánh biến động/rủi ro."
+    },
+    {
+      "feature": "sma20_end",
+      "value": 176.79150000000004,
+      "direction": "context",
+      "explanation": "SMA20 cuối kỳ phản ánh mặt bằng xu hướng ngắn hạn."
+    }
+  ],
+  "news_evidence": [
+    {
+      "evidence_id": "N001",
+      "published_at": "2025-12-30",
+      "source": "cafef",
+      "title": "MCH: 9.1.2026, ngày GDKHQ sử dụng cổ phiếu quỹ để chia cho cổ đông hiện hữu (tỷ lệ 10.000:103), thưởng cp (tỷ lệ 10.000:2.147), tạm ứng cổ tức đợt 2 năm 2025 bằng tiền (2.500 đ/cp), lấy ý kiến cổ đông bằng văn bản",
+      "article_summary": "Sở Giao dịch Chứng khoán TP.HCM thông báo về ngày đăng ký cuối cùng sử dụng cổ phiếu quỹ để chia cho cổ đông hiện hữu, phát hành cổ phiếu để tăng vốn cổ phần từ nguồn vốn chủ sở hữu, tạm ứng cổ tức đợt 2 năm 2025 bằng tiền, lấy ý kiến cổ đông bằng văn bản của Công ty Cổ phần Hàng tiêu dùng Masan MCH: 9.1.2026, ngày GDKHQ sử dụng cổ phiếu quỹ để chia cho cổ đông hiện hữu (tỷ lệ 10.000:103), thưởng cp (tỷ lệ 10.000:2.147), tạm ứng cổ tức đợt 2 năm 2025 bằng tiền (2.500 đ/cp), lấy ý kiến cổ đông bằng văn bản Sở Giao dịch Chứng khoán TP.HCM thông báo về ngày đăng ký cuối cùng sử dụng cổ phiếu quỹ để chia cho cổ đông hiện hữu, phát hành cổ phiếu để tăng vốn cổ phần từ nguồn vốn chủ sở hữu, tạm ứng cổ tức đợt 2 năm 2025 bằng tiền, lấy ý kiến cổ đông bằng văn bản của Công ty Cổ phần Hàng tiêu dùng Masan",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "MCH: 9.1.2026, ngày GDKHQ sử dụng cổ phiếu quỹ để chia cho cổ đông hiện hữu (tỷ lệ 10.000:103), thưởng cp (tỷ lệ 10.000:2.147), tạm ứng cổ tức đợt 2 năm 2025 bằng tiền (2.500 đ/cp), lấy ý kiến cổ đông bằng văn bản Sở Giao dịch Chứng khoán TP.HCM thông báo về ngày đăng ký cuối cùng sử dụng cổ phiếu q",
+          "evidence_quote": "MCH: 9.1.2026, ngày GDKHQ sử dụng cổ phiếu quỹ để chia cho cổ đông hiện hữu (tỷ lệ 10.000:103), thưởng cp (tỷ lệ 10.000:2.147), tạm ứng cổ tức đợt 2 năm 2025 bằng tiền (2.500 đ/cp), lấy ý kiến cổ đông bằng văn bản Sở Giao dịch Chứng khoán T",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [],
+      "event_type": "dividend,capital",
+      "match_confidence": "exact",
+      "evidence_span": "MCH: 9.1.2026, ngày GDKHQ sử dụng cổ phiếu quỹ để chia cho cổ đông hiện hữu (tỷ lệ 10.000:103), thưởng cp (tỷ lệ 10.000:2.147), tạm ứng cổ tức đợt 2 năm 2025 bằng tiền (2.500 đ/cp), lấy ý kiến cổ đông bằng văn bản Sở Giao dịch Chứng khoán TP.HCM thông báo về ngày đăng ký cuối cùng sử dụng cổ phiếu quỹ để chia cho cổ đông hiện hữu, phát hành cổ phiếu để tăng vốn cổ phần từ nguồn vốn chủ sở hữu, tạm ứng cổ tức đợt 2 năm 2025 bằng tiền, lấy ý kiến cổ đông bằng văn bản của Công ty Cổ phần Hàng tiêu",
+      "url": "https://cafef.vn/du-lieu/MCH-2372573/mch-912026-ngay-gdkhq-su-dung-co-phieu-quy-de-chia-cho-co-dong-hien-huu-ty-le-10000103-thuong-cp-ty-le-100002147-tam-ung-co-tuc-dot-2-nam-2025-bang-tien-2500-dcp-lay-y-kien-co-dong-bang-van-ban.chn",
+      "content_hash": "6458e2d0356d7ea9a6e95e17c3636daf8b31846e3e1371ab2735a622245728a3",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N002",
+      "published_at": "2025-12-30",
+      "source": "vietstock",
+      "title": "Vừa lên HOSE, MCH đã chốt quyền \"phát quà\" kép cho cổ đông",
+      "article_summary": "Vừa lên HOSE, MCH đã chốt quyền \"phát quà\" kép cho cổ đông CTCP Hàng tiêu dùng Masan (Masan consumer, HOSE : MCH ) thông báo 12/01/2026 là ngày đăng ký cuối cùng để chốt quyền nhận tạm ứng cổ tức tiền mặt đợt 2/2025, phát hành cổ phiếu để tăng vốn cổ phần từ nguồn vốn chủ sở hữu và chia cổ phiếu quỹ cho cổ đông hiện hữu. Ngày 09/01 là ngày giao dịch không hưởng quyền. Cụ thể, MCH sẽ phát hành 10.88 triệu cp quỹ cho cổ đông hiện hữu theo phương thức thực hiện quyền.",
+      "key_facts": [],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "legal_risk"
+      ],
+      "event_type": "dividend,capital,legal_risk,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vừa lên HOSE, MCH đã chốt quyền \"phát quà\" kép cho cổ đông CTCP Hàng tiêu dùng Masan (Masan consumer, HOSE : MCH ) thông báo 12/01/2026 là ngày đăng ký cuối cùng để chốt quyền nhận tạm ứng cổ tức tiền mặt đợt 2/2025, phát hành cổ phiếu để tăng vốn cổ phần từ nguồn vốn chủ sở hữu và chia cổ phiếu quỹ cho cổ đông hiện hữu. Ngày 09/01 là ngày giao dịch không hưởng quyền. Cụ thể, MCH sẽ phát hành 10.88 triệu cp quỹ cho cổ đông hiện hữu theo phương thức thực hiện quyền. Với tỷ lệ thực hiện 1.03%, cổ",
+      "url": "https://vietstock.vn/2025/12/vua-len-hose-mch-da-chot-quyen-phat-qua-kep-cho-co-dong-738-1386628.htm",
+      "content_hash": "534f1d9971f6b3f0dee42e060382ddadd5adab99eb14bccb40d2718085b128b0",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N003",
+      "published_at": "2025-12-26",
+      "source": "cafef",
+      "title": "MCH: Đính chính Nghị quyết HĐQT số 38 ngày 24/12/2025",
+      "article_summary": "Công ty Cổ phần Hàng tiêu dùng Masan thông báo đính chính Nghị quyết HĐQT số 38 ngày 24/12/2025 MCH: Đính chính Nghị quyết HĐQT số 38 ngày 24/12/2025 Công ty Cổ phần Hàng tiêu dùng Masan thông báo đính chính Nghị quyết HĐQT số 38 ngày 24/12/2025",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "MCH: Đính chính Nghị quyết HĐQT số 38 ngày 24/12/2025 Công ty Cổ phần Hàng tiêu dùng Masan thông báo đính chính Nghị quyết HĐQT số 38 ngày 24/12/2025 MCH: Đính chính Nghị quyết HĐQT số 38 ngày 24/12/2025 Công ty Cổ phần Hàng tiêu dùng Masan thông báo đính chính Nghị quyết HĐQT số 38 ngày 24/12/2025",
+          "evidence_quote": "MCH: Đính chính Nghị quyết HĐQT số 38 ngày 24/12/2025 Công ty Cổ phần Hàng tiêu dùng Masan thông báo đính chính Nghị quyết HĐQT số 38 ngày 24/12/2025 MCH: Đính chính Nghị quyết HĐQT số 38 ngày 24/12/2025 Công ty Cổ phần Hàng tiêu dùng Masan",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "exact",
+      "evidence_span": "MCH: Đính chính Nghị quyết HĐQT số 38 ngày 24/12/2025 Công ty Cổ phần Hàng tiêu dùng Masan thông báo đính chính Nghị quyết HĐQT số 38 ngày 24/12/2025",
+      "url": "https://cafef.vn/du-lieu/MCH-2371493/mch-dinh-chinh-nghi-quyet-hdqt-so-38-ngay-24122025.chn",
+      "content_hash": "3faccd4d92e466be358d8bfa566c4bd092d07678243002666f2bd188881cbc50",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N004",
+      "published_at": "2025-12-26",
+      "source": "vietstock",
+      "title": "MCH: Thông báo về ngày đăng ký cuối cùng sử dụng cổ phiếu quỹ để chia cho cổ đông hiện hữu, phát hành cổ phiếu để tăng vốn cổ phần từ nguồn vốn chủ sở hữu, tạm ứng cổ tức đợt 2 năm 2025 bằng tiền, lấy ý kiến cổ đông bằng văn bản",
+      "article_summary": "MCH: Thông báo về ngày đăng ký cuối cùng sử dụng cổ phiếu quỹ để chia cho cổ đông hiện hữu, phát hành cổ phiếu để tăng vốn cổ phần từ nguồn vốn chủ sở hữu, tạm ứng cổ tức đợt 2 năm 2025 bằng tiền, lấy ý kiến cổ đông bằng văn bản Sở Giao dịch Chứng khoán TP.HCM thông báo về ngày đăng ký cuối cùng sử dụng cổ phiếu quỹ để chia cho cổ đông hiện hữu, phát hành cổ phiếu để tăng vốn cổ phần từ nguồn vốn chủ sở hữu, tạm ứng cổ tức đợt 2 năm 2025 bằng tiền, lấy ý kiến cổ đông bằng văn bản của Công ty Cổ phần Hàng tiêu dùng Masan như sau: Sở Giao dịch Chứng khoán TP.HCM thông báo về ngày đăng ký cuối cùng sử dụng cổ phiếu quỹ để chia cho cổ đông hiện hữu, phát hành cổ phiếu để tăng vốn cổ phần từ nguồn vốn chủ sở hữu, tạm ứng cổ tức đợt 2 năm 2025 bằng tiền, lấy ý kiến cổ đông bằng văn bản của Công ty Cổ phần Hàng tiêu dùng Masan như sau: MCH: Thông báo về ngày đăng ký cuối cùng sử dụng cổ phiếu quỹ để chia cho cổ đông hiện hữu, phát hành cổ phiếu để tăng vốn cổ phần từ nguồn vốn chủ sở hữu, tạm ứng cổ tức đợt 2 năm 2025 bằng tiền, lấy ý kiến cổ đông bằng văn bản",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "MCH: Thông báo về ngày đăng ký cuối cùng sử dụng cổ phiếu quỹ để chia cho cổ đông hiện hữu, phát hành cổ phiếu để tăng vốn cổ phần từ nguồn vốn chủ sở hữu, tạm ứng cổ tức đợt 2 năm 2025 bằng tiền, lấy ý kiến cổ đông bằng văn bản nan MCH: Thông báo về ngày đăng ký cuối cùng sử dụng cổ phiếu quỹ để ch",
+          "evidence_quote": "MCH: Thông báo về ngày đăng ký cuối cùng sử dụng cổ phiếu quỹ để chia cho cổ đông hiện hữu, phát hành cổ phiếu để tăng vốn cổ phần từ nguồn vốn chủ sở hữu, tạm ứng cổ tức đợt 2 năm 2025 bằng tiền, lấy ý kiến cổ đông bằng văn bản nan MCH: Th",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [],
+      "event_type": "dividend,capital",
+      "match_confidence": "exact",
+      "evidence_span": "MCH: Thông báo về ngày đăng ký cuối cùng sử dụng cổ phiếu quỹ để chia cho cổ đông hiện hữu, phát hành cổ phiếu để tăng vốn cổ phần từ nguồn vốn chủ sở hữu, tạm ứng cổ tức đợt 2 năm 2025 bằng tiền, lấy ý kiến cổ đông bằng văn bản Sở Giao dịch Chứng khoán TP.HCM thông báo về ngày đăng ký cuối cùng sử dụng cổ phiếu quỹ để chia cho cổ đông hiện hữu, phát hành cổ phiếu để tăng vốn cổ phần từ nguồn vốn chủ sở hữu, tạm ứng cổ tức đợt 2 năm 2025 bằng tiền, lấy ý kiến cổ đông bằng văn bản của Công ty Cổ",
+      "url": "https://vietstock.vn/2025/12/mch-thong-bao-ve-ngay-dang-ky-cuoi-cung-su-dung-co-phieu-quy-de-chia-cho-co-dong-hien-huu-phat-hanh-co-phieu-de-tang-von-co-phan-tu-nguon-von-chu-so-huu-tam-ung-co-tuc-dot-2-nam-2025-bang-tien-lay-737-1386313.htm",
+      "content_hash": "40aef715caf79f3651a1a1c2c73328b0e1e8ff7f74c5d0d56bf1c7d9cca42716",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N005",
+      "published_at": "2025-12-25",
+      "source": "cafef",
+      "title": "MCH: Nghị quyết HĐQT về việc chốt danh sách cổ đông để lấy ý kiến cổ đông bằng văn bản",
+      "article_summary": "Công ty Cổ phần Hàng tiêu dùng Masan công bố Nghị quyết HĐQT về việc chốt danh sách cổ đông để lấy ý kiến cổ đông bằng văn bản MCH: Nghị quyết HĐQT về việc chốt danh sách cổ đông để lấy ý kiến cổ đông bằng văn bản Công ty Cổ phần Hàng tiêu dùng Masan công bố Nghị quyết HĐQT về việc chốt danh sách cổ đông để lấy ý kiến cổ đông bằng văn bản",
+      "key_facts": [],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "exact",
+      "evidence_span": "MCH: Nghị quyết HĐQT về việc chốt danh sách cổ đông để lấy ý kiến cổ đông bằng văn bản Công ty Cổ phần Hàng tiêu dùng Masan công bố Nghị quyết HĐQT về việc chốt danh sách cổ đông để lấy ý kiến cổ đông bằng văn bản",
+      "url": "https://cafef.vn/du-lieu/MCH-2369665/mch-nghi-quyet-hdqt-ve-viec-chot-danh-sach-co-dong-de-lay-y-kien-co-dong-bang-van-ban.chn",
+      "content_hash": "6dea6b05a49a5901e58448641c9fb00f59e72c003377da32d514792ca4e91f1e",
+      "extraction_status": "partial"
+    }
+  ],
+  "data_quality_flags": {
+    "news_coverage": "high",
+    "ticker_matching_confidence": "mixed",
+    "full_text_coverage": 5,
+    "summary_coverage": 5,
+    "key_fact_coverage": 3,
+    "missing_fields": []
+  },
+  "guardrails": {
+    "initial_prompt_safe": true,
+    "news_cutoff": "2025-12-31",
+    "not_investment_advice": true,
+    "no_post_decision_data": true,
+    "full_text_excerpt_chars": 500
+  },
+  "provenance": {
+    "name": "initial_evidence",
+    "path": "reports/decision_support/generated/evidence_packs_initial.json",
+    "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+    "zone": "initial",
+    "record_count": 25,
+    "schema_version": "evidence-pack-initial-v1",
+    "generated_at_utc": null,
+    "provenance_status": null
+  }
+}

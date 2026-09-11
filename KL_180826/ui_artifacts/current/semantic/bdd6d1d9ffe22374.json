@@ -1,0 +1,26 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "bdd6d1d9ffe22374",
+    "ticker": "NLG",
+    "article_date": "2025-11-19",
+    "consensus_method": "unanimous",
+    "agreement_level": "high",
+    "analysis_eligible": false,
+    "consensus_direction": "unclear",
+    "consensus_materiality": "low",
+    "consensus_event_type": "governance",
+    "evidence_span": "Nghị quyết HĐQT về việc thực hiện giao dịch với bên liên quan",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "numeric_score_outlier",
+      "unclear_direction"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "numeric_score_outlier",
+      "unclear_direction"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

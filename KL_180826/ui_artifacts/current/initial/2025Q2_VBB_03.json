@@ -1,0 +1,347 @@
+{
+  "decision_id": "2025Q2_VBB_03",
+  "snapshot_mode": "full_evidence",
+  "ticker": "VBB",
+  "decision_date": "2025-06-30",
+  "period_id": "2025Q2",
+  "holding_horizon": "next_quarter_or_period_return_in_signals",
+  "ml_signal": {
+    "model_name": "technical_Config_A_from_existing_pipeline",
+    "pred_proba_up": 0.9981673135834384,
+    "pred_label": 1,
+    "rank_in_period": 3,
+    "source_signal_class": "Buy Candidate",
+    "display_status": "Model candidate"
+  },
+  "technical_snapshot": {
+    "rsi_end_q": 65.45934318970028,
+    "macd_hist_mean_q": 0.005139476004682205,
+    "price_vs_sma20": 0.05121293800539097,
+    "return_2q_ago": 0.12820512820512817,
+    "return_q": 0.1849405548216645,
+    "return_prev_q": 0.08764367816091959,
+    "volume_change_q": 1.207229399764909,
+    "return_mean_daily": 0.003308968971856622,
+    "price_range_q": 0.3688826084245963,
+    "sma20_end": 8.533
+  },
+  "top_drivers": [
+    {
+      "feature": "rsi_end_q",
+      "value": 65.45934318970028,
+      "direction": "supports_up_signal",
+      "explanation": "RSI cuối kỳ là driver kỹ thuật quan trọng nhất trong mô hình."
+    },
+    {
+      "feature": "macd_hist_mean_q",
+      "value": 0.005139476004682205,
+      "direction": "supports_up_signal",
+      "explanation": "MACD histogram trung bình phản ánh động lượng xu hướng."
+    },
+    {
+      "feature": "price_vs_sma20",
+      "value": 0.05121293800539097,
+      "direction": "supports_up_signal",
+      "explanation": "Vị trí giá so với SMA20 phản ánh trạng thái trên/dưới đường trung bình."
+    },
+    {
+      "feature": "return_2q_ago",
+      "value": 0.12820512820512817,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trễ hai kỳ phản ánh động lượng/quán tính lịch sử."
+    },
+    {
+      "feature": "return_q",
+      "value": 0.1849405548216645,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trong kỳ hiện tại phản ánh xu hướng gần nhất."
+    },
+    {
+      "feature": "return_prev_q",
+      "value": 0.08764367816091959,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất kỳ trước bổ sung thông tin động lượng."
+    },
+    {
+      "feature": "volume_change_q",
+      "value": 1.207229399764909,
+      "direction": "supports_up_signal",
+      "explanation": "Thay đổi khối lượng phản ánh mức độ quan tâm của thị trường."
+    },
+    {
+      "feature": "return_mean_daily",
+      "value": 0.003308968971856622,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trung bình ngày phản ánh xu hướng ngắn trong kỳ."
+    },
+    {
+      "feature": "price_range_q",
+      "value": 0.3688826084245963,
+      "direction": "risk_high_volatility",
+      "explanation": "Biên độ giá trong kỳ phản ánh biến động/rủi ro."
+    },
+    {
+      "feature": "sma20_end",
+      "value": 8.533,
+      "direction": "context",
+      "explanation": "SMA20 cuối kỳ phản ánh mặt bằng xu hướng ngắn hạn."
+    }
+  ],
+  "news_evidence": [
+    {
+      "evidence_id": "N001",
+      "published_at": "2025-06-30",
+      "source": "cafef",
+      "title": "VBB: Quyết định của NHNN về việc bổ sung nội dung hoạt động vào Giấy phép thành lập và hoạt động của Vietbank",
+      "article_summary": "Quyết định của NHNN về việc bổ sung nội dung hoạt động vào Giấy phép thành lập và hoạt động của Vietbank VBB: Quyết định của NHNN về việc bổ sung nội dung hoạt động vào Giấy phép thành lập và hoạt động của Vietbank Quyết định của NHNN về việc bổ sung nội dung hoạt động vào Giấy phép thành lập và hoạt động của Vietbank",
+      "key_facts": [],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "exact",
+      "evidence_span": "VBB: Quyết định của NHNN về việc bổ sung nội dung hoạt động vào Giấy phép thành lập và hoạt động của Vietbank Quyết định của NHNN về việc bổ sung nội dung hoạt động vào Giấy phép thành lập và hoạt động của Vietbank",
+      "url": "https://cafef.vn/du-lieu/VBB-2234758/vbb-quyet-dinh-cua-nhnn-ve-viec-bo-sung-noi-dung-hoat-dong-vao-giay-phep-thanh-lap-va-hoat-dong-cua-vietbank.chn",
+      "content_hash": "dc44476fa455311c74fd8bcfe1e5d29413b05ff618cd008c2e84cbf2d5585796",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N002",
+      "published_at": "2025-06-30",
+      "source": "vietstock",
+      "title": "VBB: Miễn nhiệm chức danh Phó Tổng giám đốc đối với Bà Phạm Thị Mỹ Chi",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "VBB: Miễn nhiệm chức danh Phó Tổng giám đốc đối với Bà Phạm Thị Mỹ Chi nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kin",
+          "evidence_quote": "VBB: Miễn nhiệm chức danh Phó Tổng giám đốc đối với Bà Phạm Thị Mỹ Chi nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu ch",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Đến nay cơ quan điều tra đã khởi tố 31 bị can liên quan đến vụ án tại Tổng công ty Cảng hàng không Việt Nam ACV về nhiều tội danh.",
+          "evidence_quote": "Đến nay cơ quan điều tra đã khởi tố 31 bị can liên quan đến vụ án tại Tổng công ty Cảng hàng không Việt Nam ACV về nhiều tội danh.",
+          "fact_type": "legal_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Tổng CTCP Vận tải Dầu khí (PVTrans, HOSE: PVT) vừa thông báo về việc miễn nhiệm ông Trần Ngọc Nguyên khỏi chức vụ Tổng Giám đốc kể từ ngày 01/07.",
+          "evidence_quote": "Tổng CTCP Vận tải Dầu khí (PVTrans, HOSE: PVT) vừa thông báo về việc miễn nhiệm ông Trần Ngọc Nguyên khỏi chức vụ Tổng Giám đốc kể từ ngày 01/07.",
+          "fact_type": "governance",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Tổng Công ty Xây dựng Số 1 - CTCP (UPCoM: CC1) công bố quyết định về việc thay đổi nhân sự cấp cao tại bộ phận tài chính - kế toán.",
+          "evidence_quote": "Tổng Công ty Xây dựng Số 1 - CTCP (UPCoM: CC1) công bố quyết định về việc thay đổi nhân sự cấp cao tại bộ phận tài chính - kế toán.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Ngay sau ĐHĐCĐ thường niên 2026, CTCP Chứng khoán VIX (HOSE: VIX) đồng loạt thông báo thay đổi nhân sự tại các vị trí Chủ tịch HĐQT và Tổng Giám đốc.",
+          "evidence_quote": "Ngay sau ĐHĐCĐ thường niên 2026, CTCP Chứng khoán VIX (HOSE: VIX) đồng loạt thông báo thay đổi nhân sự tại các vị trí Chủ tịch HĐQT và Tổng Giám đốc.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2025/07/vbb-mien-nhiem-chuc-danh-pho-tong-giam-doc-doi-voi-ba-pham-thi-my-chi-214-1323528.htm",
+      "content_hash": "7ae1b0b08c8a443931a225318d6eefc63019e8db193baa8406370b01e77366da",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N003",
+      "published_at": "2025-06-30",
+      "source": "vietstock",
+      "title": "VBB: Quyết định của NHNN về việc bổ sung nội dung hoạt động vào Giấy phép thành lập và hoạt động của Vietbank",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "VBB: Quyết định của NHNN về việc bổ sung nội dung hoạt động vào Giấy phép thành lập và hoạt động của Vietbank nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sác",
+          "evidence_quote": "VBB: Quyết định của NHNN về việc bổ sung nội dung hoạt động vào Giấy phép thành lập và hoạt động của Vietbank nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái si",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Trong ít ngày từ 30/06 - 02/07, Ủy ban Chứng khoán Nhà nước (UBCKNN) quyết định xử phạt hàng loạt doanh nghiệp vì lỗi công bố thông tin.",
+          "evidence_quote": "Trong ít ngày từ 30/06 - 02/07, Ủy ban Chứng khoán Nhà nước (UBCKNN) quyết định xử phạt hàng loạt doanh nghiệp vì lỗi công bố thông tin.",
+          "fact_type": "legal_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Phiên giao dịch ngày 03/07 chứng kiến diễn biến trái chiều khi khối ngoại tiếp tục bán ròng 789 tỷ đồng, trong khi tự doanh công ty chứng khoán mua ròng mạnh 551 tỷ...",
+          "evidence_quote": "Phiên giao dịch ngày 03/07 chứng kiến diễn biến trái chiều khi khối ngoại tiếp tục bán ròng 789 tỷ đồng, trong khi tự doanh công ty chứng khoán mua ròng mạnh 551 tỷ...",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Tháng 6, khối ngoại bán ròng hơn 15 ngàn tỷ đồng trên HOSE, ghi nhận quy mô giao dịch lớn tại VIC.",
+          "evidence_quote": "Tháng 6, khối ngoại bán ròng hơn 15 ngàn tỷ đồng trên HOSE, ghi nhận quy mô giao dịch lớn tại VIC.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Lũy kế nửa đầu năm, khối ngoại đã bán ròng gần 80 ngàn tỷ đồng...",
+          "evidence_quote": "Lũy kế nửa đầu năm, khối ngoại đã bán ròng gần 80 ngàn tỷ đồng...",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2025/06/vbb-quyet-dinh-cua-nhnn-ve-viec-bo-sung-noi-dung-hoat-dong-vao-giay-phep-thanh-lap-va-hoat-dong-cua-vietbank-830-1323252.htm",
+      "content_hash": "ae498f2379f5e812a0081cdae13130d8f393d27cfe7d506e4222fd008653c0e3",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N004",
+      "published_at": "2025-06-30",
+      "source": "vietstock",
+      "title": "VBB: Bổ nhiệm Bà Nguyễn Thị Thúy Minh kiêm nhiệm vị trí Kế toán trưởng thay cho Bà Phạm Thị Mỹ Chi",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "VBB: Bổ nhiệm Bà Nguyễn Thị Thúy Minh kiêm nhiệm vị trí Kế toán trưởng thay cho Bà Phạm Thị Mỹ Chi nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiế",
+          "evidence_quote": "VBB: Bổ nhiệm Bà Nguyễn Thị Thúy Minh kiêm nhiệm vị trí Kế toán trưởng thay cho Bà Phạm Thị Mỹ Chi nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng qu",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Đến nay cơ quan điều tra đã khởi tố 31 bị can liên quan đến vụ án tại Tổng công ty Cảng hàng không Việt Nam ACV về nhiều tội danh.",
+          "evidence_quote": "Đến nay cơ quan điều tra đã khởi tố 31 bị can liên quan đến vụ án tại Tổng công ty Cảng hàng không Việt Nam ACV về nhiều tội danh.",
+          "fact_type": "legal_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Tổng CTCP Vận tải Dầu khí (PVTrans, HOSE: PVT) vừa thông báo về việc miễn nhiệm ông Trần Ngọc Nguyên khỏi chức vụ Tổng Giám đốc kể từ ngày 01/07.",
+          "evidence_quote": "Tổng CTCP Vận tải Dầu khí (PVTrans, HOSE: PVT) vừa thông báo về việc miễn nhiệm ông Trần Ngọc Nguyên khỏi chức vụ Tổng Giám đốc kể từ ngày 01/07.",
+          "fact_type": "governance",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Tổng Công ty Xây dựng Số 1 - CTCP (UPCoM: CC1) công bố quyết định về việc thay đổi nhân sự cấp cao tại bộ phận tài chính - kế toán.",
+          "evidence_quote": "Tổng Công ty Xây dựng Số 1 - CTCP (UPCoM: CC1) công bố quyết định về việc thay đổi nhân sự cấp cao tại bộ phận tài chính - kế toán.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Ngay sau ĐHĐCĐ thường niên 2026, CTCP Chứng khoán VIX (HOSE: VIX) đồng loạt thông báo thay đổi nhân sự tại các vị trí Chủ tịch HĐQT và Tổng Giám đốc.",
+          "evidence_quote": "Ngay sau ĐHĐCĐ thường niên 2026, CTCP Chứng khoán VIX (HOSE: VIX) đồng loạt thông báo thay đổi nhân sự tại các vị trí Chủ tịch HĐQT và Tổng Giám đốc.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2025/06/vbb-bo-nhiem-ba-nguyen-thi-thuy-minh-kiem-nhiem-vi-tri-ke-toan-truong-thay-cho-ba-pham-thi-my-chi-214-1322801.htm",
+      "content_hash": "c6b754213c1223fa68d6d56cd06a4d493821680ae71abd2bfd1c2250bb5e4557",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N005",
+      "published_at": "2025-06-27",
+      "source": "cafef",
+      "title": "VBB: Nghị quyết Hội đồng quản trị thay đổi địa điểm và tên gọi các chi nhánh công ty",
+      "article_summary": "VBB: Nghị quyết Hội đồng quản trị thay đổi địa điểm và tên gọi các chi nhánh công ty Nghị quyết Hội đồng quản trị",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "VBB: Nghị quyết Hội đồng quản trị thay đổi địa điểm và tên gọi các chi nhánh công ty Nghị quyết Hội đồng quản trị VBB: Nghị quyết Hội đồng quản trị thay đổi địa điểm và tên gọi các chi nhánh công ty Nghị quyết Hội đồng quản trị",
+          "evidence_quote": "VBB: Nghị quyết Hội đồng quản trị thay đổi địa điểm và tên gọi các chi nhánh công ty Nghị quyết Hội đồng quản trị VBB: Nghị quyết Hội đồng quản trị thay đổi địa điểm và tên gọi các chi nhánh công ty Nghị quyết Hội đồng quản trị",
+          "fact_type": "governance",
+          "direction": "neutral",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "governance"
+      ],
+      "event_type": "governance",
+      "match_confidence": "exact",
+      "evidence_span": "VBB: Nghị quyết Hội đồng quản trị thay đổi địa điểm và tên gọi các chi nhánh công ty Nghị quyết Hội đồng quản trị",
+      "url": "https://cafef.vn/du-lieu/VBB-2233421/vbb-nghi-quyet-hoi-dong-quan-tri-thay-doi-dia-diem-va-ten-goi-cac-chi-nhanh-cong-ty.chn",
+      "content_hash": "5ee247872ff6c7dfaf87683209b6d1676e96aacd48f052c512910ebe727876c0",
+      "extraction_status": "partial"
+    }
+  ],
+  "data_quality_flags": {
+    "news_coverage": "high",
+    "ticker_matching_confidence": "mixed",
+    "full_text_coverage": 5,
+    "summary_coverage": 5,
+    "key_fact_coverage": 4,
+    "missing_fields": []
+  },
+  "guardrails": {
+    "initial_prompt_safe": true,
+    "news_cutoff": "2025-06-30",
+    "not_investment_advice": true,
+    "no_post_decision_data": true,
+    "full_text_excerpt_chars": 500
+  },
+  "provenance": {
+    "name": "initial_evidence",
+    "path": "reports/decision_support/generated/evidence_packs_initial.json",
+    "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+    "zone": "initial",
+    "record_count": 25,
+    "schema_version": "evidence-pack-initial-v1",
+    "generated_at_utc": null,
+    "provenance_status": null
+  }
+}

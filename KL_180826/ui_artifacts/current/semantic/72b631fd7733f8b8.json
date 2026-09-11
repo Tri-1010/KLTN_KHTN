@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "72b631fd7733f8b8",
+    "ticker": "KDH",
+    "article_date": "2026-04-21",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": true,
+    "consensus_direction": "risk",
+    "consensus_materiality": "high",
+    "consensus_event_type": "earnings",
+    "evidence_span": "Công ty đặt mục tiêu doanh thu 4,200 tỷ đồng và lợi nhuận sau thuế 1,500 tỷ đồng, giảm lần lượt 10% và 8% so với thực hiện 2025.",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "data_quality_issue"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "data_quality_issue"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

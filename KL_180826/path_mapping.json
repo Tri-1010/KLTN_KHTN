@@ -1,0 +1,25 @@
+{
+  "schema_version": "portable-path-mapping-v1",
+  "bundle_root_token": "{BUNDLE_ROOT}",
+  "historic_roots": [
+    "C:\\Users\\User\\KLTN_KHTN",
+    "C:/Users/User/KLTN_KHTN"
+  ],
+  "notes": [
+    "Frozen canonical and provenance artifacts may retain historic absolute paths.",
+    "Do not rewrite frozen artifacts because their hashes are part of the evidence record.",
+    "Interpret historic-root references as paths relative to this portable bundle root when an equivalent path exists."
+  ],
+  "root_equivalents": {
+    "thesis_submission": "thesis_submission",
+    "multi_llm_evidence_extraction": "multi_llm_evidence_extraction",
+    "data": "data",
+    "pipeline": "pipeline",
+    "scripts": "scripts",
+    "research_ui": "research_ui",
+    "ui_artifacts": "ui_artifacts",
+    "reports": "reports",
+    "config": "config",
+    "tests": "tests"
+  }
+}

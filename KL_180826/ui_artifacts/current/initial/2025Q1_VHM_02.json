@@ -1,0 +1,345 @@
+{
+  "decision_id": "2025Q1_VHM_02",
+  "snapshot_mode": "full_evidence",
+  "ticker": "VHM",
+  "decision_date": "2025-03-31",
+  "period_id": "2025Q1",
+  "holding_horizon": "next_quarter_or_period_return_in_signals",
+  "ml_signal": {
+    "model_name": "technical_Config_A_from_existing_pipeline",
+    "pred_proba_up": 0.9990863674924828,
+    "pred_label": 1,
+    "rank_in_period": 2,
+    "source_signal_class": "Buy Candidate",
+    "display_status": "Model candidate"
+  },
+  "technical_snapshot": {
+    "rsi_end_q": 86.14437834793434,
+    "macd_hist_mean_q": 0.18562206941123446,
+    "price_vs_sma20": 0.07682619647355156,
+    "return_2q_ago": 0.13527851458885926,
+    "return_q": 0.2824999999999999,
+    "return_prev_q": -0.07940161104718073,
+    "volume_change_q": -0.3709552429301966,
+    "return_mean_daily": 0.0043919767241175425,
+    "price_range_q": 0.35112953031041766,
+    "sma20_end": 47.64
+  },
+  "top_drivers": [
+    {
+      "feature": "rsi_end_q",
+      "value": 86.14437834793434,
+      "direction": "positive_but_overbought_risk",
+      "explanation": "RSI cuối kỳ là driver kỹ thuật quan trọng nhất trong mô hình."
+    },
+    {
+      "feature": "macd_hist_mean_q",
+      "value": 0.18562206941123446,
+      "direction": "supports_up_signal",
+      "explanation": "MACD histogram trung bình phản ánh động lượng xu hướng."
+    },
+    {
+      "feature": "price_vs_sma20",
+      "value": 0.07682619647355156,
+      "direction": "supports_up_signal",
+      "explanation": "Vị trí giá so với SMA20 phản ánh trạng thái trên/dưới đường trung bình."
+    },
+    {
+      "feature": "return_2q_ago",
+      "value": 0.13527851458885926,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trễ hai kỳ phản ánh động lượng/quán tính lịch sử."
+    },
+    {
+      "feature": "return_q",
+      "value": 0.2824999999999999,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trong kỳ hiện tại phản ánh xu hướng gần nhất."
+    },
+    {
+      "feature": "return_prev_q",
+      "value": -0.07940161104718073,
+      "direction": "weak_or_negative",
+      "explanation": "Lợi suất kỳ trước bổ sung thông tin động lượng."
+    },
+    {
+      "feature": "volume_change_q",
+      "value": -0.3709552429301966,
+      "direction": "weak_or_negative",
+      "explanation": "Thay đổi khối lượng phản ánh mức độ quan tâm của thị trường."
+    },
+    {
+      "feature": "return_mean_daily",
+      "value": 0.0043919767241175425,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trung bình ngày phản ánh xu hướng ngắn trong kỳ."
+    },
+    {
+      "feature": "price_range_q",
+      "value": 0.35112953031041766,
+      "direction": "risk_high_volatility",
+      "explanation": "Biên độ giá trong kỳ phản ánh biến động/rủi ro."
+    },
+    {
+      "feature": "sma20_end",
+      "value": 47.64,
+      "direction": "context",
+      "explanation": "SMA20 cuối kỳ phản ánh mặt bằng xu hướng ngắn hạn."
+    }
+  ],
+  "news_evidence": [
+    {
+      "evidence_id": "N001",
+      "published_at": "2025-03-31",
+      "source": "cafef",
+      "title": "Vinhomes lãi 35.000 tỷ đồng, Ban điều hành được trả thù lao bao nhiêu?",
+      "article_summary": "Thu nhập do Vinhomes chi trả cho Ban điều hành năm 2024 giảm 40% so với 2023. Theo Hà My | 31-03-2025 - 15:25 PM | Thị trường chứng khoán Thu nhập do Vinhomes chi trả cho Ban điều hành năm 2024 giảm 40% so với 2023. Công ty cổ phần Vinhomes vừa công bố báo cáo tài chính hợp nhất kiểm toán năm 2024.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "Vinhomes lãi 35.000 tỷ đồng, Ban điều hành được trả thù lao bao nhiêu?",
+          "evidence_quote": "Vinhomes lãi 35.000 tỷ đồng, Ban điều hành được trả thù lao bao nhiêu?",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Thu nhập do Vinhomes chi trả cho Ban điều hành năm 2024 giảm 40% so với 2023.",
+          "evidence_quote": "Thu nhập do Vinhomes chi trả cho Ban điều hành năm 2024 giảm 40% so với 2023.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Theo Hà My | 31-03-2025 - 15:25 PM | Thị trường chứng khoán Thu nhập do Vinhomes chi trả cho Ban điều hành năm 2024 giảm 40% so với 2023.",
+          "evidence_quote": "Theo Hà My | 31-03-2025 - 15:25 PM | Thị trường chứng khoán Thu nhập do Vinhomes chi trả cho Ban điều hành năm 2024 giảm 40% so với 2023.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Công ty cổ phần Vinhomes vừa công bố báo cáo tài chính hợp nhất kiểm toán năm 2024.",
+          "evidence_quote": "Công ty cổ phần Vinhomes vừa công bố báo cáo tài chính hợp nhất kiểm toán năm 2024.",
+          "fact_type": "legal_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Báo cáo cho biết, trong năm 2024 vừa qua, Vinhomes đã chi trả 17,1 tỷ đồng thù lao cho các thành viên của Hội đồng quản trị.",
+          "evidence_quote": "Báo cáo cho biết, trong năm 2024 vừa qua, Vinhomes đã chi trả 17,1 tỷ đồng thù lao cho các thành viên của Hội đồng quản trị.",
+          "fact_type": "governance",
+          "direction": "neutral",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "earnings,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Theo Hà My | 31-03-2025 - 15:25 PM | Thị trường chứng khoán Thu nhập do Vinhomes chi trả cho Ban điều hành năm 2024 giảm 40% so với 2023. Công ty cổ phần Vinhomes vừa công bố báo cáo tài chính hợp nhất kiểm toán năm 2024. Báo cáo cho biết, trong năm 2024 vừa qua, Vinhomes đã chi trả 17,1 tỷ đồng thù lao cho các thành viên của Hội đồng quản trị. Trong đó, ngoại trừ tỷ phú Phạm Nhật Vượng, các thành viên còn lại đều nhận thù lao, cao nhất là ông Phạm Thiếu Hoa 6,86 tỷ đồng và bà Nguyễn Diệu Linh 3",
+      "url": "https://cafef.vn/vinhomes-lai-35000-ty-dong-ban-dieu-hanh-duoc-tra-thu-lao-bao-nhieu-18825033115160348.chn",
+      "content_hash": "39dfc36b7b6ad20a46a0b0ba3f970989a6bb6975fb87a91c9872048e45e199f2",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N002",
+      "published_at": "2025-03-19",
+      "source": "kinhtechungkhoan",
+      "title": "chi dao moi truoc them khoi cong sieu du an cua vinhomes tai ven vinh cam ranh 1362095.html",
+      "article_summary": "Công ty CP Đầu tư Cam Ranh, Công ty CP Vinhomes (HoSE: VHM) và Công ty CP Giải pháp Năng lượng VinES là đơn vị duy nhất đáp ứng yêu cầu sơ bộ về năng lực, kinh nghiệm tại dự án này. Cam Ranh (Khánh Hòa) vừa ban hành Công văn số 1201/UBND, chỉ đạo đẩy nhanh công tác giải phóng mặt bằng cho dự án Khu đô thị ven vịnh Cam Ranh, nhằm đảm bảo bàn giao mặt bằng đúng tiến độ khởi công trong tháng 4/2025. Dự án này đã được Thủ tướng Chính phủ chấp thuận chủ trương đầu tư theo Quyết định số 336/QĐ-TTg ngày 01/4/2023 và UBND tỉnh Khánh Hòa phê duyệt nhà đầu tư tại Quyết định số 1867/QĐ-UBND ngày 8/8/2023.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "chi dao moi truoc them khoi cong sieu du an cua vinhomes tai ven vinh cam ranh 1362095.html nan Công ty CP Đầu tư Cam Ranh, Công ty CP Vinhomes (HoSE: VHM) và Công ty CP Giải pháp Năng lượng VinES là đơn vị duy nhất đáp ứng yêu cầu sơ bộ về năng lực, kinh nghiệm tại dự án này.",
+          "evidence_quote": "chi dao moi truoc them khoi cong sieu du an cua vinhomes tai ven vinh cam ranh 1362095.html nan Công ty CP Đầu tư Cam Ranh, Công ty CP Vinhomes (HoSE: VHM) và Công ty CP Giải pháp Năng lượng VinES là đơn vị duy nhất đáp ứng yêu cầu sơ bộ về",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Cam Ranh (Khánh Hòa) vừa ban hành Công văn số 1201/UBND, chỉ đạo đẩy nhanh công tác giải phóng mặt bằng cho dự án Khu đô thị ven vịnh Cam Ranh, nhằm đảm bảo bàn giao mặt bằng đúng tiến độ khởi công trong tháng 4/2025.",
+          "evidence_quote": "Cam Ranh (Khánh Hòa) vừa ban hành Công văn số 1201/UBND, chỉ đạo đẩy nhanh công tác giải phóng mặt bằng cho dự án Khu đô thị ven vịnh Cam Ranh, nhằm đảm bảo bàn giao mặt bằng đúng tiến độ khởi công trong tháng 4/2025.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Dự án này đã được Thủ tướng Chính phủ chấp thuận chủ trương đầu tư theo Quyết định số 336/QĐ-TTg ngày 01/4/2023 và UBND tỉnh Khánh Hòa phê duyệt nhà đầu tư tại Quyết định số 1867/QĐ-UBND ngày 8/8/2023.",
+          "evidence_quote": "Dự án này đã được Thủ tướng Chính phủ chấp thuận chủ trương đầu tư theo Quyết định số 336/QĐ-TTg ngày 01/4/2023 và UBND tỉnh Khánh Hòa phê duyệt nhà đầu tư tại Quyết định số 1867/QĐ-UBND ngày 8/8/2023.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Quy mô dự án lên đến 1.254ha, trải dài trên nhiều phường, xã thuộc TP.",
+          "evidence_quote": "Quy mô dự án lên đến 1.254ha, trải dài trên nhiều phường, xã thuộc TP.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Quy mô dân số dự kiến 230.779 người, với 8.500 căn nhà liền kề, hơn 10.000 biệt thự và 19.816 căn nhà ở xã hội.",
+          "evidence_quote": "Quy mô dân số dự kiến 230.779 người, với 8.500 căn nhà liền kề, hơn 10.000 biệt thự và 19.816 căn nhà ở xã hội.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "debt_risk",
+        "governance"
+      ],
+      "event_type": "debt_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Công ty CP Đầu tư Cam Ranh, Công ty CP Vinhomes (HoSE: VHM) và Công ty CP Giải pháp Năng lượng VinES là đơn vị duy nhất đáp ứng yêu cầu sơ bộ về năng lực, kinh nghiệm tại dự án này. UBND TP. Cam Ranh (Khánh Hòa) vừa ban hành Công văn số 1201/UBND, chỉ đạo đẩy nhanh công tác giải phóng mặt bằng cho dự án Khu đô thị ven vịnh Cam Ranh, nhằm đảm bảo bàn giao mặt bằng đúng tiến độ khởi công trong tháng 4/2025. Dự án này đã được Thủ tướng Chính phủ chấp thuận chủ trương đầu tư theo Quyết định số 336/Q",
+      "url": "https://kinhtechungkhoan.vn/chi-dao-moi-truoc-them-khoi-cong-sieu-du-an-cua-vinhomes-tai-ven-vinh-cam-ranh-1362095.html",
+      "content_hash": "b5bfc81478234c27b90f2e0094dffcb86c729e898481f81bea23dc4a22a755fd",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N003",
+      "published_at": "2025-03-18",
+      "source": "kinhtechungkhoan",
+      "title": "soi trien vong co phieu vinhomes vhm hap dan nhung con phu thuoc vao mot yeu to 1361848.html",
+      "article_summary": "Theo báo cáo cập nhật VNDirect, Vinhomes (VHM) đang trong giai đoạn điều chỉnh khi doanh thu năm 2025 dự kiến giảm nhẹ trước khi quay trở lại chu kỳ tăng trưởng từ năm 2026. Nguyên nhân chủ yếu đến từ sự gián đoạn trong chu kỳ bàn giao dự án, trong khi các dự án mới sẽ bắt đầu đóng góp lớn vào doanh thu từ năm 2026 trở đi. Triển vọng 2025-2026: Doanh thu chững lại trước khi tăng tốc Theo báo cáo của từ Công ty Chứng khoán VNDirect, Công ty CP Vinhomes (VHM) ghi nhận doanh thu thuần quý 4/2024 đạt 32.874 tỷ đồng, tăng 21,6% so với cùng kỳ.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "soi trien vong co phieu vinhomes vhm hap dan nhung con phu thuoc vao mot yeu to 1361848.html nan Theo báo cáo cập nhật VNDirect, Vinhomes (VHM) đang trong giai đoạn điều chỉnh khi doanh thu năm 2025 dự kiến giảm nhẹ trước khi quay trở lại chu kỳ tăng trưởng từ năm 2026.",
+          "evidence_quote": "soi trien vong co phieu vinhomes vhm hap dan nhung con phu thuoc vao mot yeu to 1361848.html nan Theo báo cáo cập nhật VNDirect, Vinhomes (VHM) đang trong giai đoạn điều chỉnh khi doanh thu năm 2025 dự kiến giảm nhẹ trước khi quay trở lại c",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Nguyên nhân chủ yếu đến từ sự gián đoạn trong chu kỳ bàn giao dự án, trong khi các dự án mới sẽ bắt đầu đóng góp lớn vào doanh thu từ năm 2026 trở đi.",
+          "evidence_quote": "Nguyên nhân chủ yếu đến từ sự gián đoạn trong chu kỳ bàn giao dự án, trong khi các dự án mới sẽ bắt đầu đóng góp lớn vào doanh thu từ năm 2026 trở đi.",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Triển vọng 2025-2026: Doanh thu chững lại trước khi tăng tốc Theo báo cáo của từ Công ty Chứng khoán VNDirect, Công ty CP Vinhomes (VHM) ghi nhận doanh thu thuần quý 4/2024 đạt 32.874 tỷ đồng, tăng 21,6% so với cùng kỳ.",
+          "evidence_quote": "Triển vọng 2025-2026: Doanh thu chững lại trước khi tăng tốc Theo báo cáo của từ Công ty Chứng khoán VNDirect, Công ty CP Vinhomes (VHM) ghi nhận doanh thu thuần quý 4/2024 đạt 32.874 tỷ đồng, tăng 21,6% so với cùng kỳ.",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Mức tăng trưởng này chủ yếu đến từ hoạt động bàn giao tại các dự án lớn như Vinhomes Ocean Park 2, Vinhomes Ocean Park 3 và Vinhomes Grand Park.",
+          "evidence_quote": "Mức tăng trưởng này chủ yếu đến từ hoạt động bàn giao tại các dự án lớn như Vinhomes Ocean Park 2, Vinhomes Ocean Park 3 và Vinhomes Grand Park.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Đây là ba đại đô thị có quy mô lớn nhất mà VHM đang triển khai, đóng vai trò quan trọng trong doanh thu và lợi nhuận của công ty.",
+          "evidence_quote": "Đây là ba đại đô thị có quy mô lớn nhất mà VHM đang triển khai, đóng vai trò quan trọng trong doanh thu và lợi nhuận của công ty.",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "debt_risk",
+        "governance"
+      ],
+      "event_type": "earnings,debt_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Theo báo cáo cập nhật VNDirect, Vinhomes (VHM) đang trong giai đoạn điều chỉnh khi doanh thu năm 2025 dự kiến giảm nhẹ trước khi quay trở lại chu kỳ tăng trưởng từ năm 2026. Nguyên nhân chủ yếu đến từ sự gián đoạn trong chu kỳ bàn giao dự án, trong khi các dự án mới sẽ bắt đầu đóng góp lớn vào doanh thu từ năm 2026 trở đi. Triển vọng 2025-2026: Doanh thu chững lại trước khi tăng tốc Theo báo cáo của từ Công ty Chứng khoán VNDirect, Công ty CP Vinhomes (VHM) ghi nhận doanh thu thuần quý 4/2024 đạ",
+      "url": "https://kinhtechungkhoan.vn/soi-trien-vong-co-phieu-vinhomes-vhm-hap-dan-nhung-con-phu-thuoc-vao-mot-yeu-to-1361848.html",
+      "content_hash": "14d5ea0a78217880491f49de3971c68a51d4650e9fb3bc7a5fee984e86404e1e",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N004",
+      "published_at": "2025-03-07",
+      "source": "cafef",
+      "title": "VHM: 21.3.2025, ngày GDKHQ tham dự ĐHĐCĐ thường niên năm 2025",
+      "article_summary": "Sở Giao dịch Chứng khoán TP.HCM thông báo về ngày đăng ký cuối cùng tham dự ĐHĐCĐ thường niên năm 2025 của Công ty Cổ phần Vinhomes VHM: 21.3.2025, ngày GDKHQ tham dự ĐHĐCĐ thường niên năm 2025 Sở Giao dịch Chứng khoán TP.HCM thông báo về ngày đăng ký cuối cùng tham dự ĐHĐCĐ thường niên năm 2025 của Công ty Cổ phần Vinhomes",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "VHM: 21.3.2025, ngày GDKHQ tham dự ĐHĐCĐ thường niên năm 2025 Sở Giao dịch Chứng khoán TP.HCM thông báo về ngày đăng ký cuối cùng tham dự ĐHĐCĐ thường niên năm 2025 của Công ty Cổ phần Vinhomes VHM: 21.3.2025, ngày GDKHQ tham dự ĐHĐCĐ thường niên năm 2025 Sở Giao dịch Chứng khoán TP.HCM thông báo về",
+          "evidence_quote": "VHM: 21.3.2025, ngày GDKHQ tham dự ĐHĐCĐ thường niên năm 2025 Sở Giao dịch Chứng khoán TP.HCM thông báo về ngày đăng ký cuối cùng tham dự ĐHĐCĐ thường niên năm 2025 của Công ty Cổ phần Vinhomes VHM: 21.3.2025, ngày GDKHQ tham dự ĐHĐCĐ thườn",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "exact",
+      "evidence_span": "VHM: 21.3.2025, ngày GDKHQ tham dự ĐHĐCĐ thường niên năm 2025 Sở Giao dịch Chứng khoán TP.HCM thông báo về ngày đăng ký cuối cùng tham dự ĐHĐCĐ thường niên năm 2025 của Công ty Cổ phần Vinhomes",
+      "url": "https://cafef.vn/du-lieu/VHM-2145177/vhm-2132025-ngay-gdkhq-tham-du-dhdcd-thuong-nien-nam-2025.chn",
+      "content_hash": "a0ff6372d4149f749f26c133ed3a3e50c30ff9e3eb17165469bf656b34a0e4ea",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N005",
+      "published_at": "2025-03-04",
+      "source": "cafef",
+      "title": "VHM: CBTT ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025",
+      "article_summary": "Công ty Cổ phần Vinhomes thông báo ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025 VHM: CBTT ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025 Công ty Cổ phần Vinhomes thông báo ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "VHM: CBTT ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025 Công ty Cổ phần Vinhomes thông báo ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025 VHM: CBTT ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025 Công ty Cổ phần Vinhomes thông báo ngày ĐKCC để thực hiệ",
+          "evidence_quote": "VHM: CBTT ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025 Công ty Cổ phần Vinhomes thông báo ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025 VHM: CBTT ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "exact",
+      "evidence_span": "VHM: CBTT ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025 Công ty Cổ phần Vinhomes thông báo ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025",
+      "url": "https://cafef.vn/du-lieu/VHM-2142242/vhm-cbtt-ngay-dkcc-de-thuc-hien-quyen-tham-du-dhcd-thuong-nien-nam-2025.chn",
+      "content_hash": "5df1c02c75fb7ea6d6ed8750af70bc516ccbd2cd5b29722fbb59a2649dfec371",
+      "extraction_status": "partial"
+    }
+  ],
+  "data_quality_flags": {
+    "news_coverage": "high",
+    "ticker_matching_confidence": "mixed",
+    "full_text_coverage": 5,
+    "summary_coverage": 5,
+    "key_fact_coverage": 5,
+    "missing_fields": []
+  },
+  "guardrails": {
+    "initial_prompt_safe": true,
+    "news_cutoff": "2025-03-31",
+    "not_investment_advice": true,
+    "no_post_decision_data": true,
+    "full_text_excerpt_chars": 500
+  },
+  "provenance": {
+    "name": "initial_evidence",
+    "path": "reports/decision_support/generated/evidence_packs_initial.json",
+    "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+    "zone": "initial",
+    "record_count": 25,
+    "schema_version": "evidence-pack-initial-v1",
+    "generated_at_utc": null,
+    "provenance_status": null
+  }
+}

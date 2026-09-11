@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "e3eec1a48a8ca80b",
+    "ticker": "HPG",
+    "article_date": "2025-07-18",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": true,
+    "consensus_direction": "neutral",
+    "consensus_materiality": "low",
+    "consensus_event_type": "capital",
+    "evidence_span": "HPG: Quyết định về việc thay đổi đăng ký niêm yết",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "none"
+    ],
+    "requires_human_review": false,
+    "review_flags": [
+      "none"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

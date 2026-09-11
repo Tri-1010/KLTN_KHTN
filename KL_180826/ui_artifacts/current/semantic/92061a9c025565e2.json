@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "92061a9c025565e2",
+    "ticker": "HPG",
+    "article_date": "2024-11-11",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": true,
+    "consensus_direction": "support",
+    "consensus_materiality": "high",
+    "consensus_event_type": "project",
+    "evidence_span": "“Nếu trở thành nhà cung cấp thép cho dự án này, Hoà Phát cam kết đảm bảo cung cấp đủ khối lượng 6 triệu tấn thép các loại phục vụ dự án, đặc biệt là thép đường ray cao tốc và thép dự ứng lực cường độ cao”",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "data_quality_issue"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "data_quality_issue"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

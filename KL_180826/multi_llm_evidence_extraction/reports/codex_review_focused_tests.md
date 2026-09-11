@@ -1,0 +1,7 @@
+**Findings**
+- **Medium** `tests/test_multi_llm_backtest_reports.py:57`: Event gate only tests passing cases. No negative case where FDR and positive CI occur on different rows or non-BH correction. `claim_gate_pass` bug in `write_claim_evidence_table.py:141` could slip.
+- **Medium** `tests/test_multi_llm_backtest_reports.py:113`: Top-K test only happy path. No overlap, bad `transaction_cost`, or bad `net_return` cases for checks in `write_claim_evidence_table.py:181` and `write_claim_evidence_table.py:191`.
+- **Medium** `tests/test_multi_llm_backtest_reports.py:178`: Report renderer test omits event, ML, and Top-K input files, then asserts mostly static headings/strings. Dynamic report lines in `write_final_reports.py:139`, `write_final_reports.py:145`, `write_final_reports.py:151`, `write_final_reports.py:153` remain weakly covered.
+- **Low** `tests/test_multi_llm_backtest_reports.py:214`: `"macro-F1"` assertion is brittle/static header check from `write_final_reports.py:127`; does not prove rule metrics rendered correctly.
+- **Low** `tests/test_multi_llm_backtest_reports.py:216`: No-write assertion is mostly vacuous. Test calls pure render functions, not `main()` write paths in `write_final_reports.py:202` and `write_claim_evidence_table.py:423`.
+- **Low** `tests/test_multi_llm_backtest_reports.py:151`: Manual sanity test includes `human_materiality_ok` values but never asserts materiality counts, so normalization branch in `write_claim_evidence_table.py:292` is partly uncovered.

@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "0332db9674ce5215",
+    "ticker": "MSB",
+    "article_date": "2025-02-03",
+    "consensus_method": "unanimous",
+    "agreement_level": "high",
+    "analysis_eligible": true,
+    "consensus_direction": "neutral",
+    "consensus_materiality": "low",
+    "consensus_event_type": "other",
+    "evidence_span": "MSB: CBTT hoàn thành nghĩa vụ thuế Ngân hàng Thương mại Cổ phần Hàng Hải Việt Nam thông báo hoàn thành nghĩa vụ thuế",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "numeric_score_outlier"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "numeric_score_outlier"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "0d633b4bd75f7972",
+    "ticker": "VSC",
+    "article_date": "2024-10-04",
+    "consensus_method": "disagreement",
+    "agreement_level": "low",
+    "analysis_eligible": false,
+    "consensus_direction": "neutral",
+    "consensus_materiality": "low",
+    "consensus_event_type": "other",
+    "evidence_span": "Công ty CP Chứng khoán Bảo Việt (BVSC) vừa phát đi thông báo về việc chuẩn hóa dữ liệu nhà đầu tư trước ngày 01/01/2025.",
+    "disagreement_fields": [
+      "time_horizon"
+    ],
+    "quality_flags": [
+      "categorical_disagreement",
+      "numeric_score_outlier"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "categorical_disagreement",
+      "numeric_score_outlier"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "4c44fbe1ea850e27",
+    "ticker": "HPG",
+    "article_date": "2025-06-26",
+    "consensus_method": "unanimous",
+    "agreement_level": "high",
+    "analysis_eligible": true,
+    "consensus_direction": "mixed",
+    "consensus_materiality": "medium",
+    "consensus_event_type": "dividend",
+    "evidence_span": "Ngày 26/6 là ngày giao dịch không hưởng quyền để nhận cổ tức năm 2024 của Tập đoàn Hòa Phát (HoSE: HPG). Theo kế hoạch đã được thông qua, doanh nghiệp thép đầu ngành sẽ chia toàn bộ cổ tức bằng cổ phiếu với tỷ lệ 20%.",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "unclear_direction"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "unclear_direction"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

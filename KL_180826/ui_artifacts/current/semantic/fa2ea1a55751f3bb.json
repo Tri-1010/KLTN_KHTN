@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "fa2ea1a55751f3bb",
+    "ticker": "BCM",
+    "article_date": "2026-01-30",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": true,
+    "consensus_direction": "mixed",
+    "consensus_materiality": "high",
+    "consensus_event_type": "earnings",
+    "evidence_span": "BCM khép lại năm với doanh thu thuần 6,951 tỷ đồng, tăng 33% so với năm trước. Lãi ròng đạt gần 3,489 tỷ đồng, tăng 60%, mức cao kỷ lục.",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "unclear_direction"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "unclear_direction"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "decision_id": "2026Q1_EVF_02",
+  "snapshot_mode": "full_evidence",
+  "ticker": "EVF",
+  "decision_date": "2026-03-31",
+  "period_id": "2026Q1",
+  "holding_horizon": "next_quarter_or_period_return_in_signals",
+  "ml_signal": {
+    "model_name": "technical_Config_A_from_existing_pipeline",
+    "pred_proba_up": 0.9916400447480391,
+    "pred_label": 1,
+    "rank_in_period": 2,
+    "source_signal_class": "Buy Candidate",
+    "display_status": "Model candidate"
+  },
+  "technical_snapshot": {
+    "rsi_end_q": 56.977182893298725,
+    "macd_hist_mean_q": 0.04728645246595261,
+    "price_vs_sma20": 0.02471585783871532,
+    "return_2q_ago": 0.2727272727272729,
+    "return_q": 0.32093023255813946,
+    "return_prev_q": -0.22183098591549286,
+    "volume_change_q": 0.7600089710438691,
+    "return_mean_daily": 0.004895529192232282,
+    "price_range_q": 0.3699232379623168,
+    "sma20_end": 13.857500000000002
+  },
+  "top_drivers": [
+    {
+      "feature": "rsi_end_q",
+      "value": 56.977182893298725,
+      "direction": "supports_up_signal",
+      "explanation": "RSI cuối kỳ là driver kỹ thuật quan trọng nhất trong mô hình."
+    },
+    {
+      "feature": "macd_hist_mean_q",
+      "value": 0.04728645246595261,
+      "direction": "supports_up_signal",
+      "explanation": "MACD histogram trung bình phản ánh động lượng xu hướng."
+    },
+    {
+      "feature": "price_vs_sma20",
+      "value": 0.02471585783871532,
+      "direction": "supports_up_signal",
+      "explanation": "Vị trí giá so với SMA20 phản ánh trạng thái trên/dưới đường trung bình."
+    },
+    {
+      "feature": "return_2q_ago",
+      "value": 0.2727272727272729,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trễ hai kỳ phản ánh động lượng/quán tính lịch sử."
+    },
+    {
+      "feature": "return_q",
+      "value": 0.32093023255813946,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trong kỳ hiện tại phản ánh xu hướng gần nhất."
+    },
+    {
+      "feature": "return_prev_q",
+      "value": -0.22183098591549286,
+      "direction": "weak_or_negative",
+      "explanation": "Lợi suất kỳ trước bổ sung thông tin động lượng."
+    },
+    {
+      "feature": "volume_change_q",
+      "value": 0.7600089710438691,
+      "direction": "supports_up_signal",
+      "explanation": "Thay đổi khối lượng phản ánh mức độ quan tâm của thị trường."
+    },
+    {
+      "feature": "return_mean_daily",
+      "value": 0.004895529192232282,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trung bình ngày phản ánh xu hướng ngắn trong kỳ."
+    },
+    {
+      "feature": "price_range_q",
+      "value": 0.3699232379623168,
+      "direction": "risk_high_volatility",
+      "explanation": "Biên độ giá trong kỳ phản ánh biến động/rủi ro."
+    },
+    {
+      "feature": "sma20_end",
+      "value": 13.857500000000002,
+      "direction": "context",
+      "explanation": "SMA20 cuối kỳ phản ánh mặt bằng xu hướng ngắn hạn."
+    }
+  ],
+  "news_evidence": [
+    {
+      "evidence_id": "N001",
+      "published_at": "2026-03-23",
+      "source": "vietstock",
+      "title": "EVF: CBTT bổ nhiệm lại KTT",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "EVF: CBTT bổ nhiệm lại KTT nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần ",
+          "evidence_quote": "EVF: CBTT bổ nhiệm lại KTT nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHI",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Đến nay cơ quan điều tra đã khởi tố 31 bị can liên quan đến vụ án tại Tổng công ty Cảng hàng không Việt Nam ACV về nhiều tội danh.",
+          "evidence_quote": "Đến nay cơ quan điều tra đã khởi tố 31 bị can liên quan đến vụ án tại Tổng công ty Cảng hàng không Việt Nam ACV về nhiều tội danh.",
+          "fact_type": "legal_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Tổng CTCP Vận tải Dầu khí (PVTrans, HOSE: PVT) vừa thông báo về việc miễn nhiệm ông Trần Ngọc Nguyên khỏi chức vụ Tổng Giám đốc kể từ ngày 01/07.",
+          "evidence_quote": "Tổng CTCP Vận tải Dầu khí (PVTrans, HOSE: PVT) vừa thông báo về việc miễn nhiệm ông Trần Ngọc Nguyên khỏi chức vụ Tổng Giám đốc kể từ ngày 01/07.",
+          "fact_type": "governance",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Tổng Công ty Xây dựng Số 1 - CTCP (UPCoM: CC1) công bố quyết định về việc thay đổi nhân sự cấp cao tại bộ phận tài chính - kế toán.",
+          "evidence_quote": "Tổng Công ty Xây dựng Số 1 - CTCP (UPCoM: CC1) công bố quyết định về việc thay đổi nhân sự cấp cao tại bộ phận tài chính - kế toán.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Ngay sau ĐHĐCĐ thường niên 2026, CTCP Chứng khoán VIX (HOSE: VIX) đồng loạt thông báo thay đổi nhân sự tại các vị trí Chủ tịch HĐQT và Tổng Giám đốc.",
+          "evidence_quote": "Ngay sau ĐHĐCĐ thường niên 2026, CTCP Chứng khoán VIX (HOSE: VIX) đồng loạt thông báo thay đổi nhân sự tại các vị trí Chủ tịch HĐQT và Tổng Giám đốc.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2026/03/evf-cbtt-bo-nhiem-lai-ktt-214-1417610.htm",
+      "content_hash": "25d1a791a8e27b44e91868fb69d8a75ed8d5df04aa2bc34c24717a974f6b92db",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N002",
+      "published_at": "2026-03-11",
+      "source": "cafef",
+      "title": "EVF: Nghị quyết HĐQT phê duyệt phương án phát hành Trái phiếu tăng vốn cấp 2 theo hình thức riêng lẻ năm 2026",
+      "article_summary": "Công ty Tài chính Tổng hợp Cổ phần Điện lực công bố Nghị quyết HĐQT về việc phê duyệt phương án phát hành Trái phiếu tăng vốn cấp 2 theo hình thức riêng lẻ năm 2026 EVF: Nghị quyết HĐQT phê duyệt phương án phát hành Trái phiếu tăng vốn cấp 2 theo hình thức riêng lẻ năm 2026 Công ty Tài chính Tổng hợp Cổ phần Điện lực công bố Nghị quyết HĐQT về việc phê duyệt phương án phát hành Trái phiếu tăng vốn cấp 2 theo hình thức riêng lẻ năm 2026",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "EVF: Nghị quyết HĐQT phê duyệt phương án phát hành Trái phiếu tăng vốn cấp 2 theo hình thức riêng lẻ năm 2026 Công ty Tài chính Tổng hợp Cổ phần Điện lực công bố Nghị quyết HĐQT về việc phê duyệt phương án phát hành Trái phiếu tăng vốn cấp 2 theo hình thức riêng lẻ năm 2026 EVF: Nghị quyết HĐQT phê ",
+          "evidence_quote": "EVF: Nghị quyết HĐQT phê duyệt phương án phát hành Trái phiếu tăng vốn cấp 2 theo hình thức riêng lẻ năm 2026 Công ty Tài chính Tổng hợp Cổ phần Điện lực công bố Nghị quyết HĐQT về việc phê duyệt phương án phát hành Trái phiếu tăng vốn cấp ",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "debt_risk"
+      ],
+      "event_type": "debt_risk,capital",
+      "match_confidence": "exact",
+      "evidence_span": "EVF: Nghị quyết HĐQT phê duyệt phương án phát hành Trái phiếu tăng vốn cấp 2 theo hình thức riêng lẻ năm 2026 Công ty Tài chính Tổng hợp Cổ phần Điện lực công bố Nghị quyết HĐQT về việc phê duyệt phương án phát hành Trái phiếu tăng vốn cấp 2 theo hình thức riêng lẻ năm 2026",
+      "url": "https://cafef.vn/du-lieu/EVF-2416489/evf-nghi-quyet-hdqt-phe-duyet-phuong-an-phat-hanh-trai-phieu-tang-von-cap-2-theo-hinh-thuc-rieng-le-nam-2026.chn",
+      "content_hash": "8a842ec0881057d09d72ab0944383cae9cb37df4d7a5397e8c36b26c9083137f",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N003",
+      "published_at": "2026-03-11",
+      "source": "vietstock",
+      "title": "Thông báo về việc khôi phục giao dịch với trái phiếu EVF12201 của Công ty Tài chính Tổng hợp Cổ phần Điện Lực (Tên cũ: Công ty Tài chính cổ phần Điện Lực)",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "Thông báo về việc khôi phục giao dịch với trái phiếu EVF12201 của Công ty Tài chính Tổng hợp Cổ phần Điện Lực (Tên cũ: Công ty Tài chính cổ phần Điện Lực) nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền ",
+          "evidence_quote": "Thông báo về việc khôi phục giao dịch với trái phiếu EVF12201 của Công ty Tài chính Tổng hợp Cổ phần Điện Lực (Tên cũ: Công ty Tài chính cổ phần Điện Lực) nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội b",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Công ty TNHH Đầu tư Starbay Hà Nội hoàn tất đợt phát hành riêng lẻ lô trái phiếu STA12601 với tổng giá trị 2,780 tỷ đồng.",
+          "evidence_quote": "Công ty TNHH Đầu tư Starbay Hà Nội hoàn tất đợt phát hành riêng lẻ lô trái phiếu STA12601 với tổng giá trị 2,780 tỷ đồng.",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Công ty TNHH Thăng Long hoàn tất đợt chào bán riêng lẻ lô trái phiếu THL12602 với tổng giá trị 763 tỷ đồng.",
+          "evidence_quote": "Công ty TNHH Thăng Long hoàn tất đợt chào bán riêng lẻ lô trái phiếu THL12602 với tổng giá trị 763 tỷ đồng.",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "CTCP Bất động sản Bcons PS (Bcons PS Land, BPSC) mới đây tiếp tục huy động lô trái phiếu mới 140 tỷ đồng, lãi suất 12%/năm.",
+          "evidence_quote": "CTCP Bất động sản Bcons PS (Bcons PS Land, BPSC) mới đây tiếp tục huy động lô trái phiếu mới 140 tỷ đồng, lãi suất 12%/năm.",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Theo thông tin công bố từ Tập đoàn PC1 (HOSE: PC1), Ủy ban Chứng khoán Nhà nước (UBCKNN) đã ra quyết định buộc Doanh nghiệp thu hồi lô trái phiếu trị giá 900 tỷ...",
+          "evidence_quote": "Theo thông tin công bố từ Tập đoàn PC1 (HOSE: PC1), Ủy ban Chứng khoán Nhà nước (UBCKNN) đã ra quyết định buộc Doanh nghiệp thu hồi lô trái phiếu trị giá 900 tỷ...",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2026/03/thong-bao-ve-viec-khoi-phuc-giao-dich-voi-trai-phieu-evf12201-cua-cong-ty-tai-chinh-tong-hop-co-phan-dien-luc-ten-cu-cong-ty-tai-chinh-co-phan-dien-3118-1413557.htm",
+      "content_hash": "941cef9938fb3daf38abe387ccafb27d3016aa6d8746aa3f1afb892231a8169f",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N004",
+      "published_at": "2026-03-11",
+      "source": "vietstock",
+      "title": "EVF: Nghị quyết HĐQT về việc phê duyệt phương án phát hành Trái phiếu tăng vốn cấp 2 theo hình thức riêng lẻ năm 2026",
+      "article_summary": "EVF: Nghị quyết HĐQT về việc phê duyệt phương án phát hành Trái phiếu tăng vốn cấp 2 theo hình thức riêng lẻ năm 2026 Công ty Tài chính Tổng hợp Cổ phần Điện lực công bố Nghị quyết HĐQT về việc phê duyệt phương án phát hành Trái phiếu tăng vốn cấp 2 theo hình thức riêng lẻ năm 2026 như sau: Công ty Tài chính Tổng hợp Cổ phần Điện lực công bố Nghị quyết HĐQT về việc phê duyệt phương án phát hành Trái phiếu tăng vốn cấp 2 theo hình thức riêng lẻ năm 2026 như sau: EVF: Nghị quyết HĐQT về việc phê duyệt phương án phát hành Trái phiếu tăng vốn cấp 2 theo hình thức riêng lẻ năm 2026",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "EVF: Nghị quyết HĐQT về việc phê duyệt phương án phát hành Trái phiếu tăng vốn cấp 2 theo hình thức riêng lẻ năm 2026 nan EVF: Nghị quyết HĐQT về việc phê duyệt phương án phát hành Trái phiếu tăng vốn cấp 2 theo hình thức riêng lẻ năm 2026 Công ty Tài chính Tổng hợp Cổ phần Điện lực công bố Nghị quy",
+          "evidence_quote": "EVF: Nghị quyết HĐQT về việc phê duyệt phương án phát hành Trái phiếu tăng vốn cấp 2 theo hình thức riêng lẻ năm 2026 nan EVF: Nghị quyết HĐQT về việc phê duyệt phương án phát hành Trái phiếu tăng vốn cấp 2 theo hình thức riêng lẻ năm 2026 ",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "debt_risk"
+      ],
+      "event_type": "debt_risk,capital",
+      "match_confidence": "exact",
+      "evidence_span": "EVF: Nghị quyết HĐQT về việc phê duyệt phương án phát hành Trái phiếu tăng vốn cấp 2 theo hình thức riêng lẻ năm 2026 Công ty Tài chính Tổng hợp Cổ phần Điện lực công bố Nghị quyết HĐQT về việc phê duyệt phương án phát hành Trái phiếu tăng vốn cấp 2 theo hình thức riêng lẻ năm 2026 như sau: Công ty Tài chính Tổng hợp Cổ phần Điện lực công bố Nghị quyết HĐQT về việc phê duyệt phương án phát hành Trái phiếu tăng vốn cấp 2 theo hình thức riêng lẻ năm 2026 như sau: EVF: Nghị quyết HĐQT về việc phê d",
+      "url": "https://vietstock.vn/2026/03/evf-nghi-quyet-hdqt-ve-viec-phe-duyet-phuong-an-phat-hanh-trai-phieu-tang-von-cap-2-theo-hinh-thuc-rieng-le-nam-2026-737-1411063.htm",
+      "content_hash": "fc336435ac0e7b7d2a7209873917678da530425d06e39c8e2c21a540c67ca00d",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N005",
+      "published_at": "2026-03-11",
+      "source": "vietstock",
+      "title": "Vượt kế hoạch lợi nhuận 2025, EVF vẫn quyết định không chia cổ tức",
+      "article_summary": "Vượt kế hoạch lợi nhuận 2025, EVF vẫn quyết định không chia cổ tức Dù vượt kế hoạch lợi nhuận năm 2025, Công ty Tài chính Tổng hợp Cổ phần Điện lực ( HOSE : EVF ) vẫn quyết định không chia cổ tức. Trong khi đó, Công ty đề xuất trích thưởng cho HĐQT, BKS và Ban điều hành nhờ kết quả kinh doanh vượt chỉ tiêu. EVF vừa công bố tài liệu họp ĐHĐCĐ thường niên 2026, dự kiến tổ chức ngày 03/04 tại Ninh Bình.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "Vượt kế hoạch lợi nhuận 2025, EVF vẫn quyết định không chia cổ tức nan Vượt kế hoạch lợi nhuận 2025, EVF vẫn quyết định không chia cổ tức Dù vượt kế hoạch lợi nhuận năm 2025, Công ty Tài chính Tổng hợp Cổ phần Điện lực ( HOSE : EVF ) vẫn quyết định không chia cổ tức.",
+          "evidence_quote": "Vượt kế hoạch lợi nhuận 2025, EVF vẫn quyết định không chia cổ tức nan Vượt kế hoạch lợi nhuận 2025, EVF vẫn quyết định không chia cổ tức Dù vượt kế hoạch lợi nhuận năm 2025, Công ty Tài chính Tổng hợp Cổ phần Điện lực ( HOSE : EVF ) vẫn qu",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Trong khi đó, Công ty đề xuất trích thưởng cho HĐQT, BKS và Ban điều hành nhờ kết quả kinh doanh vượt chỉ tiêu.",
+          "evidence_quote": "Trong khi đó, Công ty đề xuất trích thưởng cho HĐQT, BKS và Ban điều hành nhờ kết quả kinh doanh vượt chỉ tiêu.",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "EVF vừa công bố tài liệu họp ĐHĐCĐ thường niên 2026, dự kiến tổ chức ngày 03/04 tại Ninh Bình.",
+          "evidence_quote": "EVF vừa công bố tài liệu họp ĐHĐCĐ thường niên 2026, dự kiến tổ chức ngày 03/04 tại Ninh Bình.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Theo tài liệu, EVF đặt mục tiêu lợi nhuận trước thuế năm 2026 đạt 1,325 tỷ đồng, tăng 20% so với thực hiện năm 2025.",
+          "evidence_quote": "Theo tài liệu, EVF đặt mục tiêu lợi nhuận trước thuế năm 2026 đạt 1,325 tỷ đồng, tăng 20% so với thực hiện năm 2025.",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Tổng tài sản dự kiến đạt 93,000 tỷ đồng, tăng 12%.",
+          "evidence_quote": "Tổng tài sản dự kiến đạt 93,000 tỷ đồng, tăng 12%.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [],
+      "event_type": "dividend,earnings,capital",
+      "match_confidence": "exact",
+      "evidence_span": "Vượt kế hoạch lợi nhuận 2025, EVF vẫn quyết định không chia cổ tức Dù vượt kế hoạch lợi nhuận năm 2025, Công ty Tài chính Tổng hợp Cổ phần Điện lực ( HOSE : EVF ) vẫn quyết định không chia cổ tức. Trong khi đó, Công ty đề xuất trích thưởng cho HĐQT, BKS và Ban điều hành nhờ kết quả kinh doanh vượt chỉ tiêu. EVF vừa công bố tài liệu họp ĐHĐCĐ thường niên 2026, dự kiến tổ chức ngày 03/04 tại Ninh Bình. Theo tài liệu, EVF đặt mục tiêu lợi nhuận trước thuế năm 2026 đạt 1,325 tỷ đồng, tăng 20% so với",
+      "url": "https://vietstock.vn/2026/03/vuot-ke-hoach-loi-nhuan-2025-evf-van-quyet-dinh-khong-chia-co-tuc-737-1410810.htm",
+      "content_hash": "1b9afab3df79c150ae06acf7451ec94d15e3ddf1354ce753041cd707f8e602f6",
+      "extraction_status": "ok"
+    }
+  ],
+  "data_quality_flags": {
+    "news_coverage": "high",
+    "ticker_matching_confidence": "mixed",
+    "full_text_coverage": 5,
+    "summary_coverage": 5,
+    "key_fact_coverage": 5,
+    "missing_fields": []
+  },
+  "guardrails": {
+    "initial_prompt_safe": true,
+    "news_cutoff": "2026-03-31",
+    "not_investment_advice": true,
+    "no_post_decision_data": true,
+    "full_text_excerpt_chars": 500
+  },
+  "provenance": {
+    "name": "initial_evidence",
+    "path": "reports/decision_support/generated/evidence_packs_initial.json",
+    "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+    "zone": "initial",
+    "record_count": 25,
+    "schema_version": "evidence-pack-initial-v1",
+    "generated_at_utc": null,
+    "provenance_status": null
+  }
+}

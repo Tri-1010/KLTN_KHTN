@@ -1,0 +1,26 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "24debd1d8c9f2ef5",
+    "ticker": "LPB",
+    "article_date": "2026-01-08",
+    "consensus_method": "unanimous",
+    "agreement_level": "high",
+    "analysis_eligible": true,
+    "consensus_direction": "neutral",
+    "consensus_materiality": "low",
+    "consensus_event_type": "governance",
+    "evidence_span": "LPB: Thông báo về ngày đăng ký cuối cùng để thực hiện quyền ứng cử, đề cử để bầu bổ sung thành viên HĐQT nhiệm kỳ IV (2023-2028) và tham dự ĐHĐCĐ thường niên năm 2026",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "data_quality_issue",
+      "numeric_score_outlier"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "data_quality_issue",
+      "numeric_score_outlier"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

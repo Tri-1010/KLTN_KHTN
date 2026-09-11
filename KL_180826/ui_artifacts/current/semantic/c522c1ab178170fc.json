@@ -1,0 +1,28 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "c522c1ab178170fc",
+    "ticker": "HCM",
+    "article_date": "2024-11-26",
+    "consensus_method": "unanimous",
+    "agreement_level": "high",
+    "analysis_eligible": false,
+    "consensus_direction": "neutral",
+    "consensus_materiality": "low",
+    "consensus_event_type": "dividend",
+    "evidence_span": "FPT: 2.12.2024, ngày GDKHQ tạm ứng cổ tức đợt 1 năm 2024 bằng tiền (1.000 đ/cp)",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "data_quality_issue",
+      "numeric_score_outlier",
+      "unclear_relevance"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "data_quality_issue",
+      "numeric_score_outlier",
+      "unclear_relevance"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

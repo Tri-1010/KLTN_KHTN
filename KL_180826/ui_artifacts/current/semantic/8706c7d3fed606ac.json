@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "8706c7d3fed606ac",
+    "ticker": "LPB",
+    "article_date": "2026-01-05",
+    "consensus_method": "unanimous",
+    "agreement_level": "high",
+    "analysis_eligible": true,
+    "consensus_direction": "neutral",
+    "consensus_materiality": "low",
+    "consensus_event_type": "governance",
+    "evidence_span": "Nghị quyết HĐQT thông qua ký kết hợp đồng, giao dịch với NNB, người có liên quan",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "numeric_score_outlier"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "numeric_score_outlier"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

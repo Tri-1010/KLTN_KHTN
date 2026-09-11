@@ -1,0 +1,377 @@
+{
+  "decision_id": "2026Q1_GMD_01",
+  "snapshot_mode": "full_evidence",
+  "ticker": "GMD",
+  "decision_date": "2026-03-31",
+  "period_id": "2026Q1",
+  "holding_horizon": "next_quarter_or_period_return_in_signals",
+  "ml_signal": {
+    "model_name": "technical_Config_A_from_existing_pipeline",
+    "pred_proba_up": 0.9918332061384683,
+    "pred_label": 1,
+    "rank_in_period": 1,
+    "source_signal_class": "Buy Candidate",
+    "display_status": "Model candidate"
+  },
+  "technical_snapshot": {
+    "rsi_end_q": 57.56055987287681,
+    "macd_hist_mean_q": 0.13479312514556438,
+    "price_vs_sma20": 0.040538720538720804,
+    "return_2q_ago": 0.22022928994082835,
+    "return_q": 0.3119375106130074,
+    "return_prev_q": -0.08263695450324982,
+    "volume_change_q": 0.3857443663750644,
+    "return_mean_daily": 0.005110134337470735,
+    "price_range_q": 0.40646086897736294,
+    "sma20_end": 74.24999999999999
+  },
+  "top_drivers": [
+    {
+      "feature": "rsi_end_q",
+      "value": 57.56055987287681,
+      "direction": "supports_up_signal",
+      "explanation": "RSI cuối kỳ là driver kỹ thuật quan trọng nhất trong mô hình."
+    },
+    {
+      "feature": "macd_hist_mean_q",
+      "value": 0.13479312514556438,
+      "direction": "supports_up_signal",
+      "explanation": "MACD histogram trung bình phản ánh động lượng xu hướng."
+    },
+    {
+      "feature": "price_vs_sma20",
+      "value": 0.040538720538720804,
+      "direction": "supports_up_signal",
+      "explanation": "Vị trí giá so với SMA20 phản ánh trạng thái trên/dưới đường trung bình."
+    },
+    {
+      "feature": "return_2q_ago",
+      "value": 0.22022928994082835,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trễ hai kỳ phản ánh động lượng/quán tính lịch sử."
+    },
+    {
+      "feature": "return_q",
+      "value": 0.3119375106130074,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trong kỳ hiện tại phản ánh xu hướng gần nhất."
+    },
+    {
+      "feature": "return_prev_q",
+      "value": -0.08263695450324982,
+      "direction": "weak_or_negative",
+      "explanation": "Lợi suất kỳ trước bổ sung thông tin động lượng."
+    },
+    {
+      "feature": "volume_change_q",
+      "value": 0.3857443663750644,
+      "direction": "supports_up_signal",
+      "explanation": "Thay đổi khối lượng phản ánh mức độ quan tâm của thị trường."
+    },
+    {
+      "feature": "return_mean_daily",
+      "value": 0.005110134337470735,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trung bình ngày phản ánh xu hướng ngắn trong kỳ."
+    },
+    {
+      "feature": "price_range_q",
+      "value": 0.40646086897736294,
+      "direction": "risk_high_volatility",
+      "explanation": "Biên độ giá trong kỳ phản ánh biến động/rủi ro."
+    },
+    {
+      "feature": "sma20_end",
+      "value": 74.24999999999999,
+      "direction": "context",
+      "explanation": "SMA20 cuối kỳ phản ánh mặt bằng xu hướng ngắn hạn."
+    }
+  ],
+  "news_evidence": [
+    {
+      "evidence_id": "N001",
+      "published_at": "2026-03-31",
+      "source": "cafef",
+      "title": "GMD: Gemadept và CJ Logistics tối ưu hóa Chiến lược hợp tác giữa hai doanh nghiệp",
+      "article_summary": "Công ty Cổ phần GEMADEPT công bố về việc Gemadept và CJ Logistics tối ưu hóa Chiến lược hợp tác giữa hai doanh nghiệp GMD: Gemadept và CJ Logistics tối ưu hóa Chiến lược hợp tác giữa hai doanh nghiệp Công ty Cổ phần GEMADEPT công bố về việc Gemadept và CJ Logistics tối ưu hóa Chiến lược hợp tác giữa hai doanh nghiệp",
+      "key_facts": [],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "partial",
+      "evidence_span": "GMD: Gemadept và CJ Logistics tối ưu hóa Chiến lược hợp tác giữa hai doanh nghiệp Công ty Cổ phần GEMADEPT công bố về việc Gemadept và CJ Logistics tối ưu hóa Chiến lược hợp tác giữa hai doanh nghiệp",
+      "url": "https://cafef.vn/du-lieu/GMD-2657236/gmd-gemadept-va-cj-logistics-toi-uu-hoa-chien-luoc-hop-tac-giua-hai-doanh-nghiep.chn",
+      "content_hash": "0b9d96aeadafa1a8b91e736cefe210b316e7b5daf09ff2e911dcf7f3650b3b48",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N002",
+      "published_at": "2026-03-31",
+      "source": "vietstock",
+      "title": "GMD: CBTT nội dung Nghị quyết HĐQT số 057 về việc chuyển nhượng cổ phần",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "GMD: CBTT nội dung Nghị quyết HĐQT số 057 về việc chuyển nhượng cổ phần nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động ki",
+          "evidence_quote": "GMD: CBTT nội dung Nghị quyết HĐQT số 057 về việc chuyển nhượng cổ phần nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu c",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Ngày 30/06/2026, CTCP Nhiệt điện Quảng Ninh (UPCoM: QTP) đã tổ chức ĐHĐCĐ bất thường năm 2026 nhằm thông qua việc điều chỉnh dự án nâng cấp, cải tạo hệ thống xử lý...",
+          "evidence_quote": "Ngày 30/06/2026, CTCP Nhiệt điện Quảng Ninh (UPCoM: QTP) đã tổ chức ĐHĐCĐ bất thường năm 2026 nhằm thông qua việc điều chỉnh dự án nâng cấp, cải tạo hệ thống xử lý...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Ngày 30/06, CTCP Tập đoàn Gemadept (HOSE: GMD) và CJ Logistics Hong Kong Holdings Limited đã tổ chức lễ hoàn tất giao dịch, chính thức khép lại các thỏa thuận...",
+          "evidence_quote": "Ngày 30/06, CTCP Tập đoàn Gemadept (HOSE: GMD) và CJ Logistics Hong Kong Holdings Limited đã tổ chức lễ hoàn tất giao dịch, chính thức khép lại các thỏa thuận...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Sáng ngày 02/07, Brand Finance đã công bố Bảng xếp hạng 100 thương hiệu giá trị nhất Việt Nam (Brand Finance Vietnam 100 2026).",
+          "evidence_quote": "Sáng ngày 02/07, Brand Finance đã công bố Bảng xếp hạng 100 thương hiệu giá trị nhất Việt Nam (Brand Finance Vietnam 100 2026).",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Trong báo cáo năm 2025, PNJ giới thiệu Công ty TNHH Một Thành viên Giám Định PNJ (PNJ Laboratory) có “kinh nghiệm tới gần 30 năm trong lĩnh vực dịch vụ giám định đã...",
+          "evidence_quote": "Trong báo cáo năm 2025, PNJ giới thiệu Công ty TNHH Một Thành viên Giám Định PNJ (PNJ Laboratory) có “kinh nghiệm tới gần 30 năm trong lĩnh vực dịch vụ giám định đã...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2026/04/gmd-cbtt-noi-dung-nghi-quyet-hdqt-so-057-ve-viec-chuyen-nhuong-co-phan-737-1423950.htm",
+      "content_hash": "7c77734094858b2f2861554c8e79d514aaa07800232d773a020b03a4164fdcd9",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N003",
+      "published_at": "2026-03-31",
+      "source": "vietstock",
+      "title": "GMD: Gemadept và CJ Logistics tối ưu hóa Chiến lược hợp tác giữa hai doanh nghiệp",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "GMD: Gemadept và CJ Logistics tối ưu hóa Chiến lược hợp tác giữa hai doanh nghiệp nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Ho",
+          "evidence_quote": "GMD: Gemadept và CJ Logistics tối ưu hóa Chiến lược hợp tác giữa hai doanh nghiệp nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Trong ít ngày từ 30/06 - 02/07, Ủy ban Chứng khoán Nhà nước (UBCKNN) quyết định xử phạt hàng loạt doanh nghiệp vì lỗi công bố thông tin.",
+          "evidence_quote": "Trong ít ngày từ 30/06 - 02/07, Ủy ban Chứng khoán Nhà nước (UBCKNN) quyết định xử phạt hàng loạt doanh nghiệp vì lỗi công bố thông tin.",
+          "fact_type": "legal_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Phiên giao dịch ngày 03/07 chứng kiến diễn biến trái chiều khi khối ngoại tiếp tục bán ròng 789 tỷ đồng, trong khi tự doanh công ty chứng khoán mua ròng mạnh 551 tỷ...",
+          "evidence_quote": "Phiên giao dịch ngày 03/07 chứng kiến diễn biến trái chiều khi khối ngoại tiếp tục bán ròng 789 tỷ đồng, trong khi tự doanh công ty chứng khoán mua ròng mạnh 551 tỷ...",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Tháng 6, khối ngoại bán ròng hơn 15 ngàn tỷ đồng trên HOSE, ghi nhận quy mô giao dịch lớn tại VIC.",
+          "evidence_quote": "Tháng 6, khối ngoại bán ròng hơn 15 ngàn tỷ đồng trên HOSE, ghi nhận quy mô giao dịch lớn tại VIC.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Lũy kế nửa đầu năm, khối ngoại đã bán ròng gần 80 ngàn tỷ đồng...",
+          "evidence_quote": "Lũy kế nửa đầu năm, khối ngoại đã bán ròng gần 80 ngàn tỷ đồng...",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "partial",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2026/03/gmd-gemadept-va-cj-logistics-toi-uu-hoa-chien-luoc-hop-tac-giua-hai-doanh-nghiep-830-1420018.htm",
+      "content_hash": "cce1bb6f44ee4e42d1edce61ce2f67de1ecb317b11cb3656407adc350f7ca194",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N004",
+      "published_at": "2026-03-30",
+      "source": "vietstock",
+      "title": "Gemadept và CJ Logistics hợp tác để tối ưu hóa chuỗi cung ứng",
+      "article_summary": "Gemadept và CJ Logistics hợp tác để tối ưu hóa chuỗi cung ứng Ngày 30/03/2026, CTCP Gemadept ( HOSE : GMD ) và CJ Logistics Corporation (CJ Logistics) thống nhất triển khai tối ưu hóa chiến lược đối với hoạt động Logistics và Shipping để phát huy lợi thế cạnh tranh của hai doanh nghiệp. Chiến lược này không chỉ đánh dấu cột mốc mới trong hành trình phát triển của hai bên mà còn mở ra cơ hội hợp tác, phát huy thế mạnh, tiềm năng cho mục tiêu tăng trưởng trong tương lai. Từ hơn 8 năm hợp tác bền vững đến cột mốc phát triển mới Trong suốt hơn 8 năm từ khi thành lập liên doanh (năm 2018), mối quan hệ đối tác chiến lược giữa Gemadept và CJ Logistics đã gặt hái được những thành tựu đáng ghi nhận, liên tục phát triển thị trường, đem lại giá trị thực tiễn cho cả hai bên và cho các khách hàng, đối tác đồng hành.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "Gemadept và CJ Logistics hợp tác để tối ưu hóa chuỗi cung ứng nan Gemadept và CJ Logistics hợp tác để tối ưu hóa chuỗi cung ứng Ngày 30/03/2026, CTCP Gemadept ( HOSE : GMD ) và CJ Logistics Corporation (CJ Logistics) thống nhất triển khai tối ưu hóa chiến lược đối với hoạt động Logistics và Shipping",
+          "evidence_quote": "Gemadept và CJ Logistics hợp tác để tối ưu hóa chuỗi cung ứng nan Gemadept và CJ Logistics hợp tác để tối ưu hóa chuỗi cung ứng Ngày 30/03/2026, CTCP Gemadept ( HOSE : GMD ) và CJ Logistics Corporation (CJ Logistics) thống nhất triển khai t",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Từ hơn 8 năm hợp tác bền vững đến cột mốc phát triển mới Trong suốt hơn 8 năm từ khi thành lập liên doanh (năm 2018), mối quan hệ đối tác chiến lược giữa Gemadept và CJ Logistics đã gặt hái được những thành tựu đáng ghi nhận, liên tục phát triển thị trường, đem lại giá trị thực tiễn cho cả hai bên v",
+          "evidence_quote": "Từ hơn 8 năm hợp tác bền vững đến cột mốc phát triển mới Trong suốt hơn 8 năm từ khi thành lập liên doanh (năm 2018), mối quan hệ đối tác chiến lược giữa Gemadept và CJ Logistics đã gặt hái được những thành tựu đáng ghi nhận, liên tục phát ",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Cụ thể, cấu trúc hợp tác chiến lược về liên doanh Logistics và Shipping như sau: (1) Gemadept sẽ đầu tư và tập trung quản lý điều hành 100% hoạt động Shipping; và Gemadept sẽ đầu tư trực tiếp, nắm giữ 49% cổ phần của CTCP Mekong Logistics “MKL”.",
+          "evidence_quote": "Cụ thể, cấu trúc hợp tác chiến lược về liên doanh Logistics và Shipping như sau: (1) Gemadept sẽ đầu tư và tập trung quản lý điều hành 100% hoạt động Shipping; và Gemadept sẽ đầu tư trực tiếp, nắm giữ 49% cổ phần của CTCP Mekong Logistics “",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "(2) CJ Logistics sẽ đầu tư và tập trung quản lý điều hành 100% hoạt động dịch vụ 3PL Logistics.",
+          "evidence_quote": "(2) CJ Logistics sẽ đầu tư và tập trung quản lý điều hành 100% hoạt động dịch vụ 3PL Logistics.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Với thế mạnh trong việc cung cấp giải pháp đưa công nghệ thông tin vào dịch vụ 3PL, CJ Logistics sẽ đẩy mạnh chiến lược phát triển kết nối trung tâm phân phối, đáp ứng đa dạng nhu cầu và các tiêu chuẩn vận hành ngày càng cao đến người dùng cuối.",
+          "evidence_quote": "Với thế mạnh trong việc cung cấp giải pháp đưa công nghệ thông tin vào dịch vụ 3PL, CJ Logistics sẽ đẩy mạnh chiến lược phát triển kết nối trung tâm phân phối, đáp ứng đa dạng nhu cầu và các tiêu chuẩn vận hành ngày càng cao đến người dùng ",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [],
+      "event_type": "market",
+      "match_confidence": "partial",
+      "evidence_span": "Gemadept và CJ Logistics hợp tác để tối ưu hóa chuỗi cung ứng Ngày 30/03/2026, CTCP Gemadept ( HOSE : GMD ) và CJ Logistics Corporation (CJ Logistics) thống nhất triển khai tối ưu hóa chiến lược đối với hoạt động Logistics và Shipping để phát huy lợi thế cạnh tranh của hai doanh nghiệp. Chiến lược này không chỉ đánh dấu cột mốc mới trong hành trình phát triển của hai bên mà còn mở ra cơ hội hợp tác, phát huy thế mạnh, tiềm năng cho mục tiêu tăng trưởng trong tương lai. Từ hơn 8 năm hợp tác bền v",
+      "url": "https://vietstock.vn/2026/03/gemadept-va-cj-logistics-hop-tac-de-toi-uu-hoa-chuoi-cung-ung-737-1419195.htm",
+      "content_hash": "b730f77750dd047f6f483d95c71830d73593e3358a7fe73761e13d9d6bbd60f1",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N005",
+      "published_at": "2026-03-30",
+      "source": "vietstock",
+      "title": "GMD: BCTC Hợp nhất năm 2025",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "GMD: BCTC Hợp nhất năm 2025 nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần",
+          "evidence_quote": "GMD: BCTC Hợp nhất năm 2025 nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGH",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Ngày 30/06/2026, CTCP Nhiệt điện Quảng Ninh (UPCoM: QTP) đã tổ chức ĐHĐCĐ bất thường năm 2026 nhằm thông qua việc điều chỉnh dự án nâng cấp, cải tạo hệ thống xử lý...",
+          "evidence_quote": "Ngày 30/06/2026, CTCP Nhiệt điện Quảng Ninh (UPCoM: QTP) đã tổ chức ĐHĐCĐ bất thường năm 2026 nhằm thông qua việc điều chỉnh dự án nâng cấp, cải tạo hệ thống xử lý...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Ngày 30/06, CTCP Tập đoàn Gemadept (HOSE: GMD) và CJ Logistics Hong Kong Holdings Limited đã tổ chức lễ hoàn tất giao dịch, chính thức khép lại các thỏa thuận...",
+          "evidence_quote": "Ngày 30/06, CTCP Tập đoàn Gemadept (HOSE: GMD) và CJ Logistics Hong Kong Holdings Limited đã tổ chức lễ hoàn tất giao dịch, chính thức khép lại các thỏa thuận...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Sáng ngày 02/07, Brand Finance đã công bố Bảng xếp hạng 100 thương hiệu giá trị nhất Việt Nam (Brand Finance Vietnam 100 2026).",
+          "evidence_quote": "Sáng ngày 02/07, Brand Finance đã công bố Bảng xếp hạng 100 thương hiệu giá trị nhất Việt Nam (Brand Finance Vietnam 100 2026).",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Trong báo cáo năm 2025, PNJ giới thiệu Công ty TNHH Một Thành viên Giám Định PNJ (PNJ Laboratory) có “kinh nghiệm tới gần 30 năm trong lĩnh vực dịch vụ giám định đã...",
+          "evidence_quote": "Trong báo cáo năm 2025, PNJ giới thiệu Công ty TNHH Một Thành viên Giám Định PNJ (PNJ Laboratory) có “kinh nghiệm tới gần 30 năm trong lĩnh vực dịch vụ giám định đã...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2026/03/gmd-bctc-hop-nhat-nam-2025-737-1419502.htm",
+      "content_hash": "6ce621315a1b06fe1e8b46dcf52ad2835c9e2e536a2b46b699ae9b1511faafff",
+      "extraction_status": "ok"
+    }
+  ],
+  "data_quality_flags": {
+    "news_coverage": "high",
+    "ticker_matching_confidence": "mixed",
+    "full_text_coverage": 5,
+    "summary_coverage": 5,
+    "key_fact_coverage": 4,
+    "missing_fields": []
+  },
+  "guardrails": {
+    "initial_prompt_safe": true,
+    "news_cutoff": "2026-03-31",
+    "not_investment_advice": true,
+    "no_post_decision_data": true,
+    "full_text_excerpt_chars": 500
+  },
+  "provenance": {
+    "name": "initial_evidence",
+    "path": "reports/decision_support/generated/evidence_packs_initial.json",
+    "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+    "zone": "initial",
+    "record_count": 25,
+    "schema_version": "evidence-pack-initial-v1",
+    "generated_at_utc": null,
+    "provenance_status": null
+  }
+}

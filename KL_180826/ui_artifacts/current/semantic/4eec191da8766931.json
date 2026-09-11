@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "4eec191da8766931",
+    "ticker": "ACB",
+    "article_date": "2026-06-04",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": true,
+    "consensus_direction": "support",
+    "consensus_materiality": "high",
+    "consensus_event_type": "dividend",
+    "evidence_span": "ACB dự kiến chia cổ tức tổng tỷ lệ 20%, gồm 13% bằng cổ phiếu và 7% bằng tiền mặt với tổng số tiền 10,273 tỷ đồng.",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "none"
+    ],
+    "requires_human_review": false,
+    "review_flags": [
+      "none"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "567b404ff43a81ef",
+    "ticker": "MWG",
+    "article_date": "2022-05-24",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": true,
+    "consensus_direction": "support",
+    "consensus_materiality": "medium",
+    "consensus_event_type": "capital",
+    "evidence_span": "Nghị quyết HĐQT thông qua phương án tăng vốn điều lệ tại công ty con",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "none"
+    ],
+    "requires_human_review": false,
+    "review_flags": [
+      "none"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "decision_id": "2025Q3_LPB_01",
+  "snapshot_mode": "ml_only",
+  "ticker": "LPB",
+  "decision_date": "2025-09-30",
+  "period_id": "2025Q3",
+  "holding_horizon": "next_quarter_or_period_return_in_signals",
+  "ml_signal": {
+    "model_name": "technical_Config_A_from_existing_pipeline",
+    "pred_proba_up": 0.9985291000420128,
+    "pred_label": 1,
+    "rank_in_period": 1,
+    "source_signal_class": "Buy Candidate",
+    "display_status": "Model candidate"
+  },
+  "technical_snapshot": {
+    "rsi_end_q": 73.88914126529959,
+    "macd_hist_mean_q": 0.10052207067505359,
+    "price_vs_sma20": 0.08750232471638449,
+    "return_2q_ago": 0.06397673573246085,
+    "return_q": 0.5398288347597104,
+    "return_prev_q": 0.036734693877551086,
+    "volume_change_q": 0.315542397657516,
+    "return_mean_daily": 0.007020748391371982,
+    "price_range_q": 0.4440321943306367,
+    "sma20_end": 43.016000000000005
+  },
+  "top_drivers": [
+    {
+      "feature": "rsi_end_q",
+      "value": 73.88914126529959,
+      "direction": "positive_but_overbought_risk",
+      "explanation": "RSI cuối kỳ là driver kỹ thuật quan trọng nhất trong mô hình."
+    },
+    {
+      "feature": "macd_hist_mean_q",
+      "value": 0.10052207067505359,
+      "direction": "supports_up_signal",
+      "explanation": "MACD histogram trung bình phản ánh động lượng xu hướng."
+    },
+    {
+      "feature": "price_vs_sma20",
+      "value": 0.08750232471638449,
+      "direction": "supports_up_signal",
+      "explanation": "Vị trí giá so với SMA20 phản ánh trạng thái trên/dưới đường trung bình."
+    },
+    {
+      "feature": "return_2q_ago",
+      "value": 0.06397673573246085,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trễ hai kỳ phản ánh động lượng/quán tính lịch sử."
+    },
+    {
+      "feature": "return_q",
+      "value": 0.5398288347597104,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trong kỳ hiện tại phản ánh xu hướng gần nhất."
+    },
+    {
+      "feature": "return_prev_q",
+      "value": 0.036734693877551086,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất kỳ trước bổ sung thông tin động lượng."
+    },
+    {
+      "feature": "volume_change_q",
+      "value": 0.315542397657516,
+      "direction": "supports_up_signal",
+      "explanation": "Thay đổi khối lượng phản ánh mức độ quan tâm của thị trường."
+    },
+    {
+      "feature": "return_mean_daily",
+      "value": 0.007020748391371982,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trung bình ngày phản ánh xu hướng ngắn trong kỳ."
+    },
+    {
+      "feature": "price_range_q",
+      "value": 0.4440321943306367,
+      "direction": "risk_high_volatility",
+      "explanation": "Biên độ giá trong kỳ phản ánh biến động/rủi ro."
+    },
+    {
+      "feature": "sma20_end",
+      "value": 43.016000000000005,
+      "direction": "context",
+      "explanation": "SMA20 cuối kỳ phản ánh mặt bằng xu hướng ngắn hạn."
+    }
+  ],
+  "news_evidence": [],
+  "data_quality_flags": {
+    "news_coverage": null,
+    "ticker_matching_confidence": null,
+    "full_text_coverage": null,
+    "summary_coverage": null,
+    "key_fact_coverage": null,
+    "missing_fields": []
+  },
+  "guardrails": {
+    "initial_prompt_safe": true,
+    "news_evidence_excluded": true,
+    "not_investment_advice": true,
+    "no_post_decision_data": true
+  },
+  "provenance": {
+    "name": "ml_only_evidence",
+    "path": "reports/decision_support/generated/evidence_packs_ml_only.json",
+    "sha256": "c99ac78c69980481c33f8c8fa7cd14c3c857de36282745a7f73092100b7c9620",
+    "zone": "initial",
+    "record_count": 25,
+    "schema_version": "evidence-pack-ml-only-v1",
+    "generated_at_utc": null,
+    "provenance_status": null
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "c83868bdbe5ef7e8",
+    "ticker": "POW",
+    "article_date": "2024-06-29",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": false,
+    "consensus_direction": "neutral",
+    "consensus_materiality": "medium",
+    "consensus_event_type": "earnings",
+    "evidence_span": null,
+    "disagreement_fields": [],
+    "quality_flags": [
+      "missing_or_disputed_evidence"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "missing_or_disputed_evidence"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

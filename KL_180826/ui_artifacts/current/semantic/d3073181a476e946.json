@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "d3073181a476e946",
+    "ticker": "VIB",
+    "article_date": "2023-09-29",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": true,
+    "consensus_direction": "support",
+    "consensus_materiality": "low",
+    "consensus_event_type": "capital",
+    "evidence_span": "VIB: Nghị quyết HĐQT phê duyệt kế hoạch phát hành giấy tờ có giá năm 2023",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "none"
+    ],
+    "requires_human_review": false,
+    "review_flags": [
+      "none"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

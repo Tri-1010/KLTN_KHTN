@@ -1,0 +1,47 @@
+{
+  "artifact_schema_version": "cache_dense_pseudo_labels_summary_v1",
+  "generated_at_utc": "2026-09-09T15:30:19+00:00",
+  "claim_level": "v6_sensitivity_densified_cache_semantic",
+  "inputs": [
+    "data\\experiments\\llm_semantic\\article_semantics_cache.csv",
+    "data\\experiments\\llm_semantic\\focused_material_expanded_annotations_deepseek.csv"
+  ],
+  "input_sha256": {
+    "data\\experiments\\llm_semantic\\article_semantics_cache.csv": "0f3f0a52fc123bc8340aff645bf41dd968a67dcbdb4a8b0e1ec932c7e21da633",
+    "data\\experiments\\llm_semantic\\focused_material_expanded_annotations_deepseek.csv": "b254cfdad56a474f7292738bd0671ebf9119225d7077748b0359c70cdd04bb9d"
+  },
+  "n_raw_rows": 29492,
+  "n_status_ok": 19537,
+  "n_adapted_rows": 8989,
+  "n_tickers": 80,
+  "relevance_counts": {
+    "direct": 8699,
+    "indirect": 290
+  },
+  "direction_counts": {
+    "support": 4059,
+    "neutral": 2629,
+    "mixed": 1361,
+    "risk": 940
+  },
+  "event_counts": {
+    "other": 7574,
+    "capital": 685,
+    "earnings": 142,
+    "dividend": 139,
+    "legal": 124,
+    "operation": 122,
+    "governance": 75,
+    "market": 66,
+    "macro": 43,
+    "debt": 19
+  },
+  "output": "KL_180826\\multi_llm_evidence_extraction\\outputs\\cache_dense_pseudo_labels.csv",
+  "output_sha256": "79e82560e3ba69892e4ec193cd827c427d35f134d80c575d048841cb13498216",
+  "limitations": [
+    "sensitivity_only_not_v6_primary",
+    "does_not_replace_v6_primary_20260909",
+    "single_model_cache_not_multi_llm_consensus",
+    "adapter_approximates_consensus_schema"
+  ]
+}

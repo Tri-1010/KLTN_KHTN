@@ -1,0 +1,334 @@
+{
+  "decision_id": "2026Q1_REE_05",
+  "snapshot_mode": "full_evidence",
+  "ticker": "REE",
+  "decision_date": "2026-03-31",
+  "period_id": "2026Q1",
+  "holding_horizon": "next_quarter_or_period_return_in_signals",
+  "ml_signal": {
+    "model_name": "technical_Config_A_from_existing_pipeline",
+    "pred_proba_up": 0.9533451285937101,
+    "pred_label": 1,
+    "rank_in_period": 5,
+    "source_signal_class": "Buy Candidate",
+    "display_status": "Model candidate"
+  },
+  "technical_snapshot": {
+    "rsi_end_q": 59.092130761390706,
+    "macd_hist_mean_q": 0.15282420064366853,
+    "price_vs_sma20": 0.05285483258070484,
+    "return_2q_ago": -0.029605263157894753,
+    "return_q": 0.14491639438785314,
+    "return_prev_q": -0.07298881193393712,
+    "volume_change_q": 1.871350845986579,
+    "return_mean_daily": 0.0025239129791710187,
+    "price_range_q": 0.26337361043982593,
+    "sma20_end": 56.57950000000001
+  },
+  "top_drivers": [
+    {
+      "feature": "rsi_end_q",
+      "value": 59.092130761390706,
+      "direction": "supports_up_signal",
+      "explanation": "RSI cuối kỳ là driver kỹ thuật quan trọng nhất trong mô hình."
+    },
+    {
+      "feature": "macd_hist_mean_q",
+      "value": 0.15282420064366853,
+      "direction": "supports_up_signal",
+      "explanation": "MACD histogram trung bình phản ánh động lượng xu hướng."
+    },
+    {
+      "feature": "price_vs_sma20",
+      "value": 0.05285483258070484,
+      "direction": "supports_up_signal",
+      "explanation": "Vị trí giá so với SMA20 phản ánh trạng thái trên/dưới đường trung bình."
+    },
+    {
+      "feature": "return_2q_ago",
+      "value": -0.029605263157894753,
+      "direction": "weak_or_negative",
+      "explanation": "Lợi suất trễ hai kỳ phản ánh động lượng/quán tính lịch sử."
+    },
+    {
+      "feature": "return_q",
+      "value": 0.14491639438785314,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trong kỳ hiện tại phản ánh xu hướng gần nhất."
+    },
+    {
+      "feature": "return_prev_q",
+      "value": -0.07298881193393712,
+      "direction": "weak_or_negative",
+      "explanation": "Lợi suất kỳ trước bổ sung thông tin động lượng."
+    },
+    {
+      "feature": "volume_change_q",
+      "value": 1.871350845986579,
+      "direction": "supports_up_signal",
+      "explanation": "Thay đổi khối lượng phản ánh mức độ quan tâm của thị trường."
+    },
+    {
+      "feature": "return_mean_daily",
+      "value": 0.0025239129791710187,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trung bình ngày phản ánh xu hướng ngắn trong kỳ."
+    },
+    {
+      "feature": "price_range_q",
+      "value": 0.26337361043982593,
+      "direction": "normal",
+      "explanation": "Biên độ giá trong kỳ phản ánh biến động/rủi ro."
+    },
+    {
+      "feature": "sma20_end",
+      "value": 56.57950000000001,
+      "direction": "context",
+      "explanation": "SMA20 cuối kỳ phản ánh mặt bằng xu hướng ngắn hạn."
+    }
+  ],
+  "news_evidence": [
+    {
+      "evidence_id": "N001",
+      "published_at": "2026-03-31",
+      "source": "vietstock",
+      "title": "SGR: Báo cáo kết quả giao dịch cổ phiếu của tổ chức có liên quan đến người nội bộ Công ty TNHH BĐS REE",
+      "article_summary": "SGR: Báo cáo kết quả giao dịch cổ phiếu của tổ chức có liên quan đến người nội bộ Công ty TNHH BĐS REE Công ty TNHH BĐS REE báo cáo kết quả giao dịch cổ phiếu của tổ chức có liên quan đến người nội bộ Công ty Cổ phần Tổng Công ty Cổ phần Địa ốc Sài Gòn như sau: Công ty TNHH BĐS REE báo cáo kết quả giao dịch cổ phiếu của tổ chức có liên quan đến người nội bộ Công ty Cổ phần Tổng Công ty Cổ phần Địa ốc Sài Gòn như sau: SGR: Báo cáo kết quả giao dịch cổ phiếu của tổ chức có liên quan đến người nội bộ Công ty TNHH BĐS REE",
+      "key_facts": [],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "exact",
+      "evidence_span": "SGR: Báo cáo kết quả giao dịch cổ phiếu của tổ chức có liên quan đến người nội bộ Công ty TNHH BĐS REE Công ty TNHH BĐS REE báo cáo kết quả giao dịch cổ phiếu của tổ chức có liên quan đến người nội bộ Công ty Cổ phần Tổng Công ty Cổ phần Địa ốc Sài Gòn như sau: Công ty TNHH BĐS REE báo cáo kết quả giao dịch cổ phiếu của tổ chức có liên quan đến người nội bộ Công ty Cổ phần Tổng Công ty Cổ phần Địa ốc Sài Gòn như sau: SGR: Báo cáo kết quả giao dịch cổ phiếu của tổ chức có liên quan đến người nội",
+      "url": "https://vietstock.vn/2026/04/sgr-bao-cao-ket-qua-giao-dich-co-phieu-cua-to-chuc-co-lien-quan-den-nguoi-noi-bo-cong-ty-tnhh-bds-ree-739-1420936.htm",
+      "content_hash": "d5646b999487f34f0cdab7890ee37de441d63a2d1736e65feaf9657560005b91",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N002",
+      "published_at": "2026-03-31",
+      "source": "vietstock",
+      "title": "REE: Thông báo giao dịch cổ phiếu của tổ chức có liên quan đến người nội bộ PLATINUM VICTORY PTE.LTD",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "REE: Thông báo giao dịch cổ phiếu của tổ chức có liên quan đến người nội bộ PLATINUM VICTORY PTE.LTD nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái ph",
+          "evidence_quote": "REE: Thông báo giao dịch cổ phiếu của tổ chức có liên quan đến người nội bộ PLATINUM VICTORY PTE.LTD nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng ",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Chứng khoán Thành Công vừa đăng ký mua 6.1 triệu cổ phiếu UNI với tổng giá trị ước tính hơn 43 tỷ đồng ngay sau khi Tổng Giám đốc UNI được bầu làm Chủ tịch HĐQT...",
+          "evidence_quote": "Chứng khoán Thành Công vừa đăng ký mua 6.1 triệu cổ phiếu UNI với tổng giá trị ước tính hơn 43 tỷ đồng ngay sau khi Tổng Giám đốc UNI được bầu làm Chủ tịch HĐQT...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "CII và công ty con CII Invest đã nâng sở hữu tại PC1 lên 8.97%, chỉ sau chưa đầy một tháng trở thành cổ đông lớn.",
+          "evidence_quote": "CII và công ty con CII Invest đã nâng sở hữu tại PC1 lên 8.97%, chỉ sau chưa đầy một tháng trở thành cổ đông lớn.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "CTCP Địa ốc Đại Á (Dai A Land) đã bán 10 triệu cp CTCP Bất động sản Sài Gòn Vina (Land Saigon, UPCoM: LSG) trong ngày 23/06, giảm sở hữu từ gần 13.6% xuống còn gần...",
+          "evidence_quote": "CTCP Địa ốc Đại Á (Dai A Land) đã bán 10 triệu cp CTCP Bất động sản Sài Gòn Vina (Land Saigon, UPCoM: LSG) trong ngày 23/06, giảm sở hữu từ gần 13.6% xuống còn gần...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "CTCP Năng lượng An Xuân từng được mở đường để nâng sở hữu tại SP2 lên trên 51%, nhưng nay đã bán toàn bộ 25.24% vốn.",
+          "evidence_quote": "CTCP Năng lượng An Xuân từng được mở đường để nâng sở hữu tại SP2 lên trên 51%, nhưng nay đã bán toàn bộ 25.24% vốn.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2026/03/ree-thong-bao-giao-dich-co-phieu-cua-to-chuc-co-lien-quan-den-nguoi-noi-bo-platinum-victory-pte-ltd-739-1419986.htm",
+      "content_hash": "b088f35800bbcdf58a3e14f088b3d9bdb607b9fee205e07197659520582aea96",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N003",
+      "published_at": "2026-03-31",
+      "source": "vietstock",
+      "title": "REE: Báo cáo kết quả giao dịch cổ phiếu của tổ chức có liên quan đến người nội bộ PLATINUM VICTORY PTE.LTD",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "REE: Báo cáo kết quả giao dịch cổ phiếu của tổ chức có liên quan đến người nội bộ PLATINUM VICTORY PTE.LTD nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách T",
+          "evidence_quote": "REE: Báo cáo kết quả giao dịch cổ phiếu của tổ chức có liên quan đến người nội bộ PLATINUM VICTORY PTE.LTD nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh ",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Chứng khoán Thành Công vừa đăng ký mua 6.1 triệu cổ phiếu UNI với tổng giá trị ước tính hơn 43 tỷ đồng ngay sau khi Tổng Giám đốc UNI được bầu làm Chủ tịch HĐQT...",
+          "evidence_quote": "Chứng khoán Thành Công vừa đăng ký mua 6.1 triệu cổ phiếu UNI với tổng giá trị ước tính hơn 43 tỷ đồng ngay sau khi Tổng Giám đốc UNI được bầu làm Chủ tịch HĐQT...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "CII và công ty con CII Invest đã nâng sở hữu tại PC1 lên 8.97%, chỉ sau chưa đầy một tháng trở thành cổ đông lớn.",
+          "evidence_quote": "CII và công ty con CII Invest đã nâng sở hữu tại PC1 lên 8.97%, chỉ sau chưa đầy một tháng trở thành cổ đông lớn.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "CTCP Địa ốc Đại Á (Dai A Land) đã bán 10 triệu cp CTCP Bất động sản Sài Gòn Vina (Land Saigon, UPCoM: LSG) trong ngày 23/06, giảm sở hữu từ gần 13.6% xuống còn gần...",
+          "evidence_quote": "CTCP Địa ốc Đại Á (Dai A Land) đã bán 10 triệu cp CTCP Bất động sản Sài Gòn Vina (Land Saigon, UPCoM: LSG) trong ngày 23/06, giảm sở hữu từ gần 13.6% xuống còn gần...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "CTCP Năng lượng An Xuân từng được mở đường để nâng sở hữu tại SP2 lên trên 51%, nhưng nay đã bán toàn bộ 25.24% vốn.",
+          "evidence_quote": "CTCP Năng lượng An Xuân từng được mở đường để nâng sở hữu tại SP2 lên trên 51%, nhưng nay đã bán toàn bộ 25.24% vốn.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2026/03/ree-bao-cao-ket-qua-giao-dich-co-phieu-cua-to-chuc-co-lien-quan-den-nguoi-noi-bo-platinum-victory-pte-ltd-739-1419982.htm",
+      "content_hash": "8cedef748b343d6e535b8992c58ca1d20b816c1e668e959fa2e78379498f6574",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N004",
+      "published_at": "2026-03-31",
+      "source": "vietstock",
+      "title": "Thành viên độc lập khẳng định REE có lợi thế cạnh tranh mạnh trước biến động năng lượng",
+      "article_summary": "Thành viên độc lập khẳng định REE có lợi thế cạnh tranh mạnh trước biến động năng lượng Ông Mark Andrew Hutchinson - Thành viên HĐQT độc lập của CTCP Cơ Điện Lạnh ( HOSE : REE ) - đã có một số chia sẻ trong buổi ĐHĐCĐ thường niên tổ chức vào sáng ngày 31/03/2026. Ông Mark cho biết, REE đang bước vào một trong những giai đoạn phát triển hứng khởi nhất. “Chúng ta có một danh mục dự án cho phép Công ty tăng trưởng quy mô lên gần gấp ba trong những năm tới.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "Thành viên độc lập khẳng định REE có lợi thế cạnh tranh mạnh trước biến động năng lượng nan Thành viên độc lập khẳng định REE có lợi thế cạnh tranh mạnh trước biến động năng lượng Ông Mark Andrew Hutchinson - Thành viên HĐQT độc lập của CTCP Cơ Điện Lạnh ( HOSE : REE ) - đã có một số chia sẻ trong b",
+          "evidence_quote": "Thành viên độc lập khẳng định REE có lợi thế cạnh tranh mạnh trước biến động năng lượng nan Thành viên độc lập khẳng định REE có lợi thế cạnh tranh mạnh trước biến động năng lượng Ông Mark Andrew Hutchinson - Thành viên HĐQT độc lập của CTC",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Do vậy, ông cho rằng REE đang bước vào giai đoạn rất hứng khởi, với dự báo tăng trưởng mạnh mẽ trong 5 năm sắp tới.",
+          "evidence_quote": "Do vậy, ông cho rằng REE đang bước vào giai đoạn rất hứng khởi, với dự báo tăng trưởng mạnh mẽ trong 5 năm sắp tới.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Các nhận định của ông Mark nhằm làm rõ thêm kế hoạch được REE đưa ra trong ĐHĐCĐ 2026.",
+          "evidence_quote": "Các nhận định của ông Mark nhằm làm rõ thêm kế hoạch được REE đưa ra trong ĐHĐCĐ 2026.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Theo đó, năng lượng là 1 trong 3 trụ cột kinh doanh chính của REE trong giai đoạn sắp tới, với mục tiêu nâng tổng công suất lên 3,000 MW (hiện tại tổng công suất khoảng 1,200 MW).",
+          "evidence_quote": "Theo đó, năng lượng là 1 trong 3 trụ cột kinh doanh chính của REE trong giai đoạn sắp tới, với mục tiêu nâng tổng công suất lên 3,000 MW (hiện tại tổng công suất khoảng 1,200 MW).",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue"
+      ],
+      "event_type": "general_news",
+      "match_confidence": "exact",
+      "evidence_span": "Thành viên độc lập khẳng định REE có lợi thế cạnh tranh mạnh trước biến động năng lượng Ông Mark Andrew Hutchinson - Thành viên HĐQT độc lập của CTCP Cơ Điện Lạnh ( HOSE : REE ) - đã có một số chia sẻ trong buổi ĐHĐCĐ thường niên tổ chức vào sáng ngày 31/03/2026. Ông Mark cho biết, REE đang bước vào một trong những giai đoạn phát triển hứng khởi nhất. “Chúng ta có một danh mục dự án cho phép Công ty tăng trưởng quy mô lên gần gấp ba trong những năm tới. Rất hiếm công ty nào có được vị thế như RE",
+      "url": "https://vietstock.vn/2026/03/thanh-vien-doc-lap-khang-dinh-ree-co-loi-the-canh-tranh-manh-truoc-bien-dong-nang-luong-737-1419708.htm",
+      "content_hash": "2c3c5048cbecc1f9acb21e9d1d5ab81e5cbaaf3b87cb9410a3d47c9862e5c8f6",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N005",
+      "published_at": "2026-03-25",
+      "source": "cafef",
+      "title": "REE: CBTT định kỳ năm 2025 của tổ chức phát hành trái phiếu",
+      "article_summary": "Công ty Cổ phần Cơ Điện Lạnh CBTT định kỳ năm 2025 của tổ chức phát hành trái phiếu REE: CBTT định kỳ năm 2025 của tổ chức phát hành trái phiếu Công ty Cổ phần Cơ Điện Lạnh CBTT định kỳ năm 2025 của tổ chức phát hành trái phiếu",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "REE: CBTT định kỳ năm 2025 của tổ chức phát hành trái phiếu Công ty Cổ phần Cơ Điện Lạnh CBTT định kỳ năm 2025 của tổ chức phát hành trái phiếu REE: CBTT định kỳ năm 2025 của tổ chức phát hành trái phiếu Công ty Cổ phần Cơ Điện Lạnh CBTT định kỳ năm 2025 của tổ chức phát hành trái phiếu",
+          "evidence_quote": "REE: CBTT định kỳ năm 2025 của tổ chức phát hành trái phiếu Công ty Cổ phần Cơ Điện Lạnh CBTT định kỳ năm 2025 của tổ chức phát hành trái phiếu REE: CBTT định kỳ năm 2025 của tổ chức phát hành trái phiếu Công ty Cổ phần Cơ Điện Lạnh CBTT đị",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "debt_risk"
+      ],
+      "event_type": "debt_risk,capital",
+      "match_confidence": "exact",
+      "evidence_span": "REE: CBTT định kỳ năm 2025 của tổ chức phát hành trái phiếu Công ty Cổ phần Cơ Điện Lạnh CBTT định kỳ năm 2025 của tổ chức phát hành trái phiếu",
+      "url": "https://cafef.vn/du-lieu/REE-2427119/ree-cbtt-dinh-ky-nam-2025-cua-to-chuc-phat-hanh-trai-phieu.chn",
+      "content_hash": "126142f1f549d7f1303cc7e269153444e5a031f8787d25ddc50f5ccdacb0ff01",
+      "extraction_status": "partial"
+    }
+  ],
+  "data_quality_flags": {
+    "news_coverage": "high",
+    "ticker_matching_confidence": "mixed",
+    "full_text_coverage": 5,
+    "summary_coverage": 5,
+    "key_fact_coverage": 4,
+    "missing_fields": []
+  },
+  "guardrails": {
+    "initial_prompt_safe": true,
+    "news_cutoff": "2026-03-31",
+    "not_investment_advice": true,
+    "no_post_decision_data": true,
+    "full_text_excerpt_chars": 500
+  },
+  "provenance": {
+    "name": "initial_evidence",
+    "path": "reports/decision_support/generated/evidence_packs_initial.json",
+    "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+    "zone": "initial",
+    "record_count": 25,
+    "schema_version": "evidence-pack-initial-v1",
+    "generated_at_utc": null,
+    "provenance_status": null
+  }
+}

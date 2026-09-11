@@ -1,0 +1,25 @@
+{
+  "decision_id": "2025Q3_LPB_01",
+  "holding_period_complete": true,
+  "review_date": null,
+  "initial_snapshot_reference": {
+    "decision_date": "2025-09-30",
+    "ticker": "LPB",
+    "period_id": "2025Q3",
+    "pred_proba_up": 0.9985291000420128,
+    "rank_in_period": 1
+  },
+  "monitoring_summary": {},
+  "post_hoc_outcome": {
+    "realized_period_return": 0.2170389711225347,
+    "outcome_label": "positive",
+    "benchmark_return": null,
+    "excess_return": null
+  },
+  "review_narrative": "Post-hoc outcome review only; never used in initial selection, explanation, update, or initial-card scoring.",
+  "provenance": {
+    "review_only": true,
+    "must_not_feed_initial_or_update": true,
+    "source_decision_pack": "evidence_packs_audit.json"
+  }
+}

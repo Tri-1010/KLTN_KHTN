@@ -1,0 +1,24 @@
+{
+  "artifact_schema_version": "v6_primary_build_summary_v1",
+  "generated_at_utc": "2026-09-09T11:02:54+00:00",
+  "run_id": "v6_sens_h10_20260909",
+  "protocol_version": "v6_technical_primary_v1",
+  "protocol_sha256": "62b255260d1f29d1a84f9a143d4b8f0259a4a177c0a0a3fcb2962479835403e2",
+  "claim_level": "v6_sensitivity_horizon_T10",
+  "horizon_benchmark_sessions": 10,
+  "n_rows": 93824,
+  "n_eligible": 88377,
+  "n_no_news_keyword": 10054,
+  "n_no_news_semantic": 0,
+  "outputs": {
+    "panel": "C:\\Users\\User\\KLTN_KHTN\\KL_180826\\multi_llm_evidence_extraction\\outputs\\v6_primary\\v6_sens_h10_20260909\\v6_primary_panel.csv",
+    "feature_manifest": "C:\\Users\\User\\KLTN_KHTN\\KL_180826\\multi_llm_evidence_extraction\\outputs\\v6_primary\\v6_sens_h10_20260909\\v6_feature_manifest.csv",
+    "row_manifest": "C:\\Users\\User\\KLTN_KHTN\\KL_180826\\multi_llm_evidence_extraction\\outputs\\v6_primary\\v6_sens_h10_20260909\\v6_row_manifest.csv",
+    "coverage_audit": "C:\\Users\\User\\KLTN_KHTN\\KL_180826\\multi_llm_evidence_extraction\\outputs\\v6_primary\\v6_sens_h10_20260909\\v6_coverage_audit.csv"
+  },
+  "limitations": [
+    "sensitivity_only_not_v6_primary",
+    "horizon_T10_not_locked_primary_T20",
+    "does_not_replace_v6_primary_20260909"
+  ]
+}

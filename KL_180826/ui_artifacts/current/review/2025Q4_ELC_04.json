@@ -1,0 +1,25 @@
+{
+  "decision_id": "2025Q4_ELC_04",
+  "holding_period_complete": true,
+  "review_date": null,
+  "initial_snapshot_reference": {
+    "decision_date": "2025-12-31",
+    "ticker": "ELC",
+    "period_id": "2025Q4",
+    "pred_proba_up": 0.985207419352861,
+    "rank_in_period": 4
+  },
+  "monitoring_summary": {},
+  "post_hoc_outcome": {
+    "realized_period_return": -0.0092913771018545,
+    "outcome_label": "negative_or_neutral",
+    "benchmark_return": null,
+    "excess_return": null
+  },
+  "review_narrative": "Post-hoc outcome review only; never used in initial selection, explanation, update, or initial-card scoring.",
+  "provenance": {
+    "review_only": true,
+    "must_not_feed_initial_or_update": true,
+    "source_decision_pack": "evidence_packs_audit.json"
+  }
+}

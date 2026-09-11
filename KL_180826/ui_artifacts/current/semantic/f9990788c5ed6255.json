@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "f9990788c5ed6255",
+    "ticker": "CSV",
+    "article_date": "2026-01-27",
+    "consensus_method": "unanimous",
+    "agreement_level": "high",
+    "analysis_eligible": false,
+    "consensus_direction": "unclear",
+    "consensus_materiality": "unclear",
+    "consensus_event_type": "earnings",
+    "evidence_span": "CSV: Giải trình biến động LNST BCTC Cty mẹ quý 4/2025 so với cùng kỳ năm trước",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "unclear_direction"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "unclear_direction"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

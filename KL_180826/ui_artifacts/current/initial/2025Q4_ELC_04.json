@@ -1,0 +1,336 @@
+{
+  "decision_id": "2025Q4_ELC_04",
+  "snapshot_mode": "full_evidence",
+  "ticker": "ELC",
+  "decision_date": "2025-12-31",
+  "period_id": "2025Q4",
+  "holding_horizon": "next_quarter_or_period_return_in_signals",
+  "ml_signal": {
+    "model_name": "technical_Config_A_from_existing_pipeline",
+    "pred_proba_up": 0.985207419352861,
+    "pred_label": 1,
+    "rank_in_period": 4,
+    "source_signal_class": "Buy Candidate",
+    "display_status": "Model candidate"
+  },
+  "technical_snapshot": {
+    "rsi_end_q": 71.35028331481989,
+    "macd_hist_mean_q": 0.033366134298060984,
+    "price_vs_sma20": 0.04937613309160707,
+    "return_2q_ago": -0.058134490238611704,
+    "return_q": 0.14312267657992575,
+    "return_prev_q": 0.02442461249412868,
+    "volume_change_q": -0.45543372706426505,
+    "return_mean_daily": 0.0019397881690086972,
+    "price_range_q": 0.22303045504901645,
+    "sma20_end": 23.442500000000003
+  },
+  "top_drivers": [
+    {
+      "feature": "rsi_end_q",
+      "value": 71.35028331481989,
+      "direction": "positive_but_overbought_risk",
+      "explanation": "RSI cuối kỳ là driver kỹ thuật quan trọng nhất trong mô hình."
+    },
+    {
+      "feature": "macd_hist_mean_q",
+      "value": 0.033366134298060984,
+      "direction": "supports_up_signal",
+      "explanation": "MACD histogram trung bình phản ánh động lượng xu hướng."
+    },
+    {
+      "feature": "price_vs_sma20",
+      "value": 0.04937613309160707,
+      "direction": "supports_up_signal",
+      "explanation": "Vị trí giá so với SMA20 phản ánh trạng thái trên/dưới đường trung bình."
+    },
+    {
+      "feature": "return_2q_ago",
+      "value": -0.058134490238611704,
+      "direction": "weak_or_negative",
+      "explanation": "Lợi suất trễ hai kỳ phản ánh động lượng/quán tính lịch sử."
+    },
+    {
+      "feature": "return_q",
+      "value": 0.14312267657992575,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trong kỳ hiện tại phản ánh xu hướng gần nhất."
+    },
+    {
+      "feature": "return_prev_q",
+      "value": 0.02442461249412868,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất kỳ trước bổ sung thông tin động lượng."
+    },
+    {
+      "feature": "volume_change_q",
+      "value": -0.45543372706426505,
+      "direction": "weak_or_negative",
+      "explanation": "Thay đổi khối lượng phản ánh mức độ quan tâm của thị trường."
+    },
+    {
+      "feature": "return_mean_daily",
+      "value": 0.0019397881690086972,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trung bình ngày phản ánh xu hướng ngắn trong kỳ."
+    },
+    {
+      "feature": "price_range_q",
+      "value": 0.22303045504901645,
+      "direction": "normal",
+      "explanation": "Biên độ giá trong kỳ phản ánh biến động/rủi ro."
+    },
+    {
+      "feature": "sma20_end",
+      "value": 23.442500000000003,
+      "direction": "context",
+      "explanation": "SMA20 cuối kỳ phản ánh mặt bằng xu hướng ngắn hạn."
+    }
+  ],
+  "news_evidence": [
+    {
+      "evidence_id": "N001",
+      "published_at": "2025-12-05",
+      "source": "cafef",
+      "title": "ELC: Thông báo mua lại cổ phiếu của CBNV nghỉ việc theo quy chế ESOP",
+      "article_summary": "Công ty Cổ phần Công nghệ - Viễn thông ELCOM thông báo mua lại cổ phiếu của CBNV nghỉ việc theo quy chế ESOP ELC: Thông báo mua lại cổ phiếu của CBNV nghỉ việc theo quy chế ESOP Công ty Cổ phần Công nghệ - Viễn thông ELCOM thông báo mua lại cổ phiếu của CBNV nghỉ việc theo quy chế ESOP",
+      "key_facts": [],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "exact",
+      "evidence_span": "ELC: Thông báo mua lại cổ phiếu của CBNV nghỉ việc theo quy chế ESOP Công ty Cổ phần Công nghệ - Viễn thông ELCOM thông báo mua lại cổ phiếu của CBNV nghỉ việc theo quy chế ESOP",
+      "url": "https://cafef.vn/du-lieu/ELC-2356040/elc-thong-bao-mua-lai-co-phieu-cua-cbnv-nghi-viec-theo-quy-che-esop.chn",
+      "content_hash": "f32b6ffe7904847b7516b5fd55fe9947335942724394b90e5b7cda3a30fa66b8",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N002",
+      "published_at": "2025-12-05",
+      "source": "vietstock",
+      "title": "ELC: Thông báo thay đổi nhân sự và Nghị quyết HĐQT",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "ELC: Thông báo thay đổi nhân sự và Nghị quyết HĐQT nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng ",
+          "evidence_quote": "ELC: Thông báo thay đổi nhân sự và Nghị quyết HĐQT nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sá",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Ngày 30/06/2026, CTCP Nhiệt điện Quảng Ninh (UPCoM: QTP) đã tổ chức ĐHĐCĐ bất thường năm 2026 nhằm thông qua việc điều chỉnh dự án nâng cấp, cải tạo hệ thống xử lý...",
+          "evidence_quote": "Ngày 30/06/2026, CTCP Nhiệt điện Quảng Ninh (UPCoM: QTP) đã tổ chức ĐHĐCĐ bất thường năm 2026 nhằm thông qua việc điều chỉnh dự án nâng cấp, cải tạo hệ thống xử lý...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Ngày 30/06, CTCP Tập đoàn Gemadept (HOSE: GMD) và CJ Logistics Hong Kong Holdings Limited đã tổ chức lễ hoàn tất giao dịch, chính thức khép lại các thỏa thuận...",
+          "evidence_quote": "Ngày 30/06, CTCP Tập đoàn Gemadept (HOSE: GMD) và CJ Logistics Hong Kong Holdings Limited đã tổ chức lễ hoàn tất giao dịch, chính thức khép lại các thỏa thuận...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Sáng ngày 02/07, Brand Finance đã công bố Bảng xếp hạng 100 thương hiệu giá trị nhất Việt Nam (Brand Finance Vietnam 100 2026).",
+          "evidence_quote": "Sáng ngày 02/07, Brand Finance đã công bố Bảng xếp hạng 100 thương hiệu giá trị nhất Việt Nam (Brand Finance Vietnam 100 2026).",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Trong báo cáo năm 2025, PNJ giới thiệu Công ty TNHH Một Thành viên Giám Định PNJ (PNJ Laboratory) có “kinh nghiệm tới gần 30 năm trong lĩnh vực dịch vụ giám định đã...",
+          "evidence_quote": "Trong báo cáo năm 2025, PNJ giới thiệu Công ty TNHH Một Thành viên Giám Định PNJ (PNJ Laboratory) có “kinh nghiệm tới gần 30 năm trong lĩnh vực dịch vụ giám định đã...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2026/01/elc-thong-bao-thay-doi-nhan-su-va-nghi-quyet-hdqt-737-1388046.htm",
+      "content_hash": "8b1cbc160afb98d600727aed90ba50a7fdb44056e5b767ee414b6a3a965fd96d",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N003",
+      "published_at": "2025-12-02",
+      "source": "cafef",
+      "title": "ELC: Nghị quyết HĐQT thông qua phương án thu hối cổ phiếu ESOP của CBNV nghỉ việc",
+      "article_summary": "Công ty Cổ phần Công nghệ - Viễn thông ELCOM thông báo Nghị quyết HĐQT về việc thông qua phương án thu hối cổ phiếu ESOP của CBNV nghỉ việc ELC: Nghị quyết HĐQT thông qua phương án thu hối cổ phiếu ESOP của CBNV nghỉ việc Công ty Cổ phần Công nghệ - Viễn thông ELCOM thông báo Nghị quyết HĐQT về việc thông qua phương án thu hối cổ phiếu ESOP của CBNV nghỉ việc",
+      "key_facts": [],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "exact",
+      "evidence_span": "ELC: Nghị quyết HĐQT thông qua phương án thu hối cổ phiếu ESOP của CBNV nghỉ việc Công ty Cổ phần Công nghệ - Viễn thông ELCOM thông báo Nghị quyết HĐQT về việc thông qua phương án thu hối cổ phiếu ESOP của CBNV nghỉ việc",
+      "url": "https://cafef.vn/du-lieu/ELC-2353057/elc-nghi-quyet-hdqt-thong-qua-phuong-an-thu-hoi-co-phieu-esop-cua-cbnv-nghi-viec.chn",
+      "content_hash": "4cbcaa842730360ef412bf5c263f23a8b6171749f31e2401864768ea4ecd5e82",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N004",
+      "published_at": "2025-12-02",
+      "source": "vietstock",
+      "title": "ELC: Thông báo mua lại cổ phiếu của CBNV nghỉ việc theo quy chế ESOP",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "ELC: Thông báo mua lại cổ phiếu của CBNV nghỉ việc theo quy chế ESOP nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh ",
+          "evidence_quote": "ELC: Thông báo mua lại cổ phiếu của CBNV nghỉ việc theo quy chế ESOP nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuy",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Chứng khoán Thành Công vừa đăng ký mua 6.1 triệu cổ phiếu UNI với tổng giá trị ước tính hơn 43 tỷ đồng ngay sau khi Tổng Giám đốc UNI được bầu làm Chủ tịch HĐQT...",
+          "evidence_quote": "Chứng khoán Thành Công vừa đăng ký mua 6.1 triệu cổ phiếu UNI với tổng giá trị ước tính hơn 43 tỷ đồng ngay sau khi Tổng Giám đốc UNI được bầu làm Chủ tịch HĐQT...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "CII và công ty con CII Invest đã nâng sở hữu tại PC1 lên 8.97%, chỉ sau chưa đầy một tháng trở thành cổ đông lớn.",
+          "evidence_quote": "CII và công ty con CII Invest đã nâng sở hữu tại PC1 lên 8.97%, chỉ sau chưa đầy một tháng trở thành cổ đông lớn.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "CTCP Địa ốc Đại Á (Dai A Land) đã bán 10 triệu cp CTCP Bất động sản Sài Gòn Vina (Land Saigon, UPCoM: LSG) trong ngày 23/06, giảm sở hữu từ gần 13.6% xuống còn gần...",
+          "evidence_quote": "CTCP Địa ốc Đại Á (Dai A Land) đã bán 10 triệu cp CTCP Bất động sản Sài Gòn Vina (Land Saigon, UPCoM: LSG) trong ngày 23/06, giảm sở hữu từ gần 13.6% xuống còn gần...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "CTCP Năng lượng An Xuân từng được mở đường để nâng sở hữu tại SP2 lên trên 51%, nhưng nay đã bán toàn bộ 25.24% vốn.",
+          "evidence_quote": "CTCP Năng lượng An Xuân từng được mở đường để nâng sở hữu tại SP2 lên trên 51%, nhưng nay đã bán toàn bộ 25.24% vốn.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2025/12/elc-thong-bao-mua-lai-co-phieu-cua-cbnv-nghi-viec-theo-quy-che-esop-739-1378947.htm",
+      "content_hash": "ff836ee4c6d014f7ee0f3dbdbf30bdb3d1696160614d4c4dc371296d409f0e11",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N005",
+      "published_at": "2025-12-01",
+      "source": "vietstock",
+      "title": "ELC: Nghị quyết HĐQT về việc thông qua phương án thu hồi cổ phiếu ESOP của CBNV nghỉ việc",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "ELC: Nghị quyết HĐQT về việc thông qua phương án thu hồi cổ phiếu ESOP của CBNV nghỉ việc nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH N",
+          "evidence_quote": "ELC: Nghị quyết HĐQT về việc thông qua phương án thu hồi cổ phiếu ESOP của CBNV nghỉ việc nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiế",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Ngày 30/06/2026, CTCP Nhiệt điện Quảng Ninh (UPCoM: QTP) đã tổ chức ĐHĐCĐ bất thường năm 2026 nhằm thông qua việc điều chỉnh dự án nâng cấp, cải tạo hệ thống xử lý...",
+          "evidence_quote": "Ngày 30/06/2026, CTCP Nhiệt điện Quảng Ninh (UPCoM: QTP) đã tổ chức ĐHĐCĐ bất thường năm 2026 nhằm thông qua việc điều chỉnh dự án nâng cấp, cải tạo hệ thống xử lý...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Ngày 30/06, CTCP Tập đoàn Gemadept (HOSE: GMD) và CJ Logistics Hong Kong Holdings Limited đã tổ chức lễ hoàn tất giao dịch, chính thức khép lại các thỏa thuận...",
+          "evidence_quote": "Ngày 30/06, CTCP Tập đoàn Gemadept (HOSE: GMD) và CJ Logistics Hong Kong Holdings Limited đã tổ chức lễ hoàn tất giao dịch, chính thức khép lại các thỏa thuận...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Sáng ngày 02/07, Brand Finance đã công bố Bảng xếp hạng 100 thương hiệu giá trị nhất Việt Nam (Brand Finance Vietnam 100 2026).",
+          "evidence_quote": "Sáng ngày 02/07, Brand Finance đã công bố Bảng xếp hạng 100 thương hiệu giá trị nhất Việt Nam (Brand Finance Vietnam 100 2026).",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Trong báo cáo năm 2025, PNJ giới thiệu Công ty TNHH Một Thành viên Giám Định PNJ (PNJ Laboratory) có “kinh nghiệm tới gần 30 năm trong lĩnh vực dịch vụ giám định đã...",
+          "evidence_quote": "Trong báo cáo năm 2025, PNJ giới thiệu Công ty TNHH Một Thành viên Giám Định PNJ (PNJ Laboratory) có “kinh nghiệm tới gần 30 năm trong lĩnh vực dịch vụ giám định đã...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2025/12/elc-nghi-quyet-hdqt-ve-viec-thong-qua-phuong-an-thu-hoi-co-phieu-esop-cua-cbnv-nghi-viec-737-1377837.htm",
+      "content_hash": "de504212c8d27d2c7ceb841454561346a496045d93192c6a7582595258177cc4",
+      "extraction_status": "ok"
+    }
+  ],
+  "data_quality_flags": {
+    "news_coverage": "high",
+    "ticker_matching_confidence": "mixed",
+    "full_text_coverage": 5,
+    "summary_coverage": 5,
+    "key_fact_coverage": 3,
+    "missing_fields": []
+  },
+  "guardrails": {
+    "initial_prompt_safe": true,
+    "news_cutoff": "2025-12-31",
+    "not_investment_advice": true,
+    "no_post_decision_data": true,
+    "full_text_excerpt_chars": 500
+  },
+  "provenance": {
+    "name": "initial_evidence",
+    "path": "reports/decision_support/generated/evidence_packs_initial.json",
+    "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+    "zone": "initial",
+    "record_count": 25,
+    "schema_version": "evidence-pack-initial-v1",
+    "generated_at_utc": null,
+    "provenance_status": null
+  }
+}

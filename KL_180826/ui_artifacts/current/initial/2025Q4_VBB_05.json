@@ -1,0 +1,356 @@
+{
+  "decision_id": "2025Q4_VBB_05",
+  "snapshot_mode": "full_evidence",
+  "ticker": "VBB",
+  "decision_date": "2025-12-31",
+  "period_id": "2025Q4",
+  "holding_horizon": "next_quarter_or_period_return_in_signals",
+  "ml_signal": {
+    "model_name": "technical_Config_A_from_existing_pipeline",
+    "pred_proba_up": 0.9821647646675534,
+    "pred_label": 1,
+    "rank_in_period": 5,
+    "source_signal_class": "Buy Candidate",
+    "display_status": "Model candidate"
+  },
+  "technical_snapshot": {
+    "rsi_end_q": 47.868748788272086,
+    "macd_hist_mean_q": -0.005514007222263613,
+    "price_vs_sma20": 0.009076348104644855,
+    "return_2q_ago": 0.1849405548216645,
+    "return_q": -0.07443682664054863,
+    "return_prev_q": 0.1295454545454544,
+    "volume_change_q": -0.5824407137470619,
+    "return_mean_daily": -0.0006765024421901496,
+    "price_range_q": 0.26662178084497556,
+    "sma20_end": 9.365
+  },
+  "top_drivers": [
+    {
+      "feature": "rsi_end_q",
+      "value": 47.868748788272086,
+      "direction": "weak_or_neutral",
+      "explanation": "RSI cuối kỳ là driver kỹ thuật quan trọng nhất trong mô hình."
+    },
+    {
+      "feature": "macd_hist_mean_q",
+      "value": -0.005514007222263613,
+      "direction": "weak_or_negative",
+      "explanation": "MACD histogram trung bình phản ánh động lượng xu hướng."
+    },
+    {
+      "feature": "price_vs_sma20",
+      "value": 0.009076348104644855,
+      "direction": "supports_up_signal",
+      "explanation": "Vị trí giá so với SMA20 phản ánh trạng thái trên/dưới đường trung bình."
+    },
+    {
+      "feature": "return_2q_ago",
+      "value": 0.1849405548216645,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trễ hai kỳ phản ánh động lượng/quán tính lịch sử."
+    },
+    {
+      "feature": "return_q",
+      "value": -0.07443682664054863,
+      "direction": "weak_or_negative",
+      "explanation": "Lợi suất trong kỳ hiện tại phản ánh xu hướng gần nhất."
+    },
+    {
+      "feature": "return_prev_q",
+      "value": 0.1295454545454544,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất kỳ trước bổ sung thông tin động lượng."
+    },
+    {
+      "feature": "volume_change_q",
+      "value": -0.5824407137470619,
+      "direction": "weak_or_negative",
+      "explanation": "Thay đổi khối lượng phản ánh mức độ quan tâm của thị trường."
+    },
+    {
+      "feature": "return_mean_daily",
+      "value": -0.0006765024421901496,
+      "direction": "weak_or_negative",
+      "explanation": "Lợi suất trung bình ngày phản ánh xu hướng ngắn trong kỳ."
+    },
+    {
+      "feature": "price_range_q",
+      "value": 0.26662178084497556,
+      "direction": "normal",
+      "explanation": "Biên độ giá trong kỳ phản ánh biến động/rủi ro."
+    },
+    {
+      "feature": "sma20_end",
+      "value": 9.365,
+      "direction": "context",
+      "explanation": "SMA20 cuối kỳ phản ánh mặt bằng xu hướng ngắn hạn."
+    }
+  ],
+  "news_evidence": [
+    {
+      "evidence_id": "N001",
+      "published_at": "2025-12-29",
+      "source": "vietstock",
+      "title": "VBB: Bổ nhiệm Bà Đoàn Thị Thanh Hương phụ trách điều hành chi nhánh Bình Định thay cho Ông Nguyễn Văn Phú - Bổ nhiệm Ông Nguyễn Hồng Hải giữ chức Giám đốc chi nhánh BR - VT",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "VBB: Bổ nhiệm Bà Đoàn Thị Thanh Hương phụ trách điều hành chi nhánh Bình Định thay cho Ông Nguyễn Văn Phú - Bổ nhiệm Ông Nguyễn Hồng Hải giữ chức Giám đốc chi nhánh BR - VT nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái",
+          "evidence_quote": "VBB: Bổ nhiệm Bà Đoàn Thị Thanh Hương phụ trách điều hành chi nhánh Bình Định thay cho Ông Nguyễn Văn Phú - Bổ nhiệm Ông Nguyễn Hồng Hải giữ chức Giám đốc chi nhánh BR - VT nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phi",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Đến nay cơ quan điều tra đã khởi tố 31 bị can liên quan đến vụ án tại Tổng công ty Cảng hàng không Việt Nam ACV về nhiều tội danh.",
+          "evidence_quote": "Đến nay cơ quan điều tra đã khởi tố 31 bị can liên quan đến vụ án tại Tổng công ty Cảng hàng không Việt Nam ACV về nhiều tội danh.",
+          "fact_type": "legal_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Tổng CTCP Vận tải Dầu khí (PVTrans, HOSE: PVT) vừa thông báo về việc miễn nhiệm ông Trần Ngọc Nguyên khỏi chức vụ Tổng Giám đốc kể từ ngày 01/07.",
+          "evidence_quote": "Tổng CTCP Vận tải Dầu khí (PVTrans, HOSE: PVT) vừa thông báo về việc miễn nhiệm ông Trần Ngọc Nguyên khỏi chức vụ Tổng Giám đốc kể từ ngày 01/07.",
+          "fact_type": "governance",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Tổng Công ty Xây dựng Số 1 - CTCP (UPCoM: CC1) công bố quyết định về việc thay đổi nhân sự cấp cao tại bộ phận tài chính - kế toán.",
+          "evidence_quote": "Tổng Công ty Xây dựng Số 1 - CTCP (UPCoM: CC1) công bố quyết định về việc thay đổi nhân sự cấp cao tại bộ phận tài chính - kế toán.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Ngay sau ĐHĐCĐ thường niên 2026, CTCP Chứng khoán VIX (HOSE: VIX) đồng loạt thông báo thay đổi nhân sự tại các vị trí Chủ tịch HĐQT và Tổng Giám đốc.",
+          "evidence_quote": "Ngay sau ĐHĐCĐ thường niên 2026, CTCP Chứng khoán VIX (HOSE: VIX) đồng loạt thông báo thay đổi nhân sự tại các vị trí Chủ tịch HĐQT và Tổng Giám đốc.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2025/12/vbb-bo-nhiem-ba-doan-thi-thanh-huong-phu-trach-dieu-hanh-chi-nhanh-binh-dinh-thay-cho-ong-nguyen-van-phu-bo-nhiem-ong-nguyen-hong-hai-giu-chuc-giam-doc-chi-nhanh-br-vt-214-1387040.htm",
+      "content_hash": "f5075cf08587ce182656757a5cedc9777744a6a99fb043f1c85c2627b132f715",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N002",
+      "published_at": "2025-12-26",
+      "source": "cafef",
+      "title": "VBB: Đã phát hành 270.940.550 cp",
+      "article_summary": "Báo cáo kết quả đợt chào bán cổ phiếu ra công chúng VBB: Đã phát hành 270.940.550 cp Báo cáo kết quả đợt chào bán cổ phiếu ra công chúng",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "VBB: Đã phát hành 270.940.550 cp Báo cáo kết quả đợt chào bán cổ phiếu ra công chúng VBB: Đã phát hành 270.940.550 cp Báo cáo kết quả đợt chào bán cổ phiếu ra công chúng",
+          "evidence_quote": "VBB: Đã phát hành 270.940.550 cp Báo cáo kết quả đợt chào bán cổ phiếu ra công chúng VBB: Đã phát hành 270.940.550 cp Báo cáo kết quả đợt chào bán cổ phiếu ra công chúng",
+          "fact_type": "capital",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "capital_dilution"
+      ],
+      "event_type": "capital",
+      "match_confidence": "exact",
+      "evidence_span": "VBB: Đã phát hành 270.940.550 cp Báo cáo kết quả đợt chào bán cổ phiếu ra công chúng",
+      "url": "https://cafef.vn/du-lieu/VBB-2370000/vbb-da-phat-hanh-270940550-cp.chn",
+      "content_hash": "1caac1d1fb8416d7fbd86f9fe229bce2bfefe046439af42ce1d564035c1cb79a",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N003",
+      "published_at": "2025-12-26",
+      "source": "cafef",
+      "title": "VBB: Số lượng cổ phiếu có quyền biểu quyết đang lưu hành là 1.076.897.384 cp",
+      "article_summary": "Thông báo thay đổi số lượng cổ phiếu có quyền biểu quyết đang lưu hành VBB: Số lượng cổ phiếu có quyền biểu quyết đang lưu hành là 1.076.897.384 cp Thông báo thay đổi số lượng cổ phiếu có quyền biểu quyết đang lưu hành",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "VBB: Số lượng cổ phiếu có quyền biểu quyết đang lưu hành là 1.076.897.384 cp Thông báo thay đổi số lượng cổ phiếu có quyền biểu quyết đang lưu hành VBB: Số lượng cổ phiếu có quyền biểu quyết đang lưu hành là 1.076.897.384 cp Thông báo thay đổi số lượng cổ phiếu có quyền biểu quyết đang lưu hành",
+          "evidence_quote": "VBB: Số lượng cổ phiếu có quyền biểu quyết đang lưu hành là 1.076.897.384 cp Thông báo thay đổi số lượng cổ phiếu có quyền biểu quyết đang lưu hành VBB: Số lượng cổ phiếu có quyền biểu quyết đang lưu hành là 1.076.897.384 cp Thông báo thay ",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "exact",
+      "evidence_span": "VBB: Số lượng cổ phiếu có quyền biểu quyết đang lưu hành là 1.076.897.384 cp Thông báo thay đổi số lượng cổ phiếu có quyền biểu quyết đang lưu hành",
+      "url": "https://cafef.vn/du-lieu/VBB-2370015/vbb-so-luong-co-phieu-co-quyen-bieu-quyet-dang-luu-hanh-la-1076897384-cp.chn",
+      "content_hash": "17ffd36707020842187ae6f4b20e6e9af60d7f1329e00a76590896039beafa65",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N004",
+      "published_at": "2025-12-26",
+      "source": "vietstock",
+      "title": "VBB: Ông Phạm Danh – Phó Tổng Giám đốc đã thực hiện 19,828 quyền mua cổ phần trong đợt chào bán cổ phiếu cho cổ đông hiện hữu",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "VBB: Ông Phạm Danh – Phó Tổng Giám đốc đã thực hiện 19,828 quyền mua cổ phần trong đợt chào bán cổ phiếu cho cổ đông hiện hữu nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện ",
+          "evidence_quote": "VBB: Ông Phạm Danh – Phó Tổng Giám đốc đã thực hiện 19,828 quyền mua cổ phần trong đợt chào bán cổ phiếu cho cổ đông hiện hữu nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứ",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Chứng khoán Thành Công vừa đăng ký mua 6.1 triệu cổ phiếu UNI với tổng giá trị ước tính hơn 43 tỷ đồng ngay sau khi Tổng Giám đốc UNI được bầu làm Chủ tịch HĐQT...",
+          "evidence_quote": "Chứng khoán Thành Công vừa đăng ký mua 6.1 triệu cổ phiếu UNI với tổng giá trị ước tính hơn 43 tỷ đồng ngay sau khi Tổng Giám đốc UNI được bầu làm Chủ tịch HĐQT...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "CII và công ty con CII Invest đã nâng sở hữu tại PC1 lên 8.97%, chỉ sau chưa đầy một tháng trở thành cổ đông lớn.",
+          "evidence_quote": "CII và công ty con CII Invest đã nâng sở hữu tại PC1 lên 8.97%, chỉ sau chưa đầy một tháng trở thành cổ đông lớn.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "CTCP Địa ốc Đại Á (Dai A Land) đã bán 10 triệu cp CTCP Bất động sản Sài Gòn Vina (Land Saigon, UPCoM: LSG) trong ngày 23/06, giảm sở hữu từ gần 13.6% xuống còn gần...",
+          "evidence_quote": "CTCP Địa ốc Đại Á (Dai A Land) đã bán 10 triệu cp CTCP Bất động sản Sài Gòn Vina (Land Saigon, UPCoM: LSG) trong ngày 23/06, giảm sở hữu từ gần 13.6% xuống còn gần...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "CTCP Năng lượng An Xuân từng được mở đường để nâng sở hữu tại SP2 lên trên 51%, nhưng nay đã bán toàn bộ 25.24% vốn.",
+          "evidence_quote": "CTCP Năng lượng An Xuân từng được mở đường để nâng sở hữu tại SP2 lên trên 51%, nhưng nay đã bán toàn bộ 25.24% vốn.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2025/12/vbb-ong-pham-danhpho-tong-giam-doc-da-thuc-hien-19828-quyen-mua-co-phan-trong-dot-chao-ban-co-phieu-cho-co-dong-hien-huu-739-1385034.htm",
+      "content_hash": "ab5d00417ca53e2233341afd23e2f9efa7ff77abc0cf858dbb13074fa9c42f4c",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N005",
+      "published_at": "2025-12-26",
+      "source": "vietstock",
+      "title": "VBB: Ông Nguyễn Tiến Sỹ – Phó Tổng Giám đốc đã thực hiện 9,914 quyền mua cổ phần trong đợt chào bán cổ phiếu cho cổ đông hiện hữu",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "VBB: Ông Nguyễn Tiến Sỹ – Phó Tổng Giám đốc đã thực hiện 9,914 quyền mua cổ phần trong đợt chào bán cổ phiếu cho cổ đông hiện hữu nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chu",
+          "evidence_quote": "VBB: Ông Nguyễn Tiến Sỹ – Phó Tổng Giám đốc đã thực hiện 9,914 quyền mua cổ phần trong đợt chào bán cổ phiếu cho cổ đông hiện hữu nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Chứng khoán Thành Công vừa đăng ký mua 6.1 triệu cổ phiếu UNI với tổng giá trị ước tính hơn 43 tỷ đồng ngay sau khi Tổng Giám đốc UNI được bầu làm Chủ tịch HĐQT...",
+          "evidence_quote": "Chứng khoán Thành Công vừa đăng ký mua 6.1 triệu cổ phiếu UNI với tổng giá trị ước tính hơn 43 tỷ đồng ngay sau khi Tổng Giám đốc UNI được bầu làm Chủ tịch HĐQT...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "CII và công ty con CII Invest đã nâng sở hữu tại PC1 lên 8.97%, chỉ sau chưa đầy một tháng trở thành cổ đông lớn.",
+          "evidence_quote": "CII và công ty con CII Invest đã nâng sở hữu tại PC1 lên 8.97%, chỉ sau chưa đầy một tháng trở thành cổ đông lớn.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "CTCP Địa ốc Đại Á (Dai A Land) đã bán 10 triệu cp CTCP Bất động sản Sài Gòn Vina (Land Saigon, UPCoM: LSG) trong ngày 23/06, giảm sở hữu từ gần 13.6% xuống còn gần...",
+          "evidence_quote": "CTCP Địa ốc Đại Á (Dai A Land) đã bán 10 triệu cp CTCP Bất động sản Sài Gòn Vina (Land Saigon, UPCoM: LSG) trong ngày 23/06, giảm sở hữu từ gần 13.6% xuống còn gần...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "CTCP Năng lượng An Xuân từng được mở đường để nâng sở hữu tại SP2 lên trên 51%, nhưng nay đã bán toàn bộ 25.24% vốn.",
+          "evidence_quote": "CTCP Năng lượng An Xuân từng được mở đường để nâng sở hữu tại SP2 lên trên 51%, nhưng nay đã bán toàn bộ 25.24% vốn.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2025/12/vbb-ong-nguyen-tien-sypho-tong-giam-doc-da-thuc-hien-9914-quyen-mua-co-phan-trong-dot-chao-ban-co-phieu-cho-co-dong-hien-huu-739-1385033.htm",
+      "content_hash": "624533560cfb779df87a9585270e1002e69c7cdec967dbb1755aa16e4ec246e4",
+      "extraction_status": "ok"
+    }
+  ],
+  "data_quality_flags": {
+    "news_coverage": "high",
+    "ticker_matching_confidence": "mixed",
+    "full_text_coverage": 5,
+    "summary_coverage": 5,
+    "key_fact_coverage": 5,
+    "missing_fields": []
+  },
+  "guardrails": {
+    "initial_prompt_safe": true,
+    "news_cutoff": "2025-12-31",
+    "not_investment_advice": true,
+    "no_post_decision_data": true,
+    "full_text_excerpt_chars": 500
+  },
+  "provenance": {
+    "name": "initial_evidence",
+    "path": "reports/decision_support/generated/evidence_packs_initial.json",
+    "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+    "zone": "initial",
+    "record_count": 25,
+    "schema_version": "evidence-pack-initial-v1",
+    "generated_at_utc": null,
+    "provenance_status": null
+  }
+}

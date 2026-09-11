@@ -1,0 +1,104 @@
+{
+  "generated_at": "2026-07-06T13:22:12",
+  "backup": "C:\\Users\\User\\KLTN_KHTN\\data\\news\\enriched\\all_news_enriched.pre_v2_repair_20260706_085711.csv",
+  "before": {
+    "unique_urls": 45968,
+    "full_text_unique": 23896,
+    "coverage_pct": 51.98,
+    "status_counts": {
+      "ok": 23896,
+      "failed": 11783,
+      "restricted": 10189,
+      "fetch_failed": 100
+    },
+    "by_source": [
+      {
+        "source": "cafef",
+        "total": 19364,
+        "full_text": 1529,
+        "coverage_pct": 7.9
+      },
+      {
+        "source": "kinhtechungkhoan",
+        "total": 8513,
+        "full_text": 4295,
+        "coverage_pct": 50.45
+      },
+      {
+        "source": "tnck",
+        "total": 1446,
+        "full_text": 1446,
+        "coverage_pct": 100.0
+      },
+      {
+        "source": "vietnambiz",
+        "total": 3598,
+        "full_text": 3598,
+        "coverage_pct": 100.0
+      },
+      {
+        "source": "vietstock",
+        "total": 11285,
+        "full_text": 11267,
+        "coverage_pct": 99.84
+      },
+      {
+        "source": "vnexpress",
+        "total": 1762,
+        "full_text": 1761,
+        "coverage_pct": 99.94
+      }
+    ]
+  },
+  "after": {
+    "unique_urls": 45968,
+    "full_text_unique": 28613,
+    "coverage_pct": 62.25,
+    "status_counts": {
+      "ok": 28096,
+      "failed": 17312,
+      "partial": 517,
+      "fetch_failed": 43
+    },
+    "by_source": [
+      {
+        "source": "cafef",
+        "total": 19364,
+        "full_text": 2045,
+        "coverage_pct": 10.56
+      },
+      {
+        "source": "kinhtechungkhoan",
+        "total": 8513,
+        "full_text": 8496,
+        "coverage_pct": 99.8
+      },
+      {
+        "source": "tnck",
+        "total": 1446,
+        "full_text": 1446,
+        "coverage_pct": 100.0
+      },
+      {
+        "source": "vietnambiz",
+        "total": 3598,
+        "full_text": 3598,
+        "coverage_pct": 100.0
+      },
+      {
+        "source": "vietstock",
+        "total": 11285,
+        "full_text": 11267,
+        "coverage_pct": 99.84
+      },
+      {
+        "source": "vnexpress",
+        "total": 1762,
+        "full_text": 1761,
+        "coverage_pct": 99.94
+      }
+    ]
+  },
+  "target_80_percent_met": false,
+  "target_full_text_unique": 36775
+}

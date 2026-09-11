@@ -1,0 +1,348 @@
+{
+  "decision_id": "2025Q3_SCR_05",
+  "snapshot_mode": "full_evidence",
+  "ticker": "SCR",
+  "decision_date": "2025-09-30",
+  "period_id": "2025Q3",
+  "holding_horizon": "next_quarter_or_period_return_in_signals",
+  "ml_signal": {
+    "model_name": "technical_Config_A_from_existing_pipeline",
+    "pred_proba_up": 0.9904412570629436,
+    "pred_label": 1,
+    "rank_in_period": 5,
+    "source_signal_class": "Buy Candidate",
+    "display_status": "Model candidate"
+  },
+  "technical_snapshot": {
+    "rsi_end_q": 52.84985985423489,
+    "macd_hist_mean_q": -0.004962472087480404,
+    "price_vs_sma20": 0.022617643906099102,
+    "return_2q_ago": 0.18661971830985924,
+    "return_q": 0.33240223463687135,
+    "return_prev_q": 0.05899705014749254,
+    "volume_change_q": 1.4161851765018045,
+    "return_mean_daily": 0.004904525140674082,
+    "price_range_q": 0.3900177376582778,
+    "sma20_end": 9.329
+  },
+  "top_drivers": [
+    {
+      "feature": "rsi_end_q",
+      "value": 52.84985985423489,
+      "direction": "supports_up_signal",
+      "explanation": "RSI cuối kỳ là driver kỹ thuật quan trọng nhất trong mô hình."
+    },
+    {
+      "feature": "macd_hist_mean_q",
+      "value": -0.004962472087480404,
+      "direction": "weak_or_negative",
+      "explanation": "MACD histogram trung bình phản ánh động lượng xu hướng."
+    },
+    {
+      "feature": "price_vs_sma20",
+      "value": 0.022617643906099102,
+      "direction": "supports_up_signal",
+      "explanation": "Vị trí giá so với SMA20 phản ánh trạng thái trên/dưới đường trung bình."
+    },
+    {
+      "feature": "return_2q_ago",
+      "value": 0.18661971830985924,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trễ hai kỳ phản ánh động lượng/quán tính lịch sử."
+    },
+    {
+      "feature": "return_q",
+      "value": 0.33240223463687135,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trong kỳ hiện tại phản ánh xu hướng gần nhất."
+    },
+    {
+      "feature": "return_prev_q",
+      "value": 0.05899705014749254,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất kỳ trước bổ sung thông tin động lượng."
+    },
+    {
+      "feature": "volume_change_q",
+      "value": 1.4161851765018045,
+      "direction": "supports_up_signal",
+      "explanation": "Thay đổi khối lượng phản ánh mức độ quan tâm của thị trường."
+    },
+    {
+      "feature": "return_mean_daily",
+      "value": 0.004904525140674082,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trung bình ngày phản ánh xu hướng ngắn trong kỳ."
+    },
+    {
+      "feature": "price_range_q",
+      "value": 0.3900177376582778,
+      "direction": "risk_high_volatility",
+      "explanation": "Biên độ giá trong kỳ phản ánh biến động/rủi ro."
+    },
+    {
+      "feature": "sma20_end",
+      "value": 9.329,
+      "direction": "context",
+      "explanation": "SMA20 cuối kỳ phản ánh mặt bằng xu hướng ngắn hạn."
+    }
+  ],
+  "news_evidence": [
+    {
+      "evidence_id": "N001",
+      "published_at": "2025-09-03",
+      "source": "cafef",
+      "title": "SCR: Công văn công bố BCTC bán niên soát xét 2025 kèm giải trình",
+      "article_summary": "Công ty Cổ phần Địa ốc Sài Gòn Thương Tín thông báo công văn công bố BCTC bán niên soát xét 2025 kèm giải trình SCR: Công văn công bố BCTC bán niên soát xét 2025 kèm giải trình Công ty Cổ phần Địa ốc Sài Gòn Thương Tín thông báo công văn công bố BCTC bán niên soát xét 2025 kèm giải trình",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "SCR: Công văn công bố BCTC bán niên soát xét 2025 kèm giải trình Công ty Cổ phần Địa ốc Sài Gòn Thương Tín thông báo công văn công bố BCTC bán niên soát xét 2025 kèm giải trình SCR: Công văn công bố BCTC bán niên soát xét 2025 kèm giải trình Công ty Cổ phần Địa ốc Sài Gòn Thương Tín thông báo công v",
+          "evidence_quote": "SCR: Công văn công bố BCTC bán niên soát xét 2025 kèm giải trình Công ty Cổ phần Địa ốc Sài Gòn Thương Tín thông báo công văn công bố BCTC bán niên soát xét 2025 kèm giải trình SCR: Công văn công bố BCTC bán niên soát xét 2025 kèm giải trìn",
+          "fact_type": "legal_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "legal_risk"
+      ],
+      "event_type": "legal_risk",
+      "match_confidence": "partial",
+      "evidence_span": "SCR: Công văn công bố BCTC bán niên soát xét 2025 kèm giải trình Công ty Cổ phần Địa ốc Sài Gòn Thương Tín thông báo công văn công bố BCTC bán niên soát xét 2025 kèm giải trình",
+      "url": "https://cafef.vn/du-lieu/SCR-2344530/scr-cong-van-cong-bo-bctc-ban-nien-soat-xet-2025-kem-giai-trinh.chn",
+      "content_hash": "8eff263914595695f8e4b3d38d862503b7079b009c5cccd7e9035fc862dc88de",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N002",
+      "published_at": "2025-09-03",
+      "source": "vietstock",
+      "title": "SCR: Giấy chứng nhận đăng ký địa điểm kinh doanh Cơ sở 1 Tây Ninh",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "SCR: Giấy chứng nhận đăng ký địa điểm kinh doanh Cơ sở 1 Tây Ninh nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doa",
+          "evidence_quote": "SCR: Giấy chứng nhận đăng ký địa điểm kinh doanh Cơ sở 1 Tây Ninh nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện ",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Trong ít ngày từ 30/06 - 02/07, Ủy ban Chứng khoán Nhà nước (UBCKNN) quyết định xử phạt hàng loạt doanh nghiệp vì lỗi công bố thông tin.",
+          "evidence_quote": "Trong ít ngày từ 30/06 - 02/07, Ủy ban Chứng khoán Nhà nước (UBCKNN) quyết định xử phạt hàng loạt doanh nghiệp vì lỗi công bố thông tin.",
+          "fact_type": "legal_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Phiên giao dịch ngày 03/07 chứng kiến diễn biến trái chiều khi khối ngoại tiếp tục bán ròng 789 tỷ đồng, trong khi tự doanh công ty chứng khoán mua ròng mạnh 551 tỷ...",
+          "evidence_quote": "Phiên giao dịch ngày 03/07 chứng kiến diễn biến trái chiều khi khối ngoại tiếp tục bán ròng 789 tỷ đồng, trong khi tự doanh công ty chứng khoán mua ròng mạnh 551 tỷ...",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Tháng 6, khối ngoại bán ròng hơn 15 ngàn tỷ đồng trên HOSE, ghi nhận quy mô giao dịch lớn tại VIC.",
+          "evidence_quote": "Tháng 6, khối ngoại bán ròng hơn 15 ngàn tỷ đồng trên HOSE, ghi nhận quy mô giao dịch lớn tại VIC.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Lũy kế nửa đầu năm, khối ngoại đã bán ròng gần 80 ngàn tỷ đồng...",
+          "evidence_quote": "Lũy kế nửa đầu năm, khối ngoại đã bán ròng gần 80 ngàn tỷ đồng...",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2025/10/scr-giay-chung-nhan-dang-ky-dia-diem-kinh-doanh-co-so-1-tay-ninh-830-1358215.htm",
+      "content_hash": "b84282e3dada4a56d3ecf343eae9cdd4e01d6e7400aa638dd877bd7544fcce52",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N003",
+      "published_at": "2025-09-03",
+      "source": "vietstock",
+      "title": "SCR: Công văn công bố BCTC bán niên soát xét 2025 kèm giải trình",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "SCR: Công văn công bố BCTC bán niên soát xét 2025 kèm giải trình nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doan",
+          "evidence_quote": "SCR: Công văn công bố BCTC bán niên soát xét 2025 kèm giải trình nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đ",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Ngày 30/06/2026, CTCP Nhiệt điện Quảng Ninh (UPCoM: QTP) đã tổ chức ĐHĐCĐ bất thường năm 2026 nhằm thông qua việc điều chỉnh dự án nâng cấp, cải tạo hệ thống xử lý...",
+          "evidence_quote": "Ngày 30/06/2026, CTCP Nhiệt điện Quảng Ninh (UPCoM: QTP) đã tổ chức ĐHĐCĐ bất thường năm 2026 nhằm thông qua việc điều chỉnh dự án nâng cấp, cải tạo hệ thống xử lý...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Ngày 30/06, CTCP Tập đoàn Gemadept (HOSE: GMD) và CJ Logistics Hong Kong Holdings Limited đã tổ chức lễ hoàn tất giao dịch, chính thức khép lại các thỏa thuận...",
+          "evidence_quote": "Ngày 30/06, CTCP Tập đoàn Gemadept (HOSE: GMD) và CJ Logistics Hong Kong Holdings Limited đã tổ chức lễ hoàn tất giao dịch, chính thức khép lại các thỏa thuận...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Sáng ngày 02/07, Brand Finance đã công bố Bảng xếp hạng 100 thương hiệu giá trị nhất Việt Nam (Brand Finance Vietnam 100 2026).",
+          "evidence_quote": "Sáng ngày 02/07, Brand Finance đã công bố Bảng xếp hạng 100 thương hiệu giá trị nhất Việt Nam (Brand Finance Vietnam 100 2026).",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Trong báo cáo năm 2025, PNJ giới thiệu Công ty TNHH Một Thành viên Giám Định PNJ (PNJ Laboratory) có “kinh nghiệm tới gần 30 năm trong lĩnh vực dịch vụ giám định đã...",
+          "evidence_quote": "Trong báo cáo năm 2025, PNJ giới thiệu Công ty TNHH Một Thành viên Giám Định PNJ (PNJ Laboratory) có “kinh nghiệm tới gần 30 năm trong lĩnh vực dịch vụ giám định đã...",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2025/09/scr-cong-van-cong-bo-bctc-ban-nien-soat-xet-2025-kem-giai-trinh-737-1347917.htm",
+      "content_hash": "9bd4b3a12e2dd30056e4bda62459718ac5eef72bc87a8560a829c43c09c4efa6",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N004",
+      "published_at": "2025-08-28",
+      "source": "cafef",
+      "title": "SCR: CBTT nâng cấp website",
+      "article_summary": "Công ty Cổ phần Địa ốc Sài Gòn Thương Tín thông báo nâng cấp website SCR: CBTT nâng cấp website Công ty Cổ phần Địa ốc Sài Gòn Thương Tín thông báo nâng cấp website",
+      "key_facts": [],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "partial",
+      "evidence_span": "SCR: CBTT nâng cấp website Công ty Cổ phần Địa ốc Sài Gòn Thương Tín thông báo nâng cấp website",
+      "url": "https://cafef.vn/du-lieu/SCR-2288193/scr-cbtt-nang-cap-website.chn",
+      "content_hash": "663d3b4dd0508248db8f48bc43f206accab99c7bb69ecf1ca164307c3505522c",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N005",
+      "published_at": "2025-08-27",
+      "source": "vietstock",
+      "title": "SCR: CBTT nâng cấp website",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "SCR: CBTT nâng cấp website nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần ",
+          "evidence_quote": "SCR: CBTT nâng cấp website nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHI",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Trong ít ngày từ 30/06 - 02/07, Ủy ban Chứng khoán Nhà nước (UBCKNN) quyết định xử phạt hàng loạt doanh nghiệp vì lỗi công bố thông tin.",
+          "evidence_quote": "Trong ít ngày từ 30/06 - 02/07, Ủy ban Chứng khoán Nhà nước (UBCKNN) quyết định xử phạt hàng loạt doanh nghiệp vì lỗi công bố thông tin.",
+          "fact_type": "legal_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Phiên giao dịch ngày 03/07 chứng kiến diễn biến trái chiều khi khối ngoại tiếp tục bán ròng 789 tỷ đồng, trong khi tự doanh công ty chứng khoán mua ròng mạnh 551 tỷ...",
+          "evidence_quote": "Phiên giao dịch ngày 03/07 chứng kiến diễn biến trái chiều khi khối ngoại tiếp tục bán ròng 789 tỷ đồng, trong khi tự doanh công ty chứng khoán mua ròng mạnh 551 tỷ...",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Tháng 6, khối ngoại bán ròng hơn 15 ngàn tỷ đồng trên HOSE, ghi nhận quy mô giao dịch lớn tại VIC.",
+          "evidence_quote": "Tháng 6, khối ngoại bán ròng hơn 15 ngàn tỷ đồng trên HOSE, ghi nhận quy mô giao dịch lớn tại VIC.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Lũy kế nửa đầu năm, khối ngoại đã bán ròng gần 80 ngàn tỷ đồng...",
+          "evidence_quote": "Lũy kế nửa đầu năm, khối ngoại đã bán ròng gần 80 ngàn tỷ đồng...",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2025/08/scr-cbtt-nang-cap-website-830-1346800.htm",
+      "content_hash": "1bce79187f3eb3c0d9652bdac2591bb5c9cf8c9fb25b9290e8582258490fa585",
+      "extraction_status": "ok"
+    }
+  ],
+  "data_quality_flags": {
+    "news_coverage": "high",
+    "ticker_matching_confidence": "mixed",
+    "full_text_coverage": 5,
+    "summary_coverage": 5,
+    "key_fact_coverage": 4,
+    "missing_fields": []
+  },
+  "guardrails": {
+    "initial_prompt_safe": true,
+    "news_cutoff": "2025-09-30",
+    "not_investment_advice": true,
+    "no_post_decision_data": true,
+    "full_text_excerpt_chars": 500
+  },
+  "provenance": {
+    "name": "initial_evidence",
+    "path": "reports/decision_support/generated/evidence_packs_initial.json",
+    "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+    "zone": "initial",
+    "record_count": 25,
+    "schema_version": "evidence-pack-initial-v1",
+    "generated_at_utc": null,
+    "provenance_status": null
+  }
+}

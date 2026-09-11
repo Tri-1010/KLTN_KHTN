@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "295d0eb26b51aef1",
+    "ticker": "VNM",
+    "article_date": "2026-04-24",
+    "consensus_method": "unanimous",
+    "agreement_level": "high",
+    "analysis_eligible": true,
+    "consensus_direction": "neutral",
+    "consensus_materiality": "low",
+    "consensus_event_type": "governance",
+    "evidence_span": "VNM: Quy chế nội bộ về quản trị công ty",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "numeric_score_outlier"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "numeric_score_outlier"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

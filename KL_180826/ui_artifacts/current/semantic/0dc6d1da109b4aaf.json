@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "0dc6d1da109b4aaf",
+    "ticker": "UNKNOWN",
+    "article_date": "2026-06-23",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": true,
+    "consensus_direction": "neutral",
+    "consensus_materiality": "medium",
+    "consensus_event_type": "market",
+    "evidence_span": "Việt Nam vẫn ở nhóm thị trường cận biên (Frontier Market)",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "none"
+    ],
+    "requires_human_review": false,
+    "review_flags": [
+      "none"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

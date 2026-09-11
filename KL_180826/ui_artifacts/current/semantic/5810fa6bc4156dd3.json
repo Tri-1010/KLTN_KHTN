@@ -1,0 +1,26 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "5810fa6bc4156dd3",
+    "ticker": "VCB",
+    "article_date": "2025-07-16",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": true,
+    "consensus_direction": "mixed",
+    "consensus_materiality": "medium",
+    "consensus_event_type": "analyst",
+    "evidence_span": "Lợi nhuận nửa đầu năm của Vietcombank được MBS dự báo tăng 4,5% so với cùng kỳ và hoàn thành khoảng 45% kế hoạch năm.",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "data_quality_issue",
+      "unclear_direction"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "data_quality_issue",
+      "unclear_direction"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

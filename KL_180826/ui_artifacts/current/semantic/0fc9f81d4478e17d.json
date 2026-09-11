@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "0fc9f81d4478e17d",
+    "ticker": "NAB",
+    "article_date": "2024-04-12",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": true,
+    "consensus_direction": "support",
+    "consensus_materiality": "medium",
+    "consensus_event_type": "capital",
+    "evidence_span": "Nghị quyết HĐQT về việc triển khai phương án tăng vốn điều lệ năm 2024",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "none"
+    ],
+    "requires_human_review": false,
+    "review_flags": [
+      "none"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

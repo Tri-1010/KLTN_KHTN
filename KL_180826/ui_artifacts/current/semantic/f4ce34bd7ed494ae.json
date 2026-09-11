@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "f4ce34bd7ed494ae",
+    "ticker": "HCM",
+    "article_date": "2023-10-05",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": true,
+    "consensus_direction": "support",
+    "consensus_materiality": "medium",
+    "consensus_event_type": "other",
+    "evidence_span": "Quyết định của Sở Giao dịch Chứng khoán Hà Nội về việc chấp thuận cho HSC được kết nối GD đến thị trường trái phiếu DNRL với HNX",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "none"
+    ],
+    "requires_human_review": false,
+    "review_flags": [
+      "none"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

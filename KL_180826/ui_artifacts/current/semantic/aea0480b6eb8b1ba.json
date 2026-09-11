@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "aea0480b6eb8b1ba",
+    "ticker": "TPB",
+    "article_date": "2025-07-30",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": true,
+    "consensus_direction": "risk",
+    "consensus_materiality": "medium",
+    "consensus_event_type": "debt",
+    "evidence_span": "Thông báo về việc tạm ngừng giao dịch đối với trái phiếu TPB12410 của Ngân hàng Thương mại cổ phần Tiên Phong",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "none"
+    ],
+    "requires_human_review": false,
+    "review_flags": [
+      "none"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

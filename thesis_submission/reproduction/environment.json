@@ -1,0 +1,14 @@
+{
+  "artifact_schema_version": "thesis_environment_v1",
+  "python": "3.10+",
+  "requirements": "../../requirements.txt",
+  "platform_used": "Windows 10",
+  "canonical_run_id": "canonical_150_v7",
+  "random_seed": 42,
+  "paid_llm_api_required_for_canonical_comparison": false,
+  "notes": [
+    "Install pinned project requirements before reproduction.",
+    "Canonical comparison consumes existing hashed sample and consensus artifacts.",
+    "Provider API calls belong to separate annotation/card workflows."
+  ]
+}

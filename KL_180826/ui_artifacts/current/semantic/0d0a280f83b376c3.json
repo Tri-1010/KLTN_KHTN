@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "0d0a280f83b376c3",
+    "ticker": "VIC",
+    "article_date": "2023-02-17",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": true,
+    "consensus_direction": "neutral",
+    "consensus_materiality": "low",
+    "consensus_event_type": "capital",
+    "evidence_span": "VIC: Nhận chuyển nhượng cổ phần tại pháp nhânCTCP Đầu tư và Phát triển Làng Vân",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "numeric_score_outlier"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "numeric_score_outlier"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

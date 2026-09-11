@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "66ed503b5c7c3f70",
+    "ticker": "PPC",
+    "article_date": "2023-12-01",
+    "consensus_method": "unanimous",
+    "agreement_level": "high",
+    "analysis_eligible": true,
+    "consensus_direction": "neutral",
+    "consensus_materiality": "low",
+    "consensus_event_type": "governance",
+    "evidence_span": "thay đổi hình thức từ ĐHĐCĐ bất thường sang lấy ý kiến bằng văn bản",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "numeric_score_outlier"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "numeric_score_outlier"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

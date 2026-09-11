@@ -1,0 +1,299 @@
+{
+  "decision_id": "2025Q1_BSI_05",
+  "snapshot_mode": "full_evidence",
+  "ticker": "BSI",
+  "decision_date": "2025-03-31",
+  "period_id": "2025Q1",
+  "holding_horizon": "next_quarter_or_period_return_in_signals",
+  "ml_signal": {
+    "model_name": "technical_Config_A_from_existing_pipeline",
+    "pred_proba_up": 0.9968577136500381,
+    "pred_label": 1,
+    "rank_in_period": 5,
+    "source_signal_class": "Buy Candidate",
+    "display_status": "Model candidate"
+  },
+  "technical_snapshot": {
+    "rsi_end_q": 59.74769517805113,
+    "macd_hist_mean_q": 0.07900520028589898,
+    "price_vs_sma20": 0.019843448862473752,
+    "return_2q_ago": 0.0514461223445098,
+    "return_q": 0.1902488062327218,
+    "return_prev_q": -0.06537924616100502,
+    "volume_change_q": 0.17060288468724058,
+    "return_mean_daily": 0.003054851268298556,
+    "price_range_q": 0.3517516948514966,
+    "sma20_end": 46.43850000000001
+  },
+  "top_drivers": [
+    {
+      "feature": "rsi_end_q",
+      "value": 59.74769517805113,
+      "direction": "supports_up_signal",
+      "explanation": "RSI cuối kỳ là driver kỹ thuật quan trọng nhất trong mô hình."
+    },
+    {
+      "feature": "macd_hist_mean_q",
+      "value": 0.07900520028589898,
+      "direction": "supports_up_signal",
+      "explanation": "MACD histogram trung bình phản ánh động lượng xu hướng."
+    },
+    {
+      "feature": "price_vs_sma20",
+      "value": 0.019843448862473752,
+      "direction": "supports_up_signal",
+      "explanation": "Vị trí giá so với SMA20 phản ánh trạng thái trên/dưới đường trung bình."
+    },
+    {
+      "feature": "return_2q_ago",
+      "value": 0.0514461223445098,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trễ hai kỳ phản ánh động lượng/quán tính lịch sử."
+    },
+    {
+      "feature": "return_q",
+      "value": 0.1902488062327218,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trong kỳ hiện tại phản ánh xu hướng gần nhất."
+    },
+    {
+      "feature": "return_prev_q",
+      "value": -0.06537924616100502,
+      "direction": "weak_or_negative",
+      "explanation": "Lợi suất kỳ trước bổ sung thông tin động lượng."
+    },
+    {
+      "feature": "volume_change_q",
+      "value": 0.17060288468724058,
+      "direction": "supports_up_signal",
+      "explanation": "Thay đổi khối lượng phản ánh mức độ quan tâm của thị trường."
+    },
+    {
+      "feature": "return_mean_daily",
+      "value": 0.003054851268298556,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trung bình ngày phản ánh xu hướng ngắn trong kỳ."
+    },
+    {
+      "feature": "price_range_q",
+      "value": 0.3517516948514966,
+      "direction": "risk_high_volatility",
+      "explanation": "Biên độ giá trong kỳ phản ánh biến động/rủi ro."
+    },
+    {
+      "feature": "sma20_end",
+      "value": 46.43850000000001,
+      "direction": "context",
+      "explanation": "SMA20 cuối kỳ phản ánh mặt bằng xu hướng ngắn hạn."
+    }
+  ],
+  "news_evidence": [
+    {
+      "evidence_id": "N001",
+      "published_at": "2025-03-31",
+      "source": "kinhtechungkhoan",
+      "title": "chung khoan bidv bsc dat muc tieu lai 560 ty dong tang von len gan 2 500 ty trong nam 2025 1364874.html",
+      "article_summary": "Chứng khoán BIDV (BSC) sẽ trình cổ đông kế hoạch lợi nhuận trước thuế năm 2025 đạt 560 tỷ đồng, tăng 8,5%. Đồng thời, công ty dự kiến phát hành hơn 22 triệu cổ phiếu trả cổ tức tỷ lệ 10%, nâng vốn điều lệ lên gần 2.500 tỷ đồng. Công ty CP Chứng khoán BIDV (BSC, HOSE: BSI) vừa công bố tài liệu họp Đại hội đồng cổ đông thường niên 2025, dự kiến tổ chức vào sáng 18/4/2025 tại Hà Nội.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "chung khoan bidv bsc dat muc tieu lai 560 ty dong tang von len gan 2 500 ty trong nam 2025 1364874.html nan Chứng khoán BIDV (BSC) sẽ trình cổ đông kế hoạch lợi nhuận trước thuế năm 2025 đạt 560 tỷ đồng, tăng 8,5%.",
+          "evidence_quote": "chung khoan bidv bsc dat muc tieu lai 560 ty dong tang von len gan 2 500 ty trong nam 2025 1364874.html nan Chứng khoán BIDV (BSC) sẽ trình cổ đông kế hoạch lợi nhuận trước thuế năm 2025 đạt 560 tỷ đồng, tăng 8,5%.",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Đồng thời, công ty dự kiến phát hành hơn 22 triệu cổ phiếu trả cổ tức tỷ lệ 10%, nâng vốn điều lệ lên gần 2.500 tỷ đồng.",
+          "evidence_quote": "Đồng thời, công ty dự kiến phát hành hơn 22 triệu cổ phiếu trả cổ tức tỷ lệ 10%, nâng vốn điều lệ lên gần 2.500 tỷ đồng.",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Công ty CP Chứng khoán BIDV (BSC, HOSE: BSI) vừa công bố tài liệu họp Đại hội đồng cổ đông thường niên 2025, dự kiến tổ chức vào sáng 18/4/2025 tại Hà Nội.",
+          "evidence_quote": "Công ty CP Chứng khoán BIDV (BSC, HOSE: BSI) vừa công bố tài liệu họp Đại hội đồng cổ đông thường niên 2025, dự kiến tổ chức vào sáng 18/4/2025 tại Hà Nội.",
+          "fact_type": "governance",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Tại đại hội, BSC sẽ trình cổ đông kế hoạch kinh doanh năm 2025 với mục tiêu lợi nhuận trước thuế đạt 560 tỷ đồng, tăng gần 9% so với kết quả thực hiện năm 2024.",
+          "evidence_quote": "Tại đại hội, BSC sẽ trình cổ đông kế hoạch kinh doanh năm 2025 với mục tiêu lợi nhuận trước thuế đạt 560 tỷ đồng, tăng gần 9% so với kết quả thực hiện năm 2024.",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Ngoài ra, BSC cũng sẽ trình phương án tăng vốn điều lệ lên gần 2.500 tỷ đồng thông qua phát hành cổ phiếu để trả cổ tức năm 2024.",
+          "evidence_quote": "Ngoài ra, BSC cũng sẽ trình phương án tăng vốn điều lệ lên gần 2.500 tỷ đồng thông qua phát hành cổ phiếu để trả cổ tức năm 2024.",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "debt_risk",
+        "governance"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Chứng khoán BIDV (BSC) sẽ trình cổ đông kế hoạch lợi nhuận trước thuế năm 2025 đạt 560 tỷ đồng, tăng 8,5%. Đồng thời, công ty dự kiến phát hành hơn 22 triệu cổ phiếu trả cổ tức tỷ lệ 10%, nâng vốn điều lệ lên gần 2.500 tỷ đồng. Công ty CP Chứng khoán BIDV (BSC, HOSE: BSI) vừa công bố tài liệu họp Đại hội đồng cổ đông thường niên 2025, dự kiến tổ chức vào sáng 18/4/2025 tại Hà Nội. Tại đại hội, BSC sẽ trình cổ đông kế hoạch kinh doanh năm 2025 với mục tiêu lợi nhuận trước thuế đạt 560 tỷ đồng, tă",
+      "url": "https://kinhtechungkhoan.vn/chung-khoan-bidv-bsc-dat-muc-tieu-lai-560-ty-dong-tang-von-len-gan-2-500-ty-trong-nam-2025-1364874.html",
+      "content_hash": "8bf3be75f777529f137223fa3dac295fbadee4e0f81108503f9ab931a14a94d7",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N002",
+      "published_at": "2025-03-28",
+      "source": "cafef",
+      "title": "BSI: Thông báo họp và link tài liệu họp ĐHĐCĐ thường niên năm 2025",
+      "article_summary": "Công ty Cổ phần Chứng khoán BIDV công bố thông báo họp và link tài liệu họp ĐHĐCĐ thường niên năm 2025 BSI: Thông báo họp và link tài liệu họp ĐHĐCĐ thường niên năm 2025 Công ty Cổ phần Chứng khoán BIDV công bố thông báo họp và link tài liệu họp ĐHĐCĐ thường niên năm 2025",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "BSI: Thông báo họp và link tài liệu họp ĐHĐCĐ thường niên năm 2025 Công ty Cổ phần Chứng khoán BIDV công bố thông báo họp và link tài liệu họp ĐHĐCĐ thường niên năm 2025 BSI: Thông báo họp và link tài liệu họp ĐHĐCĐ thường niên năm 2025 Công ty Cổ phần Chứng khoán BIDV công bố thông báo họp và link ",
+          "evidence_quote": "BSI: Thông báo họp và link tài liệu họp ĐHĐCĐ thường niên năm 2025 Công ty Cổ phần Chứng khoán BIDV công bố thông báo họp và link tài liệu họp ĐHĐCĐ thường niên năm 2025 BSI: Thông báo họp và link tài liệu họp ĐHĐCĐ thường niên năm 2025 Côn",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "partial",
+      "evidence_span": "BSI: Thông báo họp và link tài liệu họp ĐHĐCĐ thường niên năm 2025 Công ty Cổ phần Chứng khoán BIDV công bố thông báo họp và link tài liệu họp ĐHĐCĐ thường niên năm 2025",
+      "url": "https://cafef.vn/du-lieu/BSI-2160313/bsi-thong-bao-hop-va-link-tai-lieu-hop-dhdcd-thuong-nien-nam-2025.chn",
+      "content_hash": "b59070a2803e90ce7e9743ce6d6b6805f7c40a78a890bd49cf28274afac17159",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N003",
+      "published_at": "2025-03-26",
+      "source": "cafef",
+      "title": "BSI: Báo cáo tỷ lệ an toàn tài chính đã được kiểm toán tại ngày 31/12/2024",
+      "article_summary": "Công ty Cổ phần Chứng khoán BIDV công bố báo cáo tỷ lệ an toàn tài chính đã được kiểm toán tại ngày 31/12/2024 BSI: Báo cáo tỷ lệ an toàn tài chính đã được kiểm toán tại ngày 31/12/2024 Công ty Cổ phần Chứng khoán BIDV công bố báo cáo tỷ lệ an toàn tài chính đã được kiểm toán tại ngày 31/12/2024",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "BSI: Báo cáo tỷ lệ an toàn tài chính đã được kiểm toán tại ngày 31/12/2024 Công ty Cổ phần Chứng khoán BIDV công bố báo cáo tỷ lệ an toàn tài chính đã được kiểm toán tại ngày 31/12/2024 BSI: Báo cáo tỷ lệ an toàn tài chính đã được kiểm toán tại ngày 31/12/2024 Công ty Cổ phần Chứng khoán BIDV công b",
+          "evidence_quote": "BSI: Báo cáo tỷ lệ an toàn tài chính đã được kiểm toán tại ngày 31/12/2024 Công ty Cổ phần Chứng khoán BIDV công bố báo cáo tỷ lệ an toàn tài chính đã được kiểm toán tại ngày 31/12/2024 BSI: Báo cáo tỷ lệ an toàn tài chính đã được kiểm toán",
+          "fact_type": "legal_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "legal_risk"
+      ],
+      "event_type": "legal_risk",
+      "match_confidence": "partial",
+      "evidence_span": "BSI: Báo cáo tỷ lệ an toàn tài chính đã được kiểm toán tại ngày 31/12/2024 Công ty Cổ phần Chứng khoán BIDV công bố báo cáo tỷ lệ an toàn tài chính đã được kiểm toán tại ngày 31/12/2024",
+      "url": "https://cafef.vn/du-lieu/BSI-2157820/bsi-bao-cao-ty-le-an-toan-tai-chinh-da-duoc-kiem-toan-tai-ngay-31122024.chn",
+      "content_hash": "33fb8eee1d515329dc4b84bc9bd860e551a0bddddb6b32bf28c16f311cda6d58",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N004",
+      "published_at": "2025-03-25",
+      "source": "cafef",
+      "title": "BSI: Quyết định của HĐQT về việc phê duyệt hạn mức tín dụng tại VIB",
+      "article_summary": "Công ty Cổ phần Chứng khoán BIDV thông báo Quyết định của HĐQT về việc phê duyệt hạn mức tín dụng tại VIB BSI: Quyết định của HĐQT về việc phê duyệt hạn mức tín dụng tại VIB Công ty Cổ phần Chứng khoán BIDV thông báo Quyết định của HĐQT về việc phê duyệt hạn mức tín dụng tại VIB",
+      "key_facts": [],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "partial",
+      "evidence_span": "BSI: Quyết định của HĐQT về việc phê duyệt hạn mức tín dụng tại VIB Công ty Cổ phần Chứng khoán BIDV thông báo Quyết định của HĐQT về việc phê duyệt hạn mức tín dụng tại VIB",
+      "url": "https://cafef.vn/du-lieu/BSI-2157085/bsi-quyet-dinh-cua-hdqt-ve-viec-phe-duyet-han-muc-tin-dung-tai-vib.chn",
+      "content_hash": "0b70493f4161b62e181c329a096f197c63c0ac562987d6c9f850b1282866ea53",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N005",
+      "published_at": "2025-03-17",
+      "source": "vietnambiz",
+      "title": "BSC ước tính 3 ETF sẽ mua ròng hơn 110 triệu cổ phiếu ngân hàng trong kỳ cơ cấu tháng 3",
+      "article_summary": "Theo báo cáo mới đây của Chứng khoán BIDV (BSC), ngày 15/3, MarketVector đã công bố danh mục Marketvector Vietnam Local Index định kỳ quý I. Theo đó, NAB của NamABank được thêm mới, đồng thời không có mã nào bị loại. Nhóm phân tích dự báo NAB được VNM ETF mua mới hơn 8,1 triệu cp, tương ứng với tỷ trọng 1,36% danh mục.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "BSC ước tính 3 ETF sẽ mua ròng hơn 110 triệu cổ phiếu ngân hàng trong kỳ cơ cấu tháng 3 nan Theo báo cáo mới đây của Chứng khoán BIDV (BSC), ngày 15/3, MarketVector đã công bố danh mục Marketvector Vietnam Local Index định kỳ quý I.",
+          "evidence_quote": "BSC ước tính 3 ETF sẽ mua ròng hơn 110 triệu cổ phiếu ngân hàng trong kỳ cơ cấu tháng 3 nan Theo báo cáo mới đây của Chứng khoán BIDV (BSC), ngày 15/3, MarketVector đã công bố danh mục Marketvector Vietnam Local Index định kỳ quý I.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Nhóm phân tích dự báo NAB được VNM ETF mua mới hơn 8,1 triệu cp, tương ứng với tỷ trọng 1,36% danh mục.",
+          "evidence_quote": "Nhóm phân tích dự báo NAB được VNM ETF mua mới hơn 8,1 triệu cp, tương ứng với tỷ trọng 1,36% danh mục.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Bên cạnh đó, các mã cũng dự kiến được mua đáng kể gồm VND của VNDirect (22 triệu cp), HPG của Hòa Phát (3,5 triệu cp).",
+          "evidence_quote": "Bên cạnh đó, các mã cũng dự kiến được mua đáng kể gồm VND của VNDirect (22 triệu cp), HPG của Hòa Phát (3,5 triệu cp).",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Ngược lại, SHB nhóm ngân hàng, VIC và VHM nhóm bất động sản có thể bị bán ra lần lượt 4,2 triệu cp, 3,4 triệu cp, 1,9 triệu cp.",
+          "evidence_quote": "Ngược lại, SHB nhóm ngân hàng, VIC và VHM nhóm bất động sản có thể bị bán ra lần lượt 4,2 triệu cp, 3,4 triệu cp, 1,9 triệu cp.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Trước đó một tuần, vào 7/3, FTSE Russell đã công bố danh mục cổ phiếu thành phần bộ chỉ số FTSE Vietnam All-share và FTSE Vietnam Index.",
+          "evidence_quote": "Trước đó một tuần, vào 7/3, FTSE Russell đã công bố danh mục cổ phiếu thành phần bộ chỉ số FTSE Vietnam All-share và FTSE Vietnam Index.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "exact",
+      "evidence_span": "Theo báo cáo mới đây của Chứng khoán BIDV (BSC), ngày 15/3, MarketVector đã công bố danh mục Marketvector Vietnam Local Index định kỳ quý I. Theo đó, NAB của NamABank được thêm mới, đồng thời không có mã nào bị loại. Nhóm phân tích dự báo NAB được VNM ETF mua mới hơn 8,1 triệu cp, tương ứng với tỷ trọng 1,36% danh mục. Bên cạnh đó, các mã cũng dự kiến được mua đáng kể gồm VND của VNDirect (22 triệu cp), HPG của Hòa Phát (3,5 triệu cp). Ngược lại, SHB nhóm ngân hàng, VIC và VHM nhóm bất động sản",
+      "url": "https://vietnambiz.vn/bsc-uoc-tinh-3-etf-se-mua-rong-hon-110-trieu-co-phieu-ngan-hang-trong-ky-co-cau-thang-3-20253178546712.htm",
+      "content_hash": "c01c0ec3bc6e53bcb90f940cb5f71600e1504fd21916f71008c1c273ed355249",
+      "extraction_status": "ok"
+    }
+  ],
+  "data_quality_flags": {
+    "news_coverage": "high",
+    "ticker_matching_confidence": "mixed",
+    "full_text_coverage": 5,
+    "summary_coverage": 5,
+    "key_fact_coverage": 4,
+    "missing_fields": []
+  },
+  "guardrails": {
+    "initial_prompt_safe": true,
+    "news_cutoff": "2025-03-31",
+    "not_investment_advice": true,
+    "no_post_decision_data": true,
+    "full_text_excerpt_chars": 500
+  },
+  "provenance": {
+    "name": "initial_evidence",
+    "path": "reports/decision_support/generated/evidence_packs_initial.json",
+    "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+    "zone": "initial",
+    "record_count": 25,
+    "schema_version": "evidence-pack-initial-v1",
+    "generated_at_utc": null,
+    "provenance_status": null
+  }
+}

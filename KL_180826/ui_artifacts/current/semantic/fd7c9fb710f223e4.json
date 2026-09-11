@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "fd7c9fb710f223e4",
+    "ticker": "MSN",
+    "article_date": "2022-01-05",
+    "consensus_method": "unanimous",
+    "agreement_level": "high",
+    "analysis_eligible": true,
+    "consensus_direction": "risk",
+    "consensus_materiality": "low",
+    "consensus_event_type": "market",
+    "evidence_span": "khoi ngoai ban rong tro lai tren hose msn bi rut gan 160 ty dong",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "none"
+    ],
+    "requires_human_review": false,
+    "review_flags": [
+      "none"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

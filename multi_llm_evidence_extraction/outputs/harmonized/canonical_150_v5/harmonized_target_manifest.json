@@ -1,0 +1,20 @@
+{
+  "artifact_schema_version": "harmonized_target_manifest_v1",
+  "status": "completed",
+  "horizon_benchmark_sessions": 20,
+  "sources": {
+    "prices": {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\data\\prices\\all_vn30_prices.csv",
+      "sha256": "4e16833ab6bfa2b0aeea2d742b86943d786b221f51ad6bf43a57f619405665bb"
+    },
+    "benchmark": {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\data\\prices_extended\\VNINDEX.csv",
+      "sha256": "fc44a4a3afd01ea0a48dfc8901377b8af24e5e5eaa7da73cb4639063dbc83f84"
+    }
+  },
+  "target": {
+    "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\harmonized\\canonical_150_v5\\harmonized_outperform_targets.csv",
+    "sha256": "b5fd3812b9ec2158207eb0d97c1a6cab465b855d0afb5ff0a7ef9eabc32826fe",
+    "rows": 93824
+  }
+}

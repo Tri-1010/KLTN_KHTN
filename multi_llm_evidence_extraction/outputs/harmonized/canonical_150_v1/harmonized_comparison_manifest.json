@@ -1,0 +1,144 @@
+{
+  "artifact_schema_version": "harmonized_comparison_manifest_v1",
+  "generated_at_utc": "2026-07-30T05:13:14+00:00",
+  "study_id": "harmonized_keyword_semantic_v1",
+  "protocol_version": "harmonized_comparison_v1",
+  "protocol_sha256": "be96a76960d08314e68e2d4db0f63f9540881eb36916a74c273366ea449255bc",
+  "run_id": "canonical_150_v1",
+  "mode": "pilot",
+  "seed": 42,
+  "run_tier": "canonical",
+  "status": "completed",
+  "claim_level": "common_stratified_article_spine_only",
+  "coverage_audit_pass": true,
+  "fold_audit_pass": true,
+  "primary_gate_pass": false,
+  "primary_gate_any": false,
+  "thesis_evidence_gate": false,
+  "preregistered_input_match": true,
+  "build_manifest_sha256": "5518fec4a7e4f1ef6d2cad96cffeeccf57b05e1490787882057fb825bc5af5ea",
+  "source_inputs": [
+    {
+      "name": "sample",
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\data\\sample_news_for_annotation.csv",
+      "sha256": "a03ec8cbbb4cbbc8a0d9e3427c29771bb8c38698ec494ef83451b3f38a652c73"
+    },
+    {
+      "name": "consensus",
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\pseudo_labels_consensus.csv",
+      "sha256": "658e6b8b827f7bc5b76f6cf72f5c100abd77dba0be95be563bec94d1b31715ba"
+    },
+    {
+      "name": "prices",
+      "path": "C:\\Users\\User\\KLTN_KHTN\\data\\prices\\all_vn30_prices.csv",
+      "sha256": "4e16833ab6bfa2b0aeea2d742b86943d786b221f51ad6bf43a57f619405665bb"
+    },
+    {
+      "name": "benchmark",
+      "path": "C:\\Users\\User\\KLTN_KHTN\\data\\prices_extended\\VNINDEX.csv",
+      "sha256": "fc44a4a3afd01ea0a48dfc8901377b8af24e5e5eaa7da73cb4639063dbc83f84"
+    },
+    {
+      "name": "technical",
+      "path": "C:\\Users\\User\\KLTN_KHTN\\data\\features\\technical_features.csv",
+      "sha256": "b0a1cb2e7ea71708131cc444de07e1457bc2d457e9e2a255af418f480f324e3e"
+    },
+    {
+      "name": "targets",
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\harmonized\\canonical_150_v1\\harmonized_outperform_targets.csv",
+      "sha256": "b5fd3812b9ec2158207eb0d97c1a6cab465b855d0afb5ff0a7ef9eabc32826fe"
+    }
+  ],
+  "git_commit": "c7ce0db9e9f425786e84e0dc7a69dc63d36499ab",
+  "attrition": {
+    "sampled_articles": 150,
+    "joined_articles": 150,
+    "eligible_articles": 122,
+    "mapped_eligible_articles": 114,
+    "analytic_spine_articles": 114,
+    "panel_target_available_rows": 92080,
+    "panel_eligible_rows": 5656
+  },
+  "code": [
+    {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\scripts\\build_harmonized_comparison.py",
+      "sha256": "6e4081dafd0eadcef1d1a18d491118a7c9c01d4871429aa6bab8af3840f42b03"
+    },
+    {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\scripts\\run_harmonized_comparison.py",
+      "sha256": "afe6d396b6ff21c1611f56a65e3270eb3857b3b952418ef8c1c45166959e2c5a"
+    },
+    {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\scripts\\build_outperform_targets.py",
+      "sha256": "af9a6449ac8c934ad9c93a3b28fd7e9a2a42ef560ff4498b858a04b25f0546ec"
+    },
+    {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\scripts\\common.py",
+      "sha256": "98219f6ae8971c78ce43c6fc020c3e6084245fd57942f09838c5c9e2bb814d4b"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\config\\harmonized_comparison_v1.json",
+      "sha256": "be96a76960d08314e68e2d4db0f63f9540881eb36916a74c273366ea449255bc"
+    },
+    {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\harmonized\\canonical_150_v1\\harmonized_build_manifest.json",
+      "sha256": "5518fec4a7e4f1ef6d2cad96cffeeccf57b05e1490787882057fb825bc5af5ea"
+    },
+    {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\harmonized\\canonical_150_v1\\harmonized_article_spine.csv",
+      "sha256": "73e8a7901878438f903d17a80e6d5bf6d12089a677f72350228ddfeb6d784ed9"
+    },
+    {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\harmonized\\canonical_150_v1\\harmonized_panel.csv",
+      "sha256": "396bbdb132ab5f862e1e9e0c6b45c3792ae596db1231ebcaa22f2be131aa0974"
+    },
+    {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\harmonized\\canonical_150_v1\\harmonized_feature_manifest.csv",
+      "sha256": "0b47c26b65e770bd60213f00fcb0e6ed13e077411d0e68f0424c3b952475fbdb"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\harmonized\\canonical_150_v1\\harmonized_fold_manifest.csv",
+      "sha256": "661afac61f30fb6e6d35c9cc90bb46fd235792936cd9ad55cb37c7a2beaaf9b1"
+    },
+    {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\harmonized\\canonical_150_v1\\harmonized_fold_feature_manifest.csv",
+      "sha256": "5a3595bc51ae5a1553e4298fa746d08fd64c259db800adaf13ef1085b2935ab2"
+    },
+    {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\harmonized\\canonical_150_v1\\harmonized_predictions.csv",
+      "sha256": "4c55de4c32b77a1bb11f50afcb59b7b5b90597acd90d74d1ac8412cc25029476"
+    },
+    {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\harmonized\\canonical_150_v1\\harmonized_fold_metrics.csv",
+      "sha256": "d61d8da69018682f6bbf2e98711746316e7be65c6af23a0d02357949d54bc8ba"
+    },
+    {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\harmonized\\canonical_150_v1\\harmonized_calibration.csv",
+      "sha256": "3d23a960ff452c01b43bc7597e4eacdb4326caf9a89b0d367b66c3d8312234bb"
+    },
+    {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\harmonized\\canonical_150_v1\\harmonized_paired_daily_deltas.csv",
+      "sha256": "f51457382538818562af1213179101e99c7a55a2abd1c040b8dde3efcffd66f5"
+    },
+    {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\harmonized\\canonical_150_v1\\harmonized_inference.csv",
+      "sha256": "db7771adf3d358e8a465a3336904c3e15cb9910b1092a06adb622039f6f05d9a"
+    },
+    {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\harmonized\\canonical_150_v1\\harmonized_topk_matched_deltas.csv",
+      "sha256": "53a52ae88ad396a6b16cf7db729429316aa8f806162211339d6e8271d1681310"
+    },
+    {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\reports\\harmonized\\canonical_150_v1\\harmonized_comparison_report.md",
+      "sha256": "ffd3036f2e43953782f80edb2d39182c8c71af9bda43237bcbd3b9fa285d65e8"
+    },
+    {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\harmonized\\canonical_150_v1\\canonical_summary.json",
+      "sha256": "0612891f076e359e6fc493d45a67b73243f1264a08965b1550bc996bb2ed83ef"
+    }
+  ]
+}

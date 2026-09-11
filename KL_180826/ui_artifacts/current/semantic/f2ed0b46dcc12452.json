@@ -1,0 +1,26 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "f2ed0b46dcc12452",
+    "ticker": "HAH",
+    "article_date": "2026-04-07",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": false,
+    "consensus_direction": "unclear",
+    "consensus_materiality": "low",
+    "consensus_event_type": "other",
+    "evidence_span": "HAH: Thông báo giao dịch cổ phiếu của người có liên quan của Người nội bộ Vũ Ngọc Sơn",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "numeric_score_outlier",
+      "unclear_direction"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "numeric_score_outlier",
+      "unclear_direction"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

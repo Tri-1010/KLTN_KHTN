@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "5fa095719c4f29d7",
+    "ticker": "UNKNOWN",
+    "article_date": "2026-05-19",
+    "consensus_method": "unanimous",
+    "agreement_level": "high",
+    "analysis_eligible": true,
+    "consensus_direction": "neutral",
+    "consensus_materiality": "medium",
+    "consensus_event_type": "market",
+    "evidence_span": "nhà đầu tư nước ngoài đã bán ròng 48,2 triệu đơn vị, tổng giá trị bán ròng tương ứng đạt 816,3 tỷ đồng, tăng 107,8% về lượng và 17,15% về giá trị so với phiên giao dịch trước đó ngày 18/5 (bán ròng 696,8 tỷ đồng).",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "none"
+    ],
+    "requires_human_review": false,
+    "review_flags": [
+      "none"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

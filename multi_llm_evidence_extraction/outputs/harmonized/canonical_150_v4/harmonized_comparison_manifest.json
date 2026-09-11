@@ -1,0 +1,149 @@
+{
+  "artifact_schema_version": "harmonized_comparison_manifest_v1",
+  "generated_at_utc": "2026-07-30T12:41:39+00:00",
+  "study_id": "harmonized_keyword_semantic_v1",
+  "protocol_version": "harmonized_comparison_v2",
+  "protocol_sha256": "1c620d00c4c296eb250ee0b0490b7b48bc76530dfc1a7d352f4d99cc77afba7f",
+  "run_id": "canonical_150_v4",
+  "mode": "pilot",
+  "seed": 42,
+  "run_tier": "canonical",
+  "status": "completed",
+  "claim_level": "common_stratified_article_spine_only",
+  "coverage_audit_pass": true,
+  "fold_audit_pass": true,
+  "primary_gate_pass": false,
+  "primary_gate_any": false,
+  "thesis_evidence_gate": false,
+  "preregistered_input_match": true,
+  "build_manifest_sha256": "08f9be8744ecaaa55bd0cd99fbc9da9f840ef5e9f36e84dd4c426e8fa0cbaad1",
+  "source_inputs": [
+    {
+      "name": "sample",
+      "path": "multi_llm_evidence_extraction/data/sample_news_for_annotation.csv",
+      "sha256": "a03ec8cbbb4cbbc8a0d9e3427c29771bb8c38698ec494ef83451b3f38a652c73"
+    },
+    {
+      "name": "consensus",
+      "path": "multi_llm_evidence_extraction/outputs/pseudo_labels_consensus.csv",
+      "sha256": "6342f27827e3327b78099fc1e1bbf13d4340c598764379dff0b14ac5f357da54"
+    },
+    {
+      "name": "prices",
+      "path": "data/prices/all_vn30_prices.csv",
+      "sha256": "4e16833ab6bfa2b0aeea2d742b86943d786b221f51ad6bf43a57f619405665bb"
+    },
+    {
+      "name": "benchmark",
+      "path": "data/prices_extended/VNINDEX.csv",
+      "sha256": "fc44a4a3afd01ea0a48dfc8901377b8af24e5e5eaa7da73cb4639063dbc83f84"
+    },
+    {
+      "name": "technical",
+      "path": "data/features/technical_features.csv",
+      "sha256": "b0a1cb2e7ea71708131cc444de07e1457bc2d457e9e2a255af418f480f324e3e"
+    },
+    {
+      "name": "targets",
+      "path": "multi_llm_evidence_extraction/outputs/harmonized/canonical_150_v4/harmonized_outperform_targets.csv",
+      "sha256": "b5fd3812b9ec2158207eb0d97c1a6cab465b855d0afb5ff0a7ef9eabc32826fe"
+    },
+    {
+      "name": "target_manifest",
+      "path": "multi_llm_evidence_extraction/outputs/harmonized/canonical_150_v4/harmonized_target_manifest.json",
+      "sha256": "0d274885892d1d61909da31179b22197b4144c14e2573fde5f6f8575bc3c327f"
+    }
+  ],
+  "git_commit": "c7ce0db9e9f425786e84e0dc7a69dc63d36499ab",
+  "attrition": {
+    "sampled_articles": 150,
+    "joined_articles": 150,
+    "eligible_articles": 122,
+    "mapped_eligible_articles": 114,
+    "analytic_spine_articles": 114,
+    "panel_target_available_rows": 92080,
+    "panel_eligible_rows": 5656
+  },
+  "code": [
+    {
+      "path": "multi_llm_evidence_extraction/scripts/build_harmonized_comparison.py",
+      "sha256": "98d8476de28589e445f511ff14b5cac6e417f5f913e0ad0f8c8c4719584a061a"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/scripts/run_harmonized_comparison.py",
+      "sha256": "b4aa6c4ff08a7af15395c63c96c3d1c88d559598e92e47509c8b799971ad136e"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/scripts/build_outperform_targets.py",
+      "sha256": "f87b56381207d95bd92eb9d2d616fb7e5fb1d28c31c57fddfcbf903fa866bb9e"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/scripts/common.py",
+      "sha256": "98219f6ae8971c78ce43c6fc020c3e6084245fd57942f09838c5c9e2bb814d4b"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "multi_llm_evidence_extraction/config/harmonized_comparison_v2.json",
+      "sha256": "1c620d00c4c296eb250ee0b0490b7b48bc76530dfc1a7d352f4d99cc77afba7f"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/outputs/harmonized/canonical_150_v4/harmonized_build_manifest.json",
+      "sha256": "08f9be8744ecaaa55bd0cd99fbc9da9f840ef5e9f36e84dd4c426e8fa0cbaad1"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/outputs/harmonized/canonical_150_v4/harmonized_article_spine.csv",
+      "sha256": "048a3453a45af439a973491eec66911df145597ee73387b28a7173b0291008c1"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/outputs/harmonized/canonical_150_v4/harmonized_panel.csv",
+      "sha256": "396bbdb132ab5f862e1e9e0c6b45c3792ae596db1231ebcaa22f2be131aa0974"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/outputs/harmonized/canonical_150_v4/harmonized_feature_manifest.csv",
+      "sha256": "0b47c26b65e770bd60213f00fcb0e6ed13e077411d0e68f0424c3b952475fbdb"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "multi_llm_evidence_extraction/outputs/harmonized/canonical_150_v4/harmonized_fold_manifest.csv",
+      "sha256": "661afac61f30fb6e6d35c9cc90bb46fd235792936cd9ad55cb37c7a2beaaf9b1"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/outputs/harmonized/canonical_150_v4/harmonized_fold_feature_manifest.csv",
+      "sha256": "5a3595bc51ae5a1553e4298fa746d08fd64c259db800adaf13ef1085b2935ab2"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/outputs/harmonized/canonical_150_v4/harmonized_predictions.csv",
+      "sha256": "28769b9131efae1a0d897c3feedbcc517d4c61255ae4103bfa57e50f46d25c71"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/outputs/harmonized/canonical_150_v4/harmonized_fold_metrics.csv",
+      "sha256": "2403b9ecac2b639eec8ac25306a5f839c9b7dff9d9fae06aca7aa8a6947ea404"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/outputs/harmonized/canonical_150_v4/harmonized_calibration.csv",
+      "sha256": "50e72ac7a07deb0d1e724e4e70b373942a1f3959c65f2316cbfe7b6420da0a0b"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/outputs/harmonized/canonical_150_v4/harmonized_paired_daily_deltas.csv",
+      "sha256": "b3bb9b0e6ba9aef94be25745d4153cee56ceb4ff6159eaf2632bcadcfdc704e2"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/outputs/harmonized/canonical_150_v4/harmonized_inference.csv",
+      "sha256": "6781908ff48c2ad6aaea94babad867c4678fe36d4d6008604c991a378c002587"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/outputs/harmonized/canonical_150_v4/harmonized_topk_matched_deltas.csv",
+      "sha256": "53a52ae88ad396a6b16cf7db729429316aa8f806162211339d6e8271d1681310"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/reports/harmonized/canonical_150_v4/harmonized_comparison_report.md",
+      "sha256": "46e26cf6eb480f4bd01e4a7b2ca9829395202346c242ce89f42489e31bdada18"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/outputs/harmonized/canonical_150_v4/canonical_summary.json",
+      "sha256": "591d4e368b3067307c4a072eeedaf0bff93d7e5578538333e16b1d4cb29f8186"
+    }
+  ]
+}

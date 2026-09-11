@@ -1,0 +1,28 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "55027dcd0418b7d9",
+    "ticker": "UNKNOWN",
+    "article_date": "2025-05-20",
+    "consensus_method": "unanimous",
+    "agreement_level": "high",
+    "analysis_eligible": false,
+    "consensus_direction": "mixed",
+    "consensus_materiality": "medium",
+    "consensus_event_type": "macro",
+    "evidence_span": null,
+    "disagreement_fields": [],
+    "quality_flags": [
+      "data_quality_issue",
+      "missing_or_disputed_evidence",
+      "unclear_direction"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "data_quality_issue",
+      "missing_or_disputed_evidence",
+      "unclear_direction"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

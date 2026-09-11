@@ -1,0 +1,310 @@
+{
+  "decision_id": "2025Q2_VND_05",
+  "snapshot_mode": "full_evidence",
+  "ticker": "VND",
+  "decision_date": "2025-06-30",
+  "period_id": "2025Q2",
+  "holding_horizon": "next_quarter_or_period_return_in_signals",
+  "ml_signal": {
+    "model_name": "technical_Config_A_from_existing_pipeline",
+    "pred_proba_up": 0.9970933137405896,
+    "pred_label": 1,
+    "rank_in_period": 5,
+    "source_signal_class": "Buy Candidate",
+    "display_status": "Model candidate"
+  },
+  "technical_snapshot": {
+    "rsi_end_q": 65.89721647765657,
+    "macd_hist_mean_q": -0.011046092450441672,
+    "price_vs_sma20": 0.05236656596173194,
+    "return_2q_ago": -0.18475274725274735,
+    "return_q": 0.15230875258442447,
+    "return_prev_q": 0.21482729570345416,
+    "volume_change_q": 0.37485004810614775,
+    "return_mean_daily": 0.002852330119041866,
+    "price_range_q": 0.3415127245259545,
+    "sma20_end": 15.888000000000002
+  },
+  "top_drivers": [
+    {
+      "feature": "rsi_end_q",
+      "value": 65.89721647765657,
+      "direction": "supports_up_signal",
+      "explanation": "RSI cuối kỳ là driver kỹ thuật quan trọng nhất trong mô hình."
+    },
+    {
+      "feature": "macd_hist_mean_q",
+      "value": -0.011046092450441672,
+      "direction": "weak_or_negative",
+      "explanation": "MACD histogram trung bình phản ánh động lượng xu hướng."
+    },
+    {
+      "feature": "price_vs_sma20",
+      "value": 0.05236656596173194,
+      "direction": "supports_up_signal",
+      "explanation": "Vị trí giá so với SMA20 phản ánh trạng thái trên/dưới đường trung bình."
+    },
+    {
+      "feature": "return_2q_ago",
+      "value": -0.18475274725274735,
+      "direction": "weak_or_negative",
+      "explanation": "Lợi suất trễ hai kỳ phản ánh động lượng/quán tính lịch sử."
+    },
+    {
+      "feature": "return_q",
+      "value": 0.15230875258442447,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trong kỳ hiện tại phản ánh xu hướng gần nhất."
+    },
+    {
+      "feature": "return_prev_q",
+      "value": 0.21482729570345416,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất kỳ trước bổ sung thông tin động lượng."
+    },
+    {
+      "feature": "volume_change_q",
+      "value": 0.37485004810614775,
+      "direction": "supports_up_signal",
+      "explanation": "Thay đổi khối lượng phản ánh mức độ quan tâm của thị trường."
+    },
+    {
+      "feature": "return_mean_daily",
+      "value": 0.002852330119041866,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trung bình ngày phản ánh xu hướng ngắn trong kỳ."
+    },
+    {
+      "feature": "price_range_q",
+      "value": 0.3415127245259545,
+      "direction": "normal",
+      "explanation": "Biên độ giá trong kỳ phản ánh biến động/rủi ro."
+    },
+    {
+      "feature": "sma20_end",
+      "value": 15.888000000000002,
+      "direction": "context",
+      "explanation": "SMA20 cuối kỳ phản ánh mặt bằng xu hướng ngắn hạn."
+    }
+  ],
+  "news_evidence": [
+    {
+      "evidence_id": "N001",
+      "published_at": "2025-06-27",
+      "source": "cafef",
+      "title": "VND: Quyết định của HĐQT về việc thông qua hồ sơ đăng ký chào bán trái phiếu ra công chúng",
+      "article_summary": "Công ty Cổ phần Chứng khoán VNDIRECT thông báo Quyết định của HĐQT về việc thông qua hồ sơ đăng ký chào bán trái phiếu ra công chúng VND: Quyết định của HĐQT về việc thông qua hồ sơ đăng ký chào bán trái phiếu ra công chúng Công ty Cổ phần Chứng khoán VNDIRECT thông báo Quyết định của HĐQT về việc thông qua hồ sơ đăng ký chào bán trái phiếu ra công chúng",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "VND: Quyết định của HĐQT về việc thông qua hồ sơ đăng ký chào bán trái phiếu ra công chúng Công ty Cổ phần Chứng khoán VNDIRECT thông báo Quyết định của HĐQT về việc thông qua hồ sơ đăng ký chào bán trái phiếu ra công chúng VND: Quyết định của HĐQT về việc thông qua hồ sơ đăng ký chào bán trái phiếu",
+          "evidence_quote": "VND: Quyết định của HĐQT về việc thông qua hồ sơ đăng ký chào bán trái phiếu ra công chúng Công ty Cổ phần Chứng khoán VNDIRECT thông báo Quyết định của HĐQT về việc thông qua hồ sơ đăng ký chào bán trái phiếu ra công chúng VND: Quyết định ",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "debt_risk"
+      ],
+      "event_type": "debt_risk",
+      "match_confidence": "partial",
+      "evidence_span": "VND: Quyết định của HĐQT về việc thông qua hồ sơ đăng ký chào bán trái phiếu ra công chúng Công ty Cổ phần Chứng khoán VNDIRECT thông báo Quyết định của HĐQT về việc thông qua hồ sơ đăng ký chào bán trái phiếu ra công chúng",
+      "url": "https://cafef.vn/du-lieu/VND-2232485/vnd-quyet-dinh-cua-hdqt-ve-viec-thong-qua-ho-so-dang-ky-chao-ban-trai-phieu-ra-cong-chung.chn",
+      "content_hash": "89fc56993d18558113172956d6ca9043a95768ad2d678641fc7bb90cefb442af",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N002",
+      "published_at": "2025-06-26",
+      "source": "cafef",
+      "title": "VND: Nghị quyết HĐQT về việc phát hành trái phiếu ra công chúng năm 2025",
+      "article_summary": "Công ty Cổ phần Chứng khoán VNDIRECT công bố Nghị quyết HĐQT về việc phát hành trái phiếu ra công chúng năm 2025 VND: Nghị quyết HĐQT về việc phát hành trái phiếu ra công chúng năm 2025 Công ty Cổ phần Chứng khoán VNDIRECT công bố Nghị quyết HĐQT về việc phát hành trái phiếu ra công chúng năm 2025",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "VND: Nghị quyết HĐQT về việc phát hành trái phiếu ra công chúng năm 2025 Công ty Cổ phần Chứng khoán VNDIRECT công bố Nghị quyết HĐQT về việc phát hành trái phiếu ra công chúng năm 2025 VND: Nghị quyết HĐQT về việc phát hành trái phiếu ra công chúng năm 2025 Công ty Cổ phần Chứng khoán VNDIRECT công",
+          "evidence_quote": "VND: Nghị quyết HĐQT về việc phát hành trái phiếu ra công chúng năm 2025 Công ty Cổ phần Chứng khoán VNDIRECT công bố Nghị quyết HĐQT về việc phát hành trái phiếu ra công chúng năm 2025 VND: Nghị quyết HĐQT về việc phát hành trái phiếu ra c",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "debt_risk"
+      ],
+      "event_type": "debt_risk,capital",
+      "match_confidence": "partial",
+      "evidence_span": "VND: Nghị quyết HĐQT về việc phát hành trái phiếu ra công chúng năm 2025 Công ty Cổ phần Chứng khoán VNDIRECT công bố Nghị quyết HĐQT về việc phát hành trái phiếu ra công chúng năm 2025",
+      "url": "https://cafef.vn/du-lieu/VND-2231081/vnd-nghi-quyet-hdqt-ve-viec-phat-hanh-trai-phieu-ra-cong-chung-nam-2025.chn",
+      "content_hash": "ec2ebac580eba99da04d62344520129013d1764f27f54eb525eec7b6a2dba1ac",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N003",
+      "published_at": "2025-06-20",
+      "source": "vietnambiz",
+      "title": "Vì sao VND mất giá bất chấp đồng USD suy yếu trên diện rộng?",
+      "article_summary": "Trong báo cáo chiến lược giữa năm mới công bố, Chứng khoán Mirae Asset cho biết tỷ giá USD/VND tiếp tục xu hướng tăng trong nửa đầu năm 2025, ghi nhận mức tăng khoảng 2,5% tính từ đầu năm đến nay. Diễn biến này trái ngược với xu hướng suy yếu của đồng đô la Mỹ trên thị trường quốc tế, thể hiện qua chỉ số sức mạnh USD (DXY) giảm đáng kể trong cùng giai đoạn. Theo Mirae Asset, sự phân kỳ giữa tỷ giá trong nước và sức mạnh đồng bạc xanh toàn cầu bắt nguồn từ nhiều yếu tố, nổi bật là xu hướng \"Bán Tháo Tài Sản Mỹ\" (Sell America).",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "nan Trong báo cáo chiến lược giữa năm mới công bố, Chứng khoán Mirae Asset cho biết tỷ giá USD/VND tiếp tục xu hướng tăng trong nửa đầu năm 2025, ghi nhận mức tăng khoảng 2,5% tính từ đầu năm đến nay.",
+          "evidence_quote": "nan Trong báo cáo chiến lược giữa năm mới công bố, Chứng khoán Mirae Asset cho biết tỷ giá USD/VND tiếp tục xu hướng tăng trong nửa đầu năm 2025, ghi nhận mức tăng khoảng 2,5% tính từ đầu năm đến nay.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Diễn biến này trái ngược với xu hướng suy yếu của đồng đô la Mỹ trên thị trường quốc tế, thể hiện qua chỉ số sức mạnh USD (DXY) giảm đáng kể trong cùng giai đoạn.",
+          "evidence_quote": "Diễn biến này trái ngược với xu hướng suy yếu của đồng đô la Mỹ trên thị trường quốc tế, thể hiện qua chỉ số sức mạnh USD (DXY) giảm đáng kể trong cùng giai đoạn.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Nhà đầu tư quốc tế dần mất niềm tin vào việc nắm giữ các tài sản gắn liền với USD như cổ phiếu, trái phiếu, hoặc các công cụ phái sinh như hợp đồng hoán đổi (swap) và sản phẩm phòng ngừa rủi ro.",
+          "evidence_quote": "Nhà đầu tư quốc tế dần mất niềm tin vào việc nắm giữ các tài sản gắn liền với USD như cổ phiếu, trái phiếu, hoặc các công cụ phái sinh như hợp đồng hoán đổi (swap) và sản phẩm phòng ngừa rủi ro.",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Ngoài ra, những bất định liên quan đến chính sách thương mại của Mỹ, cùng với dòng vốn đảo chiều thông qua các giao dịch hoán đổi tiền tệ chéo (CCS), chuyển dịch từ vay các đồng tiền lãi suất thấp sang đầu tư vào tài sản sinh lời cao tại Mỹ như quỹ ETF S&P 500, cũng tiếp tục thúc đẩy xu hướng này.",
+          "evidence_quote": "Ngoài ra, những bất định liên quan đến chính sách thương mại của Mỹ, cùng với dòng vốn đảo chiều thông qua các giao dịch hoán đổi tiền tệ chéo (CCS), chuyển dịch từ vay các đồng tiền lãi suất thấp sang đầu tư vào tài sản sinh lời cao tại Mỹ",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Tính đến tháng 6/2025, lãi suất hoán đổi (swap rate) giữa VND và USD trên thị trường liên ngân hàng duy trì ở mức trung tính, dao động quanh 0% ở nhiều kỳ hạn.",
+          "evidence_quote": "Tính đến tháng 6/2025, lãi suất hoán đổi (swap rate) giữa VND và USD trên thị trường liên ngân hàng duy trì ở mức trung tính, dao động quanh 0% ở nhiều kỳ hạn.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "debt_risk"
+      ],
+      "event_type": "debt_risk,capital,market",
+      "match_confidence": "exact",
+      "evidence_span": "Trong báo cáo chiến lược giữa năm mới công bố, Chứng khoán Mirae Asset cho biết tỷ giá USD/VND tiếp tục xu hướng tăng trong nửa đầu năm 2025, ghi nhận mức tăng khoảng 2,5% tính từ đầu năm đến nay. Diễn biến này trái ngược với xu hướng suy yếu của đồng đô la Mỹ trên thị trường quốc tế, thể hiện qua chỉ số sức mạnh USD (DXY) giảm đáng kể trong cùng giai đoạn. Theo Mirae Asset, sự phân kỳ giữa tỷ giá trong nước và sức mạnh đồng bạc xanh toàn cầu bắt nguồn từ nhiều yếu tố, nổi bật là xu hướng \"Bán T",
+      "url": "https://vietnambiz.vn/vi-sao-vnd-mat-gia-bat-chap-dong-usd-suy-yeu-tren-dien-rong-20256207512510.htm",
+      "content_hash": "52e24f162cdcfa408d2a111ffdcb481b81d0b65d0c0c74122ccff0fd9478593e",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N004",
+      "published_at": "2025-06-19",
+      "source": "cafef",
+      "title": "VND: 24.6.2025, ngày GDKHQ trả cổ tức năm 2024 bằng tiền (500 đ/cp)",
+      "article_summary": "Sở Giao dịch Chứng khoán Thành phố Hồ Chí Minh thông báo ngày ĐKCC trả cổ tức năm 2024 bằng tiền của Công ty Cổ phần Chứng khoán VNDIRECT VND: 24.6.2025, ngày GDKHQ trả cổ tức năm 2024 bằng tiền (500 đ/cp) Sở Giao dịch Chứng khoán Thành phố Hồ Chí Minh thông báo ngày ĐKCC trả cổ tức năm 2024 bằng tiền của Công ty Cổ phần Chứng khoán VNDIRECT",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "VND: 24.6.2025, ngày GDKHQ trả cổ tức năm 2024 bằng tiền (500 đ/cp) Sở Giao dịch Chứng khoán Thành phố Hồ Chí Minh thông báo ngày ĐKCC trả cổ tức năm 2024 bằng tiền của Công ty Cổ phần Chứng khoán VNDIRECT VND: 24.6.2025, ngày GDKHQ trả cổ tức năm 2024 bằng tiền (500 đ/cp) Sở Giao dịch Chứng khoán T",
+          "evidence_quote": "VND: 24.6.2025, ngày GDKHQ trả cổ tức năm 2024 bằng tiền (500 đ/cp) Sở Giao dịch Chứng khoán Thành phố Hồ Chí Minh thông báo ngày ĐKCC trả cổ tức năm 2024 bằng tiền của Công ty Cổ phần Chứng khoán VNDIRECT VND: 24.6.2025, ngày GDKHQ trả cổ ",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [],
+      "event_type": "dividend",
+      "match_confidence": "partial",
+      "evidence_span": "VND: 24.6.2025, ngày GDKHQ trả cổ tức năm 2024 bằng tiền (500 đ/cp) Sở Giao dịch Chứng khoán Thành phố Hồ Chí Minh thông báo ngày ĐKCC trả cổ tức năm 2024 bằng tiền của Công ty Cổ phần Chứng khoán VNDIRECT",
+      "url": "https://cafef.vn/du-lieu/VND-2225272/vnd-2462025-ngay-gdkhq-tra-co-tuc-nam-2024-bang-tien-500-dcp.chn",
+      "content_hash": "af8f4d74c1d68e13b3e9782001d806aea61c373a94588ae5f8b463baef8f1553",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N005",
+      "published_at": "2025-06-19",
+      "source": "vietnambiz",
+      "title": "Tỷ giá USD hôm nay 20/6: VND tiếp tục mất giá so với USD",
+      "article_summary": "Tỷ giá trung tâm lập kỷ lục mới Tỷ giá trung tâm hôm nay (20/6) tiếp tục lập kỷ lục mới khi được Ngân hàng Nhà nước công bố ở mức 25.031 VND/USD, tăng 6 đồng so với mức niêm yết hôm qua. Với biên độ 5%, hiện tỷ giá USD các ngân hàng thương mại được phép giao dịch là từ 23.779 - 26.283 VND/USD. Tỷ giá mua bán tham khảo cũng được Sở giao dịch Ngân hàng Nhà nước tăng lên khoảng 23.830 - 26.232 VND/USD.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "Tỷ giá USD hôm nay 20/6: VND tiếp tục mất giá so với USD nan Tỷ giá trung tâm lập kỷ lục mới Tỷ giá trung tâm hôm nay (20/6) tiếp tục lập kỷ lục mới khi được Ngân hàng Nhà nước công bố ở mức 25.031 VND/USD, tăng 6 đồng so với mức niêm yết hôm qua.",
+          "evidence_quote": "Tỷ giá USD hôm nay 20/6: VND tiếp tục mất giá so với USD nan Tỷ giá trung tâm lập kỷ lục mới Tỷ giá trung tâm hôm nay (20/6) tiếp tục lập kỷ lục mới khi được Ngân hàng Nhà nước công bố ở mức 25.031 VND/USD, tăng 6 đồng so với mức niêm yết h",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Với biên độ 5%, hiện tỷ giá USD các ngân hàng thương mại được phép giao dịch là từ 23.779 - 26.283 VND/USD.",
+          "evidence_quote": "Với biên độ 5%, hiện tỷ giá USD các ngân hàng thương mại được phép giao dịch là từ 23.779 - 26.283 VND/USD.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Tỷ giá mua bán tham khảo cũng được Sở giao dịch Ngân hàng Nhà nước tăng lên khoảng 23.830 - 26.232 VND/USD.",
+          "evidence_quote": "Tỷ giá mua bán tham khảo cũng được Sở giao dịch Ngân hàng Nhà nước tăng lên khoảng 23.830 - 26.232 VND/USD.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "*Ghi chú: Tỷ giá mua - bán tiền mặt Thay đổi so với phiên sáng qua Tỷ giá USD tại các ngân hàng sáng nay ghi nhận một phiên tăng nhẹ với mức điều chỉnh chỉ từ 2 đến 15 đồng, ngoại trừ Eximbank giữ nguyên giá mua và Sacombank giảm mạnh giá bán xuống 36 đồng so với mức niêm yết cùng giờ hôm qua.",
+          "evidence_quote": "*Ghi chú: Tỷ giá mua - bán tiền mặt Thay đổi so với phiên sáng qua Tỷ giá USD tại các ngân hàng sáng nay ghi nhận một phiên tăng nhẹ với mức điều chỉnh chỉ từ 2 đến 15 đồng, ngoại trừ Eximbank giữ nguyên giá mua và Sacombank giảm mạnh giá b",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Hiện, giá mua USD đang trong phạm vi 25.892 - 25.943 VND/USD trong đó giá mua cao nhất nằm ở VietinBank, còn giá bán USD hầu hết đều tiệm cận mức trần sáng nay là 26.282 VND/USD, ngoại trừ Sacombank có giá bán thấp nhất.",
+          "evidence_quote": "Hiện, giá mua USD đang trong phạm vi 25.892 - 25.943 VND/USD trong đó giá mua cao nhất nằm ở VietinBank, còn giá bán USD hầu hết đều tiệm cận mức trần sáng nay là 26.282 VND/USD, ngoại trừ Sacombank có giá bán thấp nhất.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue"
+      ],
+      "event_type": "market",
+      "match_confidence": "exact",
+      "evidence_span": "Tỷ giá trung tâm lập kỷ lục mới Tỷ giá trung tâm hôm nay (20/6) tiếp tục lập kỷ lục mới khi được Ngân hàng Nhà nước công bố ở mức 25.031 VND/USD, tăng 6 đồng so với mức niêm yết hôm qua. Với biên độ 5%, hiện tỷ giá USD các ngân hàng thương mại được phép giao dịch là từ 23.779 - 26.283 VND/USD. Tỷ giá mua bán tham khảo cũng được Sở giao dịch Ngân hàng Nhà nước tăng lên khoảng 23.830 - 26.232 VND/USD. *Ghi chú: Tỷ giá mua - bán tiền mặt Thay đổi so với phiên sáng qua Tỷ giá USD tại các ngân hàng s",
+      "url": "https://vietnambiz.vn/ty-gia-usd-hom-nay-206-giu-vung-khi-trung-dong-khien-cac-nha-dau-tu-lo-ngai-2025619103647913.htm",
+      "content_hash": "c574a51967b05e193f68505f01986ccc084b2e94a9b95aa19e1827a08e79da42",
+      "extraction_status": "ok"
+    }
+  ],
+  "data_quality_flags": {
+    "news_coverage": "high",
+    "ticker_matching_confidence": "mixed",
+    "full_text_coverage": 5,
+    "summary_coverage": 5,
+    "key_fact_coverage": 5,
+    "missing_fields": []
+  },
+  "guardrails": {
+    "initial_prompt_safe": true,
+    "news_cutoff": "2025-06-30",
+    "not_investment_advice": true,
+    "no_post_decision_data": true,
+    "full_text_excerpt_chars": 500
+  },
+  "provenance": {
+    "name": "initial_evidence",
+    "path": "reports/decision_support/generated/evidence_packs_initial.json",
+    "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+    "zone": "initial",
+    "record_count": 25,
+    "schema_version": "evidence-pack-initial-v1",
+    "generated_at_utc": null,
+    "provenance_status": null
+  }
+}

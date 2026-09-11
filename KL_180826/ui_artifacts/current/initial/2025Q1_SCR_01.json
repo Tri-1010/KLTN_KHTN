@@ -1,0 +1,210 @@
+{
+  "decision_id": "2025Q1_SCR_01",
+  "snapshot_mode": "full_evidence",
+  "ticker": "SCR",
+  "decision_date": "2025-03-31",
+  "period_id": "2025Q1",
+  "holding_horizon": "next_quarter_or_period_return_in_signals",
+  "ml_signal": {
+    "model_name": "technical_Config_A_from_existing_pipeline",
+    "pred_proba_up": 0.999444145459264,
+    "pred_label": 1,
+    "rank_in_period": 1,
+    "source_signal_class": "Buy Candidate",
+    "display_status": "Model candidate"
+  },
+  "technical_snapshot": {
+    "rsi_end_q": 61.83931923727119,
+    "macd_hist_mean_q": 0.007025477132426704,
+    "price_vs_sma20": 0.025250988743535194,
+    "return_2q_ago": -0.20579710144927535,
+    "return_q": 0.18661971830985924,
+    "return_prev_q": 0.026929982046678538,
+    "volume_change_q": 0.6953967642429763,
+    "return_mean_daily": 0.0029998221358353647,
+    "price_range_q": 0.31384009953991726,
+    "sma20_end": 6.574
+  },
+  "top_drivers": [
+    {
+      "feature": "rsi_end_q",
+      "value": 61.83931923727119,
+      "direction": "supports_up_signal",
+      "explanation": "RSI cuối kỳ là driver kỹ thuật quan trọng nhất trong mô hình."
+    },
+    {
+      "feature": "macd_hist_mean_q",
+      "value": 0.007025477132426704,
+      "direction": "supports_up_signal",
+      "explanation": "MACD histogram trung bình phản ánh động lượng xu hướng."
+    },
+    {
+      "feature": "price_vs_sma20",
+      "value": 0.025250988743535194,
+      "direction": "supports_up_signal",
+      "explanation": "Vị trí giá so với SMA20 phản ánh trạng thái trên/dưới đường trung bình."
+    },
+    {
+      "feature": "return_2q_ago",
+      "value": -0.20579710144927535,
+      "direction": "weak_or_negative",
+      "explanation": "Lợi suất trễ hai kỳ phản ánh động lượng/quán tính lịch sử."
+    },
+    {
+      "feature": "return_q",
+      "value": 0.18661971830985924,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trong kỳ hiện tại phản ánh xu hướng gần nhất."
+    },
+    {
+      "feature": "return_prev_q",
+      "value": 0.026929982046678538,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất kỳ trước bổ sung thông tin động lượng."
+    },
+    {
+      "feature": "volume_change_q",
+      "value": 0.6953967642429763,
+      "direction": "supports_up_signal",
+      "explanation": "Thay đổi khối lượng phản ánh mức độ quan tâm của thị trường."
+    },
+    {
+      "feature": "return_mean_daily",
+      "value": 0.0029998221358353647,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trung bình ngày phản ánh xu hướng ngắn trong kỳ."
+    },
+    {
+      "feature": "price_range_q",
+      "value": 0.31384009953991726,
+      "direction": "normal",
+      "explanation": "Biên độ giá trong kỳ phản ánh biến động/rủi ro."
+    },
+    {
+      "feature": "sma20_end",
+      "value": 6.574,
+      "direction": "context",
+      "explanation": "SMA20 cuối kỳ phản ánh mặt bằng xu hướng ngắn hạn."
+    }
+  ],
+  "news_evidence": [
+    {
+      "evidence_id": "N001",
+      "published_at": "2025-03-07",
+      "source": "cafef",
+      "title": "SCR: Nghị quyết HĐQT về việc nhận chuyển nhượng tài sản",
+      "article_summary": "Công ty Cổ phần Địa ốc Sài Gòn Thương Tín công bố Nghị quyết HĐQT về việc nhận chuyển nhượng tài sản SCR: Nghị quyết HĐQT về việc nhận chuyển nhượng tài sản Công ty Cổ phần Địa ốc Sài Gòn Thương Tín công bố Nghị quyết HĐQT về việc nhận chuyển nhượng tài sản",
+      "key_facts": [],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "partial",
+      "evidence_span": "SCR: Nghị quyết HĐQT về việc nhận chuyển nhượng tài sản Công ty Cổ phần Địa ốc Sài Gòn Thương Tín công bố Nghị quyết HĐQT về việc nhận chuyển nhượng tài sản",
+      "url": "https://cafef.vn/du-lieu/SCR-2144624/scr-nghi-quyet-hdqt-ve-viec-nhan-chuyen-nhuong-tai-san.chn",
+      "content_hash": "489cca625ab5d39fa3bce7c9be3f558aa7101fa1d629bedcc5ab917455398253",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N002",
+      "published_at": "2025-03-06",
+      "source": "cafef",
+      "title": "SCR: 21.3.2025, ngày GDKHQ tham dự ĐHCĐ thường niên năm 2025",
+      "article_summary": "Sở Giao dịch Chứng khoán Thành phố Hồ Chí Minh thông báo ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025 của Công ty Cổ phần Địa ốc Sài Gòn Thương Tín SCR: 21.3.2025, ngày GDKHQ tham dự ĐHCĐ thường niên năm 2025 Sở Giao dịch Chứng khoán Thành phố Hồ Chí Minh thông báo ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025 của Công ty Cổ phần Địa ốc Sài Gòn Thương Tín",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "SCR: 21.3.2025, ngày GDKHQ tham dự ĐHCĐ thường niên năm 2025 Sở Giao dịch Chứng khoán Thành phố Hồ Chí Minh thông báo ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025 của Công ty Cổ phần Địa ốc Sài Gòn Thương Tín SCR: 21.3.2025, ngày GDKHQ tham dự ĐHCĐ thường niên năm 2025 Sở Giao dịch",
+          "evidence_quote": "SCR: 21.3.2025, ngày GDKHQ tham dự ĐHCĐ thường niên năm 2025 Sở Giao dịch Chứng khoán Thành phố Hồ Chí Minh thông báo ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025 của Công ty Cổ phần Địa ốc Sài Gòn Thương Tín SCR: 21.3.202",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "partial",
+      "evidence_span": "SCR: 21.3.2025, ngày GDKHQ tham dự ĐHCĐ thường niên năm 2025 Sở Giao dịch Chứng khoán Thành phố Hồ Chí Minh thông báo ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025 của Công ty Cổ phần Địa ốc Sài Gòn Thương Tín",
+      "url": "https://cafef.vn/du-lieu/SCR-2143813/scr-2132025-ngay-gdkhq-tham-du-dhcd-thuong-nien-nam-2025.chn",
+      "content_hash": "a413a5f517e79d003f099530ac8d336244a5886c318760e988fee8296f921b2d",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N003",
+      "published_at": "2025-03-03",
+      "source": "cafef",
+      "title": "SCR: CBTT ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025",
+      "article_summary": "Công ty Cổ phần Địa ốc Sài Gòn Thương Tín thông báo ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025 SCR: CBTT ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025 Công ty Cổ phần Địa ốc Sài Gòn Thương Tín thông báo ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "SCR: CBTT ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025 Công ty Cổ phần Địa ốc Sài Gòn Thương Tín thông báo ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025 SCR: CBTT ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025 Công ty Cổ phần Địa ốc Sài Gòn Thương T",
+          "evidence_quote": "SCR: CBTT ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025 Công ty Cổ phần Địa ốc Sài Gòn Thương Tín thông báo ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025 SCR: CBTT ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ ",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "partial",
+      "evidence_span": "SCR: CBTT ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025 Công ty Cổ phần Địa ốc Sài Gòn Thương Tín thông báo ngày ĐKCC để thực hiện quyền tham dự ĐHCĐ thường niên năm 2025",
+      "url": "https://cafef.vn/du-lieu/SCR-2141502/scr-cbtt-ngay-dkcc-de-thuc-hien-quyen-tham-du-dhcd-thuong-nien-nam-2025.chn",
+      "content_hash": "83b8b8748bb7167d06a33f03733bd116f1632e782df7c24e5a951a1bf6596521",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N004",
+      "published_at": "2025-02-26",
+      "source": "cafef",
+      "title": "SCR: Thông báo thay đổi người có liên quan của người nội bộ",
+      "article_summary": "Công ty Cổ phần Địa ốc Sài Gòn Thương Tín thông báo thay đổi người có liên quan của người nội bộ SCR: Thông báo thay đổi người có liên quan của người nội bộ Công ty Cổ phần Địa ốc Sài Gòn Thương Tín thông báo thay đổi người có liên quan của người nội bộ",
+      "key_facts": [],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "partial",
+      "evidence_span": "SCR: Thông báo thay đổi người có liên quan của người nội bộ Công ty Cổ phần Địa ốc Sài Gòn Thương Tín thông báo thay đổi người có liên quan của người nội bộ",
+      "url": "https://cafef.vn/du-lieu/SCR-2138501/scr-thong-bao-thay-doi-nguoi-co-lien-quan-cua-nguoi-noi-bo.chn",
+      "content_hash": "4df351883031b61d37a710310d0bd9212cd6536df24c8a467030130354e9b7ce",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N005",
+      "published_at": "2025-02-21",
+      "source": "cafef",
+      "title": "SCR: Nghị quyết HĐQT về việc tiếp nhận đơn từ nhiệm của ông Võ Quốc Khánh - thành viên HĐQT",
+      "article_summary": "Công ty Cổ phần Địa ốc Sài Gòn Thương Tín công bố Nghị quyết HĐQT về việc tiếp nhận đơn từ nhiệm của thành viên HĐQT SCR: Nghị quyết HĐQT về việc tiếp nhận đơn từ nhiệm của ông Võ Quốc Khánh - thành viên HĐQT Công ty Cổ phần Địa ốc Sài Gòn Thương Tín công bố Nghị quyết HĐQT về việc tiếp nhận đơn từ nhiệm của thành viên HĐQT",
+      "key_facts": [],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "partial",
+      "evidence_span": "SCR: Nghị quyết HĐQT về việc tiếp nhận đơn từ nhiệm của ông Võ Quốc Khánh - thành viên HĐQT Công ty Cổ phần Địa ốc Sài Gòn Thương Tín công bố Nghị quyết HĐQT về việc tiếp nhận đơn từ nhiệm của thành viên HĐQT",
+      "url": "https://cafef.vn/du-lieu/SCR-2135433/scr-nghi-quyet-hdqt-ve-viec-tiep-nhan-don-tu-nhiem-cua-ong-vo-quoc-khanh-thanh-vien-hdqt.chn",
+      "content_hash": "07a1c7dfd91a15d83e3d9fddc7ae7a267f27e38a2b2ec08eecaf84a20fcc46cc",
+      "extraction_status": "partial"
+    }
+  ],
+  "data_quality_flags": {
+    "news_coverage": "high",
+    "ticker_matching_confidence": "mixed",
+    "full_text_coverage": 5,
+    "summary_coverage": 5,
+    "key_fact_coverage": 2,
+    "missing_fields": []
+  },
+  "guardrails": {
+    "initial_prompt_safe": true,
+    "news_cutoff": "2025-03-31",
+    "not_investment_advice": true,
+    "no_post_decision_data": true,
+    "full_text_excerpt_chars": 500
+  },
+  "provenance": {
+    "name": "initial_evidence",
+    "path": "reports/decision_support/generated/evidence_packs_initial.json",
+    "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+    "zone": "initial",
+    "record_count": 25,
+    "schema_version": "evidence-pack-initial-v1",
+    "generated_at_utc": null,
+    "provenance_status": null
+  }
+}

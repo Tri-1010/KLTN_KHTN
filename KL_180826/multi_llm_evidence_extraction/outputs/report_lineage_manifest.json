@@ -1,0 +1,100 @@
+{
+  "manifest_schema_version": "semantic_report_lineage_v1",
+  "generated_at_utc": "2026-07-12T01:11:34+00:00",
+  "root": "C:\\Users\\User\\KLTN_KHTN",
+  "artifacts": [
+    {
+      "path": "multi_llm_evidence_extraction/outputs/pseudo_labels_consensus.csv",
+      "status": "available",
+      "size_bytes": 88974,
+      "modified_utc": "2026-07-10T09:43:10+00:00",
+      "sha256": "658e6b8b827f7bc5b76f6cf72f5c100abd77dba0be95be563bec94d1b31715ba"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/outputs/rule_labels.csv",
+      "status": "available",
+      "size_bytes": 12556,
+      "modified_utc": "2026-07-10T14:07:48+00:00",
+      "sha256": "c35ea1786d9c5657b9a95a6678f8e22c8e2f22e17de67353ee1154bdedef02f8"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/outputs/event_window_stat_tests.csv",
+      "status": "available",
+      "size_bytes": 3298,
+      "modified_utc": "2026-07-10T14:23:42+00:00",
+      "sha256": "0ef12ace27fec1c809b24a2b93f077258c51840f5bab656e23752d7975721c7f"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/outputs/placebo_pre_event_stat_tests.csv",
+      "status": "available",
+      "size_bytes": 1925,
+      "modified_utc": "2026-07-12T00:53:47+00:00",
+      "sha256": "ca33bd20fedd3b18ca19f2e6bd4648c1b787dd725f6f3912f83fe36514e8a709"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/outputs/ml_predictions_outperform.csv",
+      "status": "available",
+      "size_bytes": 142373541,
+      "modified_utc": "2026-07-12T00:56:48+00:00",
+      "sha256": "8ac3ddf5fcb328e9713b2311321e8d810a97f0c03f06d90923b90257aff03da9"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/outputs/ml_paired_daily_metrics_outperform.csv",
+      "status": "available",
+      "size_bytes": 8823311,
+      "modified_utc": "2026-07-12T01:01:30+00:00",
+      "sha256": "ac180fa8c86a559d76a80397490a0e7b24b3bdb1f2d2ba72019936b214d02a40"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/outputs/ml_bootstrap_delta_outperform.csv",
+      "status": "available",
+      "size_bytes": 10146,
+      "modified_utc": "2026-07-12T01:01:30+00:00",
+      "sha256": "3bcab88907c668030354035080a6f31138d950f85db3b3d8b296a63c4681bc81"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/outputs/topk_portfolio_simulation.csv",
+      "status": "available",
+      "size_bytes": 908726,
+      "modified_utc": "2026-07-12T01:02:23+00:00",
+      "sha256": "f9c9becda04e72dff11f89ae7da777e0842ba21ea1c45a34a27d3ffd93d6f280"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/outputs/topk_random_null_summary.csv",
+      "status": "available",
+      "size_bytes": 5426,
+      "modified_utc": "2026-07-12T01:11:18+00:00",
+      "sha256": "47fe353387e3bb42de63afc6e97d88c1967ee0a4c322be04c0e554730bd01af7"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/outputs/topk_cost_sensitivity_summary.csv",
+      "status": "available",
+      "size_bytes": 15592,
+      "modified_utc": "2026-07-12T01:11:18+00:00",
+      "sha256": "f11bba86218faf4e93fcdab805b6bfa25813b993f221751607e60cf228541d2d"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/outputs/consensus_family_sensitivity_summary.csv",
+      "status": "available",
+      "size_bytes": 706,
+      "modified_utc": "2026-07-12T00:53:40+00:00",
+      "sha256": "afa707757773638b68c6ac32b843d997e8b5a5c69a0aaa87f3966df77f6bbe7d"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/data/manual_sanity_check_sample.csv",
+      "status": "available",
+      "size_bytes": 173928,
+      "modified_utc": "2026-07-10T08:45:06+00:00",
+      "sha256": "b0e73a949279e72c40f0085d179337e765f35e81ad1b0f1572fa6b409120bccc"
+    },
+    {
+      "path": "multi_llm_evidence_extraction/outputs/outcome_review_labels.csv",
+      "status": "available",
+      "size_bytes": 69944,
+      "modified_utc": "2026-07-12T01:11:31+00:00",
+      "sha256": "356397d760515580aec2d5bc352005eb00ef4aafd48e056d2a5f15c5d2e995dd"
+    }
+  ],
+  "available_count": 13,
+  "missing_optional_count": 0
+}

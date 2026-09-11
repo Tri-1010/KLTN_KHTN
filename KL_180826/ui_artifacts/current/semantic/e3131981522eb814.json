@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "e3131981522eb814",
+    "ticker": "KDH",
+    "article_date": "2025-07-25",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": true,
+    "consensus_direction": "risk",
+    "consensus_materiality": "medium",
+    "consensus_event_type": "capital",
+    "evidence_span": "Nhóm quỹ Dragon Capital giảm tỷ lệ sở hữu tại KDH về dưới mức 8%",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "none"
+    ],
+    "requires_human_review": false,
+    "review_flags": [
+      "none"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

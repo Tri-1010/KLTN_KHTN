@@ -1,0 +1,26 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "212fc5aaf3a97d45",
+    "ticker": "ELC",
+    "article_date": "2026-06-24",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": false,
+    "consensus_direction": "support",
+    "consensus_materiality": "high",
+    "consensus_event_type": "ma",
+    "evidence_span": null,
+    "disagreement_fields": [],
+    "quality_flags": [
+      "data_quality_issue",
+      "missing_or_disputed_evidence"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "data_quality_issue",
+      "missing_or_disputed_evidence"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

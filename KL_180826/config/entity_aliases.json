@@ -1,0 +1,554 @@
+{
+  "ACB": [
+    "ACB",
+    "Á Châu",
+    "Ngân hàng Á Châu",
+    "Asia Commercial Bank",
+    "NH Á Châu",
+    "ngân hàng ACB"
+  ],
+  "BCM": [
+    "BCM",
+    "Becamex",
+    "Becamex IDC",
+    "Tổng Công ty Đầu tư và Phát triển Công nghiệp",
+    "Becamex Bình Dương"
+  ],
+  "BID": [
+    "BID",
+    "BIDV",
+    "Ngân hàng Đầu tư và Phát triển",
+    "Bank for Investment and Development",
+    "NH BIDV",
+    "ngân hàng BIDV"
+  ],
+  "BVH": [
+    "BVH",
+    "Bảo Việt",
+    "Tập đoàn Bảo Việt",
+    "Bao Viet Holdings",
+    "bảo hiểm Bảo Việt"
+  ],
+  "CTG": [
+    "CTG",
+    "VietinBank",
+    "Ngân hàng Công Thương",
+    "Vietin Bank",
+    "NH VietinBank",
+    "ngân hàng VietinBank",
+    "ngân hàng Công Thương"
+  ],
+  "FPT": [
+    "FPT",
+    "Tập đoàn FPT",
+    "FPT Corporation",
+    "công nghệ FPT"
+  ],
+  "GAS": [
+    "GAS",
+    "PV Gas",
+    "PVGas",
+    "Tổng Công ty Khí Việt Nam",
+    "PetroVietnam Gas"
+  ],
+  "GVR": [
+    "GVR",
+    "Cao su Việt Nam",
+    "Tập đoàn Công nghiệp Cao su Việt Nam",
+    "Vietnam Rubber Group"
+  ],
+  "HDB": [
+    "HDB",
+    "HDBank",
+    "HD Bank",
+    "Ngân hàng Phát triển TP.HCM",
+    "NH HDBank",
+    "ngân hàng HDBank"
+  ],
+  "HPG": [
+    "HPG",
+    "Hòa Phát",
+    "Tập đoàn Hòa Phát",
+    "Hoa Phat Group",
+    "thép Hòa Phát"
+  ],
+  "MBB": [
+    "MBB",
+    "MB Bank",
+    "MBBank",
+    "Ngân hàng Quân đội",
+    "Military Bank",
+    "NH Quân đội",
+    "ngân hàng MB"
+  ],
+  "MSN": [
+    "MSN",
+    "Masan",
+    "Tập đoàn Masan",
+    "Masan Group"
+  ],
+  "MWG": [
+    "MWG",
+    "Thế Giới Di Động",
+    "Mobile World",
+    "Điện Máy Xanh",
+    "Bách Hóa Xanh",
+    "Mobile World Group"
+  ],
+  "PLX": [
+    "PLX",
+    "Petrolimex",
+    "Tập đoàn Xăng dầu Việt Nam",
+    "xăng dầu Petrolimex"
+  ],
+  "POW": [
+    "POW",
+    "PV Power",
+    "PVPower",
+    "Tổng Công ty Điện lực Dầu khí",
+    "PetroVietnam Power"
+  ],
+  "SAB": [
+    "SAB",
+    "Sabeco",
+    "Bia Sài Gòn",
+    "Tổng Công ty Bia Rượu Nước giải khát Sài Gòn",
+    "Saigon Beer"
+  ],
+  "SHB": [
+    "SHB",
+    "Ngân hàng Sài Gòn - Hà Nội",
+    "Saigon Hanoi Bank",
+    "NH SHB",
+    "ngân hàng SHB"
+  ],
+  "SSB": [
+    "SSB",
+    "SeABank",
+    "Ngân hàng Đông Nam Á",
+    "Southeast Asia Bank",
+    "NH SeABank",
+    "ngân hàng SeABank"
+  ],
+  "SSI": [
+    "SSI",
+    "Chứng khoán SSI",
+    "SSI Securities",
+    "Công ty Chứng khoán SSI"
+  ],
+  "STB": [
+    "STB",
+    "Sacombank",
+    "Ngân hàng Sài Gòn Thương Tín",
+    "NH Sacombank",
+    "ngân hàng Sacombank"
+  ],
+  "TCB": [
+    "TCB",
+    "Techcombank",
+    "Ngân hàng Kỹ Thương",
+    "NH Techcombank",
+    "ngân hàng Techcombank"
+  ],
+  "TPB": [
+    "TPB",
+    "TPBank",
+    "Ngân hàng Tiên Phong",
+    "TP Bank",
+    "NH TPBank",
+    "ngân hàng TPBank"
+  ],
+  "VCB": [
+    "VCB",
+    "Vietcombank",
+    "Ngân hàng Ngoại thương",
+    "NH Vietcombank",
+    "ngân hàng Vietcombank",
+    "Joint Stock Commercial Bank for Foreign Trade"
+  ],
+  "VHM": [
+    "VHM",
+    "Vinhomes",
+    "CTCP Vinhomes",
+    "Vinhomes JSC"
+  ],
+  "VIB": [
+    "VIB",
+    "Ngân hàng Quốc tế",
+    "Vietnam International Bank",
+    "NH VIB",
+    "ngân hàng VIB"
+  ],
+  "VIC": [
+    "VIC",
+    "Vingroup",
+    "Tập đoàn Vingroup",
+    "Vin Group"
+  ],
+  "VJC": [
+    "VJC",
+    "Vietjet",
+    "Vietjet Air",
+    "VietJet Aviation",
+    "hàng không Vietjet"
+  ],
+  "VNM": [
+    "VNM",
+    "Vinamilk",
+    "Công ty Cổ phần Sữa Việt Nam",
+    "Vietnam Dairy",
+    "sữa Vinamilk"
+  ],
+  "VPB": [
+    "VPB",
+    "VPBank",
+    "Ngân hàng Việt Nam Thịnh Vượng",
+    "VP Bank",
+    "NH VPBank",
+    "ngân hàng VPBank"
+  ],
+  "VRE": [
+    "VRE",
+    "Vincom Retail",
+    "CTCP Vincom Retail",
+    "trung tâm thương mại Vincom"
+  ],
+
+  "EIB": [
+    "EIB",
+    "Eximbank",
+    "Ngân hàng Xuất Nhập Khẩu",
+    "NH Eximbank",
+    "ngân hàng Eximbank"
+  ],
+  "LPB": [
+    "LPB",
+    "LienVietPostBank",
+    "Ngân hàng Bưu điện Liên Việt",
+    "NH LienVietPostBank",
+    "ngân hàng LienViet"
+  ],
+  "MSB": [
+    "MSB",
+    "Maritime Bank",
+    "Ngân hàng Hàng Hải",
+    "NH MSB",
+    "ngân hàng Maritime"
+  ],
+  "NAB": [
+    "NAB",
+    "Nam A Bank",
+    "Ngân hàng Nam Á",
+    "NH Nam A",
+    "ngân hàng Nam Á"
+  ],
+  "OCB": [
+    "OCB",
+    "Orient Commercial Bank",
+    "Ngân hàng Phương Đông",
+    "NH OCB",
+    "ngân hàng Phương Đông"
+  ],
+  "PGB": [
+    "PGB",
+    "PG Bank",
+    "Ngân hàng Xăng dầu Petrolimex",
+    "NH PG Bank"
+  ],
+  "VBB": [
+    "VBB",
+    "Viet Capital Bank",
+    "Ngân hàng Bản Việt",
+    "NH Bản Việt",
+    "ngân hàng Bản Việt"
+  ],
+  "ABB": [
+    "ABB",
+    "An Binh Bank",
+    "Ngân hàng An Bình",
+    "NH An Bình",
+    "ngân hàng An Bình"
+  ],
+  "KLB": [
+    "KLB",
+    "Kien Long Bank",
+    "Ngân hàng Kiên Long",
+    "NH Kiên Long",
+    "ngân hàng Kiên Long"
+  ],
+  "BAB": [
+    "BAB",
+    "Bac A Bank",
+    "Ngân hàng Bắc Á",
+    "NH Bắc Á",
+    "ngân hàng Bắc Á"
+  ],
+  "BVB": [
+    "BVB",
+    "Viet Capital Bank",
+    "Ngân hàng Bản Việt",
+    "NH Bản Việt"
+  ],
+  "VCI": [
+    "VCI",
+    "Viet Capital Securities",
+    "Chứng khoán Bản Việt",
+    "VCSC",
+    "Công ty Chứng khoán Bản Việt"
+  ],
+  "HCM": [
+    "HCM",
+    "HSC",
+    "Ho Chi Minh Securities",
+    "Chứng khoán TP.HCM",
+    "Chứng khoán HSC",
+    "Công ty Chứng khoán TP Hồ Chí Minh"
+  ],
+  "VND": [
+    "VND",
+    "VNDirect",
+    "Chứng khoán VNDirect",
+    "Công ty Chứng khoán VNDirect"
+  ],
+  "MBS": [
+    "MBS",
+    "MB Securities",
+    "Chứng khoán MB",
+    "Công ty Chứng khoán MB"
+  ],
+  "BSI": [
+    "BSI",
+    "BSC",
+    "BSC Securities",
+    "Chứng khoán BIDV",
+    "Công ty Chứng khoán BIDV"
+  ],
+  "KDH": [
+    "KDH",
+    "Khang Dien",
+    "Nhà Khang Điền",
+    "Khang Điền",
+    "CTCP Nhà Khang Điền"
+  ],
+  "NVL": [
+    "NVL",
+    "NovaLand",
+    "Novaland",
+    "Nova Land",
+    "Tập đoàn Novaland",
+    "CTCP Tập đoàn Đầu tư Địa ốc No Va"
+  ],
+  "DXG": [
+    "DXG",
+    "Dat Xanh",
+    "Đất Xanh",
+    "Tập đoàn Đất Xanh",
+    "CTCP Tập đoàn Đất Xanh"
+  ],
+  "PDR": [
+    "PDR",
+    "Phat Dat",
+    "Phát Đạt",
+    "Bất động sản Phát Đạt",
+    "CTCP Phát triển Bất động sản Phát Đạt"
+  ],
+  "NLG": [
+    "NLG",
+    "Nam Long",
+    "Nam Long Group",
+    "Đầu tư Nam Long",
+    "CTCP Đầu tư Nam Long"
+  ],
+  "DIG": [
+    "DIG",
+    "DIC Corp",
+    "DIC",
+    "Tổng Công ty DIC",
+    "CTCP DIC Corp"
+  ],
+  "HDG": [
+    "HDG",
+    "Ha Do",
+    "Hà Đô",
+    "Tập đoàn Hà Đô",
+    "CTCP Tập đoàn Hà Đô"
+  ],
+  "VCG": [
+    "VCG",
+    "Vinaconex",
+    "Tổng Công ty Vinaconex",
+    "CTCP Xuất nhập khẩu và Xây dựng Việt Nam"
+  ],
+  "SCR": [
+    "SCR",
+    "Sacomreal",
+    "Địa ốc Sài Gòn Thương Tín",
+    "CTCP Địa ốc Sài Gòn Thương Tín"
+  ],
+  "HSG": [
+    "HSG",
+    "Hoa Sen",
+    "Tập đoàn Hoa Sen",
+    "Hoa Sen Group",
+    "tôn Hoa Sen",
+    "thép Hoa Sen"
+  ],
+  "NKG": [
+    "NKG",
+    "Nam Kim",
+    "Nam Kim Steel",
+    "Thép Nam Kim",
+    "CTCP Thép Nam Kim"
+  ],
+  "VGC": [
+    "VGC",
+    "Viglacera",
+    "Tổng Công ty Viglacera",
+    "kính Viglacera",
+    "gạch Viglacera"
+  ],
+  "PHR": [
+    "PHR",
+    "Phuoc Hoa Rubber",
+    "Cao su Phước Hòa",
+    "CTCP Cao su Phước Hòa"
+  ],
+  "CSV": [
+    "CSV",
+    "Southern Rubber",
+    "Cao su miền Nam",
+    "Công ty Cao su miền Nam"
+  ],
+  "DPM": [
+    "DPM",
+    "PetroVietnam Fertilizer",
+    "Đạm Phú Mỹ",
+    "Phân bón Phú Mỹ",
+    "Tổng Công ty Phân bón và Hóa chất Dầu khí",
+    "Tổng Công ty Phân bón và Hóa chất Dầu khí - Công ty Cổ phần"
+  ],
+  "DCM": [
+    "DCM",
+    "Đạm Cà Mau",
+    "Phân bón Cà Mau",
+    "CTCP Phân bón Dầu khí Cà Mau"
+  ],
+  "BMP": [
+    "BMP",
+    "Binh Minh Plastics",
+    "Nhựa Bình Minh",
+    "CTCP Nhựa Bình Minh"
+  ],
+  "REE": [
+    "REE",
+    "Refrigeration Electrical Engineering",
+    "REE Corporation",
+    "CTCP Cơ Điện Lạnh",
+    "cơ điện lạnh REE"
+  ],
+  "NT2": [
+    "NT2",
+    "PetroVietnam Power Nhon Trach 2",
+    "Điện lực Nhơn Trạch 2",
+    "Nhiệt điện Nhơn Trạch 2",
+    "CTCP Điện lực Dầu khí Nhơn Trạch 2"
+  ],
+  "PPC": [
+    "PPC",
+    "Pha Lai Thermal Power",
+    "Nhiệt điện Phả Lại",
+    "CTCP Nhiệt điện Phả Lại"
+  ],
+  "GEX": [
+    "GEX",
+    "Gelex",
+    "Tập đoàn Gelex",
+    "CTCP Tập đoàn GELEX"
+  ],
+  "EVF": [
+    "EVF",
+    "EVN Finance",
+    "Tài chính Điện lực",
+    "CTCP Tài chính Điện lực"
+  ],
+  "PNJ": [
+    "PNJ",
+    "Phu Nhuan Jewelry",
+    "Vàng bạc Phú Nhuận",
+    "Trang sức PNJ",
+    "CTCP Vàng bạc Đá quý Phú Nhuận"
+  ],
+  "DGW": [
+    "DGW",
+    "Digiworld",
+    "CTCP Thế Giới Số",
+    "Thế Giới Số"
+  ],
+  "FRT": [
+    "FRT",
+    "FPT Retail",
+    "FPT Shop",
+    "Bán lẻ FPT",
+    "CTCP Bán lẻ Kỹ thuật số FPT"
+  ],
+  "MCH": [
+    "MCH",
+    "Masan Consumer",
+    "Masan Consumer Holdings",
+    "CTCP Hàng tiêu dùng Masan"
+  ],
+  "VHC": [
+    "VHC",
+    "Vinh Hoan",
+    "Vĩnh Hoàn",
+    "Cá tra Vĩnh Hoàn",
+    "CTCP Vĩnh Hoàn"
+  ],
+  "ANV": [
+    "ANV",
+    "Nam Viet",
+    "Nam Việt",
+    "Cá tra Nam Việt",
+    "CTCP Nam Việt"
+  ],
+  "CMG": [
+    "CMG",
+    "CMC",
+    "CMC Technology",
+    "Tập đoàn Công nghệ CMC",
+    "CTCP Tập đoàn Công nghệ CMC"
+  ],
+  "ELC": [
+    "ELC",
+    "Electrics of Vietnam",
+    "Điện tử Việt Nam",
+    "CTCP Đầu tư Phát triển Công nghệ Điện tử Viễn thông"
+  ],
+  "GMD": [
+    "GMD",
+    "Gemadept",
+    "CTCP Gemadept",
+    "cảng Gemadept",
+    "logistics Gemadept"
+  ],
+  "VSC": [
+    "VSC",
+    "Vietnam Container Shipping",
+    "Vận tải Container Việt Nam",
+    "CTCP Container Việt Nam"
+  ],
+  "PVT": [
+    "PVT",
+    "PetroVietnam Transportation",
+    "Vận tải Dầu khí",
+    "PVTrans",
+    "CTCP Vận tải Dầu khí"
+  ],
+  "HAH": [
+    "HAH",
+    "Hai An",
+    "Hải An",
+    "Vận tải Hải An",
+    "CTCP Vận tải và Xếp dỡ Hải An"
+  ]
+}

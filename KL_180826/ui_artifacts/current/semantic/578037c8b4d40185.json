@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "578037c8b4d40185",
+    "ticker": "HDB",
+    "article_date": "2025-12-26",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": true,
+    "consensus_direction": "neutral",
+    "consensus_materiality": "low",
+    "consensus_event_type": "debt",
+    "evidence_span": "CBTT về việc đăng ký giao dịch trái phiếu HDB12512 của NH TMCP Phát triển thành phố Hồ Chí Minh ( HDBANK)",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "none"
+    ],
+    "requires_human_review": false,
+    "review_flags": [
+      "none"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

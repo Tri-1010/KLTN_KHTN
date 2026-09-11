@@ -1,0 +1,74 @@
+{
+  "artifact_schema_version": "harmonized_build_manifest_v1",
+  "study_id": "harmonized_keyword_semantic_v1",
+  "protocol_version": "harmonized_comparison_v4",
+  "protocol_sha256": "718dd5e5828eaf1df991492091b3d96dec478096070767bf25e4ae93b4ce5a1a",
+  "run_id": "canonical_150_v6",
+  "mode": "pilot",
+  "status": "completed",
+  "preregistered_input_match": true,
+  "claim_level": "common_stratified_article_spine_only",
+  "sources": [
+    {
+      "name": "sample",
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\data\\sample_news_for_annotation.csv",
+      "sha256": "a03ec8cbbb4cbbc8a0d9e3427c29771bb8c38698ec494ef83451b3f38a652c73"
+    },
+    {
+      "name": "consensus",
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\pseudo_labels_consensus.csv",
+      "sha256": "6342f27827e3327b78099fc1e1bbf13d4340c598764379dff0b14ac5f357da54"
+    },
+    {
+      "name": "prices",
+      "path": "C:\\Users\\User\\KLTN_KHTN\\data\\prices\\all_vn30_prices.csv",
+      "sha256": "4e16833ab6bfa2b0aeea2d742b86943d786b221f51ad6bf43a57f619405665bb"
+    },
+    {
+      "name": "benchmark",
+      "path": "C:\\Users\\User\\KLTN_KHTN\\data\\prices_extended\\VNINDEX.csv",
+      "sha256": "fc44a4a3afd01ea0a48dfc8901377b8af24e5e5eaa7da73cb4639063dbc83f84"
+    },
+    {
+      "name": "technical",
+      "path": "C:\\Users\\User\\KLTN_KHTN\\data\\features\\technical_features.csv",
+      "sha256": "b0a1cb2e7ea71708131cc444de07e1457bc2d457e9e2a255af418f480f324e3e"
+    },
+    {
+      "name": "targets",
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\harmonized\\canonical_150_v6\\harmonized_outperform_targets.csv",
+      "sha256": "b5fd3812b9ec2158207eb0d97c1a6cab465b855d0afb5ff0a7ef9eabc32826fe"
+    },
+    {
+      "name": "target_manifest",
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\harmonized\\canonical_150_v6\\harmonized_target_manifest.json",
+      "sha256": "088685bf22f46a0d8c6128defc6a7efaf66527165f0ea81a2e5964de411a004d"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\harmonized\\canonical_150_v6\\harmonized_article_spine.csv",
+      "sha256": "7982d0e22fd6fa3285ef5911f9e83339b6827e88dd4787537783bee042379796"
+    },
+    {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\harmonized\\canonical_150_v6\\harmonized_features_daily.csv",
+      "sha256": "51a2f6547ad925d93023bfc509b2d8a5099b3bf232bf02a669efbba563cf2e97"
+    },
+    {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\harmonized\\canonical_150_v6\\harmonized_feature_manifest.csv",
+      "sha256": "0b47c26b65e770bd60213f00fcb0e6ed13e077411d0e68f0424c3b952475fbdb"
+    },
+    {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\harmonized\\canonical_150_v6\\harmonized_row_manifest.csv",
+      "sha256": "287c423753c715b162caa7deeb059f31989f3299e99eed9599aed7459f6beca5"
+    },
+    {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\harmonized\\canonical_150_v6\\harmonized_coverage_audit.csv",
+      "sha256": "e441c101dfc7228424fd2abfea3d8b28368e329fa56ca958c67ec93a5d8aba02"
+    },
+    {
+      "path": "C:\\Users\\User\\KLTN_KHTN\\multi_llm_evidence_extraction\\outputs\\harmonized\\canonical_150_v6\\harmonized_panel.csv",
+      "sha256": "396bbdb132ab5f862e1e9e0c6b45c3792ae596db1231ebcaa22f2be131aa0974"
+    }
+  ]
+}

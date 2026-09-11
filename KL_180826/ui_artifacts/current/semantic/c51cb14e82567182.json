@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "c51cb14e82567182",
+    "ticker": "NVL",
+    "article_date": "2023-03-24",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": true,
+    "consensus_direction": "mixed",
+    "consensus_materiality": "high",
+    "consensus_event_type": "debt",
+    "evidence_span": "Lần đầu tiên, Novaland đạt thỏa thuận với trái chủ trong việc gia hạn thời gian đáo hạn với 2 lô trái phiếu có tổng giá trị 1.750 tỷ đồng.",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "unclear_direction"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "unclear_direction"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

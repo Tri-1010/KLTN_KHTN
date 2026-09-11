@@ -1,0 +1,299 @@
+{
+  "decision_id": "2025Q3_VRE_03",
+  "snapshot_mode": "full_evidence",
+  "ticker": "VRE",
+  "decision_date": "2025-09-30",
+  "period_id": "2025Q3",
+  "holding_horizon": "next_quarter_or_period_return_in_signals",
+  "ml_signal": {
+    "model_name": "technical_Config_A_from_existing_pipeline",
+    "pred_proba_up": 0.9940922707557027,
+    "pred_label": 1,
+    "rank_in_period": 3,
+    "source_signal_class": "Buy Candidate",
+    "display_status": "Model candidate"
+  },
+  "technical_snapshot": {
+    "rsi_end_q": 66.8365675740471,
+    "macd_hist_mean_q": -0.0024726934475260247,
+    "price_vs_sma20": 0.0666223625186909,
+    "return_2q_ago": 0.10693641618497098,
+    "return_q": 0.29435483870967744,
+    "return_prev_q": 0.23249999999999993,
+    "volume_change_q": -0.5036560369902255,
+    "return_mean_daily": 0.004363385464226554,
+    "price_range_q": 0.26122448979591845,
+    "sma20_end": 30.095
+  },
+  "top_drivers": [
+    {
+      "feature": "rsi_end_q",
+      "value": 66.8365675740471,
+      "direction": "supports_up_signal",
+      "explanation": "RSI cuối kỳ là driver kỹ thuật quan trọng nhất trong mô hình."
+    },
+    {
+      "feature": "macd_hist_mean_q",
+      "value": -0.0024726934475260247,
+      "direction": "weak_or_negative",
+      "explanation": "MACD histogram trung bình phản ánh động lượng xu hướng."
+    },
+    {
+      "feature": "price_vs_sma20",
+      "value": 0.0666223625186909,
+      "direction": "supports_up_signal",
+      "explanation": "Vị trí giá so với SMA20 phản ánh trạng thái trên/dưới đường trung bình."
+    },
+    {
+      "feature": "return_2q_ago",
+      "value": 0.10693641618497098,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trễ hai kỳ phản ánh động lượng/quán tính lịch sử."
+    },
+    {
+      "feature": "return_q",
+      "value": 0.29435483870967744,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trong kỳ hiện tại phản ánh xu hướng gần nhất."
+    },
+    {
+      "feature": "return_prev_q",
+      "value": 0.23249999999999993,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất kỳ trước bổ sung thông tin động lượng."
+    },
+    {
+      "feature": "volume_change_q",
+      "value": -0.5036560369902255,
+      "direction": "weak_or_negative",
+      "explanation": "Thay đổi khối lượng phản ánh mức độ quan tâm của thị trường."
+    },
+    {
+      "feature": "return_mean_daily",
+      "value": 0.004363385464226554,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trung bình ngày phản ánh xu hướng ngắn trong kỳ."
+    },
+    {
+      "feature": "price_range_q",
+      "value": 0.26122448979591845,
+      "direction": "normal",
+      "explanation": "Biên độ giá trong kỳ phản ánh biến động/rủi ro."
+    },
+    {
+      "feature": "sma20_end",
+      "value": 30.095,
+      "direction": "context",
+      "explanation": "SMA20 cuối kỳ phản ánh mặt bằng xu hướng ngắn hạn."
+    }
+  ],
+  "news_evidence": [
+    {
+      "evidence_id": "N001",
+      "published_at": "2025-09-29",
+      "source": "cafef",
+      "title": "VRE: Nghị quyết HĐQT về việc thực hiện chi trả lợi nhuận trong công ty của VRE",
+      "article_summary": "Công ty Cổ phần Vincom Retail công bố Nghị quyết HĐQT về việc thực hiện chi trả lợi nhuận trong công ty của VRE VRE: Nghị quyết HĐQT về việc thực hiện chi trả lợi nhuận trong công ty của VRE Công ty Cổ phần Vincom Retail công bố Nghị quyết HĐQT về việc thực hiện chi trả lợi nhuận trong công ty của VRE",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "VRE: Nghị quyết HĐQT về việc thực hiện chi trả lợi nhuận trong công ty của VRE Công ty Cổ phần Vincom Retail công bố Nghị quyết HĐQT về việc thực hiện chi trả lợi nhuận trong công ty của VRE VRE: Nghị quyết HĐQT về việc thực hiện chi trả lợi nhuận trong công ty của VRE Công ty Cổ phần Vincom Retail ",
+          "evidence_quote": "VRE: Nghị quyết HĐQT về việc thực hiện chi trả lợi nhuận trong công ty của VRE Công ty Cổ phần Vincom Retail công bố Nghị quyết HĐQT về việc thực hiện chi trả lợi nhuận trong công ty của VRE VRE: Nghị quyết HĐQT về việc thực hiện chi trả lợ",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [],
+      "event_type": "earnings",
+      "match_confidence": "exact",
+      "evidence_span": "VRE: Nghị quyết HĐQT về việc thực hiện chi trả lợi nhuận trong công ty của VRE Công ty Cổ phần Vincom Retail công bố Nghị quyết HĐQT về việc thực hiện chi trả lợi nhuận trong công ty của VRE",
+      "url": "https://cafef.vn/du-lieu/VRE-2307315/vre-nghi-quyet-hdqt-ve-viec-thuc-hien-chi-tra-loi-nhuan-trong-cong-ty-cua-vre.chn",
+      "content_hash": "b6abd15f056b60c96f8bd44774cca59ec20e369cf013118573b7a4290b6d1acc",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N002",
+      "published_at": "2025-08-28",
+      "source": "kinhtechungkhoan",
+      "title": "vincom retail vre sap mo ban shophouse vinhomes va mo them 3 vincom mega mall trong nam nay 1398746.html",
+      "article_summary": "Vincom Retail tăng tốc năm 2025 với 1.300 shophouse và 3 Vincom Mega Mall mới, tạo đà tăng trưởng mạnh mẽ cho doanh thu và lợi nhuận 2026. Công ty CP Vincom Retail (HoSE: VRE) đang chuẩn bị bước vào giai đoạn tăng tốc với hàng loạt kế hoạch mới, từ việc mở bán gần 1.300 căn shophouse tại các dự án của Vinhomes cho đến khai trương thêm 3 trung tâm thương mại trong năm nay. Theo báo cáo cập nhật mới nhất của ACBS Research, mảng cho thuê bất động sản của Vincom Retail tiếp tục ghi nhận sự hồi phục.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "vincom retail vre sap mo ban shophouse vinhomes va mo them 3 vincom mega mall trong nam nay 1398746.html nan Vincom Retail tăng tốc năm 2025 với 1.300 shophouse và 3 Vincom Mega Mall mới, tạo đà tăng trưởng mạnh mẽ cho doanh thu và lợi nhuận 2026.",
+          "evidence_quote": "vincom retail vre sap mo ban shophouse vinhomes va mo them 3 vincom mega mall trong nam nay 1398746.html nan Vincom Retail tăng tốc năm 2025 với 1.300 shophouse và 3 Vincom Mega Mall mới, tạo đà tăng trưởng mạnh mẽ cho doanh thu và lợi nhuậ",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Công ty CP Vincom Retail (HoSE: VRE) đang chuẩn bị bước vào giai đoạn tăng tốc với hàng loạt kế hoạch mới, từ việc mở bán gần 1.300 căn shophouse tại các dự án của Vinhomes cho đến khai trương thêm 3 trung tâm thương mại trong năm nay.",
+          "evidence_quote": "Công ty CP Vincom Retail (HoSE: VRE) đang chuẩn bị bước vào giai đoạn tăng tốc với hàng loạt kế hoạch mới, từ việc mở bán gần 1.300 căn shophouse tại các dự án của Vinhomes cho đến khai trương thêm 3 trung tâm thương mại trong năm nay.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Tỷ lệ lấp đầy trung bình đã tăng từ mức đáy 82,8% trong quý I/2024 lên 86,3% trong quý II/2025.",
+          "evidence_quote": "Tỷ lệ lấp đầy trung bình đã tăng từ mức đáy 82,8% trong quý I/2024 lên 86,3% trong quý II/2025.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Biên lợi nhuận gộp nhờ đó cũng cải thiện, từ 53,9% lên 55,5%.",
+          "evidence_quote": "Biên lợi nhuận gộp nhờ đó cũng cải thiện, từ 53,9% lên 55,5%.",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Song song đó, VRE vẫn giữ kế hoạch khai trương 3 trung tâm thương mại mới trong năm 2025, gồm Vincom Mega Mall Ocean City, Vincom Mega Mall Royal Island và Vincom Plaza Vinh.",
+          "evidence_quote": "Song song đó, VRE vẫn giữ kế hoạch khai trương 3 trung tâm thương mại mới trong năm 2025, gồm Vincom Mega Mall Ocean City, Vincom Mega Mall Royal Island và Vincom Plaza Vinh.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "debt_risk",
+        "governance"
+      ],
+      "event_type": "earnings,debt_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vincom Retail tăng tốc năm 2025 với 1.300 shophouse và 3 Vincom Mega Mall mới, tạo đà tăng trưởng mạnh mẽ cho doanh thu và lợi nhuận 2026. Công ty CP Vincom Retail (HoSE: VRE) đang chuẩn bị bước vào giai đoạn tăng tốc với hàng loạt kế hoạch mới, từ việc mở bán gần 1.300 căn shophouse tại các dự án của Vinhomes cho đến khai trương thêm 3 trung tâm thương mại trong năm nay. Theo báo cáo cập nhật mới nhất của ACBS Research, mảng cho thuê bất động sản của Vincom Retail tiếp tục ghi nhận sự hồi phục.",
+      "url": "https://kinhtechungkhoan.vn/vincom-retail-vre-sap-mo-ban-shophouse-vinhomes-va-mo-them-3-vincom-mega-mall-trong-nam-nay-1398746.html",
+      "content_hash": "f07f583e2a46bc06e9380fe61490340b1460f9c42387edad53ae8c091025283f",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N003",
+      "published_at": "2025-08-26",
+      "source": "cafef",
+      "title": "VRE: CBTT sáp nhập công ty con",
+      "article_summary": "Công ty Cổ phần Vincom Retail thông báo sáp nhập công ty con VRE: CBTT sáp nhập công ty con Công ty Cổ phần Vincom Retail thông báo sáp nhập công ty con",
+      "key_facts": [],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "exact",
+      "evidence_span": "VRE: CBTT sáp nhập công ty con Công ty Cổ phần Vincom Retail thông báo sáp nhập công ty con",
+      "url": "https://cafef.vn/du-lieu/VRE-2283906/vre-cbtt-sap-nhap-cong-ty-con.chn",
+      "content_hash": "183a3d29cbf9c3de139f7acb9c28274206e36989afd47debc77c638bd1839161",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N004",
+      "published_at": "2025-08-12",
+      "source": "vietstock",
+      "title": "Vincom Retail đã đặt cọc 1.8 ngàn tỷ để nhận chuyển nhượng một phần dự án Cần Giờ",
+      "article_summary": "Vincom Retail đã đặt cọc 1.8 ngàn tỷ để nhận chuyển nhượng một phần dự án Cần Giờ Báo cáo của Công ty chứng khoán Yuanta Việt Nam ( YSVN ) cho biết CTCP Vincom Retail ( HOSE : VRE ) có kế hoạch huy động thêm nợ vay trong quý 3/2025 để tài trợ cho các khoản đặt cọc bổ sung cho một số phân khu trong dự án Cần Giờ. Cụ thể, kế hoạch dài hạn của ban lãnh đạo VRE bao gồm 4 trung tâm thương mại và 1 cụm đơn vị nhà phố thương mại. Theo đó, 1.8 ngàn tỷ đồng của VRE đã được đặt cọc cho các thương vụ này.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "Vincom Retail đã đặt cọc 1.8 ngàn tỷ để nhận chuyển nhượng một phần dự án Cần Giờ nan Vincom Retail đã đặt cọc 1.8 ngàn tỷ để nhận chuyển nhượng một phần dự án Cần Giờ Báo cáo của Công ty chứng khoán Yuanta Việt Nam ( YSVN ) cho biết CTCP Vincom Retail ( HOSE : VRE ) có kế hoạch huy động thêm nợ vay",
+          "evidence_quote": "Vincom Retail đã đặt cọc 1.8 ngàn tỷ để nhận chuyển nhượng một phần dự án Cần Giờ nan Vincom Retail đã đặt cọc 1.8 ngàn tỷ để nhận chuyển nhượng một phần dự án Cần Giờ Báo cáo của Công ty chứng khoán Yuanta Việt Nam ( YSVN ) cho biết CTCP V",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Cụ thể, kế hoạch dài hạn của ban lãnh đạo VRE bao gồm 4 trung tâm thương mại và 1 cụm đơn vị nhà phố thương mại.",
+          "evidence_quote": "Cụ thể, kế hoạch dài hạn của ban lãnh đạo VRE bao gồm 4 trung tâm thương mại và 1 cụm đơn vị nhà phố thương mại.",
+          "fact_type": "governance",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Theo đó, 1.8 ngàn tỷ đồng của VRE đã được đặt cọc cho các thương vụ này.",
+          "evidence_quote": "Theo đó, 1.8 ngàn tỷ đồng của VRE đã được đặt cọc cho các thương vụ này.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Cũng trong quý 3/2025, VRE dự kiến khai trương 2 trung tâm thương mại (TTTM) mới, qua đó bổ sung thêm khoảng 100.8 ngàn m2 diện tích sàn (GFA) và nâng tổng GFA lên khoảng 1,942 ngàn m2 (tăng 6.3% so với cùng kỳ).",
+          "evidence_quote": "Cũng trong quý 3/2025, VRE dự kiến khai trương 2 trung tâm thương mại (TTTM) mới, qua đó bổ sung thêm khoảng 100.8 ngàn m2 diện tích sàn (GFA) và nâng tổng GFA lên khoảng 1,942 ngàn m2 (tăng 6.3% so với cùng kỳ).",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Các dự án bao gồm Vinhomes Mega Mall Ocean City và Vincom Mega Mall Royal Island, đang ghi nhận tỷ lệ lấp đầy cam kết trước lần lượt là 95% và 96%.",
+          "evidence_quote": "Các dự án bao gồm Vinhomes Mega Mall Ocean City và Vincom Mega Mall Royal Island, đang ghi nhận tỷ lệ lấp đầy cam kết trước lần lượt là 95% và 96%.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "debt_risk",
+        "governance"
+      ],
+      "event_type": "earnings,debt_risk,governance",
+      "match_confidence": "exact",
+      "evidence_span": "Vincom Retail đã đặt cọc 1.8 ngàn tỷ để nhận chuyển nhượng một phần dự án Cần Giờ Báo cáo của Công ty chứng khoán Yuanta Việt Nam ( YSVN ) cho biết CTCP Vincom Retail ( HOSE : VRE ) có kế hoạch huy động thêm nợ vay trong quý 3/2025 để tài trợ cho các khoản đặt cọc bổ sung cho một số phân khu trong dự án Cần Giờ. Cụ thể, kế hoạch dài hạn của ban lãnh đạo VRE bao gồm 4 trung tâm thương mại và 1 cụm đơn vị nhà phố thương mại. Theo đó, 1.8 ngàn tỷ đồng của VRE đã được đặt cọc cho các thương vụ này.",
+      "url": "https://vietstock.vn/2025/08/vincom-retail-da-dat-coc-18-ngan-ty-de-nhan-chuyen-nhuong-mot-phan-du-an-can-gio-737-1340124.htm",
+      "content_hash": "dc22535328032a191f21c74c44e245bd8d0a9f555faa7090ad9779f1d3995e53",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N005",
+      "published_at": "2025-07-31",
+      "source": "cafef",
+      "title": "VRE: Báo cáo tình hình quản trị 6 tháng đầu năm 2025",
+      "article_summary": "Công ty Cổ phần Vincom Retail Báo cáo tình hình quản trị 6 tháng đầu năm 2025 VRE: Báo cáo tình hình quản trị 6 tháng đầu năm 2025 Công ty Cổ phần Vincom Retail Báo cáo tình hình quản trị 6 tháng đầu năm 2025",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "VRE: Báo cáo tình hình quản trị 6 tháng đầu năm 2025 Công ty Cổ phần Vincom Retail Báo cáo tình hình quản trị 6 tháng đầu năm 2025 VRE: Báo cáo tình hình quản trị 6 tháng đầu năm 2025 Công ty Cổ phần Vincom Retail Báo cáo tình hình quản trị 6 tháng đầu năm 2025",
+          "evidence_quote": "VRE: Báo cáo tình hình quản trị 6 tháng đầu năm 2025 Công ty Cổ phần Vincom Retail Báo cáo tình hình quản trị 6 tháng đầu năm 2025 VRE: Báo cáo tình hình quản trị 6 tháng đầu năm 2025 Công ty Cổ phần Vincom Retail Báo cáo tình hình quản trị",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "exact",
+      "evidence_span": "VRE: Báo cáo tình hình quản trị 6 tháng đầu năm 2025 Công ty Cổ phần Vincom Retail Báo cáo tình hình quản trị 6 tháng đầu năm 2025",
+      "url": "https://cafef.vn/du-lieu/VRE-2294647/vre-bao-cao-tinh-hinh-quan-tri-6-thang-dau-nam-2025.chn",
+      "content_hash": "fbc6de8a2dc6ae181d45720fa56bc4eab9849400d49f8cf40e8936f27030b5c4",
+      "extraction_status": "partial"
+    }
+  ],
+  "data_quality_flags": {
+    "news_coverage": "high",
+    "ticker_matching_confidence": "mixed",
+    "full_text_coverage": 5,
+    "summary_coverage": 5,
+    "key_fact_coverage": 4,
+    "missing_fields": []
+  },
+  "guardrails": {
+    "initial_prompt_safe": true,
+    "news_cutoff": "2025-09-30",
+    "not_investment_advice": true,
+    "no_post_decision_data": true,
+    "full_text_excerpt_chars": 500
+  },
+  "provenance": {
+    "name": "initial_evidence",
+    "path": "reports/decision_support/generated/evidence_packs_initial.json",
+    "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+    "zone": "initial",
+    "record_count": 25,
+    "schema_version": "evidence-pack-initial-v1",
+    "generated_at_utc": null,
+    "provenance_status": null
+  }
+}

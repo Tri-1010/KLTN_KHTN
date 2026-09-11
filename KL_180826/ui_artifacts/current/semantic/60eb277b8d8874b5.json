@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "60eb277b8d8874b5",
+    "ticker": "BAB",
+    "article_date": "2023-08-21",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": false,
+    "consensus_direction": "unclear",
+    "consensus_materiality": "medium",
+    "consensus_event_type": "earnings",
+    "evidence_span": "BAB: Giải trình LNST bán niên 2023 biến động trên 10% so với cùng kỳ năm 2022",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "unclear_direction"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "unclear_direction"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

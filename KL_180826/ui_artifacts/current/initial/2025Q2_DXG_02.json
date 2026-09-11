@@ -1,0 +1,280 @@
+{
+  "decision_id": "2025Q2_DXG_02",
+  "snapshot_mode": "full_evidence",
+  "ticker": "DXG",
+  "decision_date": "2025-06-30",
+  "period_id": "2025Q2",
+  "holding_horizon": "next_quarter_or_period_return_in_signals",
+  "ml_signal": {
+    "model_name": "technical_Config_A_from_existing_pipeline",
+    "pred_proba_up": 0.9984698500767306,
+    "pred_label": 1,
+    "rank_in_period": 2,
+    "source_signal_class": "Buy Candidate",
+    "display_status": "Model candidate"
+  },
+  "technical_snapshot": {
+    "rsi_end_q": 75.33294270904815,
+    "macd_hist_mean_q": 0.01884402367955715,
+    "price_vs_sma20": 0.04594537370315463,
+    "return_2q_ago": -0.06577851790174848,
+    "return_q": 0.2474747474747474,
+    "return_prev_q": 0.049601417183348144,
+    "volume_change_q": 0.490008524613723,
+    "return_mean_daily": 0.0040119893528069465,
+    "price_range_q": 0.47296747700825215,
+    "sma20_end": 14.169000000000002
+  },
+  "top_drivers": [
+    {
+      "feature": "rsi_end_q",
+      "value": 75.33294270904815,
+      "direction": "positive_but_overbought_risk",
+      "explanation": "RSI cuối kỳ là driver kỹ thuật quan trọng nhất trong mô hình."
+    },
+    {
+      "feature": "macd_hist_mean_q",
+      "value": 0.01884402367955715,
+      "direction": "supports_up_signal",
+      "explanation": "MACD histogram trung bình phản ánh động lượng xu hướng."
+    },
+    {
+      "feature": "price_vs_sma20",
+      "value": 0.04594537370315463,
+      "direction": "supports_up_signal",
+      "explanation": "Vị trí giá so với SMA20 phản ánh trạng thái trên/dưới đường trung bình."
+    },
+    {
+      "feature": "return_2q_ago",
+      "value": -0.06577851790174848,
+      "direction": "weak_or_negative",
+      "explanation": "Lợi suất trễ hai kỳ phản ánh động lượng/quán tính lịch sử."
+    },
+    {
+      "feature": "return_q",
+      "value": 0.2474747474747474,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trong kỳ hiện tại phản ánh xu hướng gần nhất."
+    },
+    {
+      "feature": "return_prev_q",
+      "value": 0.049601417183348144,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất kỳ trước bổ sung thông tin động lượng."
+    },
+    {
+      "feature": "volume_change_q",
+      "value": 0.490008524613723,
+      "direction": "supports_up_signal",
+      "explanation": "Thay đổi khối lượng phản ánh mức độ quan tâm của thị trường."
+    },
+    {
+      "feature": "return_mean_daily",
+      "value": 0.0040119893528069465,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trung bình ngày phản ánh xu hướng ngắn trong kỳ."
+    },
+    {
+      "feature": "price_range_q",
+      "value": 0.47296747700825215,
+      "direction": "risk_high_volatility",
+      "explanation": "Biên độ giá trong kỳ phản ánh biến động/rủi ro."
+    },
+    {
+      "feature": "sma20_end",
+      "value": 14.169000000000002,
+      "direction": "context",
+      "explanation": "SMA20 cuối kỳ phản ánh mặt bằng xu hướng ngắn hạn."
+    }
+  ],
+  "news_evidence": [
+    {
+      "evidence_id": "N001",
+      "published_at": "2025-06-26",
+      "source": "cafef",
+      "title": "DXG: Nghị quyết HĐQT về việc lựa chọn đơn vị kiểm toán cho năm 2025",
+      "article_summary": "Công ty Cổ phần Tập đoàn Đất Xanh thông báo Nghị quyết HĐQT về việc lựa chọn đơn vị kiểm toán cho năm 2025 DXG: Nghị quyết HĐQT về việc lựa chọn đơn vị kiểm toán cho năm 2025 Công ty Cổ phần Tập đoàn Đất Xanh thông báo Nghị quyết HĐQT về việc lựa chọn đơn vị kiểm toán cho năm 2025",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "DXG: Nghị quyết HĐQT về việc lựa chọn đơn vị kiểm toán cho năm 2025 Công ty Cổ phần Tập đoàn Đất Xanh thông báo Nghị quyết HĐQT về việc lựa chọn đơn vị kiểm toán cho năm 2025 DXG: Nghị quyết HĐQT về việc lựa chọn đơn vị kiểm toán cho năm 2025 Công ty Cổ phần Tập đoàn Đất Xanh thông báo Nghị quyết HĐ",
+          "evidence_quote": "DXG: Nghị quyết HĐQT về việc lựa chọn đơn vị kiểm toán cho năm 2025 Công ty Cổ phần Tập đoàn Đất Xanh thông báo Nghị quyết HĐQT về việc lựa chọn đơn vị kiểm toán cho năm 2025 DXG: Nghị quyết HĐQT về việc lựa chọn đơn vị kiểm toán cho năm 20",
+          "fact_type": "legal_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "legal_risk"
+      ],
+      "event_type": "legal_risk",
+      "match_confidence": "partial",
+      "evidence_span": "DXG: Nghị quyết HĐQT về việc lựa chọn đơn vị kiểm toán cho năm 2025 Công ty Cổ phần Tập đoàn Đất Xanh thông báo Nghị quyết HĐQT về việc lựa chọn đơn vị kiểm toán cho năm 2025",
+      "url": "https://cafef.vn/du-lieu/DXG-2231602/dxg-nghi-quyet-hdqt-ve-viec-lua-chon-don-vi-kiem-toan-cho-nam-2025.chn",
+      "content_hash": "8b3aa8efed0484bed7ecc60e5d02db8b06f49cc85f9c9cc9deef53e903f0b581",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N002",
+      "published_at": "2025-06-20",
+      "source": "kinhtechungkhoan",
+      "title": "chon co dat nao cho 6 thang cuoi nam vhm nlg dxg hdc 1386029.html",
+      "article_summary": "Thị trường địa ốc dần hồi phục, nhóm cổ phiếu bất động sản nhà ở hưởng lợi từ dự án bàn giao và tái cấu trúc dòng tiền. Trong bối cảnh thị trường địa ốc đang tìm lại đà tăng trưởng, nhóm cổ phiếu bất động sản nhà ở được dự báo có sự phân hóa rõ nét nhưng nhiều mã vẫn giữ được lợi thế từ tiến độ bàn giao dự án, dòng tiền trả nợ và sản phẩm phù hợp nhu cầu thị trường. Theo báo cáo Công ty chứng khoán Vietcombank (VCBS), nhóm cổ phiếu VHM, KDH, NLG, HDG, AGG, PDR, HDC, DPG và DXG đang là những cái tên đáng chú ý trong quý 2 và cả năm 2025.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "chon co dat nao cho 6 thang cuoi nam vhm nlg dxg hdc 1386029.html nan Thị trường địa ốc dần hồi phục, nhóm cổ phiếu bất động sản nhà ở hưởng lợi từ dự án bàn giao và tái cấu trúc dòng tiền.",
+          "evidence_quote": "chon co dat nao cho 6 thang cuoi nam vhm nlg dxg hdc 1386029.html nan Thị trường địa ốc dần hồi phục, nhóm cổ phiếu bất động sản nhà ở hưởng lợi từ dự án bàn giao và tái cấu trúc dòng tiền.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Trong bối cảnh thị trường địa ốc đang tìm lại đà tăng trưởng, nhóm cổ phiếu bất động sản nhà ở được dự báo có sự phân hóa rõ nét nhưng nhiều mã vẫn giữ được lợi thế từ tiến độ bàn giao dự án, dòng tiền trả nợ và sản phẩm phù hợp nhu cầu thị trường.",
+          "evidence_quote": "Trong bối cảnh thị trường địa ốc đang tìm lại đà tăng trưởng, nhóm cổ phiếu bất động sản nhà ở được dự báo có sự phân hóa rõ nét nhưng nhiều mã vẫn giữ được lợi thế từ tiến độ bàn giao dự án, dòng tiền trả nợ và sản phẩm phù hợp nhu cầu thị",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Theo báo cáo Công ty chứng khoán Vietcombank (VCBS), nhóm cổ phiếu VHM, KDH, NLG, HDG, AGG, PDR, HDC, DPG và DXG đang là những cái tên đáng chú ý trong quý 2 và cả năm 2025.",
+          "evidence_quote": "Theo báo cáo Công ty chứng khoán Vietcombank (VCBS), nhóm cổ phiếu VHM, KDH, NLG, HDG, AGG, PDR, HDC, DPG và DXG đang là những cái tên đáng chú ý trong quý 2 và cả năm 2025.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "VHM: Lợi nhuận đến từ bàn giao Vinhomes Ocean Park Công ty CP Vinhomes (HoSE: VHM) được VCBS dự báo ghi nhận doanh thu quý 2/2025 đạt 26.842 tỷ đồng (-5% YoY), lợi nhuận sau thuế ước đạt 9.324 tỷ đồng (-13%).",
+          "evidence_quote": "VHM: Lợi nhuận đến từ bàn giao Vinhomes Ocean Park Công ty CP Vinhomes (HoSE: VHM) được VCBS dự báo ghi nhận doanh thu quý 2/2025 đạt 26.842 tỷ đồng (-5% YoY), lợi nhuận sau thuế ước đạt 9.324 tỷ đồng (-13%).",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Cả năm, doanh thu dự phóng 141.467 tỷ đồng (+40%), lợi nhuận sau thuế 45.978 tỷ đồng (+15%).",
+          "evidence_quote": "Cả năm, doanh thu dự phóng 141.467 tỷ đồng (+40%), lợi nhuận sau thuế 45.978 tỷ đồng (+15%).",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "debt_risk",
+        "governance"
+      ],
+      "event_type": "earnings,debt_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Thị trường địa ốc dần hồi phục, nhóm cổ phiếu bất động sản nhà ở hưởng lợi từ dự án bàn giao và tái cấu trúc dòng tiền. Trong bối cảnh thị trường địa ốc đang tìm lại đà tăng trưởng, nhóm cổ phiếu bất động sản nhà ở được dự báo có sự phân hóa rõ nét nhưng nhiều mã vẫn giữ được lợi thế từ tiến độ bàn giao dự án, dòng tiền trả nợ và sản phẩm phù hợp nhu cầu thị trường. Theo báo cáo Công ty chứng khoán Vietcombank (VCBS), nhóm cổ phiếu VHM, KDH, NLG, HDG, AGG, PDR, HDC, DPG và DXG đang là những cái",
+      "url": "https://kinhtechungkhoan.vn/chon-co-dat-nao-cho-6-thang-cuoi-nam-vhm-nlg-dxg-hdc-1386029.html",
+      "content_hash": "0822510bc805cd1bda2f838a08745fe00f4161a25c804ed7d52462bfced81850",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N003",
+      "published_at": "2025-06-19",
+      "source": "cafef",
+      "title": "DXG: Nghị quyết HĐQT thông qua phương án mua lại trước hạn toàn bộ dư nợ trái phiếu",
+      "article_summary": "Công ty Cổ phần Tập đoàn Đất Xanh thông báo Nghị quyết HĐQT về việc thông qua phương án mua lại trước hạn toàn bộ dư nợ trái phiếu DXG: Nghị quyết HĐQT thông qua phương án mua lại trước hạn toàn bộ dư nợ trái phiếu Công ty Cổ phần Tập đoàn Đất Xanh thông báo Nghị quyết HĐQT về việc thông qua phương án mua lại trước hạn toàn bộ dư nợ trái phiếu",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "DXG: Nghị quyết HĐQT thông qua phương án mua lại trước hạn toàn bộ dư nợ trái phiếu Công ty Cổ phần Tập đoàn Đất Xanh thông báo Nghị quyết HĐQT về việc thông qua phương án mua lại trước hạn toàn bộ dư nợ trái phiếu DXG: Nghị quyết HĐQT thông qua phương án mua lại trước hạn toàn bộ dư nợ trái phiếu C",
+          "evidence_quote": "DXG: Nghị quyết HĐQT thông qua phương án mua lại trước hạn toàn bộ dư nợ trái phiếu Công ty Cổ phần Tập đoàn Đất Xanh thông báo Nghị quyết HĐQT về việc thông qua phương án mua lại trước hạn toàn bộ dư nợ trái phiếu DXG: Nghị quyết HĐQT thôn",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "debt_risk"
+      ],
+      "event_type": "debt_risk",
+      "match_confidence": "partial",
+      "evidence_span": "DXG: Nghị quyết HĐQT thông qua phương án mua lại trước hạn toàn bộ dư nợ trái phiếu Công ty Cổ phần Tập đoàn Đất Xanh thông báo Nghị quyết HĐQT về việc thông qua phương án mua lại trước hạn toàn bộ dư nợ trái phiếu",
+      "url": "https://cafef.vn/du-lieu/DXG-2225377/dxg-nghi-quyet-hdqt-thong-qua-phuong-an-mua-lai-truoc-han-toan-bo-du-no-trai-phieu.chn",
+      "content_hash": "75df2e77aaacd3eeaa6640f026807e8fcd5a791e7aa0dd7b5f87f4217f183279",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N004",
+      "published_at": "2025-06-19",
+      "source": "cafef",
+      "title": "DXG: Nghị quyết HĐQT tái bổ nhiệm ông Bùi Ngọc Đức giữ chức Tổng giám đốc",
+      "article_summary": "Công ty Cổ phần Tập đoàn Đất Xanh thông báo thay đổi nhân sự - Nghị quyết HĐQT tái bổ nhiệm TGĐ DXG: Nghị quyết HĐQT tái bổ nhiệm ông Bùi Ngọc Đức giữ chức Tổng giám đốc Công ty Cổ phần Tập đoàn Đất Xanh thông báo thay đổi nhân sự - Nghị quyết HĐQT tái bổ nhiệm TGĐ",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "DXG: Nghị quyết HĐQT tái bổ nhiệm ông Bùi Ngọc Đức giữ chức Tổng giám đốc Công ty Cổ phần Tập đoàn Đất Xanh thông báo thay đổi nhân sự - Nghị quyết HĐQT tái bổ nhiệm TGĐ DXG: Nghị quyết HĐQT tái bổ nhiệm ông Bùi Ngọc Đức giữ chức Tổng giám đốc Công ty Cổ phần Tập đoàn Đất Xanh thông báo thay đổi nhâ",
+          "evidence_quote": "DXG: Nghị quyết HĐQT tái bổ nhiệm ông Bùi Ngọc Đức giữ chức Tổng giám đốc Công ty Cổ phần Tập đoàn Đất Xanh thông báo thay đổi nhân sự - Nghị quyết HĐQT tái bổ nhiệm TGĐ DXG: Nghị quyết HĐQT tái bổ nhiệm ông Bùi Ngọc Đức giữ chức Tổng giám ",
+          "fact_type": "governance",
+          "direction": "neutral",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "governance"
+      ],
+      "event_type": "governance",
+      "match_confidence": "partial",
+      "evidence_span": "DXG: Nghị quyết HĐQT tái bổ nhiệm ông Bùi Ngọc Đức giữ chức Tổng giám đốc Công ty Cổ phần Tập đoàn Đất Xanh thông báo thay đổi nhân sự - Nghị quyết HĐQT tái bổ nhiệm TGĐ",
+      "url": "https://cafef.vn/du-lieu/DXG-2225895/dxg-nghi-quyet-hdqt-tai-bo-nhiem-ong-bui-ngoc-duc-giu-chuc-tong-giam-doc.chn",
+      "content_hash": "e0563fd67c269c3472a25ea681980d281e992f3dcf2dc924d93854d7750dea47",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N005",
+      "published_at": "2025-06-11",
+      "source": "cafef",
+      "title": "DXG: Nghị quyết HĐQT thông qua kết quả phát hành cổ phiếu tăng vốn cổ phần từ NVCSH",
+      "article_summary": "Công ty Cổ phần Tập đoàn Đất Xanh thông báo Nghị quyết HĐQT về việc thông qua kết quả phát hành cổ phiếu tăng VCP từ NVCSH DXG: Nghị quyết HĐQT thông qua kết quả phát hành cổ phiếu tăng vốn cổ phần từ NVCSH Công ty Cổ phần Tập đoàn Đất Xanh thông báo Nghị quyết HĐQT về việc thông qua kết quả phát hành cổ phiếu tăng VCP từ NVCSH",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "DXG: Nghị quyết HĐQT thông qua kết quả phát hành cổ phiếu tăng vốn cổ phần từ NVCSH Công ty Cổ phần Tập đoàn Đất Xanh thông báo Nghị quyết HĐQT về việc thông qua kết quả phát hành cổ phiếu tăng VCP từ NVCSH DXG: Nghị quyết HĐQT thông qua kết quả phát hành cổ phiếu tăng vốn cổ phần từ NVCSH Công ty C",
+          "evidence_quote": "DXG: Nghị quyết HĐQT thông qua kết quả phát hành cổ phiếu tăng vốn cổ phần từ NVCSH Công ty Cổ phần Tập đoàn Đất Xanh thông báo Nghị quyết HĐQT về việc thông qua kết quả phát hành cổ phiếu tăng VCP từ NVCSH DXG: Nghị quyết HĐQT thông qua kế",
+          "fact_type": "capital",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [],
+      "event_type": "capital",
+      "match_confidence": "partial",
+      "evidence_span": "DXG: Nghị quyết HĐQT thông qua kết quả phát hành cổ phiếu tăng vốn cổ phần từ NVCSH Công ty Cổ phần Tập đoàn Đất Xanh thông báo Nghị quyết HĐQT về việc thông qua kết quả phát hành cổ phiếu tăng VCP từ NVCSH",
+      "url": "https://cafef.vn/du-lieu/DXG-2219364/dxg-nghi-quyet-hdqt-thong-qua-ket-qua-phat-hanh-co-phieu-tang-von-co-phan-tu-nvcsh.chn",
+      "content_hash": "18b8ccbf3ef5b89d0771e6b50e3188c3709f485f9f2d4ebca6bbf1edbeb0445c",
+      "extraction_status": "partial"
+    }
+  ],
+  "data_quality_flags": {
+    "news_coverage": "high",
+    "ticker_matching_confidence": "mixed",
+    "full_text_coverage": 5,
+    "summary_coverage": 5,
+    "key_fact_coverage": 5,
+    "missing_fields": []
+  },
+  "guardrails": {
+    "initial_prompt_safe": true,
+    "news_cutoff": "2025-06-30",
+    "not_investment_advice": true,
+    "no_post_decision_data": true,
+    "full_text_excerpt_chars": 500
+  },
+  "provenance": {
+    "name": "initial_evidence",
+    "path": "reports/decision_support/generated/evidence_packs_initial.json",
+    "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+    "zone": "initial",
+    "record_count": 25,
+    "schema_version": "evidence-pack-initial-v1",
+    "generated_at_utc": null,
+    "provenance_status": null
+  }
+}

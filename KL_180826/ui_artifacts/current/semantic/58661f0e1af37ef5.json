@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "58661f0e1af37ef5",
+    "ticker": "VND",
+    "article_date": "2022-08-18",
+    "consensus_method": "unanimous",
+    "agreement_level": "high",
+    "analysis_eligible": true,
+    "consensus_direction": "risk",
+    "consensus_materiality": "medium",
+    "consensus_event_type": "legal",
+    "evidence_span": "VND: Quyết định của Cục thuế Thành phố Đà Nẵng về việc xử lý vi phạm hành chính về thuế",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "none"
+    ],
+    "requires_human_review": false,
+    "review_flags": [
+      "none"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "study_id": "harmonized_keyword_semantic_v1",
+  "protocol_version": "harmonized_comparison_v4",
+  "canonical_run_id": "canonical_150_v6",
+  "study_mode": ["pilot", "sample500"],
+  "observation_key": ["ticker", "date", "target_exit_date"],
+  "primary": {
+    "family": "P1",
+    "baseline_config": "B_technical_coverage_keyword",
+    "comparison_config": "C_technical_coverage_semantic",
+    "model": "RandomForest",
+    "metric": "balanced_accuracy",
+    "topk": 10
+  },
+  "effective_date_policy": "next_trading_day_missing_publication_time",
+  "target": {"horizon_benchmark_sessions": 20, "benchmark": "VNINDEX", "label_threshold": 0.0},
+  "windows": [1, 5, 20, 60],
+  "analytic_row_rule": ["target_status == ok", "lagged_technical_features_available", "common_article_count_roll_60d > 0"],
+  "configs": {
+    "A_technical": ["technical"],
+    "E_technical_coverage": ["technical", "coverage"],
+    "B_technical_coverage_keyword": ["technical", "coverage", "keyword"],
+    "C_technical_coverage_semantic": ["technical", "coverage", "semantic"],
+    "D_technical_coverage_keyword_semantic": ["technical", "coverage", "keyword", "semantic"]
+  },
+  "folds": {"count": 3, "type": "expanding", "purge": "target_exit_date_before_test_start"},
+  "models": {
+    "logistic_regression": {"C": 1.0, "max_iter": 2000, "class_weight": "balanced", "random_state": 42},
+    "random_forest": {"n_estimators": 300, "max_depth": 6, "min_samples_leaf": 5, "class_weight": "balanced", "random_state": 42, "n_jobs": -1}
+  },
+  "baselines": ["train_majority", "train_prevalence_probability", "seeded_random_probability"],
+  "metrics": {
+    "balanced_accuracy": "higher", "auc": "higher", "f1": "higher", "brier": "lower", "log_loss": "lower", "precision_at_5": "higher", "precision_at_10": "higher", "rank_ic": "higher"
+  },
+  "metric_availability": {"precision_at_k": "undefined_when_candidate_count_below_k"},
+  "hypothesis_families": {"P1": ["C_vs_B"], "S1": ["B_vs_E", "C_vs_E"], "S2": ["E_vs_A"], "T1": ["C_vs_B_topk"]},
+  "alpha": 0.05,
+  "inference": {"bootstrap_samples": 10000, "permutation_samples": 10000, "block_dates": 20, "short_fold_block_policy": "min(block_dates, ceil(sqrt(n_dates_in_fold)))", "seed": 42},
+  "topk": {"k": [5, 10], "transaction_cost": 0.005, "non_overlapping_horizon": 20},
+  "minimums": {"valid_folds": 3, "paired_dates": 10, "topk_periods": 3, "samples_per_class": 2},
+  "claim_gates": {
+    "pilot": "common_stratified_article_spine_only",
+    "sample500": "balanced_validation_sample_only",
+    "full": "requires_independent_full_corpus_replication"
+  },
+  "input_paths": {
+    "pilot_sample": "multi_llm_evidence_extraction/data/sample_news_for_annotation.csv",
+    "pilot_consensus": "multi_llm_evidence_extraction/outputs/pseudo_labels_consensus.csv",
+    "prices": "data/prices/all_vn30_prices.csv",
+    "benchmark": "data/prices_extended/VNINDEX.csv",
+    "technical": "data/features/technical_features.csv"
+  },
+  "input_sha256": {
+    "pilot_sample": "a03ec8cbbb4cbbc8a0d9e3427c29771bb8c38698ec494ef83451b3f38a652c73",
+    "pilot_consensus": "6342f27827e3327b78099fc1e1bbf13d4340c598764379dff0b14ac5f357da54",
+    "prices": "4e16833ab6bfa2b0aeea2d742b86943d786b221f51ad6bf43a57f619405665bb",
+    "benchmark": "fc44a4a3afd01ea0a48dfc8901377b8af24e5e5eaa7da73cb4639063dbc83f84",
+    "technical": "b0a1cb2e7ea71708131cc444de07e1457bc2d457e9e2a255af418f480f324e3e"
+  }
+}

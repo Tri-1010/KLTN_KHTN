@@ -1,0 +1,1423 @@
+# LLM Decision Cards — llm_ml_only
+
+> Generated with google-genai model `gemini-2.5-pro` from prompt-safe `ml_only` evidence packs. Outcome fields removed.
+
+
+---
+
+## 2025Q1_SCR_01
+
+Chắc chắn rồi, đây là decision card cho SCR dựa trên evidence pack bạn đã cung cấp.
+
+***
+
+### **Decision Card: SCR**
+
+**ID Quyết định:** 2025Q1_SCR_01
+**Ngày Quyết định:** 2025-03-31
+**Khung Thời gian:** Quý tiếp theo (`holding_horizon`: next_quarter_or_period_return_in_signals)
+
+---
+
+#### **1. Tóm tắt tín hiệu**
+
+Tín hiệu "Mua Tiềm năng" (Buy Candidate) được tạo ra bởi mô hình máy học thuần kỹ thuật (`model_name`: technical_Config_A_from_existing_pipeline). Tín hiệu có độ tin cậy dự báo rất cao (`pred_proba_up`: 0.9994) và được xếp hạng 1 trong kỳ phân tích (`rank_in_period`: 1).
+
+**Lưu ý quan trọng:** Phân tích này hoàn toàn không bao gồm dữ liệu tin tức hay các yếu tố cơ bản do chúng đã được loại bỏ khỏi evidence pack (`data_quality_flags.news_evidence_removed_for_ablation`: true).
+
+---
+
+#### **2. Luận điểm đầu tư chính**
+
+Luận điểm chính dựa trên sự hội tụ của các chỉ báo động lượng kỹ thuật mạnh mẽ trong quý gần nhất. Lợi suất dương, được xác nhận bởi khối lượng giao dịch gia tăng và các chỉ báo xu hướng tích cực, cho thấy một xu hướng tăng giá tiềm năng trong ngắn hạn.
+
+---
+
+#### **3. Yếu tố hỗ trợ**
+
+*   **Động lượng giá mạnh và gia tốc:** Cổ phiếu ghi nhận lợi suất dương đáng kể trong quý hiện tại (`return_q`: +18.7%) và quý trước đó (`return_prev_q`: +2.7%), cho thấy động lượng đang gia tăng.
+*   **Chỉ báo xu hướng đồng thuận tích cực:**
+    *   Chỉ số Sức mạnh Tương đối (RSI) ở mức 61.8, cao hơn mức trung tính 50, là yếu tố hỗ trợ mạnh nhất cho tín hiệu (`top_drivers.rsi_end_q`).
+    *   Giá đóng cửa cao hơn 2.5% so với đường trung bình động 20 kỳ (`price_vs_sma20`), củng cố xu hướng tăng ngắn hạn.
+    *   Chỉ báo MACD histogram có giá trị trung bình dương trong quý (`macd_hist_mean_q`), cho thấy động lượng mua chiếm ưu thế.
+*   **Sự xác nhận của khối lượng giao dịch:** Khối lượng giao dịch trong quý đã tăng 69.5% (`volume_change_q`), thể hiện sự quan tâm của thị trường đang gia tăng và hỗ trợ cho xu hướng giá hiện tại.
+
+---
+
+#### **4. Yếu tố cần lưu ý / rủi ro**
+
+*   **Thiếu hụt Evidence định tính:** Đây là rủi ro lớn nhất. Quyết định hoàn toàn dựa trên phân tích kỹ thuật. Không có bất kỳ thông tin nào về tin tức, sự kiện doanh nghiệp, hay các yếu tố cơ bản để hỗ trợ hoặc phản bác tín hiệu này (`data_quality_flags.news_evidence_removed_for_ablation`: true).
+*   **Hiệu suất trong quá khứ xa hơn còn yếu:** Lợi suất của hai quý trước đó là âm đáng kể (`return_2q_ago`: -20.6%). Đây là một yếu tố mang tính tiêu cực, có thể cho thấy xu hướng tăng hiện tại là sự phục hồi sau một đợt sụt giảm mạnh, và tính bền vững của xu hướng dài hạn hơn cần được xem xét cẩn trọng.
+*   **Biến động giá trong kỳ:** Biên độ giá trong quý là 31.4% (`price_range_q`), cho thấy mức độ biến động đáng kể nhà đầu tư cần nhận thức.
+
+---
+
+#### **5. Trigger theo dõi**
+
+*   **Chỉ báo động lượng:** Theo dõi chỉ số RSI nếu tiến vào vùng quá mua (>70) hoặc suy yếu xuống dưới 50.
+*   **Chỉ báo xu hướng:** Theo dõi tín hiệu từ MACD (ví dụ: giao cắt đi xuống) hoặc nếu giá phá vỡ xuống dưới đường trung bình động SMA20 (`sma20_end`: 6.574).
+*   **Khối lượng giao dịch:** Sự sụt giảm đáng kể trong khối lượng có thể là dấu hiệu cho thấy xu hướng hiện tại đang mất dần động lực.
+
+---
+
+#### **6. Thời điểm review**
+
+Dựa trên khung thời gian của tín hiệu, khuyến nghị xem xét lại luận điểm vào cuối quý tiếp theo (2025Q2) hoặc sớm hơn nếu một trong các trigger theo dõi được kích hoạt.
+
+---
+
+#### **7. Kết luận hỗ trợ quyết định**
+
+Evidence pack cung cấp một trường hợp mạnh mẽ, thuần túy về mặt kỹ thuật, cho một triển vọng tích cực trong ngắn hạn. Các chỉ báo động lượng và xu hướng gần như đồng thuận hoàn toàn.
+
+Tuy nhiên, quyết định cần cân nhắc kỹ lưỡng sự thiếu vắng hoàn toàn của các yếu tố định tính (cơ bản, tin tức) và tín hiệu tiêu cực từ hiệu suất trong quá khứ xa hơn. Điều này đặt ra một kịch bản mà ở đó động lượng hiện tại rất mạnh nhưng nền tảng cơ bản hỗ trợ cho xu hướng này chưa được xác định trong phạm vi thông tin được cung cấp.
+
+---
+
+#### **8. Disclaimer**
+
+*Tài liệu này chỉ nhằm mục đích phân tích học thuật và hỗ trợ quyết định dựa trên dữ liệu được cung cấp. Đây không phải là một khuyến nghị đầu tư. Thông tin chỉ giới hạn trong evidence pack và không bao gồm các yếu tố thị trường khác. Hiệu suất trong quá khứ không đảm bảo cho kết quả trong tương lai.*
+
+---
+
+## 2025Q1_VHM_02
+
+Chắc chắn rồi, đây là decision card cho VHM dựa trên evidence pack bạn đã cung cấp.
+
+***
+
+### **Decision Card: Phân tích Tín hiệu Đầu tư**
+
+**1. Tóm tắt tín hiệu**
+*   **Mã cổ phiếu:** VHM
+*   **Ngày quyết định:** 2025-03-31
+*   **ID Quyết định:** 2025Q1_VHM_02
+*   **Tín hiệu mô hình:** "Buy Candidate" (Ứng viên Mua)
+*   **Xác suất tăng giá (Model Proba):** 0.999 (Rất cao)
+*   **Xếp hạng trong kỳ:** 2
+*   **Nguồn tín hiệu:** Phân tích hoàn toàn dựa trên dữ liệu kỹ thuật (`ml_signal`).
+*   **Lưu ý quan trọng:** Dữ liệu tin tức đã bị loại bỏ trong quá trình tạo tín hiệu này (`news_evidence_removed_for_ablation`: true), do đó phân tích thiếu bối cảnh về các yếu tố cơ bản và sự kiện doanh nghiệp.
+
+**2. Luận điểm đầu tư chính**
+Mô hình định lượng xác định VHM là một "Ứng viên Mua" với độ tin cậy rất cao, chủ yếu dựa trên các chỉ báo động lượng giá cực kỳ mạnh trong kỳ gần nhất. Tuy nhiên, luận điểm này cần được xem xét cẩn trọng trong bối cảnh các chỉ số kỹ thuật khác đang báo hiệu rủi ro quá mua rõ rệt và khối lượng giao dịch suy giảm, cho thấy khả năng điều chỉnh trong ngắn hạn.
+
+**3. Yếu tố hỗ trợ**
+*   **Động lượng giá trong kỳ rất tích cực:** Cổ phiếu ghi nhận mức lợi suất 28.2% trong quý (`return_q`).
+*   **Xu hướng tăng ngắn hạn được xác nhận:** Giá đang ở trên đường trung bình động 20 ngày (`price_vs_sma20`: 0.0768) và lợi suất trung bình ngày cũng dương (`return_mean_daily`: 0.00439).
+*   **Các chỉ báo động lượng ủng hộ xu hướng tăng:** MACD histogram trung bình trong kỳ có giá trị dương (`macd_hist_mean_q`: 0.1856).
+*   **Động lượng lịch sử:** Lợi suất của hai kỳ trước đó cũng dương (`return_2q_ago`: 0.135), cho thấy quán tính tăng giá trong quá khứ.
+
+**4. Yếu tố cần lưu ý / rủi ro**
+*   **Rủi ro quá mua (Overbought) ở mức cao:** Chỉ số RSI cuối kỳ là 86.14 (`rsi_end_q`), một mức rất cao có thể báo hiệu khả năng đảo chiều hoặc điều chỉnh giá. Đây là driver quan trọng nhất của mô hình (`top_drivers`).
+*   **Khối lượng giao dịch suy giảm:** Khối lượng giao dịch trong quý giảm 37.1% (`volume_change_q`), cho thấy đà tăng giá có thể không được củng cố bởi sự tham gia mạnh mẽ của thị trường.
+*   **Biến động giá cao:** Biên độ giá trong kỳ tương đối lớn (`price_range_q`: 0.351), hàm ý mức độ rủi ro biến động cao.
+*   **Kết quả kỳ trước đó tiêu cực:** Lợi suất của kỳ liền trước là âm (`return_prev_q`: -0.079), cho thấy sự thiếu nhất quán trong đà tăng trưởng giữa các kỳ.
+*   **Bằng chứng định tính còn thiếu:** Do không có dữ liệu tin tức (`data_quality_flags`), phân tích này không thể đánh giá các rủi ro hoặc cơ hội từ hoạt động kinh doanh, tin tức vĩ mô hay các sự kiện cụ thể của công ty.
+
+**5. Trigger theo dõi**
+*   **Chỉ số RSI:** Theo dõi sự thay đổi của RSI để đánh giá xem cổ phiếu có đang thoát khỏi vùng quá mua hay không.
+*   **Khối lượng giao dịch:** Quan sát xem khối lượng có cải thiện để xác nhận sức mạnh của xu hướng giá hiện tại hay không.
+*   **Hành động giá so với SMA20:** Theo dõi xem giá có duy trì được trên đường trung bình động 20 ngày (`sma20_end`: 47.64) hay không.
+
+**6. Thời điểm review**
+Dựa trên khung thời gian của tín hiệu (`holding_horizon`), quyết định này nên được xem xét lại vào cuối quý tiếp theo (Q2/2025) hoặc nếu một trong các trigger theo dõi ở trên có sự thay đổi trọng yếu.
+
+**7. Kết luận hỗ trợ quyết định**
+Tín hiệu từ mô hình kỹ thuật là rất mạnh mẽ, phản ánh một xu hướng tăng giá dựa trên động lượng gần đây. Tuy nhiên, các nhà đầu tư cần nhận thức rõ ràng về các rủi ro đi kèm, đặc biệt là tình trạng quá mua nghiêm trọng và sự suy giảm về khối lượng. Quyết định đầu tư cần cân bằng giữa việc tận dụng đà tăng và quản trị rủi ro của một đợt điều chỉnh tiềm tàng. Sự thiếu hụt thông tin cơ bản là một hạn chế lớn của phân tích này.
+
+**8. Disclaimer**
+*Tài liệu này chỉ mang tính chất tham khảo cho nghiên cứu học thuật và không phải là một khuyến nghị đầu tư. Phân tích này chỉ dựa trên các dữ liệu được cung cấp trong "evidence pack" tính đến ngày 2025-03-31. Hiệu suất trong quá khứ không đảm bảo cho kết quả trong tương lai. Người đọc chịu hoàn toàn trách nhiệm cho các quyết định đầu tư của mình.*
+
+---
+
+## 2025Q1_VIC_03
+
+Chắc chắn rồi, đây là decision card cho mã VIC dựa trên evidence pack được cung cấp.
+
+***
+
+### **Decision Card: VIC**
+
+**Decision ID:** 2025Q1_VIC_03
+**Ngày Phân Tích:** 31-03-2025
+**Chân trời xem xét:** Quý kế tiếp
+
+---
+
+#### **1. Tóm tắt tín hiệu**
+Mô hình học máy (`technical_Config_A_from_existing_pipeline`) đã xác định VIC là một "Ứng viên Mua" (`signal_class: Buy Candidate`). Tín hiệu này có độ tin cậy dự báo rất cao (`pred_proba_up`: 0.998) và xếp hạng 3 trong kỳ phân tích (`rank_in_period`: 3).
+
+#### **2. Luận điểm đầu tư chính**
+Tín hiệu tích cực được thúc đẩy chủ yếu bởi các chỉ báo kỹ thuật cho thấy động lượng giá tăng rất mạnh và đột biến trong quý hiện tại. Các yếu tố như lợi suất quý, khối lượng giao dịch gia tăng và các chỉ báo xu hướng đều đồng thuận hỗ trợ tín hiệu.
+
+Tuy nhiên, sức mạnh này đi kèm với rủi ro đáng kể khi các chỉ báo cho thấy trạng thái quá mua rõ rệt và mức độ biến động giá cao. Điều quan trọng cần lưu ý là phân tích này **hoàn toàn dựa trên dữ liệu kỹ thuật** và thiếu vắng bằng chứng từ tin tức, tạo ra một góc nhìn chưa toàn diện.
+
+#### **3. Yếu tố hỗ trợ**
+*   **Động lượng giá trong kỳ rất mạnh:** Lợi suất trong quý (`return_q`: 0.431) và vị thế giá so với đường trung bình động ngắn hạn (`price_vs_sma20`: 0.135) đều cho thấy một xu hướng tăng giá mạnh mẽ gần đây.
+*   **Các chỉ báo xu hướng xác nhận:** Chỉ báo MACD histogram trung bình dương (`macd_hist_mean_q`: 0.125) củng cố cho động lượng tăng giá.
+*   **Khối lượng giao dịch gia tăng:** Có sự gia tăng đáng kể về khối lượng giao dịch trong quý (`volume_change_q`: 0.826), cho thấy sự quan tâm của thị trường tăng lên.
+*   **Động lượng lịch sử:** Lợi suất của hai quý trước (`return_2q_ago`: 0.015) cũng mang giá trị dương, cung cấp một bối cảnh hỗ trợ từ quá khứ.
+
+#### **4. Yếu tố cần lưu ý / rủi ro**
+*   **Rủi ro quá mua nghiêm trọng:** Chỉ số RSI cuối kỳ ở mức rất cao (`rsi_end_q`: 91.1), là một yếu tố thúc đẩy mô hình nhưng cũng là một cảnh báo mạnh mẽ về khả năng điều chỉnh hoặc đảo chiều (`top_drivers.direction`: `positive_but_overbought_risk`).
+*   **Biến động giá cao:** Biên độ giá trong quý rất lớn (`price_range_q`: 0.442), hàm ý rủi ro biến động mạnh có thể xảy ra (`top_drivers.direction`: `risk_high_volatility`).
+*   **Hiệu suất quý trước tiêu cực:** Lợi suất của quý liền trước đó là âm (`return_prev_q`: -0.042), cho thấy sự thiếu nhất quán trong hiệu suất giữa các kỳ.
+*   **Thiếu bằng chứng định tính:** Phân tích này thiếu hoàn toàn bằng chứng từ tin tức (`data_quality_flags.news_evidence_removed_for_ablation`: true). Các yếu tố cơ bản, sự kiện doanh nghiệp hoặc tin tức vĩ mô có thể ảnh hưởng đến cổ phiếu đã không được xem xét.
+
+#### **5. Trigger theo dõi**
+*   **Chỉ báo RSI:** Theo dõi chặt chẽ chỉ số RSI (`rsi_end_q`). Một sự sụt giảm mạnh từ vùng quá mua có thể là tín hiệu suy yếu động lượng.
+*   **Giá và đường SMA20:** Quan sát vị thế của giá so với đường trung bình động 20 ngày (`price_vs_sma20`). Việc giá cắt xuống dưới đường này có thể báo hiệu sự thay đổi trong xu hướng ngắn hạn.
+*   **Khối lượng giao dịch:** Theo dõi sự thay đổi về khối lượng (`volume_change_q`). Khối lượng giảm dần trong một xu hướng tăng có thể là dấu hiệu suy yếu.
+
+#### **6. Thời điểm review**
+Dựa trên chân trời của tín hiệu (`holding_horizon`), cần xem xét lại vị thế vào cuối quý kế tiếp (Q2 2025), hoặc sớm hơn nếu một trong các trigger theo dõi được kích hoạt.
+
+#### **7. Kết luận hỗ trợ quyết định**
+Tín hiệu từ mô hình đưa ra một trường hợp mạnh mẽ dựa trên động lượng kỹ thuật ngắn hạn. Các yếu tố hỗ trợ đều cho thấy một xu hướng tăng giá rõ ràng và được xác nhận bởi khối lượng. Tuy nhiên, các rủi ro là rất cụ thể và đáng kể, bao gồm trạng thái quá mua cực đoan và biến động cao. Việc thiếu vắng hoàn toàn thông tin định tính (tin tức) là một hạn chế lớn, khiến quyết định chỉ có thể dựa trên một phần của bức tranh tổng thể. Cần cân nhắc sự đánh đổi giữa động lượng kỹ thuật mạnh và rủi ro điều chỉnh cao.
+
+#### **8. Disclaimer**
+Tài liệu này được tạo ra cho mục đích nghiên cứu học thuật và không cấu thành khuyến nghị đầu tư. Phân tích chỉ dựa trên dữ liệu được cung cấp trong "evidence pack" tính đến ngày 31-03-2025. Các mô hình dự báo có những hạn chế và hiệu suất trong quá khứ không đảm bảo cho kết quả trong tương lai. Người đọc nên tự thực hiện các phân tích của riêng mình.
+
+---
+
+## 2025Q1_SHB_04
+
+Chắc chắn rồi, đây là decision card cho SHB dựa trên evidence pack được cung cấp.
+
+***
+
+### **Decision Card: SHB**
+
+**Decision ID:** 2025Q1_SHB_04
+**Ngày quyết định:** 31/03/2025
+**Kỳ phân tích:** Q1/2025
+
+---
+
+#### **1. Tóm tắt tín hiệu**
+Mô hình máy học (`ml_signal`) đưa ra tín hiệu "Ứng viên Mua" (Buy Candidate) cho cổ phiếu SHB. Tín hiệu này có xác suất dự báo tăng (`pred_proba_up`) ở mức rất cao là 0.997 và xếp thứ 4 (`rank_in_period`) trong các tín hiệu của kỳ. Tín hiệu được tạo ra hoàn toàn dựa trên dữ liệu kỹ thuật.
+
+#### **2. Luận điểm đầu tư chính**
+Luận điểm chính dựa trên đà tăng giá kỹ thuật rất mạnh mẽ trong quý gần nhất, được xác nhận bởi sự gia tăng đáng kể của khối lượng giao dịch và các chỉ báo động lượng tích cực. Tuy nhiên, các chỉ số cho thấy rủi ro quá mua rõ rệt và biến động giá cao, đòi hỏi sự cẩn trọng. Toàn bộ phân tích này thiếu vắng thông tin định tính từ tin tức hay phân tích cơ bản.
+
+#### **3. Yếu tố hỗ trợ**
+*   **Đà tăng giá mạnh trong quý:** Lợi suất trong quý đạt 34.8% (`return_q`), cho thấy sức mạnh xu hướng vượt trội trong ngắn hạn.
+*   **Động lượng ngắn hạn tích cực:** Giá tại cuối kỳ cao hơn 11.4% so với đường trung bình động 20 ngày (`price_vs_sma20`) và chỉ báo MACD histogram trung bình dương (`macd_hist_mean_q`), củng cố cho xu hướng tăng.
+*   **Xác nhận từ khối lượng:** Khối lượng giao dịch trong quý tăng 133.4% so với quý trước (`volume_change_q`), thể hiện sự quan tâm gia tăng của thị trường và ủng hộ cho đà tăng giá.
+*   **Tín hiệu mô hình mạnh:** Tín hiệu từ mô hình máy học có độ tin cậy thống kê cao (`pred_proba_up`: 0.997).
+
+#### **4. Yếu tố cần lưu ý / rủi ro**
+*   **Rủi ro quá mua (Overbought):** Chỉ số RSI cuối kỳ ở mức 80.3 (`rsi_end_q`), cao hơn đáng kể so với ngưỡng quá mua thông thường (70). Đây là yếu tố dự báo quan trọng nhất của mô hình và cũng là một rủi ro tiềm tàng về khả năng điều chỉnh giá.
+*   **Biến động giá cao:** Biên độ giá trong quý là 37.2% (`price_range_q`), hàm ý mức độ biến động và rủi ro cao.
+*   **Hiệu suất quá khứ chưa ổn định:** Lợi suất của các quý trước đó là âm (`return_prev_q`: -7.3%, `return_2q_ago`: -1.0%), cho thấy đà tăng mạnh hiện tại là một sự đảo chiều gần đây, chưa phải xu hướng bền vững trong dài hạn.
+*   **Thiếu bằng chứng định tính:** Bằng chứng cho quyết định này hoàn toàn dựa trên dữ liệu kỹ thuật. Không có thông tin từ tin tức để hỗ trợ hay phản biện luận điểm này (`data_quality_flags: news_evidence_removed_for_ablation`).
+
+#### **5. Trigger theo dõi**
+*   **Chỉ báo RSI:** Theo dõi dấu hiệu RSI giảm xuống dưới ngưỡng 70, có thể báo hiệu đà tăng đang hạ nhiệt.
+*   **Vị trí giá so với SMA20:** Theo dõi việc giá có duy trì được trên đường SMA20 hay không. Việc giá cắt xuống dưới đường này có thể là tín hiệu suy yếu xu hướng.
+*   **Khối lượng giao dịch:** Theo dõi sự sụt giảm của khối lượng giao dịch trong các phiên tăng giá, có thể là dấu hiệu cho thấy đà tăng đang yếu đi.
+
+#### **6. Thời điểm review**
+Theo định kỳ hàng quý hoặc khi có sự thay đổi lớn trong các trigger đã nêu. (`holding_horizon`: next_quarter_or_period_return_in_signals).
+
+#### **7. Kết luận hỗ trợ quyết định**
+SHB thể hiện một tín hiệu kỹ thuật tăng giá rất mạnh mẽ dựa trên động lượng và khối lượng trong quý 1/2025. Các yếu tố hỗ trợ đều chỉ ra một xu hướng tăng giá rõ rệt trong ngắn hạn. Tuy nhiên, rủi ro trọng yếu đến từ trạng thái quá mua (RSI cao) và biến động giá lớn, có thể dẫn đến các đợt điều chỉnh. Sự thiếu vắng hoàn toàn của các yếu tố hỗ trợ từ phân tích cơ bản hay tin tức đòi hỏi sự thận trọng cao. Quyết định cần cân nhắc giữa tiềm năng tiếp diễn đà tăng theo quán tính và rủi ro điều chỉnh kỹ thuật trong ngắn hạn.
+
+#### **8. Disclaimer**
+Tài liệu này chỉ nhằm mục đích nghiên cứu học thuật và hỗ trợ quyết định, không phải là một khuyến nghị đầu tư. Thông tin chỉ dựa trên dữ liệu được cung cấp. Quyết định đầu tư cuối cùng thuộc về người sử dụng.
+
+---
+
+## 2025Q1_BSI_05
+
+Chắc chắn rồi, đây là decision card cho mã BSI dựa trên evidence pack được cung cấp.
+
+***
+
+### **Decision Card: BSI**
+
+| **Decision ID** | 2025Q1_BSI_05 |
+| :--- | :--- |
+| **Ngày ra quyết định** | 2025-03-31 |
+| **Mã cổ phiếu** | BSI |
+| **Chân trời đầu tư** | Kỳ tiếp theo |
+
+---
+
+#### **1. Tóm tắt tín hiệu**
+
+Mô hình học máy (`technical_Config_A_from_existing_pipeline`) tạo ra tín hiệu **"Ứng viên Mua" (Buy Candidate)** cho BSI. Tín hiệu này có xác suất dự báo xu hướng tăng rất cao (`pred_proba_up`: 0.997) và xếp hạng cao trong kỳ (`rank_in_period`: 5). Cần lưu ý rằng tín hiệu này hoàn toàn dựa trên các chỉ báo kỹ thuật; **bằng chứng về tin tức/cơ bản đã bị loại bỏ** trong gói dữ liệu này (`data_quality_flags.news_evidence_removed_for_ablation`).
+
+#### **2. Luận điểm đầu tư chính**
+
+Tín hiệu tích cực được thúc đẩy bởi sự hội tụ của nhiều yếu tố động lượng kỹ thuật mạnh trong kỳ hiện tại. Các chỉ báo chính như RSI, MACD, và lợi suất trong kỳ đều cho thấy xu hướng tăng giá đang chiếm ưu thế, được hỗ trợ bởi sự gia tăng về khối lượng giao dịch. Tuy nhiên, luận điểm này cần được cân nhắc trong bối cảnh lợi suất âm của kỳ trước và mức độ biến động giá cao, cùng với việc thiếu hoàn toàn thông tin định tính để xác thực.
+
+#### **3. Yếu tố hỗ trợ**
+
+*   **Động lượng tăng giá mạnh mẽ trong kỳ:** Cổ phiếu ghi nhận mức lợi suất dương đáng kể trong quý này, là một trong những yếu tố chính cho tín hiệu tích cực.
+    *   *Evidence:* `return_q` (0.190)
+*   **Các chỉ báo động lượng ủng hộ xu hướng tăng:** Cả chỉ báo RSI và MACD đều ở vùng tích cực, cho thấy sức mạnh của xu hướng hiện tại.
+    *   *Evidence:* `rsi_end_q` (59.7), `macd_hist_mean_q` (0.079)
+*   **Giá duy trì trên đường trung bình ngắn hạn:** Giá tại cuối kỳ cao hơn đường trung bình động 20 kỳ (SMA20), củng cố cho xu hướng tăng ngắn hạn.
+    *   *Evidence:* `price_vs_sma20` (0.020)
+*   **Sự quan tâm của thị trường gia tăng:** Khối lượng giao dịch trong kỳ đã tăng lên, cho thấy sự chú ý ngày càng tăng đối với cổ phiếu.
+    *   *Evidence:* `volume_change_q` (0.171)
+
+#### **4. Yếu tố cần lưu ý / rủi ro**
+
+*   **Thiếu bằng chứng định tính:** Không có thông tin về tin tức, sự kiện, hay phân tích cơ bản để hỗ trợ cho tín hiệu kỹ thuật. Đây là một thiếu sót thông tin trọng yếu.
+    *   *Evidence:* `data_quality_flags.news_evidence_removed_for_ablation: true`
+*   **Biến động giá cao:** Biên độ dao động giá trong kỳ ở mức cao, hàm ý rủi ro biến động lớn hơn.
+    *   *Evidence:* `price_range_q` (0.352)
+*   **Kết quả tiêu cực của kỳ trước:** Lợi suất của quý liền trước là âm, có thể là một tín hiệu cho thấy sự thiếu ổn định trong dài hạn hơn.
+    *   *Evidence:* `return_prev_q` (-0.065)
+
+#### **5. Trigger theo dõi**
+
+*   **Các chỉ báo động lượng suy yếu:** Theo dõi chỉ số RSI nếu giảm xuống dưới ngưỡng 50 hoặc MACD cắt xuống dưới đường tín hiệu.
+*   **Giá phá vỡ các ngưỡng hỗ trợ kỹ thuật:** Đặc biệt là khi giá cắt xuống dưới đường trung bình động SMA20 (`sma20_end`).
+*   **Sụt giảm khối lượng giao dịch:** Sự sụt giảm đột ngột trong khối lượng có thể báo hiệu sự suy yếu của xu hướng hiện tại.
+
+#### **6. Thời điểm review**
+
+Dựa trên chân trời đầu tư của tín hiệu (`holding_horizon`), đề xuất xem xét lại vị thế vào **cuối Quý 2 năm 2025**, hoặc sớm hơn nếu một trong các trigger theo dõi được kích hoạt.
+
+#### **7. Kết luận hỗ trợ quyết định**
+
+Tín hiệu từ mô hình học máy đưa ra một luận điểm mạnh mẽ dựa trên phân tích kỹ thuật, với nhiều chỉ báo động lượng đồng thuận ủng hộ một xu hướng tăng giá tiềm năng. Tuy nhiên, quyết định cần được cân nhắc hết sức thận trọng do **(1)** mức độ biến động cao, **(2)** hiệu suất tiêu cực trong quá khứ gần, và quan trọng nhất là **(3)** sự thiếu vắng hoàn toàn các bằng chứng định tính (tin tức, cơ bản) để xác thực. Tín hiệu này thuần túy là định lượng và chưa được kiểm chứng qua lăng kính cơ bản.
+
+#### **8. Disclaimer**
+
+*Tài liệu này chỉ nhằm mục đích nghiên cứu học thuật và hỗ trợ ra quyết định, không phải là một khuyến nghị đầu tư. Phân tích này chỉ dựa trên dữ liệu được cung cấp trong "evidence pack". Nhà đầu tư cần tự thực hiện nghiên cứu và thẩm định của riêng mình trước khi đưa ra bất kỳ quyết định đầu tư nào.*
+
+---
+
+## 2025Q2_STB_01
+
+Chắc chắn rồi, đây là decision card cho STB dựa trên evidence pack bạn đã cung cấp.
+
+***
+
+### **Decision Card: STB**
+
+**Decision ID:** 2025Q2_STB_01
+**Ngày quyết định:** 2025-06-30
+**Kỳ phân tích:** 2025Q2
+
+---
+
+#### **1. Tóm tắt tín hiệu**
+
+Mô hình học máy (ML) đưa ra tín hiệu **"Buy Candidate"** cho STB với xác suất dự báo xu hướng tăng rất cao (**pred_proba_up**: 0.9988). Tín hiệu này được xếp hạng cao nhất (**rank_in_period**: 1) trong universum phân tích của kỳ này.
+
+#### **2. Luận điểm đầu tư chính**
+
+Luận điểm chính dựa trên tín hiệu kỹ thuật rất mạnh, cho thấy động lượng tăng giá tích cực, nhất quán qua nhiều kỳ và được xác nhận bởi sự gia tăng đáng kể của khối lượng giao dịch. Tuy nhiên, tín hiệu này hoàn toàn dựa trên dữ liệu định lượng và không có sự hỗ trợ từ các bằng chứng tin tức hay phân tích cơ bản trong gói dữ liệu này.
+
+#### **3. Yếu tố hỗ trợ**
+
+*   **Động lượng giá mạnh và nhất quán:**
+    *   Lợi suất trong kỳ hiện tại rất tích cực (**return_q**: 17.6%).
+    *   Động lượng đã duy trì từ các kỳ trước (**return_prev_q**: 3.5%, **return_2q_ago**: 10.1%).
+    *   Các chỉ báo động lượng như RSI và MACD đều cho thấy xu hướng tăng:
+        *   RSI cuối kỳ ở mức cao (**rsi_end_q**: 69.7), đây là yếu tố có trọng số lớn nhất trong mô hình.
+        *   MACD histogram trung bình dương (**macd_hist_mean_q**: 0.091).
+*   **Xu hướng giá ngắn hạn tích cực:**
+    *   Giá đóng cửa cao hơn 4.3% so với đường trung bình động 20 ngày (**price_vs_sma20**: 0.043).
+*   **Sự quan tâm của thị trường gia tăng:**
+    *   Khối lượng giao dịch trong kỳ tăng mạnh 78% (**volume_change_q**: 0.780), cho thấy sự đồng thuận của thị trường với xu hướng giá.
+
+#### **4. Yếu tố cần lưu ý / rủi ro**
+
+*   **Thiếu bằng chứng định tính:**
+    *   Phân tích này hoàn toàn dựa trên tín hiệu ML và dữ liệu kỹ thuật (**card_input_variant**: `ml_only`).
+    *   Gói evidence này **không bao gồm bất kỳ thông tin tin tức nào** để đánh giá bối cảnh cơ bản hoặc các sự kiện cụ thể của doanh nghiệp (**data_quality_flags**: `news_evidence_removed_for_ablation` = true).
+*   **Rủi ro từ chỉ báo kỹ thuật:**
+    *   Chỉ số RSI (**rsi_end_q**: 69.7) đang tiến gần đến vùng quá mua (thường được xác định là >70), có thể hàm ý rủi ro điều chỉnh trong ngắn hạn.
+    *   Cổ phiếu đã ghi nhận mức biến động giá cao trong kỳ (**price_range_q**: 0.375), cho thấy rủi ro biến động là đáng kể.
+
+#### **5. Trigger theo dõi**
+
+*   **Chỉ báo RSI:** Theo dõi chặt chẽ diễn biến của RSI, đặc biệt là các tín hiệu phân kỳ hoặc khi chỉ báo đi vào vùng quá mua và có dấu hiệu đảo chiều.
+*   **Khối lượng giao dịch:** Quan sát liệu khối lượng giao dịch có duy trì ở mức cao để hỗ trợ xu hướng giá hay không.
+*   **Vị thế so với SMA20:** Theo dõi liệu giá có tiếp tục duy trì trên đường trung bình động 20 ngày (**sma20_end**) hay không.
+
+#### **6. Thời điểm review**
+
+Dựa trên khung thời gian của tín hiệu (**holding_horizon**), cần xem xét lại quyết định vào cuối kỳ tiếp theo (2025Q3) hoặc nếu một trong các trigger theo dõi cho thấy sự thay đổi xu hướng rõ rệt.
+
+#### **7. Kết luận hỗ trợ quyết định**
+
+Tín hiệu ML cung cấp một chỉ dấu rất mạnh mẽ về mặt kỹ thuật cho một xu hướng tăng giá tiềm năng trong ngắn hạn, được hỗ trợ bởi nhiều chỉ báo đồng thuận. Tuy nhiên, người ra quyết định cần nhận thức rõ rằng đây là một luận điểm thuần túy kỹ thuật. Các rủi ro chính bao gồm khả năng cổ phiếu bước vào vùng quá mua và mức độ biến động giá cao. Việc thiếu vắng hoàn toàn các yếu tố phân tích cơ bản hoặc tin tức là một hạn chế lớn cần được cân nhắc.
+
+#### **8. Disclaimer**
+
+*Tài liệu này chỉ nhằm mục đích nghiên cứu và hỗ trợ quyết định nội bộ. Thông tin được trình bày dựa trên dữ liệu giới hạn trong "evidence pack" và không cấu thành khuyến nghị đầu tư. Phân tích này không đảm bảo hiệu suất trong tương lai.*
+
+---
+
+## 2025Q2_DXG_02
+
+Chắc chắn rồi, đây là decision card cho DXG dựa trên evidence pack bạn cung cấp.
+
+***
+
+### **Decision Card: DXG**
+
+**ID Quyết định:** 2025Q2_DXG_02
+**Ngày Phân tích:** 2025-06-30
+**Ticker:** DXG
+
+---
+
+#### **1. Tóm tắt tín hiệu**
+
+Tín hiệu từ mô hình học máy (`ml_signal`) cho DXG là **"Ứng viên Mua" (Buy Candidate)**, dựa hoàn toàn trên phân tích kỹ thuật. Tín hiệu này có xác suất dự báo xu hướng tăng rất cao (`pred_proba_up`: 0.998) và xếp hạng thứ 2 trong số các tín hiệu được phân tích trong kỳ (`rank_in_period`: 2).
+
+**Lưu ý quan trọng:** Phân tích này không bao gồm các yếu tố định tính từ tin tức, do dữ liệu này đã bị loại bỏ (`data_quality_flags: news_evidence_removed_for_ablation`).
+
+#### **2. Luận điểm đầu tư chính**
+
+Mô hình nhận diện một đà tăng trưởng kỹ thuật mạnh mẽ và nhất quán trong ngắn hạn. Luận điểm này được củng cố bởi hiệu suất giá tích cực trong quý hiện tại và quý trước, đi kèm với sự gia tăng của khối lượng giao dịch và các chỉ báo động lượng tích cực.
+
+#### **3. Yếu tố hỗ trợ**
+
+*   **Hiệu suất giá ngắn hạn mạnh mẽ:** Lợi suất trong quý hiện tại rất tích cực (`return_q`: 0.247) và được củng cố bởi lợi suất dương của quý trước (`return_prev_q`: 0.0496).
+*   **Động lượng xu hướng tích cực:**
+    *   Chỉ báo MACD cho thấy động lượng tăng (`macd_hist_mean_q`: 0.0188).
+    *   Giá đang giao dịch cao hơn đường trung bình động 20 ngày (`price_vs_sma20`: 0.0459).
+*   **Sự quan tâm của thị trường gia tăng:** Khối lượng giao dịch trong quý có sự gia tăng đáng kể (`volume_change_q`: 0.49), cho thấy sự tham gia tích cực hơn.
+*   **Driver chính của mô hình:** Chỉ báo RSI cuối kỳ (`rsi_end_q`: 75.33) là yếu tố có trọng số cao nhất đóng góp vào tín hiệu tích cực của mô hình.
+
+#### **4. Yếu tố cần lưu ý / rủi ro**
+
+*   **Rủi ro quá mua (Overbought):** Chỉ báo RSI đang ở mức 75.33 (`rsi_end_q`), nằm trong vùng quá mua. Đây là một rủi ro tiềm ẩn cho khả năng điều chỉnh giá trong ngắn hạn, dù nó cũng là driver chính cho tín hiệu tích cực.
+*   **Biến động giá cao:** Biên độ giá trong quý tương đối lớn (`price_range_q`: 0.473), cho thấy mức độ rủi ro biến động cao.
+*   **Hiệu suất quá khứ còn yếu:** Lợi suất của 2 quý trước đó là âm (`return_2q_ago`: -0.0658), cho thấy xu hướng tăng mạnh chỉ mới hình thành gần đây.
+*   **Thiếu bằng chứng định tính:** Toàn bộ phân tích chỉ dựa trên dữ liệu kỹ thuật. Việc không có thông tin từ tin tức (`news_evidence_removed_for_ablation`: true) là một hạn chế, khiến việc đánh giá toàn diện bối cảnh kinh doanh của doanh nghiệp không thể thực hiện được.
+
+#### **5. Trigger theo dõi**
+
+*   Diễn biến của chỉ báo RSI: Theo dõi liệu RSI có tiếp tục duy trì ở vùng quá mua hay có dấu hiệu đảo chiều.
+*   Sự thay đổi của các chỉ báo động lượng như MACD và vị thế của giá so với đường SMA20.
+*   Duy trì khối lượng giao dịch: Khối lượng giao dịch có tiếp tục ở mức cao để hỗ trợ cho xu hướng giá hiện tại hay không.
+
+#### **6. Thời điểm review**
+
+Dựa trên khung thời gian của tín hiệu (`holding_horizon`), quyết định này cần được xem xét lại vào cuối quý tiếp theo, hoặc khi các trigger theo dõi có sự thay đổi trọng yếu.
+
+#### **7. Kết luận hỗ trợ quyết định**
+
+Mô hình cung cấp một tín hiệu kỹ thuật rất mạnh mẽ, ủng hộ khả năng tiếp diễn xu hướng tăng trong ngắn hạn. Tuy nhiên, người ra quyết định cần nhận thức rõ các rủi ro đi kèm: trạng thái quá mua rõ rệt có thể dẫn đến điều chỉnh, mức độ biến động giá cao và sự thiếu vắng hoàn toàn của các yếu tố phân tích định tính. Quyết định cần cân nhắc kỹ lưỡng giữa đà tăng trưởng kỹ thuật và các rủi ro đã được xác định.
+
+#### **8. Disclaimer**
+
+Tài liệu này được tạo ra cho mục đích nghiên cứu học thuật và hỗ trợ quyết định, không cấu thành một khuyến nghị đầu tư. Phân tích chỉ dựa trên các dữ liệu được cung cấp trong "evidence pack" tính đến ngày 2025-06-30 và không sử dụng bất kỳ thông tin nào khác.
+
+---
+
+## 2025Q2_VBB_03
+
+Chắc chắn rồi, đây là decision card cho VBB dựa trên evidence pack bạn đã cung cấp.
+
+***
+
+### **Decision Card: VBB**
+
+**Decision ID:** 2025Q2_VBB_03
+**Ngày quyết định:** 2025-06-30
+**Kỳ phân tích:** 2025-Q2
+
+---
+
+#### **1. Tóm tắt tín hiệu**
+
+Mô hình học máy (`technical_Config_A_from_existing_pipeline`) đã tạo ra tín hiệu **"Ứng viên Mua" (Buy Candidate)** cho mã VBB. Tín hiệu này có xác suất dự báo xu hướng tăng rất cao (`pred_proba_up`: 0.998) và xếp hạng 3 trong vũ trụ phân tích (`rank_in_period`), cho thấy đây là một trong những tín hiệu mạnh nhất do mô hình tạo ra trong kỳ này.
+
+#### **2. Luận điểm đầu tư chính**
+
+Luận điểm chủ yếu dựa trên các chỉ báo kỹ thuật cho thấy động lượng giá tích cực mạnh mẽ và được duy trì qua nhiều quý liên tiếp. Tín hiệu được củng cố bởi sự gia tăng đáng kể về khối lượng giao dịch. Tuy nhiên, phân tích này hoàn toàn dựa trên dữ liệu định lượng và thiếu bối cảnh từ các bằng chứng định tính (tin tức).
+
+#### **3. Yếu tố hỗ trợ**
+
+*   **Động lượng giá duy trì qua nhiều kỳ:** Cổ phiếu ghi nhận lợi suất dương trong ba quý liên tiếp gần nhất, cho thấy xu hướng tăng có tính bền vững.
+    *   `return_q`: ~18.5%
+    *   `return_prev_q`: ~8.8%
+    *   `return_2q_ago`: ~12.8%
+*   **Các chỉ báo xu hướng ngắn hạn mạnh:** Giá đang ở trên đường trung bình động 20 ngày và các chỉ báo động lượng như MACD đều dương, ủng hộ xu hướng tăng trong ngắn hạn.
+    *   `price_vs_sma20`: Giá cao hơn SMA20 khoảng 5.1%.
+    *   `macd_hist_mean_q`: 0.0051 (dương).
+*   **Sức mạnh tương đối (RSI) cao:** Chỉ báo RSI ở mức 65.5, cho thấy sức mua mạnh. Đây là yếu tố có trọng số cao nhất trong mô hình.
+    *   `rsi_end_q`: 65.46
+*   **Khối lượng giao dịch gia tăng:** Khối lượng giao dịch trong quý tăng đáng kể (~121%) so với quý trước, thể hiện sự quan tâm của thị trường đối với xu hướng giá hiện tại.
+    *   `volume_change_q`: 1.207
+
+#### **4. Yếu tố cần lưu ý / rủi ro**
+
+*   **Biến động giá cao:** Biên độ dao động giá trong quý khá lớn (~37%), hàm ý mức độ rủi ro biến động cao.
+    *   `price_range_q`: 0.3689
+*   **Thiếu bằng chứng định tính:** Phân tích này không bao gồm dữ liệu tin tức hay sự kiện doanh nghiệp (`news_evidence_removed_for_ablation`: true). Các yếu tố cơ bản hoặc tin tức bất ngờ có thể không được phản ánh trong tín hiệu kỹ thuật.
+*   **RSI tiến gần vùng quá mua:** Mặc dù là yếu tố hỗ trợ, chỉ số RSI đang ở mức cao và có thể tiến vào vùng quá mua (thường trên 70), có khả năng dẫn đến các đợt điều chỉnh kỹ thuật.
+    *   `rsi_end_q`: 65.46
+
+#### **5. Trigger theo dõi**
+
+*   **Tín hiệu đảo chiều kỹ thuật:** Theo dõi các chỉ báo động lượng như RSI đi vào vùng quá mua và sau đó suy yếu, hoặc đường giá cắt xuống dưới các mốc trung bình động quan trọng (ví dụ: `sma20_end`).
+*   **Khối lượng giao dịch:** Sự sụt giảm đáng kể của khối lượng giao dịch trong các phiên tăng giá có thể là dấu hiệu suy yếu của xu hướng.
+*   **Thông tin định tính:** Bất kỳ tin tức hoặc sự kiện nào liên quan đến VBB được công bố cần được xem xét cẩn thận vì chúng chưa được đưa vào phân tích này.
+
+#### **6. Thời điểm review**
+
+Dựa trên khung thời gian của tín hiệu (`holding_horizon`), quyết định này nên được xem xét lại vào cuối quý tiếp theo (Q3-2025) hoặc sớm hơn nếu một trong các "trigger theo dõi" được kích hoạt.
+
+#### **7. Kết luận hỗ trợ quyết định**
+
+Tín hiệu cho VBB thể hiện một luận điểm kỹ thuật rất mạnh mẽ, được củng cố bởi động lượng giá kéo dài và khối lượng giao dịch gia tăng. Tuy nhiên, nhà đầu tư cần cân nhắc rủi ro đến từ biến động giá cao và sự thiếu vắng hoàn toàn của thông tin định tính. Quyết định đầu tư sẽ phụ thuộc vào việc chấp nhận một vị thế dựa thuần túy vào phân tích kỹ thuật và mức độ chịu đựng rủi ro biến động.
+
+#### **8. Disclaimer**
+
+Tài liệu này được tạo ra cho mục đích nghiên cứu học thuật và không phải là lời khuyên đầu tư. Các phân tích và tín hiệu hoàn toàn dựa trên dữ liệu được cung cấp trong "evidence pack". Thông tin có thể không đầy đủ và không bao gồm tất cả các yếu tố có thể ảnh hưởng đến hiệu suất tài sản. Người đọc chịu hoàn toàn trách nhiệm cho các quyết định của mình.
+
+---
+
+## 2025Q2_MSN_04
+
+Chắc chắn rồi. Dưới đây là decision card cho mã cổ phiếu MSN dựa trên evidence pack được cung cấp.
+
+***
+
+### **Decision Card: Phân tích Tín hiệu Đầu tư**
+
+**1. Tóm tắt tín hiệu**
+- **Mã cổ phiếu:** MSN
+- **Ngày quyết định:** 2025-06-30
+- **Nguồn tín hiệu:** Mô hình học máy (`card_input_variant: ml_only`)
+- **Tín hiệu:** "Ứng viên Mua" (Buy Candidate) với xác suất dự báo xu hướng tăng (`pred_proba_up`) là 99.7%.
+- **Xếp hạng:** Tín hiệu xếp thứ 4 (`rank_in_period`) trong kỳ phân tích Q2-2025.
+- **Chân trời đầu tư:** Quý tiếp theo (`holding_horizon`).
+
+**2. Luận điểm đầu tư chính**
+Luận điểm hoàn toàn dựa trên các chỉ báo kỹ thuật. Mô hình nhận diện một động lượng tăng giá rất mạnh trong quý gần nhất (`return_q`), được củng cố bởi sự gia tăng đáng kể về khối lượng giao dịch (`volume_change_q`) và các chỉ báo xu hướng tích cực (`price_vs_sma20`, `macd_hist_mean_q`). Tuy nhiên, cần nhấn mạnh rằng đây là tín hiệu thuần túy kỹ thuật và thiếu bằng chứng định tính do dữ liệu tin tức đã bị loại bỏ (`data_quality_flags.news_evidence_removed_for_ablation`).
+
+**3. Yếu tố hỗ trợ**
+- **Động lượng giá trong kỳ rất mạnh:** Lợi suất trong quý hiện tại đạt 16.0% (`return_q`), là một driver quan trọng cho tín hiệu tăng.
+- **Giá vượt trội so với xu hướng ngắn hạn:** Giá cổ phiếu đang cao hơn 13.5% so với đường trung bình động 20 kỳ (`price_vs_sma20`), cho thấy một xu hướng tăng vững chắc.
+- **Động lượng được xác nhận:** Chỉ báo MACD histogram trung bình trong kỳ có giá trị dương (`macd_hist_mean_q`), ủng hộ xu hướng tăng.
+- **Khối lượng giao dịch tăng đột biến:** Thay đổi khối lượng trong quý tăng 51.5% (`volume_change_q`), phản ánh sự quan tâm mạnh mẽ từ thị trường.
+
+**4. Yếu tố cần lưu ý / rủi ro**
+- **Rủi ro Quá mua (Overbought) rất cao:** Chỉ số RSI cuối kỳ ở mức 85.0 (`rsi_end_q`), nằm sâu trong vùng quá mua. Đây là driver quan trọng nhất của mô hình và được gắn cờ "positive_but_overbought_risk", hàm ý khả năng có một đợt điều chỉnh giá.
+- **Biến động giá lớn:** Biên độ giá trong kỳ lên tới 42.9% (`price_range_q`), cho thấy mức độ biến động và rủi ro cao.
+- **Thành quả yếu trong quá khứ:** Lợi suất của hai quý trước đó đều âm (`return_prev_q` và `return_2q_ago`), cho thấy đà tăng mạnh mẽ hiện tại xuất hiện sau một giai đoạn hoạt động kém.
+- **Thiếu bằng chứng định tính:** Toàn bộ bằng chứng từ tin tức không có trong gói dữ liệu này (`data_quality_flags.news_evidence_removed_for_ablation`). Điều này tạo ra một điểm mù trong việc đánh giá các yếu tố cơ bản hoặc sự kiện cụ thể có thể ảnh hưởng đến cổ phiếu.
+
+**5. Trigger theo dõi**
+- **Chỉ báo RSI:** Theo dõi sự suy yếu của RSI, đặc biệt là khi chỉ báo này giảm xuống dưới ngưỡng 70.
+- **Giá và SMA20:** Quan sát liệu giá có duy trì được trên đường trung bình động 20 kỳ (`sma20_end`) hay không.
+- **Khối lượng giao dịch:** Bất kỳ sự sụt giảm đột ngột nào về khối lượng trong các phiên tăng giá có thể là dấu hiệu suy yếu của xu hướng.
+
+**6. Thời điểm review**
+Dựa trên chân trời của tín hiệu (`holding_horizon`), cần xem xét lại vị thế vào cuối quý sau (Q3-2025) hoặc khi một trong các trigger theo dõi được kích hoạt.
+
+**7. Kết luận hỗ trợ quyết định**
+Mô hình kỹ thuật cung cấp một tín hiệu tăng giá với độ tin cậy rất cao, dựa trên động lượng bùng nổ trong ngắn hạn. Tuy nhiên, các rủi ro đi kèm cũng rất rõ ràng, đặc biệt là tình trạng quá mua cực độ và biến động giá cao. Việc thiếu vắng hoàn toàn thông tin định tính là một hạn chế lớn, khiến quyết định chỉ có thể dựa trên phân tích kỹ thuật. Nhà phân tích cần cân nhắc kỹ lưỡng giữa sức mạnh của tín hiệu động lượng và các rủi ro kỹ thuật hiện hữu.
+
+**8. Disclaimer**
+Báo cáo này chỉ nhằm mục đích nghiên cứu học thuật và hỗ trợ quyết định nội bộ. Thông tin được cung cấp dựa hoàn toàn trên gói bằng chứng (evidence pack) tại ngày quyết định và không cấu thành khuyến nghị đầu tư. Không có cam kết nào về lợi nhuận hoặc hiệu suất trong tương lai.
+
+---
+
+## 2025Q2_VND_05
+
+Chắc chắn rồi. Dưới đây là decision card được tạo từ evidence pack bạn đã cung cấp, tuân thủ tất cả các ràng buộc.
+
+***
+
+### **Decision Card: Phân Tích Cổ Phiếu VND**
+
+| **Decision ID** | **Ticker** | **Ngày Quyết Định** | **Chu Kỳ** |
+| :--- | :--- | :--- | :--- |
+| 2025Q2_VND_05 | VND | 2025-06-30 | 2025Q2 |
+
+---
+
+#### **1. Tóm tắt tín hiệu**
+
+Mô hình học máy (`ml_signal`) tạo ra một tín hiệu tích cực mạnh mẽ, phân loại cổ phiếu VND là "Ứng viên Mua" (`signal_class`). Tín hiệu này có xác suất dự báo xu hướng tăng là 99.7% (`pred_proba_up`) và xếp thứ 5 trong vũ trụ phân tích cùng kỳ (`rank_in_period`). Cần lưu ý rằng tín hiệu này hoàn toàn dựa trên dữ liệu kỹ thuật; gói bằng chứng không bao gồm dữ liệu tin tức để phân tích định tính (`data_quality_flags`).
+
+#### **2. Luận điểm đầu tư chính**
+
+Luận điểm chính dựa trên tín hiệu kỹ thuật cho thấy một động lượng tăng giá mạnh mẽ và bền vững trong hai quý gần nhất. Điều này được thể hiện qua các chỉ báo xu hướng giá, sức mạnh tương đối (RSI) và sự gia tăng của khối lượng giao dịch. Tuy nhiên, luận điểm này cần được xem xét cùng với một số tín hiệu động lượng trái chiều và hiệu suất yếu hơn trong quá khứ xa hơn.
+
+#### **3. Yếu tố hỗ trợ**
+
+*   **Động lượng giá ngắn và trung hạn tích cực:** Cổ phiếu ghi nhận mức sinh lời dương trong quý hiện tại (+15.2%) và quý trước đó (+21.5%), cho thấy một xu hướng tăng giá nhất quán. (evidence: `return_q`, `return_prev_q`)
+*   **Sức mạnh thị trường chiếm ưu thế:** Chỉ số RSI cuối kỳ ở mức 65.9, phản ánh sức mua đang mạnh nhưng chưa đi vào vùng quá mua. Đây là yếu tố kỹ thuật có trọng số cao nhất trong mô hình. (evidence: `rsi_end_q`, `top_drivers`)
+*   **Xu hướng ngắn hạn được xác nhận:** Giá đóng cửa cuối kỳ cao hơn 5.2% so với đường trung bình động 20 ngày (SMA20), củng cố cho xu hướng tăng giá trong ngắn hạn. (evidence: `price_vs_sma20`)
+*   **Sự quan tâm của thị trường gia tăng:** Khối lượng giao dịch trong quý tăng 37.5%, cho thấy sự tham gia của thị trường đang hỗ trợ cho xu hướng giá hiện tại. (evidence: `volume_change_q`)
+
+#### **4. Yếu tố cần lưu ý / rủi ro**
+
+*   **Thiếu bằng chứng định tính:** Phân tích này hoàn toàn dựa trên các chỉ báo kỹ thuật. Gói bằng chứng không có dữ liệu tin tức để đánh giá các yếu tố cơ bản hoặc sự kiện cụ thể có thể ảnh hưởng đến công ty. (evidence: `data_quality_flags.news_evidence_removed_for_ablation`)
+*   **Tín hiệu động lượng xu hướng trái chiều:** Chỉ báo MACD histogram trung bình trong quý có giá trị âm (-0.011), cho thấy động lượng của xu hướng tăng có thể đang yếu đi hoặc không ổn định. (evidence: `macd_hist_mean_q`, `top_drivers`)
+*   **Hiệu suất quá khứ yếu:** Lợi suất của hai quý trước là âm (-18.5%), cho thấy giai đoạn tăng giá hiện tại diễn ra sau một thời kỳ sụt giảm. (evidence: `return_2q_ago`, `top_drivers`)
+
+#### **5. Trigger theo dõi**
+
+*   **Chỉ báo RSI:** Theo dõi chỉ số RSI có vượt ngưỡng 70 (quá mua) hoặc giảm xuống dưới 50 (động lượng yếu đi).
+*   **Chỉ báo MACD:** Quan sát xem MACD histogram có chuyển sang giá trị dương để xác nhận sự đồng thuận về động lượng hay không.
+*   **Tương quan Giá và SMA20:** Theo dõi diễn biến giá so với đường SMA20. Một cú cắt xuống dưới đường này có thể là tín hiệu suy yếu của xu hướng ngắn hạn.
+
+#### **6. Thời điểm review**
+
+Dựa trên khung thời gian của tín hiệu (`holding_horizon`), việc xem xét lại luận điểm này được đề xuất vào cuối quý tiếp theo (Quý 3 năm 2025), hoặc sớm hơn nếu một trong các trigger theo dõi được kích hoạt.
+
+#### **7. Kết luận hỗ trợ quyết định**
+
+Gói bằng chứng cung cấp một tín hiệu kỹ thuật rất mạnh mẽ, ủng hộ cho khả năng tiếp diễn xu hướng tăng trong ngắn hạn. Các yếu tố hỗ trợ chính đến từ động lượng giá và khối lượng giao dịch. Tuy nhiên, người ra quyết định cần nhận thức rõ rằng đây là một tín hiệu thuần túy kỹ thuật, thiếu vắng sự xác nhận từ các yếu tố định tính và có chứa một vài chỉ báo kỹ thuật trái chiều cần được theo dõi chặt chẽ.
+
+#### **8. Disclaimer**
+
+Tài liệu này được tạo ra cho mục đích nghiên cứu học thuật và hỗ trợ quá trình phân tích. Nội dung trong đây không cấu thành khuyến nghị đầu tư, tư vấn tài chính, hay lời chào mua/bán bất kỳ chứng khoán nào. Tất cả thông tin chỉ dựa trên "evidence pack" được cung cấp và không bao gồm bất kỳ dữ liệu bên ngoài nào.
+
+---
+
+## 2025Q3_LPB_01
+
+Chắc chắn rồi, đây là decision card cho LPB dựa trên evidence pack bạn đã cung cấp.
+
+***
+
+### **Decision Card: LPB**
+
+**ID Quyết định:** 2025Q3_LPB_01
+**Ngày Quyết định:** 2025-09-30
+**Chân trời đầu tư:** Kỳ báo cáo tiếp theo
+
+---
+
+#### **1. Tóm tắt tín hiệu**
+
+Tín hiệu từ mô hình Machine Learning (ML) cho LPB là **"Ứng viên Mua"** (`signal_class: 'Buy Candidate'`). Tín hiệu này có độ tin cậy dự báo xu hướng tăng rất cao (`pred_proba_up`: 0.9985) và là tín hiệu được xếp hạng cao nhất trong kỳ (`rank_in_period`: 1). Phân tích này hoàn toàn dựa trên các chỉ báo kỹ thuật do không có dữ liệu định tính trong evidence pack (`card_input_variant`: 'ml_only', `news_evidence_removed_for_ablation`: true).
+
+#### **2. Luận điểm đầu tư chính**
+
+Mô hình ML nhận diện một xu hướng tăng giá rất mạnh mẽ, được củng cố bởi động lượng tích cực kéo dài qua nhiều quý. Các yếu tố chính bao gồm lợi suất dương ấn tượng trong kỳ hiện tại, giá duy trì vững chắc trên đường trung bình động ngắn hạn và sự ủng hộ từ các chỉ báo momentum. Tuy nhiên, luận điểm này cần được cân nhắc với rủi ro đáng kể đến từ chỉ báo RSI đang ở vùng quá mua và mức độ biến động giá cao trong kỳ.
+
+#### **3. Yếu tố hỗ trợ**
+
+*   **Động lượng giá rất mạnh trong kỳ:** Lợi suất trong quý đạt mức rất cao (`return_q`: 0.5398), là yếu tố đóng góp chính cho tín hiệu tích cực.
+*   **Xu hướng tăng ngắn hạn được xác nhận:** Giá tại cuối kỳ cao hơn đáng kể so với đường trung bình động 20 ngày (`price_vs_sma20`: 0.0875).
+*   **Động lượng được duy trì từ các kỳ trước:** Lợi suất của quý trước và hai quý trước đều dương, cho thấy quán tính tăng giá (`return_prev_q`, `return_2q_ago`).
+*   **Momentum nội tại tích cực:** Chỉ báo MACD histogram trung bình dương, phản ánh động lượng tăng trưởng (`macd_hist_mean_q`: 0.1005).
+*   **Sự quan tâm của thị trường gia tăng:** Khối lượng giao dịch trong kỳ tăng đáng kể, cho thấy sự tham gia tích cực vào xu hướng hiện tại (`volume_change_q`: 0.3155).
+*   **Lưu ý quan trọng:** Không có bằng chứng định tính (tin tức, sự kiện) trong evidence pack để hỗ trợ phân tích này (`data_quality_flags: news_evidence_removed_for_ablation: true`).
+
+#### **4. Yếu tố cần lưu ý / rủi ro**
+
+*   **Rủi ro quá mua (Overbought):** Chỉ số RSI cuối kỳ ở mức cao (`rsi_end_q`: 73.88), nằm trong vùng quá mua. Đây là yếu tố kỹ thuật quan trọng nhất theo mô hình, cho thấy tiềm ẩn nguy cơ điều chỉnh giá ngắn hạn (`top_drivers`: `direction: 'positive_but_overbought_risk'`).
+*   **Biến động giá cao:** Biên độ giá trong kỳ ở mức cao (`price_range_q`: 0.4440), cho thấy mức độ biến động lớn và rủi ro đi kèm (`top_drivers`: `direction: 'risk_high_volatility'`).
+*   **Thiếu thông tin cơ bản và định tính:** Phân tích này chỉ dựa trên dữ liệu kỹ thuật. Hoàn toàn không có thông tin về sức khỏe tài chính, định giá hay các sự kiện của doanh nghiệp để đánh giá bối cảnh rộng hơn (`card_input_variant`: 'ml_only').
+
+#### **5. Trigger theo dõi**
+
+*   **Diễn biến của chỉ báo RSI:** Theo dõi chặt chẽ nếu RSI giảm xuống dưới ngưỡng 70, có thể là tín hiệu suy yếu của động lượng mua.
+*   **Vị thế của giá so với SMA20:** Quan sát liệu giá có duy trì được trên đường trung bình động 20 ngày hay không. Việc giá cắt xuống dưới đường này có thể là dấu hiệu đảo chiều xu hướng ngắn hạn.
+*   **Sự thay đổi của khối lượng giao dịch:** Khối lượng giao dịch giảm dần trong khi giá đi ngang hoặc giảm có thể xác nhận sự suy yếu của xu hướng tăng.
+
+#### **6. Thời điểm review**
+
+Dựa trên `holding_horizon` của tín hiệu, cần xem xét và đánh giá lại quyết định này vào **cuối quý 4 năm 2025**, hoặc sớm hơn nếu một trong các trigger theo dõi được kích hoạt.
+
+#### **7. Kết luận hỗ trợ quyết định**
+
+Tín hiệu ML cho LPB chỉ ra một cơ hội tiềm năng dựa trên động lượng kỹ thuật cực kỳ mạnh mẽ. Các chỉ báo về xu hướng và lợi suất đều rất tích cực. Tuy nhiên, nhà đầu tư cần nhận thức rõ ràng về rủi ro: cổ phiếu đang ở trạng thái quá mua và có mức biến động cao. Quyết định nên dựa trên việc cân bằng giữa tiềm năng tiếp diễn xu hướng và khả năng xảy ra một đợt điều chỉnh giá ngắn hạn. Sự thiếu vắng hoàn toàn các yếu tố cơ bản và tin tức là một hạn chế lớn cần được cân nhắc.
+
+#### **8. Disclaimer**
+
+Báo cáo này được tạo ra cho mục đích nghiên cứu học thuật và hỗ trợ phân tích đầu tư. Thông tin trong đây không cấu thành khuyến nghị đầu tư. Nhà đầu tư nên tự thực hiện các phân tích của riêng mình và chịu trách nhiệm cho các quyết định đầu tư của mình.
+
+---
+
+## 2025Q3_VIC_02
+
+Chắc chắn rồi. Dưới đây là decision card được tạo từ evidence pack bạn đã cung cấp.
+
+***
+
+### **Decision Card**
+
+**Mã chứng khoán:** VIC
+**Ngày quyết định:** 2025-09-30
+**ID quyết định:** 2025Q3_VIC_02
+**Chân trời đầu tư:** Trong quý tiếp theo
+
+---
+
+**1. Tóm tắt tín hiệu**
+
+Mô hình học máy (`technical_Config_A_from_existing_pipeline`) đưa ra tín hiệu "Ứng viên Mua" (Buy Candidate) cho cổ phiếu VIC. Tín hiệu này có xác suất thống kê rất cao (`pred_proba_up`: 0.997) và xếp hạng cao trong kỳ phân tích (`rank_in_period`: 2). Phân tích này hoàn toàn dựa trên dữ liệu kỹ thuật, không bao gồm các yếu tố tin tức hay cơ bản do chúng đã bị loại bỏ trong tập dữ liệu này (`data_quality_flags`: `news_evidence_removed_for_ablation`: true).
+
+**2. Luận điểm đầu tư chính**
+
+Luận điểm chính dựa trên tín hiệu định lượng cho thấy một đà tăng trưởng giá mạnh mẽ và nhất quán trong các kỳ gần đây. Các chỉ báo động lượng và xu hướng chủ chốt đều đồng thuận ủng hộ tín hiệu đi lên. Tuy nhiên, luận điểm này đi kèm với các rủi ro đáng chú ý về trạng thái quá mua, sự sụt giảm của khối lượng giao dịch và biến động giá cao.
+
+**3. Yếu tố hỗ trợ**
+
+*   **Động lượng giá rất mạnh và duy trì qua nhiều kỳ:** Cổ phiếu ghi nhận mức sinh lời dương rất cao trong quý hiện tại (`return_q`: 82.9%), quý trước (`return_prev_q`: 60.1%) và hai quý trước (`return_2q_ago`: 43.1%).
+*   **Các chỉ báo xu hướng kỹ thuật tích cực:**
+    *   Giá đang ở vị thế thuận lợi so với đường trung bình động ngắn hạn (`price_vs_sma20`: 0.221).
+    *   Chỉ báo MACD histogram trung bình dương, phản ánh động lượng xu hướng đang mạnh lên (`macd_hist_mean_q`: 0.200).
+*   **Tín hiệu mô hình có độ tin cậy thống kê cao:** Tín hiệu được xếp hạng thứ 2 trong kỳ và có xác suất dự báo xu hướng lên là 99.7% (`ml_signal`).
+
+**4. Yếu tố cần lưu ý / Rủi ro**
+
+*   **Rủi ro quá mua (Overbought) ở mức cao:** Chỉ số RSI cuối kỳ đạt 83.9, nằm sâu trong vùng quá mua. Đây là yếu tố đóng góp tích cực chính cho mô hình nhưng cũng là một cảnh báo rủi ro đảo chiều tiềm ẩn (`top_drivers`: `rsi_end_q`).
+*   **Khối lượng giao dịch sụt giảm:** Khối lượng giao dịch trong quý đã giảm 48.4% (`volume_change_q`: -0.484). Sự phân kỳ giữa giá tăng mạnh và khối lượng giảm có thể cho thấy đà tăng thiếu sự xác nhận mạnh mẽ từ dòng tiền.
+*   **Biến động giá cao:** Biên độ giá trong quý ở mức cao (`price_range_q`: 0.748), hàm ý mức độ rủi ro lớn hơn.
+*   **Thiếu bằng chứng định tính:** Phân tích này không có dữ liệu tin tức hay cơ bản để hỗ trợ hoặc phản biện tín hiệu kỹ thuật (`data_quality_flags`: `news_evidence_removed_for_ablation`). Đây là một thiếu sót thông tin quan trọng.
+
+**5. Trigger theo dõi**
+
+*   **Chỉ báo RSI:** Theo dõi sự thay đổi của RSI, đặc biệt là các tín hiệu phân kỳ hoặc khi chỉ báo này bắt đầu đi xuống từ vùng quá mua.
+*   **Khối lượng giao dịch:** Quan sát khối lượng giao dịch trong các phiên tiếp theo. Sự gia tăng trở lại của khối lượng có thể củng cố xu hướng, trong khi việc tiếp tục sụt giảm có thể làm gia tăng rủi ro.
+*   **Giá và đường SMA20:** Theo dõi diễn biến của giá so với đường trung bình động 20 ngày (`sma20_end`).
+
+**6. Thời điểm review**
+
+Xem xét lại quyết định này vào cuối quý (kết thúc Q4/2025) hoặc nếu một trong các trigger theo dõi ở trên được kích hoạt, cho thấy sự thay đổi đáng kể trong các điều kiện kỹ thuật.
+
+**7. Kết luận hỗ trợ quyết định**
+
+Tín hiệu định lượng cung cấp một bằng chứng mạnh mẽ về đà tăng giá trong ngắn hạn. Tuy nhiên, các nhà phân tích cần cân nhắc kỹ lưỡng các rủi ro đi kèm: tình trạng quá mua nghiêm trọng, sự suy giảm của khối lượng giao dịch và việc thiếu vắng hoàn toàn thông tin định tính. Quyết định đầu tư cần phải cân bằng giữa tiềm năng tiếp diễn xu hướng và rủi ro điều chỉnh hoặc đảo chiều ngày càng tăng.
+
+**8. Disclaimer**
+
+Tài liệu này chỉ nhằm mục đích nghiên cứu và hỗ trợ ra quyết định, không phải là một khuyến nghị đầu tư. Phân tích hoàn toàn dựa trên dữ liệu được cung cấp trong "evidence pack". Hiệu suất trong quá khứ không đảm bảo cho kết quả trong tương lai.
+
+---
+
+## 2025Q3_VRE_03
+
+Chắc chắn rồi. Dưới đây là decision card cho VRE được tạo từ evidence pack bạn đã cung cấp.
+
+***
+
+### **Decision Card: Phân Tích Tín Hiệu VRE**
+
+| Trường Dữ Liệu | Giá Trị |
+| :--- | :--- |
+| **Ticker** | VRE |
+| **Ngày Quyết Định** | 2025-09-30 |
+| **ID Quyết Định** | 2025Q3_VRE_03 |
+| **Kỳ Báo Cáo** | 2025-Q3 |
+| **Chân Trời Nắm Giữ** | Quý tiếp theo |
+
+---
+
+#### **1. Tóm tắt tín hiệu**
+Mô hình máy học (`model_name: technical_Config_A_from_existing_pipeline`) đưa ra tín hiệu **"Ứng viên Mua" (Buy Candidate)** cho VRE. Tín hiệu này có độ tin cậy dự báo cao (`pred_proba_up: 0.994`) và xếp hạng cao trong kỳ (`rank_in_period: 3`). Cần lưu ý rằng tín hiệu này hoàn toàn dựa trên phân tích kỹ thuật và không có thông tin định tính (tin tức) đi kèm (`data_quality_flags: news_evidence_removed_for_ablation: true`).
+
+#### **2. Luận điểm đầu tư chính**
+Mô hình nhận diện VRE là một ứng viên tiềm năng chủ yếu dựa trên một chuỗi các chỉ báo động lượng giá rất tích cực kéo dài trong ba quý liên tiếp. Các yếu tố chính hỗ trợ tín hiệu bao gồm lợi suất cao trong kỳ hiện tại và hai kỳ trước đó (`return_q`, `return_prev_q`, `return_2q_ago`), cùng với các chỉ báo sức mạnh xu hướng ngắn hạn như RSI và vị trí giá so với đường trung bình động. Tuy nhiên, luận điểm này cần được xem xét cùng với các dấu hiệu suy yếu về động lượng (MACD) và sự sụt giảm của khối lượng giao dịch.
+
+#### **3. Yếu tố hỗ trợ**
+*   **Động lượng giá mạnh và bền vững:** Cổ phiếu ghi nhận lợi suất dương và cao trong ba quý liên tiếp, cho thấy một xu hướng tăng giá ổn định trong trung hạn.
+    *   `return_q: 0.294`
+    *   `return_prev_q: 0.232`
+    *   `return_2q_ago: 0.107`
+*   **Sức mạnh xu hướng ngắn hạn tích cực:** Các chỉ báo kỹ thuật cuối kỳ cho thấy xu hướng tăng giá vẫn đang duy trì sức mạnh.
+    *   `rsi_end_q: 66.84`: Chỉ số sức mạnh tương đối (RSI) ở mức cao, thể hiện lực mua chiếm ưu thế.
+    *   `price_vs_sma20: 0.067`: Giá đóng cửa cao hơn 6.7% so với đường trung bình động 20 ngày, củng cố xu hướng tăng ngắn hạn.
+*   **Lợi suất trung bình ngày dương:** Lợi suất trung bình hàng ngày trong quý là dương, cho thấy xu hướng tăng diễn ra khá nhất quán trong suốt kỳ.
+    *   `return_mean_daily: 0.0044`
+
+#### **4. Yếu tố cần lưu ý / rủi ro**
+*   **Thiếu hụt bằng chứng định tính:** Phân tích này hoàn toàn không có dữ liệu tin tức hỗ trợ, đây là một thiếu sót thông tin quan trọng. Quyết định chỉ dựa trên dữ liệu kỹ thuật.
+    *   `data_quality_flags: news_evidence_removed_for_ablation: true`
+*   **Khối lượng giao dịch sụt giảm:** Khối lượng giao dịch trong quý giảm đáng kể so với kỳ trước. Việc giá tăng đi kèm với khối lượng giảm có thể là một tín hiệu cảnh báo về độ bền vững của xu hướng.
+    *   `volume_change_q: -0.504`
+*   **Động lượng có dấu hiệu suy yếu:** Chỉ báo MACD histogram trung bình trong quý có giá trị âm nhẹ, có thể hàm ý rằng động lượng của xu hướng tăng đang chậm lại.
+    *   `macd_hist_mean_q: -0.0025`
+*   **RSI tiến gần vùng quá mua:** Mặc dù RSI cao thể hiện sức mạnh, mức `66.84` cũng đang tiến gần đến ngưỡng 70 (quá mua), có thể tiềm ẩn rủi ro điều chỉnh trong ngắn hạn.
+    *   `rsi_end_q: 66.84`
+
+#### **5. Trigger theo dõi**
+*   **Chỉ báo RSI:** Theo dõi chặt chẽ nếu RSI vượt ngưỡng 70 và sau đó quay đầu giảm, có thể là tín hiệu đảo chiều sớm.
+*   **Khối lượng giao dịch:** Quan sát diễn biến khối lượng trong các phiên giao dịch tới. Nếu khối lượng tăng trở lại cùng với đà tăng của giá, đó sẽ là một tín hiệu xác nhận tích cực. Ngược lại, nếu giá tiếp tục tăng nhưng khối lượng vẫn yếu, rủi ro càng tăng.
+*   **Chỉ báo MACD:** Theo dõi sự thay đổi của MACD histogram. Nếu chỉ báo này chuyển sang dương và tăng dần sẽ củng cố cho xu hướng tăng.
+
+#### **6. Thời điểm review**
+Cuối kỳ tiếp theo (2025-Q4) hoặc khi có tín hiệu trọng yếu mới ảnh hưởng đến các trigger đã nêu.
+(`holding_horizon: next_quarter_or_period_return_in_signals`)
+
+#### **7. Kết luận hỗ trợ quyết định**
+Tín hiệu từ mô hình máy học cung cấp một góc nhìn lạc quan dựa trên nền tảng động lượng kỹ thuật rất mạnh của VRE trong nhiều quý. Các yếu tố hỗ trợ từ lợi suất và các chỉ báo xu hướng là rõ ràng.
+
+Tuy nhiên, người ra quyết định cần thận trọng cân nhắc các rủi ro đáng kể, bao gồm sự sụt giảm của khối lượng giao dịch và dấu hiệu suy yếu động lượng từ MACD. Quan trọng nhất, quyết định này đang được đưa ra trong điều kiện thiếu hoàn toàn thông tin định tính (tin tức, cơ bản), do đó chỉ phản ánh một phần của bức tranh tổng thể.
+
+#### **8. Disclaimer**
+Tài liệu này được tạo ra cho mục đích nghiên cứu học thuật và không cấu thành khuyến nghị đầu tư. Phân tích này chỉ dựa trên thông tin được cung cấp trong "evidence pack" tại một thời điểm cụ thể. Tín hiệu từ mô hình máy học có thể không chính xác và không đảm bảo kết quả trong tương lai. Nhà đầu tư nên tự thực hiện các phân tích bổ sung và đánh giá rủi ro trước khi đưa ra bất kỳ quyết định đầu tư nào.
+
+---
+
+## 2025Q3_KDH_04
+
+Chắc chắn rồi. Dưới đây là decision card cho mã KDH dựa trên evidence pack bạn đã cung cấp.
+
+***
+
+### **Decision Card**
+
+**Mã Cổ phiếu:** KDH
+**Ngày Quyết định:** 2025-09-30
+**ID Quyết định:** 2025Q3_KDH_04
+**Kỳ Phân tích:** 2025Q3
+
+---
+
+#### **1. Tóm tắt tín hiệu**
+
+Mô hình học máy (`technical_Config_A_from_existing_pipeline`) xác định KDH là một "Ứng viên Mua" (Buy Candidate) với độ tin cậy dự báo rất cao (`pred_proba_up`: 0.992) và xếp hạng cao trong kỳ (`rank_in_period`: 4). Tín hiệu này hoàn toàn dựa trên phân tích kỹ thuật, do bằng chứng tin tức đã bị loại bỏ khỏi gói dữ liệu này để phục vụ cho việc kiểm định (`news_evidence_removed_for_ablation`: true).
+
+#### **2. Luận điểm đầu tư chính**
+
+Tín hiệu tích cực từ mô hình cho thấy tiềm năng đảo chiều hoặc tiếp diễn xu hướng tăng ngắn hạn. Luận điểm này được củng cố bởi sự cải thiện mạnh mẽ về lợi suất và khối lượng giao dịch trong quý hiện tại (`return_q`, `volume_change_q`), trái ngược với diễn biến tiêu cực của hai quý trước đó. Tuy nhiên, sự phụ thuộc hoàn toàn vào dữ liệu kỹ thuật là một yếu tố cần xem xét cẩn trọng.
+
+#### **3. Yếu tố hỗ trợ**
+
+*   **Đà tăng giá mạnh trong quý:** Cổ phiếu ghi nhận mức lợi suất dương đáng kể trong quý gần nhất, cho thấy xu hướng tăng giá mạnh mẽ.
+    *   *Evidence:* `return_q`: 0.2626
+*   **Sự quan tâm của thị trường gia tăng:** Khối lượng giao dịch trong quý tăng hơn gấp đôi so với quý trước, phản ánh sự chú ý ngày càng tăng từ các nhà đầu tư.
+    *   *Evidence:* `volume_change_q`: 1.0518
+*   **Động lượng xu hướng tích cực:** Chỉ báo MACD histogram trung bình trong quý có giá trị dương, ủng hộ cho xu hướng tăng.
+    *   *Evidence:* `macd_hist_mean_q`: 0.0095
+*   **Lợi suất trung bình ngày dương:** Lợi suất trung bình mỗi ngày trong quý là dương, củng cố cho xu hướng tăng giá bền vững trong ngắn hạn.
+    *   *Evidence:* `return_mean_daily`: 0.0039
+
+#### **4. Yếu tố cần lưu ý / rủi ro**
+
+*   **Thiếu bằng chứng định tính:** Phân tích này không có thông tin từ tin tức hay các yếu tố cơ bản do dữ liệu đã bị loại bỏ. Đây là một hạn chế lớn, khiến quyết định chỉ dựa trên các chỉ báo kỹ thuật.
+    *   *Evidence:* `data_quality_flags: news_evidence_removed_for_ablation`
+*   **Biến động giá cao:** Biên độ dao động giá trong quý khá lớn, cho thấy mức độ rủi ro và biến động cao.
+    *   *Evidence:* `price_range_q`: 0.3684
+*   **Kết quả hoạt động trong quá khứ yếu:** Lợi suất của hai quý trước đều âm, cho thấy đà tăng hiện tại là một sự đảo chiều gần đây và có thể chưa bền vững.
+    *   *Evidence:* `return_prev_q`: -0.0981, `return_2q_ago`: -0.0723
+*   **Vị thế giá ngắn hạn chưa vượt trội:** Tại thời điểm cuối quý, giá đang nằm dưới một chút so với đường trung bình động 20 ngày (SMA20), một tín hiệu trung lập đến tiêu cực nhẹ.
+    *   *Evidence:* `price_vs_sma20`: -0.0220
+*   **Chỉ báo RSI ở mức trung tính:** Chỉ báo RSI cuối kỳ nằm ở vùng trung tính, không cho thấy tín hiệu mua quá mức hay bán quá mức. Dù là driver quan trọng nhất của mô hình, nó không đưa ra một tín hiệu mạnh mẽ theo hướng nào.
+    *   *Evidence:* `rsi_end_q`: 48.2
+
+#### **5. Trigger theo dõi**
+
+*   **Giá và SMA20:** Theo dõi diễn biến giá so với đường SMA20. Việc giá vượt lên và duy trì trên đường này có thể củng cố tín hiệu tăng.
+*   **Khối lượng giao dịch:** Quan sát xem khối lượng giao dịch có tiếp tục duy trì ở mức cao để hỗ trợ cho xu hướng giá hay không.
+*   **Chỉ báo động lượng (MACD, RSI):** Theo dõi sự thay đổi của các chỉ báo động lượng để phát hiện các dấu hiệu suy yếu hoặc mạnh lên của xu hướng.
+
+#### **6. Thời điểm review**
+
+Dựa trên khung thời gian của tín hiệu (`holding_horizon`), cần xem xét và đánh giá lại vị thế vào cuối quý tiếp theo (Q4 2025).
+
+#### **7. Kết luận hỗ trợ quyết định**
+
+Mô hình đưa ra một tín hiệu mua mạnh mẽ dựa trên các chỉ báo kỹ thuật, đặc biệt là sự bứt phá về lợi suất và khối lượng trong quý gần nhất. Tuy nhiên, quyết định này đối mặt với các yếu tố rủi ro đáng kể, bao gồm sự biến động cao, hiệu suất yếu trong quá khứ và đặc biệt là sự thiếu vắng hoàn toàn của các bằng chứng định tính (tin tức). Người ra quyết định cần cân nhắc mức độ tin cậy vào một tín hiệu thuần kỹ thuật khi không có bối cảnh thị trường hỗ trợ.
+
+#### **8. Disclaimer**
+
+Tài liệu này được tạo ra cho mục đích nghiên cứu học thuật và không phải là một khuyến nghị đầu tư. Các phân tích và tín hiệu chỉ dựa trên dữ liệu được cung cấp trong "evidence pack". Hiệu suất trong quá khứ không đảm bảo cho kết quả trong tương lai. Mọi quyết định đầu tư đều chứa đựng rủi ro.
+
+---
+
+## 2025Q3_SCR_05
+
+Chắc chắn rồi, đây là decision card cho mã SCR dựa trên evidence pack bạn đã cung cấp.
+
+***
+
+### **Decision Card: SCR**
+
+**ID Quyết định:** 2025Q3_SCR_05
+**Ngày Quyết định:** 2025-09-30
+**Chân trời đầu tư:** Kỳ tiếp theo (đến cuối Q4 2025)
+
+---
+
+#### **1. Tóm tắt tín hiệu**
+
+Mô hình học máy (`model_name`: technical_Config_A_from_existing_pipeline) xếp hạng SCR là "Ứng viên Mua" (`signal_class`: Buy Candidate) với xác suất dự báo xu hướng tăng rất cao (`pred_proba_up`: 0.99). Tín hiệu này nằm trong top 5 tín hiệu mạnh nhất của kỳ (`rank_in_period`: 5). Phân tích này hoàn toàn dựa trên dữ liệu kỹ thuật, không có thông tin từ tin tức (`data_quality_flags`).
+
+#### **2. Luận điểm đầu tư chính**
+
+Tín hiệu tích cực chủ yếu được thúc đẩy bởi động lượng giá và khối lượng giao dịch tăng mạnh trong kỳ hiện tại và các kỳ gần đây. Các chỉ báo như lợi suất theo quý, sự gia tăng khối lượng, và vị trí giá so với đường trung bình động đều củng cố cho xu hướng này. Tuy nhiên, luận điểm này cần được xem xét cẩn trọng trong bối cảnh tồn tại tín hiệu trái chiều về sức mạnh xu hướng (MACD) và mức độ biến động giá cao.
+
+#### **3. Yếu tố hỗ trợ**
+
+*   **Động lượng giá rất mạnh:** Lợi suất trong kỳ đạt 33.2% (`return_q`), và lợi suất các kỳ trước cũng dương (`return_prev_q`: 5.9%, `return_2q_ago`: 18.7%), cho thấy một xu hướng tăng giá bền bỉ và đang tăng tốc.
+*   **Sự tham gia của thị trường gia tăng:** Khối lượng giao dịch trong kỳ tăng 141.6% (`volume_change_q`) so với kỳ trước, cho thấy sự quan tâm của thị trường đang củng cố cho xu hướng giá.
+*   **Chỉ báo xu hướng ngắn hạn tích cực:** Giá tại thời điểm cuối kỳ cao hơn 2.26% so với đường trung bình động 20 ngày (`price_vs_sma20`), ủng hộ xu hướng tăng trong ngắn hạn.
+*   **Chỉ báo sức mạnh tương đối (RSI) ở mức hợp lý:** RSI cuối kỳ là 52.8 (`rsi_end_q`), cho thấy động lượng tích cực nhưng chưa đi vào vùng quá mua, đây là yếu tố hỗ trợ quan trọng nhất cho mô hình (`top_drivers`).
+
+#### **4. Yếu tố cần lưu ý / rủi ro**
+
+*   **Tín hiệu động lượng xu hướng yếu:** Chỉ báo MACD histogram trung bình trong kỳ có giá trị âm (`macd_hist_mean_q`: -0.005), là một tín hiệu `weak_or_negative` có thể cho thấy động lượng của xu hướng tăng đang yếu đi hoặc chưa thực sự mạnh mẽ.
+*   **Biến động giá cao:** Biên độ giá trong kỳ lên tới 39% (`price_range_q`), cho thấy mức độ biến động cao và rủi ro tiềm ẩn.
+*   **Thiếu bằng chứng định tính:** Phân tích này hoàn toàn thiếu vắng thông tin từ tin tức (`news_evidence_removed_for_ablation`: true). Các quyết định chỉ dựa trên dữ liệu kỹ thuật có thể bỏ qua các yếu tố cơ bản hoặc sự kiện quan trọng có thể ảnh hưởng đến giá.
+
+#### **5. Trigger theo dõi**
+
+*   Sự suy yếu của các chỉ báo động lượng, đặc biệt nếu RSI giảm xuống dưới 50 hoặc MACD histogram tiếp tục ghi nhận giá trị âm.
+*   Giá cắt xuống dưới đường trung bình động 20 ngày (`price_vs_sma20`).
+*   Khối lượng giao dịch (`volume_change_q`) sụt giảm đáng kể trong các phiên tăng giá, có thể báo hiệu xu hướng tăng đang mất dần động lực.
+
+#### **6. Thời điểm review**
+
+Dựa trên chân trời đầu tư (`holding_horizon`), quyết định này nên được xem xét lại vào cuối kỳ tiếp theo (Q4 2025), hoặc sớm hơn nếu một trong các trigger theo dõi được kích hoạt.
+
+#### **7. Kết luận hỗ trợ quyết định**
+
+Tín hiệu từ mô hình học máy đưa ra một luận điểm mạnh mẽ dựa trên động lượng kỹ thuật tích cực. Các yếu tố hỗ trợ về giá và khối lượng đều rất rõ ràng. Tuy nhiên, người ra quyết định cần cân nhắc sự đánh đổi với các rủi ro hiện hữu, bao gồm tín hiệu động lượng xu hướng còn yếu (`macd_hist_mean_q`), mức biến động cao (`price_range_q`), và đặc biệt là sự thiếu hụt hoàn toàn các thông tin hỗ trợ từ tin tức và phân tích cơ bản.
+
+#### **8. Disclaimer**
+
+Báo cáo này chỉ nhằm mục đích nghiên cứu và hỗ trợ quyết định, không phải là một khuyến nghị đầu tư. Phân tích chỉ dựa trên các thông tin được cung cấp trong "evidence pack" tại ngày quyết định. Hiệu suất trong quá khứ không đảm bảo cho kết quả trong tương lai.
+
+---
+
+## 2025Q4_GAS_01
+
+Chắc chắn rồi, đây là decision card cho mã GAS dựa trên evidence pack bạn đã cung cấp.
+
+***
+
+### **Decision Card: GAS**
+
+**Decision ID:** 2025Q4_GAS_01
+**Ngày quyết định:** 2025-12-31
+**Kỳ phân tích:** 2025Q4
+
+---
+
+#### **1. Tóm tắt tín hiệu**
+
+Mô hình học máy (`technical_Config_A_from_existing_pipeline`) xác định GAS là một "Ứng viên Mua" (Buy Candidate) cho quý tiếp theo. Tín hiệu này có độ tin cậy xác suất rất cao (`pred_proba_up`: 0.998) và xếp hạng 1 trong vũ trụ phân tích cùng kỳ (`rank_in_period`). Tín hiệu hoàn toàn dựa trên các chỉ báo kỹ thuật.
+
+#### **2. Luận điểm đầu tư chính**
+
+Tín hiệu tích cực được thúc đẩy bởi sự hội tụ của các chỉ báo động lượng và xu hướng kỹ thuật mạnh mẽ trong quý hiện tại. Cổ phiếu cho thấy đà tăng giá rõ rệt, vượt trên các đường trung bình động ngắn hạn và được hỗ trợ bởi các chỉ báo dao động như RSI.
+
+#### **3. Yếu tố hỗ trợ**
+
+*   **Động lượng giá trong kỳ rất tích cực:** Lợi suất trong quý đạt 19.47% (`return_q`).
+*   **Sức mạnh xu hướng được xác nhận bởi RSI:** Chỉ số RSI cuối kỳ ở mức 67.52, là yếu tố kỹ thuật có ảnh hưởng lớn nhất đến tín hiệu của mô hình (`rsi_end_q`, `top_drivers`).
+*   **Giá duy trì trên xu hướng ngắn hạn:** Giá cổ phiếu tại thời điểm cuối kỳ cao hơn 9.6% so với đường trung bình động 20 kỳ (SMA20), cho thấy xu hướng tăng đang chiếm ưu thế (`price_vs_sma20`).
+*   **Động lượng MACD dương:** MACD histogram trung bình trong quý có giá trị dương (`macd_hist_mean_q`: 0.134), củng cố cho xu hướng tăng.
+*   **Lợi suất trung bình ngày tích cực:** Lợi suất trung bình mỗi ngày trong quý là dương (`return_mean_daily`), thể hiện sự bền bỉ của xu hướng tăng trong ngắn hạn.
+
+#### **4. Yếu tố cần lưu ý / rủi ro**
+
+*   **Xu hướng tăng giá thiếu sự xác nhận từ khối lượng:** Khối lượng giao dịch trong quý giảm 7.06% (`volume_change_q`). Đà tăng giá đi kèm với khối lượng giảm có thể là một dấu hiệu cho thấy xu hướng không bền vững.
+*   **Kết quả quý trước đó âm:** Lợi suất của quý liền trước là -3.36% (`return_prev_q`). Đà tăng mạnh hiện tại là một sự phục hồi sau giai đoạn giảm, cần thêm thời gian để đánh giá sự ổn định.
+*   **Thiếu bằng chứng định tính:** Toàn bộ tín hiệu chỉ dựa trên dữ liệu kỹ thuật. **Evidence pack không bao gồm thông tin tin tức hay phân tích cơ bản** để hỗ trợ hoặc phản biện luận điểm này (`data_quality_flags.news_evidence_removed_for_ablation`: true).
+
+#### **5. Trigger theo dõi**
+
+*   **Khối lượng giao dịch:** Theo dõi xem khối lượng có tăng lên để xác nhận xu hướng giá hay không.
+*   **Chỉ báo RSI:** Quan sát chỉ báo RSI có tiến vào vùng quá mua (thường là >70) và các tín hiệu đảo chiều tiềm năng.
+*   **Mức hỗ trợ SMA20:** Theo dõi diễn biến giá so với đường SMA20 (`sma20_end`: 66.06). Việc giá giảm xuống dưới mức này có thể là tín hiệu suy yếu của xu hướng hiện tại.
+
+#### **6. Thời điểm review**
+
+Cuối quý tiếp theo, theo khung thời gian của tín hiệu (`holding_horizon`), hoặc khi một trong các trigger theo dõi được kích hoạt.
+
+#### **7. Kết luận hỗ trợ quyết định**
+
+Evidence pack trình bày một tín hiệu kỹ thuật rất mạnh mẽ, được hỗ trợ bởi nhiều chỉ báo động lượng và xu hướng trong quý hiện tại. Tuy nhiên, quyết định cần cân nhắc các yếu tố rủi ro đáng chú ý, bao gồm sự phân kỳ giữa giá và khối lượng, kết quả âm của quý trước, và đặc biệt là sự thiếu vắng hoàn toàn của các bằng chứng định tính (tin tức, cơ bản) để có một cái nhìn toàn diện.
+
+#### **8. Disclaimer**
+
+*Tài liệu này được tạo ra cho mục đích nghiên cứu học thuật và hỗ trợ quyết định, không phải là một khuyến nghị đầu tư. Thông tin chỉ dựa trên "evidence pack" được cung cấp và không bao gồm bất kỳ dữ liệu nào từ bên ngoài. Các quyết định đầu tư thực tế luôn tiềm ẩn rủi ro.*
+
+---
+
+## 2025Q4_MCH_02
+
+Chắc chắn rồi. Dưới đây là decision card cho mã MCH dựa trên evidence pack bạn đã cung cấp.
+
+***
+
+### **Decision Card: MCH**
+
+**Decision ID:** 2025Q4_MCH_02
+**Decision Date:** 2025-12-31
+
+---
+
+#### **1. Tóm tắt tín hiệu**
+
+Mô hình học máy (`technical_Config_A_from_existing_pipeline`) xếp hạng MCH là **"Ứng viên Mua"** (`Buy Candidate`). Tín hiệu này có độ tin cậy dự báo xu hướng tăng rất cao là **99.4%** (`pred_proba_up`) và xếp hạng 2 trong kỳ phân tích (`rank_in_period`). Tín hiệu hoàn toàn dựa trên các chỉ báo kỹ thuật.
+
+#### **2. Luận điểm đầu tư chính**
+
+Tín hiệu tích cực được thúc đẩy chủ yếu bởi một loạt các chỉ báo động lượng kỹ thuật mạnh mẽ trong quý gần nhất. Đà tăng giá (`return_q`), các chỉ số xu hướng như RSI (`rsi_end_q`) và MACD (`macd_hist_mean_q`), cùng với sự gia tăng của khối lượng giao dịch (`volume_change_q`) là các yếu tố đóng góp chính cho tín hiệu này.
+
+#### **3. Yếu tố hỗ trợ**
+
+*   **Động lượng giá rất mạnh:** Lợi suất trong quý hiện tại đạt 72.4% (`return_q`) và lợi suất quý trước cũng dương ở mức 5.2% (`return_prev_q`).
+*   **Các chỉ báo kỹ thuật xác nhận xu hướng tăng:**
+    *   Chỉ số RSI cuối kỳ ở mức 66.1 (`rsi_end_q`), cho thấy sức mua mạnh nhưng chưa vào vùng quá mua. Đây là driver quan trọng nhất của mô hình.
+    *   MACD histogram trung bình dương (`macd_hist_mean_q`: 0.227), ủng hộ xu hướng tăng.
+    *   Giá đóng cửa cao hơn 2.2% so với đường trung bình động 20 kỳ (`price_vs_sma20`), duy trì xu hướng tăng ngắn hạn.
+*   **Khối lượng giao dịch ủng hộ:** Khối lượng giao dịch trong quý đã tăng 25.2% (`volume_change_q`), cho thấy sự quan tâm của thị trường đối với đà tăng giá.
+
+#### **4. Yếu tố cần lưu ý / rủi ro**
+
+*   **Thiếu vắng bằng chứng định tính:** Phân tích này hoàn toàn dựa trên dữ liệu kỹ thuật. Bằng chứng về tin tức/sự kiện cơ bản đã bị loại bỏ khỏi mô hình (`news_evidence_removed_for_ablation: true`). Điều này tạo ra một điểm mù quan trọng, không có bối cảnh cơ bản để xác thực xu hướng kỹ thuật.
+*   **Biến động giá cao:** Biên độ giá trong quý tương đối lớn (`price_range_q`: 0.566), được mô hình xác định là một yếu tố rủi ro tiềm ẩn, hàm ý mức độ dao động cao.
+*   **Kết quả quá khứ còn yếu:** Lợi suất của hai quý trước là âm 10.8% (`return_2q_ago`), được mô hình ghi nhận là một yếu tố yếu hoặc tiêu cực.
+
+#### **5. Trigger theo dõi**
+
+*   Sự đảo chiều của các chỉ báo động lượng, đặc biệt là RSI (`rsi_end_q`) giảm xuống dưới vùng 50 hoặc MACD (`macd_hist_mean_q`) chuyển sang giá trị âm.
+*   Giá cắt xuống dưới đường trung bình động 20 kỳ (`sma20_end`).
+*   Bất kỳ thông tin cơ bản hoặc tin tức trọng yếu nào (nếu có) có thể tác động đến luận điểm kỹ thuật.
+
+#### **6. Thời điểm review**
+
+Tín hiệu này được thiết kế cho khung thời gian là quý tiếp theo (`holding_horizon`). Cần xem xét và đánh giá lại luận điểm vào cuối quý sau, hoặc sớm hơn nếu một trong các trigger theo dõi được kích hoạt.
+
+#### **7. Kết luận hỗ trợ quyết định**
+
+Bằng chứng kỹ thuật cung cấp một tín hiệu tăng giá rất mạnh mẽ, được nhiều chỉ báo đồng thuận ủng hộ. Tuy nhiên, quyết định cần cân nhắc hai yếu tố thận trọng chính: (1) rủi ro từ biến động giá cao đã được xác định và (2) sự thiếu vắng hoàn toàn thông tin định tính (tin tức) để hỗ trợ cho xu hướng kỹ thuật. Tín hiệu này có thể phù hợp hơn với các chiến lược dựa trên phân tích kỹ thuật thuần túy và có khả năng chấp nhận mức độ biến động cao.
+
+#### **8. Disclaimer**
+
+Tài liệu này được tạo ra cho mục đích nghiên cứu học thuật và hỗ trợ quá trình ra quyết định. Thông tin trong đây không cấu thành lời khuyên hay khuyến nghị đầu tư. Quyết định đầu tư cuối cùng thuộc về trách nhiệm của người sử dụng.
+
+---
+
+## 2025Q4_ABB_03
+
+Chắc chắn rồi, đây là decision card được tạo từ evidence pack bạn đã cung cấp.
+
+***
+
+### **Decision Card**
+
+**Mã Cổ phiếu:** ABB
+**Ngày Quyết định:** 2025-12-31
+**ID Quyết định:** 2025Q4_ABB_03
+**Chân trời nắm giữ:** Quý tiếp theo
+
+---
+
+#### **1. Tóm tắt tín hiệu**
+
+Tín hiệu được tạo ra hoàn toàn từ mô hình máy học (ML) dựa trên dữ liệu kỹ thuật (`card_input_variant: ml_only`). Mô hình phân loại đây là một **"Ứng viên Mua" (Buy Candidate)** với xác suất dự báo xu hướng tăng rất cao (**pred_proba_up**: 0.993) và có thứ hạng cao trong kỳ phân tích (**rank_in_period**: 3).
+
+Lưu ý quan trọng: Phân tích này không bao gồm các yếu tố cơ bản hoặc tin tức do chúng đã bị loại bỏ khỏi bộ dữ liệu đầu vào (`data_quality_flags: news_evidence_removed_for_ablation: true`).
+
+#### **2. Luận điểm đầu tư chính**
+
+Luận điểm chính dựa trên tín hiệu kỹ thuật từ mô hình ML, cho thấy động lượng tăng giá mạnh mẽ và bền bỉ trong các quý gần đây, được hỗ trợ bởi các chỉ báo xu hướng và động lượng chính.
+
+Tuy nhiên, tín hiệu này cần được xem xét thận trọng trong bối cảnh khối lượng giao dịch sụt giảm, có thể cho thấy sự suy yếu trong sức mạnh của xu hướng tăng.
+
+#### **3. Yếu tố hỗ trợ**
+
+*   **Động lượng giá mạnh và bền bỉ:** Cổ phiếu ghi nhận mức sinh lời dương trong ba quý liên tiếp, đặc biệt cao trong hai quý gần nhất (**return_prev_q**: 0.464, **return_q**: 0.298). Đây là các yếu tố đóng góp quan trọng cho tín hiệu tăng.
+*   **Các chỉ báo kỹ thuật đồng thuận xu hướng tăng:**
+    *   Chỉ số RSI cuối kỳ ở mức cao, là driver kỹ thuật quan trọng nhất của mô hình, cho thấy sức mạnh xu hướng (**rsi_end_q**: 66.27).
+    *   Giá đang nằm trên đường trung bình động ngắn hạn SMA20, củng cố cho xu hướng tăng ngắn hạn (**price_vs_sma20**: 0.029).
+    *   Chỉ báo MACD histogram trung bình dương, phản ánh động lượng tăng duy trì trong suốt quý (**macd_hist_mean_q**: 0.0216).
+
+#### **4. Yếu tố cần lưu ý / rủi ro**
+
+*   **Sụt giảm khối lượng giao dịch:** Khối lượng giao dịch trong quý đã giảm đáng kể (**volume_change_q**: -0.384). Đây là một yếu tố mang tín hiệu yếu hoặc tiêu cực, có thể là dấu hiệu cảnh báo về sự thiếu bền vững của đà tăng giá, cho thấy xu hướng tăng không được hỗ trợ bởi sự tham gia mạnh mẽ của thị trường.
+*   **Thiếu bằng chứng định tính:** Quyết định này hoàn toàn dựa trên tín hiệu ML kỹ thuật. Không có thông tin về tin tức, sự kiện doanh nghiệp, hay phân tích cơ bản để hỗ trợ luận điểm, do dữ liệu này đã bị loại bỏ một cách có chủ đích (`data_quality_flags: news_evidence_removed_for_ablation: true`). Đây là một thiếu sót thông tin quan trọng.
+*   **Rủi ro quá mua tiềm ẩn:** Mặc dù chưa ở vùng "quá mua" điển hình (>70), chỉ số RSI ở mức cao (**rsi_end_q**: 66.27) cho thấy khả năng có thể xảy ra một đợt điều chỉnh hoặc đi ngang trong ngắn hạn sau một giai đoạn tăng giá mạnh.
+
+#### **5. Trigger theo dõi**
+
+*   Sự phục hồi của khối lượng giao dịch đi kèm với xu hướng giá.
+*   Chỉ số RSI di chuyển vào vùng quá mua (>70) hoặc quay đầu giảm xuống dưới 50.
+*   Giá cắt xuống dưới đường trung bình động SMA20 (**sma20_end**: 14.298).
+
+#### **6. Thời điểm review**
+
+Theo khung thời gian dự báo của tín hiệu (`holding_horizon`), cần xem xét lại vào cuối quý tiếp theo hoặc khi có sự thay đổi đáng kể trong các trigger đã nêu.
+
+#### **7. Kết luận hỗ trợ quyết định**
+
+Tín hiệu ML đưa ra một trường hợp mạnh mẽ về mặt kỹ thuật cho một xu hướng tăng tiềm năng, dựa trên động lượng giá lịch sử và các chỉ báo kỹ thuật chính.
+
+Tuy nhiên, sự thiếu vắng hoàn toàn bằng chứng định tính (tin tức, cơ bản) và tín hiệu cảnh báo từ khối lượng giao dịch sụt giảm là những yếu tố rủi ro quan trọng cần được cân nhắc kỹ lưỡng. Quyết định cần phải cân đối giữa tín hiệu động lượng kỹ thuật rất mạnh và rủi ro về sự bền vững của xu hướng này khi thiếu sự hỗ trợ từ khối lượng giao dịch.
+
+#### **8. Disclaimer**
+
+Tài liệu này được tạo ra cho mục đích nghiên cứu học thuật và hỗ trợ quyết định, không phải là một khuyến nghị đầu tư. Quyết định đầu tư cuối cùng thuộc về người sử dụng. Phân tích này chỉ dựa trên dữ liệu được cung cấp trong evidence pack tại ngày 2025-12-31.
+
+---
+
+## 2025Q4_ELC_04
+
+Chắc chắn rồi, đây là decision card cho mã ELC dựa trên evidence pack được cung cấp.
+
+***
+
+### **DECISION CARD**
+
+**Mã cổ phiếu:** ELC
+**Ngày quyết định:** 2025-12-31
+**ID Quyết định:** 2025Q4_ELC_04
+
+---
+
+**1. Tóm tắt tín hiệu**
+Mô hình machine learning (`model_name`: technical_Config_A...) đưa ra tín hiệu **"Buy Candidate"** với xác suất dự báo xu hướng tăng là 98.5% (`pred_proba_up`). Tín hiệu này có thứ hạng cao trong kỳ phân tích (hạng 4, `rank_in_period`). Tín hiệu hoàn toàn dựa trên các chỉ báo kỹ thuật; không có dữ liệu tin tức được sử dụng trong phân tích này (`news_evidence_removed_for_ablation`: true).
+
+**2. Luận điểm đầu tư chính**
+Tín hiệu tích cực được thúc đẩy bởi động lượng giá mạnh mẽ trong quý gần nhất, được xác nhận bởi nhiều chỉ báo xu hướng (`return_q`, `price_vs_sma20`, `macd_hist_mean_q`). Tuy nhiên, luận điểm này đối mặt với rủi ro đáng kể từ tình trạng quá mua rõ rệt của chỉ báo RSI (`rsi_end_q`) và sự sụt giảm mạnh về khối lượng giao dịch (`volume_change_q`), cho thấy đà tăng có thể thiếu sự hỗ trợ bền vững từ dòng tiền.
+
+**3. Yếu tố hỗ trợ**
+*   **Động lượng giá ngắn hạn rất mạnh:** Lợi suất trong quý hiện tại đạt +14.3% (`return_q`), là yếu tố đóng góp tích cực cho tín hiệu.
+*   **Giá duy trì trên xu hướng ngắn hạn:** Giá kết thúc quý cao hơn 4.9% so với đường trung bình động 20 kỳ (`price_vs_sma20`), củng cố xu hướng tăng.
+*   **Chỉ báo MACD xác nhận động lượng tăng:** MACD histogram trung bình trong quý có giá trị dương (`macd_hist_mean_q`: 0.033), cho thấy xu hướng tăng đang chiếm ưu thế.
+*   **Duy trì đà tăng từ quý trước:** Lợi suất của quý liền trước cũng dương (+2.4%, `return_prev_q`), cho thấy quán tính tăng đã kéo dài hơn một quý.
+
+**4. Yếu tố cần lưu ý / rủi ro**
+*   **Rủi ro quá mua ở mức cao:** Chỉ báo RSI cuối kỳ là 71.35 (`rsi_end_q`), vượt ngưỡng 70. Đây là yếu tố kỹ thuật quan trọng nhất trong mô hình và nó báo hiệu rủi ro điều chỉnh hoặc đảo chiều ngắn hạn (`direction`: positive_but_overbought_risk).
+*   **Khối lượng giao dịch sụt giảm mạnh:** Thay đổi khối lượng giao dịch trong quý giảm 45.5% (`volume_change_q`). Một xu hướng tăng giá đi kèm với khối lượng giảm có thể là dấu hiệu cho thấy sự thiếu chắc chắn hoặc thiếu sự tham gia của dòng tiền lớn.
+*   **Thiếu bằng chứng định tính:** Toàn bộ tín hiệu được tạo ra mà không có thông tin tin tức (`data_quality_flags`: news_evidence_removed_for_ablation). Việc thiếu bối cảnh từ các sự kiện hoặc phân tích cơ bản là một điểm mù quan trọng.
+*   **Hiệu suất quá khứ còn yếu:** Lợi suất của 2 quý trước là âm (-5.8%, `return_2q_ago`), cho thấy đà tăng mạnh mẽ hiện tại chỉ mới xuất hiện gần đây.
+
+**5. Trigger theo dõi**
+*   **Chỉ báo RSI:** Theo dõi sự thay đổi của RSI, đặc biệt là nếu chỉ báo này giảm xuống dưới mức 70, có thể báo hiệu động lượng suy yếu.
+*   **Khối lượng giao dịch:** Quan sát sự phục hồi của khối lượng giao dịch trong các phiên tăng giá để tìm kiếm sự xác nhận cho xu hướng.
+*   **Vị trí giá so với SMA20:** Theo dõi xem giá có duy trì được trên đường trung bình động 20 kỳ (`sma20_end`) hay không.
+
+**6. Thời điểm review**
+Dựa trên `holding_horizon`, quyết định này nên được xem xét lại vào cuối quý tiếp theo (Quý 1, 2026) hoặc nếu bất kỳ trigger nào ở trên được kích hoạt.
+
+**7. Kết luận hỗ trợ quyết định**
+Tín hiệu kỹ thuật từ mô hình là rất mạnh mẽ, cho thấy một xu hướng tăng giá có động lượng cao. Tuy nhiên, các dấu hiệu cảnh báo rủi ro cũng rất rõ ràng, bao gồm tình trạng quá mua và sự suy yếu của khối lượng giao dịch. Sự thiếu vắng hoàn toàn thông tin định tính/tin tức đòi hỏi một mức độ thận trọng cao. Quyết định cần cân nhắc giữa tiềm năng xu hướng tiếp diễn và rủi ro điều chỉnh ngắn hạn đang hiện hữu.
+
+**8. Disclaimer**
+Tài liệu này chỉ phục vụ mục đích nghiên cứu học thuật và hỗ trợ ra quyết định, không cấu thành một khuyến nghị đầu tư. Các quyết định đầu tư cần được xem xét cẩn trọng dựa trên nhiều nguồn thông tin và đánh giá rủi ro cá nhân.
+
+---
+
+## 2025Q4_VBB_05
+
+Chắc chắn rồi, đây là decision card cho VBB dựa trên evidence pack bạn đã cung cấp.
+
+***
+
+### **Decision Card: VBB**
+
+**Decision ID:** 2025Q4_VBB_05
+**Ngày Quyết định:** 2025-12-31
+**Kỳ Báo cáo:** 2025-Q4
+
+---
+
+#### **1. Tóm tắt tín hiệu**
+
+Tín hiệu máy học (ML) cho VBB được xếp hạng là **"Ứng viên Mua"** (`signal_class`: Buy Candidate). Mô hình `technical_Config_A_from_existing_pipeline` đưa ra xác suất định hướng tăng giá là 98.2% (`pred_proba_up`) và xếp hạng 5 (`rank_in_period`) trong kỳ phân tích. Tín hiệu này hoàn toàn dựa trên các chỉ báo kỹ thuật.
+
+#### **2. Luận điểm đầu tư chính**
+
+Mô hình máy học nhận diện VBB là một ứng viên tiềm năng, chủ yếu dựa trên động lượng tích cực từ hai quý trước (`return_2q_ago`, `return_prev_q`) và việc giá duy trì trên đường trung bình động ngắn hạn (`price_vs_sma20`). Tuy nhiên, luận điểm này đối mặt với các tín hiệu kỹ thuật tiêu cực trong quý gần nhất, bao gồm lợi suất âm và khối lượng giao dịch sụt giảm.
+
+#### **3. Yếu tố hỗ trợ**
+
+*   **Xác suất dự báo cao:** Mô hình đưa ra xác suất tăng giá rất cao là 0.982 (`pred_proba_up`), cho thấy sự tin cậy thống kê cao từ thuật toán.
+*   **Động lượng lịch sử tích cực:** Cổ phiếu ghi nhận lợi suất dương trong hai kỳ trước đó: +13.0% trong quý trước (`return_prev_q`) và +18.5% trong hai quý trước (`return_2q_ago`).
+*   **Vị thế giá ngắn hạn:** Giá cuối kỳ cao hơn một chút so với đường trung bình động 20 ngày (`price_vs_sma20` = 0.009), một chỉ báo kỹ thuật được mô hình xem là tích cực.
+
+#### **4. Yếu tố cần lưu ý / rủi ro**
+
+*   **Hiệu suất quý gần nhất tiêu cực:** Lợi suất trong quý hiện tại là -7.4% (`return_q`), cho thấy xu hướng giá giảm gần đây. Lợi suất trung bình ngày cũng âm (`return_mean_daily`).
+*   **Động lượng suy yếu:** MACD histogram trung bình trong quý âm (`macd_hist_mean_q` = -0.0055), cho thấy động lượng có dấu hiệu yếu đi.
+*   **Thanh khoản giảm:** Khối lượng giao dịch trong quý giảm đáng kể (-58.2%) so với quý trước (`volume_change_q`), có thể hàm ý sự suy giảm quan tâm từ thị trường.
+*   **Chỉ báo RSI trung tính:** Mặc dù là driver quan trọng nhất của mô hình, chỉ số RSI cuối kỳ ở mức 47.9 (`rsi_end_q`), một vùng trung tính không cho thấy tín hiệu mua hay bán quá mức.
+*   **Thiếu bằng chứng định tính:** Gói bằng chứng này không bao gồm phân tích tin tức (`data_quality_flags.news_evidence_removed_for_ablation`: true). Do đó, phân tích chỉ dựa trên dữ liệu kỹ thuật, thiếu đi bối cảnh kinh doanh và các sự kiện liên quan.
+
+#### **5. Trigger theo dõi**
+
+*   Sự thay đổi của giá so với đường SMA20 (`price_vs_sma20`).
+*   Sự cải thiện của các chỉ báo động lượng như MACD histogram và RSI.
+*   Sự phục hồi của khối lượng giao dịch.
+
+#### **6. Thời điểm review**
+
+Dựa trên `holding_horizon` của tín hiệu, việc xem xét lại được đề xuất vào cuối quý tiếp theo (2026-Q1).
+
+#### **7. Kết luận hỗ trợ quyết định**
+
+Tín hiệu ML đưa ra một trường hợp "Ứng viên Mua" với độ tin cậy thống kê cao, dựa trên sức mạnh của các quý trước. Tuy nhiên, điều này mâu thuẫn rõ rệt với các chỉ báo kỹ thuật tiêu cực trong quý gần nhất (lợi suất âm, động lượng yếu, khối lượng giảm). Quyết định cần cân nhắc giữa việc tin vào động lượng lịch sử mà mô hình nhận diện và rủi ro từ xu hướng suy yếu gần đây. Việc thiếu vắng hoàn toàn dữ liệu tin tức là một hạn chế lớn cần được ghi nhận.
+
+#### **8. Disclaimer**
+
+Nội dung này được tạo ra cho mục đích nghiên cứu học thuật và hỗ trợ quyết định, không phải là tư vấn đầu tư. Thông tin chỉ dựa trên "evidence pack" được cung cấp tại thời điểm phân tích. Không có bất kỳ cam kết nào về hiệu suất trong tương lai.
+
+---
+
+## 2026Q1_GMD_01
+
+Chắc chắn rồi, đây là decision card cho GMD dựa trên evidence pack bạn cung cấp.
+
+***
+
+### **Decision Card: GMD**
+
+**1. Tóm tắt tín hiệu**
+*   **Mã cổ phiếu:** GMD
+*   **Ngày quyết định:** 31-03-2026
+*   **Nguồn tín hiệu:** Model học máy (`technical_Config_A_from_existing_pipeline`)
+*   **Tín hiệu:** "Ứng viên Mua" (`signal_class: Buy Candidate`) với xác suất dự báo xu hướng tăng rất cao (`pred_proba_up: 0.9918`) và xếp hạng 1 trong kỳ phân tích (`rank_in_period: 1`).
+*   **Lưu ý quan trọng:** Tín hiệu này được tạo ra hoàn toàn dựa trên dữ liệu phân tích kỹ thuật. Dữ liệu tin tức/cơ bản đã được loại bỏ khỏi gói bằng chứng này một cách có chủ đích (`data_quality_flags.news_evidence_removed_for_ablation: true`).
+
+**2. Luận điểm đầu tư chính**
+Mô hình xác định GMD là một ứng viên tiềm năng dựa trên nền tảng động lượng kỹ thuật rất mạnh và đồng thuận. Cổ phiếu đã thể hiện một đợt tăng giá mạnh mẽ trong quý hiện tại, được xác nhận bởi sự gia tăng về khối lượng giao dịch và sự ủng hộ từ các chỉ báo động lượng chính như RSI và MACD. Vị thế giá hiện tại phía trên đường trung bình động ngắn hạn củng cố thêm cho tín hiệu này.
+
+**3. Yếu tố hỗ trợ**
+*   **Động lượng giá vượt trội:** Lợi suất trong quý đạt mức cao 31.2% (`return_q`), là yếu tố đóng góp chính cho tín hiệu.
+*   **Xu hướng được xác nhận bởi khối lượng:** Khối lượng giao dịch trong quý tăng 38.6% so với quý trước, cho thấy sự quan tâm của thị trường đang gia tăng cùng với xu hướng giá (`volume_change_q`).
+*   **Các chỉ báo kỹ thuật đồng thuận:**
+    *   RSI cuối kỳ ở mức 57.6, cho thấy sức mạnh xu hướng tăng nhưng chưa đi vào vùng quá mua (`rsi_end_q`).
+    *   MACD histogram trung bình trong quý dương, ủng hộ cho xu hướng tăng (`macd_hist_mean_q`).
+    *   Giá đang ở trên đường trung bình động 20 ngày khoảng 4.1%, là một dấu hiệu tích cực trong ngắn hạn (`price_vs_sma20`).
+*   **Động lượng lịch sử:** Lợi suất của 2 quý trước đó cũng dương (+22.0%), cho thấy quán tính tăng giá đã có từ trước (`return_2q_ago`).
+
+**4. Yếu tố cần lưu ý / rủi ro**
+*   **Biến động giá cao:** Biên độ dao động giá trong quý lên tới 40.6% (`price_range_q`), hàm ý mức độ rủi ro biến động cao.
+*   **Động lượng không nhất quán:** Quý ngay trước đó ghi nhận lợi suất âm (-8.3%) (`return_prev_q`), cho thấy đợt tăng giá mạnh gần đây diễn ra sau một giai đoạn điều chỉnh.
+*   **Hoàn toàn thiếu bằng chứng định tính:** Phân tích này không có thông tin về tin tức, sự kiện doanh nghiệp hay các yếu tố cơ bản do dữ liệu đã bị loại bỏ. Đây là một hạn chế lớn, khiến quyết định chỉ có thể dựa vào tín hiệu kỹ thuật thuần túy (`data_quality_flags.news_evidence_removed_for_ablation`).
+
+**5. Trigger theo dõi**
+*   Các chỉ báo động lượng suy yếu (ví dụ: RSI giảm xuống dưới 50 hoặc MACD cắt xuống dưới đường tín hiệu).
+*   Giá giảm và phá vỡ các ngưỡng hỗ trợ kỹ thuật quan trọng, đặc biệt là đường trung bình động SMA20 (`technical_snapshot.sma20_end`).
+*   Sự xuất hiện của các phiên giảm giá mạnh đi kèm khối lượng giao dịch đột biến.
+
+**6. Thời điểm review**
+Cuối quý sau (Quý 2 năm 2026) hoặc khi có tín hiệu kỹ thuật trọng yếu mới xuất hiện, tùy thuộc vào điều kiện nào đến trước (`holding_horizon`).
+
+**7. Kết luận hỗ trợ quyết định**
+Tín hiệu từ mô hình học máy rất mạnh mẽ và rõ ràng, chỉ ra một tập hợp các yếu tố kỹ thuật tích cực cho GMD. Động lượng giá trong kỳ là đặc biệt thuyết phục. Tuy nhiên, quyết định cần được đưa ra với sự thận trọng cao độ do hai yếu tố chính: (1) mức độ biến động giá cao tiềm ẩn rủi ro và (2) sự thiếu vắng hoàn toàn của các bằng chứng định tính (cơ bản, tin tức) để xác thực xu hướng. Nhà đầu tư cần cân nhắc xem một tín hiệu kỹ thuật thuần túy, dù mạnh, có phù hợp với khẩu vị rủi ro và chiến lược đầu tư của mình hay không.
+
+**8. Disclaimer**
+*Nội dung này được tạo ra cho mục đích nghiên cứu học thuật và hỗ trợ quyết định, không phải là một khuyến nghị đầu tư. Phân tích chỉ dựa trên dữ liệu được cung cấp trong "evidence pack" tính đến ngày 31-03-2026. Các quyết định đầu tư thực tế cần được xem xét cẩn trọng với nhiều nguồn thông tin khác nhau.*
+
+---
+
+## 2026Q1_EVF_02
+
+Chắc chắn rồi, đây là decision card cho EVF dựa trên evidence pack được cung cấp.
+
+***
+
+### **Decision Card: EVF**
+
+**1. Tóm tắt tín hiệu**
+*   **Ticker:** EVF
+*   **Ngày quyết định:** 2026-03-31
+*   **Kỳ phân tích:** 2026Q1
+*   **Nguồn tín hiệu:** Mô hình `technical_Config_A_from_existing_pipeline`
+*   **Loại tín hiệu:** Tín hiệu kỹ thuật tích cực (`signal_class`: Buy Candidate)
+*   **Độ mạnh tín hiệu:** Cao, với xác suất dự báo xu hướng tăng là 99.16% (`pred_proba_up`) và xếp hạng 2 (`rank_in_period`) trong kỳ.
+*   **Chân trời xem xét:** Quý tiếp theo (`holding_horizon`).
+
+**2. Luận điểm đầu tư chính**
+Mô hình máy học xác định một tín hiệu kỹ thuật tích cực mạnh mẽ cho EVF, dựa trên sự kết hợp của động lượng giá đang gia tăng, sự cải thiện của các chỉ báo xu hướng, và khối lượng giao dịch tăng. Đà tăng trong quý hiện tại (`return_q`) cho thấy một sự đảo chiều tích cực so với sự sụt giảm của quý trước (`return_prev_q`). Tuy nhiên, luận điểm này hoàn toàn dựa trên phân tích kỹ thuật và đi kèm với rủi ro biến động giá cao. Lưu ý quan trọng là không có bằng chứng định tính (tin tức, cơ bản) trong gói dữ liệu này để hỗ trợ hoặc phản biện tín hiệu.
+
+**3. Yếu tố hỗ trợ**
+*   **Động lượng giá gần đây mạnh mẽ:** Cổ phiếu ghi nhận mức lợi suất dương 32.1% trong quý hiện tại (`return_q`) và lợi suất trung bình ngày dương (`return_mean_daily`), là yếu tố đóng góp chính cho tín hiệu tích cực.
+*   **Các chỉ báo kỹ thuật đồng thuận:**
+    *   Chỉ số RSI cuối kỳ ở mức 56.98 (`rsi_end_q`), cho thấy động lượng mua đang chiếm ưu thế nhưng chưa ở vùng quá mua.
+    *   MACD histogram trung bình dương (`macd_hist_mean_q`) và giá nằm trên đường trung bình động 20 ngày (`price_vs_sma20`) củng cố cho xu hướng tăng ngắn hạn.
+*   **Khối lượng giao dịch gia tăng:** Khối lượng giao dịch trong quý đã tăng 76% (`volume_change_q`), thể hiện sự quan tâm gia tăng từ thị trường có thể hỗ trợ cho xu hướng giá.
+*   **Quán tính tích cực trong quá khứ:** Lợi suất của 2 quý trước đó là 27.3% (`return_2q_ago`), cho thấy một nền tảng tăng giá trong lịch sử gần.
+
+**4. Yếu tố cần lưu ý / rủi ro**
+*   **Biến động giá cao:** Biên độ giá trong quý lên tới 37.0% (`price_range_q`), hàm ý một mức độ biến động cao và rủi ro tiềm ẩn trong ngắn hạn.
+*   **Kết quả tiêu cực của quý trước:** Cổ phiếu đã ghi nhận lợi suất âm 22.2% trong quý liền trước (`return_prev_q`), cho thấy xu hướng tăng hiện tại là một sự phục hồi và có thể chưa bền vững.
+*   **Thiếu bằng chứng định tính:** Gói dữ liệu không bao gồm thông tin tin tức hoặc phân tích cơ bản (`data_quality_flags.news_evidence_removed_for_ablation`: true). Do đó, tín hiệu này thiếu bối cảnh về các yếu tố kinh doanh, ngành hoặc sự kiện cụ thể có thể ảnh hưởng đến cổ phiếu.
+
+**5. Trigger theo dõi**
+*   **Động lượng giá:** Theo dõi chỉ số RSI (`rsi_end_q`). Một sự sụt giảm dưới mức 50 có thể là dấu hiệu suy yếu động lượng.
+*   **Xu hướng ngắn hạn:** Quan sát vị trí của giá so với đường SMA20 (`price_vs_sma20`). Việc giá cắt xuống dưới đường SMA20 có thể báo hiệu sự đảo chiều tiêu cực.
+*   **Khối lượng giao dịch:** Theo dõi khối lượng giao dịch (`volume_change_q`). Đà tăng giá đi kèm với khối lượng giảm dần có thể là một tín hiệu cảnh báo sớm.
+
+**6. Thời điểm review**
+Quyết định cần được xem xét lại vào cuối quý tiếp theo (Q2 2026) hoặc nếu bất kỳ trigger theo dõi nào ở trên được kích hoạt.
+
+**7. Kết luận hỗ trợ quyết định**
+EVF thể hiện một tín hiệu kỹ thuật rất tích cực, được củng cố bởi nhiều chỉ báo động lượng và xu hướng. Tuy nhiên, quyết định cần cân nhắc kỹ lưỡng các rủi ro đi kèm, bao gồm mức độ biến động giá cao và sự phục hồi từ một quý giảm giá trước đó. Sự thiếu hụt hoàn toàn của các bằng chứng định tính (tin tức, cơ bản) là một hạn chế lớn, khiến cho việc đánh giá chỉ dựa trên dữ liệu quá khứ và các chỉ báo kỹ thuật.
+
+**8. Disclaimer**
+Báo cáo này được tạo ra cho mục đích nghiên cứu học thuật và không cấu thành khuyến nghị đầu tư. Phân tích hoàn toàn dựa trên dữ liệu lịch sử được cung cấp trong evidence pack và tín hiệu từ mô hình, không có sự đảm bảo nào về hiệu suất trong tương lai. Người đọc nên tự thực hiện các phân tích và thẩm định của riêng mình.
+
+---
+
+## 2026Q1_DPM_03
+
+Chắc chắn rồi. Dưới đây là decision card cho DPM dựa trên evidence pack được cung cấp.
+
+***
+
+### **Decision Card: DPM**
+
+**Ngày quyết định:** 31/03/2026
+**ID quyết định:** 2026Q1_DPM_03
+
+---
+
+#### **1. Tóm tắt tín hiệu**
+
+Mô hình học máy (`technical_Config_A_from_existing_pipeline`) đưa ra tín hiệu **"Buy Candidate"** cho mã DPM. Tín hiệu này có xác suất dự báo xu hướng tăng rất cao (97.2%) và xếp hạng thứ 3 trong kỳ phân tích (`ml_signal`). Phân tích hoàn toàn dựa trên các chỉ báo kỹ thuật.
+
+#### **2. Luận điểm đầu tư chính**
+
+Tín hiệu ML cho thấy DPM đang có động lượng kỹ thuật tích cực mạnh mẽ trong quý hiện tại, được củng cố bởi sự gia tăng đáng kể của khối lượng giao dịch và các chỉ báo xu hướng. Tuy nhiên, tín hiệu này xuất hiện sau một quý sụt giảm và đi kèm với mức biến động giá cao, cho thấy rủi ro tiềm ẩn.
+
+#### **3. Yếu tố hỗ trợ**
+
+*   **Động lượng giá rất mạnh:** Cổ phiếu ghi nhận mức sinh lời 32.7% trong quý hiện tại (`return_q`), là yếu tố đóng góp chính cho tín hiệu tích cực.
+*   **Sự quan tâm của thị trường gia tăng:** Khối lượng giao dịch trong quý tăng 181.6% so với quý trước, phản ánh sự chú ý ngày càng tăng (`volume_change_q`).
+*   **Các chỉ báo động lượng ủng hộ:**
+    *   Chỉ báo RSI cuối kỳ ở mức 52.1, cho thấy đà tăng nhưng chưa đi vào vùng quá mua (`rsi_end_q`).
+    *   MACD histogram trung bình của quý là số dương (0.09), củng cố cho xu hướng tăng trong kỳ (`macd_hist_mean_q`).
+*   **Động lượng lịch sử:** Lợi suất của 2 quý trước đó cũng dương (18.1%), có thể là nền tảng cho quán tính tăng giá (`return_2q_ago`).
+
+#### **4. Yếu tố cần lưu ý / rủi ro**
+
+*   **Biến động giá rất cao:** Biên độ giá trong quý lên tới 50.5%, hàm ý rủi ro biến động mạnh trong ngắn hạn (`price_range_q`).
+*   **Xu hướng không ổn định:** Quý liền trước ghi nhận mức sinh lời âm (-11%), cho thấy xu hướng tăng hiện tại có thể chưa bền vững (`return_prev_q`).
+*   **Tín hiệu kỹ thuật ngắn hạn yếu:** Tại thời điểm cuối quý, giá đang thấp hơn 2.45% so với đường trung bình động 20 ngày (SMA20), là một chỉ báo yếu (`price_vs_sma20`).
+*   **Thiếu bằng chứng định tính:** Gói dữ liệu không bao gồm thông tin tin tức (`data_quality_flags: news_evidence_removed_for_ablation`). Do đó, phân tích này hoàn toàn thiếu bối cảnh về các yếu tố cơ bản, sự kiện doanh nghiệp hoặc các yếu tố vĩ mô có thể ảnh hưởng đến cổ phiếu.
+
+#### **5. Trigger theo dõi**
+
+*   **Vị thế giá so với SMA20:** Theo dõi liệu giá có vượt lên và duy trì trên đường SMA20 (`sma20_end`) hay không.
+*   **Chỉ báo RSI:** Quan sát diễn biến của chỉ báo RSI (`rsi_end_q`), đặc biệt nếu tiến vào vùng quá mua (thường trên 70).
+*   **Khối lượng giao dịch:** Theo dõi sự duy trì của khối lượng giao dịch ở mức cao. Sự sụt giảm đáng kể có thể là dấu hiệu động lượng yếu đi.
+
+#### **6. Thời điểm review**
+
+Dựa trên `holding_horizon` của tín hiệu, luận điểm này cần được xem xét lại vào cuối quý tiếp theo (Quý 2 năm 2026) hoặc nếu các trigger theo dõi có sự thay đổi trọng yếu.
+
+#### **7. Kết luận hỗ trợ quyết định**
+
+Tín hiệu kỹ thuật từ mô hình ML đưa ra một chỉ dẫn tích cực rất mạnh mẽ cho DPM, dựa trên động lượng giá và khối lượng vượt trội trong quý. Tuy nhiên, người ra quyết định cần nhận thức rõ các rủi ro đi kèm: biến động giá rất cao, sự thiếu ổn định trong xu hướng khi nhìn lại quý trước, và một vài chỉ báo kỹ thuật ngắn hạn còn yếu. Hạn chế lớn nhất là việc thiếu hoàn toàn thông tin định tính, khiến phân tích chỉ mang tính một chiều từ dữ liệu kỹ thuật.
+
+#### **8. Disclaimer**
+
+Báo cáo này chỉ nhằm mục đích nghiên cứu học thuật và hỗ trợ phân tích, không phải là khuyến nghị đầu tư. Phân tích chỉ dựa trên dữ liệu được cung cấp trong evidence pack tại một thời điểm cụ thể và không đảm bảo kết quả trong tương lai.
+
+---
+
+## 2026Q1_DCM_04
+
+Chắc chắn rồi, đây là decision card cho mã DCM dựa trên evidence pack bạn đã cung cấp.
+
+***
+
+### **Decision Card: DCM**
+
+**Decision ID:** 2026Q1_DCM_04
+**Ngày quyết định:** 2026-03-31
+**Chân trời xem xét:** Quý tiếp theo
+
+---
+
+#### **1. Tóm tắt tín hiệu**
+
+Mô hình học máy (`model_name`: technical_Config_A_from_existing_pipeline) đã tạo ra tín hiệu **"Ứng viên Mua"** (`signal_class`: Buy Candidate) cho mã DCM. Tín hiệu này có xác suất mô hình cho kịch bản tăng giá là rất cao (`pred_proba_up`: 0.958) và xếp hạng cao trong kỳ (`rank_in_period`: 4). Cần lưu ý rằng tín hiệu này hoàn toàn dựa trên dữ liệu kỹ thuật, và bằng chứng từ tin tức đã bị loại bỏ một cách có chủ đích khỏi phân tích này (`data_quality_flags.news_evidence_removed_for_ablation`: true).
+
+#### **2. Luận điểm đầu tư chính**
+
+Luận điểm chính xoay quanh tín hiệu kỹ thuật cho thấy động lượng giá và khối lượng giao dịch tăng mạnh trong quý hiện tại. Các chỉ báo xu hướng chính đều đang ở trạng thái tích cực, cho thấy một kịch bản tăng giá tiềm năng trong ngắn hạn. Tuy nhiên, luận điểm này hoàn toàn dựa trên phân tích kỹ thuật và cần được xem xét cùng với rủi ro về biến động giá cao và sự thiếu vắng thông tin định tính hỗ trợ.
+
+#### **3. Yếu tố hỗ trợ**
+
+*   **Động lượng giá rất tích cực:** Lợi suất trong quý đạt mức cao (`return_q`: 44.8%), là một trong những yếu tố chính thúc đẩy tín hiệu.
+*   **Các chỉ báo xu hướng xác nhận:**
+    *   Chỉ số RSI cuối kỳ ở mức 58.6 (`rsi_end_q`), cho thấy sức mạnh xu hướng nhưng chưa đi vào vùng quá mua. Đây là driver quan trọng nhất theo mô hình.
+    *   MACD histogram trung bình trong quý có giá trị dương (`macd_hist_mean_q`: 0.145), củng cố cho xu hướng tăng.
+    *   Giá đang nằm trên đường trung bình động 20 kỳ (`price_vs_sma20`: +3.1%), một dấu hiệu tích cực trong ngắn hạn.
+*   **Sự quan tâm của thị trường gia tăng:** Khối lượng giao dịch trong quý tăng mạnh so với quý trước (`volume_change_q`: 1.76), cho thấy dòng tiền đang chú ý đến cổ phiếu.
+*   **Động lượng lịch sử:** Lợi suất của 2 quý trước đó cũng dương (`return_2q_ago`: 11.1%), cho thấy một nền tảng tích cực trong quá khứ gần.
+
+#### **4. Yếu tố cần lưu ý / rủi ro**
+
+*   **Biến động giá cao:** Biên độ giá trong quý ở mức đáng kể (`price_range_q`: 0.496), hàm ý mức độ rủi ro cao và khả năng dao động giá mạnh.
+*   **Hiệu suất không nhất quán:** Lợi suất của quý liền trước đó là âm (`return_prev_q`: -10.7%), cho thấy sự thiếu ổn định trong đà tăng trưởng gần đây.
+*   **Thiếu bằng chứng định tính:** Không có thông tin từ tin tức để hỗ trợ hay phản biện tín hiệu kỹ thuật (`data_quality_flags`). Việc thiếu bối cảnh thị trường và thông tin doanh nghiệp là một điểm yếu lớn của phân tích này.
+*   **Tín hiệu thuần kỹ thuật:** Toàn bộ tín hiệu chỉ dựa trên mô hình học máy (`card_input_variant`: ml_only) mà không có phân tích cơ bản đi kèm trong evidence pack.
+
+#### **5. Trigger theo dõi**
+
+*   Sự suy yếu của các chỉ báo động lượng chính: RSI giảm xuống dưới ngưỡng 50 hoặc MACD cắt xuống dưới đường tín hiệu.
+*   Giá phá vỡ các ngưỡng hỗ trợ kỹ thuật, đặc biệt là đường SMA20 (hiện tại là `sma20_end`: 46.835).
+*   Khối lượng giao dịch sụt giảm đột ngột, có thể cho thấy sự suy yếu của lực mua.
+
+#### **6. Thời điểm review**
+
+Dựa trên chân trời đầu tư được xác định (`holding_horizon`), tín hiệu này cần được đánh giá lại vào cuối quý tiếp theo (Quý 2 năm 2026).
+
+#### **7. Kết luận hỗ trợ quyết định**
+
+Evidence pack cung cấp một tín hiệu kỹ thuật rất mạnh mẽ, ủng hộ kịch bản tăng giá trong ngắn hạn, được dẫn dắt bởi động lượng giá và khối lượng vượt trội. Tuy nhiên, quyết định cần cân nhắc kỹ lưỡng các yếu tố rủi ro đi kèm: (1) mức độ biến động giá cao, (2) sự thiếu nhất quán về hiệu suất trong các quý gần đây, và quan trọng nhất là (3) sự thiếu vắng hoàn toàn thông tin định tính hoặc cơ bản để xác thực tín hiệu. Đây là một cơ hội tiềm năng dựa trên động lượng thuần túy, phù hợp với các chiến lược chấp nhận rủi ro từ các tín hiệu kỹ thuật.
+
+#### **8. Disclaimer**
+
+*Tài liệu này chỉ nhằm mục đích nghiên cứu học thuật và hỗ trợ ra quyết định. Thông tin được trình bày dựa trên dữ liệu giới hạn trong evidence pack và không cấu thành khuyến nghị đầu tư. Các mô hình dự báo có thể sai sót. Nhà đầu tư nên tự thực hiện các phân tích bổ sung và không nên coi đây là cơ sở duy nhất để thực hiện giao dịch.*
+
+---
+
+## 2026Q1_REE_05
+
+Chắc chắn rồi, đây là decision card cho mã REE dựa trên evidence pack bạn đã cung cấp.
+
+***
+
+### **Decision Card: REE**
+
+**1. Tóm tắt tín hiệu**
+*   **Ticker:** REE
+*   **Ngày quyết định:** 2026-03-31
+*   **Kỳ phân tích:** Q1 2026
+*   **Tín hiệu mô hình (ML Signal):** "Buy Candidate" (Ứng viên Mua)
+*   **Mức độ tín hiệu (pred_proba_up):** 0.953 (cao)
+*   **Xếp hạng trong kỳ (rank_in_period):** 5
+*   **Lưu ý về dữ liệu:** Phân tích này chỉ dựa trên dữ liệu kỹ thuật. Evidence pack không bao gồm dữ liệu tin tức định tính để đối chứng (`data_quality_flags.news_evidence_removed_for_ablation`).
+
+**2. Luận điểm đầu tư chính**
+Mô hình học máy đưa ra tín hiệu "Ứng viên Mua" với xác suất cao, chủ yếu dựa trên các chỉ báo kỹ thuật cho thấy động lượng giá tích cực mạnh mẽ và sự gia tăng quan tâm của thị trường trong Quý 1/2026. Đà tăng trong quý hiện tại đã lấn át được hiệu suất yếu kém của hai quý trước đó. Tuy nhiên, luận điểm này hoàn toàn mang tính định lượng và thiếu sự xác thực từ các yếu tố tin tức hoặc cơ bản trong evidence pack được cung cấp.
+
+**3. Yếu tố hỗ trợ**
+*   **Động lượng giá ngắn hạn mạnh mẽ:** Cổ phiếu ghi nhận mức sinh lời 14.5% trong Quý 1/2026 (`return_q`), là một trong những yếu tố chính hỗ trợ tín hiệu tăng giá (`top_drivers`).
+*   **Sức mạnh xu hướng được củng cố:**
+    *   Chỉ số RSI cuối kỳ ở mức 59.1, cho thấy sức mua đang chiếm ưu thế nhưng chưa đi vào vùng quá mua (`rsi_end_q`). Đây được xác định là driver kỹ thuật quan trọng nhất cho tín hiệu này.
+    *   Giá tại cuối kỳ cao hơn 5.3% so với đường trung bình động 20 ngày (SMA20), xác nhận xu hướng tăng trong ngắn hạn (`price_vs_sma20`).
+    *   MACD histogram trung bình dương (`macd_hist_mean_q`: 0.1528), phản ánh động lượng tăng được duy trì trong suốt quý.
+*   **Sự quan tâm của thị trường gia tăng:** Khối lượng giao dịch trong quý tăng 87.1% so với quý trước (`volume_change_q`: 1.87), cho thấy sự chú ý và dòng tiền có thể đang quay trở lại với cổ phiếu.
+
+**4. Yếu tố cần lưu ý / rủi ro**
+*   **Thiếu bằng chứng định tính:** Tín hiệu hoàn toàn dựa trên phân tích kỹ thuật. Việc không có dữ liệu tin tức (`news_evidence_removed_for_ablation`) là một hạn chế lớn, khiến chúng ta không thể đánh giá các yếu tố cơ bản hoặc sự kiện có thể ảnh hưởng đến cổ phiếu.
+*   **Hiệu suất yếu trong quá khứ gần:** Cổ phiếu ghi nhận lợi suất âm trong hai quý liền kề trước đó (Q4/2025: -7.3% và Q3/2025: -3.0%). Các yếu tố này được mô hình ghi nhận là tín hiệu yếu/tiêu cực (`return_prev_q`, `return_2q_ago`). Cần theo dõi tính bền vững của đà phục hồi hiện tại.
+*   **Bản chất của tín hiệu:** Tín hiệu được tạo ra bởi một mô hình thống kê (`ml_signal`), không phải là kết quả của phân tích cơ bản sâu rộng.
+
+**5. Trigger theo dõi**
+*   **Chỉ báo động lượng:** Theo dõi chỉ số RSI. Nếu RSI giảm xuống dưới vùng 50, đây có thể là dấu hiệu sớm cho thấy động lượng tăng đang suy yếu.
+*   **Duy trì xu hướng ngắn hạn:** Giá giữ vững trên đường SMA20 (`sma20_end`). Việc giá phá vỡ xuống dưới đường trung bình này có thể là một tín hiệu cảnh báo.
+*   **Khối lượng giao dịch:** Quan sát khối lượng giao dịch trong các phiên tới để xác nhận liệu sự quan tâm của thị trường có được duy trì hay không.
+
+**6. Thời điểm review**
+Dựa trên khung thời gian của tín hiệu (`holding_horizon`), quyết định này nên được xem xét lại vào cuối quý tiếp theo (cuối Quý 2/2026) hoặc khi một trong các trigger theo dõi được kích hoạt.
+
+**7. Kết luận hỗ trợ quyết định**
+Evidence pack cung cấp một tín hiệu kỹ thuật mạnh, gợi ý về tiềm năng hiệu suất tích cực cho REE trong ngắn hạn, dựa trên sự cải thiện đáng kể về động lượng giá và khối lượng giao dịch trong quý vừa qua. Tuy nhiên, người ra quyết định cần hết sức thận trọng do hai yếu tố chính: (1) sự vắng mặt hoàn toàn của các bằng chứng định tính (tin tức), và (2) lịch sử hiệu suất yếu kém trong hai quý trước đó. Tín hiệu này có thể phù hợp với một chiến lược dựa trên động lượng, nhưng mức độ tin cậy sẽ cao hơn nếu được xác thực bởi các phân tích khác.
+
+**8. Disclaimer**
+Tài liệu này là một phân tích được tạo ra bởi trợ lý nghiên cứu học thuật dựa trên dữ liệu được cung cấp và không cấu thành khuyến nghị đầu tư. Nội dung chỉ nhằm mục đích hỗ trợ quá trình ra quyết định. Nhà đầu tư cần thực hiện thẩm định của riêng mình. Hiệu suất trong quá khứ không phải là một chỉ báo đáng tin cậy cho kết quả trong tương lai.

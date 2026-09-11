@@ -1,0 +1,306 @@
+{
+  "decision_id": "2025Q3_LPB_01",
+  "snapshot_mode": "full_evidence",
+  "ticker": "LPB",
+  "decision_date": "2025-09-30",
+  "period_id": "2025Q3",
+  "holding_horizon": "next_quarter_or_period_return_in_signals",
+  "ml_signal": {
+    "model_name": "technical_Config_A_from_existing_pipeline",
+    "pred_proba_up": 0.9985291000420128,
+    "pred_label": 1,
+    "rank_in_period": 1,
+    "source_signal_class": "Buy Candidate",
+    "display_status": "Model candidate"
+  },
+  "technical_snapshot": {
+    "rsi_end_q": 73.88914126529959,
+    "macd_hist_mean_q": 0.10052207067505359,
+    "price_vs_sma20": 0.08750232471638449,
+    "return_2q_ago": 0.06397673573246085,
+    "return_q": 0.5398288347597104,
+    "return_prev_q": 0.036734693877551086,
+    "volume_change_q": 0.315542397657516,
+    "return_mean_daily": 0.007020748391371982,
+    "price_range_q": 0.4440321943306367,
+    "sma20_end": 43.016000000000005
+  },
+  "top_drivers": [
+    {
+      "feature": "rsi_end_q",
+      "value": 73.88914126529959,
+      "direction": "positive_but_overbought_risk",
+      "explanation": "RSI cuối kỳ là driver kỹ thuật quan trọng nhất trong mô hình."
+    },
+    {
+      "feature": "macd_hist_mean_q",
+      "value": 0.10052207067505359,
+      "direction": "supports_up_signal",
+      "explanation": "MACD histogram trung bình phản ánh động lượng xu hướng."
+    },
+    {
+      "feature": "price_vs_sma20",
+      "value": 0.08750232471638449,
+      "direction": "supports_up_signal",
+      "explanation": "Vị trí giá so với SMA20 phản ánh trạng thái trên/dưới đường trung bình."
+    },
+    {
+      "feature": "return_2q_ago",
+      "value": 0.06397673573246085,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trễ hai kỳ phản ánh động lượng/quán tính lịch sử."
+    },
+    {
+      "feature": "return_q",
+      "value": 0.5398288347597104,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trong kỳ hiện tại phản ánh xu hướng gần nhất."
+    },
+    {
+      "feature": "return_prev_q",
+      "value": 0.036734693877551086,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất kỳ trước bổ sung thông tin động lượng."
+    },
+    {
+      "feature": "volume_change_q",
+      "value": 0.315542397657516,
+      "direction": "supports_up_signal",
+      "explanation": "Thay đổi khối lượng phản ánh mức độ quan tâm của thị trường."
+    },
+    {
+      "feature": "return_mean_daily",
+      "value": 0.007020748391371982,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trung bình ngày phản ánh xu hướng ngắn trong kỳ."
+    },
+    {
+      "feature": "price_range_q",
+      "value": 0.4440321943306367,
+      "direction": "risk_high_volatility",
+      "explanation": "Biên độ giá trong kỳ phản ánh biến động/rủi ro."
+    },
+    {
+      "feature": "sma20_end",
+      "value": 43.016000000000005,
+      "direction": "context",
+      "explanation": "SMA20 cuối kỳ phản ánh mặt bằng xu hướng ngắn hạn."
+    }
+  ],
+  "news_evidence": [
+    {
+      "evidence_id": "N001",
+      "published_at": "2025-09-30",
+      "source": "vietstock",
+      "title": "LPB: Nghị quyết HĐQT về việc thay đổi địa điểm trụ sở chi nhánh Hải Phòng, PGD Trường Chinh, PGD Mỹ Đình",
+      "article_summary": "LPB: Nghị quyết HĐQT về việc thay đổi địa điểm trụ sở chi nhánh Hải Phòng, PGD Trường Chinh, PGD Mỹ Đình Ngân hàng Thương mại Cổ phần Lộc Phát Việt Nam công bố Nghị quyết HĐQT về việc thay đổi địa điểm trụ sở chi nhánh Hải Phòng, PGD Trường Chinh, PGD Mỹ Đình như sau: Ngân hàng Thương mại Cổ phần Lộc Phát Việt Nam công bố Nghị quyết HĐQT về việc thay đổi địa điểm trụ sở chi nhánh Hải Phòng, PGD Trường Chinh, PGD Mỹ Đình như sau: LPB: Nghị quyết HĐQT về việc thay đổi địa điểm trụ sở chi nhánh Hải Phòng, PGD Trường Chinh, PGD Mỹ Đình",
+      "key_facts": [],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "exact",
+      "evidence_span": "LPB: Nghị quyết HĐQT về việc thay đổi địa điểm trụ sở chi nhánh Hải Phòng, PGD Trường Chinh, PGD Mỹ Đình Ngân hàng Thương mại Cổ phần Lộc Phát Việt Nam công bố Nghị quyết HĐQT về việc thay đổi địa điểm trụ sở chi nhánh Hải Phòng, PGD Trường Chinh, PGD Mỹ Đình như sau: Ngân hàng Thương mại Cổ phần Lộc Phát Việt Nam công bố Nghị quyết HĐQT về việc thay đổi địa điểm trụ sở chi nhánh Hải Phòng, PGD Trường Chinh, PGD Mỹ Đình như sau: LPB: Nghị quyết HĐQT về việc thay đổi địa điểm trụ sở chi nhánh Hải",
+      "url": "https://vietstock.vn/2025/10/lpb-nghi-quyet-hdqt-ve-viec-thay-doi-dia-diem-tru-so-chi-nhanh-hai-phong-pgd-truong-chinh-pgd-my-dinh-737-1358745.htm",
+      "content_hash": "d30f6fb89931e12f04c00e292a2ebea8d47dcbdf19fe12e66bf8122a76f0379a",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N002",
+      "published_at": "2025-09-26",
+      "source": "cafef",
+      "title": "LPB: Thông báo nhận được công văn của NHNN Chi nhánh Khu vực 2 về việc chấp thuận thay đổi địa điểm PGD Dĩ An",
+      "article_summary": "Ngân hàng Thương mại Cổ phần Lộc Phát Việt Nam thông báo nhận được công văn của NHNN Chi nhánh Khu vực 2 về việc chấp thuận thay đổi địa điểm PGD Dĩ An LPB: Thông báo nhận được công văn của NHNN Chi nhánh Khu vực 2 về việc chấp thuận thay đổi địa điểm PGD Dĩ An Ngân hàng Thương mại Cổ phần Lộc Phát Việt Nam thông báo nhận được công văn của NHNN Chi nhánh Khu vực 2 về việc chấp thuận thay đổi địa điểm PGD Dĩ An",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "LPB: Thông báo nhận được công văn của NHNN Chi nhánh Khu vực 2 về việc chấp thuận thay đổi địa điểm PGD Dĩ An Ngân hàng Thương mại Cổ phần Lộc Phát Việt Nam thông báo nhận được công văn của NHNN Chi nhánh Khu vực 2 về việc chấp thuận thay đổi địa điểm PGD Dĩ An LPB: Thông báo nhận được công văn của ",
+          "evidence_quote": "LPB: Thông báo nhận được công văn của NHNN Chi nhánh Khu vực 2 về việc chấp thuận thay đổi địa điểm PGD Dĩ An Ngân hàng Thương mại Cổ phần Lộc Phát Việt Nam thông báo nhận được công văn của NHNN Chi nhánh Khu vực 2 về việc chấp thuận thay đ",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "exact",
+      "evidence_span": "LPB: Thông báo nhận được công văn của NHNN Chi nhánh Khu vực 2 về việc chấp thuận thay đổi địa điểm PGD Dĩ An Ngân hàng Thương mại Cổ phần Lộc Phát Việt Nam thông báo nhận được công văn của NHNN Chi nhánh Khu vực 2 về việc chấp thuận thay đổi địa điểm PGD Dĩ An",
+      "url": "https://cafef.vn/du-lieu/LPB-2306415/lpb-thong-bao-nhan-duoc-cong-van-cua-nhnn-chi-nhanh-khu-vuc-2-ve-viec-chap-thuan-thay-doi-dia-diem-pgd-di-an.chn",
+      "content_hash": "3bfaefa2f75c859df1a8e0e3eaab0b8b3fca1f95ab827f31eae8122425e74c4e",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N003",
+      "published_at": "2025-09-23",
+      "source": "vietstock",
+      "title": "LPB: Thông báo nhận được công văn của NHNN Chi nhánh Khu vực 2 về việc chấp thuận thay đổi địa điểm PGD Dĩ An",
+      "article_summary": "LPB: Thông báo nhận được công văn của NHNN Chi nhánh Khu vực 2 về việc chấp thuận thay đổi địa điểm PGD Dĩ An Ngân hàng Thương mại Cổ phần Lộc Phát Việt Nam thông báo nhận được công văn của NHNN Chi nhánh Khu vực 2 về việc chấp thuận thay đổi địa điểm PGD Dĩ An như sau: Ngân hàng Thương mại Cổ phần Lộc Phát Việt Nam thông báo nhận được công văn của NHNN Chi nhánh Khu vực 2 về việc chấp thuận thay đổi địa điểm PGD Dĩ An như sau: LPB: Thông báo nhận được công văn của NHNN Chi nhánh Khu vực 2 về việc chấp thuận thay đổi địa điểm PGD Dĩ An",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "LPB: Thông báo nhận được công văn của NHNN Chi nhánh Khu vực 2 về việc chấp thuận thay đổi địa điểm PGD Dĩ An nan LPB: Thông báo nhận được công văn của NHNN Chi nhánh Khu vực 2 về việc chấp thuận thay đổi địa điểm PGD Dĩ An Ngân hàng Thương mại Cổ phần Lộc Phát Việt Nam thông báo nhận được công văn ",
+          "evidence_quote": "LPB: Thông báo nhận được công văn của NHNN Chi nhánh Khu vực 2 về việc chấp thuận thay đổi địa điểm PGD Dĩ An nan LPB: Thông báo nhận được công văn của NHNN Chi nhánh Khu vực 2 về việc chấp thuận thay đổi địa điểm PGD Dĩ An Ngân hàng Thương",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "exact",
+      "evidence_span": "LPB: Thông báo nhận được công văn của NHNN Chi nhánh Khu vực 2 về việc chấp thuận thay đổi địa điểm PGD Dĩ An Ngân hàng Thương mại Cổ phần Lộc Phát Việt Nam thông báo nhận được công văn của NHNN Chi nhánh Khu vực 2 về việc chấp thuận thay đổi địa điểm PGD Dĩ An như sau: Ngân hàng Thương mại Cổ phần Lộc Phát Việt Nam thông báo nhận được công văn của NHNN Chi nhánh Khu vực 2 về việc chấp thuận thay đổi địa điểm PGD Dĩ An như sau: LPB: Thông báo nhận được công văn của NHNN Chi nhánh Khu vực 2 về vi",
+      "url": "https://vietstock.vn/2025/09/lpb-thong-bao-nhan-duoc-cong-van-cua-nhnn-chi-nhanh-khu-vuc-2-ve-viec-chap-thuan-thay-doi-dia-diem-pgd-di-an-737-1356154.htm",
+      "content_hash": "97a6eb46fc4f899d2c2553db237197dd94039f258cfec92e161b69b7ebbf3a12",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N004",
+      "published_at": "2025-09-23",
+      "source": "vietstock",
+      "title": "CBTT về việc đăng ký giao dịch trái phiếu LPB12503 của Ngân hàng Thương mại Cổ phần Lộc Phát Việt Nam (tên cũ: Ngân hàng Thương mại cổ phần Bưu Điện Liên Việt)",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "CBTT về việc đăng ký giao dịch trái phiếu LPB12503 của Ngân hàng Thương mại Cổ phần Lộc Phát Việt Nam (tên cũ: Ngân hàng Thương mại cổ phần Bưu Điện Liên Việt) nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng q",
+          "evidence_quote": "CBTT về việc đăng ký giao dịch trái phiếu LPB12503 của Ngân hàng Thương mại Cổ phần Lộc Phát Việt Nam (tên cũ: Ngân hàng Thương mại cổ phần Bưu Điện Liên Việt) nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch ",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Công ty TNHH Đầu tư Starbay Hà Nội hoàn tất đợt phát hành riêng lẻ lô trái phiếu STA12601 với tổng giá trị 2,780 tỷ đồng.",
+          "evidence_quote": "Công ty TNHH Đầu tư Starbay Hà Nội hoàn tất đợt phát hành riêng lẻ lô trái phiếu STA12601 với tổng giá trị 2,780 tỷ đồng.",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Công ty TNHH Thăng Long hoàn tất đợt chào bán riêng lẻ lô trái phiếu THL12602 với tổng giá trị 763 tỷ đồng.",
+          "evidence_quote": "Công ty TNHH Thăng Long hoàn tất đợt chào bán riêng lẻ lô trái phiếu THL12602 với tổng giá trị 763 tỷ đồng.",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "CTCP Bất động sản Bcons PS (Bcons PS Land, BPSC) mới đây tiếp tục huy động lô trái phiếu mới 140 tỷ đồng, lãi suất 12%/năm.",
+          "evidence_quote": "CTCP Bất động sản Bcons PS (Bcons PS Land, BPSC) mới đây tiếp tục huy động lô trái phiếu mới 140 tỷ đồng, lãi suất 12%/năm.",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Theo thông tin công bố từ Tập đoàn PC1 (HOSE: PC1), Ủy ban Chứng khoán Nhà nước (UBCKNN) đã ra quyết định buộc Doanh nghiệp thu hồi lô trái phiếu trị giá 900 tỷ...",
+          "evidence_quote": "Theo thông tin công bố từ Tập đoàn PC1 (HOSE: PC1), Ủy ban Chứng khoán Nhà nước (UBCKNN) đã ra quyết định buộc Doanh nghiệp thu hồi lô trái phiếu trị giá 900 tỷ...",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2025/09/cbtt-ve-viec-dang-ky-giao-dich-trai-phieu-lpb12503-cua-ngan-hang-thuong-mai-co-phan-loc-phat-viet-nam-ten-cu-ngan-hang-thuong-mai-co-phan-buu-dien-l-3118-1355116.htm",
+      "content_hash": "548be11e554e2c2cbe2178281c1b372279a489405bd4a56a1c1c4cacf25802ba",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N005",
+      "published_at": "2025-09-23",
+      "source": "vietstock",
+      "title": "CBTT về việc đăng ký giao dịch trái phiếu LPB12504 của Ngân hàng Thương mại Cổ phần Lộc Phát Việt Nam (tên cũ: Ngân hàng Thương mại cổ phần Bưu Điện Liên Việt)",
+      "article_summary": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nông sản thực phẩm KINH TẾ Vĩ mô Kinh tế - Đầu tư THẾ GIỚI Chứng khoán thế giới Tiền kỹ thuật số Tài chính quốc tế Kinh tế - Đầu tư TÀI CHÍNH CÁ NHÂN Làm chủ đồng tiền Đầu tư – Kinh doanh nhỏ Doanh nhân và khởi nghiệp Chơi sang Xe - Công nghệ Tiêu dùng và lối sống Vì cộng đồng PHÂN TÍCH Nhận định thị trường Phân tích cơ bản Phân tích kỹ thuật ĐÔNG DƯƠNG Vĩ mô Tài chính - Ngân hàng Thị trường chứng khoán Kinh tế - Đầu tư CHỦ ĐỀ NÓNG Quan hệ Nhà đầu tư (IR) ĐHĐCĐ thường niên 2026 Nâng hạng thị trường Trump 2.0 Trung tâm tài chính Các kênh đầu tư DỮ LIỆU NGÀNH Tổng quan ngành Ngành chi tiết DỮ LIỆU DOANH NGHIỆP Doanh nghiệp A-Z Lịch sự kiện Cập nhật lãi lỗ Giao dịch nội bộ Tài liệu cổ đông Niên gi",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "CBTT về việc đăng ký giao dịch trái phiếu LPB12504 của Ngân hàng Thương mại Cổ phần Lộc Phát Việt Nam (tên cũ: Ngân hàng Thương mại cổ phần Bưu Điện Liên Việt) nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng q",
+          "evidence_quote": "CBTT về việc đăng ký giao dịch trái phiếu LPB12504 của Ngân hàng Thương mại Cổ phần Lộc Phát Việt Nam (tên cũ: Ngân hàng Thương mại cổ phần Bưu Điện Liên Việt) nan Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch ",
+          "fact_type": "dividend",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Công ty TNHH Đầu tư Starbay Hà Nội hoàn tất đợt phát hành riêng lẻ lô trái phiếu STA12601 với tổng giá trị 2,780 tỷ đồng.",
+          "evidence_quote": "Công ty TNHH Đầu tư Starbay Hà Nội hoàn tất đợt phát hành riêng lẻ lô trái phiếu STA12601 với tổng giá trị 2,780 tỷ đồng.",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Công ty TNHH Thăng Long hoàn tất đợt chào bán riêng lẻ lô trái phiếu THL12602 với tổng giá trị 763 tỷ đồng.",
+          "evidence_quote": "Công ty TNHH Thăng Long hoàn tất đợt chào bán riêng lẻ lô trái phiếu THL12602 với tổng giá trị 763 tỷ đồng.",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "CTCP Bất động sản Bcons PS (Bcons PS Land, BPSC) mới đây tiếp tục huy động lô trái phiếu mới 140 tỷ đồng, lãi suất 12%/năm.",
+          "evidence_quote": "CTCP Bất động sản Bcons PS (Bcons PS Land, BPSC) mới đây tiếp tục huy động lô trái phiếu mới 140 tỷ đồng, lãi suất 12%/năm.",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Theo thông tin công bố từ Tập đoàn PC1 (HOSE: PC1), Ủy ban Chứng khoán Nhà nước (UBCKNN) đã ra quyết định buộc Doanh nghiệp thu hồi lô trái phiếu trị giá 900 tỷ...",
+          "evidence_quote": "Theo thông tin công bố từ Tập đoàn PC1 (HOSE: PC1), Ủy ban Chứng khoán Nhà nước (UBCKNN) đã ra quyết định buộc Doanh nghiệp thu hồi lô trái phiếu trị giá 900 tỷ...",
+          "fact_type": "debt_risk",
+          "direction": "risk",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "capital_dilution",
+        "debt_risk",
+        "earnings_warning",
+        "governance",
+        "legal_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,legal_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Vietstock - Trang thông tin điện tử tổng hợp CHỨNG KHOÁN Cổ phiếu Giao dịch nội bộ Niêm yết ETF và các quỹ Chứng khoán phái sinh Chứng quyền Ý kiến chuyên gia Câu chuyện đầu tư Chính sách Trái phiếu DOANH NGHIỆP Hoạt động kinh doanh Cổ tức Tăng vốn - M&A IPO - Cổ phần hóa Nhân vật Trái phiếu doanh nghiệp BẤT ĐỘNG SẢN Thị trường nhà đất Quy hoạch - Hạ tầng Dự án Bảo hiểm và thuế nhà đất TÀI CHÍNH Ngân hàng Bảo hiểm Thuế và Ngân sách Tài sản số HÀNG HÓA Vàng và kim loại quý Nhiên liệu Kim loại Nôn",
+      "url": "https://vietstock.vn/2025/09/cbtt-ve-viec-dang-ky-giao-dich-trai-phieu-lpb12504-cua-ngan-hang-thuong-mai-co-phan-loc-phat-viet-nam-ten-cu-ngan-hang-thuong-mai-co-phan-buu-dien-l-3118-1355118.htm",
+      "content_hash": "16ab7062d2e3213311861a5bc8e195b49020c2f50f6c60f4f8d13b351f1f78b6",
+      "extraction_status": "ok"
+    }
+  ],
+  "data_quality_flags": {
+    "news_coverage": "high",
+    "ticker_matching_confidence": "mixed",
+    "full_text_coverage": 5,
+    "summary_coverage": 5,
+    "key_fact_coverage": 4,
+    "missing_fields": []
+  },
+  "guardrails": {
+    "initial_prompt_safe": true,
+    "news_cutoff": "2025-09-30",
+    "not_investment_advice": true,
+    "no_post_decision_data": true,
+    "full_text_excerpt_chars": 500
+  },
+  "provenance": {
+    "name": "initial_evidence",
+    "path": "reports/decision_support/generated/evidence_packs_initial.json",
+    "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+    "zone": "initial",
+    "record_count": 25,
+    "schema_version": "evidence-pack-initial-v1",
+    "generated_at_utc": null,
+    "provenance_status": null
+  }
+}

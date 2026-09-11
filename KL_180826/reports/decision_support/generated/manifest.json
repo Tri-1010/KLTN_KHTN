@@ -1,0 +1,58 @@
+{
+  "generated_at_utc": "2026-07-15T03:13:15+00:00",
+  "source_files": [
+    "C:\\Users\\User\\KLTN_KHTN\\reports\\signals.csv",
+    "C:\\Users\\User\\KLTN_KHTN\\data\\features\\technical_features.csv",
+    "C:\\Users\\User\\KLTN_KHTN\\data\\news\\enriched\\all_news_enriched.csv"
+  ],
+  "source_sha256": {
+    "C:\\Users\\User\\KLTN_KHTN\\reports\\signals.csv": "78a38e972b2a2ba65a603a06ff27f38df3dd733c55950cb978b55600ed55a278",
+    "C:\\Users\\User\\KLTN_KHTN\\data\\features\\technical_features.csv": "b0a1cb2e7ea71708131cc444de07e1457bc2d457e9e2a255af418f480f324e3e",
+    "C:\\Users\\User\\KLTN_KHTN\\data\\news\\enriched\\all_news_enriched.csv": "c521184ebcd87cd95591779432304036e3047bea520d050a8fe2187b690559fe"
+  },
+  "news_source_selected": "C:\\Users\\User\\KLTN_KHTN\\data\\news\\enriched\\all_news_enriched.csv",
+  "top_k_per_period": 5,
+  "max_news_per_pack": 5,
+  "num_evidence_packs": 25,
+  "num_prompt_safe_packs": 25,
+  "positive_outcomes": 19,
+  "negative_or_neutral_outcomes": 6,
+  "artifact_sha256": {
+    "evidence_packs_audit.json": "178e46c16a1de7fa5efd47ed3ed3d2f5cd5cbf77ed204150622795e1ccddca6d",
+    "evidence_packs_initial.json": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+    "evidence_packs_ml_only.json": "c99ac78c69980481c33f8c8fa7cd14c3c857de36282745a7f73092100b7c9620",
+    "evidence_packs.json": "178e46c16a1de7fa5efd47ed3ed3d2f5cd5cbf77ed204150622795e1ccddca6d",
+    "decision_cards.md": "b11461f1e52bdac0ac8f6aa0db490db69a629f182694091d7e4ca181eeb4a290",
+    "outcome_reviews.md": "9fe9e2c908ae74edc2eb8626d273b2b592b7693149e7c8ac276651250190e158",
+    "rule_based_cards.json": "269e1010cd5fa0344f8b6acbe9c7eb4e2926b6c8a5490d4f95ec71be13602eb8",
+    "outcome_reviews.json": "aab954d61d5c0138ac56056639e0ab86c92408100c17517f227181f94e0f4095",
+    "monitoring_cases_summary.csv": "c36b2582570f99f2bbefbe81f7db250d5ababfaae35ca2269226b9095b2916a1",
+    "news_fulltext_coverage.csv": "01f4d795f81f3b585a16ff5a9dac5415d5e13c162e4cfc27db04acbaedef4cbe",
+    "llm_rubric_scoring_template.csv": "5725e8010eae77a779e538235ba7e9fb824230f8d27ef0b2e9af923a31f8984c",
+    "generated_summary.md": "7916c7053fa9de40ed45bbac6888c3cd3d50cd8499a48dc2f35ff0e3b2571e5d"
+  },
+  "outputs": [
+    "evidence_packs_audit.json",
+    "evidence_packs_initial.json",
+    "evidence_packs_ml_only.json",
+    "evidence_packs.json",
+    "decision_cards.md",
+    "outcome_reviews.md",
+    "rule_based_cards.json",
+    "outcome_reviews.json",
+    "monitoring_cases_summary.csv",
+    "news_fulltext_coverage.csv",
+    "llm_rubric_scoring_template.csv",
+    "generated_summary.md"
+  ],
+  "backward_compatibility": {
+    "evidence_packs.json": "audit_copy_contains_outcome_for_review_only"
+  },
+  "leakage_guardrails": {
+    "initial_packs_strip_review_fields": true,
+    "ml_only_packs_strip_review_fields": true,
+    "news_cutoff_enforced": "published_at <= decision_date",
+    "llm_initial_prompts_should_use": "evidence_packs_initial.json or evidence_packs_ml_only.json"
+  },
+  "note": "Rule-based decision cards are baselines; live LLM cards are generated separately."
+}

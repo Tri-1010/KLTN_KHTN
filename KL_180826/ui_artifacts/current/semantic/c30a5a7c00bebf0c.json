@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "c30a5a7c00bebf0c",
+    "ticker": "MWG",
+    "article_date": "2022-09-27",
+    "consensus_method": "unanimous",
+    "agreement_level": "high",
+    "analysis_eligible": true,
+    "consensus_direction": "mixed",
+    "consensus_materiality": "medium",
+    "consensus_event_type": "earnings",
+    "evidence_span": "Nhờ thay đổi cách sắp xếp, doanh thu bình quân mỗi cửa hàng BHX đã tăng lên 1,36 tỷ đồng trong tháng 8/2022, tăng 5% so với tháng trước.",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "unclear_direction"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "unclear_direction"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

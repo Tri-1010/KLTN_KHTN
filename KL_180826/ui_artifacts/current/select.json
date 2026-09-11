@@ -1,0 +1,477 @@
+[
+  {
+    "decision_id": "2025Q1_BSI_05",
+    "ticker": "BSI",
+    "period_id": "2025Q1",
+    "decision_date": "2025-03-31",
+    "display_status": "Model candidate",
+    "pred_proba_up": 0.9968577136500381,
+    "rank_in_period": 5,
+    "data_quality": {
+      "news_coverage": "high",
+      "ticker_matching_confidence": "mixed",
+      "full_text_coverage": 5,
+      "summary_coverage": 5,
+      "key_fact_coverage": 4,
+      "missing_fields": []
+    },
+    "monitoring_available": true,
+    "review_available": true
+  },
+  {
+    "decision_id": "2025Q1_SCR_01",
+    "ticker": "SCR",
+    "period_id": "2025Q1",
+    "decision_date": "2025-03-31",
+    "display_status": "Model candidate",
+    "pred_proba_up": 0.999444145459264,
+    "rank_in_period": 1,
+    "data_quality": {
+      "news_coverage": "high",
+      "ticker_matching_confidence": "mixed",
+      "full_text_coverage": 5,
+      "summary_coverage": 5,
+      "key_fact_coverage": 2,
+      "missing_fields": []
+    },
+    "monitoring_available": true,
+    "review_available": true
+  },
+  {
+    "decision_id": "2025Q1_SHB_04",
+    "ticker": "SHB",
+    "period_id": "2025Q1",
+    "decision_date": "2025-03-31",
+    "display_status": "Model candidate",
+    "pred_proba_up": 0.9970985766983831,
+    "rank_in_period": 4,
+    "data_quality": {
+      "news_coverage": "high",
+      "ticker_matching_confidence": "mixed",
+      "full_text_coverage": 5,
+      "summary_coverage": 5,
+      "key_fact_coverage": 4,
+      "missing_fields": []
+    },
+    "monitoring_available": true,
+    "review_available": true
+  },
+  {
+    "decision_id": "2025Q1_VHM_02",
+    "ticker": "VHM",
+    "period_id": "2025Q1",
+    "decision_date": "2025-03-31",
+    "display_status": "Model candidate",
+    "pred_proba_up": 0.9990863674924828,
+    "rank_in_period": 2,
+    "data_quality": {
+      "news_coverage": "high",
+      "ticker_matching_confidence": "mixed",
+      "full_text_coverage": 5,
+      "summary_coverage": 5,
+      "key_fact_coverage": 5,
+      "missing_fields": []
+    },
+    "monitoring_available": true,
+    "review_available": true
+  },
+  {
+    "decision_id": "2025Q1_VIC_03",
+    "ticker": "VIC",
+    "period_id": "2025Q1",
+    "decision_date": "2025-03-31",
+    "display_status": "Model candidate",
+    "pred_proba_up": 0.9981398250260798,
+    "rank_in_period": 3,
+    "data_quality": {
+      "news_coverage": "high",
+      "ticker_matching_confidence": "mixed",
+      "full_text_coverage": 5,
+      "summary_coverage": 5,
+      "key_fact_coverage": 4,
+      "missing_fields": []
+    },
+    "monitoring_available": true,
+    "review_available": true
+  },
+  {
+    "decision_id": "2025Q2_DXG_02",
+    "ticker": "DXG",
+    "period_id": "2025Q2",
+    "decision_date": "2025-06-30",
+    "display_status": "Model candidate",
+    "pred_proba_up": 0.9984698500767306,
+    "rank_in_period": 2,
+    "data_quality": {
+      "news_coverage": "high",
+      "ticker_matching_confidence": "mixed",
+      "full_text_coverage": 5,
+      "summary_coverage": 5,
+      "key_fact_coverage": 5,
+      "missing_fields": []
+    },
+    "monitoring_available": true,
+    "review_available": true
+  },
+  {
+    "decision_id": "2025Q2_MSN_04",
+    "ticker": "MSN",
+    "period_id": "2025Q2",
+    "decision_date": "2025-06-30",
+    "display_status": "Model candidate",
+    "pred_proba_up": 0.9972110602207352,
+    "rank_in_period": 4,
+    "data_quality": {
+      "news_coverage": "high",
+      "ticker_matching_confidence": "mixed",
+      "full_text_coverage": 5,
+      "summary_coverage": 5,
+      "key_fact_coverage": 5,
+      "missing_fields": []
+    },
+    "monitoring_available": true,
+    "review_available": true
+  },
+  {
+    "decision_id": "2025Q2_STB_01",
+    "ticker": "STB",
+    "period_id": "2025Q2",
+    "decision_date": "2025-06-30",
+    "display_status": "Model candidate",
+    "pred_proba_up": 0.9987508337159348,
+    "rank_in_period": 1,
+    "data_quality": {
+      "news_coverage": "high",
+      "ticker_matching_confidence": "mixed",
+      "full_text_coverage": 5,
+      "summary_coverage": 5,
+      "key_fact_coverage": 4,
+      "missing_fields": []
+    },
+    "monitoring_available": true,
+    "review_available": true
+  },
+  {
+    "decision_id": "2025Q2_VBB_03",
+    "ticker": "VBB",
+    "period_id": "2025Q2",
+    "decision_date": "2025-06-30",
+    "display_status": "Model candidate",
+    "pred_proba_up": 0.9981673135834384,
+    "rank_in_period": 3,
+    "data_quality": {
+      "news_coverage": "high",
+      "ticker_matching_confidence": "mixed",
+      "full_text_coverage": 5,
+      "summary_coverage": 5,
+      "key_fact_coverage": 4,
+      "missing_fields": []
+    },
+    "monitoring_available": true,
+    "review_available": true
+  },
+  {
+    "decision_id": "2025Q2_VND_05",
+    "ticker": "VND",
+    "period_id": "2025Q2",
+    "decision_date": "2025-06-30",
+    "display_status": "Model candidate",
+    "pred_proba_up": 0.9970933137405896,
+    "rank_in_period": 5,
+    "data_quality": {
+      "news_coverage": "high",
+      "ticker_matching_confidence": "mixed",
+      "full_text_coverage": 5,
+      "summary_coverage": 5,
+      "key_fact_coverage": 5,
+      "missing_fields": []
+    },
+    "monitoring_available": true,
+    "review_available": true
+  },
+  {
+    "decision_id": "2025Q3_KDH_04",
+    "ticker": "KDH",
+    "period_id": "2025Q3",
+    "decision_date": "2025-09-30",
+    "display_status": "Model candidate",
+    "pred_proba_up": 0.9921091193919478,
+    "rank_in_period": 4,
+    "data_quality": {
+      "news_coverage": "high",
+      "ticker_matching_confidence": "mixed",
+      "full_text_coverage": 5,
+      "summary_coverage": 5,
+      "key_fact_coverage": 3,
+      "missing_fields": []
+    },
+    "monitoring_available": true,
+    "review_available": true
+  },
+  {
+    "decision_id": "2025Q3_LPB_01",
+    "ticker": "LPB",
+    "period_id": "2025Q3",
+    "decision_date": "2025-09-30",
+    "display_status": "Model candidate",
+    "pred_proba_up": 0.9985291000420128,
+    "rank_in_period": 1,
+    "data_quality": {
+      "news_coverage": "high",
+      "ticker_matching_confidence": "mixed",
+      "full_text_coverage": 5,
+      "summary_coverage": 5,
+      "key_fact_coverage": 4,
+      "missing_fields": []
+    },
+    "monitoring_available": true,
+    "review_available": true
+  },
+  {
+    "decision_id": "2025Q3_SCR_05",
+    "ticker": "SCR",
+    "period_id": "2025Q3",
+    "decision_date": "2025-09-30",
+    "display_status": "Model candidate",
+    "pred_proba_up": 0.9904412570629436,
+    "rank_in_period": 5,
+    "data_quality": {
+      "news_coverage": "high",
+      "ticker_matching_confidence": "mixed",
+      "full_text_coverage": 5,
+      "summary_coverage": 5,
+      "key_fact_coverage": 4,
+      "missing_fields": []
+    },
+    "monitoring_available": true,
+    "review_available": true
+  },
+  {
+    "decision_id": "2025Q3_VIC_02",
+    "ticker": "VIC",
+    "period_id": "2025Q3",
+    "decision_date": "2025-09-30",
+    "display_status": "Model candidate",
+    "pred_proba_up": 0.9970068380521899,
+    "rank_in_period": 2,
+    "data_quality": {
+      "news_coverage": "high",
+      "ticker_matching_confidence": "mixed",
+      "full_text_coverage": 5,
+      "summary_coverage": 5,
+      "key_fact_coverage": 5,
+      "missing_fields": []
+    },
+    "monitoring_available": true,
+    "review_available": true
+  },
+  {
+    "decision_id": "2025Q3_VRE_03",
+    "ticker": "VRE",
+    "period_id": "2025Q3",
+    "decision_date": "2025-09-30",
+    "display_status": "Model candidate",
+    "pred_proba_up": 0.9940922707557027,
+    "rank_in_period": 3,
+    "data_quality": {
+      "news_coverage": "high",
+      "ticker_matching_confidence": "mixed",
+      "full_text_coverage": 5,
+      "summary_coverage": 5,
+      "key_fact_coverage": 4,
+      "missing_fields": []
+    },
+    "monitoring_available": true,
+    "review_available": true
+  },
+  {
+    "decision_id": "2025Q4_ABB_03",
+    "ticker": "ABB",
+    "period_id": "2025Q4",
+    "decision_date": "2025-12-31",
+    "display_status": "Model candidate",
+    "pred_proba_up": 0.9925587966120623,
+    "rank_in_period": 3,
+    "data_quality": {
+      "news_coverage": "high",
+      "ticker_matching_confidence": "mixed",
+      "full_text_coverage": 5,
+      "summary_coverage": 5,
+      "key_fact_coverage": 5,
+      "missing_fields": []
+    },
+    "monitoring_available": true,
+    "review_available": true
+  },
+  {
+    "decision_id": "2025Q4_ELC_04",
+    "ticker": "ELC",
+    "period_id": "2025Q4",
+    "decision_date": "2025-12-31",
+    "display_status": "Model candidate",
+    "pred_proba_up": 0.985207419352861,
+    "rank_in_period": 4,
+    "data_quality": {
+      "news_coverage": "high",
+      "ticker_matching_confidence": "mixed",
+      "full_text_coverage": 5,
+      "summary_coverage": 5,
+      "key_fact_coverage": 3,
+      "missing_fields": []
+    },
+    "monitoring_available": true,
+    "review_available": true
+  },
+  {
+    "decision_id": "2025Q4_GAS_01",
+    "ticker": "GAS",
+    "period_id": "2025Q4",
+    "decision_date": "2025-12-31",
+    "display_status": "Model candidate",
+    "pred_proba_up": 0.9977169088235865,
+    "rank_in_period": 1,
+    "data_quality": {
+      "news_coverage": "high",
+      "ticker_matching_confidence": "mixed",
+      "full_text_coverage": 5,
+      "summary_coverage": 5,
+      "key_fact_coverage": 5,
+      "missing_fields": []
+    },
+    "monitoring_available": true,
+    "review_available": true
+  },
+  {
+    "decision_id": "2025Q4_MCH_02",
+    "ticker": "MCH",
+    "period_id": "2025Q4",
+    "decision_date": "2025-12-31",
+    "display_status": "Model candidate",
+    "pred_proba_up": 0.9944298168290505,
+    "rank_in_period": 2,
+    "data_quality": {
+      "news_coverage": "high",
+      "ticker_matching_confidence": "mixed",
+      "full_text_coverage": 5,
+      "summary_coverage": 5,
+      "key_fact_coverage": 3,
+      "missing_fields": []
+    },
+    "monitoring_available": true,
+    "review_available": true
+  },
+  {
+    "decision_id": "2025Q4_VBB_05",
+    "ticker": "VBB",
+    "period_id": "2025Q4",
+    "decision_date": "2025-12-31",
+    "display_status": "Model candidate",
+    "pred_proba_up": 0.9821647646675534,
+    "rank_in_period": 5,
+    "data_quality": {
+      "news_coverage": "high",
+      "ticker_matching_confidence": "mixed",
+      "full_text_coverage": 5,
+      "summary_coverage": 5,
+      "key_fact_coverage": 5,
+      "missing_fields": []
+    },
+    "monitoring_available": true,
+    "review_available": true
+  },
+  {
+    "decision_id": "2026Q1_DCM_04",
+    "ticker": "DCM",
+    "period_id": "2026Q1",
+    "decision_date": "2026-03-31",
+    "display_status": "Model candidate",
+    "pred_proba_up": 0.9584405436818748,
+    "rank_in_period": 4,
+    "data_quality": {
+      "news_coverage": "high",
+      "ticker_matching_confidence": "mixed",
+      "full_text_coverage": 5,
+      "summary_coverage": 5,
+      "key_fact_coverage": 5,
+      "missing_fields": []
+    },
+    "monitoring_available": true,
+    "review_available": true
+  },
+  {
+    "decision_id": "2026Q1_DPM_03",
+    "ticker": "DPM",
+    "period_id": "2026Q1",
+    "decision_date": "2026-03-31",
+    "display_status": "Model candidate",
+    "pred_proba_up": 0.9718740266791716,
+    "rank_in_period": 3,
+    "data_quality": {
+      "news_coverage": "high",
+      "ticker_matching_confidence": "mixed",
+      "full_text_coverage": 5,
+      "summary_coverage": 5,
+      "key_fact_coverage": 5,
+      "missing_fields": []
+    },
+    "monitoring_available": true,
+    "review_available": true
+  },
+  {
+    "decision_id": "2026Q1_EVF_02",
+    "ticker": "EVF",
+    "period_id": "2026Q1",
+    "decision_date": "2026-03-31",
+    "display_status": "Model candidate",
+    "pred_proba_up": 0.9916400447480391,
+    "rank_in_period": 2,
+    "data_quality": {
+      "news_coverage": "high",
+      "ticker_matching_confidence": "mixed",
+      "full_text_coverage": 5,
+      "summary_coverage": 5,
+      "key_fact_coverage": 5,
+      "missing_fields": []
+    },
+    "monitoring_available": true,
+    "review_available": true
+  },
+  {
+    "decision_id": "2026Q1_GMD_01",
+    "ticker": "GMD",
+    "period_id": "2026Q1",
+    "decision_date": "2026-03-31",
+    "display_status": "Model candidate",
+    "pred_proba_up": 0.9918332061384683,
+    "rank_in_period": 1,
+    "data_quality": {
+      "news_coverage": "high",
+      "ticker_matching_confidence": "mixed",
+      "full_text_coverage": 5,
+      "summary_coverage": 5,
+      "key_fact_coverage": 4,
+      "missing_fields": []
+    },
+    "monitoring_available": true,
+    "review_available": true
+  },
+  {
+    "decision_id": "2026Q1_REE_05",
+    "ticker": "REE",
+    "period_id": "2026Q1",
+    "decision_date": "2026-03-31",
+    "display_status": "Model candidate",
+    "pred_proba_up": 0.9533451285937101,
+    "rank_in_period": 5,
+    "data_quality": {
+      "news_coverage": "high",
+      "ticker_matching_confidence": "mixed",
+      "full_text_coverage": 5,
+      "summary_coverage": 5,
+      "key_fact_coverage": 4,
+      "missing_fields": []
+    },
+    "monitoring_available": true,
+    "review_available": true
+  }
+]

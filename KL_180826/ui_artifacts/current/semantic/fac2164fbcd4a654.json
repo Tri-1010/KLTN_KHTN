@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "fac2164fbcd4a654",
+    "ticker": "UNKNOWN",
+    "article_date": "2026-01-29",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": false,
+    "consensus_direction": "support",
+    "consensus_materiality": "low",
+    "consensus_event_type": "macro",
+    "evidence_span": "Việt Nam muốn tăng hợp tác với Thụy Sĩ về xây dựng thể chế, chia kinh nghiệm vận hành, đào tạo nhân lực khi phát triển trung tâm tài chính quốc tế.",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "data_quality_issue"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "data_quality_issue"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

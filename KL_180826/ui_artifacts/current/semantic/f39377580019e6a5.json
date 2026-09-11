@@ -1,0 +1,26 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "f39377580019e6a5",
+    "ticker": "VHM",
+    "article_date": "2022-10-27",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": true,
+    "consensus_direction": "support",
+    "consensus_materiality": "high",
+    "consensus_event_type": "earnings",
+    "evidence_span": "Doanh thu vượt bậc giúp tổng lợi nhuận hợp nhất trước thuế của nhà phát triển BĐS này đạt 18.949 tỷ đồng, tăng 37% so với cùng kỳ; lợi nhuận sau thuế đạt 14.494 tỷ đồng, tăng 30% so với cùng kỳ và đều là mức cao nhất tính từ quý I/2020.",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "data_quality_issue",
+      "numeric_score_outlier"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "data_quality_issue",
+      "numeric_score_outlier"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

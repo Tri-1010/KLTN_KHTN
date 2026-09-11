@@ -1,0 +1,44 @@
+{
+  "bundle_version": "research-ui-v1",
+  "built_at_utc": "2026-07-28T11:34:05+00:00",
+  "initial_records": 25,
+  "monitor_records": 3839,
+  "review_records": 25,
+  "semantic_records": 150,
+  "semantic_joined_monitor_events": 13,
+  "semantic_ambiguous_monitor_events": 0,
+  "evaluation_runs": {
+    "gemini-full-2026-07": 75,
+    "local-router-claude2-2026-07": 75,
+    "common-local-judge-gemini-cards-2026-07": 75
+  },
+  "semantic_join_status": "stable news_id first; unambiguous canonical content_hash fallback; title-only joins forbidden",
+  "leakage_validation_checks": [
+    {
+      "zone": "initial",
+      "payloads_checked": 50,
+      "passed": true
+    },
+    {
+      "zone": "select",
+      "payloads_checked": 1,
+      "passed": true
+    },
+    {
+      "zone": "monitor",
+      "payloads_checked": 25,
+      "passed": true
+    },
+    {
+      "zone": "update",
+      "payloads_checked": 25,
+      "passed": true
+    },
+    {
+      "zone": "cards",
+      "payloads_checked": 1,
+      "passed": true
+    }
+  ],
+  "leakage_validation_passed": true
+}

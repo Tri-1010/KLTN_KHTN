@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "08dbe74f075e78c1",
+    "ticker": "VNM",
+    "article_date": "2025-10-06",
+    "consensus_method": "unanimous",
+    "agreement_level": "high",
+    "analysis_eligible": true,
+    "consensus_direction": "support",
+    "consensus_materiality": "medium",
+    "consensus_event_type": "earnings",
+    "evidence_span": "Lũy kế 6 tháng đầu năm 2025, Vinamilk đạt tổng doanh thu hợp nhất là 29.710 tỷ đồng, hoàn thành 46,1% kế hoạch năm; với doanh thu thuần trong nước và nước ngoài đạt lần lượt 23.624 tỷ đồng và 6.035 tỷ đồng.",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "none"
+    ],
+    "requires_human_review": false,
+    "review_flags": [
+      "none"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

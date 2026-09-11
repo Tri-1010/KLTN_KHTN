@@ -1,0 +1,26 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "de923b44325d953c",
+    "ticker": "VND",
+    "article_date": "2025-07-29",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": false,
+    "consensus_direction": "neutral",
+    "consensus_materiality": "low",
+    "consensus_event_type": "macro",
+    "evidence_span": "Tỷ giá trung tâm hôm nay (29/7) được NHNN tăng vọt 24 đồng lên mức cao kỷ lục là 25.206 VND/USD.",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "numeric_score_outlier",
+      "unclear_relevance"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "numeric_score_outlier",
+      "unclear_relevance"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

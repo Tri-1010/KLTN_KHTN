@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "198ab407720b7549",
+    "ticker": "VJC",
+    "article_date": "2022-09-13",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": true,
+    "consensus_direction": "neutral",
+    "consensus_materiality": "high",
+    "consensus_event_type": "capital",
+    "evidence_span": "vietjet muon chao ban rieng le 34 8 trieu co phieu voi gia 135 000 dong cp huy dong gan 4 700 ty dong",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "none"
+    ],
+    "requires_human_review": false,
+    "review_flags": [
+      "none"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

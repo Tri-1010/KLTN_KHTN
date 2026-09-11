@@ -1,0 +1,37 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "b39fc085108a301b",
+    "ticker": "FPT",
+    "article_date": "2024-05-09",
+    "consensus_method": "disagreement",
+    "agreement_level": "low",
+    "analysis_eligible": false,
+    "consensus_direction": "disagreement",
+    "consensus_materiality": "low",
+    "consensus_event_type": "disagreement",
+    "evidence_span": null,
+    "disagreement_fields": [
+      "direction",
+      "event_type"
+    ],
+    "quality_flags": [
+      "categorical_disagreement",
+      "data_quality_issue",
+      "missing_or_disputed_evidence",
+      "numeric_score_outlier",
+      "unclear_direction",
+      "unclear_relevance"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "categorical_disagreement",
+      "data_quality_issue",
+      "missing_or_disputed_evidence",
+      "numeric_score_outlier",
+      "unclear_direction",
+      "unclear_relevance"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

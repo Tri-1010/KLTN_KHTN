@@ -1,0 +1,363 @@
+{
+  "decision_id": "2025Q2_STB_01",
+  "snapshot_mode": "full_evidence",
+  "ticker": "STB",
+  "decision_date": "2025-06-30",
+  "period_id": "2025Q2",
+  "holding_horizon": "next_quarter_or_period_return_in_signals",
+  "ml_signal": {
+    "model_name": "technical_Config_A_from_existing_pipeline",
+    "pred_proba_up": 0.9987508337159348,
+    "pred_label": 1,
+    "rank_in_period": 1,
+    "source_signal_class": "Buy Candidate",
+    "display_status": "Model candidate"
+  },
+  "technical_snapshot": {
+    "rsi_end_q": 69.69503512517338,
+    "macd_hist_mean_q": 0.09134528643173032,
+    "price_vs_sma20": 0.043167476405874566,
+    "return_2q_ago": 0.10149253731343279,
+    "return_q": 0.17632241813602015,
+    "return_prev_q": 0.03513513513513506,
+    "volume_change_q": 0.7803498501283113,
+    "return_mean_daily": 0.003570725581416083,
+    "price_range_q": 0.3745912752213095,
+    "sma20_end": 44.76750000000001
+  },
+  "top_drivers": [
+    {
+      "feature": "rsi_end_q",
+      "value": 69.69503512517338,
+      "direction": "supports_up_signal",
+      "explanation": "RSI cuối kỳ là driver kỹ thuật quan trọng nhất trong mô hình."
+    },
+    {
+      "feature": "macd_hist_mean_q",
+      "value": 0.09134528643173032,
+      "direction": "supports_up_signal",
+      "explanation": "MACD histogram trung bình phản ánh động lượng xu hướng."
+    },
+    {
+      "feature": "price_vs_sma20",
+      "value": 0.043167476405874566,
+      "direction": "supports_up_signal",
+      "explanation": "Vị trí giá so với SMA20 phản ánh trạng thái trên/dưới đường trung bình."
+    },
+    {
+      "feature": "return_2q_ago",
+      "value": 0.10149253731343279,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trễ hai kỳ phản ánh động lượng/quán tính lịch sử."
+    },
+    {
+      "feature": "return_q",
+      "value": 0.17632241813602015,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trong kỳ hiện tại phản ánh xu hướng gần nhất."
+    },
+    {
+      "feature": "return_prev_q",
+      "value": 0.03513513513513506,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất kỳ trước bổ sung thông tin động lượng."
+    },
+    {
+      "feature": "volume_change_q",
+      "value": 0.7803498501283113,
+      "direction": "supports_up_signal",
+      "explanation": "Thay đổi khối lượng phản ánh mức độ quan tâm của thị trường."
+    },
+    {
+      "feature": "return_mean_daily",
+      "value": 0.003570725581416083,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trung bình ngày phản ánh xu hướng ngắn trong kỳ."
+    },
+    {
+      "feature": "price_range_q",
+      "value": 0.3745912752213095,
+      "direction": "risk_high_volatility",
+      "explanation": "Biên độ giá trong kỳ phản ánh biến động/rủi ro."
+    },
+    {
+      "feature": "sma20_end",
+      "value": 44.76750000000001,
+      "direction": "context",
+      "explanation": "SMA20 cuối kỳ phản ánh mặt bằng xu hướng ngắn hạn."
+    }
+  ],
+  "news_evidence": [
+    {
+      "evidence_id": "N001",
+      "published_at": "2025-06-28",
+      "source": "vietstock",
+      "title": "Sacombank khởi động mùa hè rực rỡ với hàng loạt chương trình khuyến mại hấp dẫn",
+      "article_summary": "Sacombank khởi động mùa hè rực rỡ với hàng loạt chương trình khuyến mại hấp dẫn Nhằm chào đón một mùa hè sôi động và tiếp thêm năng lượng tích cực cho khách hàng trong hành trình tài chính, Sacombank triển khai chuỗi chương trình khuyến mại \"Rực rỡ Hè Xanh - Quà sang bất tận\", diễn ra từ nay đến hết tháng 9/2025. Chuỗi 4 chương trình gồm: Bốc thăm trúng ngay, Quay số trúng thưởng cuối kỳ, Ưu đãi giao dịch qua thẻ và Sacombank Pay - tất cả đều được thiết kế nhằm tri ân khách hàng cá nhân, mang lại những giá trị thiết thực và trải nghiệm mùa hè trọn vẹn hơn. Nhận quà liền tay, trúng thưởng bất ngờ Sacombank khởi động chuỗi ưu đãi hè với chương trình ‘Bốc thăm trúng ngay’, dành cho khách hàng gửi tiết kiệm - mỗi giao dịch không chỉ sinh lời mà còn có cơ hội nhận quà liền tay.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "Sacombank khởi động mùa hè rực rỡ với hàng loạt chương trình khuyến mại hấp dẫn nan Sacombank khởi động mùa hè rực rỡ với hàng loạt chương trình khuyến mại hấp dẫn Nhằm chào đón một mùa hè sôi động và tiếp thêm năng lượng tích cực cho khách hàng trong hành trình tài chính, Sacombank triển khai chuỗi",
+          "evidence_quote": "Sacombank khởi động mùa hè rực rỡ với hàng loạt chương trình khuyến mại hấp dẫn nan Sacombank khởi động mùa hè rực rỡ với hàng loạt chương trình khuyến mại hấp dẫn Nhằm chào đón một mùa hè sôi động và tiếp thêm năng lượng tích cực cho khách",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Chuỗi 4 chương trình gồm: Bốc thăm trúng ngay, Quay số trúng thưởng cuối kỳ, Ưu đãi giao dịch qua thẻ và Sacombank Pay - tất cả đều được thiết kế nhằm tri ân khách hàng cá nhân, mang lại những giá trị thiết thực và trải nghiệm mùa hè trọn vẹn hơn.",
+          "evidence_quote": "Chuỗi 4 chương trình gồm: Bốc thăm trúng ngay, Quay số trúng thưởng cuối kỳ, Ưu đãi giao dịch qua thẻ và Sacombank Pay - tất cả đều được thiết kế nhằm tri ân khách hàng cá nhân, mang lại những giá trị thiết thực và trải nghiệm mùa hè trọn v",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Theo đó, các khách hàng gửi tiết kiệm có kỳ hạn từ 1 đến 6 tháng tại quầy, với mỗi 100 triệu đồng gửi mới hoặc tái tục sẽ tương ứng với 1 lượt bốc thăm, với tỷ lệ trúng thưởng lên đến 50%.",
+          "evidence_quote": "Theo đó, các khách hàng gửi tiết kiệm có kỳ hạn từ 1 đến 6 tháng tại quầy, với mỗi 100 triệu đồng gửi mới hoặc tái tục sẽ tương ứng với 1 lượt bốc thăm, với tỷ lệ trúng thưởng lên đến 50%.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Cơ cấu giải thưởng lên đến 90,000 phần quà, tổng trị giá hơn 8,9 tỷ đồng, bao gồm túi vải canvas, tiền mặt và eVoucher trị giá từ 100,000 đồng đến 1 triệu đồng.",
+          "evidence_quote": "Cơ cấu giải thưởng lên đến 90,000 phần quà, tổng trị giá hơn 8,9 tỷ đồng, bao gồm túi vải canvas, tiền mặt và eVoucher trị giá từ 100,000 đồng đến 1 triệu đồng.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Tổng giải thưởng quay số lên đến 5.3 tỷ đồng, với giải đặc biệt là xe ô tô điện VinFast VF9 Eco, cùng hàng trăm giải khác như voucher du lịch trong nước và quốc tế đến 100 triệu đồng, vé máy bay hạng thương gia Bamboo Airways và eVoucher 4 triệu đồng.",
+          "evidence_quote": "Tổng giải thưởng quay số lên đến 5.3 tỷ đồng, với giải đặc biệt là xe ô tô điện VinFast VF9 Eco, cùng hàng trăm giải khác như voucher du lịch trong nước và quốc tế đến 100 triệu đồng, vé máy bay hạng thương gia Bamboo Airways và eVoucher 4 ",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "partial",
+      "evidence_span": "Sacombank khởi động mùa hè rực rỡ với hàng loạt chương trình khuyến mại hấp dẫn Nhằm chào đón một mùa hè sôi động và tiếp thêm năng lượng tích cực cho khách hàng trong hành trình tài chính, Sacombank triển khai chuỗi chương trình khuyến mại \"Rực rỡ Hè Xanh - Quà sang bất tận\", diễn ra từ nay đến hết tháng 9/2025. Chuỗi 4 chương trình gồm: Bốc thăm trúng ngay, Quay số trúng thưởng cuối kỳ, Ưu đãi giao dịch qua thẻ và Sacombank Pay - tất cả đều được thiết kế nhằm tri ân khách hàng cá nhân, mang lạ",
+      "url": "https://vietstock.vn/2025/06/sacombank-khoi-dong-mua-he-ruc-ro-voi-hang-loat-chuong-trinh-khuyen-mai-hap-dan-757-1322947.htm",
+      "content_hash": "b71dd478770e018fb6c21d3379b208d880ebbcdd5e013eb538ab70ded5f757aa",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N002",
+      "published_at": "2025-06-28",
+      "source": "vietstock",
+      "title": "Sacombank đạt 2 giải thưởng VIE 10 và ESG 10 - Khẳng định mục tiêu kinh doanh hiệu quả và phát triển bền vững",
+      "article_summary": "Sacombank đạt 2 giải thưởng VIE 10 và ESG 10 - Khẳng định mục tiêu kinh doanh hiệu quả và phát triển bền vững Sacombank vừa được vinh danh Top 10 Ngân hàng đổi mới sáng tạo và kinh doanh hiệu quả 2025 ( VIE 10) và Top 10 Ngân hàng ESG Việt Nam Xanh 2025 (ESG 10). Hai giải thưởng lần này đã góp phần khẳng định mục tiêu phát triển song song giữa hiệu quả kinh doanh và trách nhiệm bền vững của Sacombank . Việc năm thứ 3 liên tiếp thuộc Top 10 Ngân hàng đổi mới sáng tạo và kinh doanh hiệu quả ( VIE 10) đã chứng minh Sacombank có sự đầu tư hợp lý cho nghiên cứu phát triển, ứng dụng khoa học công nghệ để cải tiến chất lượng sản phẩm, dịch vụ và hiệu quả kinh doanh; đồng thời khẳng định những nỗ lực và thành tựu của Ngân hàng trong hoạt động đổi mới sáng tạo, tạo ưu thế cạnh tranh đem lại giá trị gia tăng cho khách hàng, nhà đầu tư và xã hội.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "Sacombank đạt 2 giải thưởng VIE 10 và ESG 10 - Khẳng định mục tiêu kinh doanh hiệu quả và phát triển bền vững nan Sacombank đạt 2 giải thưởng VIE 10 và ESG 10 - Khẳng định mục tiêu kinh doanh hiệu quả và phát triển bền vững Sacombank vừa được vinh danh Top 10 Ngân hàng đổi mới sáng tạo và kinh doanh",
+          "evidence_quote": "Sacombank đạt 2 giải thưởng VIE 10 và ESG 10 - Khẳng định mục tiêu kinh doanh hiệu quả và phát triển bền vững nan Sacombank đạt 2 giải thưởng VIE 10 và ESG 10 - Khẳng định mục tiêu kinh doanh hiệu quả và phát triển bền vững Sacombank vừa đư",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Việc năm thứ 3 liên tiếp thuộc Top 10 Ngân hàng đổi mới sáng tạo và kinh doanh hiệu quả ( VIE 10) đã chứng minh Sacombank có sự đầu tư hợp lý cho nghiên cứu phát triển, ứng dụng khoa học công nghệ để cải tiến chất lượng sản phẩm, dịch vụ và hiệu quả kinh doanh; đồng thời khẳng định những nỗ lực và t",
+          "evidence_quote": "Việc năm thứ 3 liên tiếp thuộc Top 10 Ngân hàng đổi mới sáng tạo và kinh doanh hiệu quả ( VIE 10) đã chứng minh Sacombank có sự đầu tư hợp lý cho nghiên cứu phát triển, ứng dụng khoa học công nghệ để cải tiến chất lượng sản phẩm, dịch vụ và",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Lần đầu tiên nằm trong Top 10 Ngân hàng ESG Việt Nam Xanh 2025 (ESG 10) chính là sự ghi nhận quan trọng cho Sacombank trong hành trình hướng tới tăng trưởng bền vững, đóng góp vào mục tiêu phát triển kinh tế - xã hội của đất nước và hội nhập sâu rộng với kinh tế toàn cầu.",
+          "evidence_quote": "Lần đầu tiên nằm trong Top 10 Ngân hàng ESG Việt Nam Xanh 2025 (ESG 10) chính là sự ghi nhận quan trọng cho Sacombank trong hành trình hướng tới tăng trưởng bền vững, đóng góp vào mục tiêu phát triển kinh tế - xã hội của đất nước và hội nhậ",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Đặc biệt, thẻ tín dụng Sacombank Visa Platinum O₂ không chỉ sở hữu các ưu đãi hoàn tiền khi lựa chọn sản phẩm dịch vụ thân thiện với môi trường, mà còn là sản phẩm tiên phong thúc đẩy tiêu dùng xanh thông qua chất liệu nhựa tái chế thu gom từ đại dương và tính năng cung cấp lượng CO 2 ước tính thải ",
+          "evidence_quote": "Đặc biệt, thẻ tín dụng Sacombank Visa Platinum O₂ không chỉ sở hữu các ưu đãi hoàn tiền khi lựa chọn sản phẩm dịch vụ thân thiện với môi trường, mà còn là sản phẩm tiên phong thúc đẩy tiêu dùng xanh thông qua chất liệu nhựa tái chế thu gom ",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Thông qua những sáng kiến thiết thực này, Sacombank đang góp phần hiện thực hóa Chiến lược phát triển thanh toán không dùng tiền mặt giai đoạn 2021 - 2025 của Chính phủ và Đề án chuyển đổi số ngành ngân hàng đến năm 2025, định hướng đến 2030 của Ngân hàng Nhà nước, đồng thời lan tỏa lối sống số hóa,",
+          "evidence_quote": "Thông qua những sáng kiến thiết thực này, Sacombank đang góp phần hiện thực hóa Chiến lược phát triển thanh toán không dùng tiền mặt giai đoạn 2021 - 2025 của Chính phủ và Đề án chuyển đổi số ngành ngân hàng đến năm 2025, định hướng đến 203",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "partial",
+      "evidence_span": "Sacombank đạt 2 giải thưởng VIE 10 và ESG 10 - Khẳng định mục tiêu kinh doanh hiệu quả và phát triển bền vững Sacombank vừa được vinh danh Top 10 Ngân hàng đổi mới sáng tạo và kinh doanh hiệu quả 2025 ( VIE 10) và Top 10 Ngân hàng ESG Việt Nam Xanh 2025 (ESG 10). Hai giải thưởng lần này đã góp phần khẳng định mục tiêu phát triển song song giữa hiệu quả kinh doanh và trách nhiệm bền vững của Sacombank . Việc năm thứ 3 liên tiếp thuộc Top 10 Ngân hàng đổi mới sáng tạo và kinh doanh hiệu quả ( VIE",
+      "url": "https://vietstock.vn/2025/06/sacombank-dat-2-giai-thuong-vie-10-va-esg-10-khang-dinh-muc-tieu-kinh-doanh-hieu-qua-va-phat-trien-ben-vung-757-1322630.htm",
+      "content_hash": "210bf3876865e93849cb57c712f7bbf66cdd7244886dbfa812270c805fb3f575",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N003",
+      "published_at": "2025-06-24",
+      "source": "vietnambiz",
+      "title": "SSI dự báo lợi nhuận 40 doanh nghiệp: Đột biến đến từ FPT Retail, Hải An, NT2, Sacombank",
+      "article_summary": "Trong đó, 31 công ty đạt mức tăng trưởng so với cùng kỳ và 9 đơn vị dự kiến suy giảm lợi nhuận. SSI Research cho rằng chuỗi nhà thuốc Long Châu tiếp tục cải thiện lợi nhuận cùng việc giảm lỗ tại FPT Shop là những yếu tố chính đóng góp vào tăng trưởng. Như vậy, lợi nhuận nửa đầu năm có thể đạt 397 tỷ đồng, gấp 3,6 lần cùng kỳ.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "SSI dự báo lợi nhuận 40 doanh nghiệp: Đột biến đến từ FPT Retail, Hải An, NT2, Sacombank nan Trong đó, 31 công ty đạt mức tăng trưởng so với cùng kỳ và 9 đơn vị dự kiến suy giảm lợi nhuận.",
+          "evidence_quote": "SSI dự báo lợi nhuận 40 doanh nghiệp: Đột biến đến từ FPT Retail, Hải An, NT2, Sacombank nan Trong đó, 31 công ty đạt mức tăng trưởng so với cùng kỳ và 9 đơn vị dự kiến suy giảm lợi nhuận.",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "SSI Research cho rằng chuỗi nhà thuốc Long Châu tiếp tục cải thiện lợi nhuận cùng việc giảm lỗ tại FPT Shop là những yếu tố chính đóng góp vào tăng trưởng.",
+          "evidence_quote": "SSI Research cho rằng chuỗi nhà thuốc Long Châu tiếp tục cải thiện lợi nhuận cùng việc giảm lỗ tại FPT Shop là những yếu tố chính đóng góp vào tăng trưởng.",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Như vậy, lợi nhuận nửa đầu năm có thể đạt 397 tỷ đồng, gấp 3,6 lần cùng kỳ.",
+          "evidence_quote": "Như vậy, lợi nhuận nửa đầu năm có thể đạt 397 tỷ đồng, gấp 3,6 lần cùng kỳ.",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Vận tải và Xếp dỡ Hải An (Mã: HAH) cũng được dự báo tăng trưởng đột biến 178% trong quý này lên 350 tỷ đồng, được thúc đẩy nhờ nhiều hợp đồng thuê tàu đang được gia hạn với giá thuê cao hơn 50-60% so với các hợp đồng trước đó.",
+          "evidence_quote": "Vận tải và Xếp dỡ Hải An (Mã: HAH) cũng được dự báo tăng trưởng đột biến 178% trong quý này lên 350 tỷ đồng, được thúc đẩy nhờ nhiều hợp đồng thuê tàu đang được gia hạn với giá thuê cao hơn 50-60% so với các hợp đồng trước đó.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Điện lực Dầu khí Nhơn Trạch 2 (Mã: NT2) dự kiến có lợi nhuận từ 200 đến 250 tỷ đồng (tăng từ 64% đến 105% so với cùng kỳ năm trước và gấp 5-6 lần quý trước).",
+          "evidence_quote": "Điện lực Dầu khí Nhơn Trạch 2 (Mã: NT2) dự kiến có lợi nhuận từ 200 đến 250 tỷ đồng (tăng từ 64% đến 105% so với cùng kỳ năm trước và gấp 5-6 lần quý trước).",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "earnings_warning"
+      ],
+      "event_type": "earnings,market",
+      "match_confidence": "partial",
+      "evidence_span": "Trong đó, 31 công ty đạt mức tăng trưởng so với cùng kỳ và 9 đơn vị dự kiến suy giảm lợi nhuận. SSI Research cho rằng chuỗi nhà thuốc Long Châu tiếp tục cải thiện lợi nhuận cùng việc giảm lỗ tại FPT Shop là những yếu tố chính đóng góp vào tăng trưởng. Như vậy, lợi nhuận nửa đầu năm có thể đạt 397 tỷ đồng, gấp 3,6 lần cùng kỳ. Vận tải và Xếp dỡ Hải An (Mã: HAH) cũng được dự báo tăng trưởng đột biến 178% trong quý này lên 350 tỷ đồng, được thúc đẩy nhờ nhiều hợp đồng thuê tàu đang được gia hạn với",
+      "url": "https://vietnambiz.vn/ssi-du-bao-loi-nhuan-40-doanh-nghiep-dot-bien-den-tu-fpt-retail-hai-an-nt2-sacombank-2025624153037334.htm",
+      "content_hash": "df9708b1c44dfaa4f6cec5765fbf4cc40eb5ca36a5c952c989435ee66a0ed860",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N004",
+      "published_at": "2025-06-23",
+      "source": "vietnambiz",
+      "title": "Dấu ấn ‘nữ tướng’ Nguyễn Đức Thạch Diễm tại Sacombank: Hành trình 23 năm và di sản để lại",
+      "article_summary": "Từ giao dịch viên tới \"nữ tướng\" của Sacombank Ngày 20/5/2025, đánh dấu cột mốc đặc biệt, sau hành trình gần 8 năm gắn bó với cương vị Tổng Giám đốc Sacombank, bà Nguyễn Đức Thạch Diễm đã chính thức nói lời chia tay ‘ghế nóng’ vị trí điều hành. Chỉ trong vòng một tháng sau, bà tiếp tục xin rút khỏi vai trò Phó Chủ tịch thường trực Hội đồng Quản trị (HĐQT), chính thức khép lại chặng đường dẫn dắt đầy biến động trong 23 năm đồng hành cùng Sacombank. Sinh năm 1973, trình độ học vấn Tiến sĩ Quản trị Kinh doanh, bà Diễm ‘bén duyên’ với Sacombank từ vị trí nhân viên kế toán, nhân viên tín dụng vào năm 2002 và tiếp tục kinh qua nhiều vị trí công tác.",
+      "key_facts": [],
+      "risk_flags": [
+        "debt_risk",
+        "governance"
+      ],
+      "event_type": "dividend,earnings,debt_risk,governance,market",
+      "match_confidence": "partial",
+      "evidence_span": "Từ giao dịch viên tới \"nữ tướng\" của Sacombank Ngày 20/5/2025, đánh dấu cột mốc đặc biệt, sau hành trình gần 8 năm gắn bó với cương vị Tổng Giám đốc Sacombank, bà Nguyễn Đức Thạch Diễm đã chính thức nói lời chia tay ‘ghế nóng’ vị trí điều hành. Chỉ trong vòng một tháng sau, bà tiếp tục xin rút khỏi vai trò Phó Chủ tịch thường trực Hội đồng Quản trị (HĐQT), chính thức khép lại chặng đường dẫn dắt đầy biến động trong 23 năm đồng hành cùng Sacombank. Sinh năm 1973, trình độ học vấn Tiến sĩ Quản trị",
+      "url": "https://vietnambiz.vn/dau-an-nu-tuong-nguyen-duc-thach-diem-tai-sacombank-hanh-trinh-23-nam-va-di-san-de-lai-202562373232267.htm",
+      "content_hash": "34e3cc7401768ff4a7bb2efb7cc8052bdd24bc9e79ca4c22548250274d64b957",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N005",
+      "published_at": "2025-06-19",
+      "source": "vietnambiz",
+      "title": "Ước tính lợi nhuận quý II Sacombank, HDBank, MB tăng trên 20%",
+      "article_summary": "Trong báo cáo ước tính kết quả kinh doanh quý II và năm 2025 mới công bố, các chuyên gia Chứng khoán Vietcombank (VCBS) dự báo lợi nhuận của các ngân hàng sẽ ghi nhận sự tăng trưởng tích cực. Động lực tăng trưởng được dự báo nhờ vào các yếu tố như tín dụng mạnh mẽ, đặc biệt là sự hồi phục của thị trường bất động sản, cùng với sự phục hồi của nhóm khách hàng cá nhân. Sacombank và HDBank là hai ngân hàng dự kiến có mức tăng trưởng cao nhất trong số danh sách VCBS công bố với mức tăng là 25%.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "Ước tính lợi nhuận quý II Sacombank, HDBank, MB tăng trên 20% nan Trong báo cáo ước tính kết quả kinh doanh quý II và năm 2025 mới công bố, các chuyên gia Chứng khoán Vietcombank (VCBS) dự báo lợi nhuận của các ngân hàng sẽ ghi nhận sự tăng trưởng tích cực.",
+          "evidence_quote": "Ước tính lợi nhuận quý II Sacombank, HDBank, MB tăng trên 20% nan Trong báo cáo ước tính kết quả kinh doanh quý II và năm 2025 mới công bố, các chuyên gia Chứng khoán Vietcombank (VCBS) dự báo lợi nhuận của các ngân hàng sẽ ghi nhận sự tăng",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Động lực tăng trưởng được dự báo nhờ vào các yếu tố như tín dụng mạnh mẽ, đặc biệt là sự hồi phục của thị trường bất động sản, cùng với sự phục hồi của nhóm khách hàng cá nhân.",
+          "evidence_quote": "Động lực tăng trưởng được dự báo nhờ vào các yếu tố như tín dụng mạnh mẽ, đặc biệt là sự hồi phục của thị trường bất động sản, cùng với sự phục hồi của nhóm khách hàng cá nhân.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Sacombank và HDBank là hai ngân hàng dự kiến có mức tăng trưởng cao nhất trong số danh sách VCBS công bố với mức tăng là 25%.",
+          "evidence_quote": "Sacombank và HDBank là hai ngân hàng dự kiến có mức tăng trưởng cao nhất trong số danh sách VCBS công bố với mức tăng là 25%.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Tiếp đó là các ngân hàng như MB (ước tăng 23%), MSB và VietinBank (ước tăng 16%),… Tăng trưởng tín dụng tốt từ sự phục hồi của thị trường BĐS Ngân hàng TMCP Phát triển TP HCM (HDBank - Mã: HDB) được VCBS dự báo triển vọng tăng trưởng tín dụng cao hơn so với trung bình ngành đến từ mảng cho vay nông ",
+          "evidence_quote": "Tiếp đó là các ngân hàng như MB (ước tăng 23%), MSB và VietinBank (ước tăng 16%),… Tăng trưởng tín dụng tốt từ sự phục hồi của thị trường BĐS Ngân hàng TMCP Phát triển TP HCM (HDBank - Mã: HDB) được VCBS dự báo triển vọng tăng trưởng tín dụ",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Lợi nhuận kỳ vọng duy trì mức tăng trưởng khả quan với tốc độ tăng trưởng quý II/2025 và năm 2025 lần lượt là 25% và 24%.",
+          "evidence_quote": "Lợi nhuận kỳ vọng duy trì mức tăng trưởng khả quan với tốc độ tăng trưởng quý II/2025 và năm 2025 lần lượt là 25% và 24%.",
+          "fact_type": "earnings",
+          "direction": "support_or_context",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "debt_risk"
+      ],
+      "event_type": "dividend,earnings,debt_risk,capital,market",
+      "match_confidence": "partial",
+      "evidence_span": "Trong báo cáo ước tính kết quả kinh doanh quý II và năm 2025 mới công bố, các chuyên gia Chứng khoán Vietcombank (VCBS) dự báo lợi nhuận của các ngân hàng sẽ ghi nhận sự tăng trưởng tích cực. Động lực tăng trưởng được dự báo nhờ vào các yếu tố như tín dụng mạnh mẽ, đặc biệt là sự hồi phục của thị trường bất động sản, cùng với sự phục hồi của nhóm khách hàng cá nhân. Sacombank và HDBank là hai ngân hàng dự kiến có mức tăng trưởng cao nhất trong số danh sách VCBS công bố với mức tăng là 25%. Tiếp",
+      "url": "https://vietnambiz.vn/uoc-tinh-loi-nhuan-quy-ii-sacombank-hdbank-mb-tang-tren-20-2025619155159133.htm",
+      "content_hash": "c495ffa012769ccd1ced2fbf5a9ec534c8636d156c42d6f8f276f289f99efcc3",
+      "extraction_status": "ok"
+    }
+  ],
+  "data_quality_flags": {
+    "news_coverage": "high",
+    "ticker_matching_confidence": "mixed",
+    "full_text_coverage": 5,
+    "summary_coverage": 5,
+    "key_fact_coverage": 4,
+    "missing_fields": []
+  },
+  "guardrails": {
+    "initial_prompt_safe": true,
+    "news_cutoff": "2025-06-30",
+    "not_investment_advice": true,
+    "no_post_decision_data": true,
+    "full_text_excerpt_chars": 500
+  },
+  "provenance": {
+    "name": "initial_evidence",
+    "path": "reports/decision_support/generated/evidence_packs_initial.json",
+    "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+    "zone": "initial",
+    "record_count": 25,
+    "schema_version": "evidence-pack-initial-v1",
+    "generated_at_utc": null,
+    "provenance_status": null
+  }
+}

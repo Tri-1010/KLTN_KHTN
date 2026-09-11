@@ -1,0 +1,498 @@
+{
+  "status": "completed",
+  "provider": "anthropic",
+  "sdk": "anthropic-python",
+  "requested_model": "claude-opus",
+  "max_tokens": 12000,
+  "thinking": {
+    "type": "adaptive"
+  },
+  "effort": "high",
+  "temperature": "not_sent",
+  "generated_at_utc": "2026-07-14T00:25:33+00:00",
+  "variants": [
+    "ml_only",
+    "full_evidence"
+  ],
+  "max_packs": 25,
+  "decision_ids_filter": null,
+  "outcome_removed_from_prompt": true,
+  "outputs": [
+    "reports/decision_support/generated/router_claude2_llm_cards_ml_only.md",
+    "reports/decision_support/generated/router_claude2_llm_cards_ml_only.jsonl",
+    "reports/decision_support/generated/router_claude2_llm_cards_full_evidence.md",
+    "reports/decision_support/generated/router_claude2_llm_cards_full_evidence.jsonl",
+    "reports/decision_support/generated/llm_raw_responses.jsonl"
+  ],
+  "cards": [
+    {
+      "decision_id": "2025Q1_SCR_01",
+      "card_type": "llm_ml_only",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "c58a66579c1bf160ada43ad679b7d08472d066f531978539a5edf74d05f1a35d",
+      "prompt_sha256": "60171874c5b9f89f6ebdae877fd7c07cd98da9da8333a9f1cf3fb67fe1d86fe0"
+    },
+    {
+      "decision_id": "2025Q1_VHM_02",
+      "card_type": "llm_ml_only",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "58bdc86dcbaea66cae0ecc6ebce645bb10e5af0d6be627e93a270009bb9463ec",
+      "prompt_sha256": "3f6ed2aeccf9a0a14e6e2f7a2c5f3309a2bbd4fc4a0b2816a48de52c3d81f246"
+    },
+    {
+      "decision_id": "2025Q1_VIC_03",
+      "card_type": "llm_ml_only",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "82d0f8d07968176ecdf152c2bbd3e6f54234509feadb09ccd34cfb999d01dc60",
+      "prompt_sha256": "39c5d7353fbcecf7a1933148b1dce448ee0ef9005e6899897b6f96cbdfb823fa"
+    },
+    {
+      "decision_id": "2025Q1_SHB_04",
+      "card_type": "llm_ml_only",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "d47ef6cb46e56f885b43bc28c29ffc2c1950cb054194d2e20918229844e22843",
+      "prompt_sha256": "76893cd7ae0323cd7b6e514e5f46a1bad138248fff7c9f0b82eb1f87fa4ae66c"
+    },
+    {
+      "decision_id": "2025Q1_BSI_05",
+      "card_type": "llm_ml_only",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "04cd30edeb973c3fc9b8f4c6ff45130f2f5a98989b98b30fccdb3d9b1f1a0024",
+      "prompt_sha256": "48f6f74edb13e4af337c0103d6c8ea0da8386570d20fa3b30c47449f9d0c4758"
+    },
+    {
+      "decision_id": "2025Q2_STB_01",
+      "card_type": "llm_ml_only",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "6fe1e5b2b6cf93adc0e6aa342f6144087ad3c96d257f21f067ea5ee137e82f4b",
+      "prompt_sha256": "8d87decfb284e8035a7603c28724ca457744a075c3369c7ef4a1fa43df89bec0"
+    },
+    {
+      "decision_id": "2025Q2_DXG_02",
+      "card_type": "llm_ml_only",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "2ad23846b1fe5dcf41934219e5ad6bb24d9b7462435a7f15e6150d825c7ab109",
+      "prompt_sha256": "05fca5bc664eb507cd1127798a0f59b39c72feebde9c19c4155aca67c16455aa"
+    },
+    {
+      "decision_id": "2025Q2_VBB_03",
+      "card_type": "llm_ml_only",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "65c01ecd0872a365c7c586b8c32ae46e5a6f6e8c7c493428602deaf1e011267e",
+      "prompt_sha256": "e2cadbeaecfa4e0795291b02603d18aededa85899072439f4bae4d2a85552c82"
+    },
+    {
+      "decision_id": "2025Q2_MSN_04",
+      "card_type": "llm_ml_only",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "91ade3aa71abed8364f1d016c3ef33c1be8c72ac86dc2896938ae573034626ed",
+      "prompt_sha256": "465afdcdd51118031d14f7d4bbfba37497f98092e0f8f9515abe97a90c1258fe"
+    },
+    {
+      "decision_id": "2025Q2_VND_05",
+      "card_type": "llm_ml_only",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "a4ad5afba5c9b2b462a3ebac214510c207807fda120842c857669831e1e2c6c4",
+      "prompt_sha256": "09bc178b93e8068a8cd3b1f6b6498021c8ca81f29b2e789373319e664d5738cc"
+    },
+    {
+      "decision_id": "2025Q3_LPB_01",
+      "card_type": "llm_ml_only",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "05448406d051fc478778489f8a9f60449ba1c236f4a2d4409445c0d68ce5836d",
+      "prompt_sha256": "7e159682dd9b7b60afa14a5387fbfd1b5c379b29edf3f23d30530a0d13dd5a65"
+    },
+    {
+      "decision_id": "2025Q3_VIC_02",
+      "card_type": "llm_ml_only",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "15c811c557fedd7cf49e2a2c517ca4e1d7ad3a99912b3c183db8c577e9075d7d",
+      "prompt_sha256": "c581c6df1b0285dd11d9923b853268937bab68a0d83c408d9114cf2c0e6fed41"
+    },
+    {
+      "decision_id": "2025Q3_VRE_03",
+      "card_type": "llm_ml_only",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "357eafb187dae5ff3e894e4e06238dc83b0c5f9b68e1bf78b612c529a17fd6a5",
+      "prompt_sha256": "10c1d77c4fd6beea726e8b956351d05de1c0cd4fabcfb26ed9db21cdf3ed1891"
+    },
+    {
+      "decision_id": "2025Q3_KDH_04",
+      "card_type": "llm_ml_only",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "1a42a17b7a0e2300ec57d53960b270082d92a2fea3a2190e09676dbf597bfa04",
+      "prompt_sha256": "95f73a67495a123f4ca8397ffcee901e2a46ca72d1ef0c7f4c59872dc9e68563"
+    },
+    {
+      "decision_id": "2025Q3_SCR_05",
+      "card_type": "llm_ml_only",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "c91f3f8a3fd12c32dbaf1ab037bf61f909f0fefd628de7afd4e0282a36b75180",
+      "prompt_sha256": "5fc4cbca800d79f116bb2e9429797f77b397ff35e43cf416617e07a48d6f122f"
+    },
+    {
+      "decision_id": "2025Q4_GAS_01",
+      "card_type": "llm_ml_only",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "5b34546be7498ee8e9d1b042c33560e222876d65a54816712b186cedca6eca2c",
+      "prompt_sha256": "62d12e24c3d5081a4a46dd11a3b116202c88b5fdbd076241c88874326a3b696a"
+    },
+    {
+      "decision_id": "2025Q4_MCH_02",
+      "card_type": "llm_ml_only",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "f307b5612e37a99938bd9c8d35c239f9fff5530e437cbb25b97a1d6c4df58c8e",
+      "prompt_sha256": "77f061a1dfd1edc970f4f18e20926aae118d26ca621ab004a12dff701c5f8b64"
+    },
+    {
+      "decision_id": "2025Q4_ABB_03",
+      "card_type": "llm_ml_only",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "f612e842f1349519efa31a5195b0a637c2d77c2a790d73d2cbbdffb260624d0a",
+      "prompt_sha256": "0417470985de8f553054bc8ef75ab75ec0e8fb481606a5551946729ef7ebd114"
+    },
+    {
+      "decision_id": "2025Q4_ELC_04",
+      "card_type": "llm_ml_only",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "4c6b7d9f23d3822b8941e3631a58f45c65768426c8ebf70e98189eb440533239",
+      "prompt_sha256": "3144c5ccf673eed3201c67cd0da52175d69317901dda31ed53556dddeb0ce0b8"
+    },
+    {
+      "decision_id": "2025Q4_VBB_05",
+      "card_type": "llm_ml_only",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "2910d6815c5d9c744363d79cd9b7ecdfb94efdd31dce916ebec7f8b2090e52a6",
+      "prompt_sha256": "6020aa062e33afc84f5f06d4cbb5aa2d1f7b83ca953c1be60453df64005c66b6"
+    },
+    {
+      "decision_id": "2026Q1_GMD_01",
+      "card_type": "llm_ml_only",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "efeda00b6d3d6ad7e35e8de44c2ff6c76bef500dec495c9af5a35de85e4fa874",
+      "prompt_sha256": "2cb037d2e72c353d6186ecf3f109f891a4ef5b0e8989a0a59eaefa69e6835e76"
+    },
+    {
+      "decision_id": "2026Q1_EVF_02",
+      "card_type": "llm_ml_only",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "305db75b4ebd5ac9b2a5978ffff99cf3f89f24b03b6782605ed0dbc869a3da07",
+      "prompt_sha256": "aa6ef8c6e5208d2414be94e7597f8628bcabedb7099dd79ddf7da7b86439566c"
+    },
+    {
+      "decision_id": "2026Q1_DPM_03",
+      "card_type": "llm_ml_only",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "58042615ce73d64a654f2654f3ad09c04e99c5d574073460d77c02fe6ec1e3bc",
+      "prompt_sha256": "40cd01ab29495da848427eaa4de0c348399656b54841fa32b01fbec35319e27b"
+    },
+    {
+      "decision_id": "2026Q1_DCM_04",
+      "card_type": "llm_ml_only",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "6e3e957cd8f48530485de68bd5e08673425990e73d02528815a866c4c9a144f1",
+      "prompt_sha256": "a60e1ee12488eb8b9f6d69b0e9ff21631eba22b3c60058bec261b30a6260093d"
+    },
+    {
+      "decision_id": "2026Q1_REE_05",
+      "card_type": "llm_ml_only",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "d78dca03cd8e7f9faa8b4c9e683d39e88d40914ecafc220f425e94a5fcbed7fc",
+      "prompt_sha256": "9be65e9c84595187686340bae015f86753d66db9137da4c3618064787b0cdda3"
+    },
+    {
+      "decision_id": "2025Q1_SCR_01",
+      "card_type": "llm_full_evidence",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "313da3e66360cf50d33c87062f6e26aeb6833eb318638651bffbf971ae104974",
+      "prompt_sha256": "c0e3d8e56e7cac2291c574f51ebdddc94eb218a56693f4a3c031a400fb9050ca"
+    },
+    {
+      "decision_id": "2025Q1_VHM_02",
+      "card_type": "llm_full_evidence",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "79dc0ea64cf1bea90e4934bcc327d97a513f24134f47f6379cc556f0cc313645",
+      "prompt_sha256": "41290303e676f6f3a9b3082ab3829a3849a3a933c4e48fefcbcd1e7b339b512b"
+    },
+    {
+      "decision_id": "2025Q1_VIC_03",
+      "card_type": "llm_full_evidence",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "875b48e629997a9fe6e3bb838c455e40a1aaaddaa50c7bf0881801652abb4c15",
+      "prompt_sha256": "839f7ccbb9ab1b849d0a2de0329a499d18be24b295a4f282f456a2809e3925a4"
+    },
+    {
+      "decision_id": "2025Q1_SHB_04",
+      "card_type": "llm_full_evidence",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "f6a06464a83ce0a09dbe13695ebee590399ac7087e340dadc90a1a8815d887f3",
+      "prompt_sha256": "4d341c35e3bb17f0648ddaabab270e179ae40d080c23a43721e78e8aba941f69"
+    },
+    {
+      "decision_id": "2025Q1_BSI_05",
+      "card_type": "llm_full_evidence",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "84ef04aa34c6c869d27f74cb11a9585189885c9081b0b6cf3884f218630d6c8c",
+      "prompt_sha256": "0eb177b76b7f888f8ce5dba86a353eb8f9dfdb5cb9119421f0474afe8541234d"
+    },
+    {
+      "decision_id": "2025Q2_STB_01",
+      "card_type": "llm_full_evidence",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "5fcdc8ef7b2d921af625e7ed0601acb263e5db5f2c0890d3498b36cd9d5160ed",
+      "prompt_sha256": "ebf44150e2bba05ce2e4d1acd9fde2464039798efe45da663ea1be7ab4a2a246"
+    },
+    {
+      "decision_id": "2025Q2_DXG_02",
+      "card_type": "llm_full_evidence",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "f96c02125b5d1c81364dc33e4eb455c850b4b625376c26cb078d983fe979ce06",
+      "prompt_sha256": "e81325ff175d04f0406245973d2451a671e893f2c6c8af51f6b341cba6ad237d"
+    },
+    {
+      "decision_id": "2025Q2_VBB_03",
+      "card_type": "llm_full_evidence",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "e130e651af83ff49965e2aae986bea20cd3c8ac1fbdddfd144afc89d7f46369b",
+      "prompt_sha256": "a51b148abc9c85dd8497c2c68dcfe1580eecc5c5e1d117c6774de8fa3c0dff28"
+    },
+    {
+      "decision_id": "2025Q2_MSN_04",
+      "card_type": "llm_full_evidence",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "f10f4bc1438d4a3f53c5621b35b9fdf25cc3abc406bc3b12de501f73a729b17e",
+      "prompt_sha256": "53d50448a48cf4503c854bfcd3b43001fbc10be618b9fd00b9c59f6a9ef51879"
+    },
+    {
+      "decision_id": "2025Q2_VND_05",
+      "card_type": "llm_full_evidence",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "64523350045e0e9b74c904315490e013292cb727e9a604a15a9c50c2085c651e",
+      "prompt_sha256": "bde2a82f11b2ec719f2591193ab51878dd0b60210b3b2c991f22d5b0aff501da"
+    },
+    {
+      "decision_id": "2025Q3_LPB_01",
+      "card_type": "llm_full_evidence",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "c1fb16e1dc054ecf2d41f2fbb319b6b4d115b59e6ba453e2e2215f0d80ce9824",
+      "prompt_sha256": "df5390a739bb9e129567aa57f34081a28815df34442b5bd92b824fa581b363be"
+    },
+    {
+      "decision_id": "2025Q3_VIC_02",
+      "card_type": "llm_full_evidence",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "7db592a6b095011045e4e07fb61fb4b44f550cdb86bc68ac4667a36ca529f820",
+      "prompt_sha256": "6dd398e3d7b8535e5b278ca40cf63775ad91378e61470a3cc6b317b1cd2de4af"
+    },
+    {
+      "decision_id": "2025Q3_VRE_03",
+      "card_type": "llm_full_evidence",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "f0a4a41a89fe05de6e348efb8284d2734175bc5ab7730ac6c82f309cb519c0dc",
+      "prompt_sha256": "27352f459965c23f2307dbedfbe6bbe081a78fd486863e591c5c398fca38ed1f"
+    },
+    {
+      "decision_id": "2025Q3_KDH_04",
+      "card_type": "llm_full_evidence",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "e093170eeff3ff7fdb60b255e5297be907cbab1e9e63d8b7a14171d46704b5c9",
+      "prompt_sha256": "3d4c38fd072596aaa85bc09e687180db3cbda32a17f5600493a5ef66a785ef67"
+    },
+    {
+      "decision_id": "2025Q3_SCR_05",
+      "card_type": "llm_full_evidence",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "7667c6b00557e49170093d62184091eb177086d6f7fe6ed45fa722ae26cbfc2d",
+      "prompt_sha256": "e2caca0d63bb1560b072778a193bf43a8dd3bb293ab6ec3f1c5d61aba5817539"
+    },
+    {
+      "decision_id": "2025Q4_GAS_01",
+      "card_type": "llm_full_evidence",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "a294f51069c9c4347964c6b1ad1794397a3f0a7fd775aa22e4ef6684ed122254",
+      "prompt_sha256": "986befee2ef53dda154ac8177bb97cb7f500902d7c510c937e5bb0f148ce7391"
+    },
+    {
+      "decision_id": "2025Q4_MCH_02",
+      "card_type": "llm_full_evidence",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "1865ceef9996740ffe7be57643ab4b57211a61678d1448c4eb8beff9f9e65e5a",
+      "prompt_sha256": "e6979c08c59c99cae24d23ed58fbaa420b8b8134154a95baa7c7a34835617035"
+    },
+    {
+      "decision_id": "2025Q4_ABB_03",
+      "card_type": "llm_full_evidence",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "9180583de869022a892d0e2125ce4fe790b9eef28308db3d7de905043dbee4a3",
+      "prompt_sha256": "a054b7fcdafab90069280ef2d6ca3f6370224015bd7bfec4cc7a97482247b40a"
+    },
+    {
+      "decision_id": "2025Q4_ELC_04",
+      "card_type": "llm_full_evidence",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "d4e1f6b01ae1b58b9d7a709bd3ec04c38f344490b9ed68f5b93c52c5da44a4af",
+      "prompt_sha256": "e9f39c9b5e63464f600e37ae7977fd3b9292ddf2597da82bd8069ce357a5738e"
+    },
+    {
+      "decision_id": "2025Q4_VBB_05",
+      "card_type": "llm_full_evidence",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "7dd73f8e73f931e343a90d0c730756ed6a40a4512f5bfb20b18e11e89e5bfd1d",
+      "prompt_sha256": "98493114a136a239716726598ae6695df0e77d5cf3dd8951b4e2e549ef13f7c9"
+    },
+    {
+      "decision_id": "2026Q1_GMD_01",
+      "card_type": "llm_full_evidence",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "84cb1a23d8cb024485e11d60d1c2568368f66bfef0c37bf3ea3292dfb599751e",
+      "prompt_sha256": "3062b5713985bc059ff5c7de82a02a83fecab602118c41a65972a2328f1163ce"
+    },
+    {
+      "decision_id": "2026Q1_EVF_02",
+      "card_type": "llm_full_evidence",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "53ffa4a45eb0f2772ad04f0d3c289d12e0552e2b54d838089a323a9d79a9be4f",
+      "prompt_sha256": "235ac12ee3ec67b02e8e926eb9397463cffd1a780c29016504689eae14e23123"
+    },
+    {
+      "decision_id": "2026Q1_DPM_03",
+      "card_type": "llm_full_evidence",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "a400843c59ba27649dbcab2e5b5ef5f611c3009785ee7cde18c83bfd5630381c",
+      "prompt_sha256": "32198c85b81a60d38de8c5bd3c2c8ea1d9afdbc4fd0bc98e0fe2e841969830f1"
+    },
+    {
+      "decision_id": "2026Q1_DCM_04",
+      "card_type": "llm_full_evidence",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "b2936f2b41aada5cceeddc05cae5fde41dff0cc8e1e8e1a06cc8d60a42f5c3c0",
+      "prompt_sha256": "d52cf61a580a42343a4730b8851a23962c05c23126265ddc087fd7ce3f80351f"
+    },
+    {
+      "decision_id": "2026Q1_REE_05",
+      "card_type": "llm_full_evidence",
+      "provider": "anthropic",
+      "request_id": null,
+      "response_model": "gpt-5.6-luna",
+      "pack_sha256": "be9bddc34f22c8fe226dcb15b2525dea0baef0af2400ff4ce25b9e040f402944",
+      "prompt_sha256": "717c9336a653124438cfb23e2809139aa9d4d59c8588adf04142f24a2f0fe07f"
+    }
+  ],
+  "prompt_packs": [],
+  "failures": [],
+  "scoring": {
+    "status": "completed",
+    "num_scores": 75,
+    "output": "reports/decision_support/generated/llm_rubric_scores.csv"
+  },
+  "input_packs": {
+    "ml_only": {
+      "path": "reports/decision_support/generated/evidence_packs_ml_only.json",
+      "sha256": "c99ac78c69980481c33f8c8fa7cd14c3c857de36282745a7f73092100b7c9620",
+      "selected_count": 25
+    },
+    "full_evidence": {
+      "path": "reports/decision_support/generated/evidence_packs_initial.json",
+      "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+      "selected_count": 25
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "artifact_schema_version": "v6_primary_run_summary_v1",
+  "generated_at_utc": "2026-09-09T11:02:21+00:00",
+  "run_id": "v6_sens_h5_20260909",
+  "protocol_version": "v6_technical_primary_v1",
+  "protocol_sha256": "62b255260d1f29d1a84f9a143d4b8f0259a4a177c0a0a3fcb2962479835403e2",
+  "claim_level": "v6_sensitivity_horizon_T5",
+  "row_filter": "primary",
+  "horizon_benchmark_sessions": 5,
+  "fast": false,
+  "n_eligible_rows": 88782,
+  "n_predictions": 417228,
+  "n_folds": 3,
+  "purge_methods": [
+    "target_exit_date_before_test_start"
+  ],
+  "primary": [
+    {
+      "hypothesis": "H1",
+      "status": "ok",
+      "improvement_delta": -0.0014118714922704263,
+      "bootstrap_ci_low": -0.009186213276409711,
+      "bootstrap_ci_high": 0.004862830274750983,
+      "p_value": 0.6935306469353064,
+      "p_value_bh": 0.6935306469353064,
+      "n_paired_dates": 870,
+      "n_folds": 3
+    },
+    {
+      "hypothesis": "H2",
+      "status": "ok",
+      "improvement_delta": -0.004193506795531739,
+      "bootstrap_ci_low": -0.008391972084947014,
+      "bootstrap_ci_high": -0.0008554654118108145,
+      "p_value": 0.05849415058494151,
+      "p_value_bh": 0.11698830116988301,
+      "n_paired_dates": 870,
+      "n_folds": 3
+    }
+  ],
+  "outputs": {
+    "v6_predictions.csv": "C:\\Users\\User\\KLTN_KHTN\\KL_180826\\multi_llm_evidence_extraction\\outputs\\v6_primary\\v6_sens_h5_20260909\\v6_predictions.csv",
+    "v6_fold_manifest.csv": "C:\\Users\\User\\KLTN_KHTN\\KL_180826\\multi_llm_evidence_extraction\\outputs\\v6_primary\\v6_sens_h5_20260909\\v6_fold_manifest.csv",
+    "v6_fold_feature_manifest.csv": "C:\\Users\\User\\KLTN_KHTN\\KL_180826\\multi_llm_evidence_extraction\\outputs\\v6_primary\\v6_sens_h5_20260909\\v6_fold_feature_manifest.csv",
+    "v6_fold_metrics.csv": "C:\\Users\\User\\KLTN_KHTN\\KL_180826\\multi_llm_evidence_extraction\\outputs\\v6_primary\\v6_sens_h5_20260909\\v6_fold_metrics.csv",
+    "v6_paired_daily_deltas.csv": "C:\\Users\\User\\KLTN_KHTN\\KL_180826\\multi_llm_evidence_extraction\\outputs\\v6_primary\\v6_sens_h5_20260909\\v6_paired_daily_deltas.csv",
+    "v6_inference.csv": "C:\\Users\\User\\KLTN_KHTN\\KL_180826\\multi_llm_evidence_extraction\\outputs\\v6_primary\\v6_sens_h5_20260909\\v6_inference.csv"
+  },
+  "limitations": [
+    "sensitivity_only_not_v6_primary",
+    "does_not_replace_v6_primary_20260909",
+    "horizon_T5_not_locked_primary_T20",
+    "no_causal_or_investment_advice_claim",
+    "bh_adjustment_only_on_H1_H2_random_forest_balanced_accuracy"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "519081e652305911",
+    "ticker": "BMP",
+    "article_date": "2025-07-23",
+    "consensus_method": "unanimous",
+    "agreement_level": "high",
+    "analysis_eligible": true,
+    "consensus_direction": "support",
+    "consensus_materiality": "high",
+    "consensus_event_type": "earnings",
+    "evidence_span": "Lợi nhuận sau thuế đạt 329,9 tỷ đồng, cũng tăng 17,7%, đánh dấu mức cao nhất từ trước đến nay trong một quý và là lần đầu tiên vượt mốc 300 tỷ đồng.",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "numeric_score_outlier"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "numeric_score_outlier"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

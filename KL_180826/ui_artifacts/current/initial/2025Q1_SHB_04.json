@@ -1,0 +1,366 @@
+{
+  "decision_id": "2025Q1_SHB_04",
+  "snapshot_mode": "full_evidence",
+  "ticker": "SHB",
+  "decision_date": "2025-03-31",
+  "period_id": "2025Q1",
+  "holding_horizon": "next_quarter_or_period_return_in_signals",
+  "ml_signal": {
+    "model_name": "technical_Config_A_from_existing_pipeline",
+    "pred_proba_up": 0.9970985766983831,
+    "pred_label": 1,
+    "rank_in_period": 4,
+    "source_signal_class": "Buy Candidate",
+    "display_status": "Model candidate"
+  },
+  "technical_snapshot": {
+    "rsi_end_q": 80.32837963785823,
+    "macd_hist_mean_q": 0.03629602632417743,
+    "price_vs_sma20": 0.11377309269019881,
+    "return_2q_ago": -0.009512485136741982,
+    "return_q": 0.34793814432989706,
+    "return_prev_q": -0.072879330943847,
+    "volume_change_q": 1.3341223585033102,
+    "return_mean_daily": 0.005279925916741816,
+    "price_range_q": 0.37162093444256855,
+    "sma20_end": 9.391499999999999
+  },
+  "top_drivers": [
+    {
+      "feature": "rsi_end_q",
+      "value": 80.32837963785823,
+      "direction": "positive_but_overbought_risk",
+      "explanation": "RSI cuối kỳ là driver kỹ thuật quan trọng nhất trong mô hình."
+    },
+    {
+      "feature": "macd_hist_mean_q",
+      "value": 0.03629602632417743,
+      "direction": "supports_up_signal",
+      "explanation": "MACD histogram trung bình phản ánh động lượng xu hướng."
+    },
+    {
+      "feature": "price_vs_sma20",
+      "value": 0.11377309269019881,
+      "direction": "supports_up_signal",
+      "explanation": "Vị trí giá so với SMA20 phản ánh trạng thái trên/dưới đường trung bình."
+    },
+    {
+      "feature": "return_2q_ago",
+      "value": -0.009512485136741982,
+      "direction": "weak_or_negative",
+      "explanation": "Lợi suất trễ hai kỳ phản ánh động lượng/quán tính lịch sử."
+    },
+    {
+      "feature": "return_q",
+      "value": 0.34793814432989706,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trong kỳ hiện tại phản ánh xu hướng gần nhất."
+    },
+    {
+      "feature": "return_prev_q",
+      "value": -0.072879330943847,
+      "direction": "weak_or_negative",
+      "explanation": "Lợi suất kỳ trước bổ sung thông tin động lượng."
+    },
+    {
+      "feature": "volume_change_q",
+      "value": 1.3341223585033102,
+      "direction": "supports_up_signal",
+      "explanation": "Thay đổi khối lượng phản ánh mức độ quan tâm của thị trường."
+    },
+    {
+      "feature": "return_mean_daily",
+      "value": 0.005279925916741816,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trung bình ngày phản ánh xu hướng ngắn trong kỳ."
+    },
+    {
+      "feature": "price_range_q",
+      "value": 0.37162093444256855,
+      "direction": "risk_high_volatility",
+      "explanation": "Biên độ giá trong kỳ phản ánh biến động/rủi ro."
+    },
+    {
+      "feature": "sma20_end",
+      "value": 9.391499999999999,
+      "direction": "context",
+      "explanation": "SMA20 cuối kỳ phản ánh mặt bằng xu hướng ngắn hạn."
+    }
+  ],
+  "news_evidence": [
+    {
+      "evidence_id": "N001",
+      "published_at": "2025-03-28",
+      "source": "tnck",
+      "title": "Top 10 cổ phiếu tăng/giảm mạnh nhất tuần: Cổ phiếu VIC và SHB tiếp tục tiến bước",
+      "article_summary": "Kết thúc tuần giao dịch, chỉ số VN-Index giảm nhẹ 4,42 điểm (-0,33%), xuống 1.317,46 điểm. Thanh khoản bình quân giảm tuần thứ hai liên tiếp và hầu hết các phiên đều dưới ngưỡng bình quân 20 phiên, với khối lượng khớp lệnh trung bình đạt 788 triệu cổ phiếu, giảm hơn 8% và giá trị bình quân 18.751 tỷ đồng/phiên, giảm 6,5%. Trên sàn HOSE, hai bluechip SHB và VIC dù chỉ có mức tăng 8-9% nhưng đã cho thấy sự bền bỉ và tiếp tục xuất hiện trong top những mã tăng tốt nhất.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "Top 10 cổ phiếu tăng/giảm mạnh nhất tuần: Cổ phiếu VIC và SHB tiếp tục tiến bước nan Kết thúc tuần giao dịch, chỉ số VN-Index giảm nhẹ 4,42 điểm (-0,33%), xuống 1.317,46 điểm.",
+          "evidence_quote": "Top 10 cổ phiếu tăng/giảm mạnh nhất tuần: Cổ phiếu VIC và SHB tiếp tục tiến bước nan Kết thúc tuần giao dịch, chỉ số VN-Index giảm nhẹ 4,42 điểm (-0,33%), xuống 1.317,46 điểm.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Thanh khoản bình quân giảm tuần thứ hai liên tiếp và hầu hết các phiên đều dưới ngưỡng bình quân 20 phiên, với khối lượng khớp lệnh trung bình đạt 788 triệu cổ phiếu, giảm hơn 8% và giá trị bình quân 18.751 tỷ đồng/phiên, giảm 6,5%.",
+          "evidence_quote": "Thanh khoản bình quân giảm tuần thứ hai liên tiếp và hầu hết các phiên đều dưới ngưỡng bình quân 20 phiên, với khối lượng khớp lệnh trung bình đạt 788 triệu cổ phiếu, giảm hơn 8% và giá trị bình quân 18.751 tỷ đồng/phiên, giảm 6,5%.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Trên sàn HOSE, hai bluechip SHB và VIC dù chỉ có mức tăng 8-9% nhưng đã cho thấy sự bền bỉ và tiếp tục xuất hiện trong top những mã tăng tốt nhất.",
+          "evidence_quote": "Trên sàn HOSE, hai bluechip SHB và VIC dù chỉ có mức tăng 8-9% nhưng đã cho thấy sự bền bỉ và tiếp tục xuất hiện trong top những mã tăng tốt nhất.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Trong đó, cổ phiếu VIC đã trở lại vùng giá cao nhất kể từ tháng 9/2023, trong khi cổ phiếu cổ phiếu SHB có ba tuần liên tiếp tăng, với mức tăng lần lượt đạt 7%, 10% và 8% trong tuần này và đạt mức cao nhất kể từ giữa tháng 4/2022.",
+          "evidence_quote": "Trong đó, cổ phiếu VIC đã trở lại vùng giá cao nhất kể từ tháng 9/2023, trong khi cổ phiếu cổ phiếu SHB có ba tuần liên tiếp tăng, với mức tăng lần lượt đạt 7%, 10% và 8% trong tuần này và đạt mức cao nhất kể từ giữa tháng 4/2022.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Trong khi đó, phản ánh phần nào dòng tiền dịch chuyển vào các mã đầu cơ, trong bối cảnh thị trường chưa rõ xu hướng, với các cổ phiếu đã hưởng lợi và tăng mạnh như HVH, HHS, FIT, TSC, đi kèm thanh khoản khớp lệnh cải thiện đáng kể.",
+          "evidence_quote": "Trong khi đó, phản ánh phần nào dòng tiền dịch chuyển vào các mã đầu cơ, trong bối cảnh thị trường chưa rõ xu hướng, với các cổ phiếu đã hưởng lợi và tăng mạnh như HVH, HHS, FIT, TSC, đi kèm thanh khoản khớp lệnh cải thiện đáng kể.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [],
+      "event_type": "market",
+      "match_confidence": "exact",
+      "evidence_span": "Kết thúc tuần giao dịch, chỉ số VN-Index giảm nhẹ 4,42 điểm (-0,33%), xuống 1.317,46 điểm. Thanh khoản bình quân giảm tuần thứ hai liên tiếp và hầu hết các phiên đều dưới ngưỡng bình quân 20 phiên, với khối lượng khớp lệnh trung bình đạt 788 triệu cổ phiếu, giảm hơn 8% và giá trị bình quân 18.751 tỷ đồng/phiên, giảm 6,5%. Trên sàn HOSE, hai bluechip SHB và VIC dù chỉ có mức tăng 8-9% nhưng đã cho thấy sự bền bỉ và tiếp tục xuất hiện trong top những mã tăng tốt nhất. Trong đó, cổ phiếu VIC đã trở",
+      "url": "https://www.tinnhanhchungkhoan.vn/top-10-co-phieu-tanggiam-manh-nhat-tuan-co-phieu-vic-va-shb-tiep-tuc-tien-buoc-post366345.html",
+      "content_hash": "1c33ea7fdcf7a756bc8c0f8ad53d749a80b5c568a94fc8b48baeb5128b00532a",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N002",
+      "published_at": "2025-03-27",
+      "source": "cafef",
+      "title": "SHB: Thông báo giấy chứng nhận điều chỉnh thông tin số lượng cổ phiếu đăng ký của SHB",
+      "article_summary": "Ngân hàng Thương mại Cổ phần Sài Gòn – Hà Nội thông báo giấy chứng nhận điều chỉnh thông tin số lượng cổ phiếu đăng ký của SHB SHB: Thông báo giấy chứng nhận điều chỉnh thông tin số lượng cổ phiếu đăng ký của SHB Ngân hàng Thương mại Cổ phần Sài Gòn – Hà Nội thông báo giấy chứng nhận điều chỉnh thông tin số lượng cổ phiếu đăng ký của SHB",
+      "key_facts": [],
+      "risk_flags": [],
+      "event_type": "general_news",
+      "match_confidence": "exact",
+      "evidence_span": "SHB: Thông báo giấy chứng nhận điều chỉnh thông tin số lượng cổ phiếu đăng ký của SHB Ngân hàng Thương mại Cổ phần Sài Gòn – Hà Nội thông báo giấy chứng nhận điều chỉnh thông tin số lượng cổ phiếu đăng ký của SHB",
+      "url": "https://cafef.vn/du-lieu/SHB-2159538/shb-thong-bao-giay-chung-nhan-dieu-chinh-thong-tin-so-luong-co-phieu-dang-ky-cua-shb.chn",
+      "content_hash": "c18764d6a5b278b7ddd3ac8c9d608e89d6819279ebb9f192a75d6bb974d91adc",
+      "extraction_status": "partial"
+    },
+    {
+      "evidence_id": "N003",
+      "published_at": "2025-03-27",
+      "source": "kinhtechungkhoan",
+      "title": "chung khoan 27 3 fpt shb toa sang giua sac do nganh ngan hang 1364376.html",
+      "article_summary": "Thị trường chứng khoán ngày 27/3 diễn biến giằng co khi VN-Index giảm nhẹ 2,28 điểm, về 1.323,81 điểm. FPT tăng mạnh 2,6%, dẫn dắt nhóm công nghệ bứt phá. Ngành ngân hàng, bất động sản điều chỉnh, trong khi tiện ích và thực phẩm giữ vững sắc xanh.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "chung khoan 27 3 fpt shb toa sang giua sac do nganh ngan hang 1364376.html nan Thị trường chứng khoán ngày 27/3 diễn biến giằng co khi VN-Index giảm nhẹ 2,28 điểm, về 1.323,81 điểm.",
+          "evidence_quote": "chung khoan 27 3 fpt shb toa sang giua sac do nganh ngan hang 1364376.html nan Thị trường chứng khoán ngày 27/3 diễn biến giằng co khi VN-Index giảm nhẹ 2,28 điểm, về 1.323,81 điểm.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "FPT tăng mạnh 2,6%, dẫn dắt nhóm công nghệ bứt phá.",
+          "evidence_quote": "FPT tăng mạnh 2,6%, dẫn dắt nhóm công nghệ bứt phá.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Thị trường chứng khoán Việt Nam kết phiên giao dịch ngày 27/3 trong trạng thái giằng co nhẹ khi dòng tiền có dấu hiệu thận trọng hơn, phản ánh qua đà giảm nhẹ của các chỉ số chính.",
+          "evidence_quote": "Thị trường chứng khoán Việt Nam kết phiên giao dịch ngày 27/3 trong trạng thái giằng co nhẹ khi dòng tiền có dấu hiệu thận trọng hơn, phản ánh qua đà giảm nhẹ của các chỉ số chính.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "VN-Index lùi 2,28 điểm, tương ứng 0,17%, về mức 1.323,81 điểm.",
+          "evidence_quote": "VN-Index lùi 2,28 điểm, tương ứng 0,17%, về mức 1.323,81 điểm.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Tổng khối lượng giao dịch đạt hơn 672 triệu cổ phiếu, tương ứng giá trị 16.083 tỷ đồng, cho thấy thanh khoản vẫn duy trì ở mức khá cao.",
+          "evidence_quote": "Tổng khối lượng giao dịch đạt hơn 672 triệu cổ phiếu, tương ứng giá trị 16.083 tỷ đồng, cho thấy thanh khoản vẫn duy trì ở mức khá cao.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "debt_risk",
+        "governance"
+      ],
+      "event_type": "earnings,debt_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Thị trường chứng khoán ngày 27/3 diễn biến giằng co khi VN-Index giảm nhẹ 2,28 điểm, về 1.323,81 điểm. FPT tăng mạnh 2,6%, dẫn dắt nhóm công nghệ bứt phá. Ngành ngân hàng, bất động sản điều chỉnh, trong khi tiện ích và thực phẩm giữ vững sắc xanh. Thị trường chứng khoán Việt Nam kết phiên giao dịch ngày 27/3 trong trạng thái giằng co nhẹ khi dòng tiền có dấu hiệu thận trọng hơn, phản ánh qua đà giảm nhẹ của các chỉ số chính. VN-Index lùi 2,28 điểm, tương ứng 0,17%, về mức 1.323,81 điểm. Tổng khố",
+      "url": "https://kinhtechungkhoan.vn/chung-khoan-27-3-fpt-shb-toa-sang-giua-sac-do-nganh-ngan-hang-1364376.html",
+      "content_hash": "70734882dd298e6535951fd288c35879751980f200156e35082c6a0530eb7541",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N004",
+      "published_at": "2025-03-24",
+      "source": "kinhtechungkhoan",
+      "title": "bau hien xin duoc lua thieng co phieu shb sang ruc 1362924.html",
+      "article_summary": "Phiên giao dịch đầu tuần mới, cổ phiếu SHB tiếp tục khớp lệnh khủng với hơn 84 triệu đơn vị, vốn hóa vượt mốc 50.000 tỷ đồng. Nhìn rộng hơn, cổ phiếu nhà bầu Hiển đã tăng hơn 21% trong 7 phiên, dẫn đầu toàn nhóm ngân hàng về mức sinh lời. Phiên giao dịch ngày 24/3/2025 tiếp tục ghi nhận diễn biến bứt phá của cổ phiếu SHB – mã chứng khoán của Ngân hàng TMCP Sài Gòn – Hà Nội.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "bau hien xin duoc lua thieng co phieu shb sang ruc 1362924.html nan Phiên giao dịch đầu tuần mới, cổ phiếu SHB tiếp tục khớp lệnh khủng với hơn 84 triệu đơn vị, vốn hóa vượt mốc 50.000 tỷ đồng.",
+          "evidence_quote": "bau hien xin duoc lua thieng co phieu shb sang ruc 1362924.html nan Phiên giao dịch đầu tuần mới, cổ phiếu SHB tiếp tục khớp lệnh khủng với hơn 84 triệu đơn vị, vốn hóa vượt mốc 50.000 tỷ đồng.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Nhìn rộng hơn, cổ phiếu nhà bầu Hiển đã tăng hơn 21% trong 7 phiên, dẫn đầu toàn nhóm ngân hàng về mức sinh lời.",
+          "evidence_quote": "Nhìn rộng hơn, cổ phiếu nhà bầu Hiển đã tăng hơn 21% trong 7 phiên, dẫn đầu toàn nhóm ngân hàng về mức sinh lời.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Phiên giao dịch ngày 24/3/2025 tiếp tục ghi nhận diễn biến bứt phá của cổ phiếu SHB – mã chứng khoán của Ngân hàng TMCP Sài Gòn – Hà Nội.",
+          "evidence_quote": "Phiên giao dịch ngày 24/3/2025 tiếp tục ghi nhận diễn biến bứt phá của cổ phiếu SHB – mã chứng khoán của Ngân hàng TMCP Sài Gòn – Hà Nội.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Ngay đầu phiên chiều, SHB bất ngờ tăng tốc mạnh, đạt mức tăng hơn 5,5% tại thời điểm kết phiên, đưa thị giá lên 12.400 đồng/cổ phiếu, thanh khoản đột biến với hơn 84 triệu đơn vị sang tay, đứng đầu toàn 3 sàn.",
+          "evidence_quote": "Ngay đầu phiên chiều, SHB bất ngờ tăng tốc mạnh, đạt mức tăng hơn 5,5% tại thời điểm kết phiên, đưa thị giá lên 12.400 đồng/cổ phiếu, thanh khoản đột biến với hơn 84 triệu đơn vị sang tay, đứng đầu toàn 3 sàn.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Cùng với VIC và VHM, cổ phiếu SHB cũng góp công không nhỏ (+0,6 điểm) vào cú hồi phục mạnh của VN-Index hôm nay.",
+          "evidence_quote": "Cùng với VIC và VHM, cổ phiếu SHB cũng góp công không nhỏ (+0,6 điểm) vào cú hồi phục mạnh của VN-Index hôm nay.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "debt_risk",
+        "governance"
+      ],
+      "event_type": "earnings,debt_risk,capital,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Phiên giao dịch đầu tuần mới, cổ phiếu SHB tiếp tục khớp lệnh khủng với hơn 84 triệu đơn vị, vốn hóa vượt mốc 50.000 tỷ đồng. Nhìn rộng hơn, cổ phiếu nhà bầu Hiển đã tăng hơn 21% trong 7 phiên, dẫn đầu toàn nhóm ngân hàng về mức sinh lời. Phiên giao dịch ngày 24/3/2025 tiếp tục ghi nhận diễn biến bứt phá của cổ phiếu SHB – mã chứng khoán của Ngân hàng TMCP Sài Gòn – Hà Nội. Ngay đầu phiên chiều, SHB bất ngờ tăng tốc mạnh, đạt mức tăng hơn 5,5% tại thời điểm kết phiên, đưa thị giá lên 12.400 đồng",
+      "url": "https://kinhtechungkhoan.vn/bau-hien-xin-duoc-lua-thieng-co-phieu-shb-sang-ruc-1362924.html",
+      "content_hash": "f0d78123b45d49dae75fb2672673d2cccaa53e56a07479324e66a9a2c7996e22",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N005",
+      "published_at": "2025-03-22",
+      "source": "tnck",
+      "title": "Top 10 cổ phiếu tăng/giảm mạnh nhất tuần: Cổ phiếu SHB tiếp tục hút mạnh dòng tiền",
+      "article_summary": "Thị trường trải qua một tuần giao dịch đầy biến động đánh dấu tuần điều chỉnh đầu tiên sau 7 tuần tăng điểm liên tiếp. Theo đó, với 4 trên 5 phiên giảm, chỉ số VN-Index giảm 4,27 điểm (-0,32%), xuống 1.321,88 điểm. Thanh khoản khớp lệnh giảm xuống mức thấp nhất từ đầu tháng, song vẫn duy trì ở mức hơn 40% so với mức bình quân 20 tuần.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "Top 10 cổ phiếu tăng/giảm mạnh nhất tuần: Cổ phiếu SHB tiếp tục hút mạnh dòng tiền nan Thị trường trải qua một tuần giao dịch đầy biến động đánh dấu tuần điều chỉnh đầu tiên sau 7 tuần tăng điểm liên tiếp.",
+          "evidence_quote": "Top 10 cổ phiếu tăng/giảm mạnh nhất tuần: Cổ phiếu SHB tiếp tục hút mạnh dòng tiền nan Thị trường trải qua một tuần giao dịch đầy biến động đánh dấu tuần điều chỉnh đầu tiên sau 7 tuần tăng điểm liên tiếp.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Theo đó, với 4 trên 5 phiên giảm, chỉ số VN-Index giảm 4,27 điểm (-0,32%), xuống 1.321,88 điểm.",
+          "evidence_quote": "Theo đó, với 4 trên 5 phiên giảm, chỉ số VN-Index giảm 4,27 điểm (-0,32%), xuống 1.321,88 điểm.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Thanh khoản khớp lệnh giảm xuống mức thấp nhất từ đầu tháng, song vẫn duy trì ở mức hơn 40% so với mức bình quân 20 tuần.",
+          "evidence_quote": "Thanh khoản khớp lệnh giảm xuống mức thấp nhất từ đầu tháng, song vẫn duy trì ở mức hơn 40% so với mức bình quân 20 tuần.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Trên sàn HOSE, phản ánh tuần giao dịch thận trọng khi đa phần các cổ phiếu tăng mạnh nhất đều chỉ nhích 7% đến gần 10%.",
+          "evidence_quote": "Trên sàn HOSE, phản ánh tuần giao dịch thận trọng khi đa phần các cổ phiếu tăng mạnh nhất đều chỉ nhích 7% đến gần 10%.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Ngoại trừ các cổ phiếu DTA và PDN, nhưng thanh khoản không cao và hầu như không có thông tin mới đáng kể nào.",
+          "evidence_quote": "Ngoại trừ các cổ phiếu DTA và PDN, nhưng thanh khoản không cao và hầu như không có thông tin mới đáng kể nào.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue"
+      ],
+      "event_type": "capital,market",
+      "match_confidence": "exact",
+      "evidence_span": "Thị trường trải qua một tuần giao dịch đầy biến động đánh dấu tuần điều chỉnh đầu tiên sau 7 tuần tăng điểm liên tiếp. Theo đó, với 4 trên 5 phiên giảm, chỉ số VN-Index giảm 4,27 điểm (-0,32%), xuống 1.321,88 điểm. Thanh khoản khớp lệnh giảm xuống mức thấp nhất từ đầu tháng, song vẫn duy trì ở mức hơn 40% so với mức bình quân 20 tuần. Trên sàn HOSE, phản ánh tuần giao dịch thận trọng khi đa phần các cổ phiếu tăng mạnh nhất đều chỉ nhích 7% đến gần 10%. Ngoại trừ các cổ phiếu DTA và PDN, nhưng th",
+      "url": "https://www.tinnhanhchungkhoan.vn/top-10-co-phieu-tanggiam-manh-nhat-tuan-co-phieu-shb-tiep-tuc-hut-manh-dong-tien-post365859.html",
+      "content_hash": "e6d7df88cfd93a7673394206a27f57e65c9740835d75b8028cf514e97fdfd082",
+      "extraction_status": "ok"
+    }
+  ],
+  "data_quality_flags": {
+    "news_coverage": "high",
+    "ticker_matching_confidence": "mixed",
+    "full_text_coverage": 5,
+    "summary_coverage": 5,
+    "key_fact_coverage": 4,
+    "missing_fields": []
+  },
+  "guardrails": {
+    "initial_prompt_safe": true,
+    "news_cutoff": "2025-03-31",
+    "not_investment_advice": true,
+    "no_post_decision_data": true,
+    "full_text_excerpt_chars": 500
+  },
+  "provenance": {
+    "name": "initial_evidence",
+    "path": "reports/decision_support/generated/evidence_packs_initial.json",
+    "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+    "zone": "initial",
+    "record_count": 25,
+    "schema_version": "evidence-pack-initial-v1",
+    "generated_at_utc": null,
+    "provenance_status": null
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "outcome_review_schema.json",
+  "title": "Outcome Review",
+  "description": "Post-hoc review for frozen semantic/evidence claims. Outcome fields are review-only and must not be used in initial annotation prompts.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "news_id": {"type": "string", "minLength": 1},
+    "ticker": {"type": "string", "minLength": 1},
+    "event_date": {"type": "string", "minLength": 1},
+    "claim_id": {"type": "string", "minLength": 1},
+    "claim_text": {"type": "string", "minLength": 1},
+    "claim_direction": {"type": "string", "enum": ["support", "risk", "neutral", "mixed", "unclear"]},
+    "review_window": {"type": "string", "enum": ["T+1", "T+5", "T+20", "T+60", "other"]},
+    "raw_return": {"type": ["number", "null"]},
+    "benchmark_return": {"type": ["number", "null"]},
+    "excess_return": {"type": ["number", "null"]},
+    "abnormal_volume": {"type": ["number", "null"]},
+    "volatility": {"type": ["number", "null"]},
+    "max_adverse_move": {"type": ["number", "null"]},
+    "outcome_direction": {"type": "string", "enum": ["aligned", "opposed", "flat", "unavailable"]},
+    "outcome_salience": {"type": "string", "enum": ["salient", "not_salient", "unavailable"]},
+    "attribution_status": {"type": "string", "enum": ["unassessed", "attributed", "confounded", "indeterminate"]},
+    "outcome_label": {"type": "string", "enum": ["confirmed", "contradicted", "unresolved", "confounded", "not_price_relevant"]},
+    "threshold_metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "direction_flat_band": {"type": "number", "minimum": 0},
+        "salience_absolute_return": {"type": "number", "minimum": 0},
+        "return_unit": {"type": "string", "enum": ["decimal_return"]}
+      },
+      "required": ["direction_flat_band", "salience_absolute_return", "return_unit"]
+    },
+    "version_metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {"type": "string", "minLength": 1},
+        "label_rule_version": {"type": "string", "minLength": 1}
+      },
+      "required": ["schema_version", "label_rule_version"]
+    },
+    "confounders": {"type": "array", "items": {"type": "string"}},
+    "review_reason": {"type": "string"},
+    "requires_follow_up": {"type": "boolean"}
+  },
+  "required": [
+    "news_id",
+    "ticker",
+    "event_date",
+    "claim_id",
+    "claim_text",
+    "claim_direction",
+    "review_window",
+    "raw_return",
+    "benchmark_return",
+    "excess_return",
+    "abnormal_volume",
+    "volatility",
+    "max_adverse_move",
+    "outcome_direction",
+    "outcome_salience",
+    "attribution_status",
+    "outcome_label",
+    "threshold_metadata",
+    "version_metadata",
+    "confounders",
+    "review_reason",
+    "requires_follow_up"
+  ]
+}

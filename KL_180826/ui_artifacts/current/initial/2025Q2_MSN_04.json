@@ -1,0 +1,407 @@
+{
+  "decision_id": "2025Q2_MSN_04",
+  "snapshot_mode": "full_evidence",
+  "ticker": "MSN",
+  "decision_date": "2025-06-30",
+  "period_id": "2025Q2",
+  "holding_horizon": "next_quarter_or_period_return_in_signals",
+  "ml_signal": {
+    "model_name": "technical_Config_A_from_existing_pipeline",
+    "pred_proba_up": 0.9972110602207352,
+    "pred_label": 1,
+    "rank_in_period": 4,
+    "source_signal_class": "Buy Candidate",
+    "display_status": "Model candidate"
+  },
+  "technical_snapshot": {
+    "rsi_end_q": 84.99941401293337,
+    "macd_hist_mean_q": 0.1094344612958833,
+    "price_vs_sma20": 0.1349194620954632,
+    "return_2q_ago": -0.08616187989556129,
+    "return_q": 0.16012084592145007,
+    "return_prev_q": -0.05649717514124294,
+    "volume_change_q": 0.514722491901281,
+    "return_mean_daily": 0.002649441012009954,
+    "price_range_q": 0.4292316880014541,
+    "sma20_end": 67.67
+  },
+  "top_drivers": [
+    {
+      "feature": "rsi_end_q",
+      "value": 84.99941401293337,
+      "direction": "positive_but_overbought_risk",
+      "explanation": "RSI cuối kỳ là driver kỹ thuật quan trọng nhất trong mô hình."
+    },
+    {
+      "feature": "macd_hist_mean_q",
+      "value": 0.1094344612958833,
+      "direction": "supports_up_signal",
+      "explanation": "MACD histogram trung bình phản ánh động lượng xu hướng."
+    },
+    {
+      "feature": "price_vs_sma20",
+      "value": 0.1349194620954632,
+      "direction": "supports_up_signal",
+      "explanation": "Vị trí giá so với SMA20 phản ánh trạng thái trên/dưới đường trung bình."
+    },
+    {
+      "feature": "return_2q_ago",
+      "value": -0.08616187989556129,
+      "direction": "weak_or_negative",
+      "explanation": "Lợi suất trễ hai kỳ phản ánh động lượng/quán tính lịch sử."
+    },
+    {
+      "feature": "return_q",
+      "value": 0.16012084592145007,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trong kỳ hiện tại phản ánh xu hướng gần nhất."
+    },
+    {
+      "feature": "return_prev_q",
+      "value": -0.05649717514124294,
+      "direction": "weak_or_negative",
+      "explanation": "Lợi suất kỳ trước bổ sung thông tin động lượng."
+    },
+    {
+      "feature": "volume_change_q",
+      "value": 0.514722491901281,
+      "direction": "supports_up_signal",
+      "explanation": "Thay đổi khối lượng phản ánh mức độ quan tâm của thị trường."
+    },
+    {
+      "feature": "return_mean_daily",
+      "value": 0.002649441012009954,
+      "direction": "supports_up_signal",
+      "explanation": "Lợi suất trung bình ngày phản ánh xu hướng ngắn trong kỳ."
+    },
+    {
+      "feature": "price_range_q",
+      "value": 0.4292316880014541,
+      "direction": "risk_high_volatility",
+      "explanation": "Biên độ giá trong kỳ phản ánh biến động/rủi ro."
+    },
+    {
+      "feature": "sma20_end",
+      "value": 67.67,
+      "direction": "context",
+      "explanation": "SMA20 cuối kỳ phản ánh mặt bằng xu hướng ngắn hạn."
+    }
+  ],
+  "news_evidence": [
+    {
+      "evidence_id": "N001",
+      "published_at": "2025-06-30",
+      "source": "kinhtechungkhoan",
+      "title": "tien ngoai tro lai ung ho thi truong msn nlg cung dbc la tam diem 1388017.html",
+      "article_summary": "Khối ngoại mua ròng hơn 500 tỷ đồng phiên 30/6, tập trung gom MSN, NLG và DBC. Trong khi đó, HPG, PVS và MCH bị rút vốn mạnh. Thị trường chứng khoán Việt Nam khởi đầu tuần giao dịch cuối cùng của tháng 6 với sắc xanh lan tỏa.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "tien ngoai tro lai ung ho thi truong msn nlg cung dbc la tam diem 1388017.html nan Khối ngoại mua ròng hơn 500 tỷ đồng phiên 30/6, tập trung gom MSN, NLG và DBC.",
+          "evidence_quote": "tien ngoai tro lai ung ho thi truong msn nlg cung dbc la tam diem 1388017.html nan Khối ngoại mua ròng hơn 500 tỷ đồng phiên 30/6, tập trung gom MSN, NLG và DBC.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Thị trường chứng khoán Việt Nam khởi đầu tuần giao dịch cuối cùng của tháng 6 với sắc xanh lan tỏa.",
+          "evidence_quote": "Thị trường chứng khoán Việt Nam khởi đầu tuần giao dịch cuối cùng của tháng 6 với sắc xanh lan tỏa.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Chỉ số VN-Index tăng 4,63 điểm lên 1.376,07 điểm – mức cao nhất trong hơn một năm.",
+          "evidence_quote": "Chỉ số VN-Index tăng 4,63 điểm lên 1.376,07 điểm – mức cao nhất trong hơn một năm.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Thanh khoản tiếp tục duy trì ở ngưỡng tích cực với giá trị khớp lệnh trên HoSE đạt 18.830 tỷ đồng.",
+          "evidence_quote": "Thanh khoản tiếp tục duy trì ở ngưỡng tích cực với giá trị khớp lệnh trên HoSE đạt 18.830 tỷ đồng.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Khối ngoại trên HOSE mua ròng gần 600 tỷ đồng, tâm điểm MSN, NLG và DBC Trên sàn HoSE, nhà đầu tư nước ngoài mua ròng 592 tỷ đồng – mức cao nhất trong vòng hai tuần qua.",
+          "evidence_quote": "Khối ngoại trên HOSE mua ròng gần 600 tỷ đồng, tâm điểm MSN, NLG và DBC Trên sàn HoSE, nhà đầu tư nước ngoài mua ròng 592 tỷ đồng – mức cao nhất trong vòng hai tuần qua.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue",
+        "debt_risk",
+        "governance"
+      ],
+      "event_type": "debt_risk,governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Khối ngoại mua ròng hơn 500 tỷ đồng phiên 30/6, tập trung gom MSN, NLG và DBC. Trong khi đó, HPG, PVS và MCH bị rút vốn mạnh. Thị trường chứng khoán Việt Nam khởi đầu tuần giao dịch cuối cùng của tháng 6 với sắc xanh lan tỏa. Chỉ số VN-Index tăng 4,63 điểm lên 1.376,07 điểm – mức cao nhất trong hơn một năm. Thanh khoản tiếp tục duy trì ở ngưỡng tích cực với giá trị khớp lệnh trên HoSE đạt 18.830 tỷ đồng. Khối ngoại trên HOSE mua ròng gần 600 tỷ đồng, tâm điểm MSN, NLG và DBC Trên sàn HoSE, nhà đ",
+      "url": "https://kinhtechungkhoan.vn/tien-ngoai-tro-lai-ung-ho-thi-truong-msn-nlg-cung-dbc-la-tam-diem-1388017.html",
+      "content_hash": "845e4d1bd638fdd18e8536e921d9ca69d4f02d5fb867d3e1fdb1a20e4e9a90fe",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N002",
+      "published_at": "2025-06-27",
+      "source": "tnck",
+      "title": "Top 10 cổ phiếu tăng/giảm mạnh nhất tuần: MSN và cặp đôi VIC-VHM đẩy VN-Index bay cao",
+      "article_summary": "Kết thúc tuần giao dịch, chỉ số VN-Index tăng 22,09 điểm, tương đương 2,57% lên 1.371,44 điểm. Tuy nhiên, khối lượng khớp lệnh bình quân có dấu hiệu giảm nhẹ so với tuần trước và thấp hơn gần 10% so với mức bình quân 20 tuần. Cụ thể, thanh khoản bình quân tuần trên sàn HOSE đạt 833 triệu cổ phiếu/phiên, giảm nhẹ chỉ hơn 1% so với tuần trước đó, giá trị giao dịch bình quân đạt 21.455 tỷ đồng/phiên, tăng nhẹ gần 4%.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "Top 10 cổ phiếu tăng/giảm mạnh nhất tuần: MSN và cặp đôi VIC-VHM đẩy VN-Index bay cao nan Kết thúc tuần giao dịch, chỉ số VN-Index tăng 22,09 điểm, tương đương 2,57% lên 1.371,44 điểm.",
+          "evidence_quote": "Top 10 cổ phiếu tăng/giảm mạnh nhất tuần: MSN và cặp đôi VIC-VHM đẩy VN-Index bay cao nan Kết thúc tuần giao dịch, chỉ số VN-Index tăng 22,09 điểm, tương đương 2,57% lên 1.371,44 điểm.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Tuy nhiên, khối lượng khớp lệnh bình quân có dấu hiệu giảm nhẹ so với tuần trước và thấp hơn gần 10% so với mức bình quân 20 tuần.",
+          "evidence_quote": "Tuy nhiên, khối lượng khớp lệnh bình quân có dấu hiệu giảm nhẹ so với tuần trước và thấp hơn gần 10% so với mức bình quân 20 tuần.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Cụ thể, thanh khoản bình quân tuần trên sàn HOSE đạt 833 triệu cổ phiếu/phiên, giảm nhẹ chỉ hơn 1% so với tuần trước đó, giá trị giao dịch bình quân đạt 21.455 tỷ đồng/phiên, tăng nhẹ gần 4%.",
+          "evidence_quote": "Cụ thể, thanh khoản bình quân tuần trên sàn HOSE đạt 833 triệu cổ phiếu/phiên, giảm nhẹ chỉ hơn 1% so với tuần trước đó, giá trị giao dịch bình quân đạt 21.455 tỷ đồng/phiên, tăng nhẹ gần 4%.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Tháng 6 chỉ còn một phiên giao dịch ngày thứ Hai tuần tới là kết thúc và nếu không quá nhiều thay đổi bất ngờ, chỉ số VN-Index sẽ ghi nhận tháng tăng thêm gần 40 điểm, sau tháng 5 trước đó tăng hơn 100 điểm.",
+          "evidence_quote": "Tháng 6 chỉ còn một phiên giao dịch ngày thứ Hai tuần tới là kết thúc và nếu không quá nhiều thay đổi bất ngờ, chỉ số VN-Index sẽ ghi nhận tháng tăng thêm gần 40 điểm, sau tháng 5 trước đó tăng hơn 100 điểm.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Tuần qua, có đến 16/21 nhóm ngành chính tăng điểm.",
+          "evidence_quote": "Tuần qua, có đến 16/21 nhóm ngành chính tăng điểm.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        }
+      ],
+      "risk_flags": [
+        "audit_issue"
+      ],
+      "event_type": "dividend,earnings,market",
+      "match_confidence": "exact",
+      "evidence_span": "Kết thúc tuần giao dịch, chỉ số VN-Index tăng 22,09 điểm, tương đương 2,57% lên 1.371,44 điểm. Tuy nhiên, khối lượng khớp lệnh bình quân có dấu hiệu giảm nhẹ so với tuần trước và thấp hơn gần 10% so với mức bình quân 20 tuần. Cụ thể, thanh khoản bình quân tuần trên sàn HOSE đạt 833 triệu cổ phiếu/phiên, giảm nhẹ chỉ hơn 1% so với tuần trước đó, giá trị giao dịch bình quân đạt 21.455 tỷ đồng/phiên, tăng nhẹ gần 4%. Tháng 6 chỉ còn một phiên giao dịch ngày thứ Hai tuần tới là kết thúc và nếu không",
+      "url": "https://www.tinnhanhchungkhoan.vn/top-10-co-phieu-tanggiam-manh-nhat-tuan-msn-va-cap-doi-vic-vhm-day-vn-index-bay-cao-post372014.html",
+      "content_hash": "a21365c381e173a658ef4b80cc1a0f208bc4f473a110edc6b8183a284ab6adfe",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N003",
+      "published_at": "2025-06-27",
+      "source": "tnck",
+      "title": "Cổ phiếu MSN và các bluechip thúc đẩy VN-Index vượt qua mốc 1.370 điểm",
+      "article_summary": "Liên tiếp chỉ số VN-Index giảm nhẹ trong hai phiên gần nhất với diễn giằng co với khối lượng giảm sâu dưới mức trung bình 20 ngày đã phản ánh sự thận trọng nhất định, trong bối cảnh chỉ số đang ở vùng đỉnh cao nhất trong 3 năm trở lại đây. Cùng với đó, các chỉ báo kỹ thuật phổ biến cũng đang cho tín hiệu về khả năng sideway, rung lắc và tích lũy ngắn hạn cũng đã khiến giao dịch chậm lại. Mặc dù vậy, việc thị trường trồi sụt đi kèm thanh khoản khớp lệnh ở mức thấp, và không nhóm ngành cổ phiếu nào giảm sâu có thể là điểm tích cực đối với xu hướng, nó cho thấy việc chủ động tiết cung giá thấp và lạc quan trong tâm lý của nhà đầu tư được duy trì.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "Cổ phiếu MSN và các bluechip thúc đẩy VN-Index vượt qua mốc 1.370 điểm nan Liên tiếp chỉ số VN-Index giảm nhẹ trong hai phiên gần nhất với diễn giằng co với khối lượng giảm sâu dưới mức trung bình 20 ngày đã phản ánh sự thận trọng nhất định, trong bối cảnh chỉ số đang ở vùng đỉnh cao nhất trong 3 nă",
+          "evidence_quote": "Cổ phiếu MSN và các bluechip thúc đẩy VN-Index vượt qua mốc 1.370 điểm nan Liên tiếp chỉ số VN-Index giảm nhẹ trong hai phiên gần nhất với diễn giằng co với khối lượng giảm sâu dưới mức trung bình 20 ngày đã phản ánh sự thận trọng nhất định",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Mặc dù vậy, việc thị trường trồi sụt đi kèm thanh khoản khớp lệnh ở mức thấp, và không nhóm ngành cổ phiếu nào giảm sâu có thể là điểm tích cực đối với xu hướng, nó cho thấy việc chủ động tiết cung giá thấp và lạc quan trong tâm lý của nhà đầu tư được duy trì.",
+          "evidence_quote": "Mặc dù vậy, việc thị trường trồi sụt đi kèm thanh khoản khớp lệnh ở mức thấp, và không nhóm ngành cổ phiếu nào giảm sâu có thể là điểm tích cực đối với xu hướng, nó cho thấy việc chủ động tiết cung giá thấp và lạc quan trong tâm lý của nhà ",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Điều này được phản ánh phần nào trong phiên hôm nay, khi VN-Index đóng cửa đã chính thức vượt qua ngưỡng cản mạnh 1.370 điểm sau nửa đầu phiên rung lắc.",
+          "evidence_quote": "Điều này được phản ánh phần nào trong phiên hôm nay, khi VN-Index đóng cửa đã chính thức vượt qua ngưỡng cản mạnh 1.370 điểm sau nửa đầu phiên rung lắc.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Dù vậy, điểm trừ và nêu bật sự không chắc chắn là thanh khoản toàn thị trường vẫn chưa có sự bứt phá, trong khi sự thiếu vắng nhóm cổ phiếu đủ mạnh dẫn dắt cũng khiến phiên tăng điểm hôm nay thiếu thuyết phục.",
+          "evidence_quote": "Dù vậy, điểm trừ và nêu bật sự không chắc chắn là thanh khoản toàn thị trường vẫn chưa có sự bứt phá, trong khi sự thiếu vắng nhóm cổ phiếu đủ mạnh dẫn dắt cũng khiến phiên tăng điểm hôm nay thiếu thuyết phục.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Đóng cửa, sàn HOSE có 163 mã tăng và 138 mã giảm, VN-Index tăng 5,77 điểm (+0,42%), lên 1.37144 điểm.",
+          "evidence_quote": "Đóng cửa, sàn HOSE có 163 mã tăng và 138 mã giảm, VN-Index tăng 5,77 điểm (+0,42%), lên 1.37144 điểm.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "governance"
+      ],
+      "event_type": "governance,market",
+      "match_confidence": "exact",
+      "evidence_span": "Liên tiếp chỉ số VN-Index giảm nhẹ trong hai phiên gần nhất với diễn giằng co với khối lượng giảm sâu dưới mức trung bình 20 ngày đã phản ánh sự thận trọng nhất định, trong bối cảnh chỉ số đang ở vùng đỉnh cao nhất trong 3 năm trở lại đây. Cùng với đó, các chỉ báo kỹ thuật phổ biến cũng đang cho tín hiệu về khả năng sideway, rung lắc và tích lũy ngắn hạn cũng đã khiến giao dịch chậm lại. Mặc dù vậy, việc thị trường trồi sụt đi kèm thanh khoản khớp lệnh ở mức thấp, và không nhóm ngành cổ phiếu nà",
+      "url": "https://www.tinnhanhchungkhoan.vn/co-phieu-msn-va-cac-bluechip-thuc-day-vn-index-vuot-qua-moc-1370-diem-post372004.html",
+      "content_hash": "aad3c74d5c2bfbdd1f9bc37bafe1e5e812144432b07cee2a67c8405b6848ad48",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N004",
+      "published_at": "2025-06-27",
+      "source": "tnck",
+      "title": "Giao dịch chứng khoán khối ngoại ngày 27/6: Mua ròng mạnh nhất cổ phiếu MSN",
+      "article_summary": "Trên sàn giao dịch HOSE, nhà đầu tư nước ngoài mua vào 61,76 triệu đơn vị, tổng giá trị đạt 2.057,2 tỷ đồng, giảm 1,9% về khối lượng nhưng tăng 8,7% về giá trị so với phiên trước đó (ngày 26/6). Ở chiều ngược lại, khối này bán ra 68,2 triệu đơn vị, giá trị đạt 2.068,6 tỷ đồng, nhích nhẹ về khối lượng và giảm 4,3% về giá trị so với phiên trước. Theo đó, nhà đầu tư nước ngoài đã bán ròng 6,48 triệu đơn vị, tổng giá trị bán ròng tương ứng đạt 11,4 tỷ đồng, tăng 26,3% về lượng nhưng giảm 95,8% về giá trị so với phiên trước.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "Giao dịch chứng khoán khối ngoại ngày 27/6: Mua ròng mạnh nhất cổ phiếu MSN nan Trên sàn giao dịch HOSE, nhà đầu tư nước ngoài mua vào 61,76 triệu đơn vị, tổng giá trị đạt 2.057,2 tỷ đồng, giảm 1,9% về khối lượng nhưng tăng 8,7% về giá trị so với phiên trước đó (ngày 26/6).",
+          "evidence_quote": "Giao dịch chứng khoán khối ngoại ngày 27/6: Mua ròng mạnh nhất cổ phiếu MSN nan Trên sàn giao dịch HOSE, nhà đầu tư nước ngoài mua vào 61,76 triệu đơn vị, tổng giá trị đạt 2.057,2 tỷ đồng, giảm 1,9% về khối lượng nhưng tăng 8,7% về giá trị ",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Ở chiều ngược lại, khối này bán ra 68,2 triệu đơn vị, giá trị đạt 2.068,6 tỷ đồng, nhích nhẹ về khối lượng và giảm 4,3% về giá trị so với phiên trước.",
+          "evidence_quote": "Ở chiều ngược lại, khối này bán ra 68,2 triệu đơn vị, giá trị đạt 2.068,6 tỷ đồng, nhích nhẹ về khối lượng và giảm 4,3% về giá trị so với phiên trước.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Theo đó, nhà đầu tư nước ngoài đã bán ròng 6,48 triệu đơn vị, tổng giá trị bán ròng tương ứng đạt 11,4 tỷ đồng, tăng 26,3% về lượng nhưng giảm 95,8% về giá trị so với phiên trước.",
+          "evidence_quote": "Theo đó, nhà đầu tư nước ngoài đã bán ròng 6,48 triệu đơn vị, tổng giá trị bán ròng tương ứng đạt 11,4 tỷ đồng, tăng 26,3% về lượng nhưng giảm 95,8% về giá trị so với phiên trước.",
+          "fact_type": "general_news",
+          "direction": "neutral",
+          "confidence": "low"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Phiên hôm nay, khối ngoại mua ròng mạnh nhất cổ phiếu MSN với giá trị đạt 127,2 tỷ đồng, tương đương khối lượng mua ròng đạt 1,7 triệu đơn vị; trong khi bán ròng mạnh nhất cổ phiếu FPT với giá trị hơn 191 tỷ đồng, tương đương khối lượng bán ròng đạt 1,62 triệu đơn vị.",
+          "evidence_quote": "Phiên hôm nay, khối ngoại mua ròng mạnh nhất cổ phiếu MSN với giá trị đạt 127,2 tỷ đồng, tương đương khối lượng mua ròng đạt 1,7 triệu đơn vị; trong khi bán ròng mạnh nhất cổ phiếu FPT với giá trị hơn 191 tỷ đồng, tương đương khối lượng bán",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Trên sàn giao dịch HNX , khối ngoại mua vào 1,43 triệu đơn vị, giá trị đạt 39,74 tỷ đồng, giảm 23,7% về lượng và 20,4% về giá trị so với phiên trước.",
+          "evidence_quote": "Trên sàn giao dịch HNX , khối ngoại mua vào 1,43 triệu đơn vị, giá trị đạt 39,74 tỷ đồng, giảm 23,7% về lượng và 20,4% về giá trị so với phiên trước.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [],
+      "event_type": "market",
+      "match_confidence": "exact",
+      "evidence_span": "Trên sàn giao dịch HOSE, nhà đầu tư nước ngoài mua vào 61,76 triệu đơn vị, tổng giá trị đạt 2.057,2 tỷ đồng, giảm 1,9% về khối lượng nhưng tăng 8,7% về giá trị so với phiên trước đó (ngày 26/6). Ở chiều ngược lại, khối này bán ra 68,2 triệu đơn vị, giá trị đạt 2.068,6 tỷ đồng, nhích nhẹ về khối lượng và giảm 4,3% về giá trị so với phiên trước. Theo đó, nhà đầu tư nước ngoài đã bán ròng 6,48 triệu đơn vị, tổng giá trị bán ròng tương ứng đạt 11,4 tỷ đồng, tăng 26,3% về lượng nhưng giảm 95,8% về gi",
+      "url": "https://www.tinnhanhchungkhoan.vn/giao-dich-chung-khoan-khoi-ngoai-ngay-276-mua-rong-manh-nhat-co-phieu-msn-post372016.html",
+      "content_hash": "9463b951fffa242342f8bac5fa185421f40de1f5ebcab57689a3222c1f4804ea",
+      "extraction_status": "ok"
+    },
+    {
+      "evidence_id": "N005",
+      "published_at": "2025-06-27",
+      "source": "tnck",
+      "title": "Giao dịch chứng khoán sáng 27/6: Masan (MSN) bứt tốc, VN-Index hồi phục sắc xanh",
+      "article_summary": "Thị trường đang “loay hoay” ở vùng đỉnh 1.370 điểm khi liên tiếp gặp thất bại trong quá trình tiếp cận ngưỡng kháng cự này. Chỉ số VN-Index đã chuyển qua trạng thái rung lắc và điều chỉnh nhẹ trong 2 phiên vừa qua, đồng thời với thanh khoản phiên 26/6 thấp hơn mức trung bình của 20 phiên, cho thấy tâm lý có phần thận trọng hơn của nhà đầu tư. Về kỹ thuật, chỉ báo RSI đã hướng lên trở lại nhưng chỉ báo MACD còn hướng xuống nên diễn biến rung lắc/giằng co còn hiện hữu trong phiên tiếp theo.",
+      "key_facts": [
+        {
+          "fact_id": "F01",
+          "fact": "Giao dịch chứng khoán sáng 27/6: Masan (MSN) bứt tốc, VN-Index hồi phục sắc xanh nan Thị trường đang “loay hoay” ở vùng đỉnh 1.370 điểm khi liên tiếp gặp thất bại trong quá trình tiếp cận ngưỡng kháng cự này.",
+          "evidence_quote": "Giao dịch chứng khoán sáng 27/6: Masan (MSN) bứt tốc, VN-Index hồi phục sắc xanh nan Thị trường đang “loay hoay” ở vùng đỉnh 1.370 điểm khi liên tiếp gặp thất bại trong quá trình tiếp cận ngưỡng kháng cự này.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F02",
+          "fact": "Chỉ số VN-Index đã chuyển qua trạng thái rung lắc và điều chỉnh nhẹ trong 2 phiên vừa qua, đồng thời với thanh khoản phiên 26/6 thấp hơn mức trung bình của 20 phiên, cho thấy tâm lý có phần thận trọng hơn của nhà đầu tư.",
+          "evidence_quote": "Chỉ số VN-Index đã chuyển qua trạng thái rung lắc và điều chỉnh nhẹ trong 2 phiên vừa qua, đồng thời với thanh khoản phiên 26/6 thấp hơn mức trung bình của 20 phiên, cho thấy tâm lý có phần thận trọng hơn của nhà đầu tư.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F03",
+          "fact": "Diễn biến thị trường phiên sáng 27/6, cũng như 3 phiên giao dịch gần đây, chỉ số VN-Index tiếp tục thử thách và sớm “chào thua” mốc 1.370 điểm sau thời gian ngắn mở cửa.",
+          "evidence_quote": "Diễn biến thị trường phiên sáng 27/6, cũng như 3 phiên giao dịch gần đây, chỉ số VN-Index tiếp tục thử thách và sớm “chào thua” mốc 1.370 điểm sau thời gian ngắn mở cửa.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F04",
+          "fact": "Sau hơn 90 phút giao dịch, trong bối cảnh thị trường chung phân hóa với số mã tăng giảm khá cân bằng, chỉ số VN-Index đã quay đầu điều chỉnh nhẹ bởi thiếu sự “hậu thuẫn” của các cổ phiếu bluechip, đặc biệt là gánh nặng từ cặp đôi lớn VIC-VHM.",
+          "evidence_quote": "Sau hơn 90 phút giao dịch, trong bối cảnh thị trường chung phân hóa với số mã tăng giảm khá cân bằng, chỉ số VN-Index đã quay đầu điều chỉnh nhẹ bởi thiếu sự “hậu thuẫn” của các cổ phiếu bluechip, đặc biệt là gánh nặng từ cặp đôi lớn VIC-VH",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        },
+        {
+          "fact_id": "F05",
+          "fact": "Còn về tổng thể thị trường, dòng tiền vẫn luân chuyển nhanh qua các nhóm ngành và điểm đến chính trong phiên sáng nay là các cổ phiếu bất động sản vừa và nhỏ.",
+          "evidence_quote": "Còn về tổng thể thị trường, dòng tiền vẫn luân chuyển nhanh qua các nhóm ngành và điểm đến chính trong phiên sáng nay là các cổ phiếu bất động sản vừa và nhỏ.",
+          "fact_type": "market",
+          "direction": "neutral",
+          "confidence": "medium"
+        }
+      ],
+      "risk_flags": [
+        "governance"
+      ],
+      "event_type": "governance,market",
+      "match_confidence": "partial",
+      "evidence_span": "Thị trường đang “loay hoay” ở vùng đỉnh 1.370 điểm khi liên tiếp gặp thất bại trong quá trình tiếp cận ngưỡng kháng cự này. Chỉ số VN-Index đã chuyển qua trạng thái rung lắc và điều chỉnh nhẹ trong 2 phiên vừa qua, đồng thời với thanh khoản phiên 26/6 thấp hơn mức trung bình của 20 phiên, cho thấy tâm lý có phần thận trọng hơn của nhà đầu tư. Về kỹ thuật, chỉ báo RSI đã hướng lên trở lại nhưng chỉ báo MACD còn hướng xuống nên diễn biến rung lắc/giằng co còn hiện hữu trong phiên tiếp theo. Diễn b",
+      "url": "https://www.tinnhanhchungkhoan.vn/giao-dich-chung-khoan-sang-276-masan-msn-but-toc-vn-index-hoi-phuc-sac-xanh-post371977.html",
+      "content_hash": "fdcefb69bd9f3351e06d93f2f33e840df06d3c708b0941b75cfd04d1cd5defbd",
+      "extraction_status": "ok"
+    }
+  ],
+  "data_quality_flags": {
+    "news_coverage": "high",
+    "ticker_matching_confidence": "mixed",
+    "full_text_coverage": 5,
+    "summary_coverage": 5,
+    "key_fact_coverage": 5,
+    "missing_fields": []
+  },
+  "guardrails": {
+    "initial_prompt_safe": true,
+    "news_cutoff": "2025-06-30",
+    "not_investment_advice": true,
+    "no_post_decision_data": true,
+    "full_text_excerpt_chars": 500
+  },
+  "provenance": {
+    "name": "initial_evidence",
+    "path": "reports/decision_support/generated/evidence_packs_initial.json",
+    "sha256": "1b2e4d3d35f19a42b3c91ef4760b3911097d1dc351c94230779aef7eb838a1b7",
+    "zone": "initial",
+    "record_count": 25,
+    "schema_version": "evidence-pack-initial-v1",
+    "generated_at_utc": null,
+    "provenance_status": null
+  }
+}

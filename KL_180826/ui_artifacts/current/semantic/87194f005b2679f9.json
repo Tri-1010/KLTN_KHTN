@@ -1,0 +1,24 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "87194f005b2679f9",
+    "ticker": "UNKNOWN",
+    "article_date": "2025-02-24",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": false,
+    "consensus_direction": "mixed",
+    "consensus_materiality": "medium",
+    "consensus_event_type": "macro",
+    "evidence_span": "Dự thảo xây dựng Nghị quyết của Quốc hội về thành lập và hoạt động của trung tâm tài chính tại Việt Nam đề xuất hình thành ngân hàng số từ các nhà băng là thành viên trung tâm tài chính, được thực hiện từ đầu 2026.",
+    "disagreement_fields": [],
+    "quality_flags": [
+      "unclear_direction"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "unclear_direction"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

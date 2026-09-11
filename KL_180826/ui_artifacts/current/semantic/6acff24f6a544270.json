@@ -1,0 +1,26 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "6acff24f6a544270",
+    "ticker": "UNKNOWN",
+    "article_date": "2026-04-30",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": false,
+    "consensus_direction": "mixed",
+    "consensus_materiality": "high",
+    "consensus_event_type": "earnings",
+    "evidence_span": null,
+    "disagreement_fields": [],
+    "quality_flags": [
+      "missing_or_disputed_evidence",
+      "unclear_direction"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "missing_or_disputed_evidence",
+      "unclear_direction"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}

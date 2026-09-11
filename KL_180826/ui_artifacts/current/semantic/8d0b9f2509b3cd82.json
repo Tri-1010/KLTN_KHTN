@@ -1,0 +1,28 @@
+{
+  "warning": "Model-derived pseudo-label; not human ground truth.",
+  "record": {
+    "news_id": "8d0b9f2509b3cd82",
+    "ticker": "GAS",
+    "article_date": "2024-12-17",
+    "consensus_method": "majority_vote",
+    "agreement_level": "medium",
+    "analysis_eligible": false,
+    "consensus_direction": "support",
+    "consensus_materiality": "high",
+    "consensus_event_type": "earnings",
+    "evidence_span": null,
+    "disagreement_fields": [],
+    "quality_flags": [
+      "data_quality_issue",
+      "missing_or_disputed_evidence",
+      "numeric_score_outlier"
+    ],
+    "requires_human_review": true,
+    "review_flags": [
+      "data_quality_issue",
+      "missing_or_disputed_evidence",
+      "numeric_score_outlier"
+    ],
+    "artifact_schema_version": "pseudo_label_consensus_v2"
+  }
+}
