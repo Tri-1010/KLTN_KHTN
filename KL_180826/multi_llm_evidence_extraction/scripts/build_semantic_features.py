@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 import sys
 from pathlib import Path
 from typing import Any, Iterable
@@ -22,6 +23,7 @@ CONSENSUS = OUTPUT_DIR / "pseudo_labels_consensus.csv"
 PRICES = ROOT / "data" / "prices" / "all_vn30_prices.csv"
 DAILY_OUT = OUTPUT_DIR / "semantic_features_daily.csv"
 PERIOD_OUT = OUTPUT_DIR / "semantic_features_period.csv"
+LOCKED_DAILY_NAME = "semantic_features_daily.csv"
 ROLLING_WINDOWS = (5, 20, 60)
 
 SEMANTIC_FEATURE_COLUMNS = [
@@ -148,16 +150,63 @@ def aggregate_period(daily: pd.DataFrame) -> pd.DataFrame:
     return result
 
 
-def main() -> int:
+def _is_locked_daily_path(path: Path) -> bool:
+    return path.resolve().name == LOCKED_DAILY_NAME
+
+
+def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Build daily/period semantic features")
+    parser.add_argument(
+        "--labels",
+        type=Path,
+        default=None,
+        help="pseudo-label / adapted-cache CSV; default=pseudo_labels_consensus.csv",
+    )
+    parser.add_argument(
+        "--output-daily",
+        type=Path,
+        default=None,
+        help="daily feature output path; default=outputs/semantic_features_daily.csv",
+    )
+    parser.add_argument(
+        "--output-period",
+        type=Path,
+        default=None,
+        help="period feature output path; default=outputs/semantic_features_period.csv",
+    )
+    parser.add_argument(
+        "--force-overwrite-locked",
+        action="store_true",
+        help="allow writing the locked consensus daily filename (default: refuse when --labels overrides)",
+    )
+    return parser.parse_args(argv)
+
+
+def main(argv: list[str] | None = None) -> int:
     ensure_dirs()
+    args = parse_args(argv)
+    labels_path = Path(args.labels) if args.labels is not None else CONSENSUS
+    daily_out = Path(args.output_daily) if args.output_daily is not None else DAILY_OUT
+    period_out = Path(args.output_period) if args.output_period is not None else PERIOD_OUT
+
+    using_override_labels = args.labels is not None
+    if using_override_labels and _is_locked_daily_path(daily_out) and not args.force_overwrite_locked:
+        raise SystemExit(
+            f"refusing to overwrite locked daily semantic path with adapted labels: {daily_out}. "
+            "Pass --output-daily to an alternate path (e.g. semantic_features_daily_cache_dense.csv) "
+            "or --force-overwrite-locked only if intentionally regenerating the consensus daily."
+        )
+
     prices = load_prices()
-    labels = pd.read_csv(CONSENSUS, encoding="utf-8-sig") if CONSENSUS.exists() else pd.DataFrame()
+    labels = pd.read_csv(labels_path, encoding="utf-8-sig") if labels_path.exists() else pd.DataFrame()
     daily = aggregate_daily(labels, prices)
     period = aggregate_period(daily)
-    daily.to_csv(DAILY_OUT, index=False, encoding="utf-8-sig")
-    period.to_csv(PERIOD_OUT, index=False, encoding="utf-8-sig")
-    print(f"saved {DAILY_OUT} rows={len(daily)}")
-    print(f"saved {PERIOD_OUT} rows={len(period)}")
+    daily_out.parent.mkdir(parents=True, exist_ok=True)
+    period_out.parent.mkdir(parents=True, exist_ok=True)
+    daily.to_csv(daily_out, index=False, encoding="utf-8-sig")
+    period.to_csv(period_out, index=False, encoding="utf-8-sig")
+    print(f"saved {daily_out} rows={len(daily)}")
+    print(f"saved {period_out} rows={len(period)}")
     return 0
 
 

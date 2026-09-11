@@ -1,0 +1,28 @@
+{
+  "schema_version": "v6-runtime-bundle-v1",
+  "bundle_id": "v6-locked-study-results-fixture-runtime",
+  "release_id": "v6-locked-study-results-fixture",
+  "built_at_utc": "2026-09-10T20:13:54.950648Z",
+  "root_policy": "portable-root-contained-json-only",
+  "member_count": 1,
+  "release_member_path": "public_release.json",
+  "artifacts": [
+    {
+      "artifact_id": "v6-study-results-public-release",
+      "path": "public_release.json",
+      "sha256": "025fad00aaa856905af19084a8e2ed78fe9898834d9779cd43011e3e2243c8f5",
+      "record_count": 7,
+      "schema_version": "v6-public-release-v1",
+      "scope": "aggregate_public"
+    }
+  ],
+  "runtime_members": [
+    {
+      "artifact_id": "v6-study-results-public-release",
+      "path": "public_release.json",
+      "sha256": "025fad00aaa856905af19084a8e2ed78fe9898834d9779cd43011e3e2243c8f5",
+      "record_count": 7,
+      "schema_version": "v6-public-release-v1"
+    }
+  ]
+}

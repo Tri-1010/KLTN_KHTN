@@ -5,6 +5,8 @@ import json
 import sys
 from pathlib import Path
 
+import pytest
+
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPT_DIR = ROOT / "multi_llm_evidence_extraction" / "scripts"
@@ -30,6 +32,7 @@ def _row(annotator: str, direction: str = "support", evidence: str = "evidence",
         "news_id": "n1",
         "ticker": "AAA",
         "article_date": "2024-01-01",
+        "content_hash": "a" * 64,
         "ticker_relevance": "direct",
         "materiality": "high",
         "direction": direction,
@@ -75,6 +78,27 @@ def test_consensus_detects_provenance_conflict():
     out = consensus.consensus_for("n1", [_row("a"), _row("b", input_hash="different"), _row("c")])
     assert "provenance_conflict" in out["quality_flags"]
     assert "provenance_conflict" in out["exclusion_reasons"]
+    with pytest.raises(ValueError, match="content_hash provenance conflict"):
+        consensus.consensus_for(
+            "n1",
+            [_row("a"), {**_row("b"), "content_hash": "b" * 64}, _row("c")],
+        )
+
+
+def test_annotation_loader_preserves_same_news_id_across_tickers(tmp_path):
+    paths = []
+    for annotator in ("a", "b", "c"):
+        path = tmp_path / f"{annotator}.jsonl"
+        rows = [_row(annotator), {**_row(annotator), "ticker": "BBB"}]
+        path.write_text("\n".join(json.dumps(row) for row in rows) + "\n", encoding="utf-8")
+        paths.append(path)
+    loaded = consensus.load_annotation_rows(paths)
+    assert len(loaded) == 6
+    grouped = {}
+    for row in loaded:
+        grouped.setdefault((row["news_id"], row["ticker"]), []).append(row)
+    assert set(grouped) == {("n1", "AAA"), ("n1", "BBB")}
+    assert all(len(group) == 3 for group in grouped.values())
 
 
 def test_manifest_paths_are_per_annotator():

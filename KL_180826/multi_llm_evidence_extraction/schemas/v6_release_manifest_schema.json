@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "V6 Release Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "artifact_schema_version",
+    "status",
+    "generated_at_utc",
+    "run_id",
+    "protocol_version",
+    "protocol_sha256",
+    "run_manifest_sha256",
+    "public_artifacts",
+    "claims",
+    "limitations"
+  ],
+  "properties": {
+    "artifact_schema_version": {"const": "v6_release_manifest_v1"},
+    "status": {"const": "completed"},
+    "generated_at_utc": {"type": "string"},
+    "run_id": {"type": "string"},
+    "protocol_version": {"type": "string"},
+    "protocol_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "run_manifest_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "public_artifacts": {"type": "array"},
+    "claims": {"type": "array"},
+    "limitations": {"type": "array", "items": {"type": "string"}}
+  }
+}

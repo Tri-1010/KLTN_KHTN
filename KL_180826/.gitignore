@@ -1,0 +1,32 @@
+# Secrets and local environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+
+# Python/test/editor caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.hypothesis/
+.mypy_cache/
+.claude/
+.vscode/
+.idea/
+
+# Runtime-generated and temporary work
+logs/
+reports/decision_support/generated/runs/
+reproduction_workspaces/
+*.zip
+*.7z
+*.sha256
+
+# Internal-only corpus: retain policy notice only
+data/news/**
+!data/news/
+!data/news/README_RESTRICTED.md
+restricted_internal_data/**
+!restricted_internal_data/
+!restricted_internal_data/README_RESTRICTED.md

@@ -1,0 +1,155 @@
+{
+  "artifact_schema_version": "v6_retrospective_attestation_v1",
+  "audited_run_id": "v6_primary_20260909",
+  "claims": [
+    {
+      "baseline_config": "A_technical",
+      "bootstrap_ci_high": 0.000314702732515,
+      "bootstrap_ci_low": -0.0213033761299464,
+      "claim_gate_pass": false,
+      "claim_gates": {
+        "audit_pass": true,
+        "bh_alpha": false,
+        "ci_lower_bound_positive": false,
+        "comparison_contract": true,
+        "estimable": true,
+        "manifest_pass": false,
+        "positive_effect": false
+      },
+      "claim_id": "H1",
+      "claim_state": "unsupported",
+      "comparison_config": "B_technical_keyword",
+      "improvement_delta": -0.0102409730250008,
+      "metric": "balanced_accuracy",
+      "model": "RandomForest",
+      "p_value": 0.0975902409759024,
+      "p_value_bh": 0.1951804819518048,
+      "status": "ok"
+    },
+    {
+      "baseline_config": "A_technical",
+      "bootstrap_ci_high": 0.0018953157694729,
+      "bootstrap_ci_low": -0.011200577414621,
+      "claim_gate_pass": false,
+      "claim_gates": {
+        "audit_pass": true,
+        "bh_alpha": false,
+        "ci_lower_bound_positive": false,
+        "comparison_contract": true,
+        "estimable": true,
+        "manifest_pass": false,
+        "positive_effect": false
+      },
+      "claim_id": "H2",
+      "claim_state": "unsupported",
+      "comparison_config": "C_technical_semantic",
+      "improvement_delta": -0.0042486078152842,
+      "metric": "balanced_accuracy",
+      "model": "RandomForest",
+      "p_value": 0.22997700229977,
+      "p_value_bh": 0.22997700229977,
+      "status": "ok"
+    }
+  ],
+  "immutable_source": true,
+  "limitations": [
+    "retrospective_attestation_does_not_rewrite_locked_artifacts",
+    "historical_locked_run_has_no_fail_closed_runtime_input_manifest",
+    "historical_claim_state_requires_manifest_validation_for_supported_status"
+  ],
+  "locked_artifacts": [
+    {
+      "path": "KL_180826/multi_llm_evidence_extraction/outputs/v6_primary/v6_primary_20260909/v6_build_summary.json",
+      "sha256": "3d1bbad3476177d79f1afb086fad90e05896a94e8c51be772a2bb28a7e6f9a1b",
+      "size_bytes": 1105
+    },
+    {
+      "path": "KL_180826/multi_llm_evidence_extraction/outputs/v6_primary/v6_primary_20260909/v6_coverage_audit.csv",
+      "sha256": "37d325a14151c693067b42d223dcf8123baaf271cdc63b2f1bd0e57b6c8a4bd5",
+      "size_bytes": 2386
+    },
+    {
+      "path": "KL_180826/multi_llm_evidence_extraction/outputs/v6_primary/v6_primary_20260909/v6_feature_manifest.csv",
+      "sha256": "65f9d962828bb0de25186513b8f01bbce3706ee53195195f33610f2425e93ccc",
+      "size_bytes": 41300
+    },
+    {
+      "path": "KL_180826/multi_llm_evidence_extraction/outputs/v6_primary/v6_primary_20260909/v6_fold_feature_manifest.csv",
+      "sha256": "9242c084c29be5e83fab5def81e7a9e367c9c7032e9d34076a3ea09135ae0feb",
+      "size_bytes": 162135
+    },
+    {
+      "path": "KL_180826/multi_llm_evidence_extraction/outputs/v6_primary/v6_primary_20260909/v6_fold_manifest.csv",
+      "sha256": "75306875c00cecba51d26197f25915c0a9336e39064780c07675df7bfe81dcd0",
+      "size_bytes": 435
+    },
+    {
+      "path": "KL_180826/multi_llm_evidence_extraction/outputs/v6_primary/v6_primary_20260909/v6_fold_metrics.csv",
+      "sha256": "30adce58386d99a8e3a4dc581b3edd373de90a53ac7ad09bfb9a53f8e721af42",
+      "size_bytes": 6057
+    },
+    {
+      "path": "KL_180826/multi_llm_evidence_extraction/outputs/v6_primary/v6_primary_20260909/v6_inference.csv",
+      "sha256": "dbb549711ffb6756c6d19011274dcea6fe3ed5275de282e2c74ad4649b7ebdb1",
+      "size_bytes": 6172
+    },
+    {
+      "path": "KL_180826/multi_llm_evidence_extraction/outputs/v6_primary/v6_primary_20260909/v6_outperform_targets.csv",
+      "sha256": "2b1884f35efcbe3064b5800af063edb1547b468bd64fd8dbed8309593e4a5902",
+      "size_bytes": 18020436
+    },
+    {
+      "path": "KL_180826/multi_llm_evidence_extraction/outputs/v6_primary/v6_primary_20260909/v6_paired_daily_deltas.csv",
+      "sha256": "d4666742c2f822f26c4cedcd4ce931634efb10831d00d3d3ea87b80f2951545b",
+      "size_bytes": 4373359
+    },
+    {
+      "path": "KL_180826/multi_llm_evidence_extraction/outputs/v6_primary/v6_primary_20260909/v6_predictions.csv",
+      "sha256": "d479b502c2e46c974ba1ca9e079868509fd364add72a1b51e633a50e223b8c16",
+      "size_bytes": 113527906
+    },
+    {
+      "path": "KL_180826/multi_llm_evidence_extraction/outputs/v6_primary/v6_primary_20260909/v6_primary_panel.csv",
+      "sha256": "e91ccd1e20c6cdc37a6e3038d025f73710b5e34b6ac2e06b0ec0e472910a6b5e",
+      "size_bytes": 211558382
+    },
+    {
+      "path": "KL_180826/multi_llm_evidence_extraction/outputs/v6_primary/v6_primary_20260909/v6_row_manifest.csv",
+      "sha256": "ca0d8e7f9da635e3a77b035c24b4f292d4257e25693711fde4c94aec39147245",
+      "size_bytes": 7833950
+    },
+    {
+      "path": "KL_180826/multi_llm_evidence_extraction/outputs/v6_primary/v6_primary_20260909/v6_run_summary.json",
+      "sha256": "aa381583715e5dad037bb1f58b10104a4bc5a3fb7f1e5ca8af041f6e7e0ced98",
+      "size_bytes": 2407
+    },
+    {
+      "path": "KL_180826/multi_llm_evidence_extraction/reports/v6_primary/v6_primary_20260909/v6_build_summary.md",
+      "sha256": "2d1e279c7321b9aaa4086c73d99e5f8b200785750c5d6e2617df74e183e00307",
+      "size_bytes": 335
+    },
+    {
+      "path": "KL_180826/multi_llm_evidence_extraction/reports/v6_primary/v6_primary_20260909/v6_primary_report.md",
+      "sha256": "e6dac96a9904130b84917884bdb8171f8222ad030c1b49e621a437de24cb0c9f",
+      "size_bytes": 8844
+    }
+  ],
+  "protocol": {
+    "build_summary_hash_matches_current_protocol": true,
+    "path": "KL_180826/multi_llm_evidence_extraction/config/v6_technical_primary_v1.json",
+    "sha256": "62b255260d1f29d1a84f9a143d4b8f0259a4a177c0a0a3fcb2962479835403e2",
+    "summary_hash_matches_current_protocol": true
+  },
+  "reconciliation": {
+    "audit_pass": true,
+    "manifest_validation": "not_available_for_historical_locked_run",
+    "prediction_count_matches": true,
+    "summary_primary_matches_inference": {
+      "H1": true,
+      "H2": true
+    }
+  },
+  "source_report_directory": "KL_180826/multi_llm_evidence_extraction/reports/v6_primary/v6_primary_20260909",
+  "source_run_directory": "KL_180826/multi_llm_evidence_extraction/outputs/v6_primary/v6_primary_20260909",
+  "status": "completed"
+}

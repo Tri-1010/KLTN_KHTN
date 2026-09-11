@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "V6 Subgroup Protocol",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "protocol_id",
+    "version",
+    "state",
+    "comparison",
+    "exposure",
+    "estimand",
+    "inference",
+    "gates"
+  ],
+  "properties": {
+    "protocol_id": {"type": "string"},
+    "version": {"type": "string"},
+    "state": {"enum": ["exploratory", "confirmation"]},
+    "comparison": {"type": "object"},
+    "exposure": {"type": "object"},
+    "estimand": {"type": "object"},
+    "inference": {"type": "object"},
+    "gates": {"type": "object"}
+  }
+}

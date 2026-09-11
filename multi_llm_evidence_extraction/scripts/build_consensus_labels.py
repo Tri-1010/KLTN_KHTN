@@ -32,13 +32,58 @@ JSONL_OUT = OUTPUT_DIR / "pseudo_labels_consensus.jsonl"
 CSV_OUT = OUTPUT_DIR / "pseudo_labels_consensus.csv"
 
 
+def validate_strict_expansion_rows(
+    paths: list[Path],
+    expected_sample_path: Path,
+    expected_annotators: tuple[str, ...] = ("a", "b", "c"),
+) -> list[dict[str, Any]]:
+    rows = [row for path in paths for row in read_jsonl(path)]
+    if not rows:
+        raise ValueError("strict expansion consensus requires annotation rows")
+    expected_sample = pd.read_csv(expected_sample_path, encoding="utf-8-sig")
+    if not {"news_id", "ticker"}.issubset(expected_sample.columns):
+        raise ValueError("strict expansion expected sample missing news_id/ticker")
+    expected_sample = expected_sample[["news_id", "ticker"]].copy()
+    expected_sample["news_id"] = expected_sample["news_id"].fillna("").astype(str).str.strip()
+    expected_sample["ticker"] = expected_sample["ticker"].fillna("").astype(str).str.upper().str.strip()
+    if expected_sample.eq("").any().any() or expected_sample.duplicated(["news_id", "ticker"]).any():
+        raise ValueError("strict expansion expected sample keys must be unique and nonempty")
+    expected_keys = set(map(tuple, expected_sample[["news_id", "ticker"]].to_numpy()))
+    required_provenance = {"input_sha256", "content_hash", "prompt_sha256", "schema_sha256", "requested_model", "provider"}
+    grouped: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
+    for row in rows:
+        key = (str(row.get("news_id", "")).strip(), str(row.get("ticker", "")).upper().strip())
+        grouped[key].append(row)
+    actual_keys = set(grouped)
+    if actual_keys != expected_keys:
+        raise ValueError(f"strict expansion sample coverage mismatch: missing={len(expected_keys - actual_keys)} unexpected={len(actual_keys - expected_keys)}")
+    expected = set(expected_annotators)
+    for key, group in grouped.items():
+        annotators = [str(row.get("annotator", "")) for row in group]
+        if set(annotators) != expected or len(annotators) != len(expected):
+            raise ValueError(f"strict expansion annotator coverage failed for {key}: {annotators}")
+        for row in group:
+            if row.get("status") != "ok" or row.get("terminal") is not True:
+                raise ValueError(f"strict expansion terminal successful coverage failed for {key}")
+            missing = sorted(field for field in required_provenance if not str(row.get(field, "")).strip())
+            if missing:
+                raise ValueError(f"strict expansion provenance incomplete for {key}: {missing}")
+        if provenance_conflicts(group):
+            raise ValueError(f"strict expansion provenance conflict for {key}")
+    return rows
+
+
 def load_annotation_rows(paths: list[Path]) -> list[dict[str, Any]]:
-    deduped: dict[tuple[str, str], dict[str, Any]] = {}
+    deduped: dict[tuple[str, str, str], dict[str, Any]] = {}
     for path in paths:
         for row in read_jsonl(path):
             if row.get("status") != "ok":
                 continue
-            key = (str(row.get("news_id")), str(row.get("annotator") or path.stem))
+            key = (
+                str(row.get("news_id")),
+                str(row.get("ticker", "")).upper(),
+                str(row.get("annotator") or path.stem),
+            )
             deduped[key] = row
     return list(deduped.values())
 
@@ -79,7 +124,7 @@ def median_int(values: list[Any]) -> tuple[int | None, bool]:
 
 def provenance_conflicts(rows: list[dict[str, Any]]) -> list[str]:
     conflicts = []
-    for field in ("input_sha256", "prompt_sha256", "schema_sha256"):
+    for field in ("input_sha256", "content_hash", "prompt_sha256", "schema_sha256"):
         values = {str(row.get(field)) for row in rows if row.get(field)}
         if len(values) > 1:
             conflicts.append(field)
@@ -107,11 +152,15 @@ def consensus_for(news_id: str, rows: list[dict[str, Any]]) -> dict[str, Any]:
     if conflicts:
         quality_flags.append("provenance_conflict")
 
+    content_hashes = {str(row.get("content_hash", "")).strip() for row in rows if str(row.get("content_hash", "")).strip()}
+    if len(content_hashes) != 1:
+        raise ValueError(f"consensus content_hash provenance conflict for {news_id}")
     out: dict[str, Any] = {
         "artifact_schema_version": CONSENSUS_SCHEMA_VERSION,
         "news_id": news_id,
         "ticker": rows[0].get("ticker", ""),
         "article_date": rows[0].get("article_date", ""),
+        "content_hash": next(iter(content_hashes)),
         "annotator_count": len({str(row.get("annotator", "")) for row in rows}),
     }
 
@@ -212,28 +261,41 @@ def consensus_for(news_id: str, rows: list[dict[str, Any]]) -> dict[str, Any]:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Build consensus pseudo labels from annotator outputs.")
     parser.add_argument("--inputs", nargs="*", default=[str(path) for path in LABEL_FILES])
+    parser.add_argument("--jsonl-output", type=Path, default=JSONL_OUT)
+    parser.add_argument("--csv-output", type=Path, default=CSV_OUT)
+    parser.add_argument("--strict-expansion", action="store_true")
+    parser.add_argument("--expected-sample", type=Path)
+    parser.add_argument("--expected-annotators", nargs="+", default=["a", "b", "c"])
     args = parser.parse_args()
     ensure_dirs()
-    rows = load_annotation_rows([Path(path) for path in args.inputs])
+    input_paths = [Path(path) for path in args.inputs]
+    if args.strict_expansion:
+        if args.expected_sample is None:
+            parser.error("--strict-expansion requires --expected-sample")
+        strict_rows = validate_strict_expansion_rows(input_paths, args.expected_sample, tuple(args.expected_annotators))
+        rows = [row for row in strict_rows if row.get("status") == "ok"]
+    else:
+        rows = load_annotation_rows(input_paths)
     if not rows:
-        write_jsonl(JSONL_OUT, [])
+        write_jsonl(args.jsonl_output, [])
         schema = load_schema("pseudo_label_consensus_schema.json")
-        write_csv(CSV_OUT, [], list(schema.get("required", [])))
+        write_csv(args.csv_output, [], list(schema.get("required", [])))
         print("No valid annotator labels found; wrote empty consensus outputs.")
         return 0
-    grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    grouped: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
     for row in rows:
-        grouped[str(row.get("news_id"))].append(row)
+        key = (str(row.get("news_id", "")), str(row.get("ticker", "")).upper())
+        grouped[key].append(row)
     schema = load_schema("pseudo_label_consensus_schema.json")
     output = []
-    for news_id, group in sorted(grouped.items()):
+    for (news_id, _ticker), group in sorted(grouped.items()):
         item = consensus_for(news_id, group)
         validate_json(item, schema)
         output.append(item)
-    write_jsonl(JSONL_OUT, output)
-    write_csv(CSV_OUT, output)
-    print(f"saved {JSONL_OUT} rows={len(output)}")
-    print(f"saved {CSV_OUT}")
+    write_jsonl(args.jsonl_output, output)
+    write_csv(args.csv_output, output)
+    print(f"saved {args.jsonl_output} rows={len(output)}")
+    print(f"saved {args.csv_output}")
     return 0
 
 

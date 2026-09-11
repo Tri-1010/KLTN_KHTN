@@ -1,0 +1,181 @@
+{
+  "study_id": "v6_technical_primary",
+  "protocol_version": "v6_technical_primary_v1",
+  "claim_level": "v6_full_price_panel_zero_fill_primary",
+  "frozen_canonical_run_id": "canonical_150_v7",
+  "observation_key": [
+    "ticker",
+    "date",
+    "target_exit_date"
+  ],
+  "universe": {
+    "base": "full_price_panel",
+    "primary_start_date": null,
+    "primary_end_date": null,
+    "date_rule": "all target rows from the full price panel; no outcome-driven date filtering",
+    "include_no_news_rows": true
+  },
+  "target": {
+    "column": "label_outperform_T20",
+    "status_column": "target_status",
+    "required_status": "ok",
+    "horizon_benchmark_sessions": 20,
+    "benchmark": "VNINDEX",
+    "label_threshold": 0.0,
+    "return_definition": "stock_return_T20 - VNINDEX_return_T20"
+  },
+  "primary_row_rule": [
+    "target_status == ok",
+    "lagged_technical_features_available"
+  ],
+  "feature_timing": {
+    "technical": "quarterly features become available in the following quarter",
+    "keyword": "quarterly features become available in the following quarter",
+    "semantic": "daily features are already mapped to the strict next trading date when publication time is unavailable",
+    "learned_preprocessing": "fit on each training fold only"
+  },
+  "news_missing_policy": {
+    "true_no_news": "zero_fill_keyword_and_semantic_predictors",
+    "retain_in_primary": true,
+    "source_timing_mapping_or_extraction_error": "audit_separately_never_classify_as_no_news",
+    "unresolved_feature_source_row": "fail_build_or_mark_source_error_never_silent_zero"
+  },
+  "coverage_policy": {
+    "usage": "audit_and_sensitivity_only",
+    "include_in_predictors": false,
+    "include_in_primary_eligibility": false,
+    "keyword_columns": [
+      "news_count",
+      "news_count_log",
+      "has_min_news"
+    ],
+    "semantic_columns": [
+      "semantic_news_count",
+      "semantic_news_count_roll_5d",
+      "semantic_news_count_roll_20d",
+      "semantic_news_count_roll_60d",
+      "days_since_high_materiality_news"
+    ]
+  },
+  "keyword_feature_policy": {
+    "precomputed_tfidf": "excluded_from_primary_because_existing_weights_were_fit_on_the_full_corpus",
+    "excluded_prefixes": [
+      "tfidf_"
+    ]
+  },
+  "configs": {
+    "A_technical": [
+      "technical"
+    ],
+    "B_technical_keyword": [
+      "technical",
+      "keyword"
+    ],
+    "C_technical_semantic": [
+      "technical",
+      "semantic"
+    ]
+  },
+  "primary": {
+    "model": "RandomForest",
+    "metric": "balanced_accuracy",
+    "hypothesis_family": "V6_H1_H2"
+  },
+  "hypothesis_families": {
+    "V6_H1_H2": {
+      "role": "primary",
+      "multiple_testing": "benjamini_hochberg",
+      "hypotheses": [
+        {
+          "id": "H1",
+          "baseline_config": "A_technical",
+          "comparison_config": "B_technical_keyword"
+        },
+        {
+          "id": "H2",
+          "baseline_config": "A_technical",
+          "comparison_config": "C_technical_semantic"
+        }
+      ]
+    },
+    "supplemental": {
+      "role": "supplemental_no_joint_primary_adjustment",
+      "hypotheses": [
+        {
+          "id": "S_kw_sem",
+          "baseline_config": "B_technical_keyword",
+          "comparison_config": "C_technical_semantic"
+        }
+      ]
+    }
+  },
+  "models": {
+    "random_forest": {
+      "n_estimators": 300,
+      "max_depth": 6,
+      "min_samples_leaf": 5,
+      "class_weight": "balanced",
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "logistic_regression": {
+      "C": 1.0,
+      "max_iter": 2000,
+      "class_weight": "balanced",
+      "random_state": 42
+    }
+  },
+  "metrics": {
+    "balanced_accuracy": "higher",
+    "auc": "higher",
+    "f1": "higher",
+    "brier": "lower",
+    "log_loss": "lower"
+  },
+  "folds": {
+    "count": 3,
+    "type": "expanding",
+    "purge": "target_exit_date_before_test_start",
+    "fallback_when_target_exit_missing": "date_based_20_session_purge"
+  },
+  "inference": {
+    "unit": "paired_oos_date_metric_delta",
+    "bootstrap": "fold_local_moving_date_block",
+    "permutation": "fold_local_date_block_sign_flip",
+    "bootstrap_samples": 10000,
+    "permutation_samples": 10000,
+    "block_dates": 20,
+    "short_fold_block_policy": "min(block_dates, ceil(sqrt(n_dates_in_fold)))",
+    "seed": 42,
+    "alpha": 0.05
+  },
+  "minimums": {
+    "valid_folds": 3,
+    "paired_dates": 10,
+    "samples_per_class": 2
+  },
+  "input_paths": {
+    "prices": "KL_180826/data/prices/all_vn30_prices.csv",
+    "benchmark": "KL_180826/data/prices_extended/VNINDEX.csv",
+    "technical": "KL_180826/data/features/technical_features.csv",
+    "keyword": "data/features/keyword_features.csv",
+    "semantic_daily": "multi_llm_evidence_extraction/outputs/semantic_features_daily.csv",
+    "semantic_consensus": "KL_180826/multi_llm_evidence_extraction/outputs/pseudo_labels_consensus.csv",
+    "news_matched": "KL_180826/data/news/matched/all_news_matched.csv",
+    "news_processed": "KL_180826/data/news/processed/all_news_processed.csv"
+  },
+  "input_sha256": {
+    "prices": "4e16833ab6bfa2b0aeea2d742b86943d786b221f51ad6bf43a57f619405665bb",
+    "benchmark": "fc44a4a3afd01ea0a48dfc8901377b8af24e5e5eaa7da73cb4639063dbc83f84",
+    "technical": "b0a1cb2e7ea71708131cc444de07e1457bc2d457e9e2a255af418f480f324e3e",
+    "keyword": "bd8d7e048a76f7f701401d5e8604a4fa0263cf4c2577e95658eac3b70135f4ed",
+    "semantic_daily": "3755fbbef05c608db80c65d2f525215169a0bdd535d3ee634aacf23ee41b25f0",
+    "semantic_consensus": "6342f27827e3327b78099fc1e1bbf13d4340c598764379dff0b14ac5f357da54",
+    "news_matched": "349947bbabacd1bd3292ef59df8bc5776db3748a7ce5d90da49a5ce5a7441477",
+    "news_processed": "205b1772ba14b7ba333e9c03f2090896af25a1ff73c259ba2d714372bb7d024e"
+  },
+  "output_roots": {
+    "outputs": "KL_180826/multi_llm_evidence_extraction/outputs/v6_primary",
+    "reports": "KL_180826/multi_llm_evidence_extraction/reports/v6_primary"
+  }
+}

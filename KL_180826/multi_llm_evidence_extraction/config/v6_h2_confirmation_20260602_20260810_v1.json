@@ -1,0 +1,70 @@
+{
+  "protocol_id": "v6_h2_confirmation_20260602_20260810_v1",
+  "version": "1",
+  "state": "confirmation",
+  "study_id": "v6_technical_primary",
+  "confirmation_oos": {
+    "start_date": "2026-06-02",
+    "end_date": "2026-08-10",
+    "label_horizon_benchmark_sessions": 20,
+    "entry_rule": "only rows whose exact benchmark and stock T+20 exit sessions are available",
+    "independence_rule": "no discovery result may change the model, feature configuration, exposure, metric, inference, gate, or date boundary"
+  },
+  "comparison": {
+    "baseline_config": "A_technical",
+    "comparison_config": "C_technical_semantic",
+    "model": "RandomForest",
+    "feature_protocol": "v6_technical_primary_v1"
+  },
+  "exposure": {
+    "column": "materiality_hm_prior_20_sessions",
+    "definition": "at least one high or medium materiality event in the 20 completed ticker trading sessions before the decision session",
+    "same_day_events": "excluded",
+    "comparator": "no high or medium materiality event in the prior 20 completed ticker trading sessions",
+    "allowed_source_statuses": ["valid_source_event", "no_valid_news"]
+  },
+  "estimand": {
+    "metric": "Brier improvement, where improvement is Brier(A) minus Brier(C)",
+    "interaction": "mean(C-A Brier improvement | exposed) minus mean(C-A Brier improvement | comparator)",
+    "positive_direction": "semantic configuration improves more under prior materiality exposure"
+  },
+  "inference": {
+    "unit": "paired fold-local date-level interaction",
+    "bootstrap": "fold_local_moving_date_block",
+    "permutation": "fold_local_date_block_sign_flip",
+    "bootstrap_samples": 10000,
+    "permutation_samples": 10000,
+    "block_dates": 20,
+    "seed": 42,
+    "alpha": 0.05,
+    "correction_family": ["H2_materiality_interaction_confirmation"]
+  },
+  "gates": {
+    "required_folds": 3,
+    "min_paired_dates": 10,
+    "min_observations_per_group": 50,
+    "require_complete_t20_coverage": true,
+    "require_three_annotator_consensus": true,
+    "max_eligible_articles": 2000,
+    "annotators": ["a", "b", "c"],
+    "max_annotation_calls": 6000,
+    "required_positive_effect": true,
+    "required_ci_lower_bound_positive": true,
+    "required_adjusted_p_pass": true,
+    "require_named_robustness_alignment": true
+  },
+  "collection": {
+    "workspace_only": true,
+    "sources": ["configured_vnstock", "configured_news_sources"],
+    "network_execution": "requires_explicit_execute_flag_after_preflight",
+    "local_router": {
+      "provider": "local_router",
+      "endpoint_environment": "URL_LOCAL",
+      "key_environment": "API_LOCAL",
+      "allowed_hosts": ["localhost", "127.0.0.1"],
+      "allowed_schemes": ["http"],
+      "allowed_path": "/v1",
+      "allowed_models": ["claude-opus"]
+    }
+  }
+}

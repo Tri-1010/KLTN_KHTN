@@ -4,6 +4,7 @@ import argparse
 import importlib.metadata
 import json
 import os
+import re
 import sys
 from pathlib import Path
 from typing import Any
@@ -236,10 +237,19 @@ def terminal_response_status(stop_reason: str | None) -> tuple[str, bool]:
     return "nonterminal_or_unknown_stop_reason", False
 
 
+def _sanitize_error_text(value: Any) -> str:
+    text = str(value or "")
+    text = re.sub(r"(?i)(authorization|api[_-]?key|token|bearer)\s*[:=]\s*\S+", r"\1=[redacted]", text)
+    text = re.sub(r"(?i)sk-[A-Za-z0-9_-]{8,}", "[redacted-secret]", text)
+    text = re.sub(r"(?i)AIza[0-9A-Za-z_-]{8,}", "[redacted-secret]", text)
+    text = re.sub(r"(?i)https?://[^\s]*:[^\s]*@", "https://[redacted]@", text)
+    return text[:1000]
+
+
 def error_provenance(exc: Exception) -> dict[str, Any]:
     return {
         "error_type": type(exc).__name__,
-        "error_message": str(exc)[:1000],
+        "error_message": _sanitize_error_text(exc),
         "request_id": str(getattr(exc, "request_id", "") or getattr(exc, "_request_id", "")),
         "http_status": getattr(exc, "status_code", None),
         "retryable": type(exc).__name__ in {"RateLimitError", "InternalServerError", "APIConnectionError", "APITimeoutError"},
@@ -247,9 +257,70 @@ def error_provenance(exc: Exception) -> dict[str, Any]:
 
 
 def endpoint_host(provider: str) -> str:
+    if provider == "local_router":
+        # Returns hostname[:port] only; never return URL_LOCAL's credential value.
+        return llm_provider.local_router_endpoint_host()
     env_name = "ANTHROPIC_BASE_URL" if provider == "anthropic" else f"{provider.upper()}_BASE_URL"
     value = os.getenv(env_name, "")
     return urlparse(value).hostname or "default"
+
+
+def route_provenance(provider: str, response_model: str | None = None) -> dict[str, str]:
+    if provider == "local_router":
+        return llm_provider.provider_route_provenance(provider, response_model)
+    return model_provenance(provider, "", response_model)
+
+
+def annotation_call_budget(rows_input: int, annotators: int) -> int:
+    if rows_input < 0 or annotators < 1:
+        raise ValueError("annotation call budget requires nonnegative rows and at least one annotator")
+    return int(rows_input) * int(annotators)
+
+
+def assert_confirmation_annotation_budget(rows_input: int, *, max_articles: int, annotators: int, max_calls: int) -> None:
+    if rows_input > max_articles:
+        raise ValueError(f"confirmation annotation article cap exceeded: {rows_input} > {max_articles}")
+    calls = annotation_call_budget(rows_input, annotators)
+    if calls > max_calls:
+        raise ValueError(f"confirmation annotation call cap exceeded: {calls} > {max_calls}")
+
+
+def validate_confirmation_local_router(provider: str, model: str) -> None:
+    if provider != "local_router":
+        raise ValueError("confirmation annotation requires the approved local_router provider")
+    if model not in llm_provider.LOCAL_ROUTER_MODEL_ALLOWLIST:
+        raise ValueError("confirmation annotation local-router model is not approved")
+    llm_provider.local_router_endpoint_host()
+
+
+def confirmation_annotation_manifest_fields(provider: str, response_model: str | None, rows_input: int) -> dict[str, Any]:
+    return {
+        "annotation_call_budget": annotation_call_budget(rows_input, 3),
+        "credential_persisted": False,
+        "route_provenance": route_provenance(provider, response_model),
+    }
+
+
+def run_confirmation_annotation_preflight(
+    provider: str,
+    model: str,
+    rows_input: int,
+    *,
+    max_articles: int = 2000,
+    annotators: int = 3,
+    max_calls: int = 6000,
+) -> dict[str, Any]:
+    """Validate budget/router before any live annotation request is made."""
+    assert_confirmation_annotation_budget(rows_input, max_articles=max_articles, annotators=annotators, max_calls=max_calls)
+    validate_confirmation_local_router(provider, model)
+    return {
+        "provider": provider,
+        "requested_model": model,
+        "endpoint_host": endpoint_host(provider),
+        "rows_input": int(rows_input),
+        "planned_annotation_calls": annotation_call_budget(rows_input, annotators),
+        "credential_persisted": False,
+    }
 
 
 def sdk_version(provider: str) -> str:
@@ -400,6 +471,10 @@ def main() -> int:
     df = pd.read_csv(input_path, encoding="utf-8-sig")
     if args.max_articles:
         df = df.head(args.max_articles)
+    if str(args.run_id or "").startswith("v6_h2_confirmation_"):
+        preflight = run_confirmation_annotation_preflight(provider, model, len(df))
+    else:
+        preflight = None
     canonical_paths = set(annotation_paths(args.annotator).values())
     if (args.run_id or args.output_dir) and canonical_paths & set(paths.values()):
         parser.error("run-scoped outputs must not collide with canonical annotation artifacts")
@@ -496,7 +571,7 @@ def main() -> int:
             error_status = "refusal" if "refusal while scoring" in lowered else ("truncated" if "response truncated" in lowered else "error")
             terminal = error_status in {"refusal", "truncated"} or not error["retryable"]
             labels.append({**base, **error, "status": error_status, "terminal": terminal, "error": error["error_message"]})
-            raws.append({**base, **error, "raw_error": str(exc)[:2000], "status": error_status, "terminal": terminal})
+            raws.append({**base, **error, "raw_error": _sanitize_error_text(exc), "status": error_status, "terminal": terminal})
     write_jsonl(paths["labels"], labels)
     write_jsonl(paths["raw"], raws)
     write_jsonl(paths["prompts"], prompts)
@@ -504,8 +579,13 @@ def main() -> int:
         write_jsonl(paths["batch"], batch_requests)
     response_models = sorted({str(row.get("response_model")) for row in labels if row.get("response_model")})
     response_model = response_models[0] if len(response_models) == 1 else (",".join(response_models) or model)
-    provenance = model_provenance(provider, model, response_model)
+    provenance = route_provenance(provider, response_model)
     generated_at = utc_now()
+    confirmation_fields = (
+        confirmation_annotation_manifest_fields(provider, response_model, len(df))
+        if preflight is not None
+        else {}
+    )
     run_id = args.run_id or f"{args.annotator}-{generated_at.replace(':', '').replace('+', '_')}"
     output_hashes = {
         key: sha256_file(path)
@@ -554,7 +634,9 @@ def main() -> int:
             "token_count_endpoint": "messages.count_tokens" if provider == "anthropic" else None,
             "max_articles": args.max_articles,
             "max_article_chars": args.max_article_chars,
+            "confirmation_preflight": preflight,
         },
+        **confirmation_fields,
         "outputs": {key: str(path) for key, path in paths.items()},
         "output_sha256": output_hashes,
     }

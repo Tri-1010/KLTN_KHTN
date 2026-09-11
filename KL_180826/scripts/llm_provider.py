@@ -358,13 +358,19 @@ def _openai_compatible_chat(
         headers={"Authorization": f"Bearer {client['api_key']}", "Content-Type": "application/json"},
         json=body,
         timeout=client.get("timeout", 120),
+        allow_redirects=False,
     )
+    if 300 <= response.status_code < 400:
+        label = "Local router" if provider == "local_router" else "DeepSeek"
+        raise RuntimeError(f"{label} API refused redirect status {response.status_code}")
     try:
         payload = response.json()
     except ValueError:
-        payload = {"raw_text": response.text}
+        payload = {"error_type": "non_json_response"}
     if response.status_code >= 400:
-        message = payload.get("error", payload) if isinstance(payload, dict) else payload
+        message = payload.get("error", payload) if isinstance(payload, dict) else "provider_error"
+        if isinstance(message, dict):
+            message = {key: message.get(key) for key in ("type", "code", "message") if key in message}
         label = "Local router" if provider == "local_router" else "DeepSeek"
         raise RuntimeError(f"{label} API error {response.status_code}: {message}")
     if not isinstance(payload, dict):
